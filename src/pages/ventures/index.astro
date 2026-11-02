@@ -1,0 +1,643 @@
+---
+import Base from "../../layouts/Base.astro";
+import VentureAvatar from "../../components/VentureAvatar.astro";
+import "../../styles/ventures.css";
+import "../../styles/mapping.css";
+import {
+  getTracks,
+  getVentures,
+  getMemberships,
+  getRelations,
+  getVenturesUpdated,
+  getSegment,
+  getTrack,
+  getVentureUrl,
+  segmentSlot,
+  splitSegmentName,
+  formatValuation,
+  KIND_LABEL,
+  validateVentures,
+} from "../../lib/ventures";
+import { getAllEntities } from "../../lib/data";
+import {
+  getDexterityProducts,
+  getDexterityForCompany,
+} from "../../lib/dexterity";
+import { getCompanyNews } from "../../lib/news";
+
+validateVentures(getAllEntities().map((e) => e.id));
+
+const tracks = getTracks();
+const dexterityProducts = getDexterityProducts();
+const companies = getVentures().sort((a, b) =>
+  a.name.localeCompare(b.name, "zh-CN"),
+);
+const companyMap = new Map(companies.map((c) => [c.id, c]));
+const segmentCount = tracks.reduce((n, t) => n + t.segments.length, 0);
+const populated = tracks.reduce(
+  (n, t) =>
+    n +
+    t.segments.filter((s) =>
+      companies.some((c) =>
+        getMemberships(c).some((m) => m.track === t.id && m.segment === s.id),
+      ),
+    ).length,
+  0,
+);
+const cnCount = companies.filter((c) => c.region === "cn").length;
+const globalCount = companies.length - cnCount;
+const crossCount = companies.filter((c) => getMemberships(c).length > 1).length;
+
+const relationLabelMap: Record<string, string> = {
+  supplier: "供应 →",
+  customer: "采购自 →",
+  partner: "合作 ↔",
+  investor: "投资 →",
+  subsidiary: "母子公司 →",
+};
+
+const rows = companies.map((c) => {
+  const memberships = getMemberships(c).map((m) => {
+    const t = getTrack(m.track);
+    const s = getSegment(m.track, m.segment);
+    const split = splitSegmentName(s?.name || m.segment);
+    return {
+      track: m.track,
+      segment: m.segment,
+      trackName: t?.name || m.track,
+      segmentName: split.name,
+      stage: split.stage || "环节",
+      fullSegmentName: s?.name || m.segment,
+    };
+  });
+  const dex = getDexterityForCompany(c.id);
+  const companyRelations = getRelations(c.id).map((r) => ({
+    type: relationLabelMap[r.type] || r.type,
+    otherId: r.from === c.id ? r.to : r.from,
+    otherName:
+      companyMap.get(r.from === c.id ? r.to : r.from)?.name ||
+      (r.from === c.id ? r.to : r.from),
+    title: r.title,
+    date: r.date,
+    sourceUrl: r.sources[0]?.url || "",
+    sourceTitle: r.sources[0]?.title || "公开来源",
+  }));
+  const newsItems = getCompanyNews(c.id);
+  const allSourceObjs = [
+    ...new Map(
+      [...(c.sources || []), ...c.events.flatMap((e) => e.sources)].map((s) => [
+        s.url,
+        s,
+      ]),
+    ).values(),
+  ];
+  const valStr = formatValuation(c.valuation);
+  return {
+    id: c.id,
+    name: c.name,
+    en: c.en || "",
+    region: c.region,
+    country: c.country || (c.region === "cn" ? "中国" : "海外"),
+    founded: c.founded || null,
+    founders: c.founders || [],
+    intro: c.intro,
+    website: c.website || "",
+    valuation: valStr
+      ? {
+          text: valStr,
+          asof: c.valuation!.asof,
+          status: c.valuation!.status,
+        }
+      : null,
+    memberships,
+    tags: c.tags || [],
+    aliases: c.aliases || [],
+    searchTerms: [
+      ...c.events.map((event) => event.title),
+      ...dexterityProducts
+        .filter((product) => product.companyId === c.id)
+        .map((product) => product.product),
+      ...dex.roles.map((r) => `${r.product} ${r.role}`),
+    ],
+    sources: allSourceObjs.map((s) => s.url),
+    sourceDetails: allSourceObjs.slice(0, 6).map((s) => ({
+      title: s.title,
+      url: s.url,
+      date: s.date || "",
+    })),
+    verifiedAt: c.verifiedAt || "",
+    eventsCount: c.events.length,
+    latestEvents: c.events.slice(0, 3).map((e) => ({
+      date: e.date,
+      kind: KIND_LABEL[e.kind] || e.kind,
+      title: e.title,
+      status: e.status,
+      sourceUrl: e.sources[0]?.url || "",
+      sourceTitle: e.sources[0]?.title || "",
+    })),
+    relations: companyRelations,
+    newsCount: newsItems.length,
+    dexRoles: dex.roles.map((r) => ({
+      stageName: r.stageName,
+      role: r.role,
+      product: r.product,
+      evidenceUrl: r.evidence.url,
+      evidenceTitle: r.evidence.title,
+    })),
+    dexProducts: dex.products.map((p) => ({
+      product: p.product,
+      form: p.form,
+      dof: p.dof,
+      weight: p.weight,
+      actuation: p.actuation,
+    })),
+  };
+});
+---
+
+<Base
+  title="硬科技产业图谱"
+  description="面向一级市场研究的国内与全球硬科技公司图谱：按赛道与产业链环节查公司，核对业务、跨环节定位、公开关系与新闻。"
+  current="ventures"
+>
+  <div class="wrap page" data-mapping>
+    <div class="page-head">
+      <div>
+        <div class="page-kicker">INDUSTRY LANDSCAPE</div>
+        <h1>
+          产业地图<span class="count">{companies.length} 家公司</span>
+        </h1>
+        <p>
+          沿产业链寻找公司，理解上下游位置与跨环节布局。已收录 {tracks.length}{" "}
+          条赛道、{populated}/{segmentCount} 个环节，国内 {cnCount} 家、海外{" "}
+          {globalCount} 家。
+        </p>
+      </div>
+      <div class="actions">
+        <div class="map-view-switch" role="group" aria-label="查看方式">
+          <button type="button" data-view="chain" aria-pressed="true">
+            产业链视图
+          </button>
+          <button type="button" data-view="table" aria-pressed="false">
+            公司名录
+          </button>
+        </div>
+        <button type="button" class="btn btn-sm" id="map-export">
+          导出 CSV
+        </button>
+      </div>
+    </div>
+
+    <div class="panel">
+      <form class="toolbar" role="search" id="map-filters">
+        <div class="map-filter-top">
+          <label class="filter-input map-search-box">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="m20 20-3.5-3.5"></path>
+            </svg>
+            <input
+              type="search"
+              name="q"
+              id="map-query"
+              placeholder="搜索公司、英文名、具体型号（如 Wuji Hand 2.2）或技术标签…"
+              autocomplete="off"
+              aria-label="搜索公司或型号"
+            />
+          </label>
+
+          <label class="map-select-wrap">
+            <span class="sr-only">产业链环节</span>
+            <select name="seg" id="map-segment">
+              <option value="">全部产业环节（{segmentCount}）</option>
+              {tracks.map((t) => (
+                <optgroup label={t.name} data-track={t.id}>
+                  {t.segments.map((s) => (
+                    <option value={`${t.id}/${s.id}`}>{s.name}</option>
+                  ))}
+                </optgroup>
+              ))}
+            </select>
+          </label>
+
+          <div class="map-region-group" role="group" aria-label="地区筛选">
+            <button
+              type="button"
+              class="map-region-btn is-active"
+              data-region-btn=""
+            >
+              全部 <span class="n">{companies.length}</span>
+            </button>
+            <button type="button" class="map-region-btn" data-region-btn="cn">
+              国内 <span class="n">{cnCount}</span>
+            </button>
+            <button
+              type="button"
+              class="map-region-btn"
+              data-region-btn="global"
+            >
+              海外 <span class="n">{globalCount}</span>
+            </button>
+          </div>
+
+          <label class="sr-only" for="map-region">
+            地区
+          </label>
+          <select name="region" id="map-region" class="sr-only" tabindex="-1">
+            <option value="">全部地区</option>
+            <option value="cn">国内</option>
+            <option value="global">海外</option>
+          </select>
+
+          <button
+            type="button"
+            class="chip"
+            id="map-cross-only"
+            aria-pressed="false"
+            title="只看同时布局多个赛道或产业链环节的公司"
+          >
+            跨环节 <span class="n">{crossCount}</span>
+          </button>
+
+          <button type="reset" class="map-reset" title="清空所有筛选条件">
+            重置
+          </button>
+        </div>
+
+        <nav class="chips" aria-label="产业赛道">
+          <a
+            class="chip"
+            href="/ventures/"
+            data-track-link=""
+            aria-current="page"
+          >
+            <span class="map-nav-name">全部赛道</span>
+            <span class="n" data-sidebar-total>
+              {companies.length}
+            </span>
+          </a>
+          {tracks.map((t) => {
+            const trackCompanies = companies.filter((c) =>
+              getMemberships(c).some((m) => m.track === t.id),
+            );
+            return (
+              <a
+                class="chip"
+                href={`/ventures/?track=${t.id}`}
+                data-track-link={t.id}
+              >
+                <span class="map-nav-name">{t.name}</span>
+                <span class="n" data-sidebar-count={t.id}>
+                  {trackCompanies.length}
+                </span>
+              </a>
+            );
+          })}
+        </nav>
+      </form>
+
+      <div class="result-bar">
+        <span id="map-results" aria-live="polite">
+          {companies.length} 家公司 / 共 {companies.length} 家
+        </span>
+        <div
+          class="map-active-context"
+          id="map-active-pills"
+          aria-live="polite"
+        ></div>
+        <span class="right">
+          点击公司查看完整档案，悬停点击「速览」可在当前页预览 · 更新于{" "}
+          {getVenturesUpdated()}
+        </span>
+      </div>
+    </div>
+
+    <div
+      id="map-empty"
+      class="panel search-empty"
+      style="margin-top:var(--sp-4)"
+      hidden
+    >
+      <p>当前筛选条件下没有匹配的公司。</p>
+      <div style="margin-top:var(--sp-3)">
+        <button type="button" class="btn btn-sm" id="map-empty-reset">
+          清空筛选条件
+        </button>
+      </div>
+    </div>
+
+    <div id="map-chain" class="map-chain-stack">
+      {tracks.map((t) => {
+        const trackMembers = companies.filter((c) =>
+          getMemberships(c).some((m) => m.track === t.id),
+        );
+        const trackCn = trackMembers.filter((c) => c.region === "cn").length;
+        return (
+          <section class="panel map-track" data-track-section={t.id}>
+            <div class="panel-head">
+              <h2>
+                <a href={`/ventures/${t.id}/`}>{t.name}</a>
+              </h2>
+              <span class="hint">{t.desc}</span>
+              <span class="right">
+                <span class="mono" data-track-count={t.id}>
+                  {trackMembers.length} 家
+                </span>
+                <span class="muted">
+                  （国 {trackCn} / 外 {trackMembers.length - trackCn}）
+                </span>
+                {t.id === "robot-parts" && (
+                  <>
+                    {" · "}
+                    <a href="/ventures/dexterity/">灵巧手专题</a>
+                  </>
+                )}
+                {" · "}
+                <a href={`/?track=${t.id}`}>跟进动态 →</a>
+                <a href={`/ventures/${t.id}/`}>赛道详情 →</a>
+              </span>
+            </div>
+
+            <div
+              class="map-chain-grid"
+              style={`--chain-cols:${Math.min(t.segments.length, 4)}`}
+            >
+              {t.segments.map((s) => {
+                const members = companies.filter((c) =>
+                  getMemberships(c).some(
+                    (m) => m.track === t.id && m.segment === s.id,
+                  ),
+                );
+                const name = splitSegmentName(s.name);
+                const slot = segmentSlot(t.id, s.id);
+                return (
+                  <section
+                    class="map-cell"
+                    data-segment-cell={`${t.id}/${s.id}`}
+                    data-slot={slot}
+                  >
+                    <div class="map-cell-head">
+                      <button
+                        type="button"
+                        class="map-cell-filter-btn"
+                        data-filter-seg={`${t.id}/${s.id}`}
+                        title={`${s.desc}（点击筛选本环节）`}
+                      >
+                        {name.stage && (
+                          <span class="map-stage-tag">{name.stage}</span>
+                        )}
+                        <h3>{name.name}</h3>
+                        <span class="map-cell-count mono" data-cell-count>
+                          {members.length}
+                        </span>
+                      </button>
+                    </div>
+
+                    <div class="map-chips">
+                      {members.map((c) => {
+                        const allMemberships = getMemberships(c);
+                        const isCross = allMemberships.length > 1;
+                        const valStr = formatValuation(c.valuation);
+                        const dex = getDexterityForCompany(c.id);
+                        const primaryModel =
+                          dex.products[0]?.product || dex.roles[0]?.product;
+                        const cleanModel = primaryModel
+                          ? primaryModel.replace(/（.*?）|\(.*?\)/g, "").trim()
+                          : "";
+                        const crossTooltip = isCross
+                          ? `跨 ${allMemberships.length} 个产业位置：${allMemberships
+                              .map(
+                                (m) =>
+                                  `${getTrack(m.track)?.name || m.track}/${
+                                    splitSegmentName(
+                                      getSegment(m.track, m.segment)?.name ||
+                                        m.segment,
+                                    ).name
+                                  }`,
+                              )
+                              .join("；")}`
+                          : "";
+                        return (
+                          <div
+                            class:list={["map-node", isCross && "is-cross"]}
+                            data-company-id={c.id}
+                            data-cross={isCross ? "true" : "false"}
+                          >
+                            <a
+                              class="map-node-link"
+                              href={getVentureUrl(c)}
+                              data-company-link={c.id}
+                              title={`${c.name}${c.en ? ` (${c.en})` : ""} — ${c.intro}`}
+                            >
+                              <span class="map-node-name">{c.name}</span>
+                              {c.region === "global" && (
+                                <span class="map-node-reg">海外</span>
+                              )}
+                              {isCross && (
+                                <span
+                                  class="map-cross-pill"
+                                  title={crossTooltip}
+                                >
+                                  ×{allMemberships.length}
+                                </span>
+                              )}
+                              <span class="map-node-sub">
+                                {cleanModel || valStr || ""}
+                              </span>
+                            </a>
+                            <button
+                              type="button"
+                              class="map-peek-btn"
+                              data-peek-company={c.id}
+                              aria-label={`快速预览 ${c.name}`}
+                              title={`快速预览 ${c.name}`}
+                            >
+                              速览
+                            </button>
+                          </div>
+                        );
+                      })}
+                    </div>
+
+                    {!members.length && <div class="map-gap">样本待补充</div>}
+                  </section>
+                );
+              })}
+            </div>
+          </section>
+        );
+      })}
+    </div>
+
+    <section
+      id="map-table"
+      class="panel"
+      style="margin-top:var(--sp-4)"
+      hidden
+      aria-label="公司名录表"
+    >
+      <div class="map-table-scroll">
+        <table class="roster-table map-dir-table">
+          <thead>
+            <tr>
+              <th>公司名称</th>
+              <th>产业链位置</th>
+              <th>业务与代表产品</th>
+              <th>地区</th>
+              <th>估值 / 状态</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            {companies.map((c) => {
+              const allMemberships = getMemberships(c);
+              const isCross = allMemberships.length > 1;
+              const valStr = formatValuation(c.valuation);
+              const dex = getDexterityForCompany(c.id);
+              return (
+                <tr
+                  data-company-row={c.id}
+                  data-cross={isCross ? "true" : "false"}
+                >
+                  <td data-label="公司">
+                    <a
+                      class="map-company-name"
+                      href={getVentureUrl(c)}
+                      data-company-link={c.id}
+                    >
+                      <VentureAvatar venture={c} size="sm" />
+                      <div>
+                        <strong>{c.name}</strong>
+                        {c.en && c.en !== c.name && <small>{c.en}</small>}
+                      </div>
+                    </a>
+                  </td>
+                  <td data-label="产业环节">
+                    <div class="map-membership-list">
+                      {allMemberships.map((m) => (
+                        <a
+                          class="map-membership"
+                          href={`/ventures/?track=${m.track}&seg=${m.track}/${m.segment}`}
+                          data-filter-seg={`${m.track}/${m.segment}`}
+                        >
+                          {getTrack(m.track)?.name} ·{" "}
+                          {
+                            splitSegmentName(
+                              getSegment(m.track, m.segment)?.name || "",
+                            ).name
+                          }
+                        </a>
+                      ))}
+                    </div>
+                  </td>
+                  <td data-label="业务定位">
+                    <p class="map-table-intro">{c.intro}</p>
+                    {dex.products.length > 0 && (
+                      <div class="map-table-tags">
+                        {dex.products.map((p) => (
+                          <span class="badge">{p.product}</span>
+                        ))}
+                      </div>
+                    )}
+                  </td>
+                  <td data-label="地区">
+                    {c.country || (c.region === "cn" ? "中国" : "海外")}
+                  </td>
+                  <td data-label="估值">
+                    {valStr ? (
+                      <span class="mono">{valStr}</span>
+                    ) : (
+                      <span class="muted">未披露</span>
+                    )}
+                  </td>
+                  <td data-label="操作">
+                    <div class="map-table-actions">
+                      <button
+                        type="button"
+                        class="btn btn-sm"
+                        data-peek-company={c.id}
+                      >
+                        速览
+                      </button>
+                      <a
+                        class="link"
+                        href={getVentureUrl(c)}
+                        data-company-link={c.id}
+                      >
+                        档案 →
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <dialog
+    class="map-drawer"
+    id="map-drawer"
+    aria-label="公司快速预览"
+    aria-hidden="true"
+    hidden
+  >
+    <header class="map-drawer-head">
+      <div class="map-drawer-title">
+        <h2 id="drawer-name">公司预览</h2>
+        <p id="drawer-sub"></p>
+      </div>
+      <button
+        type="button"
+        class="icon-btn"
+        id="map-drawer-close"
+        aria-label="关闭快速预览"
+      >
+        ✕
+      </button>
+    </header>
+    <div class="map-drawer-body" id="map-drawer-body"></div>
+    <footer class="map-drawer-foot">
+      <a class="btn btn-primary" id="drawer-full-link" href="/ventures/">
+        查看完整档案 →
+      </a>
+      <a class="btn" id="drawer-updates-link" href="/">
+        公司动态 →
+      </a>
+      <button
+        class="btn"
+        type="button"
+        id="drawer-follow"
+        data-company-follow=""
+      >
+        ＋ 关注公司
+      </button>
+      <a
+        class="btn"
+        id="drawer-site-link"
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        hidden
+      >
+        访问官网 ↗
+      </a>
+    </footer>
+  </dialog>
+
+  <script
+    type="application/json"
+    id="map-data"
+    set:html={JSON.stringify(rows).replaceAll("<", "\\u003c")}
+  />
+  <script src="../../scripts/mapping.ts"></script>
+</Base>

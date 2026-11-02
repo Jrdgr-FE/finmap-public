@@ -1,0 +1,739 @@
+note: >
+  本文件收录国家金融监督管理总局《银行业金融机构法人名单》中机构类型标注为外资法人银行的全部机构，依据截至 2025 年 6 月 30 日的官方名单逐条核对，共 41 家（与截至 2025 年 12 月 31 日名单中的 41 家一致）。只收在中国境内注册的法人银行，不含外国及港澳台银行分行、外国银行代表处，也不含中德住房储蓄银行
+  （该行在官方名单中单列为住房储蓄银行类型）。name、license_code 与官方名单一致，官网核对日期为 2026 年 9 月 30 日。
+sources:
+  - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+  - { title: "国家金融监督管理总局", url: "https://www.nfra.gov.cn", date: "2026-09-30" }
+
+entities:
+  # ---------------- 上海（金融监管总局 / 上海金融监管局） ----------------
+  - id: bkf-bank-of-east-asia-china
+    name: 东亚银行（中国）有限公司
+    short: 东亚中国
+    category: banking
+    type: foreign-bank
+    license_code: B0049H131000001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.hkbea.com.cn
+    intro: >
+      香港东亚银行有限公司在内地设立的全资法人银行，2007 年 4 月 2 日与汇丰、渣打、花旗同为首批完成本地注册改制的外资法人银行，总部设在上海。经营企业金融、个人银行与财富管理业务，内地分行网络在外资法人银行中覆盖较广。
+    business: [企业金融, 个人银行, 财富管理, 跨境金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "东亚银行（中国）官网", url: "https://www.hkbea.com.cn", date: "2026-09-30" }
+
+  - id: bkf-hsbc-bank-china
+    name: 汇丰银行（中国）有限公司
+    short: 汇丰中国
+    category: banking
+    type: foreign-bank
+    license_code: B0047H131000001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.hsbc.com.cn
+    intro: >
+      英国汇丰控股旗下汇丰银行在内地的全资法人银行，2007 年 4 月 2 日首批完成本地注册改制，以资产规模计为在华最大外资法人银行，总部设在上海。业务横跨财富管理及个人银行、工商金融、环球银行及资本市场三大板块。
+    business: [财富管理及个人银行, 工商金融, 环球银行及资本市场, 跨境金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "汇丰银行（中国）官网", url: "https://www.hsbc.com.cn", date: "2026-09-30" }
+
+  - id: bkf-standard-chartered-bank-china
+    name: 渣打银行（中国）有限公司
+    short: 渣打中国
+    category: banking
+    type: foreign-bank
+    license_code: B0048H131000001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.sc.com/cn/
+    intro: >
+      英国渣打集团在内地的全资法人银行，2007 年 4 月 2 日首批完成本地注册改制，总部设在上海。以企业及投资银行业务为重心，同时经营个人金融与财富管理，近年主动退出部分低效零售网点。
+    business: [企业及投资银行, 个人金融, 财富管理, 跨境贸易融资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "渣打银行（中国）官网", url: "https://www.sc.com/cn/", date: "2026-09-30" }
+
+  - id: bkf-anz-bank-china
+    name: 澳大利亚和新西兰银行（中国）有限公司
+    short: 澳新中国
+    category: banking
+    type: foreign-bank
+    license_code: B0079H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    website: https://www.anz.com/institutional/global/china/zh-hans/
+    intro: >
+      澳大利亚和新西兰银行集团在上海设立的全资子行，2010 年 9 月 16 日成立、同年 10 月开业，是目前唯一在中国本地注册的澳大利亚银行。主营机构银行与企业跨境业务，涵盖贸易与供应链融资、外汇及大宗商品，已退出内地零售与财富管理业务。
+    business: [机构银行, 贸易与供应链融资, 外汇及大宗商品, 跨境金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "澳新银行中国业务页", url: "https://www.anz.com/institutional/global/china/zh-hans/", date: "2026-09-30" }
+
+  - id: bkf-united-overseas-bank-china
+    name: 大华银行（中国）有限公司
+    short: 大华中国
+    category: banking
+    type: foreign-bank
+    license_code: B0308H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.uobchina.com.cn
+    intro: >
+      新加坡大华银行（UOB）的在华全资子公司，2007 年 12 月 18 日注册成立，总部设在上海，注册资本 75 亿元人民币。以对公业务为主，聚焦东南亚与中国之间的跨境贸易结算、项目融资和财富管理。
+    business: [对公业务, 跨境贸易结算, 项目融资, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "大华银行（中国）官网", url: "https://www.uobchina.com.cn", date: "2026-09-30" }
+
+  - id: bkf-credit-agricole-cib-china
+    name: 东方汇理银行（中国）有限公司
+    short: 东方汇理中国
+    category: banking
+    type: foreign-bank
+    license_code: B1022H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2009
+    intro: >
+      法国东方汇理银行股份有限公司（Crédit Agricole CIB）的全资附属子行，2009 年 7 月 1 日完成本地注册成为法人银行、8 月 3 日正式对外营业，总部设在上海。以企业和机构客户为主，经营银团贷款、贸易融资、外汇与衍生品、债券承销等批发银行业务；未设独立于母行的中国官网。
+    business: [银团贷款, 贸易融资, 外汇与衍生品, 债券承销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "东方汇理银行（中国）有限公司2025年度报告（中文）", url: "https://www.ca-cib.com/sites/default/files/2026-05/2025%20Annual%20Report_CN_download.pdf", date: "2026-05-31" }
+
+  - id: bkf-fubon-bank-china
+    name: 富邦华一银行有限公司
+    short: 富邦华一
+    category: banking
+    type: foreign-bank
+    license_code: B0021H231000001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    website: https://www.fubonchina.com
+    intro: >
+      1997 年 3 月 20 日以中外合资形式在上海注册成立，原名华一银行，2014 年富邦金控完成控股收购后更名为富邦华一银行。是中国大陆首家取得全牌照的台资银行，主要服务台商台胞及中小企业，经营公司银行、个人银行与跨境金融业务。
+    business: [台商金融, 公司银行, 个人银行, 跨境金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "富邦华一银行官网", url: "https://www.fubonchina.com", date: "2026-09-30" }
+
+  - id: bkf-cathay-united-bank-china
+    name: 国泰世华银行（中国）有限公司
+    short: 国泰世华中国
+    category: banking
+    type: foreign-bank
+    license_code: B1761H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2018
+    website: https://www.cathaybk.com.cn
+    intro: >
+      台湾国泰世华商业银行在上海设立的全资法人银行，2018 年 6 月获银保监会批准开业、9 月 10 日正式开业，由上海分行升格而来，是近十年来首家转制为法人银行的分行。主要服务台资企业与长三角地区客户，经营公司银行及个人金融业务。
+    business: [台商金融, 公司银行, 个人金融, 跨境金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "国泰世华银行（中国）官网", url: "https://www.cathaybk.com.cn", date: "2026-09-30" }
+
+  - id: bkf-hang-seng-bank-china
+    name: 恒生银行（中国）有限公司
+    short: 恒生中国
+    category: banking
+    type: foreign-bank
+    license_code: B0269H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.hangseng.com.cn
+    intro: >
+      香港恒生银行的全资附属公司，2007 年 5 月成立，总部设在上海浦东，是首批完成本地注册改制的外资法人银行之一。业务覆盖珠三角、长三角及环渤海区域，为个人及商业客户提供银行、投资和理财服务。
+    business: [个人银行, 商业银行业务, 财富管理, 跨境金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "恒生银行（中国）官网", url: "https://www.hangseng.com.cn", date: "2026-09-30" }
+
+  - id: bkf-citibank-china
+    name: 花旗银行（中国）有限公司
+    short: 花旗中国
+    category: banking
+    type: foreign-bank
+    license_code: B0249H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.citibank.com.cn
+    intro: >
+      美国花旗集团在内地的全资法人银行，2007 年 4 月 2 日首批完成本地注册改制，总部设在上海。
+      2023 年底完成个人银行业务剥离后全面转向企业与机构客户，形成以企业银行和金融市场业务为主的经营模式。
+    business: [企业银行, 金融市场业务, 跨境资金管理, 贸易融资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "花旗银行（中国）官网", url: "https://www.citibank.com.cn", date: "2026-09-30" }
+
+  - id: bkf-east-west-bank-china
+    name: 华美银行（中国）有限公司
+    short: 华美中国
+    category: banking
+    type: foreign-bank
+    license_code: B0305H231000001
+    regulator: 国家金融监督管理总局
+    founded: 1992
+    website: https://www.eastwestbank.com.cn
+    intro: >
+      美国华美银行（East West Bank）在上海设立的外商独资法人银行；法人主体前身为 1992 年经中国人民银行批准在汕头成立的泰华国际银行，历经德富泰银行、联合银行（中国）等沿革，2010 年 3 月更名华美银行（中国）。以中美跨境金融为特色，服务跨境企业与高净值客户。
+    business: [中美跨境金融, 公司银行, 贸易融资, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "华美银行（中国）官网", url: "https://www.eastwestbank.com.cn", date: "2026-09-30" }
+
+  - id: bkf-ocbc-bank-china
+    name: 华侨银行有限公司
+    short: 华侨银行中国
+    category: banking
+    type: foreign-bank
+    license_code: B0286H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.ocbc.com.cn
+    intro: >
+      新加坡华侨银行在中国的全资法人银行，2007 年 8 月 1 日在上海成立华侨银行（中国），2016 年吸收合并永亨银行（中国）后为华侨永亨银行（中国），
+      2023 年 12 月更名为华侨银行有限公司。业务涵盖公司银行、个人银行、财富管理与跨境金融，是东南亚资本在华布局的代表性银行。
+    business: [公司银行, 个人银行, 财富管理, 跨境金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "华侨银行中国官网", url: "https://www.ocbc.com.cn", date: "2026-09-30" }
+
+  - id: bkf-nanyang-commercial-bank-china
+    name: 南洋商业银行（中国）有限公司
+    short: 南商中国
+    category: banking
+    type: foreign-bank
+    license_code: B0307H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.ncbchina.cn
+    intro: >
+      由香港南洋商业银行在内地分行基础上改制设立的外商独资商业银行，2007 年 12 月成立，总部设在上海；现由中国信达资产管理股份有限公司通过南洋商业银行有限公司全资持有。经营公司银行、个人银行及跨境金融服务，在内地外资银行中资产规模居前。
+    business: [公司银行, 个人银行, 跨境金融, 贸易融资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "南洋商业银行（中国）官网", url: "https://www.ncbchina.cn", date: "2026-09-30" }
+
+  - id: bkf-bangkok-bank-china
+    name: 盘谷银行（中国）有限公司
+    short: 盘谷中国
+    category: banking
+    type: foreign-bank
+    license_code: B1031H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2009
+    website: https://www.bangkokbank.com.cn
+    intro: >
+      泰国盘谷银行在上海设立的全资法人银行，2009 年在原深圳、上海、厦门、北京等分行基础上成立。聚焦中国与东南亚之间的跨境业务，为在华泰资企业、中资企业和跨国企业提供存贷款、贸易融资与外汇结算服务。
+    business: [跨境金融, 贸易融资, 对公存贷款, 东南亚业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "盘谷银行（中国）官网关于我们", url: "https://www.bangkokbank.com.cn/about_cn.html", date: "2026-09-30" }
+
+  - id: bkf-shanghai-innovation-bank
+    name: 上海科创银行有限公司
+    short: 上海科创银行
+    category: banking
+    type: foreign-bank
+    license_code: B0996H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2012
+    intro: >
+      2012 年 7 月获开业批复、8 月开业，原名浦发硅谷银行，由上海浦东发展银行与美国硅谷银行各持股 50% 合资设立，是中国首家专注科技创新的商业银行。
+      2024 年完成股权调整与更名，现由上海浦东发展银行全资持有；金融监管总局现行名单仍将其归入外资法人银行口径。
+    business: [科技金融, 科创企业贷款, 投贷联动, 跨境科创服务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "国家金融监督管理总局上海监管局关于浦发硅谷银行有限公司变更名称的批复（转载）", url: "https://www.nbd.com.cn/articles/2024-09-02/3541987.html", date: "2024-09-02" }
+
+  - id: bkf-mizuho-bank-china
+    name: 瑞穗银行（中国）有限公司
+    short: 瑞穗中国
+    category: banking
+    type: foreign-bank
+    license_code: B0071H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.mizuhogroup.com/asia-pacific/china/about
+    intro: >
+      日本瑞穗银行股份有限公司 100% 出资的本地法人银行，2007 年 6 月 1 日开业，总部设在上海，注册资本 95 亿元人民币。以日资企业和跨国企业客户为主，经营公司信贷、贸易融资、外汇与衍生品、银团贷款和跨境资金结算。
+    business: [公司信贷, 贸易融资, 外汇与衍生品, 日资企业金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "瑞穗银行（中国）简介", url: "https://www.mizuhogroup.com/asia-pacific/china/about", date: "2026-09-30" }
+
+  - id: bkf-smbc-china
+    name: 三井住友银行（中国）有限公司
+    short: 三井住友中国
+    category: banking
+    type: foreign-bank
+    license_code: B1012H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2009
+    website: https://www2.smbc.co.jp/global/location_oversea/china/index.html
+    intro: >
+      日本三井住友银行股份有限公司全额出资的中国本地法人银行，2009 年 4 月 27 日正式开业，总行设在上海，注册资本 100 亿元人民币。以日资企业、跨国企业及中资金融机构为客户，经营公司信贷、贸易融资、外汇衍生品与资本市场业务。
+    business: [公司信贷, 贸易融资, 外汇衍生品, 日资企业金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "三井住友银行（中国）有限公司官方页面", url: "https://www2.smbc.co.jp/global/location_oversea/china/index.html", date: "2026-09-30" }
+
+  - id: bkf-mufg-bank-china
+    name: 三菱日联银行（中国）有限公司
+    short: 三菱日联中国
+    category: banking
+    type: foreign-bank
+    license_code: B0288H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    intro: >
+      日本三菱日联银行股份有限公司 100% 出资的本地法人银行，2007 年 7 月 2 日开业，总行设在上海，注册资本 100 亿元人民币。原名三菱东京日联银行（中国），后更名为现名，经营范围涵盖公司信贷、贸易融资、外汇与衍生品、人民币债券承销及跨境结算；未设独立于母行的中国官网。
+    business: [公司信贷, 贸易融资, 外汇与衍生品, 债券承销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "三菱日联银行（中国）有限公司公司简介及摘要", url: "https://www.bk.mufg.jp/global/globalnetwork/asiaoceania/pdf/shanghai/china_disclosure_2025.pdf", date: "2025-12-31" }
+
+  - id: bkf-dbs-bank-china
+    name: 星展银行（中国）有限公司
+    short: 星展中国
+    category: banking
+    type: foreign-bank
+    license_code: B0270H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.dbs.com.cn
+    intro: >
+      新加坡星展银行有限公司全资持有的在华法人银行，2007 年 5 月 24 日经原银监会批准成立，注册地在上海，注册资本 80 亿元人民币，是首家在中国设立独资法人银行的新加坡银行。业务重点为企业及机构业务、环球交易服务、环球金融市场、个人银行及财富管理。
+    business: [企业及机构银行, 环球交易服务, 环球金融市场, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "星展银行（中国）官网", url: "https://www.dbs.com.cn", date: "2026-09-30" }
+
+  - id: bkf-zheng-xin-bank
+    name: 正信银行有限公司
+    short: 正信银行
+    category: banking
+    type: foreign-bank
+    license_code: B1065H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    website: https://www.zxbk.com.cn
+    intro: >
+      2010 年 1 月经原银监会批准，在原正大国际财务有限公司（1992 年经中国人民银行批准设立的中国境内第一家社会性外资财务公司）基础上改制设立并开业，总行设在上海，注册资本 10 亿元人民币。股东为泰国泰京银行、泰纳昌银行和正大集团旗下的卜蜂国际投资有限公司，业务以外汇、结售汇和跨境汇款等对公金融服务为主。
+    business: [外汇业务, 结售汇, 跨境汇款, 对公存款]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "正信银行官网", url: "https://www.zxbk.com.cn", date: "2026-09-30" }
+
+  # ---------------- 北京（北京金融监管局） ----------------
+  - id: bkf-bank-of-montreal-china
+    name: 蒙特利尔银行（中国）有限公司
+    short: 蒙行中国
+    category: banking
+    type: foreign-bank
+    license_code: B1090H211000001
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    intro: >
+      加拿大蒙特利尔银行（BMO）在内地设立的外商独资法人银行，2010 年 7 月领取金融许可证并于同年 9 月开业，总部设在北京，是首家也是目前唯一在中国大陆设立本地法人银行的加拿大银行。主要服务跨国企业客户，以对公批发业务和跨境金融服务为主；未设独立于母行的中国官网。
+    business: [对公业务, 跨境金融, 外汇与衍生品, 贸易融资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "蒙特利尔银行（中国）有限公司年度信息披露报告", url: "https://www.bmo.com/asia/chinese/pdf/annual_information_disclosure_report_2018.pdf", date: "2019-04-30" }
+
+  - id: bkf-deutsche-bank-china
+    name: 德意志银行（中国）有限公司
+    short: 德银中国
+    category: banking
+    type: foreign-bank
+    license_code: B0312H211000001
+    regulator: 国家金融监督管理总局
+    founded: 2008
+    website: https://www.deutsche-bank.com.cn/china/index
+    intro: >
+      德国德意志银行在内地的全资法人银行，2008 年 1 月 2 日正式开业，总部设在北京，并在北京、上海和广州设有分行。主营企业与机构银行业务，涵盖公司贷款、贸易融资、外汇与固定收益、现金管理及跨境资本市场服务。
+    business: [企业银行, 金融市场业务, 外汇与固定收益, 跨境现金管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "德意志银行（中国）官网", url: "https://www.deutsche-bank.com.cn/china/index", date: "2026-09-30" }
+
+  - id: bkf-societe-generale-china
+    name: 法国兴业银行（中国）有限公司
+    short: 法兴中国
+    category: banking
+    type: foreign-bank
+    license_code: B0341H211000001
+    regulator: 国家金融监督管理总局
+    founded: 2008
+    website: https://www.societegenerale.com.cn
+    intro: >
+      法国兴业银行集团全资持有的在华法人银行，2008 年 7 月 30 日经原银监会批准转制成立、9 月 16 日正式开业，总部设在北京，是最早获准在北京设立代表处的外资银行之一。以商业银行、资本市场和投资银行领域的企业与金融机构客户服务为主。
+    business: [企业与机构银行, 资本市场, 投资银行, 结构性融资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "法国兴业银行（中国）官网", url: "https://www.societegenerale.com.cn", date: "2026-09-30" }
+
+  - id: bkf-kookmin-bank-china
+    name: 国民银行（中国）有限公司
+    short: 国民银行中国
+    category: banking
+    type: foreign-bank
+    license_code: B0291H211000001
+    regulator: 国家金融监督管理总局
+    website: https://www.kbstarchina.com
+    intro: >
+      韩国国民银行（KB Kookmin Bank，现属 KB 金融集团）在北京设立的全资法人银行。主要服务在华韩资企业与跨国企业客户，经营对公存贷款、贸易结算与外汇业务。
+    business: [对公业务, 贸易结算, 外汇业务, 韩资企业金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "国民银行（中国）官网", url: "https://www.kbstarchina.com", date: "2026-09-30" }
+
+  - id: bkf-keb-hana-bank-china
+    name: 韩亚银行（中国）有限公司
+    short: 韩亚中国
+    category: banking
+    type: foreign-bank
+    license_code: B0309H211000001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.hanabank.cn
+    intro: >
+      韩国韩亚银行（现属韩亚金融集团）在北京设立的全资法人银行，2007 年 12 月宣布成立，总部设在北京。以在华韩资企业和个人客户为主要客群，经营本外币存贷款、贸易结算与个人银行服务。
+    business: [对公业务, 个人银行, 贸易结算, 韩资企业金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "韩亚银行（中国）官网", url: "https://www.hanabank.cn", date: "2026-09-30" }
+
+  - id: bkf-jpmorgan-chase-bank-china
+    name: 摩根大通银行（中国）有限公司
+    short: 摩根大通中国
+    category: banking
+    type: foreign-bank
+    license_code: B0294H211000001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.jpmorganchina.com.cn
+    intro: >
+      美国摩根大通集团在内地的全资法人银行，2007 年 7 月 25 日成立、同年 10 月在北京开业，是首家在北京注册并开展业务的外资法人银行。不涉足个人零售业务，专注批发银行，为企业与机构客户提供贸易融资、资金交易、公司存贷与现金管理。
+    business: [批发银行, 贸易融资, 资金交易, 现金管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "摩根大通银行（中国）官网", url: "https://www.jpmorganchina.com.cn", date: "2026-09-30" }
+
+  - id: bkf-ubs-china
+    name: 瑞士银行（中国）有限公司
+    short: 瑞银中国
+    category: banking
+    type: foreign-bank
+    license_code: B0033H211000001
+    regulator: 国家金融监督管理总局
+    founded: 2012
+    intro: >
+      瑞士瑞银集团（UBS）的全资法人银行，2012 年成立，是首家在中国设立外商独资法人银行的瑞士银行，总部设在北京，并于 2014 年设立北京朝阳区支行、2016 年设立上海分行。业务以财富管理为核心，2022 年起获批开展挂钩汇率与利率的互换衍生品业务；未设独立于母行的中国官网。
+    business: [财富管理, 衍生品业务, 跨境资产配置]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "瑞银集团中国内地业务页", url: "https://www.ubs.com/global/sc/our-firm/what-we-do/ubs-in-china.html", date: "2026-09-30" }
+
+  - id: bkf-shinhan-bank-china
+    name: 新韩银行（中国）有限公司
+    short: 新韩中国
+    category: banking
+    type: foreign-bank
+    license_code: B0323H211000001
+    regulator: 国家金融监督管理总局
+    founded: 2008
+    website: https://www.shinhanchina.com
+    intro: >
+      韩国新韩银行全资持有、注册在北京的外商独资法人银行，2008 年 5 月 12 日正式开业，注册资本 20 亿元人民币。以在华韩资企业和跨国企业客户为主，经营人民币与外汇存贷款、贸易结算及衍生品业务。
+    business: [对公业务, 贸易结算, 外汇业务, 韩资企业金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "新韩银行（中国）官网", url: "https://www.shinhanchina.com", date: "2026-09-30" }
+
+  - id: bkf-woori-bank-china
+    name: 友利银行（中国）有限公司
+    short: 友利中国
+    category: banking
+    type: foreign-bank
+    license_code: B0304H211000001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.wooribankchina.com
+    intro: >
+      韩国友利银行在内地的全资法人银行，2007 年 11 月 12 日在北京举行开业庆典，是首家在华成立法人银行的韩资银行。以在华韩资企业为主要客群，同时经营个人银行与人民币零售业务。
+    business: [对公业务, 个人银行, 贸易结算, 韩资企业金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "友利银行（中国）官网", url: "https://www.wooribankchina.com", date: "2026-09-30" }
+
+  - id: bkf-bnp-paribas-china
+    name: 法国巴黎银行（中国）有限公司
+    short: 法巴中国
+    category: banking
+    type: foreign-bank
+    license_code: B0019H231000001
+    regulator: 国家金融监督管理总局
+    website: https://china.bnpparibas.com/
+    intro: >
+      法国巴黎银行单独出资、在中国注册的外商投资法人银行，2007 年 8 月获原银监会批准由在华分行改制设立，总部设在上海，并在北京、天津、广州设有分行。主要为跨国企业、金融机构和大型中资企业提供公司信贷、贸易融资、外汇与衍生品、现金管理及跨境资本市场服务。
+    business: [公司信贷, 贸易融资, 外汇与衍生品, 现金管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "法国巴黎银行（中国）有限公司年度信息披露报告书", url: "https://cdn.territories.bnpparibas/app/uploads/sites/24/2019/06/2018%E5%B9%B4%E5%BA%A6%E4%BF%A1%E6%81%AF%E6%8A%AB%E9%9C%B2%E6%8A%A5%E5%91%8A%E4%B9%A6.pdf", date: "2019-06-30" }
+
+  # ---------------- 天津（天津金融监管局） ----------------
+  - id: bkf-industrial-bank-of-korea-china
+    name: 企业银行（中国）有限公司
+    short: 企业银行中国
+    category: banking
+    type: foreign-bank
+    license_code: B1017H212000001
+    regulator: 国家金融监督管理总局
+    intro: >
+      韩国中小企业银行（IBK，Industrial Bank of Korea）在天津设立的全资法人银行。定位于服务中小企业，主要为在华韩资中小企业和个体工商户提供存贷款、结算与外汇服务；未设独立于母行的中国官网。
+    business: [中小企业金融, 对公业务, 贸易结算, 韩资企业金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+
+  # ---------------- 南京 / 江苏（江苏金融监管局） ----------------
+  - id: bkf-metropolitan-bank-china
+    name: 首都银行（中国）有限公司
+    short: 首都银行中国
+    category: banking
+    type: foreign-bank
+    license_code: B1064H232010001
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    website: https://www.metrobank.com.cn
+    intro: >
+      菲律宾首都银行及信托有限公司（Metropolitan Bank & Trust）在南京设立的外商独资银行，2010 年 3 月 2 日正式对外营业，是江苏省第一家外资法人银行。以长三角为中心辐射全国，经营公司银行、个人存款、贸易融资与跨境结算业务。
+    business: [公司银行, 贸易融资, 跨境结算, 个人存款]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "首都银行（中国）官网关于我们", url: "https://www.metrobank.com.cn/website_cn/about_metrobank.html", date: "2026-09-30" }
+
+  - id: bkf-bank-sinopac-china
+    name: 永丰银行（中国）有限公司
+    short: 永丰中国
+    category: banking
+    type: foreign-bank
+    license_code: B0409H232010001
+    regulator: 国家金融监督管理总局
+    founded: 2014
+    website: https://www.sinopac.com.cn
+    intro: >
+      台湾永丰商业银行股份有限公司在中国大陆设立的全资子公司，2014 年 2 月 28 日正式对外营业，注册资本 20 亿元人民币，总部设在江苏省南京市河西中央商务区。主要服务台资企业与长三角地区客户，经营公司金融、贸易融资与个人金融业务。
+    business: [台商金融, 公司金融, 贸易融资, 个人金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "永丰银行（中国）官网公司简介", url: "https://www.sinopac.com.cn/sinopacBC/about/20170930103736152000000000000791.html", date: "2026-09-30" }
+
+  - id: bkf-chang-hwa-commercial-bank
+    name: 彰银商业银行有限公司
+    short: 彰银商业银行
+    category: banking
+    type: foreign-bank
+    license_code: B1743H232010001
+    regulator: 国家金融监督管理总局
+    founded: 2018
+    website: https://www.bankchanghwa.com.cn
+    intro: >
+      台湾彰化商业银行在南京设立的独资法人银行，2018 年成立，是金融监管总局现行名单中最年轻的外资法人银行之一。主要服务在长三角设厂的台资企业，经营企业存贷款、贸易融资、外汇结算及衍生品业务。
+    business: [台商金融, 企业存贷款, 贸易融资, 外汇结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "彰银商业银行官网", url: "https://www.bankchanghwa.com.cn", date: "2026-09-30" }
+
+  # ---------------- 广东 / 深圳 / 厦门 ----------------
+  - id: bkf-morgan-stanley-bank-international-china
+    name: 摩根士丹利国际银行（中国）有限公司
+    short: 摩根士丹利国际银行中国
+    category: banking
+    type: foreign-bank
+    license_code: B0029H244040001
+    regulator: 国家金融监督管理总局
+    founded: 1984
+    website: https://www.morganstanley.com.cn
+    intro: >
+      美国摩根士丹利集团旗下在华的法人银行，法人主体前身为 1984 年成立的珠海南通银行，2006 年由摩根士丹利收购、2007 年更名为现名，是现行名单中成立最早的外资法人银行。以对公批发业务为主，为企业与机构客户提供贷款、外汇、贸易融资和跨境资金服务。
+    business: [对公批发业务, 外汇业务, 贸易融资, 跨境资金服务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "摩根士丹利中国官网", url: "https://www.morganstanley.com.cn", date: "2026-09-30" }
+
+  - id: bkf-allied-commercial-bank
+    name: 新联商业银行
+    short: 新联商业银行
+    category: banking
+    type: foreign-bank
+    license_code: B0026H235020001
+    regulator: 国家金融监督管理总局
+    founded: 1993
+    website: http://www.alliedbankchina.com.cn
+    intro: >
+      1993 年经中国人民银行总行批准在福建省厦门市成立的外商独资银行，由菲律宾陈永栽财团旗下的菲律宾联盟银行（Allied Banking Corp）控股。业务规模较小，以对公存贷款、贸易结算和外汇业务为主，在厦门和重庆设有分支机构。
+    business: [对公存贷款, 贸易结算, 外汇业务, 侨资企业金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "新联商业银行官网", url: "http://www.alliedbankchina.com.cn", date: "2026-09-30" }
+
+  - id: bkf-dah-sing-bank-china
+    name: 大新银行（中国）有限公司
+    short: 大新中国
+    category: banking
+    type: foreign-bank
+    license_code: B0333H244030001
+    regulator: 国家金融监督管理总局
+    website: https://www.dahsing.com.cn
+    intro: >
+      香港大新银行集团在内地设立的全资法人银行，总部设在深圳，并在深圳前海等地设有支行。主要服务粤港澳大湾区的中小企业与个人客户，经营企业存贷款、贸易融资、个人银行与跨境金融服务。
+    business: [中小企业金融, 企业存贷款, 个人银行, 跨境金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "大新银行（中国）官网", url: "https://www.dahsing.com.cn", date: "2026-09-30" }
+
+  - id: bkf-chinese-mercantile-bank
+    name: 华商银行
+    short: 华商银行
+    category: banking
+    type: foreign-bank
+    license_code: B0028H244030001
+    regulator: 国家金融监督管理总局
+    founded: 1993
+    website: https://www.cmbcn.com.cn
+    intro: >
+      1993 年 6 月由中国工商银行牵头组建，是广东省首家中外合资银行，总部设在深圳；2005 年 8 月成为中国工商银行集团全资成员企业、中国工商银行（亚洲）有限公司子公司，企业性质变更为外商独资银行。作为工银亚洲拓展内地业务的旗舰，具备全面商业银行业务牌照，聚焦粤港澳大湾区。
+    business: [公司银行, 贸易融资, 跨境金融, 粤港澳大湾区业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "华商银行官网银行简介", url: "https://www.cmbcn.com.cn/cn/column/1438058492123824205.html", date: "2026-09-30" }
+
+  - id: bkf-kasikornbank-china
+    name: 开泰银行（中国）有限公司
+    short: 开泰中国
+    category: banking
+    type: foreign-bank
+    license_code: B1628H244030001
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: https://www.kasikornbank.com.cn
+    intro: >
+      泰国开泰银行（Kasikornbank）在深圳设立的全资法人银行，2017 年 11 月 6 日经原银监会批准正式对外营业，总部设在深圳，并在成都、上海设有分行。聚焦中国与东盟之间的跨境金融，为泰资、中资及跨国企业提供存贷款、贸易融资与结算服务。
+    business: [跨境金融, 贸易融资, 对公存贷款, 东盟业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "开泰银行（中国）官网介绍", url: "https://www.kasikornbank.com.cn/html/ktyxzgjs/", date: "2026-09-30" }
+
+  - id: bkf-e-sun-bank-china
+    name: 玉山银行（中国）有限公司
+    short: 玉山中国
+    category: banking
+    type: foreign-bank
+    license_code: B0859H244030001
+    regulator: 国家金融监督管理总局
+    website: https://www.esun-bank.com.cn
+    intro: >
+      台湾玉山商业银行在中国大陆设立的全资法人银行，总部设在深圳。以服务台商企业为核心定位，经营企业存贷款、贸易融资、外汇结算及金融市场业务。
+    business: [台商金融, 企业存贷款, 贸易融资, 外汇结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "玉山银行（中国）官网", url: "https://www.esun-bank.com.cn", date: "2026-09-30" }
+
+  - id: bkf-citic-bank-international-china
+    name: 中信银行国际（中国）有限公司
+    short: 中信银行国际中国
+    category: banking
+    type: foreign-bank
+    license_code: B0321H244030001
+    regulator: 国家金融监督管理总局
+    intro: >
+      中信银行（国际）有限公司在内地设立的全资法人银行，总部设在深圳，是中信集团跨境商业银行体系的组成部分。主要经营对公存贷款、贸易融资、跨境结算与外汇业务；未设独立于母行的中国官网。
+    business: [对公存贷款, 贸易融资, 跨境结算, 外汇业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银行业金融机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "中信银行（国际）中国业务页", url: "https://www.cncbinternational.com/china/banking-in-china/sc/index.jsp", date: "2026-09-30" }

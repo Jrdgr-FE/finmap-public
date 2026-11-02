@@ -1,0 +1,253 @@
+---
+import Base from '../../layouts/Base.astro';
+import OrgRow from '../../components/OrgRow.astro';
+import SourceList from '../../components/SourceList.astro';
+import {
+  getCollections,
+  getCategory,
+  getCategoryGlyph,
+  getTypeName,
+  formatStake,
+  stakeNeedsDate,
+} from '../../lib/data';
+import type { Collection, Entity } from '../../lib/data';
+
+export function getStaticPaths() {
+  const paths: Array<{
+    params: { id: string };
+    props: { entity: Entity; collection: Collection; chain: Entity[] };
+  }> = [];
+
+  for (const c of getCollections()) {
+    const byId = new Map(c.entities.map((e) => [e.id, e]));
+    for (const e of c.entities) {
+      const chain: Entity[] = [];
+      let cursor = e.parent;
+      const guard = new Set<string>();
+      while (cursor && cursor !== 'ROOT' && !guard.has(cursor)) {
+        guard.add(cursor);
+        const p = byId.get(cursor);
+        if (!p) break;
+        chain.unshift(p);
+        cursor = p.parent;
+      }
+      paths.push({ params: { id: e.id }, props: { entity: e, collection: c, chain } });
+    }
+  }
+  return paths;
+}
+
+interface Props {
+  entity: Entity;
+  collection: Collection;
+  chain: Entity[];
+}
+const { entity: e, collection, chain } = Astro.props;
+
+const cat = getCategory(e.category);
+const typeName = getTypeName(e.type);
+const stake = formatStake(e);
+const undated = stakeNeedsDate(e);
+const parentEntity = chain.length > 0 ? chain[chain.length - 1] : undefined;
+const isMass = e.tier === 'mass';
+const statusLabel =
+  e.status === 'exited' ? '已退出' : e.status === 'distressed' ? '风险处置中' : e.status === 'merging' ? '整合中' : undefined;
+
+// 面包屑的上一级：集团页、监管与基础设施页，或者两个列表页之一
+const home =
+  collection.is_group || collection.id === 'supervision'
+    ? { href: `/group/${collection.id}/`, label: collection.short }
+    : isMass
+      ? { href: '/roster/', label: '全量名册' }
+      : { href: '/orgs/', label: '机构库' };
+
+const children = collection.entities.filter((x) => x.parent === e.id);
+
+// 名录制里有近千家机构、彼此又没有股权关系，"同层级"会变成把整份名册抄一遍。
+// 这类集合改成只列同牌照类型的邻居，并且截断。
+const SIBLING_CAP = 12;
+const siblingPool = parentEntity
+  ? collection.entities.filter((x) => x.parent === parentEntity.id && x.id !== e.id)
+  : collection.entities.filter((x) => (!x.parent || x.parent === 'ROOT') && x.id !== e.id);
+const siblings =
+  siblingPool.length > 24 ? siblingPool.filter((x) => x.type === e.type) : siblingPool;
+const siblingsShown = siblings.slice(0, SIBLING_CAP);
+const siblingsTruncated = siblings.length > SIBLING_CAP;
+
+const facts: Array<{ k: string; v: string; href?: string; mono?: boolean }> = [
+  { k: '金融分类', v: cat?.name ?? e.category, href: `/category/${e.category}/` },
+  { k: '牌照类型', v: typeName },
+  ...(e.license_code ? [{ k: '机构编码', v: e.license_code, mono: true }] : []),
+  ...(e.regulator ? [{ k: '监管机构', v: e.regulator }] : []),
+  ...(e.region ? [{ k: '属地', v: e.region }] : []),
+  ...(e.founded ? [{ k: '成立年份', v: `${e.founded} 年` }] : []),
+  ...(e.listed && e.listed.length > 0 ? [{ k: '上市代码', v: e.listed.join(' · '), mono: true }] : []),
+];
+const stakeNote = stake
+  ? [e.stake_basis === 'aggregate' ? '集团多通道合计口径' : '直接持股', e.stake_asof ? `截至 ${e.stake_asof}` : undated ? '未标注时点' : '']
+      .filter(Boolean)
+      .join(' · ')
+  : '';
+---
+
+<Base title={e.short} description={e.intro.slice(0, 120)} current={isMass ? 'roster' : collection.is_group ? 'groups' : 'orgs'}>
+  <div class="wrap page">
+    <nav class="crumbs" aria-label="位置">
+      <a href="/">首页</a>
+      <span class="sep">/</span>
+      <a href={home.href}>{home.label}</a>
+      {chain.map((p) => (
+        <>
+          <span class="sep">/</span>
+          <a href={`/org/${p.id}/`}>{p.short}</a>
+        </>
+      ))}
+      <span class="sep">/</span>
+      <span aria-current="page">{e.short}</span>
+    </nav>
+
+    <section class="panel profile" data-cat={e.category}>
+      <div class="profile-top">
+        <span class="avatar" aria-hidden="true">{getCategoryGlyph(e.category)}</span>
+        <div class="profile-title">
+          <h1>{e.short}</h1>
+          {e.name !== e.short && <p class="legal">{e.name}</p>}
+          <div class="badges">
+            <span class="badge"><span class="badge-dot"></span>{cat?.name ?? e.category} · {typeName}</span>
+            {e.listed?.map((code) => <span class="badge badge-code">{code}</span>)}
+            {e.relation === 'affiliate' && <span class="badge badge-affiliate">与集团为参股／品牌关联，不受集团控股</span>}
+            {statusLabel && <span class:list={['badge', e.status === 'distressed' ? 'badge-warn' : 'badge-inactive']}>{statusLabel}</span>}
+            {isMass && <span class="badge badge-mass" title="来自监管名单的名册级导入，未逐一核实官网与经营情况">名册级记录</span>}
+          </div>
+        </div>
+        <div class="actions">
+          {e.website && (
+            <a class="btn btn-primary" href={e.website} target="_blank" rel="noopener noreferrer nofollow">
+              访问官网 ↗
+            </a>
+          )}
+          {collection.is_group && <a class="btn" href={`/group/${collection.id}/`}>在谱系图中查看</a>}
+        </div>
+      </div>
+      <p class="intro">{e.intro}</p>
+      {e.business && e.business.length > 0 && (
+        <div class="tags">
+          {e.business.map((b) => <span class="tag">{b}</span>)}
+        </div>
+      )}
+    </section>
+
+    <div class="layout" style="margin-top:var(--sp-4)">
+      <div class="stack">
+        {collection.is_group && (
+          <section class="panel">
+            <div class="panel-head">
+              <h2>股权关系</h2>
+              <span class="hint">从集团到本机构的控股路径，比例为上一层的持股</span>
+            </div>
+            <div class="panel-body">
+              <ol class="chain">
+                <li>
+                  <a href={`/group/${collection.id}/`}>{collection.name}</a>
+                </li>
+                {chain.map((p) => (
+                  <li>
+                    <a href={`/org/${p.id}/`}>{p.short}</a>
+                    {formatStake(p) && <span class="pct">{formatStake(p)}{stakeNeedsDate(p) && <span class="undated">*</span>}</span>}
+                  </li>
+                ))}
+                <li class="is-self">
+                  <span>{e.short}</span>
+                  {stake && <span class="pct">{stake}{undated && <span class="undated">*</span>}</span>}
+                </li>
+              </ol>
+              <div class="chain-note">
+                {stake ? (
+                  <p>本机构上层持股 <span class="mono">{stake}</span>（{stakeNote}）。</p>
+                ) : (
+                  <p>上层持股比例未披露或未见可靠来源，故留空。</p>
+                )}
+                {e.held_via && <p>持股通道：{e.held_via}</p>}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {e.note && (
+          <div class="note-box" data-cat={e.category}>
+            <strong>需要说明：</strong>{e.note}
+          </div>
+        )}
+
+        {children.length > 0 && (
+          <section class="panel">
+            <div class="panel-head">
+              <h2>旗下主体</h2>
+              <span class="right">{children.length} 家</span>
+            </div>
+            <div class="org-list">
+              {children.map((c) => <OrgRow entity={c} />)}
+            </div>
+          </section>
+        )}
+
+        {siblingsShown.length > 0 && (
+          <section class="panel">
+            <div class="panel-head">
+              <h2>{parentEntity ? `同属 ${parentEntity.short} 的机构` : `其他${typeName}`}</h2>
+              <span class="right">
+                {siblingsTruncated ? `共 ${siblings.length} 家，显示前 ${SIBLING_CAP} 家` : `${siblings.length} 家`}
+              </span>
+            </div>
+            <div class="org-list">
+              {siblingsShown.map((s) => <OrgRow entity={s} />)}
+            </div>
+            {siblingsTruncated && (
+              <div class="panel-foot">
+                <a href={`/category/${e.category}/`}>查看全部{typeName}（{siblings.length} 家）→</a>
+              </div>
+            )}
+          </section>
+        )}
+      </div>
+
+      <aside class="stack">
+        <section class="panel">
+          <div class="panel-head"><h2>基本信息</h2></div>
+          <div class="panel-body">
+            <dl class="kv">
+              {facts.map((f) => (
+                <div>
+                  <dt>{f.k}</dt>
+                  <dd class:list={[f.mono && 'mono']}>{f.href ? <a href={f.href}>{f.v}</a> : f.v}</dd>
+                </div>
+              ))}
+              {!collection.is_group && parentEntity && (
+                <div>
+                  <dt>上层主体</dt>
+                  <dd><a href={`/org/${parentEntity.id}/`}>{parentEntity.name}</a></dd>
+                </div>
+              )}
+              {!collection.is_group && stake && (
+                <div>
+                  <dt>上层持股</dt>
+                  <dd><span class="mono">{stake}</span><span class="sub">{stakeNote}</span></dd>
+                </div>
+              )}
+            </dl>
+          </div>
+        </section>
+
+        <section class="panel is-compact">
+          <div class="panel-head">
+            <h2>来源</h2>
+            <span class="right">{e.sources.length} 条</span>
+          </div>
+          <div class="panel-body">
+            <SourceList sources={e.sources} />
+          </div>
+        </section>
+      </aside>
+    </div>
+  </div>
+</Base>

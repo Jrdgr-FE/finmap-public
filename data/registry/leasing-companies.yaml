@@ -1,0 +1,1227 @@
+note: >-
+  本文件收录国家金融监督管理总局《银行业金融机构法人名单》中机构类型标注为金融租赁公司的全部持牌法人机构，依据截至 2025 年 6 月 30 日的官方名单逐条核对，共 70 家，金融许可证机构编码均以 M 开头（M0001H211000001—M0078H232010001）。只收金融监管总局批设的金融租赁公司，不含商务部及地方批设的外商投资融资租赁企业。
+  name 与 license_code 同官方名单一致；官网均经逐家打开核对内容确属该公司，无独立官网的（含仅挂在母行网站频道页下的）省略 website。
+sources:
+  - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+  - { title: "国家金融监督管理总局", url: "https://www.nfra.gov.cn", date: "2026-09-30" }
+
+entities:
+  - id: lz-icbc-leasing
+    name: "工银金融租赁有限公司"
+    short: "工银金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0011H212000001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.icbcleasing.com
+    intro: >-
+      中国工商银行股份有限公司全资子公司，注册地天津，2007 年 11 月成立，是国内首家银行系金融租赁公司，注册资本 330 亿元。主要经营飞机、船舶、新基建、新能源、高端装备制造等领域大型设备的融资租赁与经营租赁，下设工银航空金融租赁、工银航运金融租赁两家专业子公司。
+    business: [航空租赁, 航运租赁, 能源电力, 轨道交通, 装备制造]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "工银金租官网", url: "https://www.icbcleasing.com", date: "2026-09-30" }
+
+  - id: lz-cdb-leasing
+    name: "国银金融租赁股份有限公司"
+    short: "国银金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0017H244030001
+    regulator: 国家金融监督管理总局
+    founded: 1984
+    website: https://www.cdb-leasing.com
+    intro: >-
+      国家开发银行旗下唯一的租赁业务平台，注册地深圳，成立于 1984 年，是境内第一家上市金融租赁公司（1606.HK），注册资本 126.42 亿元。业务覆盖飞机、船舶、区域发展、普惠金融、绿色能源与高端装备制造，租赁资产及合作方遍及全球 40 余个国家和地区。
+    business: [航空租赁, 船舶租赁, 区域发展, 普惠金融, 绿色能源]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "国银金租官网", url: "https://www.cdb-leasing.com", date: "2026-09-30" }
+
+  - id: lz-ccb-leasing
+    name: "建信金融租赁有限公司"
+    short: "建信金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0013H211000001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: http://www.ccbleasing.com
+    intro: >-
+      中国建设银行股份有限公司全资子公司，注册地北京，2007 年 12 月 26 日成立，是国内首批获批设立的金融租赁公司之一，注册资本 110 亿元。业务以航空、船舶、大型设备与基础设施租赁为主。
+    business: [航空租赁, 船舶租赁, 基础设施租赁, 大型设备租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "建信金租官网", url: "http://www.ccbleasing.com", date: "2026-09-30" }
+
+  - id: lz-bocom-leasing
+    name: "交银金融租赁有限责任公司"
+    short: "交银金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0012H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.bocommleasing.com
+    intro: >-
+      交通银行股份有限公司全资子公司，总部上海，2007 年 12 月成立，是国务院批准成立的首批 5 家银行系金融租赁公司之一，注册资本 200 亿元。形成航运租赁、航空租赁、设备租赁三大业务板块，覆盖交通基建、能源电力、民生消费、设备制造等领域。
+    business: [航运租赁, 航空租赁, 设备租赁, 交通基建, 能源电力]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "交银金租官网", url: "https://www.bocommleasing.com", date: "2026-09-30" }
+
+  - id: lz-cmb-leasing
+    name: "招银金融租赁有限公司"
+    short: "招银金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0015H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2008
+    website: https://www.cmb-leasing.com
+    intro: >-
+      招商银行股份有限公司全资子公司，总部上海，2008 年 4 月 23 日成立，是国务院批准设立的首批银行系金融租赁公司之一。业务聚焦航空、航运、大型设备等领域，经营租赁与直租占比较高。
+    business: [航空租赁, 航运租赁, 大型设备租赁, 经营租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "招银金租官网", url: "https://www.cmb-leasing.com", date: "2026-09-30" }
+
+  - id: lz-minsheng-leasing
+    name: "民生金融租赁股份有限公司"
+    short: "民生金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0016H212000001
+    regulator: 国家金融监督管理总局
+    founded: 2008
+    website: https://www.msfl.com.cn
+    intro: >-
+      由中国民生银行股份有限公司发起设立并控股，注册地天津自贸试验区，2008 年 4 月 2 日成立，是国内首批 5 家银行系金融租赁公司之一，注册资本 50.95 亿元。业务涵盖飞机、船舶、乘用车、商用车与工程机械租赁。
+    business: [航空租赁, 船舶租赁, 车辆租赁, 工程机械]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "民生金租官网", url: "https://www.msfl.com.cn", date: "2026-09-30" }
+
+  - id: lz-spdb-leasing
+    name: "浦银金融租赁股份有限公司"
+    short: "浦银金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0024H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2012
+    website: https://www.spdbfl.com.cn
+    intro: >-
+      控股股东为上海浦东发展银行股份有限公司，股东还包括中国商用飞机有限责任公司、上海国有资产经营有限公司等，2012 年 5 月 11 日在上海开业，注册资本 64.03 亿元。专注航空、航运、航天、先进制造与绿色金融领域。
+    business: [航空租赁, 航运租赁, 航天租赁, 先进制造, 绿色金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "浦银金租官网", url: "https://www.spdbfl.com.cn", date: "2026-09-30" }
+
+  - id: lz-jiangsu-leasing
+    name: "江苏金融租赁股份有限公司"
+    short: "江苏金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0005H232010001
+    regulator: 国家金融监督管理总局
+    founded: 1985
+    website: https://www.jsleasing.cn
+    intro: >-
+      注册地南京，成立于 1985 年 6 月，2018 年 3 月 1 日在上交所主板上市（600901），是目前国内唯一登陆 A 股的金融租赁公司。主要股东包括江苏交通控股有限公司、南京银行、国际金融公司（IFC）和法国巴黎银行租赁公司（BPLG）。
+    business: [中小微租赁, 汽车金融, 清洁能源, 高端制造]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "江苏金租官网", url: "https://www.jsleasing.cn", date: "2026-09-30" }
+
+  - id: lz-cib-leasing
+    name: "兴业金融租赁有限责任公司"
+    short: "兴业金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0020H212000001
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    website: https://www.cib-leasing.com.cn
+    intro: >-
+      由兴业银行股份有限公司独资设立，注册地天津经济技术开发区，2010 年获准开业，注册资本 90 亿元。以绿色租赁为核心特色，形成绿色出行、清洁能源、节能减排、水环境治理、土壤治理、资源循环六类产品序列。
+    business: [绿色租赁, 清洁能源, 节能减排, 航空租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "兴业金租官网", url: "https://www.cib-leasing.com.cn", date: "2026-09-30" }
+
+  - id: lz-abc-leasing
+    name: "农银金融租赁有限公司"
+    short: "农银金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0021H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    intro: >-
+      中国农业银行股份有限公司全资子公司，注册地上海，2010 年 9 月成立，是中国农业银行股改上市后设立的第一家境内全资子公司，注册资本 95 亿元。经营融资租赁、固定收益类证券投资、同业拆借等业务。
+    business: [航空租赁, 航运租赁, 新能源, 三农服务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+
+  - id: lz-ceb-leasing
+    name: "光大金融租赁股份有限公司"
+    short: "光大金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0018H242010001
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    intro: >-
+      由中国光大银行股份有限公司持股 90%，湖北港口集团有限公司、武汉市轨道交通建设有限公司各持股 5%，2010 年 5 月成立，注册地湖北武汉，注册资本 59 亿元。业务覆盖交通、能源、医疗健康、文化旅游、公用事业，在航空设备、车辆设备、新能源细分市场形成特色。
+    business: [航空设备, 车辆设备, 新能源, 交通能源]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+
+  - id: lz-huaxia-leasing
+    name: "华夏金融租赁有限公司"
+    short: "华夏金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0026H253010001
+    regulator: 国家金融监督管理总局
+    founded: 2013
+    website: https://www.hxfl.com.cn
+    intro: >-
+      由华夏银行股份有限公司与昆明产业开发投资有限责任公司共同发起设立，注册地云南昆明，2013 年 4 月成立，注册资本 130 亿元。以绿色租赁为核心特色，布局普惠金融、产业金融、船舶航运、新能源，并拓展航空租赁、养老医疗、科技金融。
+    business: [绿色租赁, 普惠金融, 船舶航运, 新能源, 航空租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "华夏金租官网", url: "https://www.hxfl.com.cn", date: "2026-09-30" }
+
+  - id: lz-cinda-leasing
+    name: "信达金融租赁股份有限公司"
+    short: "信达金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0009H262010001
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    website: http://www.cindaflc.com
+    intro: >-
+      由中国信达资产管理股份有限公司持股 99.92%，2010 年对原西部租赁实施重组后成立，注册地兰州，分设北京、兰州两个办公区，注册资本 35.05 亿元。业务聚焦战略性新兴产业、绿色租赁与小微企业。
+    business: [绿色租赁, 战略性新兴产业, 小微企业]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "信达金租官网", url: "http://www.cindaflc.com", date: "2026-09-30" }
+
+  - id: lz-kunlun-leasing
+    name: "昆仑金融租赁有限责任公司"
+    short: "昆仑金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0019H250000001
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    intro: >-
+      由中国石油天然气集团有限公司与重庆机电控股（集团）公司共同发起设立，注册地重庆，2010 年 7 月成立，是国内首家由大型企业集团背景控股的金融租赁公司。以能源行业、交通运输和公共事业三大板块为重点。
+    business: [能源装备, 交通运输, 公用事业]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+
+  - id: lz-maxwealth-leasing
+    name: "永赢金融租赁有限公司"
+    short: "永赢金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0041H233020001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://www.maxwealthfl.com
+    intro: >-
+      宁波银行股份有限公司全资子公司，注册地宁波，2015 年 5 月成立，是浙江省首家银行系金融租赁公司，注册资本 70 亿元。重点拓展小微租赁、新能源、绿色交通、现代产业和航空租赁五大领域。
+    business: [小微租赁, 新能源, 绿色交通, 现代产业, 航空租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "永赢金租官网", url: "https://www.maxwealthfl.com", date: "2026-09-30" }
+
+  - id: lz-suyin-leasing
+    name: "苏银金融租赁股份有限公司"
+    short: "苏银金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0038H232010001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    intro: >-
+      由江苏银行股份有限公司主发起，股东还包括江苏凤凰出版传媒集团、江苏省沿海开发集团、红豆集团等，2015 年 5 月成立，注册地江苏南京，是江苏省内第一家银行系金融租赁公司。近年重点布局算力租赁与绿色租赁。
+    business: [算力租赁, 绿色租赁, 小微租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+
+  - id: lz-huiyin-leasing
+    name: "徽银金融租赁有限公司"
+    short: "徽银金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0037H234010001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://www.hyflc.com
+    intro: >-
+      由徽商银行股份有限公司持股 54% 并控股，注册地安徽合肥，2015 年 4 月 29 日成立，注册资本 30 亿元。立足安徽、放眼长三角，业务以基础设施与产业租赁为主。
+    business: [基础设施租赁, 产业租赁, 长三角]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "徽银金租官网", url: "https://www.hyflc.com", date: "2026-09-30" }
+
+  - id: lz-bob-leasing
+    name: "北银金融租赁有限公司"
+    short: "北银金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0028H211000001
+    regulator: 国家金融监督管理总局
+    founded: 2014
+    website: https://www.bob-leasing.com
+    intro: >-
+      由北京银行股份有限公司发起设立并持股 86.75%，注册地北京，2014 年 1 月成立，是国内首家由城商行发起设立的金融租赁公司，注册资本 41.51 亿元。深耕绿色能源、智能制造、信息技术、航空航运等领域。
+    business: [绿色能源, 智能制造, 信息技术, 航空航运]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "北银金租官网", url: "https://www.bob-leasing.com", date: "2026-09-30" }
+
+  - id: lz-cqrc-leasing
+    name: "渝农商金融租赁有限责任公司"
+    short: "渝农商金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0034H250000001
+    regulator: 国家金融监督管理总局
+    founded: 2014
+    website: https://www.cqrcfl.com
+    intro: >-
+      由重庆农村商业银行股份有限公司牵头出资并控股，联合重庆两江金融发展有限公司等发起设立，2014 年 12 月 19 日成立，注册地重庆，注册资本 25 亿元。业务覆盖中小三农、公共事业、工业装备与能源资源领域。
+    business: [中小三农, 公共事业, 工业装备, 能源资源]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "渝农商金租官网", url: "https://www.cqrcfl.com", date: "2026-09-30" }
+
+  - id: lz-suzhou-leasing
+    name: "苏州金融租赁股份有限公司"
+    short: "苏州金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0051H332050001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: http://www.suzhouleasing.com
+    intro: >-
+      由苏州银行股份有限公司联合苏州广电传媒集团、苏州江南嘉捷电梯、阿特斯阳光电力集团发起设立，注册地江苏苏州，2015 年 12 月成立，注册资本 26.07 亿元。聚焦环保新能源、交通运输、高端制造、普惠民生、市政公用板块，主打银租联动与厂商租赁模式。
+    business: [环保新能源, 交通运输, 高端制造, 市政民生, 厂商租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "苏州金租官网", url: "http://www.suzhouleasing.com", date: "2026-09-30" }
+
+  - id: lz-harbin-leasing
+    name: "哈银金融租赁有限责任公司"
+    short: "哈银金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0029H223010001
+    regulator: 国家金融监督管理总局
+    founded: 2014
+    website: https://www.hrbbleasing.com
+    intro: >-
+      由哈尔滨银行股份有限公司作为控股股东发起设立，注册地哈尔滨，2014 年 6 月成立，注册资本 20 亿元。以涉农和绿色环保为行业定位，服务三农与实体经济。
+    business: [涉农租赁, 绿色环保, 三农服务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "哈银金租官网", url: "https://www.hrbbleasing.com", date: "2026-09-30" }
+
+  - id: lz-crcc-leasing
+    name: "中铁建金融租赁有限公司"
+    short: "中铁建金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0057H212000001
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: http://www.crccfl.com
+    intro: >-
+      由中国铁建股份有限公司主导发起，中国铁建重工集团等出资设立，注册地天津东疆，2016 年获准筹建并开业。业务覆盖工程装备、基础设施、能源环保等领域的直接租赁、售后回租、经营租赁与厂商租赁。
+    business: [工程装备, 基础设施, 能源环保, 厂商租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "中铁建金租官网", url: "http://www.crccfl.com", date: "2026-09-30" }
+
+  - id: lz-boc-leasing
+    name: "中银金融租赁有限公司"
+    short: "中银金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0077H250000001
+    regulator: 国家金融监督管理总局
+    founded: 2020
+    website: https://www.boc-leasing.com
+    intro: >-
+      中国银行股份有限公司在重庆设立的控股子公司，注册地重庆，2020 年 6 月 18 日成立，注册资本 108 亿元，其中中国银行出资 100 亿元，重庆渝中国有资产经营管理有限公司出资 8 亿元。聚焦国家重点区域和重点行业开展金融租赁业务。
+    business: [航空租赁, 船舶租赁, 绿色租赁, 重点区域]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "中银金租官网", url: "https://www.boc-leasing.com", date: "2026-09-30" }
+
+  - id: lz-ccteg-leasing
+    name: "中煤科工金融租赁股份有限公司"
+    short: "中煤科工金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0072H212000001
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: https://www.cctegfl.com
+    intro: >-
+      隶属中国煤炭科工集团有限公司，注册地天津，2017 年 9 月 30 日成立，办公地北京。业务以煤机装备等能源装备租赁及厂商租赁为特色。
+    business: [煤机装备, 能源装备, 厂商租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "中煤科工金租官网", url: "https://www.cctegfl.com", date: "2026-09-30" }
+
+  - id: lz-tianjin-guotai-leasing
+    name: "天津国泰金融租赁有限责任公司"
+    short: "天津国泰金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0073H212000001
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    intro: >-
+      由华泰汽车集团、珠海源盛通达投资、华信超越控股、惠州亿纬锂能等共同发起设立，注册地天津自贸试验区，2017 年 11 月 3 日完成工商注册，注册资本 20 亿元。是中国首家由大型综合型汽车制造企业发起设立的金融租赁机构，业务聚焦汽车产业链与新能源汽车。
+    business: [汽车产业链, 新能源汽车, 设备融资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+
+  - id: lz-xiamen-leasing
+    name: "厦门金融租赁有限公司"
+    short: "厦门金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0074H235020001
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: https://www.xmjrzl.com
+    intro: >-
+      由厦门农村商业银行发起，象屿资产管理、泉州交通发展集团、天宝矿业集团等参股，注册地福建自贸区厦门片区，2017 年 11 月 18 日成立。是厦门唯一一家持牌金融租赁机构。
+    business: [自贸区租赁, 中小微, 融资租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "厦门金租官网", url: "https://www.xmjrzl.com", date: "2026-09-30" }
+
+  - id: lz-yuecai-leasing
+    name: "广东粤财金融租赁股份有限公司"
+    short: "粤财金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0071H244010001
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: https://www.yuecaileasing.com
+    intro: >-
+      由广东粤财投资控股有限公司牵头，联合明阳智慧能源集团、中国铁路通信信号股份有限公司发起设立，落户广州南沙，2017 年 6 月开业，是广东首家省属金融租赁公司。重点拓展清洁能源、轨道交通、高端装备、基础设施领域。
+    business: [清洁能源, 轨道交通, 高端装备, 基础设施]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "粤财金租官网", url: "https://www.yuecaileasing.com", date: "2026-09-30" }
+
+  - id: lz-hebei-leasing
+    name: "河北省金融租赁有限公司"
+    short: "河北金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0002H213010001
+    regulator: 国家金融监督管理总局
+    founded: 1995
+    website: https://www.heflc.com
+    intro: >-
+      1995 年 12 月 11 日经中国人民银行批准挂牌，是国内首批设立的金融租赁公司之一，注册地石家庄，注册资本 50 亿元。第一大股东为河北建设投资集团有限责任公司（持股 21.43%）。聚焦绿色能源、普惠中小、综合产业三大领域。
+    business: [绿色能源, 普惠中小, 综合产业, 清洁能源]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "河北金租官网", url: "https://www.heflc.com", date: "2026-09-30" }
+
+  - id: lz-shanxi-leasing
+    name: "山西金融租赁有限公司"
+    short: "山西金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0003H214010001
+    regulator: 国家金融监督管理总局
+    founded: 1993
+    website: https://www.leasing.com.cn
+    intro: >-
+      成立于 1993 年，是全国首批获取金融许可证的金融租赁公司，也是山西省内唯一一家金融租赁公司，注册地太原，注册资本 14 亿元。股东为山西金融投资控股集团、太原重型机械集团、上海荣大投资管理有限公司。业务涉及企业技术改造、交通运输、能源环保、工程机械等领域。
+    business: [技术改造, 交通运输, 能源环保, 工程机械]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "山西金租官网", url: "https://www.leasing.com.cn", date: "2026-09-30" }
+
+  - id: lz-minmetals-leasing
+    name: "中国外贸金融租赁有限公司"
+    short: "外贸金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0001H211000001
+    regulator: 国家金融监督管理总局
+    founded: 1985
+    website: https://leasing.minmetals.com.cn
+    intro: >-
+      成立于 1985 年 3 月，是我国最早成立的金融租赁公司之一，1994 年整体划归中国五矿，注册地北京。2023 年 12 月与中国中车旗下中车金融租赁优化整合，成为两家产业央企集团共同支持的金融租赁公司。业务覆盖公用事业、轨道交通、高端装备制造、新能源、节能环保。
+    business: [公用事业, 轨道交通, 高端装备制造, 新能源, 节能环保]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "外贸金租官网", url: "https://leasing.minmetals.com.cn", date: "2026-09-30" }
+
+  - id: lz-zhujiang-leasing
+    name: "珠江金融租赁有限公司"
+    short: "珠江金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0032H244010001
+    regulator: 国家金融监督管理总局
+    founded: 2014
+    website: https://www.zjfl.cn
+    intro: >-
+      由广州农村商业银行股份有限公司全资设立，2014 年 12 月 11 日取得营业执照，总部广州。是全国首家由农商银行控股的银行系金融租赁公司，也是广东省首家获批设立的金融租赁公司，注册资本 15 亿元。
+    business: [珠三角, 实体经济, 融资租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "珠江金租官网", url: "https://www.zjfl.cn", date: "2026-09-30" }
+
+  - id: lz-huarong-leasing
+    name: "华融金融租赁股份有限公司"
+    short: "华融金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0010H233010001
+    regulator: 国家金融监督管理总局
+    founded: 2001
+    website: http://www.hrflc.com.cn
+    intro: >-
+      1984 年由浙江省租赁公司起步，2001 年 12 月 28 日改制为浙江金融租赁股份有限公司，后更名华融金融租赁，总部杭州。现由中国中信集团有限公司持股 60%、中国中信金融资产管理股份有限公司持股 19.92%，是国内首批金融租赁公司之一。重点布局航空航天、航运船舶、装备制造、光伏能源、绿色环保五大专业领域。
+    business: [航空航天, 航运船舶, 装备制造, 光伏能源, 绿色环保]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "华融金租官网", url: "http://www.hrflc.com.cn", date: "2026-09-30" }
+
+  - id: lz-hubei-leasing
+    name: "湖北金融租赁股份有限公司"
+    short: "湖北金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0043H242010001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://www.hbflc.com.cn
+    intro: >-
+      由武汉金融控股（集团）有限公司、武汉农村商业银行、九州通医药集团股份有限公司共同发起设立，2015 年 6 月 26 日正式开业，注册地武汉，注册资本 43.33 亿元，武汉金控持股 52.92% 为控股股东。业务聚焦城市基础设施与公用事业。
+    business: [基础设施, 公用事业, 城市民生]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "湖北金租官网", url: "https://www.hbflc.com.cn", date: "2026-09-30" }
+
+  - id: lz-jiangnan-leasing
+    name: "江南金融租赁股份有限公司"
+    short: "江南金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0076H332040001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    intro: >-
+      由江南农村商业银行发起设立，注册地江苏常州，2015 年 5 月 29 日成立，是常州市第一家、江苏省内第二家金融租赁公司。业务秉承服务三农与中小微企业的定位。
+    business: [三农服务, 中小微, 厂商租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+
+  - id: lz-jiangxi-leasing
+    name: "江西金融租赁股份有限公司"
+    short: "江西金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0048H236010001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://www.jxfl.com
+    intro: >-
+      由江西银行股份有限公司发起设立并控股，2015 年 11 月成立，注册地南昌，注册资本 20.2 亿元，持有江西省首张金融租赁牌照。业务以中小微与绿色租赁为主。
+    business: [中小微, 绿色租赁, 融资租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "江西金租官网", url: "https://www.jxfl.com", date: "2026-09-30" }
+
+  - id: lz-jinyin-leasing
+    name: "锦银金融租赁有限责任公司"
+    short: "锦银金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0049H221010001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    intro: >-
+      由锦州银行股份有限公司作为主要发起人，2015 年 12 月 1 日在沈阳登记成立，注册地辽宁沈阳，是辽宁省第一家金融租赁公司，初始注册资本 10 亿元。按立足辽宁、辐射全国的区域战略开展融资租赁业务。
+    business: [融资租赁, 立足辽宁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+
+  - id: lz-luoyin-leasing
+    name: "洛银金融租赁股份有限公司"
+    short: "洛银金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0033H341030001
+    regulator: 国家金融监督管理总局
+    founded: 2014
+    intro: >-
+      由洛阳银行作为主发起人，联合第一拖拉机股份有限公司、洛阳中冶重工机械有限公司、江苏乾融集团有限公司发起设立，2014 年 12 月 18 日成立，注册地河南洛阳，是河南省首家金融租赁公司。业务涉及技术改造与装备制造租赁。
+    business: [技术改造, 装备制造, 融资租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+
+  - id: lz-qingyin-leasing
+    name: "青岛青银金融租赁有限公司"
+    short: "青银金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0067H237020001
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    intro: >-
+      由青岛银行股份有限公司发起设立，2017 年 2 月 15 日取得营业执照，注册地青岛，注册资本 12.25 亿元，是山东省第三家、青岛市首家金融租赁公司。2019 年起实行一体两翼战略，业务聚焦山东和长三角。
+    business: [山东区域, 长三角, 融资租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+
+  - id: lz-tianfu-leasing
+    name: "四川天府金融租赁股份有限公司"
+    short: "天府金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0063H251010001
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: https://www.sctfleasing.com
+    intro: >-
+      由四川天府银行发起，经原中国银监会批准成立，2016 年 12 月 12 日正式开业，注册地成都，是四川唯一一家金融租赁公司。聚焦绿色能源、智慧科技、民生普惠三大专业领域。
+    business: [绿色能源, 智慧科技, 民生普惠]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "天府金租官网", url: "https://www.sctfleasing.com", date: "2026-09-30" }
+
+  - id: lz-wanjiang-leasing
+    name: "皖江金融租赁股份有限公司"
+    short: "皖江金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0044H334020001
+    regulator: 国家金融监督管理总局
+    founded: 2011
+    website: https://www.wjfl.com.cn
+    intro: >-
+      成立于 2011 年 12 月，注册地安徽芜湖，是国有控股非银行金融机构，国有股东包括安徽省交通控股集团有限公司和芜湖市投资控股集团有限公司。持续深耕交通物流、机械装备和城市民生事业等领域。
+    business: [交通物流, 机械装备, 城市民生, 长三角一体化]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "皖江金租官网", url: "https://www.wjfl.com.cn", date: "2026-09-30" }
+
+  - id: lz-taiping-petro-leasing
+    name: "太平石化金融租赁有限责任公司"
+    short: "太平石化金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0031H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2014
+    website: https://www.tpshleasing.com
+    intro: >-
+      由中国太平保险集团有限责任公司与中国石油化工集团有限公司各出资 50% 共同发起成立，2014 年 10 月成立，注册地上海，注册资本 50 亿元。是首家由大型金融保险集团和特大型企业集团合资设立的金融租赁公司，业务向石化项目与海洋工程装备倾斜。
+    business: [石化项目, 钻井平台, 能源租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "太平石化金租官网", url: "https://www.tpshleasing.com", date: "2026-09-30" }
+
+  - id: lz-bot-leasing
+    name: "天银金融租赁股份有限公司"
+    short: "天银金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0061H212000001
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    intro: >-
+      由天津银行主发起设立，2016 年 10 月 14 日成立、10 月 18 日正式开业，注册地天津自贸试验区，注册资本 17 亿元。主营融资租赁业务及租赁资产转让受让、固定收益类投资等。
+    business: [融资租赁, 设备租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+
+  - id: lz-hengxin-leasing
+    name: "徐州恒鑫金融租赁股份有限公司"
+    short: "恒鑫金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0062H332030001
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: http://www.hengxinfl.com
+    intro: >-
+      由徐州矿务集团有限公司、徐州工程机械集团有限公司、徐州市国盛控股集团有限公司共同发起设立，2016 年 10 月 14 日成立，注册地江苏徐州，注册资本 17.8 亿元，为纯国资背景金融租赁公司。是淮海经济区和苏北地区唯一一家金融租赁公司，业务侧重工程机械与装备制造。
+    business: [工程机械, 装备制造, 国资背景]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "恒鑫金租官网", url: "http://www.hengxinfl.com", date: "2026-09-30" }
+
+  - id: lz-chouzhou-leasing
+    name: "浙江稠州金融租赁有限公司"
+    short: "稠州金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0060H233070001
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: https://www.czfl.com.cn
+    intro: >-
+      由浙江稠州商业银行股份有限公司持股 65%，浙江中国小商品城集团股份有限公司持股 26%，浙江东宇物流有限公司持股 9%，2016 年 9 月获批、10 月在义乌开业，注册资本 10 亿元。是浙江省内（不含宁波）首家银行系金融租赁公司，业务覆盖战略新兴产业、生产制造、绿色环保、物流运输。
+    business: [战略新兴产业, 生产制造, 绿色环保, 物流运输]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "稠州金租官网", url: "https://www.czfl.com.cn", date: "2026-09-30" }
+
+  - id: lz-bangyin-leasing
+    name: "邦银金融租赁股份有限公司"
+    short: "邦银金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0027H241010001
+    regulator: 国家金融监督管理总局
+    founded: 2013
+    website: https://www.by-leasing.com
+    intro: >-
+      2013 年 8 月 16 日由成都农村商业银行与安邦人寿共同发起设立，是中国首家由银行业资本与保险业资本共同设立的金融租赁公司。2019 年中原银行股份有限公司受让全部股权，现持股 90%，注册地河南郑州，归河南金融监管局辖区，注册资本 30 亿元。
+    business: [中小微, 绿色租赁, 融资租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "邦银金租官网", url: "https://www.by-leasing.com", date: "2026-09-30" }
+
+  - id: lz-beibu-gulf-leasing
+    name: "北部湾金融租赁有限公司"
+    short: "北部湾金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0025H245010001
+    regulator: 国家金融监督管理总局
+    founded: 2012
+    website: https://www.bgfl.net
+    intro: >-
+      由广西金融投资集团有限公司联合广西柳工集团有限公司发起设立，2012 年 9 月经原中国银监会批准成立，总部南宁，注册资本 10 亿元，是广西唯一一家金融租赁公司。重点对接现代流通、高端装备制造、新能源、信息技术、船舶、生物医药等产业。
+    business: [现代流通, 高端装备制造, 新能源, 信息技术, 船舶租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "北部湾金租官网", url: "https://www.bgfl.net", date: "2026-09-30" }
+
+  - id: lz-greatwall-guoxing-leasing
+    name: "长城国兴金融租赁有限公司"
+    short: "长城国兴金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0014H265010001
+    regulator: 国家金融监督管理总局
+    intro: >-
+      中国长城资产管理股份有限公司旗下的金融租赁公司，经财政部和中国银监会批准成立，注册地新疆乌鲁木齐，注册资本 40 亿元。以直接租赁、售后回租和经营性租赁为主，近年重点拓展清洁能源电站等绿色低碳本源性租赁业务。
+    business: [绿色低碳, 清洁能源电站, 中小企业, 售后回租]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+
+  - id: lz-changjiang-united-leasing
+    name: "长江联合金融租赁有限公司"
+    short: "长江金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0042H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://www.yuflc.com
+    intro: >-
+      由上海农村商业银行股份有限公司作为主发起人持股 54.29%，联合长江经济联合发展集团、沪杭甬高速、永达汽车、上海航交所等股东共同发起，2015 年 6 月 18 日成立，总部位于中国（上海）自由贸易试验区，注册资本 24.5 亿元。聚焦现代制造、现代物流、现代能源三大业务方向。
+    business: [现代制造, 现代物流, 现代能源, 普惠租赁, 绿色租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "长江金租官网", url: "https://www.yuflc.com", date: "2026-09-30" }
+
+  - id: lz-xinyu-leasing
+    name: "重庆鈊渝金融租赁股份有限公司"
+    short: "鈊渝金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0068H250000001
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: https://www.cqxyfl.com
+    intro: >-
+      主发起人和控股股东为重庆银行股份有限公司，2017 年 3 月 23 日成立，注册地重庆，注册资本 30 亿元。业务主要服务绿色新能源、制造业、交通运输业、信息产业、电力、新基建、公共事业及医疗卫生等领域。
+    business: [绿色新能源, 制造业, 交通运输业, 信息产业]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "鈊渝金租官网", url: "https://www.cqxyfl.com", date: "2026-09-30" }
+
+  - id: lz-haisheng-leasing
+    name: "佛山海晟金融租赁股份有限公司"
+    short: "海晟金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0056H344060001
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: http://www.fshsfl.com
+    intro: >-
+      由广东南海农村商业银行股份有限公司联合广东省广晟控股集团、伊之密股份、佛山市金融投资控股等共同发起设立，2016 年 6 月 28 日完成工商注册，注册地广东佛山，注册资本 20 亿元。是佛山唯一一家金融租赁公司，形成工业机器人、陶瓷机械、金属加工机械、高空作业平台、节能环保设备五大特色业务领域。
+    business: [工业机器人, 陶瓷机械, 金属加工机械, 高空作业平台, 节能环保设备]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "海晟金租官网", url: "http://www.fshsfl.com", date: "2026-09-30" }
+
+  - id: lz-haixi-leasing
+    name: "福建海西金融租赁有限责任公司"
+    short: "海西金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0059H335050001
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: https://www.haixileasing.cn
+    intro: >-
+      由厦门银行股份有限公司发起并控股，2016 年 9 月正式创立，注册地福建泉州，注册资本 12 亿元，持有福建省首张金融租赁牌照。业务以中小微与先进制造租赁为主。
+    business: [中小微, 先进制造, 融资租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "海西金租官网", url: "https://www.haixileasing.cn", date: "2026-09-30" }
+
+  - id: lz-lanyin-leasing
+    name: "甘肃兰银金融租赁股份有限公司"
+    short: "兰银金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0064H262010001
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    intro: >-
+      由兰州银行股份有限公司控股，2016 年 12 月 9 日成立，注册地甘肃兰州，注册资本由 5 亿元增至 7.5 亿元。业务聚焦中小企业并强调业务回归当地。
+    business: [中小企业, 回归当地, 融资租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+
+  - id: lz-granday-leasing
+    name: "广融达金融租赁有限公司"
+    short: "广融达金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0055H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: http://www.grandayleasing.com
+    intro: >-
+      由上海东昌企业集团有限公司作为主发起人，联合永鼎集团有限公司、中国巨石股份有限公司共同组建，2016 年 6 月获上海银监局开业批复并取得营业执照，注册地上海。以特色化、差异化、精品化为定位，独家试点汽车金融，重点布局中小科创。
+    business: [汽车金融, 中小科创, 特色化经营]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "广融达金租官网", url: "http://www.grandayleasing.com", date: "2026-09-30" }
+
+  - id: lz-guiyang-bank-leasing
+    name: "贵阳贵银金融租赁有限责任公司"
+    short: "贵银金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0058H252010001
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: https://www.gyfl.cn
+    intro: >-
+      由贵阳银行股份有限公司联合中国贵州茅台酒厂（集团）有限责任公司、贵州长征天成控股股份有限公司发起设立，2016 年 7 月 18 日开业，总部贵阳，注册资本 20 亿元，贵阳银行持股 67%。是贵州省唯一一家金融租赁公司，任中国银行业协会金融租赁专业委员会副主任单位。
+    business: [基础设施, 绿色租赁, 白酒产业]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "贵银金租官网", url: "https://www.gyfl.cn", date: "2026-09-30" }
+
+  - id: lz-casic-leasing
+    name: "航天科工金融租赁有限公司"
+    short: "航天金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0069H242010001
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    intro: >-
+      由中国航天科工集团有限公司、中国航天三江集团、航天科工财务有限责任公司、汉口银行等 6 家单位共同发起设立，2017 年 4 月 17 日获批开业，注册地武汉，注册资本 30 亿元，是全国首家航天央企控股的金融租赁公司。业务侧重航天装备与高端制造。
+    business: [航天装备, 高端制造, 融资租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+
+  - id: lz-jiuding-leasing
+    name: "河南九鼎金融租赁股份有限公司"
+    short: "九鼎金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0053H241010001
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: http://www.jiudingleasing.com
+    intro: >-
+      由郑州银行股份有限公司主发起，联合宇通客车股份有限公司、河南天伦燃气集团有限公司共同成立，2016 年 3 月成立，总部郑州，注册资本 20 亿元，是郑州市首家金融租赁公司。以航空物流、基础设施建设、新能源环保、制造业、医疗健康、教育文化旅游、电子信息为特色业务。
+    business: [航空物流, 基础设施, 新能源环保, 制造业, 医疗健康]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "九鼎金租官网", url: "http://www.jiudingleasing.com", date: "2026-09-30" }
+
+  - id: lz-hqht-leasing
+    name: "横琴华通金融租赁有限公司"
+    short: "华通金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0047H344040001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://www.hqhtfl.cn
+    intro: >-
+      由珠海华发投资控股集团有限公司、亨通集团有限公司等发起设立，2015 年 10 月 26 日开业，注册于横琴粤澳深度合作区，注册资本 20 亿元，是广东省第 2 家、全国第 39 家金融租赁公司。聚焦城市民生、清洁能源、医疗大健康、工程装备、先进制造，是广东省首家开启全口径跨境融资业务的非银行金融机构。
+    business: [城市民生, 清洁能源, 医疗大健康, 工程装备, 先进制造]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "华通金租官网", url: "https://www.hqhtfl.cn", date: "2026-09-30" }
+
+  - id: lz-huarong-shipping-leasing
+    name: "华融航运金融租赁有限公司"
+    short: "华融航运金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0045H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    intro: >-
+      由华融金融租赁股份有限公司全资设立，2015 年 7 月经上海银监局批准开业，注册地中国（上海）自由贸易试验区，是早期成立的航运金融租赁专业子公司之一。专注船舶与航运领域融资租赁，并全资控股天津信远一号、二号航运租赁有限公司。
+    business: [船舶租赁, 航运租赁, 专业子公司]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+
+  - id: lz-huayun-leasing
+    name: "华运金融租赁股份有限公司"
+    short: "华运金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0036H212000001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://www.huayunfl.com
+    intro: >-
+      2015 年 4 月 21 日经原中国银监会批准成立，注册地天津空港经济区。是我国第一家由民营制造业股东发起设立的纯民营资本背景金融租赁公司，2017 年引入战略投资后注册资本增至 14.29 亿元。业务涉及节能环保、车辆及工程机械、智能制造、医疗设备等领域。
+    business: [节能环保, 车辆及工程机械, 智能制造, 医疗设备]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "华运金租官网", url: "https://www.huayunfl.com", date: "2026-09-30" }
+
+  - id: lz-jiyin-leasing
+    name: "冀银金融租赁股份有限公司"
+    short: "冀银金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0052H213010001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://www.jy-leasing.com
+    intro: >-
+      为河北银行股份有限公司控股子公司，2015 年 12 月成立，注册地河北石家庄。以打造绿色精品金融租赁公司为发展愿景，立足河北服务实体经济。
+    business: [绿色租赁, 河北区域, 融资租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "冀银金租官网", url: "https://www.jy-leasing.com", date: "2026-09-30" }
+
+  - id: lz-jiuyin-leasing
+    name: "吉林九银金融租赁股份有限公司"
+    short: "九银金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0066H222010001
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    intro: >-
+      控股股东为吉林九台农村商业银行股份有限公司，2017 年 2 月 20 日成立，注册地长春净月高新技术产业开发区，注册资本 5.25 亿元，是吉林省唯一的金融租赁公司。立足吉林、辐射全国，重点支持制造业等实体经济。
+    business: [制造业, 立足吉林, 融资租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+
+  - id: lz-bocom-aviation-shipping-leasing
+    name: "交银航空航运金融租赁有限责任公司"
+    short: "交银航空航运金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0030H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2014
+    intro: >-
+      由交银金融租赁有限责任公司独资设立的专业子公司，2014 年 8 月获上海银监局开业批复，注册地中国（上海）自由贸易试验区，专营航空、航运融资租赁业务（含融资租赁业务项下的一般进出口贸易）。
+    business: [航空租赁, 航运租赁, 专业子公司]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+
+  - id: lz-xingbang-leasing
+    name: "前海兴邦金融租赁有限责任公司"
+    short: "兴邦金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0070H244030001
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: https://www.xingbangfl.com
+    intro: >-
+      控股股东为深圳农村商业银行，2017 年经原中国银保监会批准成立，注册地广东自由贸易试验区深圳前海蛇口片区，注册资本 20 亿元。是深圳市第二家、前海唯一一家全国性法人金融租赁公司。
+    business: [前海自贸区, 中小微, 融资租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "兴邦金租官网", url: "https://www.xingbangfl.com", date: "2026-09-30" }
+
+  - id: lz-huitong-leasing
+    name: "山东汇通金融租赁有限公司"
+    short: "汇通金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0050H237010001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    intro: >-
+      由浪潮集团有限公司作为主发起人持股 50%，联合山东省机场管理集团有限公司、山东出版集团有限公司共同设立，2015 年 12 月 10 日成立，注册地济南，注册资本 25 亿元。是山东省首家、全国信息产业厂商背景的持牌金融租赁公司，重点投向新一代信息技术、新基建、新能源、绿色交通、高端装备。
+    business: [新一代信息技术, 新基建, 新能源, 绿色交通, 高端装备]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+
+  - id: lz-tongda-leasing
+    name: "山东通达金融租赁有限公司"
+    short: "通达金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0054H237010001
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    intro: >-
+      由威海银行股份有限公司发起设立并持股 54.55%，2016 年 6 月 6 日在济南注册成立，注册资本 16.5 亿元。是山东省首家银行系控股的金融租赁公司，主要业务领域聚焦交通物流、基础设施、节能环保、文旅教育和医养健康。
+    business: [交通物流, 基础设施, 节能环保, 文旅教育, 医养健康]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+
+  - id: lz-cmb-aviation-shipping-leasing
+    name: "招银航空航运金融租赁有限公司"
+    short: "招银航空航运金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0046H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    intro: >-
+      由招银金融租赁有限公司独资设立的专业子公司，2015 年 1 月获上海银监局批复、10 月 21 日正式开业，注册地中国（上海）自由贸易试验区。专营航空、航运融资租赁业务，并可在境内外设立项目公司。
+    business: [航空租赁, 航运租赁, 专业子公司]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+
+  - id: lz-citic-leasing
+    name: "中信金融租赁有限公司"
+    short: "中信金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0035H212000001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://www.citicleasing.com
+    intro: >-
+      由中信银行股份有限公司独资设立，2015 年 4 月 8 日正式开业，注册地天津滨海新区（天津自贸试验区），注册资本 100 亿元。是中信集团和中信银行服务实体经济的战略布局，业务在两大资产端发力船舶、飞机等主流租赁业务，在两小资产端聚焦户用光伏、乘用车等普惠租赁，绿色租赁余额占比超五成。
+    business: [船舶租赁, 飞机租赁, 户用光伏, 乘用车, 绿色租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "中信金租官网", url: "https://www.citicleasing.com", date: "2026-09-30" }
+
+  - id: lz-zheyin-leasing
+    name: "浙江浙银金融租赁股份有限公司"
+    short: "浙银金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0065H233090001
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: http://zyfl.zheyinleasing.com/zyzl/
+    intro: >-
+      由浙商银行股份有限公司作为主发起人，联合浙江省金融控股有限公司、舟山海洋综合开发投资有限公司共同发起设立，2017 年 1 月经原中国银监会批准成立，注册地浙江舟山，注册资本 40 亿元。聚焦智能制造、现代农牧、海洋经济、绿色环保、能源产业五大专业化板块，以及厂商供应链、租租合作两大专业化模式。
+    business: [智能制造, 现代农牧, 海洋经济, 绿色环保, 能源产业]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "浙银金租官网", url: "http://zyfl.zheyinleasing.com/zyzl/", date: "2026-09-30" }
+
+  - id: lz-sinolease
+    name: "中国金融租赁有限公司"
+    short: "中国金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0022H212000001
+    regulator: 国家金融监督管理总局
+    founded: 2013
+    website: http://www.sinolease.com
+    intro: >-
+      经国务院同意、原中国银监会批准设立，2013 年 6 月 6 日成立，注册地天津自贸试验区，注册资本 20 亿元，股东为天津新金融投资有限责任公司（持股 100%）。业务通过直接租赁、售后回租、厂商租赁、转租赁等模式服务工业装备、能源与环保、交通运输、医疗、旅游等领域。
+    business: [工业装备, 能源与环保, 交通运输, 医疗, 厂商租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+      - { title: "中国金租官网", url: "http://www.sinolease.com", date: "2026-09-30" }
+
+  - id: lz-jfl-bnp-leasing
+    name: "江苏法巴农科设备金融租赁有限公司"
+    short: "江苏法巴金租"
+    category: nonbank
+    type: financial-leasing
+    license_code: M0078H232010001
+    regulator: 国家金融监督管理总局
+    founded: 2024
+    intro: >-
+      由江苏金融租赁股份有限公司持股 55%、法巴租赁集团股份有限公司持股 45% 共同发起设立，2024 年 7 月获国家金融监督管理总局江苏监管局核准开业，注册资本 10 亿元，注册地南京。专营农业、科技领域融资租赁业务，是较新的中外合资金融租赁公司。
+    business: [农业租赁, 科技租赁, 中外合资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单（截至2025年6月30日）》", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-10-09" }
+

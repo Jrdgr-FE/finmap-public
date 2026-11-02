@@ -1,0 +1,172 @@
+[
+  {
+    "id": "momenta",
+    "website": "https://www.momenta.cn/",
+    "country": "中国",
+    "sources": [
+      {
+        "title": "Momenta | The World's Leading Physical AI Company",
+        "url": "https://www.momenta.cn/"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "memberships": []
+  },
+  {
+    "id": "qcraft",
+    "website": "https://qcraft.ai/en",
+    "country": "中国",
+    "sources": [
+      {
+        "title": "QCraft",
+        "url": "https://qcraft.ai/en"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "memberships": []
+  },
+  {
+    "id": "deeproute",
+    "website": "http://www.deeproute.ai/en/index",
+    "country": "中国",
+    "sources": [
+      {
+        "title": "Industry Leading Artificial Intelligence Company - DeepRoute",
+        "url": "http://www.deeproute.ai/en/index"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "memberships": []
+  },
+  {
+    "id": "waymo",
+    "website": "https://www.waymo.com/about",
+    "country": "美国",
+    "sources": [
+      {
+        "title": "Autonomous Driving Technology - Learn more about us - Waymo",
+        "url": "https://www.waymo.com/about"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "memberships": []
+  },
+  {
+    "id": "wayve",
+    "website": "https://wayve.ai/",
+    "country": "英国",
+    "sources": [
+      {
+        "title": "Wayve | Building Embodied AI For Any Vehicle, Anywhere.",
+        "url": "https://wayve.ai/"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "memberships": [
+      {
+        "track": "autonomy",
+        "segment": "adas"
+      }
+    ]
+  },
+  {
+    "id": "nuro",
+    "website": "https://www.nuro.ai/nuro-driver",
+    "country": "美国",
+    "sources": [
+      {
+        "title": "Nuro Driver™ | Nuro",
+        "url": "https://www.nuro.ai/nuro-driver"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "memberships": [
+      {
+        "track": "autonomy",
+        "segment": "adas"
+      }
+    ]
+  },
+  {
+    "id": "landspace",
+    "website": "https://www.landspace.com/",
+    "country": "中国",
+    "sources": [
+      {
+        "title": "LANDSPACE 蓝箭航天",
+        "url": "https://www.landspace.com/"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "memberships": []
+  },
+  {
+    "id": "space-pioneer",
+    "website": "https://www.spacepioneer.cc/",
+    "country": "中国",
+    "sources": [
+      {
+        "title": "首页 - 天兵科技",
+        "url": "https://www.spacepioneer.cc/"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "memberships": []
+  },
+  {
+    "id": "ispace",
+    "website": "https://i-space.com.cn/",
+    "country": "中国",
+    "sources": [
+      {
+        "title": "星际荣耀航天科技集团",
+        "url": "https://i-space.com.cn/"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "memberships": []
+  },
+  {
+    "id": "galaxyspace",
+    "website": "https://www.yinhehangtian.cn/",
+    "country": "中国",
+    "sources": [
+      {
+        "title": "银河航天",
+        "url": "https://www.yinhehangtian.cn/"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "memberships": []
+  },
+  {
+    "id": "spacex",
+    "website": "http://www.spacex.com/",
+    "country": "美国",
+    "sources": [
+      {
+        "title": "SpaceX",
+        "url": "http://www.spacex.com/"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "memberships": []
+  },
+  {
+    "id": "autoflight",
+    "website": "https://www.autoflight.com/en/v2000cg/",
+    "country": "中国",
+    "sources": [
+      {
+        "title": "V2000CG CARRYALL | Autoflight",
+        "url": "https://www.autoflight.com/en/v2000cg/"
+      },
+      {
+        "title": "AutoFlight’s Prosperity achieves Key Certification | Autoflight",
+        "url": "https://www.autoflight.com/en/news/autoflights-prosperity-air-taxi-achieves-key-certification-milestone-i"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "memberships": []
+  }
+]

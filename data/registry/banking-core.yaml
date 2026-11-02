@@ -1,0 +1,830 @@
+note: >
+  本文件收录国家金融监督管理总局《银行业金融机构法人名单》中「机构类型」属于开发性金融机构、政策性银行、国有大型商业银行、股份制商业银行、民营银行、独立法人直销银行六类的全部法人机构，共 41 家：开发性金融机构 1 家、政策性银行 2 家、国有大型商业银行 6 家、股份制商业银行 12 家、民营银行 19 家、直销银行 1 家。机构编码与机构类型取自该名单（本文实际下载核对的一期为
+  截至 2025 年 6 月 30 日），机构数量与构成按金融监管总局 2026 年 8 月 14 日披露的最新一期
+  （截至 2025 年 12 月 31 日）校正——该期直销银行由 2 家减为 1 家，中邮邮惠万家银行已于 2025 年
+  被邮储银行吸收合并，法人资格不再存续，故不收录；其余五类的家数较上一期未变。城市商业银行、农村商业银行、村镇银行、外资法人银行等 taxonomy 中同属 banking 的其他类型不在本文件范围内。
+sources:
+  - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2024年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/e80bc363856b4032901e40a79d6a8486.pdf", date: "2024-12-31" }
+  - { title: "国家金融监督管理总局 金融许可证信息查询（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+
+entities:
+  # ── 开发性金融机构 ────────────────────────────────────────
+  - id: bk-china-development-bank
+    name: 国家开发银行
+    short: 国开行
+    category: banking
+    type: development-bank
+    license_code: G0001H111000001
+    regulator: 国家金融监督管理总局
+    founded: 1994
+    website: https://www.cdb.com.cn
+    intro: >
+      1994 年由国务院批准设立，是名单里唯一被单列为「开发性金融机构」的一家。主业是基础设施、基础产业和支柱产业的中长期信贷与债券发行，同时承担棚户区改造、助学贷款等政策性任务。在银行间市场是仅次于国债的政策性金融债发行主体。
+    business: [基础设施贷款, 棚户区改造贷款, 中长期信贷, 政策性金融债]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "国家开发银行官网首页（标题：国家开发银行）", url: "https://www.cdb.com.cn", date: "2026-09-30" }
+      - { title: "国家金融监督管理总局 金融许可证信息（国家开发银行，机构编码 G0001H111000001，批准成立日期 1994-03-17）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+
+  # ── 政策性银行 ────────────────────────────────────────────
+  - id: bk-export-import-bank-of-china
+    name: 中国进出口银行
+    short: 进出口银行
+    category: banking
+    type: policy-bank
+    license_code: A0003H111000001
+    regulator: 国家金融监督管理总局
+    founded: 1994
+    website: http://www.eximbank.gov.cn
+    intro: >
+      1994 年成立的三家政策性银行之一，专司官方出口信贷：进出口信贷、对外承包工程和境外投资贷款、援外优惠贷款。它是中国对外经贸政策最主要的金融执行工具，不办个人零售业务。
+    business: [进出口信贷, 对外承包工程贷款, 援外优惠贷款, 国际经贸合作]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中国进出口银行官网首页（标题：中国进出口银行）", url: "http://www.eximbank.gov.cn", date: "2026-09-30" }
+      - { title: "国家金融监督管理总局 金融许可证信息（中国进出口银行，机构编码 A0003H111000001，批准成立日期 1994-03-19）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+
+  - id: bk-agricultural-development-bank-of-china
+    name: 中国农业发展银行
+    short: 农发行
+    category: banking
+    type: policy-bank
+    license_code: A0002H111000001
+    regulator: 国家金融监督管理总局
+    founded: 1994
+    website: http://www.adbc.com.cn
+    intro: >
+      1994 年成立的农业政策性银行，三家政策性银行中唯一以「三农」为唯一业务领域的机构。核心是粮棉油等重要农产品的收购、储备、调控贷款，以及农业农村基础设施和水利建设贷款。
+    business: [粮棉油收储贷款, 农村基础设施贷款, 农业科技贷款, 政策性金融债]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中国农业发展银行《2019年度报告》：「中国农业发展银行成立于1994年，是国家出资设立、直属国务院领导……国有政策性银行」", url: "https://www.adbc.com.cn/n4/n13/c534961/attr/534962.pdf", date: "2020-04-30" }
+      - { title: "中国农业发展银行官网首页（标题：中国农业发展银行）", url: "http://www.adbc.com.cn", date: "2026-09-30" }
+
+  # ── 国有大型商业银行 ──────────────────────────────────────
+  - id: bk-icbc
+    name: 中国工商银行股份有限公司
+    short: 工商银行
+    category: banking
+    type: state-commercial-bank
+    license_code: B0001H111000001
+    regulator: 国家金融监督管理总局
+    founded: 1984
+    listed: ["601398.SH", "1398.HK"]
+    website: https://www.icbc.com.cn
+    intro: >
+      1984 年 1 月 1 日从中国人民银行分设成立的国有大型商业银行，承接了原人民银行办理的工商信贷
+      和储蓄业务。六家国有大行中资产规模最大，也是全球一级资本排名最高的银行。
+    business: [公司金融, 个人金融, 资金业务, 资产管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中国工商银行官网「关于我行 · 历史回眸」：「1984年1月1日，中国工商银行正式成立」", url: "https://www.gx.icbc.com.cn/icbcltd/%e5%85%b3%e4%ba%8e%e6%88%91%e8%a1%8c/%e5%8e%86%e5%8f%b2%e5%9b%9e%e7%9c%b8/", date: "2026-09-30" }
+      - { title: "中国工商银行官网首页（标题：中国工商银行中国网站）", url: "https://www.icbc.com.cn", date: "2026-09-30" }
+
+  - id: bk-agricultural-bank-of-china
+    name: 中国农业银行股份有限公司
+    short: 农业银行
+    category: banking
+    type: state-commercial-bank
+    license_code: B0002H111000001
+    regulator: 国家金融监督管理总局
+    founded: 1979
+    listed: ["601288.SH", "1288.HK"]
+    website: https://www.abchina.com
+    intro: >
+      国有大型商业银行，前身最早可追溯至 1951 年成立的农业合作银行，1979 年 2 月恢复成立。县域网点和「三农」业务体量在六家大行中最大，是农村金融服务的主要商业银行渠道。
+    business: [三农金融, 县域金融, 公司金融, 个人金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中国农业银行官网「农行简介」：「本行的前身最早可追溯至1951年成立的农业合作银行。自1979年2月恢复成立以来……」", url: "https://www.abchina.com/cn/AboutABC/nhfm/nhjj/", date: "2026-09-30" }
+
+  - id: bk-bank-of-china
+    name: 中国银行股份有限公司
+    short: 中国银行
+    category: banking
+    type: state-commercial-bank
+    license_code: B0003H111000001
+    regulator: 国家金融监督管理总局
+    founded: 1912
+    listed: ["601988.SH", "3988.HK"]
+    website: https://www.boc.cn
+    intro: >
+      1912 年 2 月正式成立，是中国持续经营时间最久的银行，先后行使中央银行、国际汇兑银行和
+      国际贸易专业银行职能，1994 年改组为国有独资商业银行。六家大行中国际化程度最高，境外机构覆盖 60 多个国家和地区，中银香港、澳门分行担任当地发钞行。
+    business: [外汇业务, 跨境金融, 公司金融, 个人金融, 人民币清算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中国银行官网「中国银行简介」：「中国银行是中国持续经营时间最久的银行。1912年2月正式成立……」", url: "https://www.boc.cn/aboutboc/ab1/200809/t20080901_985.html", date: "2026-09-30" }
+
+  - id: bk-china-construction-bank
+    name: 中国建设银行股份有限公司
+    short: 建设银行
+    category: banking
+    type: state-commercial-bank
+    license_code: B0004H111000001
+    regulator: 国家金融监督管理总局
+    founded: 1954
+    listed: ["601939.SH", "0939.HK"]
+    website: http://www.ccb.com
+    intro: >
+      历史可追溯到 1954 年成立的中国人民建设银行，当时是财政部下属、负责管理和分配基本建设
+      资金的国有独资银行；1996 年更名为中国建设银行，2004 年 9 月分立改制为股份有限公司。六家大行中最早完成股份制改造并赴港上市的一家，住房金融和基建贷款是传统强项。
+    business: [住房金融, 基础设施贷款, 公司金融, 个人金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中国建设银行官网「公司概况」：「本行……历史可以追溯到1954年，成立时的名称是中国人民建设银行」", url: "https://group.ccb.cn/chn/home/investor/governance/qygk/index.shtml", date: "2026-09-30" }
+      - { title: "中国建设银行官网首页（标题：欢迎访问中国建设银行网站）", url: "http://www.ccb.com/cn/home/indexv3.html", date: "2026-09-30" }
+
+  - id: bk-bank-of-communications
+    name: 交通银行股份有限公司
+    short: 交通银行
+    category: banking
+    type: state-commercial-bank
+    license_code: B0005H131000001
+    regulator: 国家金融监督管理总局
+    founded: 1908
+    listed: ["601328.SH", "3328.HK"]
+    website: https://www.bankcomm.com
+    intro: >
+      始建于 1908 年，是中国历史最悠久的银行之一；1987 年 4 月 1 日重新组建后正式对外营业，成为中国第一家全国性的国有股份制商业银行，总部设在上海。它是六家国有大型商业银行中
+      唯一总部不在北京的，也是唯一由「重新组建」而非原国有专业银行改制而来的。
+    business: [公司金融, 个人金融, 金融市场业务, 跨境金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "交通银行官网首页（标题：交通银行 - 交银金融网）", url: "https://www.bankcomm.com", date: "2026-09-30" }
+      - { title: "交通银行 2024年年度报告（港交所披露）：「本行始建於1908年，是中國歷史最悠久的銀行之一。1987年4月1日，本行重新組建後正式對外營業」", url: "https://www.hkexnews.hk/listedco/listconews/sehk/2025/0330/11596681/2025033000814_c.pdf", date: "2025-03-30" }
+
+  - id: bk-postal-savings-bank-of-china
+    name: 中国邮政储蓄银行股份有限公司
+    short: 邮储银行
+    category: banking
+    type: state-commercial-bank
+    license_code: B0018H111000001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    listed: ["601658.SH", "1658.HK"]
+    website: https://www.psbc.com
+    intro: >
+      2007 年 3 月在改革原邮政储蓄管理体制基础上挂牌成立，2012 年 1 月整体改制为股份有限公司。六家大行中唯一采用「自营+代理」模式、依托中国邮政集团近 4 万个网点经营的银行，网点数和零售客户数居同业首位。2025 年吸收合并了中邮邮惠万家银行。
+    business: [零售金融, 三农金融, 普惠小微, 代理网点]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中国邮政储蓄银行官网「投资者服务 · 常见问题」：「2007年3月6日，中国邮政储蓄银行成立。2012年1月21日……正式更名为中国邮政储蓄银行股份有限公司」", url: "https://www.psbc.com/cn/gyyc/tzzgx/tzzfw/cjwt_497/", date: "2026-09-30" }
+      - { title: "中国邮政储蓄银行官网首页（标题：中国邮政储蓄银行）", url: "https://www.psbc.com/cn/", date: "2026-09-30" }
+
+  # ── 全国性股份制商业银行 ──────────────────────────────────
+  - id: bk-china-citic-bank
+    name: 中信银行股份有限公司
+    short: 中信银行
+    category: banking
+    type: joint-stock-commercial-bank
+    license_code: B0006H111000001
+    regulator: 国家金融监督管理总局
+    founded: 1987
+    listed: ["601998.SH", "0998.HK"]
+    website: https://www.citicbank.com
+    intro: >
+      成立于 1987 年 4 月，原名中信实业银行，2005 年更名，是中信集团金融板块的核心子公司。
+      12 家全国性股份制银行中最早成立的一家，对公业务和集团协同是其获客主线。
+    business: [对公金融, 零售金融, 金融市场业务, 集团协同]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中信银行官网「银行简介」：「中信银行股份有限公司（原中信实业银行）成立于1987年4月」", url: "https://www.citicbank.com/about/introduction/brief/", date: "2026-09-30" }
+      - { title: "中信银行官网首页（标题：中信银行门户网站）", url: "https://www.citicbank.com", date: "2026-09-30" }
+
+  - id: bk-china-everbright-bank
+    name: 中国光大银行股份有限公司
+    short: 光大银行
+    category: banking
+    type: joint-stock-commercial-bank
+    license_code: B0007H111000001
+    regulator: 国家金融监督管理总局
+    founded: 1992
+    listed: ["601818.SH", "6818.HK"]
+    website: https://www.cebbank.com
+    intro: >
+      1992 年经国务院批复、中国人民银行批准设立，总部在北京，隶属于中国光大集团。
+      1997 年完成股份制改造，是中国第一家国有控股并有国际金融组织参股的全国性股份制商业银行。
+      「阳光理财」是其财富管理主品牌。
+    business: [财富管理, 公司金融, 零售金融, 资金业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中国光大银行官网「常见问题」：「本行成立于1992年，总部设在北京，是经国务院批复并经人民银行批准设立的全国性股份制商业银行之一」", url: "http://www.cebbank.com/site/tzzgx/cjwt18/index.html", date: "2026-09-30" }
+      - { title: "中国光大银行官网首页（标题：首页-中国光大银行）", url: "https://www.cebbank.com", date: "2026-09-30" }
+
+  - id: bk-china-merchants-bank
+    name: 招商银行股份有限公司
+    short: 招商银行
+    category: banking
+    type: joint-stock-commercial-bank
+    license_code: B0011H144030001
+    regulator: 国家金融监督管理总局
+    founded: 1987
+    listed: ["600036.SH", "3968.HK"]
+    website: https://www.cmbchina.com
+    intro: >
+      1987 年在深圳创建，是中国第一家由企业创办的商业银行，总部在深圳。
+      12 家全国性股份制银行中零售业务最强的一家，「零售为主体、四大板块均衡协同」是其既定格局，同时持有金融租赁、基金、人寿保险、境外投行、消费金融、理财、金融资产投资等多张牌照。
+    business: [零售金融, 财富管理, 公司金融, 资产管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "招商银行官网「招商银行简介」：「招商银行于1987年在深圳创建，是我国第一家由企业创办的商业银行」", url: "https://www.cmbchina.com/cmbinfo/aboutcmb/default?guid=d4f2fba8-081e-4c8d-b973-17694f836c0c", date: "2026-09-30" }
+      - { title: "招商银行官网首页（标题：一网通主页 -- 招商银行官方网站）", url: "https://www.cmbchina.com", date: "2026-09-30" }
+
+  - id: bk-spdb
+    name: 上海浦东发展银行股份有限公司
+    short: 浦发银行
+    category: banking
+    type: joint-stock-commercial-bank
+    license_code: B0015H131000001
+    regulator: 国家金融监督管理总局
+    founded: 1993
+    listed: ["600000.SH"]
+    website: https://www.spdb.com.cn
+    intro: >
+      1993 年 1 月正式开业，总部设在上海，是《证券法》颁布后规范上市的第一家全国性股份制
+      商业银行（股票代码 600000）。经营上以投资银行、交易银行、国际业务、普惠金融四大领域
+      为特色子品牌，并已形成商业银行、信托、基金、理财、金融租赁、科创银行等多业态格局。
+    business: [公司金融, 投资银行, 交易银行, 个人金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "浦发银行官网「浦发概况」：「1993年1月，浦发银行正式开业，总部位于上海」", url: "https://news.spdb.com.cn/about_spd/implementation/index.shtml", date: "2026-09-30" }
+      - { title: "浦发银行官网首页（标题：浦发银行）", url: "https://www.spdb.com.cn", date: "2026-09-30" }
+
+  - id: bk-china-minsheng-bank
+    name: 中国民生银行股份有限公司
+    short: 民生银行
+    category: banking
+    type: joint-stock-commercial-bank
+    license_code: B0009H111000001
+    regulator: 国家金融监督管理总局
+    founded: 1996
+    listed: ["600016.SH", "1988.HK"]
+    website: https://www.cmbc.com.cn
+    intro: >
+      1996 年 1 月在北京成立，是中国第一家主要由民营企业发起设立的全国性股份制商业银行。民营股东背景使其在服务民营企业和小微企业上定位更明确，也是最早系统性做小微金融的
+      股份制银行之一。
+    business: [小微金融, 民营企业服务, 公司金融, 零售金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中国民生银行官网「民生简介」：「中国民生银行股份有限公司于1996年1月在北京成立，是中国第一家主要由民营企业发起设立的全国性股份制商业银行」", url: "https://www.cmbc.com.cn/cmbc_new/jrms/gyms/msjj/index.html", date: "2026-09-30" }
+      - { title: "中国民生银行官网首页（标题：中国民生银行-）", url: "https://www.cmbc.com.cn", date: "2026-09-30" }
+
+  - id: bk-hua-xia-bank
+    name: 华夏银行股份有限公司
+    short: 华夏银行
+    category: banking
+    type: joint-stock-commercial-bank
+    license_code: B0008H111000001
+    regulator: 国家金融监督管理总局
+    founded: 1992
+    listed: ["600015.SH"]
+    website: https://www.hxb.com.cn
+    intro: >
+      1992 年 10 月在北京成立，由首钢总公司（现首钢集团）独资组建，后引入德意志银行等境外
+      战略投资者。12 家股份制银行中较早引入外资股东的一家，近年以京津冀协同和绿色金融为
+      重点方向。
+    business: [公司金融, 个人金融, 绿色金融, 京津冀区域业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "华夏银行官网「公司概况」：「华夏银行于1992年10月在北京成立，是首钢总公司……独资组建成立的全国性商业银行」", url: "https://www.hxb.com.cn/index.shtml", date: "2026-09-30" }
+
+  - id: bk-ping-an-bank
+    name: 平安银行股份有限公司
+    short: 平安银行
+    category: banking
+    type: joint-stock-commercial-bank
+    license_code: B0014H144030001
+    regulator: 国家金融监督管理总局
+    founded: 1987
+    listed: ["000001.SZ"]
+    website: https://bank.pingan.com
+    intro: >
+      金融许可证批准成立日期为 1987 年 11 月 23 日，前身为深圳发展银行——中国内地第一家面向
+      社会公众公开发行股票并上市的商业银行（股票代码 000001）；2012 年吸收合并原平安银行并
+      更名。控股股东为中国平安，以「零售做强、对公做精」为经营主线。
+    business: [零售金融, 供应链金融, 信用卡, 公司金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "平安银行官网金融许可证信息公示：「批准成立日期：1987年11月23日；机构编码：B0014H144030001」", url: "https://bank.pingan.com/", date: "2026-09-30" }
+
+  - id: bk-industrial-bank
+    name: 兴业银行股份有限公司
+    short: 兴业银行
+    category: banking
+    type: joint-stock-commercial-bank
+    license_code: B0013H135010001
+    regulator: 国家金融监督管理总局
+    founded: 1988
+    listed: ["601166.SH"]
+    website: https://www.cib.com.cn
+    intro: >
+      1988 年诞生于福建省福州市，2007 年在上海证券交易所挂牌上市，总部在福州。从地方性银行起步，逐步跨越为区域性银行、全国性银行、上市银行和现代综合金融服务集团，同业业务与「绿色银行、财富银行、投资银行」三张名片是其辨识度所在。
+    business: [同业金融, 绿色金融, 投资银行, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "兴业银行官网「公司简介」：「兴业银行……1988年诞生于中国改革开放前沿——福建省福州市」", url: "https://www.cib.com.cn/cn/aboutCIB/about/introduce.html", date: "2026-09-30" }
+
+  - id: bk-china-guangfa-bank
+    name: 广发银行股份有限公司
+    short: 广发银行
+    category: banking
+    type: joint-stock-commercial-bank
+    license_code: B0012H144010001
+    regulator: 国家金融监督管理总局
+    founded: 1988
+    website: https://www.cgbchina.com.cn
+    intro: >
+      成立于 1988 年，前身为广东发展银行，经国务院和中国人民银行批准，是国内首批组建的
+      全国性股份制商业银行之一，总部在广州。12 家股份制银行中至今未上市的两家之一，信用卡业务起步早、占比高。2016 年起由中国人寿集团控股。
+    business: [信用卡, 零售金融, 公司金融, 大湾区业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "广发银行官网「关于广发」：「广发银行成立于1988年，前身为广东发展银行，经国务院和中国人民银行批准，是国内首批组建的全国性股份制商业银行之一」", url: "http://www.cgbchina.com.cn/CN/cgbinfo/index.html", date: "2026-09-30" }
+
+  - id: bk-china-bohai-bank
+    name: 渤海银行股份有限公司
+    short: 渤海银行
+    category: banking
+    type: joint-stock-commercial-bank
+    license_code: B0017H112000001
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    listed: ["9668.HK"]
+    website: https://www.cbhb.com.cn
+    intro: >
+      2005 年 12 月 30 日成立，2006 年 2 月正式对外营业，2020 年 7 月在香港联交所主板上市。
+      12 家股份制银行中最年轻的一家，也是《中国商业银行法》2003 年修订以来唯一一家全新成立的
+      全国性股份制商业银行；总部设在天津，是第一家总部在天津的全国性股份制银行。
+    business: [公司金融, 零售金融, 金融市场业务, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "渤海银行官网「关于渤海」：「2005年12月30日成立，2006年2月正式对外营业。2020年7月16日在香港联交所主板挂牌上市」", url: "https://www.cbhb.com.cn/cbhbank/gybh/index.shtml", date: "2026-09-30" }
+
+  - id: bk-china-zheshang-bank
+    name: 浙商银行股份有限公司
+    short: 浙商银行
+    category: banking
+    type: joint-stock-commercial-bank
+    license_code: B0010H133010001
+    regulator: 国家金融监督管理总局
+    founded: 2004
+    listed: ["601916.SH", "2016.HK"]
+    website: https://www.czbank.com
+    intro: >
+      2004 年成立的全国性股份制商业银行，总行设在浙江杭州，是 12 家股份制银行中成立最晚的
+      两家之一，也是唯一总部在浙江的一家。以供应链金融、小微金融和「善本金融」为经营特色。
+    business: [供应链金融, 小微金融, 公司金融, 零售金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "浙商银行官网「关于本行」：「浙商银行，是2004年成立的全国性股份制商业银行，总行设在浙江杭州」", url: "https://www.czbank.com/cn/about/", date: "2026-09-30" }
+
+  - id: bk-hengfeng-bank
+    name: 恒丰银行股份有限公司
+    short: 恒丰银行
+    category: banking
+    type: joint-stock-commercial-bank
+    license_code: B0016H137010001
+    regulator: 国家金融监督管理总局
+    founded: 1987
+    website: https://www.hfbank.com.cn
+    intro: >
+      12 家全国性股份制商业银行之一，前身为 1987 年 11 月首次注册成立的烟台住房储蓄银行，
+      2003 年 8 月经中国人民银行批准变更注册并改制为恒丰银行。总部设在济南，是 12 家股份制
+      银行中至今未上市的两家之一；中央汇金与山东省金融资产管理公司为并列第一大股东。
+    business: [公司金融, 零售金融, 金融市场业务, 理财]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "恒丰银行官网《2024年度第三支柱信息披露报告》：「恒丰银行是12家全国性股份制商业银行之一，前身为1987年成立的烟台住房储蓄银行。2003年，经中国人民银行批准改制为恒丰银行」", url: "https://hfbank.com.cn/upload/attach/%E6%81%92%E4%B8%B0%E9%93%B6%E8%A1%8C%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B82024%E5%B9%B4%E5%BA%A6%E7%AC%AC%E4%B8%89%E6%94%AF%E6%9F%B1%E4%BF%A1%E6%81%AF%E6%8A%AB%E9%9C%B2%E6%8A%A5%E5%91%8A.pdf", date: "2025-03-27" }
+      - { title: "恒丰银行官网首页（标题：恒丰银行）", url: "https://www.hfbank.com.cn", date: "2026-09-30" }
+
+  # ── 民营银行 ──────────────────────────────────────────────
+  - id: bk-kincheng-bank-tianjin
+    name: 天津金城银行股份有限公司
+    short: 金城银行
+    category: banking
+    type: private-bank
+    license_code: B0655H212000001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://www.kcbebank.com
+    intro: >
+      2014 年首批获批筹建的 5 家民营银行试点之一，2015 年 3 月获批成立，注册在天津，监管责任单位为天津金融监管局。定位互联网化公司银行，以对公和小微企业信贷、供应链金融为主，是首批试点中对公色彩最重的一家。
+    business: [对公金融, 小微贷款, 供应链金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "国家金融监督管理总局 金融许可证信息（天津金城银行股份有限公司，机构编码 B0655H212000001，批准成立日期 2015-03-27）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "天津金城银行官网首页（标题：金城银行）", url: "https://www.kcbebank.com", date: "2026-09-30" }
+
+  - id: bk-shanghai-huarui-bank
+    name: 上海华瑞银行股份有限公司
+    short: 华瑞银行
+    category: banking
+    type: private-bank
+    license_code: B0606H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://www.shrbank.com
+    intro: >
+      首批 5 家民营银行试点之一，2015 年 1 月获批成立，是上海首家民营银行，监管责任单位为
+      上海金融监管局。定位于智慧供应链金融、普惠小微金融和出行金融三大方向。
+    business: [供应链金融, 普惠小微, 出行金融, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "国家金融监督管理总局 金融许可证信息（上海华瑞银行股份有限公司，机构编码 B0606H231000001，批准成立日期 2015-01-27）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "上海华瑞银行官网首页（标题：上海华瑞银行）", url: "https://www.shrbank.com", date: "2026-09-30" }
+
+  - id: bk-mybank
+    name: 浙江网商银行股份有限公司
+    short: 网商银行
+    category: banking
+    type: private-bank
+    license_code: B0675H233010001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://www.mybank.cn
+    intro: >
+      首批 5 家民营银行试点之一，2015 年 5 月获批成立，注册在杭州，监管责任单位为浙江金融监管局。不设实体网点，依托电商与支付场景做小微经营者贷款和县域「三农」信贷，是 19 家民营银行中资产规模前二的一家。
+    business: [小微贷款, 三农信贷, 纯线上经营, 场景金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "国家金融监督管理总局 金融许可证信息（浙江网商银行股份有限公司，机构编码 B0675H233010001，批准成立日期 2015-05-27）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "浙江网商银行官网首页（标题：网商银行 无微不至）", url: "https://www.mybank.cn", date: "2026-09-30" }
+
+  - id: bk-wenzhou-minshang-bank
+    name: 温州民商银行股份有限公司
+    short: 温州民商银行
+    category: banking
+    type: private-bank
+    license_code: B0651H233030001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://www.ms-bank.cn
+    intro: >
+      首批 5 家民营银行试点之一，2015 年 3 月获批成立，注册在浙江温州，监管责任单位为
+      浙江金融监管局。它是民营银行试点的起点之一，客户以温州本地小微企业和个体工商户为主。
+    business: [小微贷款, 个体工商户信贷, 存款业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "国家金融监督管理总局 金融许可证信息（温州民商银行股份有限公司，机构编码 B0651H233030001，批准成立日期 2015-03-20）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "温州民商银行官网首页（标题：温州民商银行；个人网银 mybank.ms-bank.cn、企业网银 corpor.ms-bank.cn）", url: "https://www.ms-bank.cn/", date: "2026-09-30" }
+
+  - id: bk-webank
+    name: 深圳前海微众银行股份有限公司
+    short: 微众银行
+    category: banking
+    type: private-bank
+    license_code: B0593H244030001
+    regulator: 国家金融监督管理总局
+    founded: 2014
+    website: https://www.webank.com
+    intro: >
+      2014 年 12 月获批成立，是全国第一家开业的民营银行，注册在深圳，监管责任单位为
+      深圳金融监管局。纯线上运营，以「微粒贷」等产品服务个人消费者和小微企业，资产规模长期居 19 家民营银行首位。
+    business: [消费信贷, 小微贷款, 纯线上经营, 科技输出]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "国家金融监督管理总局 金融许可证信息（深圳前海微众银行股份有限公司，机构编码 B0593H244030001，批准成立日期 2014-12-12）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "深圳前海微众银行官网首页（标题：WeBank微众银行）", url: "https://www.webank.com", date: "2026-09-30" }
+
+  - id: bk-bank-of-sanxiang
+    name: 湖南三湘银行股份有限公司
+    short: 三湘银行
+    category: banking
+    type: private-bank
+    license_code: B1519H243010001
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: https://www.csxbank.com
+    intro: >
+      2016 年 12 月获批成立、同月正式开业，是中部地区首家开业的民营银行，注册在湖南长沙，监管责任单位为湖南金融监管局。定位「深耕行业的产业数智化银行」，是国内唯一具有强制造业基因的民营银行。
+    business: [产业金融, 供应链金融, 小微贷款, 存款业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "湖南三湘银行官网首页「关于三湘」：「湖南三湘银行股份有限公司是中部地区首家开业的民营银行……于2016年12月26日正式开业，注册资本金30亿元，注册地湖南长沙」", url: "https://www.csxbank.com/", date: "2026-09-30" }
+      - { title: "湖南三湘银行 2025 年年度报告（金融许可编码 B1519H243010001，首次注册登记日期 2016年12月21日）", url: "http://css.csxbank.com/Upload/Template/yizhu/Files/202604/20260430192956_8281.pdf", date: "2026-04-30" }
+
+  - id: bk-chongqing-fumin-bank
+    name: 重庆富民银行股份有限公司
+    short: 富民银行
+    category: banking
+    type: private-bank
+    license_code: B1191H250000001
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: https://www.fbank.com
+    intro: >
+      2016 年 8 月获批成立，是民营银行转入常态化审批后成立的第一家，也是中西部第一家民营银行，注册在重庆，监管责任单位为重庆金融监管局。以「扶微助创」为定位，通过线上方式服务小微企业和个人消费者。
+    business: [普惠小微, 消费信贷, 产业金融, 存款业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "国家金融监督管理总局 金融许可证信息（重庆富民银行股份有限公司，机构编码 B1191H250000001，批准成立日期 2016-08-16）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "重庆富民银行官网首页（标题：重庆富民银行门户网站）", url: "https://www.fbank.com", date: "2026-09-30" }
+
+  - id: bk-sichuan-xinwang-bank
+    name: 四川新网银行股份有限公司
+    short: 新网银行
+    category: banking
+    type: private-bank
+    license_code: B1544H251010001
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: https://www.xwbank.com
+    intro: >
+      2016 年 12 月获批成立，是四川首家民营银行，注册在成都，监管责任单位为四川金融监管局。全国三家以「数字银行」为主要形态的民营银行之一，只做线上业务，产品覆盖个人消费贷、小微经营贷和车贷。
+    business: [数字信贷, 消费贷款, 小微经营贷]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "国家金融监督管理总局 金融许可证信息（四川新网银行股份有限公司，机构编码 B1544H251010001，批准成立日期 2016-12-28）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "四川新网银行官网首页（标题：新网银行--好人贷,好商贷,好车贷等贷款服务与存款服务）", url: "https://www.xwbank.com", date: "2026-09-30" }
+
+  - id: bk-beijing-zhongguancun-bank
+    name: 北京中关村银行股份有限公司
+    short: 中关村银行
+    category: banking
+    type: private-bank
+    license_code: B1611H211000001
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: https://www.zgcbank.com
+    intro: >
+      2017 年 6 月获批成立，是北京首家民营银行，监管责任单位为北京金融监管局。由中关村示范区内的科技企业发起，定位服务科技创新创业企业和小微企业，是 19 家民营银行里科创色彩最明确的一家。
+    business: [科创金融, 小微贷款, 存款业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "国家金融监督管理总局 金融许可证信息（北京中关村银行股份有限公司，机构编码 B1611H211000001，批准成立日期 2017-06-06）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "北京中关村银行官网首页（标题：北京中关村银行）", url: "https://www.zgcbank.com", date: "2026-09-30" }
+
+  - id: bk-jilin-yilian-bank
+    name: 吉林亿联银行股份有限公司
+    short: 亿联银行
+    category: banking
+    type: private-bank
+    license_code: B1600H222010001
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: https://www.yillionbank.com
+    intro: >
+      2017 年 5 月获批成立，是东北首家民营银行，注册在吉林长春，监管责任单位为吉林金融监管局。以线上消费金融和小微贷款为主，没有实体营业网点。
+    business: [消费金融, 小微贷款, 线上存款]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "国家金融监督管理总局 金融许可证信息（吉林亿联银行股份有限公司，机构编码 B1600H222010001，批准成立日期 2017-05-02）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "吉林亿联银行官网首页（标题：吉林亿联银行股份有限公司）", url: "https://www.yillionbank.com", date: "2026-09-30" }
+
+  - id: bk-wuhan-zhongbang-bank
+    name: 武汉众邦银行股份有限公司
+    short: 众邦银行
+    category: banking
+    type: private-bank
+    license_code: B1596H242010001
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: https://www.z-bank.com
+    intro: >
+      2017 年 4 月获批成立，是湖北首家民营银行，注册在武汉，监管责任单位为湖北金融监管局。自我定位为互联网交易银行，业务分公司金融、零售金融、投行金融三大板块，交易场景和「邦卡」是其获客抓手。
+    business: [互联网交易银行, 公司金融, 消费金融, 小微贷款]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "国家金融监督管理总局 金融许可证信息（武汉众邦银行股份有限公司，机构编码 B1596H242010001，批准成立日期 2017-04-24）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "武汉众邦银行官网首页（标题：众邦银行官网-专注服务小微大众的互联网交易银行）", url: "https://www.z-bank.com", date: "2026-09-30" }
+
+  - id: bk-fujian-onebank
+    name: 福建华通银行股份有限公司
+    short: 华通银行
+    category: banking
+    type: private-bank
+    license_code: B1563H235010001
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: https://www.onebank.com.cn
+    intro: >
+      2017 年 1 月获批成立并开业，是福建首家民营银行，注册在福州，监管责任单位为福建金融监管局。以线上普惠金融和小微、消费信贷为主，是第二批 12 家民营银行中最早开业的一家。
+    business: [普惠金融, 小微贷款, 线上存款]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "国家金融监督管理总局 金融许可证信息（福建华通银行股份有限公司，机构编码 B1563H235010001，批准成立日期 2017-01-13）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "福建华通银行官网首页（标题：福建华通银行）", url: "https://www.onebank.com.cn", date: "2026-09-30" }
+
+  - id: bk-weihai-blue-ocean-bank
+    name: 威海蓝海银行股份有限公司
+    short: 蓝海银行
+    category: banking
+    type: private-bank
+    license_code: B1606H237100001
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: https://www.wegobank.cn
+    intro: >
+      2017 年 5 月获批成立，是山东省首家民营银行，总部在山东威海，监管责任单位为山东金融监管局。业务以线上存款、代销理财和普惠信贷（小康贷、蓝邸贷、车享贷、助业贷）为主，并搭建了「平台e账通」「智汇蓝」等数智化平台。
+    business: [线上存款, 代销理财, 普惠信贷, 房抵贷]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "国家金融监督管理总局 金融许可证信息（威海蓝海银行股份有限公司，机构编码 B1606H237100001，批准成立日期 2017-05-24）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "威海蓝海银行官网首页（标题：蓝海银行）", url: "https://www.wegobank.cn", date: "2026-09-30" }
+
+  - id: bk-jiangsu-su-merchants-bank
+    name: 江苏苏商银行股份有限公司
+    short: 苏商银行
+    category: banking
+    type: private-bank
+    license_code: B1621H232010001
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: https://www.smb956101.com
+    intro: >
+      2017 年 6 月获批成立，注册在江苏南京，监管责任单位为江苏金融监管局，原名江苏苏宁银行，后更名为江苏苏商银行。定位科技驱动的 O2O 银行，以供应链金融、消费金融和
+      「微商贷」类小微产品为主，存款和资产规模在 19 家民营银行中居前列。
+    business: [供应链金融, 消费金融, 小微贷款, 线上存款]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "国家金融监督管理总局 金融许可证信息（江苏苏商银行股份有限公司，机构编码 B1621H232010001，批准成立日期 2017-06-14）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "江苏苏商银行官网首页（标题：首页-苏商银行）", url: "https://www.smb956101.com", date: "2026-09-30" }
+
+  - id: bk-meizhou-hakka-bank
+    name: 梅州客商银行股份有限公司
+    short: 客商银行
+    category: banking
+    type: private-bank
+    license_code: B1627H244140001
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: https://www.kshbank.cn
+    intro: >
+      2016 年 12 月获批筹建、2017 年 6 月获准开业并于 6 月 28 日正式开业，注册在广东梅州，监管责任单位为广东金融监管局。是广东省内第二家民营银行，也是唯一以「民系」命名的
+      民营银行，注册资本 20 亿元，定位数字化普惠银行。
+    business: [普惠金融, 数字银行, 小微贷款, 存款业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "梅州客商银行官网「关于我们」：「2016年12月29日获原中国银行业监督管理委员会批准筹建，2017年6月22日……批准同意开业，2017年6月28日正式开业」", url: "https://portal.kshbank.cn/Introduction/aboutUs/index.html", date: "2026-09-30" }
+      - { title: "梅州客商银行官网首页（标题：客商银行门户网站）", url: "https://www.kshbank.cn", date: "2026-09-30" }
+
+  - id: bk-anhui-xin-an-bank
+    name: 安徽新安银行股份有限公司
+    short: 新安银行
+    category: banking
+    type: private-bank
+    license_code: B1686H234010001
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: http://www.xa-bank.com
+    intro: >
+      2017 年 11 月获批成立，是安徽首家民营银行，总部在合肥，监管责任单位为安徽金融监管局。以线上化的小微和消费信贷产品（小微AI贷、企业AI贷等）为主，是 19 家民营银行中资本充足率长期偏高、资产扩张较慢的一家。
+    business: [小微贷款, 消费信贷, 线上存款]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "国家金融监督管理总局 金融许可证信息（安徽新安银行股份有限公司，机构编码 B1686H234010001，批准成立日期 2017-11-03）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "安徽新安银行官网首页（标题：新安银行）", url: "http://www.xa-bank.com", date: "2026-09-30" }
+
+  - id: bk-liaoning-zhenxing-bank
+    name: 辽宁振兴银行股份有限公司
+    short: 振兴银行
+    category: banking
+    type: private-bank
+    license_code: B1661H221010001
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: https://www.newupbank.com
+    intro: >
+      2017 年 9 月获批成立，是辽宁省首家民营银行，总部在沈阳，监管责任单位为辽宁金融监管局。官方表述为 2017 年 9 月 28 日注册成立、11 月 24 日正式对外营业，业务集中在线上消费信贷和小微贷款。
+    business: [消费信贷, 小微贷款, 线上存款]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "辽宁振兴银行官网「关于我们」：「辽宁振兴银行是经监管机构批准设立的民营银行，也是辽宁省首家民营银行，总部位于辽宁省沈阳市，于2017年9月28日注册成立，并于11月24日正式对外营业」", url: "https://www.newupbank.com/pc_website/f.html?p=pc_website%2Fabout.html", date: "2026-09-30" }
+
+  - id: bk-jiangxi-yumin-bank
+    name: 江西裕民银行股份有限公司
+    short: 裕民银行
+    category: banking
+    type: private-bank
+    license_code: B1877H236010001
+    regulator: 国家金融监督管理总局
+    founded: 2019
+    website: https://www.ymbank.com
+    intro: >
+      2019 年 5 月获批筹建、同年 9 月获准开业，是江西首家、全国第 18 家民营银行，总部在南昌，监管责任单位为江西金融监管局。定位「有温度的小微银行」，推行社区化、网格化经营，资产规模在 19 家民营银行中偏小。
+    business: [小微贷款, 社区金融, 普惠金融, 存款业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "江西裕民银行官网首页：「江西裕民银行于2019年5月20日获批筹建，同年9月27日获准开业，成为江西首家、全国第18家民营银行」", url: "https://www.ymbank.com/index", date: "2026-09-30" }
+      - { title: "国家金融监督管理总局 金融许可证信息（江西裕民银行股份有限公司，机构编码 B1877H236010001，批准成立日期 2019-09-27）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+
+  - id: bk-wuxi-xishang-bank
+    name: 无锡锡商银行股份有限公司
+    short: 锡商银行
+    category: banking
+    type: private-bank
+    license_code: B1949H332020001
+    regulator: 国家金融监督管理总局
+    founded: 2020
+    website: https://www.wxsbank.com
+    intro: >
+      2020 年 4 月获批成立，是全国第 19 家、也是目前最后一家获批设立的民营银行，注册在江苏无锡，监管责任单位为江苏金融监管局。以「产业+金融+科技」和物联网金融为
+      特色，业务聚焦中小微企业、科技创新企业和城乡居民。
+    business: [供应链金融, 物联网金融, 小微贷款, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "国家金融监督管理总局 金融许可证信息（无锡锡商银行股份有限公司，机构编码 B1949H332020001，批准成立日期 2020-04-13）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "无锡锡商银行官网首页（标题：无锡锡商银行）", url: "https://www.wxsbank.com", date: "2026-09-30" }
+
+  # ── 独立法人直销银行 ──────────────────────────────────────
+  - id: bk-aibank
+    name: 中信百信银行股份有限公司
+    short: 百信银行
+    category: banking
+    type: direct-bank
+    license_code: Z0041H111000001
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: https://www.aibank.com
+    intro: >
+      2017 年 8 月获批成立，是全国首家独立法人直销银行，注册在北京，监管责任单位为
+      北京金融监管局，由中信银行与百度联合发起。不设实体网点，全部业务线上办理，定位「AI 驱动的数字普惠银行」。2025 年中邮邮惠万家银行被邮储银行吸收合并后，它成为名单中仅存的一家直销银行法人。
+    business: [直销银行, 数字普惠金融, 消费信贷, 小微贷款]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "国家金融监督管理总局 金融许可证信息（中信百信银行股份有限公司，机构编码 Z0041H111000001，批准成立日期 2017-08-15）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "中信百信银行官网首页（标题：中信百信银行门户网站）", url: "https://www.aibank.com", date: "2026-09-30" }

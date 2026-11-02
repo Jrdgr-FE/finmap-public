@@ -1,0 +1,181 @@
+---
+import Base from '../../layouts/Base.astro';
+import LineageGraph from '../../components/LineageGraph.astro';
+import OrgRow from '../../components/OrgRow.astro';
+import SourceList from '../../components/SourceList.astro';
+import { getCollections, getTaxonomy, getTypeName } from '../../lib/data';
+import { layoutTree } from '../../lib/tree';
+import type { Collection } from '../../lib/data';
+
+export function getStaticPaths() {
+  return getCollections().map((c) => ({ params: { id: c.id }, props: { collection: c } }));
+}
+
+interface Props {
+  collection: Collection;
+}
+const { collection } = Astro.props;
+const tax = getTaxonomy();
+
+const layout = layoutTree(collection.entities, collection.short);
+// 集团页一律出谱系图——哪怕是"21 个主体平铺在集团下面"这种，那本身就是结论。
+// 只有监管与基础设施那种彼此没有股权关系的集合，才退回按类型分组的列表。
+const flat = !collection.is_group || collection.entities.length > 60;
+
+// 名录制有上千家机构，不能把名录整个铺在页面上。改成"分类 → 牌照类型 → 数量"的导航，
+// 具体机构去 /orgs/ 搜。
+const isRegistry = collection.id === 'registry';
+const registryIndex = isRegistry
+  ? tax.categories
+      .map((cat) => ({
+        cat,
+        types: cat.types
+          .map((type) => ({ type, n: collection.entities.filter((e) => e.type === type.id).length }))
+          .filter((x) => x.n > 0),
+      }))
+      .filter((g) => g.types.length > 0)
+  : [];
+const maxDepth = Math.max(...layout.nodes.map((n) => n.depth), 0);
+
+// 按分类归拢主体，顺序跟着 taxonomy 走，保证各集团页顺序一致
+const byCategory = tax.categories
+  .map((cat) => ({
+    cat,
+    entities: collection.entities.filter((e) => e.category === cat.id),
+  }))
+  .filter((g) => g.entities.length > 0);
+
+// 扁平集合（监管与基础设施）改按机构类型分组，比画一条 43 行的横线好读
+const byType = [...new Set(collection.entities.map((e) => e.type))]
+  .map((type) => ({ type, entities: collection.entities.filter((e) => e.type === type) }))
+  .sort((a, b) => b.entities.length - a.entities.length);
+
+// 头像取两个字：中信、光大、招商、平安；去掉「中国」前缀，免得四家里两家都是「中」
+const initials = collection.short.replace(/^中国/, '').slice(0, 2);
+const affiliates = collection.entities.filter((e) => e.relation === 'affiliate').length;
+const section = collection.is_group
+  ? { href: '/groups/', label: '集团谱系', nav: 'groups' }
+  : isRegistry
+    ? { href: '/orgs/', label: '机构库', nav: 'orgs' }
+    : { href: '/#categories', label: '金融分类', nav: 'home' };
+---
+
+<Base title={collection.short} description={collection.intro.slice(0, 120)} current={section.nav}>
+  <div class="wrap page">
+    <nav class="crumbs" aria-label="位置">
+      <a href="/">首页</a>
+      <span class="sep">/</span>
+      <a href={section.href}>{section.label}</a>
+      <span class="sep">/</span>
+      <span aria-current="page">{collection.short}</span>
+    </nav>
+
+    <section class="panel profile">
+      <div class="profile-top">
+        <span class="avatar is-solid" style="font-size:17px" aria-hidden="true">{initials}</span>
+        <div class="profile-title">
+          <h1>{collection.name}</h1>
+          <div class="badges">
+            {collection.nature && <span class="badge badge-plain">{collection.nature}</span>}
+            {collection.hq && <span class="badge badge-plain">总部 {collection.hq}</span>}
+            {collection.financial_platform && <span class="badge badge-plain">金控平台：{collection.financial_platform}</span>}
+          </div>
+        </div>
+        {collection.website && (
+          <div class="actions">
+            <a class="btn btn-primary" href={collection.website} target="_blank" rel="noopener noreferrer nofollow">
+              访问官网 ↗
+            </a>
+          </div>
+        )}
+      </div>
+      <p class="intro">{collection.intro}</p>
+      <div class="profile-stats">
+        <div><b class="num">{collection.entities.length.toLocaleString('zh-CN')}</b>持牌主体</div>
+        {!flat && <div><b class="num">{maxDepth}</b>最深层级</div>}
+        <div><b class="num">{byCategory.length}</b>涉及金融分类</div>
+        {affiliates > 0 && <div><b class="num">{affiliates}</b>非控股关联</div>}
+        {collection.founded && <div><b class="num">{collection.founded}</b>成立年份</div>}
+      </div>
+    </section>
+
+    {!isRegistry && !flat && collection.entities.length > 1 && (
+      <section class="panel" style="margin-top:var(--sp-4)">
+        <div class="panel-head">
+          <h2>控股谱系</h2>
+          <span class="hint">{collection.entities.length} 个主体 · 最深 {maxDepth} 层 · 点击节点进入机构详情</span>
+        </div>
+        <LineageGraph collection={collection} />
+      </section>
+    )}
+
+    {isRegistry && (
+      <section class="panel" style="margin-top:var(--sp-4)">
+        <div class="panel-head">
+          <h2>名录导航</h2>
+          <span class="hint">{collection.entities.length} 家，按分类和牌照类型</span>
+          <span class="right"><a href="/orgs/">在机构库中搜索 →</a></span>
+        </div>
+        {registryIndex.map(({ cat, types }) => (
+          <section class="org-group">
+            <a class="group-label" data-cat={cat.id} href={`/category/${cat.id}/`}>
+              <span class="badge-dot"></span>{cat.name}
+              <span class="n">{types.reduce((n, t) => n + t.n, 0)}</span>
+            </a>
+            <div class="panel-body chips">
+              {types.map(({ type, n }) => (
+                <a class="chip" href={`/category/${cat.id}/`}>
+                  {type.name} <span class="n">{n}</span>
+                </a>
+              ))}
+            </div>
+          </section>
+        ))}
+      </section>
+    )}
+
+    {!isRegistry && (
+      <section class="panel" style="margin-top:var(--sp-4)">
+        <div class="panel-head">
+          <h2>主体名录</h2>
+          <span class="hint">{flat ? '按机构类型分组' : '按金融分类排列'}</span>
+        </div>
+        {flat
+          ? byType.map(({ type, entities }) => (
+              <section class="org-group">
+                <div class="group-label">
+                  {getTypeName(type)}
+                  <span class="n">{entities.length}</span>
+                </div>
+                <div class="org-list">
+                  {entities.map((e) => <OrgRow entity={e} />)}
+                </div>
+              </section>
+            ))
+          : byCategory.map(({ cat, entities }) => (
+              <section class="org-group">
+                <div class="group-label" data-cat={cat.id}>
+                  <span class="badge-dot"></span>{cat.name}
+                  <span class="n">{entities.length}</span>
+                </div>
+                <div class="org-list">
+                  {entities.map((e) => <OrgRow entity={e} />)}
+                </div>
+              </section>
+            ))}
+      </section>
+    )}
+
+    {collection.sources.length > 0 && (
+      <section class="panel" style="margin-top:var(--sp-4)">
+        <div class="panel-head">
+          <h2>{collection.is_group ? '集团层面来源' : '来源'}</h2>
+          <span class="hint">每个主体另有各自的来源，见其详情页</span>
+        </div>
+        <div class="panel-body">
+          <SourceList sources={collection.sources} />
+        </div>
+      </section>
+    )}
+  </div>
+</Base>

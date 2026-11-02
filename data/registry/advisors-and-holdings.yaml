@@ -1,0 +1,1561 @@
+note: >-
+  本文件收录三类主体：① 持中国证监会证券投资咨询业务许可的证券投资咨询机构，按中国证监会《证券投资咨询机构名录
+  （2026年7月）》逐条收全，共 76 家；② 证券金融公司 1 家，即中国证券金融股份有限公司；③ 地方金融控股公司 25 家，
+  均为省级或计划单列市政府出资、以金融为主业的国有金融资本运营平台。核对截止日期 2026-09-30。
+  证券投资咨询机构的 name 与证监会名录原文的机构名称逐字一致，名录中括注的曾用名（上海中和应泰、上海中广云、湖北无为股道三家）
+  写在对应条目的 intro 里；注册地取名录的「辖区（注册地）」列。
+  website 均逐个用 HTTP 请求打开核对页面标题或正文确属该公司，打不开、域名被他人占用或只有 JS 空壳无法确认的一律省略；
+  founded 只写公司官网或官方文件明确写出的成立年份，查不到的一律省略，不作估算。
+  地方金融控股公司一类中，仅北京金融控股集团有限公司已按《金融控股公司监督管理试行办法》取得中国人民银行的金融控股公司
+  设立许可，其余各家是省（市）级国有金融资本运营平台，由省财政厅或省国资委履行出资人职责；regulator 字段按本图谱
+  holding 分类的口径统一填写「中国人民银行」，并不表示每一家都已持金融控股公司牌照。
+sources:
+  - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》（附件同名 .xls，发布日期以页面披露为准）", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+  - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》附件：证券投资咨询机构名录（2026年7月）.xls", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/1029656/files/%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%92%A8%E8%AF%A2%E6%9C%BA%E6%9E%84%E5%90%8D%E5%BD%95%EF%BC%882026%E5%B9%B47%E6%9C%88%EF%BC%89.xls", date: "2026-08-25" }
+
+entities:
+  # ============================================================
+  # 一、证券投资咨询机构（category: securities / type: investment-advisory）
+  #     名录共 76 家，以下按名录序号排列
+  # ============================================================
+  - id: adv-dingxin-huijin
+    name: "鼎信汇金（北京）投资管理有限公司"
+    short: "鼎信汇金"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: https://www.tl50.com
+    intro: "注册地北京，持中国证监会证券投资咨询业务资格。官网以「天狼50」为品牌，开展证券投资顾问与证券资讯软件业务。"
+    business: [证券投资顾问, 证券资讯软件]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "鼎信汇金官网（天狼50）", url: "https://www.tl50.com", date: "2026-09-30" }
+
+  - id: adv-hexun-tech
+    name: "和讯信息科技有限公司"
+    short: "和讯信息科技"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    intro: "注册地北京，持中国证监会证券投资咨询业务资格。官网未能打开核对，故省略 website。"
+    business: [证券投资咨询, 财经信息服务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+
+  - id: adv-compass
+    name: "北京指南针科技发展股份有限公司"
+    short: "指南针"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1997
+    listed: ["300803.SZ"]
+    website: https://www.compass.cn
+    intro: "注册地北京，1997 年创立「指南针」品牌，专注证券分析与证券信息服务，A 股上市公司（300803.SZ）。"
+    business: [证券投资咨询, 证券分析软件, 证券信息服务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "指南针官网·企业简介", url: "https://www.compass.cn/about", date: "2026-09-30" }
+
+  - id: adv-zhongfu-jinshi
+    name: "北京中富金石咨询有限公司"
+    short: "中富金石"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: http://www.zx017.com
+    intro: "注册地北京，持中国证监会证券投资咨询业务资格，官网定位「学方法做好股」的证券投资咨询机构。"
+    business: [证券投资咨询, 投资者教育]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "中富金石官网", url: "http://www.zx017.com", date: "2026-09-30" }
+
+  - id: adv-guzhanggui
+    name: "股掌柜证券投资咨询有限公司"
+    short: "股掌柜"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 2002
+    website: https://www.gp51.com
+    intro: "注册地湖南长沙，成立于 2002 年，曾用名盈亚证券投资咨询有限公司，经中国证监会核准从事证券投资咨询业务。"
+    business: [证券投资咨询, 证券投资顾问]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "股掌柜官网", url: "https://www.gp51.com", date: "2026-09-30" }
+
+  - id: adv-bestar
+    name: "北京博星证券投资顾问有限公司"
+    short: "博星证券"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1998
+    website: https://www.bestar.com.cn
+    intro: "注册地北京，成立于 1998 年，注册资本 1 亿元，国内首批获得证券投资咨询牌照的机构（证件号 ZX0101）。"
+    business: [证券投资顾问, 并购重组顾问, 股权投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "博星证券官网·关于我们", url: "https://www.bestar.com.cn", date: "2026-09-30" }
+
+  - id: adv-donggao-tech
+    name: "东高（广东）科技发展有限公司"
+    short: "东高科技"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: https://www.dfchina.com
+    intro: "注册地广东广州，持中国证监会证券投资咨询业务资格，官网域名 dfchina.com。"
+    business: [证券投资咨询, 金融信息技术]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "东高科技官网", url: "https://www.dfchina.com", date: "2026-09-30" }
+
+  - id: adv-haiwen-consulting
+    name: "北京海问咨询有限公司"
+    short: "海问咨询"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    intro: "注册地北京，持中国证监会证券投资咨询业务资格。多个候选域名均无法打开或以「域名出售」页呈现，故省略 website。"
+    business: [证券投资咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+
+  - id: adv-gelonghui
+    name: "北京格隆汇投资顾问有限公司"
+    short: "格隆汇投顾"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 2000
+    website: https://www.guruclub.com
+    intro: "注册地北京，成立于 2000 年 4 月 12 日，定位独立第三方投资研究机构，经营证券期货业务许可证号 91110102721414772E。"
+    business: [证券投资咨询, 独立投研, 投资顾问]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "格隆汇投顾官网", url: "https://www.guruclub.com", date: "2026-09-30" }
+
+  - id: adv-beijing-gushang
+    name: "北京股商证券投资咨询有限公司"
+    short: "北京股商"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: https://zx0006.com
+    intro: "注册地北京，持中国证监会证券投资咨询业务资格，官网域名 zx0006.com。"
+    business: [证券投资咨询, 证券投资顾问]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "北京股商官网", url: "https://zx0006.com", date: "2026-09-30" }
+
+  - id: adv-yixue-zhixun
+    name: "上海益学智迅科技发展有限公司"
+    short: "益学智迅"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: https://www.yxcps.com
+    intro: "注册地上海，官网以「益学堂」为品牌，开展证券投资咨询与投资者教育业务。"
+    business: [证券投资咨询, 投资者教育]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "益学堂官网", url: "https://www.yxcps.com", date: "2026-09-30" }
+
+  - id: adv-zhonghe-yingtai
+    name: "上海中和应泰智能科技有限公司"
+    short: "中和应泰"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: http://www.integrity.com.cn
+    intro: "注册地上海，名录括注原名为上海中和应泰财务顾问有限公司；官网以「好人好股」为品牌提供证券投资顾问服务。"
+    business: [证券投资咨询, 证券投资顾问]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "中和应泰官网（好人好股）", url: "http://www.integrity.com.cn", date: "2026-09-30" }
+
+  - id: adv-dianniu-youxuan
+    name: "点牛优选有限公司"
+    short: "点牛优选"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: https://www.dianniuyouxuan.com
+    intro: "注册地山西，持中国证监会证券投资咨询业务资格，官网域名 dianniuyouxuan.com。"
+    business: [证券投资咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "点牛优选官网", url: "https://www.dianniuyouxuan.com", date: "2026-09-30" }
+
+  - id: adv-ceniu-tech
+    name: "策牛（深圳）科技发展有限公司"
+    short: "策牛科技"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1997
+    website: https://sztg.com
+    intro: "注册地深圳，成立于 1997 年，是国内首批获得证券投顾牌照的证券投资咨询公司，业务资格许可证编号 ZX0013。"
+    business: [证券投资咨询, 证券投资顾问, 金融科技]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "策牛科技官网·关于我们", url: "https://sztg.com/about", date: "2026-09-30" }
+
+  - id: adv-hezhong-huifu
+    name: "北京和众汇富科技股份有限公司"
+    short: "和众汇富"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: https://hzhfzx.com
+    intro: "注册地北京海淀，持中国证监会证券投资咨询业务资格，官网域名 hzhfzx.com。"
+    business: [证券投资咨询, 证券投资顾问]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "和众汇富官网", url: "https://hzhfzx.com", date: "2026-09-30" }
+
+  - id: adv-tianxiang-caifu
+    name: "北京天相财富管理顾问有限公司"
+    short: "天相财富"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: https://www.txsec.com
+    intro: "注册地北京，持中国证监会证券投资咨询业务资格，官网为「天相投顾网」（txsec.com）。"
+    business: [证券投资咨询, 投资顾问, 财富管理顾问]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "天相投顾网官网", url: "https://www.txsec.com", date: "2026-09-30" }
+
+  - id: adv-liaoning-hongli
+    name: "辽宁弘历投资咨询有限公司"
+    short: "辽宁弘历"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: http://www.hl9808.com
+    intro: "注册地辽宁葫芦岛（东戴河新区），持中国证监会证券投资咨询业务资格，官网以股票咨询与炒股软件为主业。"
+    business: [证券投资咨询, 证券资讯软件]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "辽宁弘历投资官网", url: "http://www.hl9808.com", date: "2026-09-30" }
+
+  - id: adv-caizidao
+    name: "财咨道信息技术有限公司"
+    short: "财咨道"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: https://www.caizidao.com.cn
+    intro: "注册地辽宁，持中国证监会证券投资咨询业务资格，官网域名 caizidao.com.cn。"
+    business: [证券投资咨询, 金融信息技术]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "财咨道官网", url: "https://www.caizidao.com.cn", date: "2026-09-30" }
+
+  - id: adv-qiankun-cloud
+    name: "四川钱坤云智能科技有限公司"
+    short: "四川钱坤云"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1997
+    website: https://www.cjs.com.cn
+    intro: "注册地四川成都高新区，始创于 1997 年，中国证监会首批授牌的证券投资咨询机构（许可证号 ZX0086），中国证券业协会会员单位。"
+    business: [证券投资咨询, 金融信息服务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "四川钱坤官网", url: "https://www.cjs.com.cn", date: "2026-09-30" }
+
+  - id: adv-chengdu-huiyang
+    name: "成都汇阳投资顾问有限公司"
+    short: "成都汇阳"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: http://www.hy5188.com
+    intro: "注册地四川成都，持中国证监会证券投资咨询业务资格（资格证号 ZX0179），官网提供终端资讯、软件资讯与综合投顾服务。"
+    business: [证券投资顾问, 证券资讯软件]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "汇阳投资官网", url: "http://www.hy5188.com", date: "2026-09-30" }
+
+  - id: adv-sichuan-dajuece
+    name: "四川大决策证券投资顾问有限公司"
+    short: "四川大决策"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1998
+    website: https://www.djc888.com
+    intro: "注册地四川成都，成立于 1998 年，注册资本 1000 万元，中国证监会批准的专业证券投资咨询机构，中国证券业协会会员单位。"
+    business: [证券投资顾问, 证券投资咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "大决策官网", url: "https://www.djc888.com", date: "2026-09-30" }
+
+  - id: adv-dingdian-caijing
+    name: "杭州顶点财经网络传媒有限公司"
+    short: "顶点财经"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: https://www.topyqs.com
+    intro: "注册地浙江杭州，持中国证监会证券投资咨询业务资格，定位跨媒体财经内容提供商与证券投资顾问服务商。"
+    business: [证券投资咨询, 财经内容, 证券投资顾问]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "顶点财经官网", url: "https://www.topyqs.com", date: "2026-09-30" }
+
+  - id: adv-ths-cloud-software
+    name: "浙江同花顺云软件有限公司"
+    short: "同花顺云软件"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: https://www.ths123.com
+    intro: "注册地浙江杭州，「同花顺」品牌体系内持证券投资咨询业务资格的法人主体，官网域名 ths123.com。"
+    business: [证券投资咨询, 证券资讯软件]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "同花顺云软件官网", url: "https://www.ths123.com", date: "2026-09-30" }
+
+  - id: adv-guangzhou-wanlong
+    name: "广州市万隆证券咨询顾问有限公司"
+    short: "万隆证券"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1992
+    website: https://www.wlstock.com
+    intro: "注册地广东广州，成立于 1992 年，是证监会首批认证的证券咨询机构，以原创证券分析与实战决策指导为特色。"
+    business: [证券投资咨询, 证券分析, 投资顾问]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "万隆证券网·关于我们", url: "https://www.wlstock.com", date: "2026-09-30" }
+
+  - id: adv-huizheng-caijing
+    name: "上海汇正财经顾问有限公司"
+    short: "汇正财经"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1997
+    website: https://www.shhzcj.com
+    intro: "注册地上海普陀，成立于 1997 年 7 月 23 日，是中国证监会首批颁发认证的专业投资咨询机构。"
+    business: [证券投资咨询, 证券投资顾问]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "汇正财经官网", url: "https://www.shhzcj.com", date: "2026-09-30" }
+
+  - id: adv-yuesheng-licai
+    name: "广州越声理财咨询有限公司"
+    short: "越声理财"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1997
+    website: https://www.yslcw.com
+    intro: "注册地广东广州，成立于 1997 年，持中国证监会证券投资咨询业务资格（许可证编号 ZX0027）。"
+    business: [证券投资咨询, 投资顾问]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "越声理财网·公司介绍", url: "https://www.yslcw.com/about.html", date: "2026-09-30" }
+
+  - id: adv-guangdong-kede
+    name: "广东科德投资顾问有限公司"
+    short: "广东科德"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1995
+    website: https://www.foretech.com.cn
+    intro: "注册地广东广州，成立于 1995 年 8 月，是首批经中国证监会认证的证券投资咨询机构（资格证号 ZX0025）。"
+    business: [证券投资顾问, 证券投资咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "广东科德官网", url: "https://www.foretech.com.cn", date: "2026-09-30" }
+
+  - id: adv-guangdong-bozhong
+    name: "广东博众智能科技投资有限公司"
+    short: "广东博众"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 2000
+    website: https://www.get88.cn
+    intro: "注册地广东广州，原广东博众证券投资咨询有限公司，成立于 2000 年 7 月 12 日，持证券投资咨询业务资格证书（编号 ZX0127）。"
+    business: [证券投资咨询, 证券投资顾问, 智能投顾]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "广东博众官网·公司简介", url: "https://www.get88.cn/about.html", date: "2026-09-30" }
+
+  - id: adv-hunan-jinzheng
+    name: "湖南金证投资咨询顾问有限公司"
+    short: "湖南金证"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: https://www.jz66666.com
+    intro: "注册地湖南长沙，中国证监会批准的全国第一批、湖南省首家获得证券投资咨询业务牌照的专业机构，注册资本 5000 万元。"
+    business: [证券投资咨询, 投资顾问, 投研服务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "湖南金证官网", url: "https://www.jz66666.com", date: "2026-09-30" }
+
+  - id: adv-hunan-aiying
+    name: "湖南爱赢证券投资顾问有限公司"
+    short: "湖南爱赢"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    intro: "注册地湖南长沙，持中国证监会证券投资咨询业务资格。候选域名打开后页面标题为通用后台标识、无法确认归属，故省略 website。"
+    business: [证券投资顾问, 证券投资咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+
+  - id: adv-jingzhuan-duoying
+    name: "广州经传多赢投资咨询有限公司"
+    short: "经传多赢"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 2001
+    website: https://www.jingzhuan.cn
+    intro: "注册地广东广州，2001 年成立经传多赢，经中国证监会核准的证券投资咨询机构（核准号 ZX0172），业务含证券投资咨询、公募基金销售与辅助决策软件。"
+    business: [证券投资咨询, 公募基金销售, 证券资讯软件]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "经传多赢官网·关于我们", url: "https://www.jingzhuan.cn/about", date: "2026-09-30" }
+
+  - id: adv-shenzhen-guocheng
+    name: "深圳市国诚投资咨询有限公司"
+    short: "深圳国诚"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 2004
+    website: https://www.gctzsh.com
+    intro: "注册地深圳福田，成立于 2004 年，以投研资讯加工、投资者教育与选股决策辅助为业务方向，并设有上海分公司。"
+    business: [证券投资咨询, 投资者教育, 投研资讯]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "国诚投资官网", url: "https://www.gctzsh.com", date: "2026-09-30" }
+
+  - id: adv-shenzhen-luojia
+    name: "深圳市珞珈投资咨询有限公司"
+    short: "珞珈投资"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1996
+    website: https://www.lj168.com
+    intro: "注册地深圳福田，成立于 1996 年，持有中国证监会《证券投资咨询业务许可证》，已持续经营约三十年。"
+    business: [证券投资咨询, 证券投资顾问]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "珞珈投资官网", url: "https://www.lj168.com", date: "2026-09-30" }
+
+  - id: adv-shenzhen-qifu
+    name: "深圳市启富证券投资顾问有限公司"
+    short: "启富投顾"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 2001
+    website: http://www.qifu66.com
+    intro: "注册地深圳福田，成立于 2001 年，经中国证监会核准的证券投资咨询机构（资格证书编号 914403007298539806），注册资本 2000 万元。"
+    business: [证券投资顾问, 证券投资咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "启富投顾官网·公司简介", url: "http://www.qifu66.com", date: "2026-09-30" }
+
+  - id: adv-shenzhen-zhongzheng-info
+    name: "深圳市中证投资资讯有限公司"
+    short: "深圳中证投资资讯"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    intro: "注册地深圳福田，持中国证监会证券投资咨询业务资格。候选域名无法打开，故省略 website。"
+    business: [证券投资咨询, 证券资讯]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+
+  - id: adv-shenzhen-zunyue
+    name: "深圳市尊悦证券资讯有限公司"
+    short: "尊悦证讯"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: http://www.zrich.com
+    intro: "注册地深圳，主营证券资讯、数据与服务的研究开发，官网为「尊悦证讯」，并发布「尊悦指数」系列。"
+    business: [证券资讯, 证券投资咨询, 金融数据]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "尊悦证讯官网", url: "http://www.zrich.com", date: "2026-09-30" }
+
+  - id: adv-shenzhen-dexun
+    name: "深圳德讯证券顾问有限公司"
+    short: "深圳德讯"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    intro: "注册地深圳罗湖，持中国证监会证券投资咨询业务资格。候选域名均无法打开，故省略 website。"
+    business: [证券投资顾问, 证券投资咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+
+  - id: adv-shenzhen-huaixin
+    name: "深圳怀新企业投资顾问股份有限公司"
+    short: "怀新投资"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    intro: "注册地深圳福田，持中国证监会证券投资咨询业务资格，为国内首批获得该资格的机构之一。候选域名（hxcapital.cn）无法从本机打开核对，故省略 website 与 founded。"
+    business: [证券投资咨询, 投资顾问]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+
+  - id: adv-zhongguangyun
+    name: "上海中广云证券咨询有限公司"
+    short: "中广云"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: https://www.zgzb.com
+    intro: "注册地上海普陀，名录括注原名为中广云信息科技（深圳）有限公司；官网以「中广云智投」为品牌提供证券投资顾问服务。"
+    business: [证券投资咨询, 证券投资顾问]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "中广云智投官网", url: "https://www.zgzb.com", date: "2026-09-30" }
+
+  - id: adv-huiyan-zhitou
+    name: "慧研智投科技有限公司"
+    short: "慧研智投"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: https://www.hyztsat.com
+    intro: "注册地山西综改示范区，持中国证监会证券投资咨询业务资格，业务覆盖证券投资咨询、智能投顾与金融科技。"
+    business: [证券投资咨询, 智能投顾, 金融科技]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "慧研智投官网", url: "https://www.hyztsat.com", date: "2026-09-30" }
+
+  - id: adv-xinlande
+    name: "深圳市新兰德证券投资咨询有限公司"
+    short: "新兰德"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1992
+    website: https://www.xinlande.com.cn
+    intro: "注册地深圳福田，1992 年 1 月 16 日注册成立，是经中国人民银行深圳分行和深圳市工商行政管理局批准成立的国内早期专业证券投资咨询公司。"
+    business: [证券投资咨询, 证券投资顾问]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "新兰德官网", url: "https://www.xinlande.com.cn", date: "2026-09-30" }
+
+  - id: adv-eastmoney-advisory
+    name: "上海东方财富证券投资咨询有限公司"
+    short: "东方财富投顾"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: https://www.dfcfw.com
+    intro: "注册地上海，东方财富信息股份有限公司（母公司 2010 年 3 月 19 日在深交所上市，股票代码 300059）体系内的持牌证券投资咨询机构。"
+    business: [证券投资咨询, 投资顾问, 策略研究]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "上海东方财富证券投资咨询有限公司官网", url: "https://www.dfcfw.com", date: "2026-09-30" }
+
+  - id: adv-haineng-tougu
+    name: "上海海能证券投资顾问有限公司"
+    short: "海能投顾"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: https://www.hntz18.com
+    intro: "注册地上海，中国证监会首批颁发认证的专业投资咨询机构之一，官网为「海能投顾」。"
+    business: [证券投资顾问, 证券投资咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "海能投顾官网", url: "https://www.hntz18.com", date: "2026-09-30" }
+
+  - id: adv-shenzhen-youpin
+    name: "深圳市优品投资顾问有限公司"
+    short: "优品投顾"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: https://www.upchina.com
+    intro: "注册地深圳南山，持中国证监会证券投资咨询业务资格，从事证券投资咨询、企业管理咨询与数据分析、技术研发，官网运营「优品股票通」等终端产品。"
+    business: [证券投资咨询, 证券资讯软件, 数据分析]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "优品投资官网", url: "https://www.upchina.com", date: "2026-09-30" }
+
+  - id: adv-shanghai-kaishi
+    name: "上海凯石证券投资咨询有限公司"
+    short: "上海凯石"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1995
+    website: https://www.kaishizq.com
+    intro: "注册地上海，公司成立于 1995 年，主要经营证券投顾相关业务。"
+    business: [证券投资咨询, 证券投资顾问]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "凯石官网", url: "https://www.kaishizq.com", date: "2026-09-30" }
+
+  - id: adv-liduoxing
+    name: "上海利多星证券咨询有限公司"
+    short: "利多星"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1997
+    website: https://www.liduoxing.com
+    intro: "注册地上海，成立于 1997 年 12 月，国内首批获得证券投资咨询资格的机构（业务资格许可证 ZX0100），中国证券业协会会员单位。"
+    business: [证券投资咨询, 证券投资顾问]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "利多星官网", url: "https://www.liduoxing.com", date: "2026-09-30" }
+
+  - id: adv-rongzheng-group
+    name: "上海荣正企业咨询服务（集团）股份有限公司"
+    short: "荣正集团"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1998
+    website: http://www.realize.com.cn
+    intro: "注册地上海，由郑培敏先生创立于 1998 年，以股权激励咨询为核心，同时是中国证监会财务顾问备案机构，专长于企业中长期激励制度研究与咨询。"
+    business: [财务顾问, 股权激励咨询, 投资咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "荣正集团官网·公司简介", url: "http://www.realize.com.cn/website/all/f1?id=course", date: "2026-09-30" }
+
+  - id: adv-stockstar-research
+    name: "上海证券之星综合研究有限公司"
+    short: "证券之星综合研究"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: https://www.stockstar.com
+    intro: "注册地上海自贸区，为财经信息服务平台「证券之星」旗下持证券投资咨询业务资格的法人主体。"
+    business: [证券投资咨询, 财经信息服务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "证券之星官网", url: "https://www.stockstar.com", date: "2026-09-30" }
+
+  - id: adv-sws-research
+    name: "上海申银万国证券研究所有限公司"
+    short: "申万宏源研究"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1992
+    intro: "注册地上海，创建于 1992 年，隶属申万宏源证券有限公司（000166.SZ），是中国大陆成立最早的具有独立法人资格的综合性证券研究咨询机构之一。官网 swsresearch.com 无法从本机打开核对，故省略 website。"
+    business: [证券研究, 投资咨询, 研究服务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "申万宏源证券官网·投研服务介绍", url: "https://pb.swhysc.com/bizDesc/bizTrustPage.do", date: "2026-09-30" }
+
+  - id: adv-shanghai-shiji
+    name: "上海世基投资顾问有限公司"
+    short: "上海世基"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    intro: "注册地上海，持中国证监会证券投资咨询业务资格。候选域名 sjstock.com.cn 打开后标题为「创业百科」、内容已与本公司无关，故省略 website。"
+    business: [证券投资顾问, 证券投资咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+
+  - id: adv-bairuiying
+    name: "江苏百瑞赢证券咨询有限公司"
+    short: "百瑞赢"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1999
+    website: https://www.bryzq.com
+    intro: "注册地江苏南京，原名上海新资源证券咨询有限公司，成立于 1999 年 11 月，同年获得中国证监会颁发的首批证券投资咨询执业资格证书。"
+    business: [证券投资咨询, 证券投资顾问, 证券资讯软件]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "百瑞赢官网·关于我们", url: "https://www.bryzq.com", date: "2026-09-30" }
+
+  - id: adv-yashang-tougu
+    name: "上海亚商投资顾问有限公司"
+    short: "亚商投顾"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1994
+    website: https://www.abctougu.cn
+    intro: "注册地上海，成立于 1994 年，是国内成立较早的专业证券咨询机构之一，较早获得中国证监会证券投资咨询牌照（许可证号 ZX0072）。"
+    business: [证券投资顾问, 证券投资咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "亚商投顾官网", url: "https://www.abctougu.cn", date: "2026-09-30" }
+
+  - id: adv-emoney
+    name: "益盟股份有限公司"
+    short: "益盟股份"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: https://www.emoney.cn
+    intro: "注册地上海杨浦，持中国证监会证券投资咨询业务资格，以「益盟操盘手」品牌提供证券投资决策软件与投资顾问服务。"
+    business: [证券投资咨询, 证券投资决策软件, 投资顾问]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "益盟股份官网", url: "https://www.emoney.cn", date: "2026-09-30" }
+
+  - id: adv-shanghai-zhiyi
+    name: "上海智蚁理财顾问有限公司"
+    short: "上海智蚁"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    intro: "注册地上海自贸区，持中国证监会证券投资咨询业务资格。候选域名返回 404、无法确认为本公司官网，故省略 website。"
+    business: [理财顾问, 证券投资咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+
+  - id: adv-zhengquantong
+    name: "上海证券通投资资讯科技有限公司"
+    short: "证券通"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: https://www.zqt888.cn
+    intro: "注册地上海，持中国证监会证券投资咨询业务资格，官网「证券通」提供证券投资咨询与投资顾问产品。"
+    business: [证券投资咨询, 投资顾问, 证券资讯]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "证券通官网", url: "https://www.zqt888.cn", date: "2026-09-30" }
+
+  - id: adv-jufeng-tougu
+    name: "陕西巨丰投资资讯有限责任公司"
+    short: "巨丰投顾"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: https://www.jfinfo.com
+    intro: "注册地陕西，持中国证监会证券投资咨询业务资格，官网以「巨丰财经／巨丰投顾」品牌提供买方投顾与投研服务。"
+    business: [证券投资咨询, 投资顾问, 投研服务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "巨丰财经官网", url: "https://www.jfinfo.com", date: "2026-09-30" }
+
+  - id: adv-lianhe-credit
+    name: "联合信用投资咨询有限公司"
+    short: "联合咨询"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1997
+    website: http://www.lhcic.com
+    intro: "注册地天津和平区，成立于 1997 年，注册资本 1 亿元，2004 年 1 月获得中国证监会证券投资咨询业务资格证书，是全国首批获得该资质的机构之一，专注固定收益领域信用风险管理与投资咨询。"
+    business: [证券投资咨询, 信用风险管理, 固定收益研究]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "联合咨询官网", url: "http://www.lhcic.com", date: "2026-09-30" }
+
+  - id: adv-dalian-huaxun
+    name: "大连华讯投资股份有限公司"
+    short: "大连华讯"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    intro: "注册地辽宁大连花园口经济区，持中国证监会证券投资咨询业务资格。候选域名 huaxuntg.com 无法打开，故省略 website。"
+    business: [证券投资咨询, 证券投资顾问]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+
+  - id: adv-gaotime
+    name: "海南港澳资讯产业股份有限公司"
+    short: "港澳资讯"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: https://www.gaotime.com
+    intro: "注册地海南，持中国证监会证券投资咨询业务资格，官网「港澳资讯」提供金融资讯与投资咨询服务，具备跨地区增值电信业务经营资格。"
+    business: [证券投资咨询, 金融资讯, 金融信息服务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "港澳资讯官网", url: "https://www.gaotime.com", date: "2026-09-30" }
+
+  - id: adv-haishun
+    name: "海顺证券投资咨询有限公司"
+    short: "海顺证券"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1997
+    website: http://www.haishun.com
+    intro: "注册地浙江宁波海曙，创立于 1997 年 3 月，1998 年首批获得中国证监会证券投资咨询资格（证券资格号 ZX095），实缴注册资本 5000 万元。"
+    business: [证券投资咨询, 证券投资顾问]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "海顺证券网官网", url: "http://www.haishun.com", date: "2026-09-30" }
+
+  - id: adv-chongqing-dongjin
+    name: "重庆东金投资顾问有限公司"
+    short: "重庆东金"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: https://www.chongqingdongjin.com
+    intro: "注册地重庆江北区，经中国证监会批准的证券投资咨询机构，持有重庆地区证券投资咨询牌照，围绕股票分析、软件、行情与基金债券资讯开展服务。"
+    business: [证券投资顾问, 股票分析, 证券资讯软件]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "重庆东金官网", url: "https://www.chongqingdongjin.com", date: "2026-09-30" }
+
+  - id: adv-hexin-securities
+    name: "和信证券投资咨询股份有限公司"
+    short: "和信证券"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: https://hexinsec.com
+    intro: "注册地河南郑州郑东新区，持中国证监会证券投资咨询业务资格，曾用名河南和信证券投资顾问股份有限公司。"
+    business: [证券投资咨询, 证券投资顾问, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "和信证券官网", url: "https://hexinsec.com", date: "2026-09-30" }
+
+  - id: adv-yueniu-software
+    name: "云南约牛软件技术有限公司"
+    short: "约牛软件"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1997
+    website: https://www.zx0093.com
+    intro: "注册地云南昆明西山，成立于 1997 年，注册资本 4000 万元，是首批获得中国证监会颁发认证的专业证券投资咨询机构。"
+    business: [证券投资咨询, 证券资讯软件, 证券投资顾问]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "约牛软件官网", url: "https://www.zx0093.com", date: "2026-09-30" }
+
+  - id: adv-huaan-xinxing
+    name: "安徽华安新兴证券投资咨询有限责任公司"
+    short: "华安新兴"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    intro: "注册地安徽，持中国证监会证券投资咨询业务资格。未检索到可确认归属的独立官网，故省略 website 与 founded。"
+    business: [证券投资咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+
+  - id: adv-qimingxing-cloud
+    name: "启明星云数据技术有限公司"
+    short: "启明星"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1997
+    website: https://www.qmxdata.com
+    intro: "注册地上海，成立于 1997 年 11 月，是国内首批获得证券投资咨询资格的专业持牌机构（许可证编号 ZX0125），定位证券投资教育服务平台。"
+    business: [证券投资咨询, 投资者教育, 金融数据]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "启明星官网", url: "https://www.qmxdata.com", date: "2026-09-30" }
+
+  - id: adv-hebei-yuanda
+    name: "河北源达信息技术股份有限公司"
+    short: "河北源达"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1997
+    website: https://yd.com.cn
+    intro: "注册地河北石家庄，成立于 1997 年，是中国证监会核准的证券投资咨询持牌机构，具备发布证券研究报告资质，并取得软件产品、软件企业双软认证。"
+    business: [证券投资咨询, 证券研究报告, 证券资讯软件]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "河北源达官网·关于我们", url: "https://yd.com.cn/index/about.html", date: "2026-09-30" }
+
+  - id: adv-shenguang
+    name: "山东神光咨询服务有限责任公司"
+    short: "山东神光"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1996
+    intro: "注册地山东济南，前身神光工作室 1994 年 10 月设立，山东神光咨询服务有限责任公司于 1996 年 9 月 3 日成立（统一社会信用代码 91370100163097353U），1997 年获得证券投资咨询资格。官网 shenguang.com 无法从本机打开核对，故省略 website。"
+    business: [证券投资咨询, 证券投资顾问]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "神光投顾网·了解神光", url: "https://www.shenguang.com/about/index.html", date: "2026-09-30" }
+
+  - id: adv-aniu-zhitou
+    name: "山东阿牛智投资本管理有限公司"
+    short: "阿牛智投"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 2000
+    website: https://www.aniu.com
+    intro: "注册地山东济南市中区，成立于 2000 年，获中国证监会颁发的经营证券期货业务许可证（编号 91370100724977116F），在上海、山东两地办公。"
+    business: [证券投资咨询, 证券投资顾问, 智能投顾]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "阿牛智投官网·关于我们", url: "https://www.aniu.com/helpcenter/type/1", date: "2026-09-30" }
+
+  - id: adv-jinbailin
+    name: "江苏金百临投资咨询股份有限公司"
+    short: "金百临"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 2001
+    website: https://www.jsjbl.com
+    intro: "注册地江苏无锡，成立于 2001 年，注册资本 1 亿元，同时持有证券投资咨询、基金销售、私募基金管理三项监管资质。"
+    business: [证券投资咨询, 公募基金销售, 私募基金管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "金百临官网", url: "https://www.jsjbl.com", date: "2026-09-30" }
+
+  - id: adv-jiangsu-tianding
+    name: "江苏天鼎证券投资咨询有限公司"
+    short: "江苏天鼎"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: http://www.tdtz888.com
+    intro: "注册地江苏南京秦淮区，持中国证监会证券投资咨询业务资格，官网提供股票诊断与投资顾问服务。"
+    business: [证券投资咨询, 证券投资顾问, 公募基金销售]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "江苏天鼎官网", url: "http://www.tdtz888.com", date: "2026-09-30" }
+
+  - id: adv-xindingsheng
+    name: "厦门市鑫鼎盛控股有限公司"
+    short: "鑫鼎盛"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: https://www.xds.com.cn
+    intro: "注册地福建厦门思明区，持中国证监会证券投资咨询业务资格，官网运营基金销售平台「基金决策宝」。"
+    business: [证券投资咨询, 公募基金销售]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "鑫鼎盛官网", url: "https://www.xds.com.cn", date: "2026-09-30" }
+
+  - id: adv-jiufang-cloud
+    name: "上海九方云智能科技有限公司"
+    short: "九方智投"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1996
+    website: https://www.9fzt.com
+    intro: "注册地上海普陀，成立于 1996 年，是首批获证监会批准的证券投资咨询持牌机构之一，为九方智投控股（9636.HK）旗下子品牌，定位「新一代股票投资助手」。"
+    business: [证券投资咨询, 智能投顾, 投资者教育]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "九方智投官网·九方云简介", url: "https://www.9fzt.com/introduce.html", date: "2026-09-30" }
+
+  - id: adv-gaoneng-cloud
+    name: "杭州高能云科技有限公司"
+    short: "高能云"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1997
+    website: https://www.cloudgn.com
+    intro: "注册地浙江杭州，创立于 1997 年，经中国证监会批准成为首批证券投资咨询机构（许可证编号 ZX0004），注册资本 2000 万元，以「高能智投」品牌开展智能投顾业务。"
+    business: [证券投资咨询, 智能投顾, 量化投研]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "高能智投官网·公司介绍", url: "https://www.cloudgn.com/about/company", date: "2026-09-30" }
+
+  - id: adv-wuwei-gudao
+    name: "湖北无为股道科技有限公司"
+    short: "无为股道"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    website: https://wwgd888.com
+    intro: "注册地湖北武汉，名录括注原名为武汉云掌数字科技有限公司；官网「无为股道」提供证券投资顾问与投资者教育服务。"
+    business: [证券投资咨询, 投资者教育, 量化策略]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "无为股道官网", url: "https://wwgd888.com", date: "2026-09-30" }
+
+  - id: adv-fujian-zhongxun
+    name: "福建中讯证券研究有限责任公司"
+    short: "福建中讯"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    intro: "注册地福建福州鼓楼区，持中国证监会证券投资咨询业务资格。候选域名 968997.net 无法从本机打开核对，故省略 website 与 founded。"
+    business: [证券研究, 证券投资咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+
+  - id: adv-rongwei
+    name: "黑龙江省容维证券数据程序化有限公司"
+    short: "容维"
+    category: securities
+    type: investment-advisory
+    regulator: 中国证监会
+    founded: 1997
+    website: https://www.baijiayungu.cn
+    intro: "注册地黑龙江哈尔滨，自 1997 年成立，经中国证监会特许审批经营证券期货业务的证券投资咨询机构，注册资本 1.2756 亿元，为中国证券业协会第六届理事单位。"
+    business: [证券投资咨询, 证券数据服务, 智能投顾]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《证券投资咨询机构名录（2026年7月）》", url: "https://www.csrc.gov.cn/csrc/c101900/c1029656/content.shtml", date: "2026-08-25" }
+      - { title: "容维智本官网", url: "https://www.baijiayungu.cn", date: "2026-09-30" }
+
+  # ============================================================
+  # 二、证券金融公司（category: securities / type: securities-finance）
+  # ============================================================
+  - id: adv-china-securities-finance
+    name: "中国证券金融股份有限公司"
+    short: "中证金融公司"
+    category: securities
+    type: securities-finance
+    regulator: 中国证监会
+    founded: 2011
+    website: http://www.csf.com.cn
+    intro: "成立于 2011 年 10 月 28 日，是经国务院同意、中国证监会批准设立的全国性证券类金融机构，境内从事转融通业务的金融机构，为证券公司融资融券业务提供配套服务。股东单位为上海证券交易所、深圳证券交易所、上海期货交易所、中国金融期货交易所、大连商品交易所、郑州商品交易所和中国证券登记结算有限责任公司。"
+    business: [转融通, 转融资, 转融券, 融资融券监测监控]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券金融股份有限公司官网·公司介绍", url: "http://www.csf.com.cn/publish/main/1001/1002/index.html", date: "2026-09-30" }
+      - { title: "中国证券金融股份有限公司官网", url: "http://www.csf.com.cn", date: "2026-09-30" }
+
+  # ============================================================
+  # 三、地方金融控股公司（category: holding / type: investment-holding）
+  # ============================================================
+  - id: adv-beijing-fh
+    name: "北京金融控股集团有限公司"
+    short: "北京金控"
+    category: holding
+    type: local-financial-holding
+    regulator: 中国人民银行
+    founded: 2018
+    intro: "2018 年 10 月 19 日正式注册成立，注册资本 120 亿元，股东为北京国有资本运营管理有限公司（持股 100%），实际控制人为北京市人民政府国有资产监督管理委员会。2022 年 3 月获中国人民银行批准金融控股公司设立许可，是首批获批的地方金融控股公司，采取整体申设的「大金控」模式。主营业务分金融牌照投资管理、产业投融资管理和金融科技创新三大板块，拥有银行、证券、期货、AMC 等金融牌照。"
+    business: [银行, 证券, 期货, 金融资产管理, 金融科技]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "北京市人民政府国有资产监督管理委员会「监管企业」：北京金融控股集团有限公司", url: "https://gzw.beijing.gov.cn/yggq/jgqy/201812/t20181220_9841.html", date: "2021-06-17" }
+      - { title: "北京银行股份有限公司与北京金融控股集团有限公司关联交易事项的公告（披露注册资本、股东与实际控制人）", url: "http://static.cninfo.com.cn/finalpage/2025-10-31/1224775605.PDF", date: "2025-10-31" }
+
+  - id: adv-shanghai-international-group
+    name: "上海国际集团有限公司"
+    short: "上海国际集团"
+    category: holding
+    type: investment-holding
+    founded: 2000
+    website: https://www.sigchina.com
+    intro: "前身是成立于 1981 年的上海市投资信托公司（后更名为上海国际信托投资公司），2000 年 4 月集团正式成立，注册资本 300 亿元，是上海市重要的国有资本投资运营平台，坚持金融控股、国有资本运营、投资与资产管理主责主业，持有浦发银行、上海农商银行、中国太保等多家市属重点金融机构股权。"
+    business: [银行, 证券, 保险, 信托, 基金]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "上海国际集团官网·集团简介", url: "https://www.sigchina.com/site/introduction", date: "2026-09-30" }
+      - { title: "上海国际集团官网", url: "https://www.sigchina.com", date: "2026-09-30" }
+
+  - id: adv-zhejiang-innovation-investment
+    name: "浙江省创新投资集团有限公司"
+    short: "浙江金控"
+    category: holding
+    type: investment-holding
+    founded: 2012
+    website: https://www.zjfh.cn
+    intro: "成立于 2012 年 9 月，注册资本 120 亿元，是浙江省级国有综合投资运营平台，由浙江省财政厅履行出资人职责。2025 年经浙江省委省政府部署，由原浙江省金融控股有限公司提升发展为现名（2025 年 7 月 16 日公告更名），英文名沿用 Provincial Financial Holdings。"
+    business: [银行, 证券, 信托, 基金, 金融股权投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "浙江省创新投资集团有限公司官网·公司简介", url: "https://www.zjfh.cn", date: "2026-09-30" }
+      - { title: "浙江省创新投资集团有限公司官网·新闻中心（载明由原浙江省金融控股有限公司提升发展而来）", url: "https://www.zjfh.cn/newsDetail_6_1182", date: "2026-01-01" }
+
+  - id: adv-guangdong-yueke
+    name: "广东省粤科金融集团有限公司"
+    short: "粤科金融集团"
+    category: holding
+    type: investment-holding
+    intro: "广东省人民政府出资、由广东省国资委统一监管的省属金融企业（原由省科技厅管理，经省政府批复移交省国资委），注册资本 106 亿元，以创业投资和科技金融为主业，受托管理广东省创新创业基金等政府引导基金，是服务全省科技创新的重要平台。官网 gvcgc.com 无法从本机打开核对，故省略 website 与 founded。"
+    business: [创业投资, 科技金融, 基金投资, 科技担保]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "广东省人民政府《关于广东省粤科金融集团有限公司移交省国资委统一监管的批复》", url: "http://www.gd.gov.cn/gkmlpt/content/2/2120/post_2120070.html", date: "2019-01-01" }
+      - { title: "广东省人民政府国有资产监督管理委员会·粤科金融集团企业动态（载明注册资本 106 亿元）", url: "http://gzw.gd.gov.cn/qydt/ykjrjt/content/post_4056660.html", date: "2022-01-01" }
+
+  - id: adv-jiangsu-guoxin
+    name: "江苏省国信集团有限公司"
+    short: "江苏国信"
+    category: holding
+    type: investment-holding
+    founded: 2002
+    website: http://www.jsgx.net
+    intro: "2002 年正式挂牌成立，前身为江苏省国际信托投资公司和江苏省投资管理公司，出资人为江苏省国资委；拥有江苏国信股份有限公司（002608.SZ）、江苏省新能源开发股份有限公司（603693.SH）、江苏舜天股份有限公司（600287.SH）等上市公司，金融板块含江苏省国际信托有限责任公司等。"
+    business: [信托, 证券, 能源投资, 国有资本运营]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "江苏省国资委《四十年四十企｜江苏国信：使命必达 勇当江苏国企改革的先行者》（载明 2002 年挂牌成立及前身）", url: "https://jsgzw.jiangsu.gov.cn/art/2018/8/13/art_11717_7782118.html", date: "2018-08-13" }
+      - { title: "江苏省国信集团有限公司官网", url: "http://www.jsgx.net", date: "2026-09-30" }
+
+  - id: adv-shandong-luxin
+    name: "山东省鲁信投资控股集团有限公司"
+    short: "鲁信集团"
+    category: holding
+    type: investment-holding
+    founded: 1988
+    website: https://www.luxin.cn
+    intro: "前身为 1988 年 2 月成立的山东省国际信托投资公司，2005 年 8 月更名为现名，注册资本与实收资本均为 360 亿元，由山东省财政厅持股，是山东省属金融业态较为齐全的国有金融控股集团，直接管理 11 家公司、参股 200 余家公司。"
+    business: [信托, 证券, 基金, 创业投资, 金融投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "山东省国资委（载明鲁信集团注册资本 360 亿元及金融业态情况）", url: "http://gzw.shandong.gov.cn/articles/ch04565/202504/2b7749c8-881a-49de-aa90-35e34760bd3e.shtml", date: "2025-04-01" }
+      - { title: "鲁信集团官网", url: "https://www.luxin.cn", date: "2026-09-30" }
+
+  - id: adv-anhui-investment-group
+    name: "安徽省投资集团控股有限公司"
+    short: "安徽省投资集团"
+    category: holding
+    type: investment-holding
+    founded: 1998
+    website: http://www.ahinv.com
+    intro: "1998 年 6 月由安徽省建设投资公司、省农业投资公司和省铁路建设投资公司合并组建，注册资本 600 亿元，安徽省国资委履行出资人职责；2011 年和 2014 年先后与上海裕安投资集团、深圳安徽实业总公司重组，业务涵盖金融投资与产业投资。"
+    business: [金融投资, 产业投资, 基金投资, 国有资本运营]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "安徽省投资集团控股有限公司官网·集团概况", url: "http://www.ahinv.com/col/col10/index.html", date: "2026-09-30" }
+      - { title: "安徽省投资集团控股有限公司官网", url: "http://www.ahinv.com", date: "2026-09-30" }
+
+  - id: adv-hunan-caixin
+    name: "湖南财信金融控股集团有限公司"
+    short: "财信金控"
+    category: holding
+    type: investment-holding
+    founded: 2015
+    website: https://www.hnchasing.com
+    intro: "系由湖南省人民政府投资设立，于 2015 年 12 月 22 日登记注册，是湖南省唯一的省级地方金融控股平台、省属大型骨干企业；旗下拥有财信证券、财信信托、吉祥人寿、湖南资产管理、财信产业基金等全资或控股子公司，业务涵盖信托、证券、保险、银行、资产管理、产业基金、产权交易、期货、担保等领域。"
+    business: [信托, 证券, 保险, 资产管理, 产业基金]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "湖南财信金融控股集团有限公司公司债券募集说明书（上交所披露，载明 2015 年 12 月 22 日登记注册及公司网址）", url: "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202507/3e1fa5_20250728_ZXJV.pdf", date: "2025-07-28" }
+      - { title: "湖南财信金融控股集团官网", url: "https://www.hnchasing.com", date: "2026-09-30" }
+
+  - id: adv-hubei-hongtai
+    name: "湖北宏泰集团有限公司"
+    short: "湖北宏泰"
+    category: holding
+    type: investment-holding
+    founded: 2022
+    website: https://www.hbhtgroup.com
+    intro: "由湖北省委、省政府于 2022 年 1 月 25 日正式揭牌成立，是湖北省属唯一金融服务类企业，注册资本 286.04 亿元。作为湖北银行、长江财险第一大股东，同时是国华人寿第五大股东、航天金融租赁第三大股东，围绕服务实体经济、防控金融风险、深化金融改革三大任务打造省级金控平台。"
+    business: [银行, 保险, 金融租赁, 资产管理, 要素市场]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "湖北宏泰集团官网·集团简介", url: "https://www.hbhtgroup.com/jtgk/jtjj/h5.shtml", date: "2026-09-30" }
+      - { title: "湖北宏泰集团官网（载明 2022 年 1 月 25 日挂牌成立）", url: "https://www.hbhtgroup.com", date: "2026-09-30" }
+
+  - id: adv-sichuan-fh
+    name: "四川金融控股集团有限公司"
+    short: "四川金控"
+    category: holding
+    type: investment-holding
+    founded: 2017
+    website: https://www.sichuanfh.com
+    intro: "经四川省人民政府批准，于 2017 年 2 月 8 日由四川发展（控股）有限责任公司出资设立，是四川省首家省级综合性金融控股平台，注册资本与实缴资本均为 100 亿元。"
+    business: [银行, 信托, 资产管理, 金融股权投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "四川金融控股集团有限公司公司债券募集说明书（上交所披露，载明 2017 年 2 月 8 日由四川发展出资设立）", url: "http://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202506/ac7506_20250619_64OK.pdf", date: "2025-06-19" }
+      - { title: "四川金融控股集团有限公司官网", url: "https://www.sichuanfh.com", date: "2026-09-30" }
+
+  - id: adv-chongqing-yufu
+    name: "重庆渝富控股集团有限公司"
+    short: "渝富控股"
+    category: holding
+    type: investment-holding
+    founded: 2004
+    website: https://www.cqyfkgjt.com
+    intro: "成立于 2004 年，是经重庆市政府批准设立的全国首家地方国有独资综合性资产经营管理公司，前 10 年主要履行土地、债务、资产重组和战略投资职能；2014 年市政府确定其改组组建国有资本运营公司试点，2020 年起按深化国有资本运营公司改革试点方案主要开展金融及产业战略投资。"
+    business: [金融战略投资, 产业投资, 国有资本运营, 资产管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "重庆渝富控股集团有限公司官网·基本信息（载明成立于 2004 年）", url: "https://www.cqyfkgjt.com/cqyfkgjt/xinxigongkai/gongsizhili1/yufujituan/jingyingxinxi1/index1.html", date: "2026-09-30" }
+      - { title: "重庆渝富控股集团有限公司官网·了解渝富", url: "https://www.cqyfkgjt.com/about/", date: "2026-09-30" }
+
+  - id: adv-jiangxi-fh
+    name: "江西省金融控股集团有限公司"
+    short: "江西金控"
+    category: holding
+    type: investment-holding
+    founded: 2015
+    website: https://www.jxfhgc.com
+    intro: "于 2015 年 9 月正式组建成立，注册资本 80 亿元，是江西省首家国有全资金融控股集团，定位为江西省省属地方金融机构的投资主体和金融资产的管理平台；主要出资人为江西省财政资产中心，旗下含恒邦财产保险股份有限公司、江西省金融资产管理股份有限公司、江西省金控融资租赁股份有限公司等。"
+    business: [保险, 金融资产管理, 融资租赁, 担保, 金融投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "江西省金融控股集团有限公司官网·集团简介", url: "https://www.jxfhgc.com/jxfhgc/jtjj/jtjj.shtml", date: "2026-09-30" }
+      - { title: "江西省金融控股集团有限公司《所属企业全级次名单信息公示》（载明出资人江西省财政中心持股 59.24%）", url: "https://www.jxfhgc.com/jxfhgc/xxpl/202308/73abdf0da5f146a488329f07579e3129.shtml", date: "2023-08-16" }
+
+  - id: adv-guangxi-financial-investment
+    name: "广西金融投资集团有限公司"
+    short: "广西金投"
+    category: holding
+    type: investment-holding
+    website: https://www.gxfi.net
+    intro: "广西壮族自治区国有金融企业，旗下业态涵盖财产保险、人寿保险、金融租赁、资产管理、汽车金融、信用担保等；截至 2026 年 4 月末资产总额 1493.77 亿元、净资产 475.04 亿元，国内主体信用评级连续 8 年保持 AAA。"
+    business: [财产保险, 人寿保险, 金融租赁, 资产管理, 信用担保]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "广西金融投资集团官网·集团简介（载明资产规模与业态）", url: "https://www.gxfi.net/77/7526.html", date: "2026-09-30" }
+      - { title: "广西金融投资集团官网", url: "https://www.gxfi.net", date: "2026-09-30" }
+
+  - id: adv-shanxi-fh
+    name: "山西金融投资控股集团有限公司"
+    short: "山西金控"
+    category: holding
+    type: investment-holding
+    founded: 2015
+    website: http://www.shanxifh.com
+    intro: "根据山西省人民政府办公厅 2015 年 11 月 23 日印发的筹组方案组建，2015 年 12 月成立，注册资本 106.47 亿元，由山西省财政厅履行出资人职责，是山西省属大型国有金融企业。"
+    business: [银行, 证券, 信托, 担保, 金融投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "山西金融投资控股集团有限公司公司债券募集说明书（上交所披露，载明成立时间与筹组依据）", url: "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202603/34c997_20260312_1R1H.pdf", date: "2026-03-12" }
+      - { title: "山西金融投资控股集团有限公司官网", url: "http://www.shanxifh.com", date: "2026-09-30" }
+
+  - id: adv-jilin-fh
+    name: "吉林省金融控股集团股份有限公司"
+    short: "吉林金控"
+    category: holding
+    type: investment-holding
+    founded: 2015
+    website: https://www.jljrkg.com
+    intro: "成立于 2015 年 2 月，是吉林省省级大型国有金融控股集团，组建后连续实现盈利。"
+    business: [银行, 担保, 金融投资, 国有金融资本运营]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "吉林省金融控股集团股份有限公司官网·集团简介", url: "https://www.jljrkg.com/html/1/146/193/1317.html", date: "2026-09-30" }
+      - { title: "吉林省金融控股集团股份有限公司官网", url: "https://www.jljrkg.com", date: "2026-09-30" }
+
+  - id: adv-heilongjiang-fh
+    name: "黑龙江省金融控股集团有限公司"
+    short: "龙江金控"
+    category: holding
+    type: investment-holding
+    founded: 2018
+    website: http://www.hljfh.com.cn
+    intro: "经黑龙江省人民政府 2018 年 12 月 28 日批准设立，由黑龙江省财政厅履行出资人职责的国有独资企业，注册资本 111 亿元；承担地方国有金融资本投资、运营、管理功能，全资控股黑龙江省大正投资集团有限责任公司、黑龙江省鑫正融资担保集团等。"
+    business: [融资担保, 资产管理, 金融投资, 国有金融资本运营]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "黑龙江省金融控股集团有限公司官网·集团简介", url: "http://www.hljfh.com.cn/html/17/24/", date: "2026-09-30" }
+      - { title: "黑龙江省金融控股集团有限公司官网", url: "http://www.hljfh.com.cn", date: "2026-09-30" }
+
+  - id: adv-shaanxi-fh
+    name: "陕西金融控股集团有限公司"
+    short: "陕西金控"
+    category: holding
+    type: investment-holding
+    founded: 2011
+    website: https://www.sxjkgroup.com
+    intro: "成立于 2011 年 11 月，是经陕西省人民政府批准成立的大型国有金融企业，由陕西省财政厅全资控股，注册资本 37 亿元。"
+    business: [担保, 基金, 融资租赁, 资产管理, 金融投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "陕西金融控股集团官网·集团简介", url: "https://www.sxjkgroup.com/jtjs/jtjj.htm", date: "2026-09-30" }
+      - { title: "陕西金融控股集团官网", url: "https://www.sxjkgroup.com", date: "2026-09-30" }
+
+  - id: adv-liaoning-fh
+    name: "辽宁金融控股集团有限公司"
+    short: "辽宁金控"
+    category: holding
+    type: investment-holding
+    founded: 2019
+    website: https://www.lnjkjt.com
+    intro: "于 2019 年 12 月 18 日正式注册成立，是辽宁省财政厅 100% 持股的省属国有金融企业，注册资本 200 亿元，坚持政府引导与市场运作相结合。"
+    business: [银行, 证券, 担保, 金融投资, 国有金融资本运营]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "辽宁金融控股集团有限公司官网·公司简介", url: "https://www.lnjkjt.com/aboutus", date: "2026-09-30" }
+      - { title: "辽宁金融控股集团有限公司官网", url: "https://www.lnjkjt.com", date: "2026-09-30" }
+
+  - id: adv-gansu-fh
+    name: "甘肃金融控股集团有限公司"
+    short: "甘肃金控"
+    category: holding
+    type: investment-holding
+    founded: 2016
+    website: http://www.gsjkjt.com
+    intro: "系 2016 年 4 月经甘肃省人民政府批准设立，甘肃省财政厅为主要出资人；控股子公司 24 家、参股企业 34 家，投资设立基金 22 支，业务涵盖证券、担保、基金、信托、投资、租赁、征信、小额信贷、要素市场和供应链金融等板块。"
+    business: [证券, 担保, 基金, 信托, 融资租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "甘肃金融控股集团有限公司官网·集团概况", url: "https://www.gsjkjt.com/gyjk/jtgk.htm", date: "2026-09-30" }
+      - { title: "甘肃金融控股集团有限公司公司债券文件（上交所披露，载明甘肃省财政厅出资）", url: "http://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2026-03-06/242722_20260306_0E2C.pdf", date: "2026-03-06" }
+
+  - id: adv-guizhou-fh
+    name: "贵州金融控股集团有限责任公司"
+    short: "贵州金控"
+    category: holding
+    type: investment-holding
+    founded: 2016
+    intro: "成立于 2016 年，又称贵州贵民投资集团有限责任公司，为贵州省省属大（一）型国有独资企业，由贵州省人民政府授权省财政厅履行出资人职责、省财政厅和省国资委共同管理，注册资本 400 亿元。官网 gztpgj.com 打开后已变为无关的配资类站点，故省略 website。"
+    business: [担保, 基金, 资产管理, 金融股权投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "贵州省国资委《贵州省国资委监管企业股权结构情况表》（列明贵州金融控股集团有限责任公司）", url: "https://gzw.guizhou.gov.cn/zwgk/xxgkml/zdlyxx/gyccgll/202110/t20211025_71193194.html", date: "2021-10-25" }
+
+  - id: adv-fujian-jintou
+    name: "福建省金融投资有限责任公司"
+    short: "福建金投"
+    category: holding
+    type: investment-holding
+    founded: 2022
+    website: https://fjfic.com.cn
+    intro: "经福建省委省政府批准设立的省级国有独资金融企业，于 2022 年 2 月 28 日注册成立，实缴资本 1000 亿元，秉持做强金融、服务实体、支持创新之理念，打造布局优化、业务协同、风险可控的省级国有金融投资平台。"
+    business: [银行, 证券, 保险, 基金, 金融股权投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "福建省金融投资有限责任公司官网·走进金投", url: "https://fjfic.com.cn/article/category/gsjj", date: "2026-09-30" }
+      - { title: "福建省金融投资有限责任公司公司债券文件（上交所披露，载明实缴资本与注册地址）", url: "http://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2025-04-29/242140_20250429_VK51.pdf", date: "2025-04-29" }
+
+  - id: adv-hainan-caijin
+    name: "海南省财金集团有限公司"
+    short: "海南财金"
+    category: holding
+    type: investment-holding
+    founded: 2022
+    website: https://www.hncjjt.com.cn
+    intro: "成立于 2022 年 1 月 11 日，是由海南省政府出资 240 亿元人民币设立的国有独资企业，致力打造集政府投资基金管理、金融股权投资和金融创新服务三位一体的海南省国有金融资本投资运营平台。"
+    business: [政府投资基金, 金融股权投资, 金融创新服务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "海南省财金集团有限公司官网", url: "https://www.hncjjt.com.cn", date: "2026-09-30" }
+      - { title: "海南省财政厅《海南财金集团首期科创债圆满发行》（载明 2022 年 1 月 11 日由省级财政出资）", url: "https://mof.hainan.gov.cn/sczt/zwdt/202605/7e112bd138ef4fcf85f736aa99119cba.shtml", date: "2026-05-01" }
+
+  - id: adv-xiamen-jinyuan
+    name: "厦门金圆投资集团有限公司"
+    short: "厦门金圆集团"
+    category: holding
+    type: investment-holding
+    founded: 2011
+    intro: "成立于 2011 年 7 月 28 日，是厦门市属国有金融控股集团，业务涵盖银行、证券、保险、信托、基金、担保、创投、融资租赁、资产管理、消费金融、小贷等，并牵头推进厦门两岸金融中心核心启动区建设运营。官网 xmjyjt.com 无法从本机打开核对，故省略 website。"
+    business: [银行, 证券, 保险, 信托, 基金]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "厦门金圆投资集团有限公司官网", url: "https://www.xmjyjt.com", date: "2026-09-30" }
+
+  - id: adv-ningbo-fh
+    name: "宁波市金融控股有限公司"
+    short: "宁波金控"
+    category: holding
+    type: investment-holding
+    founded: 2016
+    intro: "成立于 2016 年 9 月，注册资本 100 亿元，注册地浙江省宁波市海曙区，系宁波市属国有企业，实际控制人为宁波市财政局。官网 nb-fh.cn 无法从本机打开核对，故省略 website。"
+    business: [银行, 金融资产管理, 担保, 金融股权投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "宁波银行公告（载明宁波金控成立于 2016 年 9 月、注册资本 100 亿元、控股股东情况）", url: "https://www.nbcb.com.cn/about_nbcb/information_diclosure/corporate_announcements/202404/W020240410366275791320.pdf", date: "2024-04-10" }
+      - { title: "宁波金融资产管理股份有限公司公司债券文件（上交所披露，载明实际控制人为宁波市财政局）", url: "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202411/050632_20241108_Q15Y.pdf", date: "2024-11-08" }
+
+  - id: adv-henan-investment-group
+    name: "河南投资集团有限公司"
+    short: "河南投资集团"
+    category: holding
+    type: investment-holding
+    founded: 1991
+    website: https://www.hnic.com.cn
+    intro: "于 1991 年 12 月经河南省人民政府批准出资设立，是河南省金融牌照数量最多、资产规模最大的地方金融股权持股平台和国有金融资本运营平台，控股中原证券、中原信托、河南资产，并为中原银行、河南农商联合银行、中原农险、中原资产第一大股东。"
+    business: [证券, 信托, 银行, 资产管理, 金融股权投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "河南投资集团有限公司 2024 年度信用评级报告（载明 1991 年 12 月由河南省人民政府批准出资设立）", url: "http://qxb-pdf-osscache.qixin.com/AnBaseinfo/85c430450e5bc6e6cead2676247c9278.pdf", date: "2024-01-01" }
+      - { title: "河南投资集团有限公司公司债券文件（上交所披露，载明其为全省地方金融股权持股平台和国有金融资本运营平台）", url: "http://www.sse.com.cn/disclosure/bond/announcement/corporate/c/new/2025-09-19/184585_20250919_X45J.pdf", date: "2025-09-19" }
+
+

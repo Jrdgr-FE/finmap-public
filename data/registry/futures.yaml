@@ -1,0 +1,2696 @@
+note: >-
+  本文件按中国证监会《期货公司名录》收录境内全部期货公司法人主体，共 150 家，以 2026 年 8 月版名录（2026 年 9 月 4 日发布）为准，并与中国期货业协会《期货公司基本情况公示》逐一核对。只收期货公司法人主体，不含风险管理子公司、期货交易所及已注销机构；中国期货业协会《期货公司基本情况公示》同样为 150 家，两者名单一致。股东持股、注册资本、经营范围与官网取自中国期货业协会公示，成立年份取自该协会披露的公司历史沿革中「公司成立」事件，官网核对日期为 2026 年 9 月 30 日。
+sources:
+  - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+  - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+entities:
+  - id: fut-beijing-shouchuang
+    name: "北京首创期货有限责任公司"
+    short: "北京首创期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.scqh.com.cn/
+    intro: >-
+      注册地北京，由国融证券股份有限公司控股 50.37%，属券商系期货公司，注册资本 2 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "北京首创期货官网", url: "https://www.scqh.com.cn/", date: "2026-09-30" }
+
+  - id: fut-first-capital
+    name: "第一创业期货有限责任公司"
+    short: "第一创业期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://futures.fcsc.com/
+    intro: >-
+      注册地北京，由第一创业证券股份有限公司全资控股，属券商系期货公司，注册资本 1.7 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "第一创业期货官网", url: "https://futures.fcsc.com/", date: "2026-09-30" }
+
+  - id: fut-fangzheng-zhongqi
+    name: "方正中期期货有限公司"
+    short: "方正中期期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 2005
+    website: https://www.founderfu.com/
+    intro: >-
+      注册地北京，由方正证券股份有限公司控股 92.44%，属券商系期货公司，注册资本 10.05 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理、基金销售与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 基金销售, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "方正中期期货官网", url: "https://www.founderfu.com/", date: "2026-09-30" }
+
+  - id: fut-gelin-dahua
+    name: "格林大华期货有限公司"
+    short: "格林大华期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.gldhqh.com.cn/
+    intro: >-
+      注册地北京，由山西证券股份有限公司全资控股，属券商系期货公司，注册资本 13 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理、基金销售与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 基金销售, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "格林大华期货官网", url: "https://www.gldhqh.com.cn/", date: "2026-09-30" }
+
+  - id: fut-guantong
+    name: "冠通期货股份有限公司"
+    short: "冠通期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    website: https://www.gtfutures.com.cn/
+    intro: >-
+      注册地北京，由中国对外经济贸易信托有限公司持股 48.72%，属信托系期货公司，注册资本 1.9 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "冠通期货官网", url: "https://www.gtfutures.com.cn/", date: "2026-09-30" }
+
+  - id: fut-guodu
+    name: "国都期货有限公司"
+    short: "国都期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    website: https://www.guodu.cc/
+    intro: >-
+      注册地北京，由国都证券股份有限公司控股 62.31%，属券商系期货公司，注册资本 2 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "国都期货官网", url: "https://www.guodu.cc/", date: "2026-09-30" }
+
+  - id: fut-guoyuan
+    name: "国元期货有限公司"
+    short: "国元期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    website: https://www.guoyuanqh.com/
+    intro: >-
+      注册地北京，由国元证券股份有限公司控股 99%，属券商系期货公司，注册资本 9.69 亿元。业务范围覆盖股票期权经纪、金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [股票期权经纪, 金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "国元期货官网", url: "https://www.guoyuanqh.com/", date: "2026-09-30" }
+
+  - id: fut-hongyuan
+    name: "宏源期货有限公司"
+    short: "宏源期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: http://hongyuanqh.com/
+    intro: >-
+      注册地北京，由申万宏源集团股份有限公司全资控股，属金融控股系期货公司，注册资本 10 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理、基金销售与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 基金销售, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "宏源期货官网", url: "http://hongyuanqh.com/", date: "2026-09-30" }
+
+  - id: fut-jinpeng
+    name: "金鹏期货经纪有限公司"
+    short: "金鹏期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1991
+    website: https://www.jifco.com.cn/
+    intro: >-
+      注册地北京，由北京市金鹏信息技术有限责任公司控股 68.29%，属产业系期货公司，注册资本 1.01 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "金鹏期货官网", url: "https://www.jifco.com.cn/", date: "2026-09-30" }
+
+  - id: fut-huayuan-beijing
+    name: "华源期货（北京）有限公司"
+    short: "华源期货（北京）"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.huayuanqh.com/
+    intro: >-
+      注册地北京，由华源证券股份有限公司全资控股，属券商系期货公司，注册资本 3.76 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "华源期货（北京）官网", url: "https://www.huayuanqh.com/", date: "2026-09-30" }
+
+  - id: fut-minsheng
+    name: "民生期货有限公司"
+    short: "民生期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    website: https://www.msqh.com/
+    intro: >-
+      注册地北京，由民生证券股份有限公司全资控股，属券商系期货公司，注册资本 6.11 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "民生期货官网", url: "https://www.msqh.com/", date: "2026-09-30" }
+
+  - id: fut-shouchuang-jingdu
+    name: "首创京都期货有限公司"
+    short: "首创京都期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.jingduqh.com/
+    intro: >-
+      注册地北京，由首创证券股份有限公司全资控股，属券商系期货公司，注册资本 6 亿元。业务范围覆盖金融期货经纪、商品期货经纪与资产管理。
+    business: [金融期货经纪, 商品期货经纪, 资产管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "首创京都期货官网", url: "https://www.jingduqh.com/", date: "2026-09-30" }
+
+  - id: fut-galaxy
+    name: "银河期货有限公司"
+    short: "银河期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.yhqh.com.cn/
+    intro: >-
+      注册地北京，由中国银河证券股份有限公司全资控股，属券商系期货公司，注册资本 50 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理、基金销售与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 基金销售, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "银河期货官网", url: "https://www.yhqh.com.cn/", date: "2026-09-30" }
+
+  - id: fut-yingda
+    name: "英大期货有限公司"
+    short: "英大期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    intro: >-
+      注册地北京，由中国石油集团资本有限责任公司全资控股，属产业系期货公司，注册资本 6.58 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+
+  - id: fut-huabao
+    name: "华宝期货有限公司"
+    short: "华宝期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.zgfcc.com/
+    intro: >-
+      注册地北京，由华宝投资有限公司全资控股，属金融控股系期货公司，注册资本 5.57 亿元。隶属中国宝武钢铁集团体系。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "华宝期货官网", url: "https://www.zgfcc.com/", date: "2026-09-30" }
+
+  - id: fut-cifco
+    name: "中国国际期货股份有限公司"
+    short: "中国国际期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.cifco.net/
+    intro: >-
+      注册地北京，由中期集团有限公司控股 50.07%，属产业系期货公司，注册资本 10 亿元。是国内最早获批设立的期货公司之一。业务范围覆盖股票期权经纪、金融期货经纪、商品期货经纪、资产管理与基金销售。
+    business: [股票期权经纪, 金融期货经纪, 商品期货经纪, 资产管理, 基金销售]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "中国国际期货官网", url: "https://www.cifco.net/", date: "2026-09-30" }
+
+  - id: fut-cofco
+    name: "中粮期货有限公司"
+    short: "中粮期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    website: https://www.zlqh.com/
+    intro: >-
+      注册地北京，由中粮资本投资有限公司控股 70.42%，属金融控股系期货公司，注册资本 10.01 亿元。中国人寿保险股份有限公司参股，产业背景以粮油食品与农产品产业链为主。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "中粮期货官网", url: "https://www.zlqh.com/", date: "2026-09-30" }
+
+  - id: fut-zhongtian
+    name: "中天期货有限责任公司"
+    short: "中天期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.iztqh.com/
+    intro: >-
+      注册地北京，由中天证券股份有限公司全资控股，属券商系期货公司，注册资本 1.86 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "中天期货官网", url: "https://www.iztqh.com/", date: "2026-09-30" }
+
+  - id: fut-zhongyan
+    name: "中衍期货有限公司"
+    short: "中衍期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    website: https://www.cdfco.com.cn/
+    intro: >-
+      注册地北京，由重庆保税港区绿创投资发展有限公司控股 51%，属产业系期货公司，注册资本 2.5 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理、基金销售与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 基金销售, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "中衍期货官网", url: "https://www.cdfco.com.cn/", date: "2026-09-30" }
+
+  - id: fut-beijing-beijin
+    name: "北京北金期货有限公司"
+    short: "北京北金期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.sxqh.com/
+    intro: >-
+      注册地北京，由北京金融控股集团有限公司控股 51%，属金融控股系期货公司，注册资本 3.52 亿元。业务范围覆盖金融期货经纪与商品期货经纪。
+    business: [金融期货经纪, 商品期货经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "北京北金期货官网", url: "https://www.sxqh.com/", date: "2026-09-30" }
+
+  - id: fut-morgan-stanley-china
+    name: "摩根士丹利期货（中国）有限公司"
+    short: "摩根士丹利期货（中国）"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 2023
+    website: https://www.morganstanleychina.com/
+    intro: >-
+      注册地北京，由 Morgan Stanley 全资控股，属外资系期货公司，注册资本 10 亿元。2023 年获批设立的境外机构独资期货公司。业务范围覆盖金融期货经纪与商品期货经纪。
+    business: [金融期货经纪, 商品期货经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "摩根士丹利期货（中国）官网", url: "https://www.morganstanleychina.com/", date: "2026-09-30" }
+
+  - id: fut-caida
+    name: "财达期货有限公司"
+    short: "财达期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    website: https://www.caidaqh.com/
+    intro: >-
+      注册地天津，由财达证券股份有限公司控股 99.2%，属券商系期货公司，注册资本 5 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "财达期货官网", url: "https://www.caidaqh.com/", date: "2026-09-30" }
+
+  - id: fut-herong
+    name: "和融期货有限责任公司"
+    short: "和融期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 2001
+    website: https://www.hrqh.com/
+    intro: >-
+      注册地天津，由渤海证券股份有限公司全资控股，属券商系期货公司，注册资本 5 亿元。业务范围覆盖金融期货经纪与商品期货经纪。
+    business: [金融期货经纪, 商品期货经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "和融期货官网", url: "https://www.hrqh.com/", date: "2026-09-30" }
+
+  - id: fut-huajin
+    name: "华金期货有限公司"
+    short: "华金期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: http://www.huajinqh.com/
+    intro: >-
+      注册地天津，由珠海铧创投资控股有限公司全资控股，属金融控股系期货公司，注册资本 10 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "华金期货官网", url: "http://www.huajinqh.com/", date: "2026-09-30" }
+
+  - id: fut-jintou
+    name: "津投期货经纪有限公司"
+    short: "津投期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 2004
+    website: https://www.jtqh.com/
+    intro: >-
+      注册地天津，由天津津融投资服务集团有限公司控股 91.63%，属产业系期货公司，注册资本 3.58 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "津投期货官网", url: "https://www.jtqh.com/", date: "2026-09-30" }
+
+  - id: fut-shanjin
+    name: "山金期货有限公司"
+    short: "山金期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1992
+    website: https://shanjinqh.com/
+    intro: >-
+      注册地天津，由山金金控资本管理有限公司全资控股，属金融控股系期货公司，注册资本 6 亿元。隶属山东黄金集团。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "山金期货官网", url: "https://shanjinqh.com/", date: "2026-09-30" }
+
+  - id: fut-yide
+    name: "一德期货有限公司"
+    short: "一德期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: http://www.ydqh.com.cn/
+    intro: >-
+      注册地天津，由天津市财政局财政投资业务中心控股 55.45%，属国资系期货公司，注册资本 5.5 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "一德期货官网", url: "http://www.ydqh.com.cn/", date: "2026-09-30" }
+
+  - id: fut-hengyin
+    name: "恒银期货有限公司"
+    short: "恒银期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1999
+    website: http://www.hyfutures.com/
+    intro: >-
+      注册地河北，由河北省国富非融资性担保有限公司控股 51.87%，属金融控股系期货公司，注册资本 2.47 亿元。河北旅游投资集团股份有限公司参股。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "恒银期货官网", url: "http://www.hyfutures.com/", date: "2026-09-30" }
+
+  - id: fut-sanli
+    name: "山西三立期货有限公司"
+    short: "山西三立期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.sxslqh.com/
+    intro: >-
+      注册地山西，由北京金海投资有限公司控股 67%，属产业系期货公司，注册资本 1 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "山西三立期货官网", url: "https://www.sxslqh.com/", date: "2026-09-30" }
+
+  - id: fut-dongfang-huijin
+    name: "东方汇金期货有限公司"
+    short: "东方汇金期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 2004
+    website: https://www.dfhjqh.com/
+    intro: >-
+      注册地吉林，由北京纽森特投资有限公司控股 93.93%，属金融控股系期货公司，注册资本 1.53 亿元。业务范围覆盖金融期货经纪与商品期货经纪。
+    business: [金融期货经纪, 商品期货经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "东方汇金期货官网", url: "https://www.dfhjqh.com/", date: "2026-09-30" }
+
+  - id: fut-tianfu
+    name: "天富期货有限公司"
+    short: "天富期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.tfqh.com/
+    intro: >-
+      注册地吉林，由吉林省信托有限责任公司控股 55%，属信托系期货公司，注册资本 1.5 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "天富期货官网", url: "https://www.tfqh.com/", date: "2026-09-30" }
+
+  - id: fut-datong
+    name: "大通期货经纪有限公司"
+    short: "大通期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1994
+    website: https://www.dtqh.com.cn/
+    intro: >-
+      注册地黑龙江，由哈尔滨工大集团风险投资股份有限公司控股 70%，属产业系期货公司，注册资本 1.12 亿元。业务范围覆盖金融期货经纪与商品期货经纪。
+    business: [金融期货经纪, 商品期货经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "大通期货官网", url: "https://www.dtqh.com.cn/", date: "2026-09-30" }
+
+  - id: fut-yongshang
+    name: "永商期货有限公司"
+    short: "永商期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    website: https://www.ysfutures.com/
+    intro: >-
+      注册地黑龙江，由群升集团有限公司持股 48%，属产业系（现货背景）期货公司，注册资本 0.7 亿元。业务范围覆盖金融期货经纪、商品期货经纪、金融期权经纪与商品期权经纪。
+    business: [金融期货经纪, 商品期货经纪, 金融期权经纪, 商品期权经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "永商期货官网", url: "https://www.ysfutures.com/", date: "2026-09-30" }
+
+  - id: fut-bohai
+    name: "渤海期货股份有限公司"
+    short: "渤海期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    website: https://www.bhfcc.com/
+    intro: >-
+      注册地上海，由东北证券股份有限公司控股 96%，属券商系期货公司，注册资本 5 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "渤海期货官网", url: "https://www.bhfcc.com/", date: "2026-09-30" }
+
+  - id: fut-donghang
+    name: "东航期货有限责任公司"
+    short: "东航期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.cesfutures.com/
+    intro: >-
+      注册地上海，由东航产融投资管理有限公司全资控股，属金融控股系期货公司，注册资本 4.5 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "东航期货官网", url: "https://www.cesfutures.com/", date: "2026-09-30" }
+
+  - id: fut-dongwu
+    name: "东吴期货有限公司"
+    short: "东吴期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.dwfutures.com/
+    intro: >-
+      注册地上海，由东吴证券股份有限公司控股 80.66%，属券商系期货公司，注册资本 15.32 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "东吴期货官网", url: "https://www.dwfutures.com/", date: "2026-09-30" }
+
+  - id: fut-dongxing
+    name: "东兴期货有限责任公司"
+    short: "东兴期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.dxqh.net/
+    intro: >-
+      注册地上海，由东兴证券股份有限公司全资控股，属券商系期货公司，注册资本 5.18 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "东兴期货官网", url: "https://www.dxqh.net/", date: "2026-09-30" }
+
+  - id: fut-ebf
+    name: "光大期货有限公司"
+    short: "光大期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.ebfcn.com/
+    intro: >-
+      注册地上海，由光大证券股份有限公司全资控股，属券商系期货公司，注册资本 15 亿元。业务范围覆盖股票期权经纪、金融期货经纪、商品期货经纪、资产管理与基金销售。
+    business: [股票期权经纪, 金融期货经纪, 商品期货经纪, 资产管理, 基金销售]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "光大期货官网", url: "https://www.ebfcn.com/", date: "2026-09-30" }
+
+  - id: fut-guofu
+    name: "国富期货有限公司"
+    short: "国富期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1992
+    website: https://www.gffcc.com/
+    intro: >-
+      注册地上海，由上海尊鸿投资有限公司控股 80.14%，属金融控股系期货公司，注册资本 3.65 亿元。业务范围覆盖股票期权经纪、金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [股票期权经纪, 金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "国富期货官网", url: "https://www.gffcc.com/", date: "2026-09-30" }
+
+  - id: fut-guotai-junan
+    name: "国泰君安期货有限公司"
+    short: "国泰君安期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    website: https://www.gtjaqh.com/
+    intro: >-
+      注册地上海，由国泰海通证券股份有限公司全资控股，属券商系期货公司，注册资本 75 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "国泰君安期货官网", url: "https://www.gtjaqh.com/", date: "2026-09-30" }
+
+  - id: fut-guotou
+    name: "国投期货有限公司"
+    short: "国投期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.sdicfutures.com.cn/
+    intro: >-
+      注册地上海，由国投证券股份有限公司全资控股，属券商系期货公司，注册资本 18.86 亿元。业务范围覆盖股票期权经纪、金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [股票期权经纪, 金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "国投期货官网", url: "https://www.sdicfutures.com.cn/", date: "2026-09-30" }
+
+  - id: fut-guosen
+    name: "国信期货有限责任公司"
+    short: "国信期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.guosenqh.com.cn/
+    intro: >-
+      注册地上海，由国信证券股份有限公司全资控股，属券商系期货公司，注册资本 20 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "国信期货官网", url: "https://www.guosenqh.com.cn/", date: "2026-09-30" }
+
+  - id: fut-haitong
+    name: "海通期货股份有限公司"
+    short: "海通期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    intro: >-
+      注册地上海，由国泰海通证券股份有限公司控股 83.22%，属券商系期货公司，注册资本 13.02 亿元。业务范围覆盖股票期权经纪、金融期货经纪、商品期货经纪、资产管理与基金销售。
+    business: [股票期权经纪, 金融期货经纪, 商品期货经纪, 资产管理, 基金销售]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+
+  - id: fut-haizheng
+    name: "海证期货有限公司"
+    short: "海证期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.hicend.com.cn/
+    intro: >-
+      注册地上海，由上海证券有限责任公司全资控股，属券商系期货公司，注册资本 15 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "海证期货官网", url: "https://www.hicend.com.cn/", date: "2026-09-30" }
+
+  - id: fut-hengtai
+    name: "恒泰期货股份有限公司"
+    short: "恒泰期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1992
+    website: https://www.cnhtqh.com.cn/
+    intro: >-
+      注册地上海，由金融街证券股份有限公司控股 95.1%，属券商系期货公司，注册资本 2.28 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "恒泰期货官网", url: "https://www.cnhtqh.com.cn/", date: "2026-09-30" }
+
+  - id: fut-huawen
+    name: "华闻期货有限公司"
+    short: "华闻期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.hwqh.com.cn/
+    intro: >-
+      注册地上海，由上海新黄浦实业集团股份有限公司全资控股，属产业系（现货背景）期货公司，注册资本 5.5 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "华闻期货官网", url: "https://www.hwqh.com.cn/", date: "2026-09-30" }
+
+  - id: fut-huaxin
+    name: "华鑫期货有限公司"
+    short: "华鑫期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1992
+    website: https://www.shhxqh.com/
+    intro: >-
+      注册地上海，由华鑫证券有限责任公司全资控股，属券商系期货公司，注册资本 3.4 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "华鑫期货官网", url: "https://www.shhxqh.com/", date: "2026-09-30" }
+
+  - id: fut-jianxin
+    name: "建信期货有限责任公司"
+    short: "建信期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.ccbfutures.com/
+    intro: >-
+      注册地上海，由建信信托有限责任公司控股 80%，属信托系期货公司，注册资本 10 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "建信期货官网", url: "https://www.ccbfutures.com/", date: "2026-09-30" }
+
+  - id: fut-ubs
+    name: "瑞银期货有限责任公司"
+    short: "瑞银期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: http://www.ubsfutures.com.cn/
+    intro: >-
+      注册地上海，由瑞银证券有限责任公司全资控股，属外资系期货公司，注册资本 7.4 亿元。业务范围覆盖金融期货经纪与商品期货经纪。
+    business: [金融期货经纪, 商品期货经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "瑞银期货官网", url: "http://www.ubsfutures.com.cn/", date: "2026-09-30" }
+
+  - id: fut-shanghai-dalu
+    name: "上海大陆期货有限公司"
+    short: "上海大陆期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1994
+    website: https://www.dlqh.com/
+    intro: >-
+      注册地上海，由中山证券有限责任公司控股 51%，属券商系期货公司，注册资本 1.5 亿元。第二大股东为中国大恒（集团）有限公司。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "上海大陆期货官网", url: "https://www.dlqh.com/", date: "2026-09-30" }
+
+  - id: fut-guoneng-dongfang
+    name: "国能东方期货（上海）有限公司"
+    short: "国能东方期货（上海）"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.shdfqh.com/
+    intro: >-
+      注册地上海，由国家能源集团资本控股有限公司全资控股，属金融控股系期货公司，注册资本 2.45 亿元。业务范围覆盖金融期货经纪与商品期货经纪。
+    business: [金融期货经纪, 商品期货经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "国能东方期货（上海）官网", url: "https://www.shdfqh.com/", date: "2026-09-30" }
+
+  - id: fut-shanghai-dongya
+    name: "上海东亚期货有限公司"
+    short: "上海东亚期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.eafutures.com/
+    intro: >-
+      注册地上海，由上海和鸿企业发展有限公司控股 98.7%，属产业系期货公司，注册资本 2 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "上海东亚期货官网", url: "https://www.eafutures.com/", date: "2026-09-30" }
+
+  - id: fut-dongzheng
+    name: "上海东证期货有限公司"
+    short: "上海东证期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.orientfutures.com/
+    intro: >-
+      注册地上海，由东方证券股份有限公司全资控股，属券商系期货公司，注册资本 55 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理、基金销售与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 基金销售, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "上海东证期货官网", url: "https://www.orientfutures.com/", date: "2026-09-30" }
+
+  - id: fut-zheshi
+    name: "上海浙石期货经纪有限公司"
+    short: "上海浙石期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: http://zsqh.sinopec.com/
+    intro: >-
+      注册地上海，由中石化产融控股有限公司全资控股，属产业系期货公司，注册资本 7 亿元。业务范围覆盖金融期货经纪与商品期货经纪。
+    business: [金融期货经纪, 商品期货经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "上海浙石期货官网", url: "http://zsqh.sinopec.com/", date: "2026-09-30" }
+
+  - id: fut-zhongcai
+    name: "中财期货有限公司"
+    short: "中财期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.zcqh.com/
+    intro: >-
+      注册地上海，由上海中财实业发展有限公司全资控股，属产业系（现货背景）期货公司，注册资本 6 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "中财期货官网", url: "https://www.zcqh.com/", date: "2026-09-30" }
+
+  - id: fut-shanghai-zhongqi
+    name: "上海中期期货股份有限公司"
+    short: "上海中期期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.shcifco.com/
+    intro: >-
+      注册地上海，由山东能源集团有限公司控股 66.67%，属产业系（现货背景）期货公司，注册资本 12 亿元。业务范围覆盖股票期权经纪、金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [股票期权经纪, 金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "上海中期期货官网", url: "https://www.shcifco.com/", date: "2026-09-30" }
+
+  - id: fut-sywg
+    name: "申银万国期货有限公司"
+    short: "申银万国期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 2007
+    website: https://www.sywgqh.com.cn/
+    intro: >-
+      注册地上海，由申万宏源证券有限公司全资控股，属券商系期货公司，注册资本 14.42 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理、基金销售与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 基金销售, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "申银万国期货官网", url: "https://www.sywgqh.com.cn/", date: "2026-09-30" }
+
+  - id: fut-zijin-tianfeng
+    name: "紫金天风期货股份有限公司"
+    short: "紫金天风期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    website: https://www.zjtfqh.com/
+    intro: >-
+      注册地上海，由紫金矿业集团股份有限公司持股 44.05%，属产业系（现货背景）期货公司，注册资本 5.24 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "紫金天风期货官网", url: "https://www.zjtfqh.com/", date: "2026-09-30" }
+
+  - id: fut-tianhong
+    name: "天鸿期货经纪有限公司"
+    short: "天鸿期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    website: https://www.tianhongqh.com/
+    intro: >-
+      注册地上海，由上海天美珠宝有限公司控股 51.85%，属产业系（现货背景）期货公司，注册资本 1.75 亿元。业务范围覆盖金融期货经纪与商品期货经纪。
+    business: [金融期货经纪, 商品期货经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "天鸿期货官网", url: "https://www.tianhongqh.com/", date: "2026-09-30" }
+
+  - id: fut-tonghui
+    name: "通惠期货有限公司"
+    short: "通惠期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.thqh.com.cn/
+    intro: >-
+      注册地上海，由中国万向控股有限公司控股 60%，属产业系期货公司，注册资本 1.25 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "通惠期货官网", url: "https://www.thqh.com.cn/", date: "2026-09-30" }
+
+  - id: fut-eastmoney
+    name: "上海东方财富期货有限公司"
+    short: "上海东方财富期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.eastmoneyfutures.com/
+    intro: >-
+      注册地上海，由东方财富证券股份有限公司全资控股，属券商系期货公司，注册资本 3.6 亿元。业务范围覆盖金融期货经纪与商品期货经纪。
+    business: [金融期货经纪, 商品期货经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "上海东方财富期货官网", url: "https://www.eastmoneyfutures.com/", date: "2026-09-30" }
+
+  - id: fut-tongguan-jinyuan
+    name: "铜冠金源期货有限公司"
+    short: "铜冠金源期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1992
+    website: https://www.jyqh.com.cn/
+    intro: >-
+      注册地上海，由铜陵有色金属集团上海投资贸易有限公司控股 79%，属产业系（现货背景）期货公司，注册资本 3 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "铜冠金源期货官网", url: "https://www.jyqh.com.cn/", date: "2026-09-30" }
+
+  - id: fut-xinhu
+    name: "新湖期货股份有限公司"
+    short: "新湖期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.xinhu.cn/
+    intro: >-
+      注册地上海，由杭州兴和投资发展有限公司控股 54%，属产业系期货公司，注册资本 10.01 亿元。新湖集团体系参股。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "新湖期货官网", url: "https://www.xinhu.cn/", date: "2026-09-30" }
+
+  - id: fut-zhonghui
+    name: "中辉期货有限公司"
+    short: "中辉期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.zhqh.com.cn/
+    intro: >-
+      注册地上海，由山西中辉贸易有限公司持股 42.8%，属产业系（现货背景）期货公司，注册资本 5 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "中辉期货官网", url: "https://www.zhqh.com.cn/", date: "2026-09-30" }
+
+  - id: fut-zhongrong-huixin
+    name: "中融汇信期货有限公司"
+    short: "中融汇信期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.zrhxqh.com/
+    intro: >-
+      注册地上海，由上海融晟投资有限公司控股 94.5%，属产业系期货公司，注册资本 5 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "中融汇信期货官网", url: "https://www.zrhxqh.com/", date: "2026-09-30" }
+
+  - id: fut-guosheng
+    name: "国盛期货有限责任公司"
+    short: "国盛期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.guoshengqh.com/
+    intro: >-
+      注册地上海，由国盛证券股份有限公司控股 99.5%，属券商系期货公司，注册资本 5.98 亿元。业务范围覆盖金融期货经纪与商品期货经纪。
+    business: [金融期货经纪, 商品期货经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "国盛期货官网", url: "https://www.guoshengqh.com/", date: "2026-09-30" }
+
+  - id: fut-boci
+    name: "中银国际期货有限责任公司"
+    short: "中银国际期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 2008
+    website: https://www.bocifco.com/
+    intro: >-
+      注册地上海，由中银国际证券股份有限公司全资控股，属券商系期货公司，注册资本 3.5 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "中银国际期货官网", url: "https://www.bocifco.com/", date: "2026-09-30" }
+
+  - id: fut-hengli
+    name: "恒力期货有限公司"
+    short: "恒力期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    website: https://www.hengliqihuo.com/
+    intro: >-
+      注册地上海，由江苏德力化纤有限公司全资控股，属产业系（现货背景）期货公司，注册资本 7.5 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "恒力期货官网", url: "https://www.hengliqihuo.com/", date: "2026-09-30" }
+
+  - id: fut-jinxin
+    name: "金信期货有限公司"
+    short: "金信期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.jinxinqh.com/
+    intro: >-
+      注册地上海，由寿光美伦纸业有限责任公司持股 35.43%，属产业系（现货背景）期货公司，注册资本 2 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "金信期货官网", url: "https://www.jinxinqh.com/", date: "2026-09-30" }
+
+  - id: fut-chuangyuan
+    name: "创元期货股份有限公司"
+    short: "创元期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.cyqh.com.cn/
+    intro: >-
+      注册地江苏，由苏州创元投资发展（集团）有限公司持股 42.79%，属产业系（现货背景）期货公司，注册资本 9 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "创元期货官网", url: "https://www.cyqh.com.cn/", date: "2026-09-30" }
+
+  - id: fut-daotong
+    name: "道通期货有限公司"
+    short: "道通期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.doto-futures.com/
+    intro: >-
+      注册地江苏，由张家港市虹达运输有限公司控股 80%，属产业系（现货背景）期货公司，注册资本 10 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "道通期货官网", url: "https://www.doto-futures.com/", date: "2026-09-30" }
+
+  - id: fut-donghai
+    name: "东海期货有限责任公司"
+    short: "东海期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.qh168.com.cn/
+    intro: >-
+      注册地江苏，由东海证券股份有限公司控股 60%，属券商系期货公司，注册资本 11.6 亿元。常州市城市建设集团与江苏苏豪国际集团参股。业务范围覆盖金融期货经纪、商品期货经纪、资产管理、基金销售与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 基金销售, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "东海期货官网", url: "https://www.qh168.com.cn/", date: "2026-09-30" }
+
+  - id: fut-guolian
+    name: "国联期货股份有限公司"
+    short: "国联期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.glqh.com/
+    intro: >-
+      注册地江苏，由无锡市国联发展(集团)有限公司控股 54.72%，属金融控股系期货公司，注册资本 4.5 亿元。实际控制人为无锡市国资委。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "国联期货官网", url: "https://www.glqh.com/", date: "2026-09-30" }
+
+  - id: fut-suhao-hongye
+    name: "苏豪弘业期货股份有限公司"
+    short: "苏豪弘业期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.ftol.com.cn/
+    intro: >-
+      注册地江苏，由江苏省苏豪控股集团有限公司持股 27.33%，属产业系期货公司，注册资本 10.08 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理、基金销售与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 基金销售, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "苏豪弘业期货官网", url: "https://www.ftol.com.cn/", date: "2026-09-30" }
+
+  - id: fut-jiangsu-donghua
+    name: "江苏东华期货有限公司"
+    short: "江苏东华期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.dhfutures.com/
+    intro: >-
+      注册地江苏，由南京创元商业管理有限公司控股 57.91%，属产业系期货公司，注册资本 1 亿元。业务范围覆盖金融期货经纪与商品期货经纪。
+    business: [金融期货经纪, 商品期货经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "江苏东华期货官网", url: "https://www.dhfutures.com/", date: "2026-09-30" }
+
+  - id: fut-jintai
+    name: "锦泰期货有限公司"
+    short: "锦泰期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.jtqh.cn/
+    intro: >-
+      注册地江苏，由江苏省投资管理有限责任公司持股 40%，属金融控股系期货公司，注册资本 5.07 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "锦泰期货官网", url: "https://www.jtqh.cn/", date: "2026-09-30" }
+
+  - id: fut-ningzheng
+    name: "宁证期货有限责任公司"
+    short: "宁证期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.nzfco.com/
+    intro: >-
+      注册地江苏，由南京证券股份有限公司控股 53.07%，属券商系期货公司，注册资本 5 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "宁证期货官网", url: "https://www.nzfco.com/", date: "2026-09-30" }
+
+  - id: fut-zhongsheng
+    name: "中盛期货股份有限公司"
+    short: "中盛期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.zhongshengfutures.com/
+    intro: >-
+      注册地江苏，由徐州市国盛控股集团有限公司控股 56.42%，属金融控股系期货公司，注册资本 6.75 亿元。业务范围覆盖金融期货经纪、商品期货经纪、基金销售与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 基金销售, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "中盛期货官网", url: "https://www.zhongshengfutures.com/", date: "2026-09-30" }
+
+  - id: fut-baocheng
+    name: "宝城期货有限责任公司"
+    short: "宝城期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.bcqhgs.com/
+    intro: >-
+      注册地浙江，由长城证券股份有限公司控股 80%，属券商系期货公司，注册资本 6 亿元。业务范围覆盖股票期权经纪、金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [股票期权经纪, 金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "宝城期货官网", url: "https://www.bcqhgs.com/", date: "2026-09-30" }
+
+  - id: fut-dadi
+    name: "大地期货有限公司"
+    short: "大地期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.ddqh.com/
+    intro: >-
+      注册地浙江，由浙江东方控股集团股份有限公司全资控股，属金融控股系期货公司，注册资本 10.2 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "大地期货官网", url: "https://www.ddqh.com/", date: "2026-09-30" }
+
+  - id: fut-dayue
+    name: "大越期货股份有限公司"
+    short: "大越期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.dyqh.info/
+    intro: >-
+      注册地浙江，由大越股份有限公司控股 59.97%，属产业系期货公司，注册资本 2.04 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "大越期货官网", url: "https://www.dyqh.info/", date: "2026-09-30" }
+
+  - id: fut-guohai-liangshi
+    name: "国海良时期货有限公司"
+    short: "国海良时期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    website: https://www.ghlsqh.com.cn/
+    intro: >-
+      注册地浙江，由国海证券股份有限公司控股 83.84%，属券商系期货公司，注册资本 6 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "国海良时期货官网", url: "https://www.ghlsqh.com.cn/", date: "2026-09-30" }
+
+  - id: fut-nanhua
+    name: "南华期货股份有限公司"
+    short: "南华期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    website: https://www.nanhua.net/
+    intro: >-
+      注册地浙江，由横店集团控股有限公司控股 59.23%，属金融控股系期货公司，注册资本 7.18 亿元。公司于 2019 年在上海证券交易所上市，股票代码 603093。业务范围覆盖金融期货经纪、商品期货经纪、资产管理、基金销售与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 基金销售, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "南华期货官网", url: "https://www.nanhua.net/", date: "2026-09-30" }
+
+  - id: fut-shengda
+    name: "盛达期货有限公司"
+    short: "盛达期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 2003
+    website: https://www.sdfutures.com.cn/
+    intro: >-
+      注册地浙江，由杭州盛顺实业投资有限公司控股 96%，属产业系（现货背景）期货公司，注册资本 4 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "盛达期货官网", url: "https://www.sdfutures.com.cn/", date: "2026-09-30" }
+
+  - id: fut-xinda
+    name: "信达期货有限公司"
+    short: "信达期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.cindaqh.com/
+    intro: >-
+      注册地浙江，由信达证券股份有限公司全资控股，属券商系期货公司，注册资本 6 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "信达期货官网", url: "https://www.cindaqh.com/", date: "2026-09-30" }
+
+  - id: fut-yongan
+    name: "永安期货股份有限公司"
+    short: "永安期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1992
+    website: https://www.yafco.com/
+    intro: >-
+      注册地浙江，由财通证券股份有限公司持股 30.18%，属券商系期货公司，注册资本 14.56 亿元。公司在全国中小企业股份转让系统（新三板）挂牌，证券代码 833840。业务范围覆盖金融期货经纪、商品期货经纪、资产管理、基金销售与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 基金销售, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "永安期货官网", url: "https://www.yafco.com/", date: "2026-09-30" }
+
+  - id: fut-zhejiang-xinshiji
+    name: "浙江新世纪期货有限公司"
+    short: "浙江新世纪期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.zjncf.com.cn/
+    intro: >-
+      注册地浙江，由浙江省海港投资运营集团有限公司控股 65.74%，属产业系（现货背景）期货公司，注册资本 2.5 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "浙江新世纪期货官网", url: "https://www.zjncf.com.cn/", date: "2026-09-30" }
+
+  - id: fut-zheshang
+    name: "浙商期货有限公司"
+    short: "浙商期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.cnzsqh.com/
+    intro: >-
+      注册地浙江，由浙商证券股份有限公司控股 72.93%，属券商系期货公司，注册资本 13.71 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理、基金销售与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 基金销售, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "浙商期货官网", url: "https://www.cnzsqh.com/", date: "2026-09-30" }
+
+  - id: fut-wuchan-zhongda
+    name: "物产中大期货有限公司"
+    short: "物产中大期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.zdqh.com/
+    intro: >-
+      注册地浙江，由物产中大集团股份有限公司控股 99.3%，属产业系（现货背景）期货公司，注册资本 6 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理、基金销售与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 基金销售, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "物产中大期货官网", url: "https://www.zdqh.com/", date: "2026-09-30" }
+
+  - id: fut-anliang
+    name: "安粮期货股份有限公司"
+    short: "安粮期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    website: https://www.alqh.com/
+    intro: >-
+      注册地安徽，由安徽省安粮集团有限公司控股 54%，属产业系（现货背景）期货公司，注册资本 5 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理、基金销售与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 基金销售, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "安粮期货官网", url: "https://www.alqh.com/", date: "2026-09-30" }
+
+  - id: fut-huaan
+    name: "华安期货有限责任公司"
+    short: "华安期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.haqh.com/
+    intro: >-
+      注册地安徽，由华安证券股份有限公司全资控股，属券商系期货公司，注册资本 10 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "华安期货官网", url: "https://www.haqh.com/", date: "2026-09-30" }
+
+  - id: fut-huishang
+    name: "徽商期货有限责任公司"
+    short: "徽商期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    website: https://www.hsqh.net/
+    intro: >-
+      注册地安徽，由安徽省徽商集团有限公司控股 56.96%，属产业系（现货背景）期货公司，注册资本 10.03 亿元。业务范围覆盖股票期权经纪、金融期货经纪、商品期货经纪、资产管理与基金销售。
+    business: [股票期权经纪, 金融期货经纪, 商品期货经纪, 资产管理, 基金销售]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "徽商期货官网", url: "https://www.hsqh.net/", date: "2026-09-30" }
+
+  - id: fut-funeng
+    name: "福能期货股份有限公司"
+    short: "福能期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.fnqh.com.cn/
+    intro: >-
+      注册地福建，由福建省能源集团有限责任公司控股 86.17%，属产业系期货公司，注册资本 5 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "福能期货官网", url: "https://www.fnqh.com.cn/", date: "2026-09-30" }
+
+  - id: fut-xindingsheng
+    name: "鑫鼎盛期货有限公司"
+    short: "鑫鼎盛期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.xdsfutures.com.cn/
+    intro: >-
+      注册地福建，由厦门市鑫鼎盛控股有限公司控股 88.85%，属产业系期货公司，注册资本 1.8 亿元。业务范围覆盖金融期货经纪、商品期货经纪与资产管理。
+    business: [金融期货经纪, 商品期货经纪, 资产管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "鑫鼎盛期货官网", url: "https://www.xdsfutures.com.cn/", date: "2026-09-30" }
+
+  - id: fut-xingzheng
+    name: "兴证期货有限公司"
+    short: "兴证期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.xzfutures.com/
+    intro: >-
+      注册地福建，由兴业证券股份有限公司全资控股，属券商系期货公司，注册资本 16 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与基金销售。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 基金销售]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "兴证期货官网", url: "https://www.xzfutures.com/", date: "2026-09-30" }
+
+  - id: fut-ruiqi
+    name: "江西瑞奇期货有限公司"
+    short: "江西瑞奇期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.jxrich.com/
+    intro: >-
+      注册地江西，由江西省金融控股集团有限公司控股 62.82%，属产业系期货公司，注册资本 6 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "江西瑞奇期货官网", url: "https://www.jxrich.com/", date: "2026-09-30" }
+
+  - id: fut-zhongtai
+    name: "中泰期货股份有限公司"
+    short: "中泰期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.ztqh.com/
+    intro: >-
+      注册地山东，由中泰证券股份有限公司控股 63.1%，属券商系期货公司，注册资本 10.02 亿元。业务范围覆盖股票期权经纪、金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [股票期权经纪, 金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "中泰期货官网", url: "https://www.ztqh.com/", date: "2026-09-30" }
+
+  - id: fut-qisheng
+    name: "山东齐盛期货有限公司"
+    short: "山东齐盛期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.qsqh.cn/
+    intro: >-
+      注册地山东，由淄博市财金控股集团有限公司全资控股，属产业系期货公司，注册资本 3.55 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "山东齐盛期货官网", url: "https://www.qsqh.cn/", date: "2026-09-30" }
+
+  - id: fut-jianghai-huixin
+    name: "江海汇鑫期货有限公司"
+    short: "江海汇鑫期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.hxqh.com/
+    intro: >-
+      注册地山东，由济南金投控股集团有限公司控股 51%，属金融控股系期货公司，注册资本 2.8 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "江海汇鑫期货官网", url: "https://www.hxqh.com/", date: "2026-09-30" }
+
+  - id: fut-rongda
+    name: "融达期货（郑州）股份有限公司"
+    short: "融达期货（郑州）"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://rongdaqh.com/
+    intro: >-
+      注册地河南，由中国中信金融资产管理股份有限公司控股 59.26%，属金融控股系期货公司，注册资本 18.3 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理、期货交易咨询与金融期权经纪。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询, 金融期权经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "融达期货（郑州）官网", url: "https://rongdaqh.com/", date: "2026-09-30" }
+
+  - id: fut-zhongyuan
+    name: "中原期货股份有限公司"
+    short: "中原期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.zyfutures.com/
+    intro: >-
+      注册地河南，由中原证券股份有限公司控股 92.3%，属券商系期货公司，注册资本 3.3 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "中原期货官网", url: "https://www.zyfutures.com/", date: "2026-09-30" }
+
+  - id: fut-changjiang
+    name: "长江期货股份有限公司"
+    short: "长江期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    website: https://www.cjfco.com.cn/
+    intro: >-
+      注册地湖北，由长江证券股份有限公司控股 93.56%，属券商系期货公司，注册资本 5.88 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理、基金销售与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 基金销售, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "长江期货官网", url: "https://www.cjfco.com.cn/", date: "2026-09-30" }
+
+  - id: fut-zhengxin
+    name: "正信期货有限公司"
+    short: "正信期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.zxqh.net/
+    intro: >-
+      注册地湖北，由湖北正涵投资有限公司控股 96.93%，属金融控股系期货公司，注册资本 4.8 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理、期货交易咨询与银行间债券市场业务。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询, 银行间债券市场业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "正信期货官网", url: "https://www.zxqh.net/", date: "2026-09-30" }
+
+  - id: fut-dayou
+    name: "大有期货有限公司"
+    short: "大有期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 2002
+    website: https://www.dayouf.com/
+    intro: >-
+      注册地湖南，由现代投资股份有限公司全资控股，属产业系（现货背景）期货公司，注册资本 8.3 亿元。业务范围覆盖金融期货经纪、商品期货经纪、基金销售与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 基金销售, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "大有期货官网", url: "https://www.dayouf.com/", date: "2026-09-30" }
+
+  - id: fut-caixin
+    name: "财信期货有限公司"
+    short: "财信期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 2005
+    website: https://futures.hnchasing.com/
+    intro: >-
+      注册地湖南，由财信证券股份有限公司全资控股，属券商系期货公司，注册资本 7.5 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "财信期货官网", url: "https://futures.hnchasing.com/", date: "2026-09-30" }
+
+  - id: fut-gf
+    name: "广发期货有限公司"
+    short: "广发期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.gfqh.cn/
+    intro: >-
+      注册地广东，由广发证券股份有限公司全资控股，属券商系期货公司，注册资本 24.5 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理、基金销售与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 基金销售, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "广发期货官网", url: "https://www.gfqh.cn/", date: "2026-09-30" }
+
+  - id: fut-guangzhou-jinkong
+    name: "广州金控期货有限公司"
+    short: "广州金控期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 2003
+    website: https://www.gzjkqh.com/
+    intro: >-
+      注册地广东，由广州金融控股集团有限公司控股 97.61%，属金融控股系期货公司，注册资本 8 亿元。实际控制人为广州市国资委。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "广州金控期货官网", url: "https://www.gzjkqh.com/", date: "2026-09-30" }
+
+  - id: fut-guangzhou
+    name: "广州期货股份有限公司"
+    short: "广州期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 2003
+    website: https://www.gzf2010.com.cn/
+    intro: >-
+      注册地广东，由广州越秀资本控股集团股份有限公司控股 99.03%，属产业系期货公司，注册资本 16.5 亿元。实际控制人为广州市国资委。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "广州期货官网", url: "https://www.gzf2010.com.cn/", date: "2026-09-30" }
+
+  - id: fut-hualian
+    name: "华联期货有限公司"
+    short: "华联期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.hlqh.com/
+    intro: >-
+      注册地广东，由东莞市投资控股集团有限公司控股 51%，属产业系期货公司，注册资本 3.76 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "华联期货官网", url: "https://www.hlqh.com/", date: "2026-09-30" }
+
+  - id: fut-huatai
+    name: "华泰期货有限公司"
+    short: "华泰期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1994
+    website: https://www.htfc.com/
+    intro: >-
+      注册地广东，由华泰证券股份有限公司全资控股，属券商系期货公司，注册资本 39.39 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理、基金销售与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 基金销售, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "华泰期货官网", url: "https://www.htfc.com/", date: "2026-09-30" }
+
+  - id: fut-greatwall
+    name: "长城期货股份有限公司"
+    short: "长城期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    website: https://www.gwfutures.cn/
+    intro: >-
+      注册地广东，由长城国瑞证券有限公司全资控股，属券商系期货公司，注册资本 1.47 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "长城期货官网", url: "https://www.gwfutures.cn/", date: "2026-09-30" }
+
+  - id: fut-jpmorgan
+    name: "摩根大通期货有限公司"
+    short: "摩根大通期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    intro: >-
+      注册地广东，由 J.P. MORGAN BROKING (HONGKONG) LIMITED 全资控股，属外资系期货公司，注册资本 7.75 亿元。属外资独资期货公司。业务范围覆盖金融期货经纪与商品期货经纪。
+    business: [金融期货经纪, 商品期货经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+
+  - id: fut-foshan-jinkong
+    name: "佛山金控期货有限公司"
+    short: "佛山金控期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    website: https://www.fsjkqh.com/
+    intro: >-
+      注册地广东，由佛山市金融投资控股有限公司控股 51%，属金融控股系期货公司，注册资本 3.16 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "佛山金控期货官网", url: "https://www.fsjkqh.com/", date: "2026-09-30" }
+
+  - id: fut-zhongzhou
+    name: "中州期货有限公司"
+    short: "中州期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.zzfco.com/
+    intro: >-
+      注册地广东，由德邦证券股份有限公司全资控股，属券商系期货公司，注册资本 3.4 亿元。业务范围覆盖金融期货经纪、商品期货经纪、基金销售与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 基金销售, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "中州期货官网", url: "https://www.zzfco.com/", date: "2026-09-30" }
+
+  - id: fut-guoxin-guozheng
+    name: "国新国证期货有限责任公司"
+    short: "国新国证期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.crfutu.com.cn/
+    intro: >-
+      注册地海南，由国新证券股份有限公司控股 92.5%，属券商系期货公司，注册资本 3.2 亿元。业务范围覆盖金融期货经纪与商品期货经纪。
+    business: [金融期货经纪, 商品期货经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "国新国证期货官网", url: "https://www.crfutu.com.cn/", date: "2026-09-30" }
+
+  - id: fut-jinyuan
+    name: "金元期货股份有限公司"
+    short: "金元期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1991
+    website: http://www.jyqh.cn/
+    intro: >-
+      注册地海南，由金元证券股份有限公司控股 89.33%，属券商系期货公司，注册资本 2.86 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "金元期货官网", url: "http://www.jyqh.cn/", date: "2026-09-30" }
+
+  - id: fut-huachuang
+    name: "华创期货有限责任公司"
+    short: "华创期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.hcqh.net/
+    intro: >-
+      注册地重庆，由华创证券有限责任公司全资控股，属券商系期货公司，注册资本 1 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "华创期货官网", url: "https://www.hcqh.net/", date: "2026-09-30" }
+
+  - id: fut-xinan
+    name: "西南期货有限公司"
+    short: "西南期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.swfutures.com/
+    intro: >-
+      注册地重庆，由西南证券股份有限公司全资控股，属券商系期货公司，注册资本 8.5 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "西南期货官网", url: "https://www.swfutures.com/", date: "2026-09-30" }
+
+  - id: fut-xianrong
+    name: "中电投先融期货股份有限公司"
+    short: "中电投先融期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.xrqh.com/
+    intro: >-
+      注册地重庆，由国家电投集团资本控股有限公司持股 44.2%，属产业系期货公司，注册资本 10.1 亿元。产业背景为电力与能源。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "中电投先融期货官网", url: "https://www.xrqh.com/", date: "2026-09-30" }
+
+  - id: fut-csc
+    name: "中信建投期货有限公司"
+    short: "中信建投期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.cfc108.com/
+    intro: >-
+      注册地重庆，由中信建投证券股份有限公司全资控股，属券商系期货公司，注册资本 14 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理、基金销售与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 基金销售, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "中信建投期货官网", url: "https://www.cfc108.com/", date: "2026-09-30" }
+
+  - id: fut-chengdu-jiaozi
+    name: "成都交子期货有限公司"
+    short: "成都交子期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.cdjzqh.com.cn/
+    intro: >-
+      注册地四川，由成都交子新兴金融投资集团股份有限公司控股 77.63%，属金融控股系期货公司，注册资本 6.44 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "成都交子期货官网", url: "https://www.cdjzqh.com.cn/", date: "2026-09-30" }
+
+  - id: fut-guojin
+    name: "国金期货有限责任公司"
+    short: "国金期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.gjqh.com.cn/
+    intro: >-
+      注册地四川，由国金证券股份有限公司全资控股，属券商系期货公司，注册资本 3 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "国金期货官网", url: "https://www.gjqh.com.cn/", date: "2026-09-30" }
+
+  - id: fut-huaxi
+    name: "华西期货有限责任公司"
+    short: "华西期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: http://www.hxqh168.com/
+    intro: >-
+      注册地四川，由华西证券股份有限公司全资控股，属券商系期货公司，注册资本 12.9 亿元。业务范围覆盖股票期权经纪、金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [股票期权经纪, 金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "华西期货官网", url: "http://www.hxqh168.com/", date: "2026-09-30" }
+
+  - id: fut-hongta
+    name: "红塔期货有限责任公司"
+    short: "红塔期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.hongtaqh.com/
+    intro: >-
+      注册地云南，由红塔证券股份有限公司全资控股，属券商系期货公司，注册资本 10 亿元。业务范围覆盖金融期货经纪、商品期货经纪、期货交易咨询、商品期权经纪与金融期权经纪。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询, 商品期权经纪, 金融期权经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "红塔期货官网", url: "https://www.hongtaqh.com/", date: "2026-09-30" }
+
+  - id: fut-yunchen
+    name: "云晨期货有限责任公司"
+    short: "云晨期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 2002
+    website: https://www.ycfutures.cn/
+    intro: >-
+      注册地云南，由云南铜业（集团）有限公司控股 60%，属产业系（现货背景）期货公司，注册资本 3 亿元。业务范围覆盖金融期货经纪与商品期货经纪。
+    business: [金融期货经纪, 商品期货经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "云晨期货官网", url: "https://www.ycfutures.cn/", date: "2026-09-30" }
+
+  - id: fut-changan
+    name: "长安期货有限公司"
+    short: "长安期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.cafut.cn/
+    intro: >-
+      注册地陕西，由开源证券股份有限公司持股 48.08%，属券商系期货公司，注册资本 7.5 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "长安期货官网", url: "https://www.cafut.cn/", date: "2026-09-30" }
+
+  - id: fut-maike
+    name: "迈科期货股份有限公司"
+    short: "迈科期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.mkqh.com/
+    intro: >-
+      注册地陕西，由西安迈科金属国际集团有限公司控股 83.17%，属产业系（现货背景）期货公司，注册资本 3.28 亿元。产业背景为有色金属贸易。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "迈科期货官网", url: "https://www.mkqh.com/", date: "2026-09-30" }
+
+  - id: fut-xibu
+    name: "西部期货有限公司"
+    short: "西部期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.westfutu.com/
+    intro: >-
+      注册地陕西，由西部证券股份有限公司全资控股，属券商系期货公司，注册资本 8 亿元。业务范围覆盖股票期权经纪、金融期货经纪、商品期货经纪、基金销售与期货交易咨询。
+    business: [股票期权经纪, 金融期货经纪, 商品期货经纪, 基金销售, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "西部期货官网", url: "https://www.westfutu.com/", date: "2026-09-30" }
+
+  - id: fut-hualong
+    name: "华龙期货股份有限公司"
+    short: "华龙期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1992
+    website: http://www.hlqhgs.com/
+    intro: >-
+      注册地甘肃，由华龙证券股份有限公司持股 40.87%，属券商系期货公司，注册资本 5 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "华龙期货官网", url: "http://www.hlqhgs.com/", date: "2026-09-30" }
+
+  - id: fut-zhongjin
+    name: "中金期货有限公司"
+    short: "中金期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 2004
+    website: https://www.ciccfutures.com.cn/
+    intro: >-
+      注册地青海，由中国国际金融股份有限公司全资控股，属券商系期货公司，注册资本 3.5 亿元。业务范围覆盖金融期货经纪与商品期货经纪。
+    business: [金融期货经纪, 商品期货经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "中金期货官网", url: "https://www.ciccfutures.com.cn/", date: "2026-09-30" }
+
+  - id: fut-jinshi
+    name: "金石期货有限公司"
+    short: "金石期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.jsfco.com/
+    intro: >-
+      注册地新疆，由新疆生产建设兵团投资有限责任公司控股 90.54%，属产业系期货公司，注册资本 4.68 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "金石期货官网", url: "https://www.jsfco.com/", date: "2026-09-30" }
+
+  - id: fut-yuncaifu
+    name: "云财富期货有限公司"
+    short: "云财富期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.cloudfutures.cn/
+    intro: >-
+      注册地新疆，由上海旭诺资产管理有限公司控股 90.2%，属金融控股系期货公司，注册资本 5.1 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "云财富期货官网", url: "https://www.cloudfutures.cn/", date: "2026-09-30" }
+
+  - id: fut-hna
+    name: "海航期货股份有限公司"
+    short: "海航期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://topwinfr.com.cn/
+    intro: >-
+      注册地广东深圳，由长江租赁有限公司控股 91.09%，属产业系期货公司，注册资本 5 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "海航期货官网", url: "https://topwinfr.com.cn/", date: "2026-09-30" }
+
+  - id: fut-hundun-tiancheng
+    name: "混沌天成期货股份有限公司"
+    short: "混沌天成期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.chaosqh.com/
+    intro: >-
+      注册地广东深圳，由上海混沌投资(集团)有限公司控股 90.93%，属产业系期货公司，注册资本 9.86 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "混沌天成期货官网", url: "https://www.chaosqh.com/", date: "2026-09-30" }
+
+  - id: fut-jinrui
+    name: "金瑞期货股份有限公司"
+    short: "金瑞期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    website: https://www.jrqh.com.cn/
+    intro: >-
+      注册地广东深圳，由江西铜业(北京)国际投资有限公司控股 82.98%，属金融控股系期货公司，注册资本 9.33 亿元。业务范围覆盖股票期权经纪、金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [股票期权经纪, 金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "金瑞期货官网", url: "https://www.jrqh.com.cn/", date: "2026-09-30" }
+
+  - id: fut-pingan
+    name: "平安期货有限公司"
+    short: "平安期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    website: https://futures.pingan.com/
+    intro: >-
+      注册地广东深圳，由平安证券股份有限公司控股 97.09%，属券商系期货公司，注册资本 10 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "平安期货官网", url: "https://futures.pingan.com/", date: "2026-09-30" }
+
+  - id: fut-goldman-sachs-china
+    name: "高盛期货（深圳）有限公司"
+    short: "高盛期货（深圳）"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.goldmansachs.cn/
+    intro: >-
+      注册地广东深圳，由高盛（中国）证券有限责任公司全资控股，属外资系期货公司，注册资本 5.17 亿元。公司前身为山东鲁银期货经纪有限公司。业务范围覆盖金融期货经纪与商品期货经纪。
+    business: [金融期货经纪, 商品期货经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "高盛期货（深圳）官网", url: "https://www.goldmansachs.cn/", date: "2026-09-30" }
+
+  - id: fut-zhongjin-lingnan
+    name: "深圳市中金岭南期货有限公司"
+    short: "深圳市中金岭南期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.zjlnqh.com/
+    intro: >-
+      注册地广东深圳，由深圳市中金岭南有色金属股份有限公司全资控股，属产业系（现货背景）期货公司，注册资本 5.6 亿元。产业背景为有色金属采选与冶炼。业务范围覆盖金融期货经纪、商品期货经纪与资产管理。
+    business: [金融期货经纪, 商品期货经纪, 资产管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "深圳市中金岭南期货官网", url: "https://www.zjlnqh.com/", date: "2026-09-30" }
+
+  - id: fut-xianfeng
+    name: "先锋期货股份有限公司"
+    short: "先锋期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.xfqh.cn/
+    intro: >-
+      注册地广东深圳，由上海合晟资产管理股份有限公司控股 90.91%，属产业系期货公司，注册资本 2.01 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "先锋期货官网", url: "https://www.xfqh.cn/", date: "2026-09-30" }
+
+  - id: fut-shenhua
+    name: "神华期货有限公司"
+    short: "神华期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.shqhgs.com/
+    intro: >-
+      注册地广东深圳，由深圳市神华投资集团有限公司控股 91.13%，属产业系期货公司，注册资本 3 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "神华期货官网", url: "https://www.shqhgs.com/", date: "2026-09-30" }
+
+  - id: fut-minmetals
+    name: "五矿期货有限公司"
+    short: "五矿期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.wkqh.cn/
+    intro: >-
+      注册地广东深圳，由五矿资本控股有限公司控股 99%，属金融控股系期货公司，注册资本 27.15 亿元。隶属中国五矿集团金融板块，产业背景以金属矿产与大宗商品为主。业务范围覆盖股票期权经纪、金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [股票期权经纪, 金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "五矿期货官网", url: "https://www.wkqh.cn/", date: "2026-09-30" }
+
+  - id: fut-cms
+    name: "招商期货有限公司"
+    short: "招商期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://futures.cmschina.com/
+    intro: >-
+      注册地广东深圳，由招商证券股份有限公司全资控股，属券商系期货公司，注册资本 35.98 亿元。业务范围覆盖股票期权经纪、金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [股票期权经纪, 金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "招商期货官网", url: "https://futures.cmschina.com/", date: "2026-09-30" }
+
+  - id: fut-avic
+    name: "中航期货有限公司"
+    short: "中航期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.avicfco.com/
+    intro: >-
+      注册地广东深圳，由中航投资控股有限公司控股 82.42%，属产业系期货公司，注册资本 2.8 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "中航期货官网", url: "https://www.avicfco.com/", date: "2026-09-30" }
+
+  - id: fut-cicc-wealth
+    name: "中金财富期货有限公司"
+    short: "中金财富期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    website: https://www.ciccwmf.cn/
+    intro: >-
+      注册地广东深圳，由中国国际金融股份有限公司全资控股，属券商系期货公司，注册资本 10 亿元。前身为黑龙江省天琪期货经纪有限公司。业务范围覆盖金融期货经纪、商品期货经纪、基金销售与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 基金销售, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "中金财富期货官网", url: "https://www.ciccwmf.cn/", date: "2026-09-30" }
+
+  - id: fut-qianhai
+    name: "前海期货有限公司"
+    short: "前海期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.qhfco.net/
+    intro: >-
+      注册地广东深圳，由广西三威家居新材股份有限公司持股 48%，属产业系（现货背景）期货公司，注册资本 2.5 亿元。业务范围覆盖金融期货经纪、商品期货经纪与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "前海期货官网", url: "https://www.qhfco.net/", date: "2026-09-30" }
+
+  - id: fut-citics
+    name: "中信期货有限公司"
+    short: "中信期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.citicsf.com/
+    intro: >-
+      注册地广东深圳，由中信证券股份有限公司全资控股，属券商系期货公司，注册资本 76 亿元。业务范围覆盖股票期权经纪、金融期货经纪、商品期货经纪、资产管理与基金销售。
+    business: [股票期权经纪, 金融期货经纪, 商品期货经纪, 资产管理, 基金销售]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "中信期货官网", url: "https://www.citicsf.com/", date: "2026-09-30" }
+
+  - id: fut-cib
+    name: "兴业期货有限公司"
+    short: "兴业期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.cifutures.com.cn/
+    intro: >-
+      注册地浙江宁波，由兴业国际信托有限公司全资控股，属信托系期货公司，注册资本 5 亿元。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "兴业期货官网", url: "https://www.cifutures.com.cn/", date: "2026-09-30" }
+
+  - id: fut-itg
+    name: "国贸期货股份有限公司"
+    short: "国贸期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    website: https://www.itf.com.cn/
+    intro: >-
+      注册地福建厦门，由厦门国贸资本集团有限公司控股 51%，属产业系期货公司，注册资本 8.2 亿元。产业背景为供应链与大宗商品贸易。业务范围覆盖金融期货经纪、商品期货经纪、资产管理、基金销售与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 基金销售, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "国贸期货官网", url: "https://www.itf.com.cn/", date: "2026-09-30" }
+
+  - id: fut-ruida
+    name: "瑞达期货股份有限公司"
+    short: "瑞达期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    website: https://www.rdqh.com/
+    intro: >-
+      注册地福建厦门，由福建省瑞达控股有限责任公司控股 70.52%，属产业系期货公司，注册资本 4.77 亿元。公司于 2019 年在深圳证券交易所上市，股票代码 002961。业务范围覆盖金融期货经纪、商品期货经纪、资产管理与期货交易咨询。
+    business: [金融期货经纪, 商品期货经纪, 资产管理, 期货交易咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "瑞达期货官网", url: "https://www.rdqh.com/", date: "2026-09-30" }
+
+  - id: fut-gangxin
+    name: "山东港信期货有限公司"
+    short: "山东港信期货"
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 2021
+    website: https://www.sd-gxqh.com/
+    intro: >-
+      注册地山东青岛，由山东港口青岛港集团有限公司控股 60%，属产业系（现货背景）期货公司，注册资本 10 亿元。2021 年取得营业执照，是名录中最年轻的期货公司之一。业务范围覆盖金融期货经纪与商品期货经纪。
+    business: [金融期货经纪, 商品期货经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "期货公司名录（2026年8月）", url: "https://www.csrc.gov.cn/csrc/c101920/c1039268/content.shtml", date: "2026-09-04" }
+      - { title: "中国期货业协会期货公司基本情况公示", url: "https://www.cfachina.org/informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/", date: "2026-09-30" }
+      - { title: "山东港信期货官网", url: "https://www.sd-gxqh.com/", date: "2026-09-30" }

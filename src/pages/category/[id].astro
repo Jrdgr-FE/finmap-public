@@ -1,0 +1,139 @@
+---
+import Base from '../../layouts/Base.astro';
+import OrgRow from '../../components/OrgRow.astro';
+import { getTaxonomy, getAllEntities, getCollections, getCategoryGlyph } from '../../lib/data';
+
+export function getStaticPaths() {
+  return getTaxonomy().categories.map((cat) => ({ params: { id: cat.id }, props: { cat } }));
+}
+
+const { cat } = Astro.props;
+const all = getAllEntities().filter((e) => e.category === cat.id);
+const detailed = all.filter((e) => e.tier !== 'mass');
+const mass = all.filter((e) => e.tier === 'mass');
+const collections = getCollections();
+
+// 名册级的机构和逐一核实的分开列：前者的详情页只有名称、编码、类型、监管单位，
+// 混在一起会把这一页撑到几 MB，也让人分不清哪些是核实过的。
+const types = cat.types
+  .map((type) => ({
+    type,
+    entities: detailed.filter((e) => e.type === type.id),
+    massCount: mass.filter((e) => e.type === type.id).length,
+  }))
+  .filter((x) => x.entities.length > 0 || x.massCount > 0);
+const maxType = Math.max(...types.map((t) => t.entities.length + t.massCount), 1);
+const pct = (n: number) => `${((n / maxType) * 100).toFixed(2)}%`;
+
+// 集团归属只看真正的金融集团；「全牌照名录」「监管与基础设施」是数据集合，不是股东
+const byCollection = collections
+  .filter((c) => c.is_group)
+  .map((c) => ({ c, entities: detailed.filter((e) => e.collectionId === c.id) }))
+  .filter((x) => x.entities.length > 0);
+
+const exited = detailed.filter((e) => e.status && e.status !== 'active').length;
+const fmt = (n: number) => n.toLocaleString('zh-CN');
+---
+
+<Base title={cat.name} description={cat.desc.slice(0, 120)} current="orgs">
+  <div class="wrap page" data-cat={cat.id}>
+    <nav class="crumbs" aria-label="位置">
+      <a href="/">首页</a>
+      <span class="sep">/</span>
+      <a href="/#categories">金融分类</a>
+      <span class="sep">/</span>
+      <span aria-current="page">{cat.name}</span>
+    </nav>
+
+    <section class="panel profile">
+      <div class="profile-top">
+        <span class="avatar" aria-hidden="true">{getCategoryGlyph(cat.id)}</span>
+        <div class="profile-title">
+          <h1>{cat.name}</h1>
+          {cat.en && <p class="legal">{cat.en}</p>}
+        </div>
+        <div class="actions">
+          <a class="btn" href={`/orgs/?cat=${cat.id}`}>在机构库中筛选</a>
+        </div>
+      </div>
+      <p class="intro">{cat.desc}</p>
+      <div class="profile-stats">
+        <div><b class="num">{fmt(all.length)}</b>机构总数</div>
+        <div><b class="num">{fmt(detailed.length)}</b>逐一核实</div>
+        {mass.length > 0 && <div><b class="num">{fmt(mass.length)}</b>名册级</div>}
+        <div><b class="num">{types.length}</b>牌照类型</div>
+        {exited > 0 && <div><b class="num">{exited}</b>已退出或处置中</div>}
+      </div>
+    </section>
+
+    <section class="panel" style="margin-top:var(--sp-4)">
+      <div class="panel-head">
+        <h2>牌照类型分布</h2>
+        {mass.length > 0 && (
+          <span class="right dist-legend">
+            <span><i></i>逐一核实</span>
+            <span><i class="is-mass"></i>名册级</span>
+          </span>
+        )}
+      </div>
+      <ul class="dist">
+        {types.map(({ type, entities, massCount }) => (
+          <li>
+            <a href={`#type-${type.id}`}>
+              <span>{type.name}</span>
+              <span class="bar-track">
+                {entities.length > 0 && <span class="bar-fill" style={`width:${pct(entities.length)}`}></span>}
+                {massCount > 0 && <span class="bar-fill is-mass" style={`width:${pct(massCount)}`}></span>}
+              </span>
+              <span class="n">{fmt(entities.length + massCount)}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    {types.map(({ type, entities, massCount }) => (
+      <section class="panel" id={`type-${type.id}`} style="margin-top:var(--sp-4);scroll-margin-top:calc(var(--header-h) + 16px)">
+        <div class="panel-head">
+          <h2>{type.name}</h2>
+          <span class="hint">
+            {entities.length > 0 && `${entities.length} 家已核实`}
+            {entities.length > 0 && massCount > 0 && ' · '}
+            {massCount > 0 && `${fmt(massCount)} 家名册级`}
+          </span>
+          {entities.length > 0 && (
+            <span class="right"><a href={`/orgs/?cat=${cat.id}&type=${type.id}`}>在机构库中筛选 →</a></span>
+          )}
+        </div>
+        {entities.length > 0 ? (
+          <div class="org-list">
+            {entities.map((e) => <OrgRow entity={e} showCollection />)}
+          </div>
+        ) : (
+          <p class="panel-body muted">这一类型没有逐一核实过的机构，名单见全量名册。</p>
+        )}
+        {massCount > 0 && (
+          <div class="panel-foot">
+            <a href={`/roster/?type=${type.id}`}>查看全量名册中的 {fmt(massCount)} 家{type.name}（名称、机构编码、属地）→</a>
+          </div>
+        )}
+      </section>
+    ))}
+
+    {byCollection.length > 0 && (
+      <section class="panel" style="margin-top:var(--sp-4)">
+        <div class="panel-head">
+          <h2>按集团分布</h2>
+          <span class="hint">这个分类下属于金融集团的主体</span>
+        </div>
+        <div class="panel-body chips">
+          {byCollection.map(({ c, entities }) => (
+            <a class="chip" href={`/group/${c.id}/`}>
+              {c.short} <span class="n">{entities.length}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+  </div>
+</Base>

@@ -1,0 +1,552 @@
+group:
+  id: pingan
+  name: 中国平安保险（集团）股份有限公司
+  short: 中国平安
+  en: Ping An Insurance (Group) Company of China, Ltd.
+  nature: 上市公司（A+H 两地上市，无控股股东、无实际控制人）
+  founded: 1988
+  hq: 深圳
+  website: https://www.pingan.cn
+  financial_platform: 深圳平安金融科技咨询有限公司（集团投资控股平台；中国平安未申设金融控股公司）
+  intro: >-
+    1988 年诞生于深圳蛇口，是中国第一家股份制保险企业，现于上交所（601318.SH）与港交所（2318.HK）两地上市，股权高度分散，无控股股东与实际控制人。牌照版图以保险为核心向外铺开：银行、信托、证券、期货、基金、保险资管、理财子、消费金融、融资租赁、货币经纪一应俱全，是国内金融牌照最齐全的综合金融集团之一。一个容易被误读的事实是：平安虽然长期被称作"全牌照金控"，却始终没有拿到金融控股公司牌照。央行 2022 年 3 月首批发牌给中信金控与北京金融控股集团，招商局金融控股于 2022 年 9 月获批，这份名单里没有中国平安。它的金融股权分散在集团本级、深圳平安金融科技咨询、平安信托等平台名下。
+    2022 年通过平安人寿入主新方正集团，间接控制方正证券，证券牌照形成"平安证券 + 方正证券"双平台。
+  sources:
+    - { title: "中国平安官网 · 公司架构（成员企业）", url: "https://www.pingan.cn/about/corporate-architecture.shtml", date: "2026-09" }
+    - { title: "中国平安 2025 年年度报告（释义：平安理财、平安证券、新方正集团、方正证券的控股链条）", url: "http://static.cninfo.com.cn/finalpage/2026-03-27/1225038263.PDF", date: "2026-03-27" }
+    - { title: "中国平安《2025 年偿付能力报告》· 主要成员公司股权或控制关系及基本情况（持股比例、注册资本）", url: "https://www.pingan.com/app_upload/images/info/upload/980e2cc9-ab1b-488c-882b-5f57ffb8d28b.pdf", date: "2026" }
+    - { title: "经济观察网《金控公司来了！首批牌照「花落」中信和北京金控》（央行受理名单不含中国平安）", url: "https://www.eeo.com.cn/2022/0317/526036.shtml", date: "2022-03-17" }
+    - { title: "界面新闻《方正证券正式「易主」！中国平安成实控人》", url: "https://www.jiemian.com/article/8608336.html", date: "2022-12-20" }
+
+entities:
+  # ── 银行系 ────────────────────────────────────────────────
+  - id: pingan-bank
+    name: 平安银行股份有限公司
+    short: 平安银行
+    category: banking
+    type: joint-stock-commercial-bank
+    license_code: B0014H144030001
+    regulator: 国家金融监督管理总局
+    founded: 1987
+    listed: ["000001.SZ"]
+    website: http://bank.pingan.com
+    intro: >-
+      全国 12 家股份制商业银行之一，前身是 1987 年 12 月 22 日成立的深圳发展银行，2012 年吸收合并原平安银行后更名。集团持股走的是"集团本级直接持股 + 平安人寿保险资金账户"两条腿，因此严格说它的控股股东是中国平安本身，而不是常被误传的深圳平安金融科技咨询有限公司。旗下全资持有平安理财，是集团零售信贷与财富管理的母体。
+    business: [零售银行, 对公"商行+投行", 资金同业, 信用卡, 私行财富, 汽车金融]
+    parent: ROOT
+    stake: 57.96
+    stake_asof: "2025-12-31"
+    stake_basis: aggregate
+    held_via: 集团本级直接持有 49.56%，中国平安人寿保险股份有限公司等一致行动人另持 8.40%
+    status: active
+    sources:
+      - { title: "平安银行官网 · 金融许可证公示（机构编码 B0014H144030001，法定代表人谢永林）", url: "https://bank.pingan.com/about/gonggao/certificate/1778049977841.shtml", date: "2026-05-06" }
+      - { title: "平安银行年度报告（释义：深圳发展银行成立于 1987 年 12 月 22 日，中国平安为本行控股股东）", url: "https://resources.pingan.com/app_upload/file/bank/1c500787f6a84c09bad007e6d4b634d9.pdf", date: "2026-09" }
+      - { title: "中国平安《2025 年偿付能力报告》· 平安银行 直接 49.56%／间接 8.40%", url: "https://www.pingan.com/app_upload/images/info/upload/980e2cc9-ab1b-488c-882b-5f57ffb8d28b.pdf", date: "2026" }
+
+  - id: pingan-wealth
+    name: 平安理财有限责任公司
+    short: 平安理财
+    category: asset-management
+    type: wealth-management
+    regulator: 国家金融监督管理总局
+    founded: 2020
+    intro: 平安银行全资理财子公司，注册资本 50 亿元，注册地深圳，2020 年 8 月 19 日获原银保监会批复、8 月 28 日正式开业。承接平安银行理财业务的净值化转型，是集团资管板块里最年轻的一张牌照。
+    business: [公募理财产品, 私募理财产品, 理财顾问与咨询]
+    parent: pingan-bank
+    stake: 100
+    stake_asof: "2020-08-28"
+    status: active
+    sources:
+      - { title: "平安银行公告《关于平安理财有限责任公司获准开业的公告》（银保监复〔2020〕513 号，注册资本 50 亿元）", url: "http://epaper.zqrb.cn/html/2020-08/20/content_652890.htm", date: "2020-08-20" }
+      - { title: "平安银行 2020 年年度报告摘要 · 平安理财于 2020 年 8 月 28 日正式开业", url: "http://epaper.zqrb.cn/html/2021-02/02/content_699533.htm", date: "2021-02-02" }
+
+  # ── 保险系（人身险／财产险） ───────────────────────────────
+  - id: pingan-life
+    name: 中国平安人寿保险股份有限公司
+    short: 平安人寿
+    category: insurance
+    type: life-insurer
+    regulator: 国家金融监督管理总局
+    founded: 2002
+    website: https://life.pingan.com
+    intro: >-
+      2002 年经原保监会批准设立，集团最核心的利润与价值来源，国内第二大寿险公司。注册资本由设立时的 38 亿元
+      增至 360.03 亿元，集团直接持股 99.54%。它同时是集团多条控股链的中间层：平安银行 8.40% 的一致行动人持股、以及新方正集团 66.507% 股权都装在它名下，方正的证券牌照就是从这里接过来的。
+    business: [个人寿险, 银行保险, 电销网销, 团体保险, 保险资金运用, 康养服务]
+    parent: ROOT
+    stake: 99.54
+    stake_asof: "2025-12-31"
+    status: active
+    sources:
+      - { title: "中国平安官网 · 平安人寿简介（成立于 2002 年）", url: "http://about.pingan.com/renshou/renshou.shtml", date: "2026-09" }
+      - { title: "中国平安《2025 年偿付能力报告》· 平安人寿 直接 99.54%", url: "https://www.pingan.com/app_upload/images/info/upload/980e2cc9-ab1b-488c-882b-5f57ffb8d28b.pdf", date: "2026" }
+
+  - id: pingan-pnc
+    name: 中国平安财产保险股份有限公司
+    short: 平安产险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000017"
+    regulator: 国家金融监督管理总局
+    founded: 2002
+    intro: >-
+      2002 年 12 月开业，注册资本 210 亿元，国内第二大财产保险公司，车险为基本盘。全资持有平安创展保险销售服务，注意编号口径：官方名单登记的机构编码是 000017，公司信息披露里印的保险机构法人许可证号是 00000171，两者不是同一个字段，本站 license_code 统一存机构编码。是集团保险代理与互联网保险销售的主要出口。
+    business: [车险, 财产损失险, 责任保险, 信用与保证保险, 意外健康险, 农险]
+    parent: ROOT
+    stake: 99.55
+    stake_asof: "2025-12-31"
+    status: active
+    sources:
+      - { title: "中国平安财产保险股份有限公司信息披露（保险机构法人许可证号 00000171，开业时间 2002 年 12 月，注册资本 210 亿元）", url: "http://iobs.pingan.com.cn/download/icore-aops-base-dmz-prd/ICORE_CPS-1761719989512-0E59D8AE04B949289F3D51A20A5AE6ED-91730383", date: "2025-10-29" }
+      - { title: "中国平安《2025 年偿付能力报告》· 平安产险 直接 99.55%", url: "https://www.pingan.com/app_upload/images/info/upload/980e2cc9-ab1b-488c-882b-5f57ffb8d28b.pdf", date: "2026" }
+
+  - id: pingan-annuity
+    name: 平安养老保险股份有限公司
+    short: 平安养老险
+    category: insurance
+    type: life-insurer
+    regulator: 国家金融监督管理总局
+    founded: 2004
+    website: https://yl.pingan.com
+    intro: >-
+      经原保监会 2004 年 12 月 1 日批复、12 月 13 日登记注册，全国首家专业养老保险公司，注册资本 116.03 亿元，集团持股 99.97%。持有企业年金受托人与投资管理人双资格，是保险系参与养老三支柱的主要载体。
+    business: [企业年金受托, 团体养老保障, 团体寿险, 长期健康险, 养老金投资管理]
+    parent: ROOT
+    stake: 99.97
+    stake_asof: "2025-12-31"
+    held_via: 集团本级直接 94.20% ＋ 间接 5.77%
+    status: active
+    sources:
+      - { title: "平安养老保险股份有限公司《2024 年年度信息披露报告》（成立时间、注册资本 116.03 亿元）", url: "https://yl.pingan.com/app_upload/file/20250425/2024%E5%B9%B4%E5%B9%B4%E5%BA%A6%E4%BF%A1%E6%81%AF%E6%8A%AB%E9%9C%B2%E6%8A%A5%E5%91%8A_2192.pdf", date: "2025-04-25" }
+      - { title: "中国平安《2025 年偿付能力报告》· 平安养老险 直接 94.20%／间接 5.77%", url: "https://www.pingan.com/app_upload/images/info/upload/980e2cc9-ab1b-488c-882b-5f57ffb8d28b.pdf", date: "2026" }
+
+  - id: pingan-health
+    name: 平安健康保险股份有限公司
+    short: 平安健康险
+    category: insurance
+    type: life-insurer
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    intro: >-
+      2005 年 6 月 13 日经原保监会批准设立，国内第二家专业健康保险公司，注册地上海，注册资本 46.17 亿元，集团持股 75.01%（另 24.99% 由南非 Discovery 等外部股东持有）。在集团里它是医疗养老生态的支付方，与平安好医生形成"保险＋医疗"闭环。
+    business: [个人健康险, 团体健康险, 长期护理险, 政府委托健康保险, 健康管理服务]
+    parent: ROOT
+    stake: 75.01
+    stake_asof: "2025-12-31"
+    held_via: 集团本级直接 74.38% ＋ 间接 0.63%
+    status: active
+    sources:
+      - { title: "中国平安官网 · 平安健康险（2005 年 6 月 13 日经中国保监会批准设立）", url: "http://about.pingan.com/jiankangxian/", date: "2026-09" }
+      - { title: "中国平安《2025 年偿付能力报告》· 平安健康险 直接 74.38%／间接 0.63%", url: "https://www.pingan.com/app_upload/images/info/upload/980e2cc9-ab1b-488c-882b-5f57ffb8d28b.pdf", date: "2026" }
+
+  # ── 保险中介（保险代理／经纪／公估） ───────────────────────
+  - id: pingan-chuangzhan-agency
+    name: 平安创展保险销售服务有限公司
+    short: 平安创展
+    category: insurance
+    type: insurance-agency
+    regulator: 国家金融监督管理总局
+    founded: 2014
+    intro: 平安产险 100% 持股的全国性保险代理机构，成立初衷是给兼职代理人提供线上展业与结算平台（"创保网"），是平安产险自有渠道之外的一块代理牌照。
+    business: [保险代理, 互联网保险销售, 代理人线上管理]
+    parent: pingan-pnc
+    stake: 100
+    stake_asof: "2025-12-31"
+    status: active
+    sources:
+      - { title: "天眼查 · 平安创展保险销售服务有限公司（成立 2014-02-11，注册资本 5000 万元，由中国平安财产保险股份有限公司全资持有）", url: "https://www.tianyancha.com/company/2316090262", date: "2025-05-09" }
+      - { title: "中国平安《2025 年偿付能力报告》· 平安创展保险销售服务 99.55%", url: "https://www.pingan.com/app_upload/images/info/upload/980e2cc9-ab1b-488c-882b-5f57ffb8d28b.pdf", date: "2026" }
+
+  - id: pingan-insurance-agency
+    name: 平安保险代理有限公司
+    short: 平安保险代理
+    category: insurance
+    type: insurance-agency
+    regulator: 国家金融监督管理总局
+    founded: 2012
+    intro: 集团持股 66.85% 的保险代理机构，注册地深圳，注册资本 5.15 亿元，是平安线下代理人体系之外的另一张全国性代理牌照。
+    business: [保险代理, 代理人渠道服务]
+    parent: ROOT
+    stake: 66.85
+    stake_asof: "2025-12-31"
+    status: active
+    sources:
+      - { title: "企知道 · 平安保险代理有限公司（成立 2012-08-01）", url: "https://qiye.qizhidao.com/company/83245f2655544c87ba291ccc6475a972.html", date: "2026-09" }
+      - { title: "中国平安《2025 年偿付能力报告》· 平安保险代理有限公司 66.85%，注册资本 5.15 亿元", url: "https://www.pingan.com/app_upload/images/info/upload/980e2cc9-ab1b-488c-882b-5f57ffb8d28b.pdf", date: "2026" }
+
+  - id: pingan-health-agency
+    name: 平安健康保险代理有限公司
+    short: 平安健康保险代理
+    category: insurance
+    type: insurance-agency
+    regulator: 国家金融监督管理总局
+    founded: 2011
+    intro: 注册在广州的保险代理机构，注册资本 5000 万元，集团持股 60.10%，主要服务于健康险产品在互联网与经代渠道的分销。
+    business: [健康险代理销售, 互联网保险销售]
+    parent: ROOT
+    stake: 60.1
+    stake_asof: "2025-12-31"
+    status: active
+    sources:
+      - { title: "企查查 · 平安健康保险代理有限公司（成立 2011-02-10，注册资本 5000 万元，住所广州）", url: "https://top.qcc.com/tc/b583fcda35d3.html", date: "2026-09" }
+      - { title: "中国平安《2025 年偿付能力报告》· 平安健康保险代理有限公司 60.10%", url: "https://www.pingan.com/app_upload/images/info/upload/980e2cc9-ab1b-488c-882b-5f57ffb8d28b.pdf", date: "2026" }
+
+  - id: pingan-fuer-broker
+    name: 富尔保险经纪有限公司
+    short: 富尔保险经纪
+    category: insurance
+    type: insurance-broker
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    intro: 2015 年由集团旗下平安直通咨询发起设立的保险经纪机构，注册资本 5000 万元，定位是给离开保险业但仍握有客户的绩优代理人提供展业平台，集团持股 99.54%。
+    business: [保险经纪, 独立经纪人平台]
+    parent: ROOT
+    stake: 99.54
+    stake_asof: "2025-12-31"
+    status: active
+    sources:
+      - { title: "天眼查 · 富尔保险经纪有限公司（成立 2015-10-29，注册资本 5000 万元）", url: "https://www.tianyancha.com/company/2350441845", date: "2024-06-19" }
+      - { title: "每日经济新闻《平安出售旗下保险经纪公司，又一科技巨头接盘「曲线」入局》（富尔保险经纪 2015 年由平安直通咨询发起成立）", url: "https://www.nbd.com.cn/articles/2022-09-28/2482303.html", date: "2022-09-28" }
+
+  - id: pingan-jinyongtai-broker
+    name: 北京金永泰保险经纪有限责任公司
+    short: 金永泰保险经纪
+    category: insurance
+    type: insurance-broker
+    regulator: 国家金融监督管理总局
+    founded: 2004
+    intro: 注册在北京的保险经纪机构，注册资本 5000 万元，2004 年成立，现由集团 100% 持有并纳入并表范围。
+    business: [保险经纪, 团体风险管理]
+    parent: ROOT
+    stake: 100
+    stake_asof: "2025-12-31"
+    status: active
+    sources:
+      - { title: "启明白 · 北京金永泰保险经纪有限责任公司（成立 2004-03-09，注册资本 5000 万元）", url: "https://www.qimingbai.cn/comp6d6ca0bbd8d75795111f1c403ce04cc3", date: "2026-09" }
+      - { title: "中国平安《2025 年偿付能力报告》· 北京金永泰保险经纪有限责任公司 100.00%", url: "https://www.pingan.com/app_upload/images/info/upload/980e2cc9-ab1b-488c-882b-5f57ffb8d28b.pdf", date: "2026" }
+
+  - id: pingan-meian-agency
+    name: 北京美安保险销售有限公司
+    short: 北京美安保险销售
+    category: insurance
+    type: insurance-agency
+    regulator: 国家金融监督管理总局
+    founded: 2012
+    intro: 注册在北京的保险销售机构，注册资本 5000 万元，集团 100% 持有，属于集团并购后保留的保险代理牌照。
+    business: [保险销售, 区域代理渠道]
+    parent: ROOT
+    stake: 100
+    stake_asof: "2025-12-31"
+    status: active
+    sources:
+      - { title: "企知道 · 北京美安保险销售有限公司（成立 2012-09-13，注册资本 5000 万元）", url: "https://qiye.qizhidao.com/company/7b10eb959e1509526ad01049b657f1e6.html", date: "2026-09" }
+      - { title: "中国平安《2025 年偿付能力报告》· 北京美安保险销售有限公司 100.00%", url: "https://www.pingan.com/app_upload/images/info/upload/980e2cc9-ab1b-488c-882b-5f57ffb8d28b.pdf", date: "2026" }
+
+  - id: pingan-kechuang-adjuster
+    name: 深圳市科创保险公估有限公司
+    short: 科创保险公估
+    category: insurance
+    type: insurance-adjuster
+    regulator: 国家金融监督管理总局
+    founded: 2001
+    intro: 2001 年成立的保险公估机构，是金融壹账通体系里唯一的持牌主体，由深圳壹账通智能科技有限公司持股 99.9%，做承保前检验估价与出险后查勘定损。
+    business: [保险标的检验估价, 查勘定损理算, 风险评估]
+    parent: ROOT
+    stake_asof: "2025-12-31"
+    held_via: 壹账通金融科技有限公司—深圳壹账通智能科技有限公司（持股 99.9%）
+    status: active
+    sources:
+      - { title: "水滴信用 · 深圳市科创保险公估有限公司（成立 2001-08-27，深圳壹账通智能科技有限公司持股 99.9%）", url: "https://m.shuidi.cn/company-df09d7b6dd005ce58ae55d7bf499a776.html", date: "2026-09" }
+      - { title: "中国平安《2025 年偿付能力报告》· 深圳市科创保险公估有限公司（保险公估）", url: "https://www.pingan.com/app_upload/images/info/upload/980e2cc9-ab1b-488c-882b-5f57ffb8d28b.pdf", date: "2026" }
+
+  # ── 资产管理 ──────────────────────────────────────────────
+  - id: pingan-am
+    name: 平安资产管理有限责任公司
+    short: 平安资管
+    category: asset-management
+    type: insurance-amc
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    intro: >-
+      2005 年 5 月成立，前身是 1997 年设立的中国平安保险股份有限公司投资管理中心，注册资本 15 亿元，集团持股 100%。它是国内管理规模最大的保险资管机构之一，受托管理平安人寿、平安产险等集团的保险资金，是集团资产负债匹配的核心。
+    business: [保险资金运用, 第三方资管, 债权投资计划, 组合类保险资管产品]
+    parent: ROOT
+    stake: 100
+    stake_asof: "2025-12-31"
+    held_via: 集团本级直接 98.67% ＋ 间接 1.33%
+    status: active
+    sources:
+      - { title: "中国平安官网 · 平安资产管理集团简介（成立于 2005 年 5 月）", url: "http://css2.pingan.com/about/cn/assets.jsp", date: "2026-09" }
+      - { title: "中国平安《2025 年偿付能力报告》· 平安资产管理 直接 98.67%／间接 1.33%", url: "https://www.pingan.com/app_upload/images/info/upload/980e2cc9-ab1b-488c-882b-5f57ffb8d28b.pdf", date: "2026" }
+
+  - id: pingan-fund
+    name: 平安基金管理有限公司
+    short: 平安基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2011
+    intro: 2011 年 1 月 7 日经证监会批准设立（证监许可〔2010〕1917 号）的中外合资基金公司，注册资本 13 亿元，平安信托持股 68.19%、大华资产管理 17.51%、三亚盈湾旅业 14.30%，集团合并口径持股 68.11%。
+    business: [公募基金, 专户理财, ETF, ABS]
+    parent: pingan-trust
+    stake: 68.19
+    stake_asof: "2025-12-31"
+    status: active
+    sources:
+      - { title: "平安中证人工智能主题 ETF 公告 · 基金管理人概况（设立日期 2011-01-07，股东持股 68.19%／17.51%／14.30%）", url: "http://www.sse.com.cn/disclosure/fund/announcement/c/2020-01-22/512930_20200122_3.pdf", date: "2020-01-22" }
+      - { title: "中国平安《2025 年偿付能力报告》· 平安基金 68.11%（经平安信托间接持有）", url: "https://www.pingan.com/app_upload/images/info/upload/980e2cc9-ab1b-488c-882b-5f57ffb8d28b.pdf", date: "2026" }
+
+  - id: pingan-fangzheng-fubon-fund
+    name: 方正富邦基金管理有限公司
+    short: 方正富邦基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2011
+    intro: 2011 年 7 月 8 日经证监会批准（证监许可〔2011〕1038 号）设立的两岸合资基金公司，注册资本 6.6 亿元，方正证券持股 66.7%、台湾富邦证券投资信托持股 33.3%。2022 年 12 月证监会批复核准中国平安成为其实际控制人。
+    business: [公募基金, 专户理财]
+    parent: pingan-fangzheng-securities
+    stake: 66.7
+    stake_asof: "2025-08-30"
+    status: active
+    sources:
+      - { title: "方正富邦策略精选混合型证券投资基金 2025 年中期报告（成立 2011-07-08，股东方正证券 66.7%／富邦证券投资信托 33.3%）", url: "https://pdf.dfcfw.com/pdf/H2_AN202508301736780945_1.pdf", date: "2025-08-30" }
+      - { title: "界面新闻《方正证券正式「易主」！中国平安成实控人》（证监会核准中国平安成为方正富邦基金实际控制人）", url: "https://www.jiemian.com/article/8608336.html", date: "2022-12-20" }
+
+  # ── 非银行金融机构 ────────────────────────────────────────
+  - id: pingan-trust
+    name: 平安信托有限责任公司
+    short: 平安信托
+    category: nonbank
+    type: trust-company
+    regulator: 国家金融监督管理总局
+    founded: 1996
+    website: https://trust.pingan.com
+    intro: >-
+      前身是 1984 年成立的中国工商银行珠江三角洲金融信托联合公司，1996 年由平安集团收购股权后更名，2002 年重新登记，历经六次增资注册资本达 130 亿元，集团持股 99.88%。它同时是集团资管板块的中间持股层：平安基金 68.19%、平安利顺国际货币经纪 67% 都由它持有，平安证券 55.59% 的股权也挂在它名下。
+    business: [资金信托, 家族信托, 资产证券化, 股权投资, 服务信托]
+    parent: ROOT
+    stake: 99.88
+    stake_asof: "2025-12-31"
+    status: active
+    sources:
+      - { title: "平安信托官网 · 公司简介（成立于 1996 年 4 月 9 日，注册资本 130 亿元）", url: "https://trust.pingan.com/about-us/introduction", date: "2026-09" }
+      - { title: "平安信托 2023 年度报告 · 公司历史沿革与股本变更", url: "http://static.trust-one.com/img/news_content/20240429/1714374233030056779.pdf", date: "2024-04-29" }
+
+  - id: pingan-lishun-broker
+    name: 平安利顺国际货币经纪有限责任公司
+    short: 平安利顺
+    category: nonbank
+    type: money-broker
+    regulator: 国家金融监督管理总局
+    founded: 2008
+    intro: >-
+      2008 年 1 月经原银监会批准筹建、当年开业，是中国内地第三家货币经纪公司（继上海国利、上海国际之后）。注册资本 5000 万元，平安信托持股 67%、全球第三大货币经纪商利顺金融集团（Tradition）持股 33%，做外汇、货币、债券与衍生品市场的交易撮合。这类牌照全国仅数张，稀缺度高于一般非银牌照。
+    business: [外汇经纪, 货币市场经纪, 债券经纪, 衍生品经纪]
+    parent: pingan-trust
+    stake: 67
+    stake_asof: "2025-12-31"
+    status: active
+    sources:
+      - { title: "中国平安新闻稿《平安利顺国际货币经纪公司获批筹建》（注册资本 5000 万元，平安信托 67%／利顺 33%）", url: "https://www.pingan.com/about/cn/news_70743.jsp", date: "2008-01-29" }
+      - { title: "中国经济网《中国第 3 家货币经纪公司「平安利顺」诞生》（2008 年 11 月 17 日开业）", url: "http://finance.ce.cn/fe/gdxw/200811/18/t20081118_13881704.shtml", date: "2008-11-18" }
+      - { title: "中国平安《2025 年偿付能力报告》· 平安利顺国际货币经纪 66.92%（经平安信托间接持有）", url: "https://www.pingan.com/app_upload/images/info/upload/980e2cc9-ab1b-488c-882b-5f57ffb8d28b.pdf", date: "2026" }
+
+  - id: pingan-consumer-finance
+    name: 平安消费金融有限公司
+    short: 平安消费金融
+    category: nonbank
+    type: consumer-finance
+    regulator: 国家金融监督管理总局
+    founded: 2020
+    intro: >-
+      2020 年 4 月 9 日经上海银保监局批复开业，注册资本 50 亿元，注册地上海浦东，是全国注册资本第二大的持牌消费金融公司。股权结构值得注意：集团本级仅直接持股 30%，另外 70% 由陆金所控股旗下融熠、未鲲、锦炯三家关联公司分别持有 28%、27%、15%，因此这是一家"集团非控股但由陆金所系实际控制"的消金公司。
+    business: [个人消费贷款, 线上信贷, 智能风控, 同业拆借]
+    parent: ROOT
+    stake: 30
+    stake_asof: "2020-04-09"
+    held_via: 集团本级直接持有 30%；另 70% 由陆金所控股关联公司（融熠 28%、未鲲 27%、锦炯 15%）持有
+    status: active
+    sources:
+      - { title: "中证网《平安消金获批开业 陆金所正式转型》（注册资本 50 亿元，平安集团 30%／融熠 28%／未鲲 27%／锦炯 15%）", url: "https://www.cs.com.cn/yh/04/202004/t20200409_6043544.html", date: "2020-04-09" }
+      - { title: "界面新闻《平安消费金融公司获准开业，注册资本 50 亿仅次于捷信》（另三家股东均为陆金所控股关联公司）", url: "https://www.jiemian.com/article/4232915.html", date: "2020-04-09" }
+
+  - id: pingan-leasing
+    name: 平安国际融资租赁有限公司
+    short: 平安租赁
+    category: local-finance
+    type: financing-leasing
+    regulator: 上海市商务委员会（外商投资融资租赁企业，非金融监管总局发牌的金融租赁公司）
+    founded: 2012
+    website: http://pazl.pingan.cn/index.html
+    intro: >-
+      2012 年 9 月 27 日经上海市商务委员会批准（沪商外资批〔2012〕3280 号）设立，境内股东为集团本级、外资股东为
+      中国平安保险海外（控股）有限公司，设立时注册资本 3.15 亿元，现为 145 亿元，集团合计持股 100%。业务覆盖
+      城市发展、能源冶金、工程建设、汽车金融、小微金融等十多个事业部板块，是国内规模领先的融资租赁公司。需要特别提示牌照性质：这是一张按外商投资融资租赁企业管理的融资租赁牌照，与金融监管总局核发的
+      金融租赁公司牌照不是同一类，严格意义上不属于持牌金融机构。
+    business: [直接租赁, 售后回租, 经营租赁, 汽车金融, 小微融资]
+    parent: ROOT
+    stake: 100
+    stake_asof: "2025-12-31"
+    held_via: 集团本级直接 69.44% ＋ 中国平安保险海外（控股）有限公司 30.56%
+    status: active
+    sources:
+      - { title: "平安国际融资租赁有限公司 2023 年度第一期中期票据募集说明书（2012 年 9 月 27 日设立，集团直接 69.44%／间接 30.56%）", url: "http://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202312/039387_20231227_SN24.pdf", date: "2023-12-27" }
+      - { title: "平安国际融资租赁有限公司公司债券文件（注册资本 145 亿元，实缴 142.38 亿元）", url: "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2025-04-28/115028_20250428_PXYK.pdf", date: "2025-04-28" }
+
+  # ── 证券期货 ──────────────────────────────────────────────
+  - id: pingan-securities
+    name: 平安证券股份有限公司
+    short: 平安证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1991
+    website: https://stock.pingan.com
+    intro: >-
+      前身为 1991 年 8 月创立的平安保险证券业务部，注册资本 138 亿元，集团本级直接持股 40.96%、平安信托持股 55.59%，合并口径 96.55%。以经纪与固收业务见长，全资或控股平安期货、平安财智投资、平安磐海资本、平安证券（香港）等子公司。
+      2022 年方正证券并入后，集团出现两家综合类券商，同业竞争问题至今未解。
+    business: [证券经纪, 投资银行, 资产管理, 自营交易, 融资融券, 研究咨询]
+    parent: ROOT
+    stake: 96.55
+    stake_asof: "2025-12-31"
+    held_via: 集团本级直接 40.96% ＋ 平安信托有限责任公司 55.59%
+    status: active
+    sources:
+      - { title: "中国平安官网 · 平安证券简介（成立于 1991 年 8 月，注册资本 138 亿元）", url: "http://css2.pingan.com/about/cn/securities.jsp", date: "2026-09" }
+      - { title: "中国平安《2025 年偿付能力报告》· 平安证券 直接 40.96%／间接 55.59%", url: "https://www.pingan.com/app_upload/images/info/upload/980e2cc9-ab1b-488c-882b-5f57ffb8d28b.pdf", date: "2026" }
+
+  - id: pingan-futures
+    name: 平安期货有限公司
+    short: 平安期货
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    website: http://futures.pingan.com
+    intro: >-
+      1996 年 4 月 10 日成立（原名深圳市平安期货经纪有限公司），注册资本 7.22 亿元，平安证券持股 97.09%、平安不动产持股 2.91%，集团合并口径 96.64%。持商品期货经纪、金融期货经纪、期货投资咨询与资产管理业务资格，是中金所交易结算会员。
+    business: [商品期货经纪, 金融期货经纪, 期货投资咨询, 资产管理]
+    parent: pingan-securities
+    stake: 97.09
+    stake_asof: "2021-03-23"
+    status: active
+    sources:
+      - { title: "平安期货官网 · 股东信息（平安证券 97.09%、平安不动产 2.91%）", url: "http://futures.pingan.com/about/info/shareholder.shtml", date: "2026-09" }
+      - { title: "平安期货官网 · 历史情况（1996 年 4 月 10 日公司成立，历次增资扩股记录）", url: "https://futures.pingan.com/about/info/history.shtml", date: "2026-09" }
+
+  - id: pingan-fangzheng-securities
+    name: 方正证券股份有限公司
+    short: 方正证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1994
+    listed: ["601901.SH"]
+    website: https://www.foundersc.com
+    intro: >-
+      中国首批综合类证券公司，1994 年 10 月 26 日成立，2011 年 8 月上市，注册地长沙。原属北大方正集团，
+      2022 年 12 月证监会核准新方正控股发展有限责任公司成为主要股东、中国平安成为实际控制人：平安人寿通过新方正（北京）持股 66.507% 控制新方正集团，新方正集团持方正证券 28.71%。因中国平安自身无控股股东和实际控制人，方正证券的最终表述为"无实际控制人"。旗下持牌子公司包括
+      方正承销保荐、方正中期期货、方正富邦基金、方正证券投资等。
+    business: [证券经纪, 投资银行, 资产管理, 自营投资, 期货经纪, 公募基金]
+    parent: ROOT
+    stake: 28.71
+    stake_asof: "2022-12-23"
+    held_via: 中国平安人寿保险股份有限公司—新方正控股发展有限责任公司（平安人寿持股 66.507%）
+    status: active
+    sources:
+      - { title: "界面新闻《方正证券正式「易主」！中国平安成实控人，旗下金融子公司也将「打包转移」》", url: "https://www.jiemian.com/article/8608336.html", date: "2022-12-20" }
+      - { title: "中国平安 2025 年年度报告（释义：方正证券为新方正集团子公司，新方正集团为平安寿险子公司）", url: "http://static.cninfo.com.cn/finalpage/2026-03-27/1225038263.PDF", date: "2026-03-27" }
+      - { title: "中财网 · 方正证券（601901）公司档案（成立 1994-10-26，上市 2011-08-01，实际控制人中国平安）", url: "https://quote.cfi.cn/gsda/11941/601901.html", date: "2026-09" }
+
+  - id: pingan-fangzheng-midland-futures
+    name: 方正中期期货有限公司
+    short: 方正中期期货
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    founded: 2005
+    intro: >-
+      注册成立于 2005 年 8 月 9 日（前身为北京中期期货），2013 年吸收合并方正期货后更名，注册资本 10.05 亿元，方正证券持股 92.44%。持商品期货经纪、金融期货经纪、期货投资咨询、资产管理及基金销售资格。
+      2023 年 8 月证监会核准其实际控制人变更为中国平安。
+    business: [商品期货经纪, 金融期货经纪, 期货投资咨询, 资产管理, 基金销售]
+    parent: pingan-fangzheng-securities
+    stake: 92.44
+    status: active
+    sources:
+      - { title: "方正中期期货机构资料（2005 年 8 月 9 日注册成立，方正证券持股 92.44%，2023 年 8 月实控人变更为中国平安）", url: "https://www.sgpjbg.com/jigoujh/46766.html", date: "2026-09" }
+      - { title: "中国平安 2025 年年度报告（平安寿险—新方正集团—方正证券—方正中期期货的控制链条）", url: "http://static.cninfo.com.cn/finalpage/2026-03-27/1225038263.PDF", date: "2026-03-27" }
+
+  # ── 地方金融组织（陆金所系与集团保理板块） ─────────────────
+  - id: pingan-puhui-guarantee
+    name: 平安普惠融资担保有限公司
+    short: 平安普惠担保
+    category: local-finance
+    type: financing-guarantee
+    regulator: 江苏省地方金融管理局
+    founded: 2007
+    website: https://phdanbao.ph.com.cn
+    intro: >-
+      原名富登投资信用担保有限公司，2007 年 12 月成立于南京，2014 年 8 月由中国平安保险海外（控股）收购，
+      2015 年 7 月更名，注册资本约 36.66 亿元，由陆金所控股旗下的融熠有限公司全资持有。它是平安普惠信贷业务集群里的增信主体，与先前的小贷公司构成"小贷放款＋担保增信"的组合。
+    business: [融资性担保, 贷款担保, 债券担保, 再担保, 履约担保]
+    parent: ROOT
+    stake_asof: "2025-12-31"
+    held_via: 陆金所控股有限公司—融熠有限公司（100% 持有；中国平安为陆金所控股控股股东）
+    status: active
+    sources:
+      - { title: "平安普惠融资担保官网 · 关于我们（原富登投资信用担保，成立于 2007 年 12 月，2015 年 7 月更名，注册资本约 36.66 亿元）", url: "https://phdanbao.ph.com.cn/2311.html", date: "2026-09" }
+      - { title: "界面新闻《平安消费金融公司获准开业》（融熠有限公司为平安普惠旗下香港主体，全资控股平安普惠融资担保）", url: "https://www.jiemian.com/article/4232915.html", date: "2020-04-09" }
+
+  - id: pingan-jinan-microloan
+    name: 重庆金安小额贷款有限公司
+    short: 金安小贷
+    category: local-finance
+    type: micro-loan
+    regulator: 重庆市地方金融管理局
+    founded: 2014
+    intro: >-
+      2014 年 12 月成立，注册资本 32 亿元，由陆金所控股旗下融熠有限公司直接与间接 100% 控股。它曾是平安普惠注册资本最高的全国性网络小贷牌照，2022 年 9 月经营范围从全国收窄至重庆，意味着平安普惠不再持有全国性网络小贷牌照，个人消费金融业务转而由平安消费金融承接。
+    business: [小额贷款, 网络贷款, 票据贴现, 资产转让]
+    parent: ROOT
+    stake_asof: "2025-12-31"
+    held_via: 陆金所控股有限公司—融熠有限公司（直接与间接合计 100%）
+    status: active
+    sources:
+      - { title: "证券时报《清退和增资同步进行 小贷机构整合提速》（金安小贷成立于 2014 年 12 月，注册资本 32 亿元，经营范围收窄至重庆）", url: "https://www.stcn.com/stock/gsdt/202209/t20220923_4876207.html", date: "2022-09-23" }
+      - { title: "新浪财经《大厂金融牌照整改进行时：京东、度小满、携程、平安普惠相继整合互联网小贷牌照》", url: "https://finance.sina.com.cn/tech/internet/2022-09-19/doc-imqmmtha7945969.shtml", date: "2022-09-19" }
+
+  - id: pingan-factoring
+    name: 平安商业保理有限公司
+    short: 平安商业保理
+    category: local-finance
+    type: factoring
+    regulator: 上海市地方金融管理局
+    founded: 2013
+    intro: 2013 年 11 月 29 日成立于上海，注册资本 27 亿元，集团 100% 持有，是集团在供应链金融与应收账款融资上的保理牌照。
+    business: [商业保理, 应收账款融资, 供应链金融]
+    parent: ROOT
+    stake: 100
+    stake_asof: "2025-12-31"
+    status: active
+    sources:
+      - { title: "天眼查 · 平安商业保理有限公司（成立 2013-11-29，注册资本 27 亿元）", url: "https://www.tianyancha.com/company/2347362965", date: "2025-09-17" }
+      - { title: "中国平安《2025 年偿付能力报告》· 平安商业保理有限公司 100.00%", url: "https://www.pingan.com/app_upload/images/info/upload/980e2cc9-ab1b-488c-882b-5f57ffb8d28b.pdf", date: "2026" }
+
+  - id: pingan-tianjin-factoring
+    name: 平安国际商业保理（天津）有限公司
+    short: 平安国际商业保理
+    category: local-finance
+    type: factoring
+    regulator: 天津市地方金融管理局
+    founded: 2012
+    intro: 2012 年 3 月 6 日成立于天津（曾用名平津保理（天津）有限责任公司），集团合并口径持股 67.79%，从事商业保理与应收账款相关服务。
+    business: [商业保理, 应收账款管理]
+    parent: ROOT
+    stake: 67.79
+    stake_asof: "2025-12-31"
+    status: active
+    sources:
+      - { title: "企知道 · 平安国际商业保理（天津）有限公司（成立于 2012-03-06，曾用名平津保理（天津）有限责任公司）", url: "https://qiye.qizhidao.com/company/62906fc3d2f322df51c418450b167c5e.html", date: "2026-09" }
+      - { title: "中国平安《2025 年偿付能力报告》· 平安国际商业保理（天津）有限公司 67.79%", url: "https://www.pingan.com/app_upload/images/info/upload/980e2cc9-ab1b-488c-882b-5f57ffb8d28b.pdf", date: "2026" }

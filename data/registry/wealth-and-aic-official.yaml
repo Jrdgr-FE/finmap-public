@@ -1,0 +1,560 @@
+note: >-
+  监管名单把银行理财子公司与金融资产投资公司归在"其他金融机构"下，这里按名称细分还原：理财子公司归资产管理业，AIC 归非银行金融机构。
+sources:
+  - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+entities:
+  - id: rk-z0009h111000001
+    name: "建信金融资产投资有限公司"
+    short: "建信金融资产投资"
+    category: nonbank
+    type: aic
+    license_code: Z0009H111000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的其他金融机构法人机构，金融许可证机构编码 Z0009H111000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0011h111000001
+    name: "农银金融资产投资有限公司"
+    short: "农银金融资产投资"
+    category: nonbank
+    type: aic
+    license_code: Z0011H111000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的其他金融机构法人机构，金融许可证机构编码 Z0011H111000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0012h132010001
+    name: "工银金融资产投资有限公司"
+    short: "工银金融资产投资"
+    category: nonbank
+    type: aic
+    license_code: Z0012H132010001
+    regulator: 江苏金融监管局
+    region: 江苏
+    tier: mass
+    intro: >-
+      江苏的其他金融机构法人机构，金融许可证机构编码 Z0012H132010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0013h111000001
+    name: "中银金融资产投资有限公司"
+    short: "中银金融资产投资"
+    category: nonbank
+    type: aic
+    license_code: Z0013H111000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的其他金融机构法人机构，金融许可证机构编码 Z0013H111000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0014h131000001
+    name: "交银金融资产投资有限公司"
+    short: "交银金融资产投资"
+    category: nonbank
+    type: aic
+    license_code: Z0014H131000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的其他金融机构法人机构，金融许可证机构编码 Z0014H131000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0015h111000001
+    name: "工银理财有限责任公司"
+    short: "工银理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0015H111000001
+    regulator: 国家金融监督管理总局
+    region: 国家金融监督管理总局
+    tier: mass
+    intro: >-
+      国家金融监督管理总局的其他金融机构法人机构，金融许可证机构编码 Z0015H111000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0016h144030001
+    name: "建信理财有限责任公司"
+    short: "建信理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0016H144030001
+    regulator: 国家金融监督管理总局
+    region: 国家金融监督管理总局
+    tier: mass
+    intro: >-
+      国家金融监督管理总局的其他金融机构法人机构，金融许可证机构编码 Z0016H144030001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0017h131000001
+    name: "交银理财有限责任公司"
+    short: "交银理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0017H131000001
+    regulator: 国家金融监督管理总局
+    region: 国家金融监督管理总局
+    tier: mass
+    intro: >-
+      国家金融监督管理总局的其他金融机构法人机构，金融许可证机构编码 Z0017H131000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0018h111000001
+    name: "中银理财有限责任公司"
+    short: "中银理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0018H111000001
+    regulator: 国家金融监督管理总局
+    region: 国家金融监督管理总局
+    tier: mass
+    intro: >-
+      国家金融监督管理总局的其他金融机构法人机构，金融许可证机构编码 Z0018H111000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0019h111000001
+    name: "农银理财有限责任公司"
+    short: "农银理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0019H111000001
+    regulator: 国家金融监督管理总局
+    region: 国家金融监督管理总局
+    tier: mass
+    intro: >-
+      国家金融监督管理总局的其他金融机构法人机构，金融许可证机构编码 Z0019H111000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0020h137020001
+    name: "光大理财有限责任公司"
+    short: "光大理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0020H137020001
+    regulator: 国家金融监督管理总局
+    region: 国家金融监督管理总局
+    tier: mass
+    intro: >-
+      国家金融监督管理总局的其他金融机构法人机构，金融许可证机构编码 Z0020H137020001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0021h144030001
+    name: "招银理财有限责任公司"
+    short: "招银理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0021H144030001
+    regulator: 国家金融监督管理总局
+    region: 国家金融监督管理总局
+    tier: mass
+    intro: >-
+      国家金融监督管理总局的其他金融机构法人机构，金融许可证机构编码 Z0021H144030001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0022h111000001
+    name: "中邮理财有限责任公司"
+    short: "中邮理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0022H111000001
+    regulator: 国家金融监督管理总局
+    region: 国家金融监督管理总局
+    tier: mass
+    intro: >-
+      国家金融监督管理总局的其他金融机构法人机构，金融许可证机构编码 Z0022H111000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0023h135010001
+    name: "兴银理财有限责任公司"
+    short: "兴银理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0023H135010001
+    regulator: 国家金融监督管理总局
+    region: 国家金融监督管理总局
+    tier: mass
+    intro: >-
+      国家金融监督管理总局的其他金融机构法人机构，金融许可证机构编码 Z0023H135010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0024h233010001
+    name: "杭银理财有限责任公司"
+    short: "杭银理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0024H233010001
+    regulator: 浙江金融监管局
+    region: 浙江
+    tier: mass
+    intro: >-
+      浙江的其他金融机构法人机构，金融许可证机构编码 Z0024H233010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0025h233020001
+    name: "宁银理财有限责任公司"
+    short: "宁银理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0025H233020001
+    regulator: 宁波金融监管局
+    region: 宁波
+    tier: mass
+    intro: >-
+      宁波的其他金融机构法人机构，金融许可证机构编码 Z0025H233020001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0026h234010001
+    name: "徽银理财有限责任公司"
+    short: "徽银理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0026H234010001
+    regulator: 安徽金融监管局
+    region: 安徽
+    tier: mass
+    intro: >-
+      安徽的其他金融机构法人机构，金融许可证机构编码 Z0026H234010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0027h131000001
+    name: "信银理财有限责任公司"
+    short: "信银理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0027H131000001
+    regulator: 国家金融监督管理总局
+    region: 国家金融监督管理总局
+    tier: mass
+    intro: >-
+      国家金融监督管理总局的其他金融机构法人机构，金融许可证机构编码 Z0027H131000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0028h250000001
+    name: "渝农商理财有限责任公司"
+    short: "渝农商理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0028H250000001
+    regulator: 重庆金融监管局
+    region: 重庆
+    tier: mass
+    intro: >-
+      重庆的其他金融机构法人机构，金融许可证机构编码 Z0028H250000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0030h232010001
+    name: "南银理财有限责任公司"
+    short: "南银理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0030H232010001
+    regulator: 江苏金融监管局
+    region: 江苏
+    tier: mass
+    intro: >-
+      江苏的其他金融机构法人机构，金融许可证机构编码 Z0030H232010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0031h232010001
+    name: "苏银理财有限责任公司"
+    short: "苏银理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0031H232010001
+    regulator: 江苏金融监管局
+    region: 江苏
+    tier: mass
+    intro: >-
+      江苏的其他金融机构法人机构，金融许可证机构编码 Z0031H232010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0032h144030001
+    name: "平安理财有限责任公司"
+    short: "平安理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0032H144030001
+    regulator: 国家金融监督管理总局
+    region: 国家金融监督管理总局
+    tier: mass
+    intro: >-
+      国家金融监督管理总局的其他金融机构法人机构，金融许可证机构编码 Z0032H144030001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0033h237020001
+    name: "青银理财有限责任公司"
+    short: "青银理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0033H237020001
+    regulator: 青岛金融监管局
+    region: 青岛
+    tier: mass
+    intro: >-
+      青岛的其他金融机构法人机构，金融许可证机构编码 Z0033H237020001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0034h111000001
+    name: "华夏理财有限责任公司"
+    short: "华夏理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0034H111000001
+    regulator: 国家金融监督管理总局
+    region: 国家金融监督管理总局
+    tier: mass
+    intro: >-
+      国家金融监督管理总局的其他金融机构法人机构，金融许可证机构编码 Z0034H111000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0035h131000001
+    name: "汇华理财有限公司"
+    short: "汇华理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0035H131000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的其他金融机构法人机构，金融许可证机构编码 Z0035H131000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0037h131000001
+    name: "贝莱德建信理财有限责任公司"
+    short: "贝莱德建信理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0037H131000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的其他金融机构法人机构，金融许可证机构编码 Z0037H131000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0040h131000001
+    name: "广银理财有限责任公司"
+    short: "广银理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0040H131000001
+    regulator: 国家金融监督管理总局
+    region: 国家金融监督管理总局
+    tier: mass
+    intro: >-
+      国家金融监督管理总局的其他金融机构法人机构，金融许可证机构编码 Z0040H131000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0043h131000001
+    name: "浦银理财有限责任公司"
+    short: "浦银理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0043H131000001
+    regulator: 国家金融监督管理总局
+    region: 国家金融监督管理总局
+    tier: mass
+    intro: >-
+      国家金融监督管理总局的其他金融机构法人机构，金融许可证机构编码 Z0043H131000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0044h131000001
+    name: "施罗德交银理财有限公司"
+    short: "施罗德交银理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0044H131000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的其他金融机构法人机构，金融许可证机构编码 Z0044H131000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0045h231000001
+    name: "上银理财有限责任公司"
+    short: "上银理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0045H231000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的其他金融机构法人机构，金融许可证机构编码 Z0045H231000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0046h111000001
+    name: "民生理财有限责任公司"
+    short: "民生理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0046H111000001
+    regulator: 国家金融监督管理总局
+    region: 国家金融监督管理总局
+    tier: mass
+    intro: >-
+      国家金融监督管理总局的其他金融机构法人机构，金融许可证机构编码 Z0046H111000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0047h131000001
+    name: "高盛工银理财有限责任公司"
+    short: "高盛工银理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0047H131000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的其他金融机构法人机构，金融许可证机构编码 Z0047H131000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0048h137020001
+    name: "恒丰理财有限责任公司"
+    short: "恒丰理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0048H137020001
+    regulator: 国家金融监督管理总局
+    region: 国家金融监督管理总局
+    tier: mass
+    intro: >-
+      国家金融监督管理总局的其他金融机构法人机构，金融许可证机构编码 Z0048H137020001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0049h112000001
+    name: "渤银理财有限责任公司"
+    short: "渤银理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0049H112000001
+    regulator: 国家金融监督管理总局
+    region: 国家金融监督管理总局
+    tier: mass
+    intro: >-
+      国家金融监督管理总局的其他金融机构法人机构，金融许可证机构编码 Z0049H112000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0050h211000001
+    name: "北银理财有限责任公司"
+    short: "北银理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0050H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的其他金融机构法人机构，金融许可证机构编码 Z0050H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0051h131000001
+    name: "法巴农银理财有限责任公司"
+    short: "法巴农银理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0051H131000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的其他金融机构法人机构，金融许可证机构编码 Z0051H131000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-z0052h133010001
+    name: "浙银理财有限责任公司"
+    short: "浙银理财"
+    category: asset-management
+    type: wealth-management
+    license_code: Z0052H133010001
+    regulator: 国家金融监督管理总局
+    region: 国家金融监督管理总局
+    tier: mass
+    intro: >-
+      国家金融监督管理总局的其他金融机构法人机构，金融许可证机构编码 Z0052H133010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }

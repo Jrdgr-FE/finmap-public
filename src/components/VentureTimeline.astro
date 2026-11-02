@@ -1,0 +1,99 @@
+---
+import VentureAvatar from './VentureAvatar.astro';
+import { KIND_LABEL, formatDate, formatMoney, getVentureUrl } from '../lib/ventures';
+import type { EventKind, VEvent, Venture } from '../lib/ventures';
+
+interface Props {
+  events: Array<VEvent & { venture?: Venture }>;
+  /** 公司档案页里不必重复公司名 */
+  showCompany?: boolean;
+  /** 在顶部放一排按类型筛选的按钮 */
+  filter?: boolean;
+}
+const { events, showCompany = true, filter = false } = Astro.props;
+
+// 按月分组。只知道年份的事件单独成组，排在该年各月之后（与日期倒序一致）。
+const groups: Array<{ key: string; label: string; items: typeof events }> = [];
+for (const e of events) {
+  const key = e.date.slice(0, 7);
+  const label = key.length === 7 ? `${key.slice(0, 4)} 年 ${Number(key.slice(5))} 月` : `${key} 年 · 未披露月份`;
+  const g = groups.at(-1);
+  if (g && g.key === key) g.items.push(e);
+  else groups.push({ key, label, items: [e] });
+}
+
+// 分组里已经写了年月，条目上只显示日（只知道月份或年份的显示「—」）
+const dayLabel = (d: string) => (d.length === 10 ? `${Number(d.slice(8))} 日` : '—');
+
+const kinds = (Object.keys(KIND_LABEL) as EventKind[])
+  .map((k) => ({ k, n: events.filter((e) => e.kind === k).length }))
+  .filter((x) => x.n > 0);
+---
+
+<div class="v-tl" data-tl>
+  {filter && kinds.length > 1 && (
+    <div class="v-tl-filter" role="group" aria-label="按类型筛选">
+      <button type="button" class="is-on" data-k="">全部 <span class="n">{events.length}</span></button>
+      {kinds.map(({ k, n }) => (
+        <button type="button" data-k={k}>{KIND_LABEL[k]} <span class="n">{n}</span></button>
+      ))}
+    </div>
+  )}
+  {groups.map((g) => (
+    <section class="v-tl-group">
+      <h3 class="v-tl-month">{g.label}</h3>
+      <ol>
+        {g.items.map((e) => (
+          <li data-kind={e.kind}>
+            <time datetime={e.date} title={formatDate(e.date)}>{dayLabel(e.date)}</time>
+            <div class="v-ev">
+              <div class="v-ev-head">
+                <span class="v-kind" data-kind={e.kind}>{KIND_LABEL[e.kind]}</span>
+                {showCompany && e.venture && (
+                  <a class="v-ev-co" href={getVentureUrl(e.venture)}>
+                    <VentureAvatar venture={e.venture} size="sm" />
+                    {e.venture.name}
+                  </a>
+                )}
+                {e.amount && <span class="v-amt">{formatMoney(e.amount)}</span>}
+                {e.status === 'reported' && <span class="v-rumor" title="传闻、洽谈中或单一来源，未经公司确认">传闻</span>}
+              </div>
+              <p class="v-ev-title">{e.title}</p>
+              {e.investors && e.investors.length > 0 && (
+                <p class="v-ev-inv">
+                  <span class="k">投资方</span>
+                  {e.investors.map((name) => <span class="v-inv">{name}</span>)}
+                </p>
+              )}
+              <p class="v-ev-src">
+                {e.sources.map((s) => (
+                  <a href={s.url} rel="noopener" target="_blank">{s.title}</a>
+                ))}
+              </p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </section>
+  ))}
+</div>
+
+{filter && (
+  <script is:inline>
+    (function () {
+      document.querySelectorAll('[data-tl]').forEach(function (tl) {
+        if (tl.dataset.ready) return;
+        tl.dataset.ready = '1';
+        var btns = tl.querySelectorAll('.v-tl-filter button');
+        btns.forEach(function (b) {
+          b.addEventListener('click', function () {
+            var k = b.dataset.k;
+            btns.forEach(function (x) { x.classList.toggle('is-on', x === b); x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+            tl.querySelectorAll('li[data-kind]').forEach(function (li) { li.hidden = !!k && li.dataset.kind !== k; });
+            tl.querySelectorAll('.v-tl-group').forEach(function (g) { g.hidden = !g.querySelector('li:not([hidden])'); });
+          });
+        });
+      });
+    })();
+  </script>
+)}

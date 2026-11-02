@@ -1,0 +1,136 @@
+[
+  {
+    "id": "cerebras",
+    "website": "https://sdk.cerebras.ai/computing-with-cerebras",
+    "sources": [
+      {
+        "title": "Wafer-Scale Engine Architecture",
+        "url": "https://sdk.cerebras.ai/computing-with-cerebras"
+      },
+      {
+        "title": "Introducing Cerebras Inference: AI at Instant Speed - Cerebras",
+        "url": "https://www.cerebras.ai/blog/introducing-cerebras-inference-ai-at-instant-speed"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "memberships": [
+      {
+        "track": "ai-compute",
+        "segment": "systems"
+      }
+    ]
+  },
+  {
+    "id": "groq",
+    "website": "https://www.groq.com/solutions",
+    "sources": [
+      {
+        "title": "Products | Groq is fast inference for AI builders",
+        "url": "https://www.groq.com/solutions"
+      },
+      {
+        "title": "LPU | Groq is fast, low cost inference.",
+        "url": "https://groq.com/lpu-architecture"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "id": "sambanova",
+    "website": "https://sambanova.ai/products/rdu-ai-chips",
+    "sources": [
+      {
+        "title": "RDU | Next-Gen AI Chip for Inference at Scale",
+        "url": "https://sambanova.ai/products/rdu-ai-chips"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "id": "tenstorrent",
+    "website": "https://tenstorrent.com/en/hardware/cards",
+    "sources": [
+      {
+        "title": "Cards",
+        "url": "https://tenstorrent.com/en/hardware/cards"
+      },
+      {
+        "title": "RISC-V",
+        "url": "https://tenstorrent.com/ip/risc-v-cpu"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "id": "moore-threads",
+    "website": "https://www.mthreads.com/aboutus",
+    "country": "中国",
+    "sources": [
+      {
+        "title": "摩尔线程公司介绍 | 摩尔线程",
+        "url": "https://www.mthreads.com/aboutus"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "memberships": [
+      {
+        "track": "ai-compute",
+        "segment": "systems"
+      }
+    ]
+  },
+  {
+    "id": "biren",
+    "website": "https://www.birentech.com/about/",
+    "country": "中国",
+    "sources": [
+      {
+        "title": "关于我们 - 壁仞科技官网",
+        "url": "https://www.birentech.com/about/"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "id": "enflame",
+    "website": "http://www.enflame-tech.com/",
+    "country": "中国",
+    "sources": [
+      {
+        "title": "燧原科技 | 科技创新 算力普惠",
+        "url": "http://www.enflame-tech.com/"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "memberships": [
+      {
+        "track": "ai-compute",
+        "segment": "systems"
+      }
+    ]
+  },
+  {
+    "id": "iluvatar",
+    "website": "https://www.iluvatar.com/",
+    "country": "中国",
+    "sources": [
+      {
+        "title": "天数智芯",
+        "url": "https://www.iluvatar.com/"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "id": "metax",
+    "website": "https://www.metax-tech.com/",
+    "country": "中国",
+    "sources": [
+      {
+        "title": "沐曦MetaX | 致力于成为全球一流的GPU企业",
+        "url": "https://www.metax-tech.com/"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  }
+]

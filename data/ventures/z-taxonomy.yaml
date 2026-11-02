@@ -1,0 +1,87 @@
+version: 2
+updated: 2026-10-23
+tracks:
+  - id: foundation-models
+    name: 大模型与 AI 软件
+    desc: 基础模型、开发工具与应用公司；世界模型另列，支持同一公司跨赛道归类。
+    segments:
+      - id: foundation
+        name: 上游·基础模型
+        desc: 通用语言、多模态与行业基础模型。
+      - id: tooling
+        name: 中游·开发与数据工具
+        desc: 数据、训练、部署、评测及应用开发工具。
+      - id: applications
+        name: 下游·AI 应用
+        desc: 基于模型构建的行业产品与工作流。
+  - id: semiconductors
+    name: 半导体与先进封装
+    desc: 设计工具、制造、设备、材料和封装；AI 加速器同时可在算力赛道查找。
+    segments:
+      - id: design
+        name: 上游·设计与 EDA
+        desc: 设计软件、IP 与专用芯片设计。
+      - id: equipment
+        name: 上游·设备
+        desc: 光刻、刻蚀、沉积、检测等制造设备。
+      - id: materials-packaging
+        name: 中游·材料与封装
+        desc: 半导体材料、封装测试与芯粒集成。
+      - id: fabrication
+        name: 中游·晶圆制造
+        desc: 代工、特色工艺与集成器件制造。
+  - id: industrial-automation
+    name: 工业自动化与制造
+    desc: 工业与协作机器人、机器视觉和制造控制系统，关注实际生产环节。
+    segments:
+      - id: machine-vision
+        name: 上游·机器视觉
+        desc: 工业视觉、识别、定位和检测。
+      - id: industrial-robots
+        name: 中游·工业机器人
+        desc: 工业机械臂、协作机器人与运动平台。
+      - id: manufacturing
+        name: 下游·制造系统
+        desc: 工业控制、自动化集成与数字制造。
+  - id: smart-hardware
+    name: 智能硬件与终端
+    desc: 智能穿戴、空间计算、消费机器人和医疗设备等可交付终端产品。
+    segments:
+      - id: edge-iot
+        name: 上游·边缘与物联网
+        desc: 边缘处理、连接模块及智能设备平台。
+      - id: consumer
+        name: 中游·消费与空间终端
+        desc: AR、穿戴、影像及桌面制造等产品。
+      - id: medical-devices
+        name: 下游·医疗与健康设备
+        desc: 手术机器人、诊疗设备与健康监测。
+  - id: energy-tech
+    name: 能源与电气化
+    desc: 电池、储能、电力技术和聚变，覆盖成熟产业中的新技术路线与前沿项目。
+    segments:
+      - id: batteries
+        name: 上游·电池技术
+        desc: 电芯、关键材料与新型电化学体系。
+      - id: power
+        name: 中游·发电与电力电子
+        desc: 光伏、逆变器、功率转换和电网技术。
+      - id: storage
+        name: 下游·储能系统
+        desc: 电化学、长时储能与能源管理。
+      - id: fusion
+        name: 前沿·聚变能源
+        desc: 聚变装置、磁体及相关工程技术。
+  - id: frontier-tech
+    name: 前沿计算与新材料
+    desc: 量子技术、光子技术和先进材料，关注可核实的技术与产品定位。
+    segments:
+      - id: quantum
+        name: 前沿计算·量子
+        desc: 量子计算、控制、通信与测量。
+      - id: photonics
+        name: 核心技术·光子
+        desc: 光子器件、光电集成与光计算。
+      - id: advanced-materials
+        name: 上游·先进材料
+        desc: 高性能材料、制造工艺与材料平台。

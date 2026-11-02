@@ -1,0 +1,45 @@
+---
+import { REGION_LABEL, formatDate, formatValuation, formatMoney, getVentureUrl, valuationSortKey, SORT_FX_NOTE } from '../lib/ventures';
+import type { Venture } from '../lib/ventures';
+
+interface Props {
+  ventures: Venture[];
+  limit?: number;
+}
+const { ventures, limit = 12 } = Astro.props;
+
+// 条长按折算后的人民币估值线性缩放（条形图必须从零开始，不用对数轴）；
+// 标签保留原币种。传闻估值用斜纹，和已确认的实心条区分，不只靠颜色。
+const ranked = ventures
+  .filter((v) => v.valuation)
+  .map((v) => ({ v, key: valuationSortKey(v) }))
+  .filter((r) => r.key > 0)
+  .sort((a, b) => b.key - a.key)
+  .slice(0, limit);
+const max = ranked[0]?.key ?? 1;
+---
+
+{ranked.length > 0 && (
+  <div class="v-bars-wrap">
+    <ol class="v-bars">
+      {ranked.map(({ v, key }) => {
+        const rumor = v.valuation!.status === 'reported';
+        const tip = `${v.name} · 估值 ${formatValuation(v.valuation)}（${formatDate(v.valuation!.asof)}，${rumor ? '传闻' : '已确认'}）· ${REGION_LABEL[v.region]}`;
+        return (
+          <li>
+            <a class:list={['v-bar', rumor && 'is-rumor']} href={getVentureUrl(v)} title={tip}>
+              <span class="v-bar-name">{v.name}</span>
+              <span class="v-bar-track"><span class="v-bar-fill" style={`width:${Math.max(1.5, (key / max) * 100).toFixed(1)}%`}></span></span>
+              <span class="v-bar-val">{formatMoney(v.valuation!)}</span>
+            </a>
+          </li>
+        );
+      })}
+    </ol>
+    <div class="v-bars-legend">
+      <span><i class="sw"></i>已确认</span>
+      <span><i class="sw is-rumor"></i>传闻</span>
+      <span class="fx">{SORT_FX_NOTE}</span>
+    </div>
+  </div>
+)}

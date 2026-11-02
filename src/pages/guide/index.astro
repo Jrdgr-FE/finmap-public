@@ -1,0 +1,197 @@
+---
+import Base from "../../layouts/Base.astro";
+import Icon from "../../components/Icon.astro";
+---
+
+<Base title="使用指南与数据口径" current="guide">
+  <div class="wrap page product-guide">
+    <p class="page-kicker">THE FINMAP WORKFLOW</p>
+    <h1>为持续研究，留出一张工作台。</h1>
+    <p class="guide-lead">
+      FinMap 面向 AI、机器人及更广泛的硬科技研究。围绕公司整理公开动态，把一次
+      mapping 延伸为长期跟进。
+    </p>
+    <div class="guide-steps">
+      {[
+        {
+          n: "01",
+          title: "建立你的关注范围",
+          text: "在公司库按赛道、地区或技术关键词查找公司。点击关注，即可建立当前浏览器里的研究清单。",
+          href: "/companies/",
+          link: "前往公司库",
+          icon: "building",
+        },
+        {
+          n: "02",
+          title: "每天从动态开始",
+          text: "在「我的关注」集中阅读融资、产品、合作与榜单线索。默认只看关键进展，可切到全部收录；按官方渠道、未读和本次新增安排阅读。",
+          href: "/?scope=watching",
+          link: "打开关注动态",
+          icon: "inbox",
+        },
+        {
+          n: "03",
+          title: "回到公司和原始材料",
+          text: "在侧栏查看出处与日期，再进入公司档案核对产品、产业位置和公开关系。产业图谱帮助你找到同一环节的其他公司。",
+          href: "/ventures/",
+          link: "浏览产业地图",
+          icon: "network",
+        },
+      ].map((s) => (
+        <section>
+          <span>{s.n}</span>
+          <Icon name={s.icon} />
+          <h2>{s.title}</h2>
+          <p>{s.text}</p>
+          <a href={s.href}>{s.link} →</a>
+        </section>
+      ))}
+    </div>
+    <div class="guide-columns">
+      <section class="panel">
+        <div class="panel-head">
+          <h2>如何理解每条动态</h2>
+        </div>
+        <div class="panel-body">
+          <dl>
+            <dt>官方渠道</dt>
+            <dd>
+              来自已核验的官网、订阅或版本发布入口。信息中的性能与商业主张仍是来源表述。
+            </dd>
+            <dt>检索线索</dt>
+            <dd>
+              来自公开新闻索引，按标题归属和分类，尚未核验全文。融资完成、产品量产和榜单口径应打开原文确认。
+            </dd>
+            <dt>来源摘录与事项标签</dt>
+            <dd>
+              官方文章和订阅可展示取得的短摘录。轮次、金额与事项标签依据标题提取，未披露的字段留空；对外投资单独标注，不能算作公司自身融资。
+            </dd>
+            <dt>历史整理</dt>
+            <dd>
+              已有公开资料的归档记录。首次收录不等于今天发生；来源时间、收录时间分别保留。
+            </dd>
+          </dl>
+        </div>
+      </section>
+      <section class="panel">
+        <div class="panel-head">
+          <h2>清楚知道覆盖边界</h2>
+        </div>
+        <div class="panel-body">
+          <p>
+            公司库是持续扩展的研究样本，不是完整的全球企业名录。来源按 1–6
+            小时检查，无法保证发现所有动态。
+          </p>
+          <p>
+            X、公众号尚未完整自动接入。官网失败、过期或未核验的渠道，在信源监测中单独列出。
+          </p>
+          <p>
+            历史检索向前最多 90 天，公开快照最多保留 5,000
+            条；收录量不代表真实事件发生量。关注、收藏和已读保存在当前浏览器，可在「我的工作台」导出备份，再在另一台设备合并恢复。没有自动跨设备同步。
+          </p>
+          <a class="section-action" href="/ventures/monitoring/">
+            查看实际覆盖状态
+            <Icon name="arrow" />
+          </a>
+          <p>
+            <a class="section-action" href="/workspace/">
+              备份我的工作台 <Icon name="arrow" />
+            </a>
+          </p>
+        </div>
+      </section>
+    </div>
+  </div>
+</Base>
+<style>
+  .product-guide {
+    max-width: 1120px !important;
+  }
+  .product-guide > h1 {
+    font-size: 32px;
+    letter-spacing: -0.05em;
+    margin: 8px 0 15px;
+  }
+  .guide-lead {
+    font-size: 14px;
+    line-height: 1.9;
+    color: var(--ink-3);
+    max-width: 650px;
+  }
+  .guide-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 35px 0;
+  }
+  .guide-steps section {
+    position: relative;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 26px;
+    background: var(--card);
+  }
+  .guide-steps section > span {
+    display: block;
+    font: 500 11px var(--mono);
+    color: var(--ink-4);
+    margin-bottom: 30px;
+  }
+  .guide-steps section > svg {
+    position: absolute;
+    right: 26px;
+    top: 27px;
+    width: 22px;
+    height: 22px;
+    color: var(--accent);
+  }
+  .guide-steps h2 {
+    font-size: 16px;
+    margin-bottom: 13px;
+  }
+  .guide-steps p {
+    font-size: 12px;
+    line-height: 2;
+    color: var(--ink-3);
+    min-height: 100px;
+  }
+  .guide-steps a {
+    font-size: 11px;
+    color: var(--accent-text);
+  }
+  .guide-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .guide-columns p,
+  .guide-columns dd {
+    font-size: 12px;
+    line-height: 1.95;
+    color: var(--ink-3);
+    margin: 0 0 15px;
+  }
+  .guide-columns dl {
+    margin: 0;
+  }
+  .guide-columns dt {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  @media (max-width: 760px) {
+    .guide-steps,
+    .guide-columns {
+      grid-template-columns: 1fr;
+    }
+    .guide-steps p {
+      min-height: 0;
+    }
+    .product-guide > h1 {
+      font-size: 25px;
+    }
+    .guide-steps section > span {
+      margin-bottom: 20px;
+    }
+  }
+</style>

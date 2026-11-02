@@ -1,0 +1,116 @@
+version: 1
+updated: "2026-02"
+note: >
+  分类口径参照中国人民银行《金融机构编码规范》(JR/T 0124) 与《金融业企业划型标准规定》
+  (银发〔2015〕309号)，并结合国家金融监督管理总局、中国证监会的现行监管分工整理。本图谱只收牌照主体（法人机构），不把分支机构铺进来。
+
+categories:
+  - id: supervision
+    name: 监管与基础设施
+    en: Supervision & Market Infrastructure
+    desc: 定规则、发牌照、办登记清算。不直接做业务，但决定了谁能做业务。
+    types:
+      - { id: central-bank, name: 中央银行 }
+      - { id: financial-regulator, name: 国务院金融管理部门 }
+      - { id: self-regulatory, name: 行业自律组织 }
+      - { id: exchange, name: 交易场所 }
+      - { id: market-infrastructure, name: 登记结算与基础平台 }
+      - { id: payment-clearing, name: 支付清算机构 }
+
+  - id: holding
+    name: 金融控股公司
+    en: Financial Holding Company
+    desc: >
+      依《金融控股公司监督管理试行办法》由中国人民银行许可，控股或实际控制两个以上
+      不同类型金融机构。这个分类是理解中国金融集团版图的入口。
+      注意「金控」这个词被用得很滥：真正拿到央行设立许可的全国只有少数几家，
+      各省叫「XX金融控股集团」的平台绝大多数没有这张牌照。本站按有无牌照分列，
+      不把两者混为一谈。
+    types:
+      - { id: financial-holding, name: 全国性金融控股公司, desc: 已取得中国人民银行金融控股公司设立许可的全国性平台，如中信金控、招商金控 }
+      - { id: local-financial-holding, name: 地方金融控股公司, desc: 已取得央行金控牌照的地方平台，目前仅北京金融控股集团一家 }
+      - { id: investment-holding, name: 投资控股平台, desc: 未持央行金控牌照的国有金融资本投资运营平台，由省市级财政厅或国资委履行出资人职责。名称多含「金融控股」，但本身不是持牌金融机构 }
+
+  - id: banking
+    name: 银行业
+    en: Banking
+    desc: 存款类金融机构，受国家金融监督管理总局监管，是金融体系里资产最重的一块。
+    types:
+      - { id: development-bank, name: 开发性金融机构 }
+      - { id: policy-bank, name: 政策性银行 }
+      - { id: state-commercial-bank, name: 国有大型商业银行 }
+      - { id: joint-stock-commercial-bank, name: 全国性股份制商业银行 }
+      - { id: city-commercial-bank, name: 城市商业银行 }
+      - { id: rural-commercial-bank, name: 农村商业银行 }
+      - { id: rural-cooperative-bank, name: 农村合作银行 }
+      - { id: rural-credit-cooperative, name: 农村信用社 }
+      - { id: rural-mutual-aid, name: 农村资金互助社 }
+      - { id: housing-savings-bank, name: 住房储蓄银行 }
+      - { id: private-bank, name: 民营银行 }
+      - { id: direct-bank, name: 独立法人直销银行 }
+      - { id: foreign-bank, name: 外资法人银行 }
+      - { id: village-bank, name: 村镇银行 }
+      - { id: overseas-bank, name: 境外持牌银行 }
+
+  - id: nonbank
+    name: 非银行金融机构
+    en: Non-bank Financial Institutions
+    desc: 不吸收公众存款、但持有金融牌照的机构。牌照类型最杂，也最容易和"类金融"混淆。
+    types:
+      - { id: trust-company, name: 信托公司 }
+      - { id: financial-leasing, name: 金融租赁公司 }
+      - { id: consumer-finance, name: 消费金融公司 }
+      - { id: auto-finance, name: 汽车金融公司 }
+      - { id: amc, name: 金融资产管理公司 }
+      - { id: aic, name: 金融资产投资公司 }
+      - { id: finance-company, name: 企业集团财务公司 }
+      - { id: money-broker, name: 货币经纪公司 }
+
+  - id: securities
+    name: 证券期货业
+    en: Securities & Futures
+    desc: 持中国证监会业务许可的经营机构。
+    types:
+      - { id: securities-firm, name: 证券公司 }
+      - { id: overseas-securities, name: 境外证券平台 }
+      - { id: futures-company, name: 期货公司 }
+      - { id: investment-advisory, name: 证券投资咨询机构 }
+      - { id: securities-finance, name: 证券金融公司 }
+
+  - id: insurance
+    name: 保险业
+    en: Insurance
+    desc: 保险法人机构与保险中介。对外开放程度最高的金融板块。
+    types:
+      - { id: insurance-group, name: 保险集团（控股）公司 }
+      - { id: life-insurer, name: 人身保险公司 }
+      - { id: pnc-insurer, name: 财产保险公司 }
+      - { id: reinsurer, name: 再保险公司 }
+      - { id: insurance-broker, name: 保险经纪机构 }
+      - { id: insurance-agency, name: 保险代理机构 }
+      - { id: insurance-adjuster, name: 保险公估机构 }
+
+  - id: asset-management
+    name: 资产管理业
+    en: Asset Management
+    desc: 替别人管钱的机构。中国资管行业的主体，横跨银行、保险、证券三条监管线。
+    types:
+      - { id: wealth-management, name: 银行理财子公司 }
+      - { id: insurance-amc, name: 保险资产管理公司 }
+      - { id: fund-management, name: 公募基金管理公司 }
+      - { id: private-fund, name: 私募基金管理人 }
+      - { id: securities-amc, name: 券商资产管理子公司 }
+
+  - id: local-finance
+    name: 地方金融组织
+    en: Local Financial Organizations
+    desc: >
+      由地方金融管理机构实施监管，不进全国性牌照序列。数量大、门槛低、风险外溢性强，监管权在 2023 年后统一上收到国家金融监督管理总局。
+    types:
+      - { id: local-amc, name: 地方资产管理公司, desc: 各省、自治区、直辖市及计划单列市批设的地方 AMC，全国约 60 家 }
+      - { id: micro-loan, name: 小额贷款公司, desc: 由地方金融管理机构批设，全国数千家 }
+      - { id: financing-guarantee, name: 融资担保公司, desc: 由地方金融管理机构批设 }
+      - { id: factoring, name: 商业保理公司, desc: 由地方金融管理机构批设 }
+      - { id: financing-leasing, name: 融资租赁公司, desc: 商务部或地方批设的外商投资融资租赁企业，与金融监管总局批设的金融租赁公司不是同一张牌照 }
+      - { id: pawn, name: 典当行, outOfScope: 全国约 8000 家，主体是区域性小额典当业务，纳入会把图谱淹没在长尾里；且其监管归属与持牌金融机构不同。判断它是否属于"金融行业图谱"的读者，答案在这里，不在列表里。 }
+      - { id: local-trading, name: 地方交易场所, outOfScope: 由省级政府批设并报联席会议备案，含产权、股权、大宗商品、文化产权等，业态差异极大且不都是金融机构。逐省名单口径不统一，收录会引入不可比的样本，故只保留国家级交易场所（见监管与基础设施层）。 }

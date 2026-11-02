@@ -1,0 +1,153 @@
+/* ─────────────────────────────────────────────────────────────
+   FinMap 灵巧操作专题样式 (dexterity.css)
+   与 global.css 保持完全一致的细线表格与名录行体系
+   ───────────────────────────────────────────────────────────── */
+
+.dex-inline-search {
+  margin-left: auto;
+  min-width: 240px;
+}
+.dex-inline-search input {
+  height: 30px;
+  font-size: 13px;
+}
+
+.dex-compare-scroll {
+  overflow-x: auto;
+  border-top: 1px solid var(--line);
+}
+
+.dex-compare-matrix {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  min-width: 760px;
+}
+
+.dex-compare-matrix th,
+.dex-compare-matrix td {
+  padding: 12px var(--sp-4);
+  border-bottom: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+  vertical-align: top;
+  text-align: left;
+  font-size: 13px;
+  line-height: 1.6;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.dex-compare-matrix th:last-child,
+.dex-compare-matrix td:last-child {
+  border-right: 0;
+}
+.dex-compare-matrix tr:last-child th,
+.dex-compare-matrix tr:last-child td {
+  border-bottom: 0;
+}
+
+.dex-compare-matrix thead th {
+  background: var(--paper-2);
+  border-top: 0;
+  white-space: normal;
+  color: var(--ink);
+}
+
+.dex-dim-col,
+.dex-compare-matrix tbody th {
+  width: 170px;
+  background: var(--paper-2);
+  color: var(--ink-2);
+  font-weight: 600;
+  white-space: normal;
+}
+.dex-compare-matrix tbody th small {
+  display: block;
+  margin-top: 2px;
+  font-size: 11.5px;
+  font-weight: 450;
+  color: var(--ink-3);
+}
+
+.dex-col-head {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.dex-col-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  font-size: 12.5px;
+}
+.dex-col-head strong {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.35;
+}
+
+.dex-metric-lead {
+  display: block;
+  font-weight: 550;
+  color: var(--ink);
+}
+.dex-metric-caveat {
+  margin: 4px 0 0;
+  font-size: 12.5px;
+  color: var(--ink-3);
+  line-height: 1.55;
+}
+
+.dex-product-sources {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12.5px;
+}
+.dex-product-sources a {
+  color: var(--accent-text);
+}
+.dex-product-sources a:hover {
+  text-decoration: underline;
+}
+.dex-product-sources small {
+  color: var(--ink-3);
+}
+
+/* 六类角色名录行 */
+.dex-role-groups {
+  border-top: 1px solid var(--line);
+}
+.dex-role-row .org-row-full strong {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+/* 尽调核验要点网格 */
+.dex-check-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--sp-4) var(--sp-5);
+}
+.dex-check-item strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.dex-check-item p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--ink-2);
+  line-height: 1.65;
+}
+
+@media (max-width: 720px) {
+  .dex-check-grid {
+    grid-template-columns: 1fr;
+  }
+  .dex-inline-search {
+    width: 100%;
+    margin-left: 0;
+  }
+}

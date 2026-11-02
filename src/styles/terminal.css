@@ -1,0 +1,1076 @@
+/* FinMap layouts. Shared brand tokens live in public/fin-suite.css. */
+:root {
+  --paper: var(--suite-bg);
+  --paper-2: var(--suite-surface-2);
+  --paper-3: var(--suite-surface-3);
+  --card: var(--suite-surface);
+  --ink: var(--suite-text);
+  --ink-2: var(--suite-text-2);
+  --ink-3: var(--suite-muted);
+  --ink-4: var(--suite-faint);
+  --line: var(--suite-border);
+  --line-2: var(--suite-border-strong);
+  --accent: var(--suite-accent);
+  --accent-text: var(--suite-link);
+  --accent-soft: var(--suite-accent-soft);
+  --accent-hover: var(--suite-accent-hover);
+  --solid: var(--suite-solid);
+  --on-solid: #fff;
+  --on-accent: #fff;
+  --ring: 0 0 0 3px rgb(41 98 255 / 0.18);
+  --rail-w: var(--suite-rail);
+  --header-h: var(--suite-header);
+  --r: var(--suite-radius);
+  --r-lg: var(--suite-radius-lg);
+  --terminal-nav: var(--suite-nav);
+}
+:root[data-theme="dark"] {
+  --paper: var(--suite-bg);
+  --paper-2: var(--suite-surface-2);
+  --paper-3: var(--suite-surface-3);
+  --card: var(--suite-surface);
+  --ink: var(--suite-text);
+  --ink-2: var(--suite-text-2);
+  --ink-3: var(--suite-muted);
+  --ink-4: var(--suite-faint);
+  --line: var(--suite-border);
+  --line-2: var(--suite-border-strong);
+  --accent: var(--suite-accent);
+  --accent-text: var(--suite-link);
+  --accent-soft: var(--suite-accent-soft);
+  --accent-hover: var(--suite-accent-hover);
+  --solid: var(--suite-solid);
+  --on-solid: #fff;
+  --on-accent: #fff;
+  --terminal-nav: var(--suite-nav);
+}
+.product-app {
+  letter-spacing: 0;
+  background: var(--paper);
+}
+.product-app .workspace-main {
+  padding-top: 48px;
+}
+.product-app .workspace-topbar {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 90;
+  height: 48px;
+  padding: 0 20px;
+  color: #d9e3f6;
+  background: var(--terminal-nav);
+  border-bottom: 1px solid #29354a;
+  box-shadow: none;
+}
+.product-app .workspace-context {
+  gap: 18px;
+}
+.terminal-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+}
+.terminal-brand:hover {
+  color: #fff;
+}
+.terminal-brand > span {
+  width: 25px;
+  height: 25px;
+}
+.terminal-brand svg {
+  width: 25px;
+  height: 25px;
+}
+.terminal-brand strong {
+  font-size: 20px;
+  font-weight: 650;
+  letter-spacing: -0.6px;
+}
+.product-app .workspace-context .terminal-brand strong {
+  color: #f5f8ff;
+}
+.terminal-product {
+  color: #aebbd1;
+  font-size: 12px;
+  padding-left: 18px;
+  border-left: 1px solid #34425a;
+}
+.terminal-section {
+  color: #8e9db7;
+  font-size: 12px;
+}
+.product-app .workspace-topbar .site-search {
+  width: 360px;
+}
+.product-app .workspace-topbar .site-search input {
+  height: 30px;
+  border: 1px solid #3b4962;
+  border-radius: 4px;
+  background: #243047;
+  color: #f1f5fe;
+}
+.product-app .workspace-topbar .site-search input::placeholder {
+  color: #a7b5cd;
+}
+.product-app .workspace-topbar .site-search svg,
+.product-app .workspace-topbar .icon-btn {
+  color: #b8c6de;
+}
+.product-app .workspace-topbar .icon-btn:hover {
+  color: white;
+  background: #2c3a52;
+}
+.product-app .workspace-topbar kbd {
+  color: #b6c3d9;
+  border-color: #47536b;
+  background: #2a374f;
+}
+.product-app .workspace-topbar .topbar-divider {
+  background: #34425a;
+}
+.product-app .workspace-sidebar {
+  top: 48px;
+  width: 76px;
+  padding: 8px 6px;
+  background: var(--terminal-nav);
+  border-right: 1px solid #263349;
+}
+.product-app .workspace-label,
+.product-app .workspace-sidebar > .workspace-brand,
+.product-app .rail-label,
+.product-app .rail-caption {
+  display: none;
+}
+.product-app .workspace-nav > a,
+.product-app .rail-archive > summary {
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  padding: 9px 2px;
+  margin: 1px 0;
+  min-height: 51px;
+  font-size: 11px;
+  border-radius: 4px;
+  color: #9daec9;
+  position: relative;
+}
+.product-app .workspace-nav > a:hover,
+.product-app .rail-archive > summary:hover {
+  background: #20314e;
+  color: #f3f6ff;
+}
+.product-app .workspace-nav > a[aria-current="page"] {
+  background: #243d69;
+  color: #fff;
+  box-shadow: inset 2px 0 #6491ff;
+}
+.product-app .workspace-nav > a[aria-current="page"] svg {
+  color: #a8c4ff;
+}
+.product-app .workspace-nav > a > svg,
+.product-app .rail-archive > summary > svg:first-child {
+  width: 19px;
+  height: 19px;
+}
+.product-app .workspace-nav small {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  margin: 0;
+  padding: 0 3px;
+  background: #344665;
+  border: 0;
+  color: #dce7fa;
+  font-size: 9px;
+  line-height: 13px;
+}
+.product-app .workspace-nav small:empty,
+.product-app .workspace-nav i,
+.product-app .rail-archive > summary > svg:last-child {
+  display: none;
+}
+.product-app .workspace-nav > a[data-nav="companies"],
+.product-app .workspace-nav > a[href="/workspace/"] {
+  border-top: 1px solid #2b374c;
+  margin-top: 8px;
+  padding-top: 12px;
+}
+.product-app .rail-bottom {
+  margin-top: 8px;
+  padding-top: 6px;
+  border-color: #29384e;
+}
+.product-app .rail-guide {
+  flex-direction: column;
+  gap: 5px;
+  font-size: 10px;
+  padding: 9px 0;
+  color: #9daec9;
+}
+.product-app .rail-guide svg:last-child {
+  display: none;
+}
+.product-app .rail-archive > div {
+  position: fixed;
+  left: 76px;
+  bottom: 64px;
+  z-index: 90;
+  margin: 0;
+  padding: 8px 15px;
+  width: 152px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  box-shadow: 0 6px 20px #0002;
+}
+.product-app .rail-archive > div a {
+  color: var(--ink-2);
+}
+.product-app .rail-archive > div a:hover {
+  color: var(--accent-text);
+}
+.product-app .wrap.page {
+  max-width: none;
+  padding: 24px 28px 36px;
+}
+.product-app .page-head {
+  margin-bottom: 18px;
+}
+.product-app .page-head h1,
+.product-app .company-hero h1 {
+  font-size: 25px;
+  letter-spacing: -0.6px;
+}
+.product-app .page-kicker {
+  display: none;
+}
+.product-app .panel,
+.product-app .library-overview,
+.product-app .context-card {
+  border-radius: 5px;
+  box-shadow: none;
+}
+.product-app .btn {
+  min-height: 32px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.product-app .primary-action {
+  background: var(--solid);
+  border-color: var(--solid);
+  color: #fff;
+}
+.product-app .workspace-footer {
+  padding: 12px 28px;
+  font-size: 11px;
+}
+.product-app .library-overview {
+  margin-bottom: 14px;
+}
+.product-app .library-overview > div {
+  padding: 12px 20px;
+}
+.product-app .library-overview strong {
+  font-size: 22px;
+}
+.product-app .library-toolbar {
+  padding: 12px 16px;
+}
+.product-app .library-result {
+  padding: 7px 16px;
+}
+.product-app .company-table th {
+  padding: 9px 16px;
+}
+.product-app .company-table td {
+  padding: 12px 16px;
+}
+.product-app .company-table .entity-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+}
+.product-app .company-table .company-identity strong {
+  margin-bottom: 2px;
+}
+.product-app .mapping-page .page-head,
+.product-app .dex-page .page-head {
+  margin-bottom: 18px;
+}
+.product-app .monitor-heading h1 {
+  font-size: 24px;
+  letter-spacing: -0.4px;
+}
+.terminal-heading-en {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--ink-3);
+  margin-left: 12px;
+  letter-spacing: 1.1px;
+}
+.product-app .terminal-feed {
+  position: relative;
+  padding: 0;
+  max-width: none;
+  background: var(--card);
+}
+.product-app .terminal-feed .monitor-heading {
+  height: 48px;
+  padding: 0 18px;
+  margin: 0;
+  border-bottom: 1px solid var(--line);
+}
+.product-app .terminal-feed .monitor-heading h1 {
+  font-size: 20px;
+  margin: 0;
+}
+.product-app .terminal-feed .monitor-subtitle {
+  display: none;
+}
+.product-app .terminal-feed .monitor-heading-actions {
+  gap: 8px;
+  padding-top: 0;
+}
+.product-app .monitor-heading-actions .primary-action {
+  background: #2962ff;
+  border-color: #2962ff;
+  color: #fff;
+}
+.product-app .terminal-feed .monitor-heading-actions .btn {
+  font-size: 11px;
+  min-height: 28px;
+  padding: 0 9px;
+}
+.product-app .terminal-feed .monitor-icon-button {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+}
+.product-app .terminal-feed .research-pulse {
+  position: absolute;
+  inset: 0 205px auto 255px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+.product-app .terminal-feed .research-pulse .pulse-intro {
+  display: none;
+}
+.product-app .terminal-feed .research-pulse > button,
+.product-app .terminal-feed .research-pulse > div {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  padding: 0;
+  border: 0;
+  background: none;
+  min-width: 0;
+  text-align: left;
+}
+.product-app .terminal-feed .research-pulse strong {
+  font-size: 17px;
+  line-height: 1;
+  letter-spacing: -0.4px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.product-app .terminal-feed .research-pulse span {
+  font-size: 10px;
+  white-space: nowrap;
+  color: var(--ink-3);
+}
+.product-app .terminal-feed .research-pulse svg {
+  display: none;
+}
+.product-app .terminal-feed .monitor-layout {
+  gap: 0;
+  align-items: stretch;
+  grid-template-columns: minmax(0, 1fr) 280px;
+}
+.product-app .terminal-feed .monitor-reading {
+  gap: 24px;
+  padding: 0 18px;
+  margin: 0;
+  height: 40px;
+  align-items: stretch;
+}
+.product-app .terminal-feed .monitor-reading button {
+  padding: 0;
+  font-size: 13px;
+}
+.product-app .terminal-feed .monitor-reading button[aria-pressed="true"] {
+  color: var(--accent-text);
+}
+.product-app .terminal-feed .monitor-reading button span {
+  background: none;
+  padding: 0;
+  font-size: 11px;
+}
+.product-app .terminal-feed .monitor-feed-panel {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.product-app .terminal-feed .monitor-filters {
+  padding: 10px 16px 6px;
+}
+.product-app .terminal-feed .monitor-filter-primary {
+  gap: 8px;
+}
+.product-app .terminal-feed .monitor-search input,
+.product-app .terminal-feed .monitor-filters select,
+.product-app .terminal-feed .filter-toggle {
+  height: 30px;
+  border-radius: 4px;
+  font-size: 12px;
+  background: var(--card);
+}
+.product-app .terminal-feed .monitor-search svg {
+  top: 8px;
+}
+.product-app .terminal-feed .monitor-presets {
+  padding: 5px 16px 9px;
+  gap: 7px;
+}
+.product-app .terminal-feed .monitor-presets > span {
+  display: none;
+}
+.product-app .terminal-feed .monitor-presets button {
+  font-size: 11px;
+  border-radius: 3px;
+  padding: 4px 7px;
+}
+.product-app .terminal-feed .monitor-result-head {
+  padding: 7px 16px;
+  font-size: 11px;
+  background: var(--paper-2);
+}
+.product-app .terminal-feed .monitor-result-tools {
+  gap: 12px;
+}
+.product-app .terminal-feed .monitor-result-tools button,
+.product-app .terminal-feed .monitor-result-tools select {
+  font-size: 11px;
+}
+.product-app .terminal-feed .event-day-label {
+  margin: 0;
+  padding: 5px 16px;
+  background: var(--paper-2);
+  font-size: 10px;
+  border-bottom: 1px solid var(--line);
+}
+.product-app .terminal-feed .event-day-label span {
+  display: none;
+}
+.product-app .terminal-feed .monitor-event {
+  padding: 8px 16px 7px 35px;
+  margin: 0;
+  gap: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  position: relative;
+}
+.product-app .terminal-feed .monitor-event > .entity-avatar {
+  display: none;
+}
+.product-app .terminal-feed .event-unread {
+  left: 17px;
+  top: 17px;
+  background: var(--accent);
+  width: 5px;
+  height: 5px;
+}
+.product-app .terminal-feed .monitor-event:hover {
+  background: var(--paper-2);
+}
+.product-app .terminal-feed .monitor-event[data-selected="true"] {
+  background: var(--accent-soft);
+  box-shadow: inset 2px 0 var(--accent);
+}
+.product-app .terminal-feed .event-meta {
+  gap: 8px;
+  font-size: 11px;
+  margin-bottom: 2px;
+  line-height: 16px;
+}
+.product-app .terminal-feed .event-meta > a {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--ink-2);
+}
+.product-app .terminal-feed .event-meta time {
+  font-size: 10px;
+  color: var(--ink-3);
+}
+.product-app .terminal-feed .monitor-tag {
+  border-radius: 3px;
+  padding: 0 5px;
+  font-size: 10px;
+  line-height: 16px;
+}
+.product-app .terminal-feed .monitor-event h3 {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 1px;
+  letter-spacing: 0;
+}
+.product-app .terminal-feed .event-title {
+  font-size: inherit;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+.product-app .terminal-feed .event-byline {
+  font-size: 10px;
+  gap: 9px;
+  line-height: 18px;
+  min-height: 18px;
+}
+.product-app .terminal-feed .event-actions {
+  gap: 6px;
+}
+.product-app .terminal-feed .event-actions button {
+  width: 24px;
+  height: 20px;
+  border-radius: 3px;
+}
+.product-app .terminal-feed .event-actions svg {
+  width: 13px;
+  height: 13px;
+}
+.product-app .terminal-feed .event-revision {
+  font-size: 10px;
+}
+.product-app .terminal-feed .monitor-pagination {
+  padding: 6px 16px;
+  min-height: 36px;
+  border-top: 1px solid var(--line);
+  font-size: 11px;
+}
+.product-app .terminal-feed .monitor-pagination button {
+  width: 25px;
+  height: 23px;
+  border-radius: 3px;
+}
+.product-app .terminal-feed .monitor-status-line {
+  margin: 0;
+  padding: 7px 16px;
+  font-size: 10px;
+  border-top: 1px solid var(--line);
+  background: var(--paper-2);
+}
+.product-app .terminal-feed .monitor-context {
+  padding: 0;
+  border-left: 1px solid var(--line);
+  gap: 0;
+  background: var(--card);
+}
+.product-app .terminal-feed .context-card {
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  padding: 18px;
+  margin: 0;
+  border-radius: 0;
+}
+.product-app .terminal-feed .context-title {
+  margin-bottom: 12px;
+}
+.product-app .terminal-feed .context-title h2 {
+  font-size: 13px;
+  font-weight: 600;
+}
+.product-app .terminal-feed .context-card p {
+  font-size: 12px;
+  line-height: 1.8;
+}
+.product-app .terminal-feed .context-action {
+  margin-top: 14px;
+  font-size: 12px;
+}
+.product-app .terminal-feed .watch-starters {
+  margin-top: 12px;
+}
+.product-app .terminal-feed .watch-starters a {
+  font-size: 10px;
+  border-radius: 3px;
+  padding: 5px 7px;
+}
+.product-app .terminal-feed .context-footnote {
+  font-size: 10px;
+}
+.product-app .terminal-feed .context-topic {
+  margin: 0;
+  border-radius: 0;
+  padding: 18px;
+  background: var(--paper-2);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+.product-app .terminal-feed .context-topic strong {
+  font-size: 18px;
+}
+.product-app .terminal-feed .context-topic p {
+  font-size: 11px;
+}
+.product-app .terminal-feed .context-health {
+  padding: 18px;
+  margin: 0;
+}
+.product-app .terminal-feed .context-health p {
+  font-size: 10px;
+  line-height: 1.7;
+}
+.product-app .terminal-feed .reading-tools {
+  order: 5;
+}
+.product-app .terminal-feed .monitor-connection-notice {
+  padding: 8px 16px;
+  font-size: 12px;
+}
+.product-app .terminal-feed .monitor-connection-notice button {
+  min-height: 28px;
+}
+.product-app .terminal-feed .monitor-filter-expanded {
+  margin-top: 8px;
+  padding-top: 10px;
+}
+.product-app .terminal-feed .monitor-active-filters {
+  padding: 5px 16px;
+}
+.product-app .drawer-top {
+  padding: 12px 18px;
+  min-height: 45px;
+  background: var(--card);
+  border-bottom: 1px solid var(--line);
+}
+.product-app .drawer-top > span {
+  font-size: 12px;
+  font-weight: 600;
+}
+.product-app .drawer-top small {
+  margin-left: 8px;
+  color: var(--ink-3);
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+}
+.reader-controls {
+  display: flex;
+  gap: 4px;
+}
+.reader-controls button {
+  border-radius: 3px;
+}
+.reader-controls button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+.reader-controls [data-reader-prev] svg {
+  transform: rotate(180deg);
+}
+.product-app .drawer-content {
+  padding: 22px;
+}
+.product-app .drawer-content h2 {
+  font-size: 22px;
+  line-height: 1.45;
+  letter-spacing: -0.3px;
+}
+.product-app .drawer-company {
+  padding-bottom: 16px;
+  margin-bottom: 17px;
+  border-bottom: 1px solid var(--line);
+}
+.product-app .drawer-company .entity-avatar {
+  width: 31px;
+  height: 31px;
+  border-radius: 5px;
+}
+.product-app .drawer-classification {
+  gap: 7px;
+  font-size: 11px;
+}
+.product-app .drawer-section {
+  margin-top: 22px;
+}
+.product-app .drawer-section h3 {
+  font-size: 12px;
+}
+.product-app .drawer-note {
+  font-size: 12px;
+  padding: 12px;
+  border-radius: 4px;
+  line-height: 1.8;
+  background: var(--paper-2);
+  border-left: 2px solid var(--line-2);
+}
+.product-app .event-facts {
+  border-radius: 4px;
+  background: var(--paper-2);
+}
+.product-app .event-facts dt {
+  font-size: 10px;
+}
+.product-app .event-facts dd {
+  font-size: 16px;
+}
+.product-app .drawer-actions {
+  gap: 8px;
+}
+.product-app .drawer-actions button {
+  font-size: 11px;
+  border-radius: 4px;
+}
+.terminal-watch-list {
+  display: grid;
+  margin-top: 12px;
+}
+.terminal-watch-list a {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+  color: var(--ink-2);
+}
+.terminal-watch-list .entity-avatar {
+  width: 25px;
+  height: 25px;
+  font-size: 10px;
+  border-radius: 4px;
+}
+.terminal-watch-list small {
+  margin-left: auto;
+  color: var(--ink-3);
+  font-size: 10px;
+}
+@media (min-width: 1001px) {
+  .product-app:has(.terminal-feed) .workspace-footer {
+    display: none;
+  }
+  .product-app .terminal-feed {
+    height: calc(100dvh - 48px);
+    display: flex;
+    flex-direction: column;
+  }
+  .product-app .terminal-feed .monitor-heading {
+    flex: 0 0 48px;
+  }
+  .product-app .terminal-feed .monitor-layout {
+    flex: 1;
+    min-height: 0;
+  }
+  .product-app .terminal-feed .monitor-main-column {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    overflow: hidden;
+  }
+  .product-app .terminal-feed .monitor-reading {
+    flex: 0 0 40px;
+  }
+  .product-app .terminal-feed .monitor-feed-panel {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    flex: 1;
+  }
+  .product-app .terminal-feed .monitor-feed-panel > * {
+    flex-shrink: 0;
+  }
+  .product-app .terminal-feed .monitor-events {
+    overflow: auto;
+    min-height: 0;
+    flex: 1 1 auto;
+    overscroll-behavior: contain;
+  }
+  .product-app .terminal-feed .monitor-empty:not([hidden]) {
+    flex: 1 1 auto;
+    overflow: auto;
+  }
+  .product-app .terminal-feed .monitor-events:empty {
+    flex: 0;
+  }
+  .product-app .terminal-feed .event-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .product-app .terminal-feed .event-content {
+    overflow: hidden;
+  }
+  .product-app .terminal-feed .monitor-context {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    overscroll-behavior: contain;
+  }
+  .product-app .terminal-feed .monitor-filter-expanded {
+    max-height: 220px;
+    overflow: auto;
+  }
+}
+@media (min-width: 1101px) {
+  .product-app .terminal-feed.reader-open .monitor-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(360px, 40%);
+  }
+  .product-app .terminal-feed.reader-open .monitor-context {
+    display: none;
+  }
+  .product-app .terminal-feed .event-drawer[data-presentation="docked"][open] {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    grid-row: 1;
+    position: static;
+    inset: auto;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-left: 1px solid var(--line);
+    border-radius: 0;
+    box-shadow: none;
+    overflow: hidden;
+    background: var(--card);
+    color: var(--ink);
+  }
+  .product-app
+    .terminal-feed
+    .event-drawer[data-presentation="docked"]
+    .drawer-top {
+    flex: 0 0 45px;
+    position: static;
+  }
+  .product-app
+    .terminal-feed
+    .event-drawer[data-presentation="docked"]
+    [data-event-detail] {
+    overflow: auto;
+    flex: 1;
+    min-height: 0;
+    overscroll-behavior: contain;
+  }
+}
+@media (max-width: 1350px) and (min-width: 1001px) {
+  .product-app .terminal-feed .research-pulse {
+    gap: 13px;
+    left: 230px;
+    right: 195px;
+  }
+  .product-app .terminal-feed .research-pulse > button span {
+    display: none;
+  }
+  .product-app .terminal-feed .research-pulse > button::after {
+    font-size: 10px;
+    color: var(--ink-3);
+  }
+  .product-app .terminal-feed [data-pulse="all"]::after {
+    content: "动态";
+  }
+  .product-app .terminal-feed [data-pulse="funding"]::after {
+    content: "融资";
+  }
+  .product-app .terminal-feed [data-pulse="product"]::after {
+    content: "产品";
+  }
+  .product-app .terminal-feed .pulse-companies span {
+    display: none;
+  }
+  .product-app .terminal-feed .pulse-companies::after {
+    content: "公司";
+    font-size: 10px;
+    color: var(--ink-3);
+  }
+}
+@media (max-width: 1100px) {
+  .product-app .terminal-feed .monitor-layout {
+    grid-template-columns: minmax(0, 1fr) 245px;
+  }
+  .product-app .terminal-feed .research-pulse {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .product-app .workspace-sidebar {
+    top: 0;
+    width: 240px;
+    padding: 20px 16px;
+    z-index: 100;
+  }
+  .product-app .workspace-sidebar > .workspace-brand {
+    display: flex;
+    margin: 0 20px 24px 8px;
+  }
+  .product-app .workspace-sidebar .workspace-brand strong {
+    font-size: 23px;
+  }
+  .product-app .workspace-nav > a,
+  .product-app .rail-archive > summary {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 9px 12px;
+    font-size: 13px;
+    min-height: 41px;
+  }
+  .product-app .workspace-nav small {
+    position: static;
+    margin-left: auto;
+  }
+  .product-app .rail-guide {
+    flex-direction: row;
+    padding: 12px;
+    font-size: 12px;
+  }
+  .product-app .rail-archive > div {
+    position: static;
+    width: auto;
+    background: transparent;
+    box-shadow: none;
+    border: 0;
+    padding-left: 42px;
+  }
+  .product-app .rail-archive > div a {
+    color: #b9c6dc;
+  }
+  .product-app .workspace-topbar {
+    padding: 0 14px;
+  }
+  .product-app .workspace-context {
+    gap: 12px;
+  }
+  .product-app .terminal-section {
+    display: none;
+  }
+  .product-app .terminal-feed .monitor-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .product-app .terminal-feed .monitor-context {
+    display: none;
+  }
+  .product-app .terminal-feed .event-drawer {
+    position: fixed;
+  }
+}
+@media (max-width: 600px) {
+  .product-app .workspace-topbar .terminal-product {
+    display: none;
+  }
+  .product-app .workspace-topbar .terminal-brand strong {
+    font-size: 18px;
+  }
+  .product-app .workspace-topbar .terminal-brand > span {
+    display: none;
+  }
+  .product-app .workspace-topbar .site-search {
+    width: auto;
+  }
+  .product-app .wrap.page {
+    padding: 20px 14px 30px;
+  }
+  .product-app .terminal-feed .monitor-heading {
+    padding: 0 14px;
+    height: 52px;
+    align-items: center;
+  }
+  .product-app .terminal-feed .monitor-heading h1 {
+    font-size: 19px;
+  }
+  .product-app .terminal-heading-en {
+    font-size: 9px;
+    margin-left: 8px;
+  }
+  .product-app .terminal-feed .monitor-heading-actions .btn {
+    display: none;
+  }
+  .product-app .terminal-feed .monitor-reading {
+    gap: 20px;
+    padding: 0 14px;
+    overflow-x: auto;
+    height: 41px;
+  }
+  .product-app .terminal-feed .monitor-reading button {
+    font-size: 12px;
+  }
+  .product-app .terminal-feed .monitor-filter-primary {
+    flex-wrap: wrap;
+    gap: 7px;
+  }
+  .product-app .terminal-feed .monitor-search {
+    flex: 1 1 100%;
+  }
+  .product-app .terminal-feed .monitor-time {
+    flex: 1;
+  }
+  .product-app .terminal-feed .monitor-time select {
+    width: 100%;
+  }
+  .product-app .terminal-feed .monitor-presets {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 6px;
+  }
+  .product-app .terminal-feed .monitor-presets button {
+    flex-shrink: 0;
+    padding: 5px 7px;
+  }
+  .product-app .terminal-feed .monitor-event {
+    padding: 12px 14px 10px 28px;
+  }
+  .product-app .terminal-feed .event-unread {
+    left: 13px;
+    top: 19px;
+  }
+  .product-app .terminal-feed .monitor-event h3 {
+    line-height: 1.55;
+    font-size: 14px;
+  }
+  .product-app .terminal-feed .event-byline {
+    font-size: 10px;
+    flex-wrap: nowrap;
+  }
+  .product-app .terminal-feed .event-byline .publisher-label {
+    max-width: 78px;
+  }
+  .product-app .terminal-feed .event-actions {
+    width: auto;
+    margin: 0 0 0 auto;
+    flex-shrink: 0;
+  }
+  .product-app .terminal-feed .event-actions button {
+    width: 28px;
+    height: 26px;
+  }
+  .product-app .terminal-feed .monitor-result-head {
+    padding: 7px 14px;
+  }
+  .product-app .terminal-feed .monitor-result-tools {
+    gap: 8px;
+  }
+  .product-app .drawer-content {
+    padding: 20px;
+  }
+  .product-app .drawer-content h2 {
+    font-size: 22px;
+  }
+  .product-app .library-overview > div {
+    padding: 10px;
+  }
+  .product-app .workspace-footer {
+    padding: 14px;
+  }
+}

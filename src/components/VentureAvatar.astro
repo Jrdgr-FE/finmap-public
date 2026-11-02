@@ -1,0 +1,13 @@
+---
+import { segmentSlot, ventureInitials } from '../lib/ventures';
+import type { Venture } from '../lib/ventures';
+
+interface Props {
+  venture: Venture;
+  size?: 'sm' | 'md' | 'lg';
+}
+const { venture: v, size = 'md' } = Astro.props;
+const text = ventureInitials(v);
+---
+
+<span class:list={['v-ava', `is-${size}`, text.length > 1 && 'is-wide']} data-slot={segmentSlot(v.track, v.segment)} aria-hidden="true">{text}</span>

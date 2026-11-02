@@ -1,0 +1,258 @@
+version: 1
+updated: "2026-10-23"
+
+# Public manufacturer profiles only. Product names are aliases, not separate companies.
+# Technical specifications remain manufacturer claims; no financing or delivery inference.
+companies:
+  - id: wuji
+    name: 舞肌科技
+    en: Wuji Technology
+    region: cn
+    track: robot-parts
+    segment: hands
+    tags: [灵巧手, 数据手套, 遥操作, 直驱关节]
+    aliases: [深圳舞肌科技有限公司, Wuji Hand, Wuji Glove]
+    match: [舞肌科技, 深圳舞肌科技, Wuji Technology, Wuji Hand, Wuji Glove]
+    intro: 研发 Wuji Hand 灵巧手、Wuji Glove 数据手套及配套 SDK，提供姿态与触觉采集、遥操作和手部控制工具；官网服务主体为深圳舞肌科技有限公司。Hand 2 当前开发文档为 2.2 Beta 非触觉版样机，提供关节接口与仿真模型。
+    website: https://www.wuji.tech/zh/hand2
+    country: 中国
+    coverage: profile
+    verifiedAt: "2026-10-23"
+    sources:
+      - title: Wuji Hand 2.2 Beta 官方产品文档
+        url: https://docs.wuji.tech/docs/zh/wuji-hand/latest/overview
+      - title: Wuji Hand 2 主站产品展示（页面标注 Beta1）
+        url: https://www.wuji.tech/zh/hand2
+      - title: Wuji Glove 姿态与触觉数据采集
+        url: https://www.wuji.tech/zh/glove
+      - title: Wuji Technology 官方开源组织
+        url: https://github.com/wuji-technology
+      - title: 舞肌个人信息保护政策（网站服务主体）
+        url: https://www.wuji.tech/zh/terms/privacy
+    memberships:
+      - { track: embodied, segment: components-data }
+    events: []
+
+  - id: xynova
+    name: 曦诺未来
+    en: Xynova
+    region: cn
+    track: robot-parts
+    segment: hands
+    tags: [灵巧手, 微型电缸, 关节模组]
+    aliases: [杭州曦诺未来科技有限公司, Xynova Flex]
+    match: [曦诺未来, Xynova]
+    intro: 研发灵巧手、一体化关节模组与微型电缸，面向人形机器人提供电驱部件。官网展示 Flex 2 灵巧手，并介绍其仿生构型、力位混合控制及开发者接入能力。
+    website: https://xynova.tech/
+    country: 中国
+    coverage: profile
+    verifiedAt: "2026-10-23"
+    sources:
+      - title: 曦诺未来官网 — Xynova Flex 2
+        url: https://xynova.tech/
+      - title: 杭州曦诺未来世界机器人大会参展资料
+        url: https://www.worldrobotconference.com/profile/robot/download/2025/06/29/%E6%9B%A6%E8%AF%BA%E6%9C%AA%E6%9D%A5_20250629221126A068.pdf
+    memberships:
+      - { track: robot-parts, segment: actuators }
+    events: []
+
+  - id: rysen
+    name: 源升智能
+    en: Rysen Robotics
+    region: cn
+    track: robot-parts
+    segment: hands
+    tags: [灵巧手, 腱绳传动, 电子皮肤, 机器人操控]
+    aliases: [源升智能机器人（深圳）有限公司, Apex Hand]
+    match: [源升智能, Rysen Robotics, Rysen Apex Hand]
+    intro: 开发 Apex Hand 机器人灵巧手，采用腱绳复合驱动，提供关节反馈、可选电子皮肤及 Rysen SDK。产品手册区分主动自由度与关节数量，并提供 C++、Python 和 ROS 2 接入示例。
+    website: https://www.rysenbot.com/en
+    country: 中国
+    coverage: profile
+    verifiedAt: "2026-10-23"
+    sources:
+      - title: Rysen Robotics — Apex Hand
+        url: https://www.rysenbot.com/en
+      - title: Apex Hand 官方用户手册 V0.9
+        url: https://www.rysenbot.com/docs/en/apex-hand/index.html
+      - title: 源升智能用户手册 — 产品概述与主体名称
+        url: https://docs.rysenbot.com/
+    events: []
+
+  - id: heyman
+    name: 黑漫科技
+    en: HeymanTech
+    region: cn
+    track: robot-parts
+    segment: hands
+    tags: [灵巧手, 水下作业, 可变构末端, 遥操作]
+    aliases: [杭州黑漫科技有限公司, HeymanDex]
+    match: [黑漫科技, HeymanTech, HeymanDex, heymanbot]
+    intro: 开发面向科研、人形机器人、工业抓取和水下作业的灵巧手，官网列出 RE100、IN100、WA100 与大圣 1 产品线。RE100 产品页介绍关节控制、SDK、ROS 2 和视觉遥操作支持。
+    website: https://www.heymanbot.com/
+    country: 中国
+    coverage: profile
+    verifiedAt: "2026-10-23"
+    sources:
+      - title: 黑漫科技 HeymanDex 官网产品线
+        url: https://www.heymanbot.com/
+      - title: 黑漫 RE100 科研灵巧手
+        url: https://www.heymanbot.com/re100.html
+      - title: ITES 展商自述 — 杭州黑漫科技有限公司
+        url: https://www.iteschina.com/zh-cn/exhibitor-list/details/13874
+    events: []
+
+  - id: vaxor-motor
+    name: 指尖智擎
+    en: VAXOR MOTOR
+    region: cn
+    track: robot-parts
+    segment: actuators
+    tags: [微型关节, 轴向磁通电机, 微型摆线减速器, 空心杯电机]
+    aliases: [苏州指尖智擎科技有限公司]
+    match: [指尖智擎, VAXOR MOTOR]
+    intro: 研发微型关节执行器与特微型电机，将轴向磁通电机、微型摆线减速器和驱动电子部件集成到运动模组，面向灵巧手、人形机器人及精密设备提供驱动部件。
+    website: https://cn.vaxor-motor.com/
+    country: 中国
+    coverage: profile
+    verifiedAt: "2026-10-23"
+    sources:
+      - title: 苏州指尖智擎官网 — 微型关节与电机
+        url: https://cn.vaxor-motor.com/
+      - title: 指尖智擎市场解决方案 — 灵巧手驱动应用
+        url: https://www.vaxor-motor.cn/solution/
+    events: []
+
+  - id: oymotion
+    name: 傲意科技
+    en: OYMotion
+    region: cn
+    track: robot-parts
+    segment: hands
+    tags: [灵巧手, 肌电接口, 仿生义肢]
+    aliases: [上海傲意信息科技有限公司, ROHand]
+    match: [傲意科技, 上海傲意, OYMotion, ROHand]
+    intro: 提供 ROHand 机器人灵巧手及配套通信与开发工具，同时开展肌电接口和 OHand 仿生义肢业务。机器人末端与医疗义肢属于不同产品线，ROHand 开发文档提供 ROS 与 ROS 2 集成说明。
+    website: https://www.oymotion.com/
+    country: 中国
+    coverage: profile
+    verifiedAt: "2026-10-23"
+    sources:
+      - title: OYMotion 傲意科技官网 — 产品与公司介绍
+        url: https://www.oymotion.com/
+      - title: OYMotion 官方 ROHand 开发文档
+        url: https://oymotion.github.io/en/ROHand/Overview/
+    memberships:
+      - { track: smart-hardware, segment: medical-devices }
+    events: []
+
+  - id: brainco
+    name: 强脑科技
+    en: BrainCo
+    region: cn
+    track: robot-parts
+    segment: hands
+    tags: [灵巧手, 触觉感知, 机器人开发工具]
+    aliases: [BrainCo Revo, Revo Dexterous Hand]
+    match: [强脑科技, BrainCo]
+    intro: 提供 Revo 系列机器人灵巧手及开发套件，覆盖动作控制、触觉反馈与机器人系统集成。官网将 Revo 灵巧手与仿生义肢分别列为产品线，Revo 3 的触觉配置随版本不同。
+    website: https://www.brainco.cn/en-US/products/revo3
+    country: 中国
+    coverage: profile
+    verifiedAt: "2026-10-23"
+    sources:
+      - title: BrainCo Revo 3 官方产品页与版本配置
+        url: https://www.brainco.cn/en-US/products/revo3
+      - title: BrainCo Revo 灵巧手官方开发文档
+        url: https://www.brainco-hz.com/docs/revolimb-hand/en/
+    events: []
+
+  - id: psyonic
+    name: PSYONIC
+    en: PSYONIC
+    region: global
+    track: robot-parts
+    segment: hands
+    tags: [灵巧手, 触觉传感, 仿生义肢, 开放 API]
+    aliases: [PSYONIC Ability Hand]
+    match: [PSYONIC, PSYONIC Ability Hand]
+    intro: 开发 Ability Hand 仿生手，分别面向义肢使用者与机器人集成提供产品和支持。机器人版本开放电机力矩、速度、位置控制及触觉数据接口，可用于操作研究与系统集成。
+    website: https://www.psyonic.io/robots
+    country: 美国
+    coverage: profile
+    verifiedAt: "2026-10-23"
+    sources:
+      - title: PSYONIC — Ability Hand 机器人集成
+        url: https://www.psyonic.io/robots
+      - title: PSYONIC — Ability Hand 义肢产品
+        url: https://www.psyonic.io/ability-hand
+    memberships:
+      - { track: smart-hardware, segment: medical-devices }
+    events: []
+
+  - id: tesollo
+    name: TESOLLO
+    en: TESOLLO
+    region: global
+    track: robot-parts
+    segment: hands
+    tags: [灵巧手, 工业夹爪, 仿真接入]
+    aliases: [Tesollo Inc., Delto Gripper]
+    match: [TESOLLO, Delto Gripper]
+    intro: 韩国机器人末端执行器厂商，产品包括 DG-5F 五指手以及多指、平行和真空夹爪。DG-5F 提供独立关节控制，并在官方产品资料中列出 ROS、MuJoCo 与 Isaac 仿真支持。
+    website: https://en.tesollo.com/products/
+    country: 韩国
+    coverage: profile
+    verifiedAt: "2026-10-23"
+    sources:
+      - title: TESOLLO 官方末端执行器产品目录
+        url: https://en.tesollo.com/products/
+      - title: TESOLLO DG-5F 官方产品手册
+        url: https://en.tesollo.com/wp-content/uploads/2025/02/TESOLLO-DG-5F-catalogue-En-2.pdf
+      - title: TESOLLO DG-5F 产品介绍
+        url: https://en.tesollo.com/news/?mod=document&pageid=4&uid=125
+    events: []
+
+  - id: wonik-robotics
+    name: Wonik Robotics
+    en: Wonik Robotics
+    region: global
+    track: robot-parts
+    segment: hands
+    tags: [灵巧手, 触觉反馈, 机器人操作研究]
+    aliases: [WONIK ROBOTICS, Allegro Hand]
+    match: [Wonik Robotics, Allegro Hand]
+    intro: 韩国机器人公司，开发 Allegro Hand 系列灵巧手。V6 F 采用五指结构，在指尖、指节和掌部采集接触压力，并提供可配置的控制接口，面向机器人操作研究与集成。
+    website: https://www.allegrohand.com/
+    country: 韩国
+    coverage: profile
+    verifiedAt: "2026-10-23"
+    sources:
+      - title: Wonik Robotics 官方 Allegro Hand V6 F 发布说明
+        url: https://www.allegrohand.com/sub/about/news.php?bid=4&idx=648&mode=view
+      - title: Allegro Hand 官方支持与制造商说明
+        url: https://www.allegrohand.com/sub/community/faq.php
+    events: []
+
+  - id: qb-robotics
+    name: qbrobotics
+    en: qbrobotics
+    region: global
+    track: robot-parts
+    segment: hands
+    tags: [柔性机器人, 欠驱动手, 腱绳传动, 工业抓取]
+    aliases: [qb robotics, qb SoftHand, qb SoftHand2]
+    match: [qbrobotics, qb robotics, qb SoftHand, qb SoftHand2]
+    intro: 意大利柔性机器人厂商，提供 qb SoftHand 科研和工业手。其协同驱动结构以少量电机控制多关节柔性手，SoftHand2 Research 使用双电机与双协同模式，并提供 ROS 和 ROS 2 接入。
+    website: https://qbrobotics.com/product/qb-softhand-2-research/
+    country: 意大利
+    coverage: profile
+    verifiedAt: "2026-10-23"
+    sources:
+      - title: qbrobotics — qb SoftHand2 Research
+        url: https://qbrobotics.com/product/qb-softhand-2-research/
+      - title: qbrobotics — qb SoftHand Industry
+        url: https://qbrobotics.com/product/qb-softhand-industry/
+      - title: IIT — SoftHand 项目与 qbrobotics 商用产品
+        url: https://www.iit.it/en-US/web/robotics-for-a-better-life/softhand_pro
+    events: []

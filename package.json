@@ -1,0 +1,43 @@
+{
+  "name": "finmap",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "硬科技公司动态、产业图谱与研究工作台",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "validate": "node scripts/validate.mjs",
+    "report": "node scripts/report.mjs",
+    "deploy": "npm run build && wrangler pages deploy dist --project-name=finmap --branch=main",
+    "ventures:candidates": "node scripts/ventures-candidates.mjs",
+    "ventures:news": "node scripts/ventures-news.mjs",
+    "test:ventures": "node --test tests/ventures.test.mjs tests/venture-news.test.mjs tests/dexterity.test.mjs tests/monitor.test.mjs tests/monitor-api.test.mjs",
+    "test:ui": "node --test tests/ui-preferences.test.mjs tests/research-workspace.test.mjs tests/fin-suite.test.mjs",
+    "monitor:prepare": "node scripts/monitor-prepare.mjs",
+    "monitor:run": "node scripts/monitor-run.mjs"
+  },
+  "dependencies": {
+    "astro": "7.4.2",
+    "linkedom": "0.18.12",
+    "sax": "^1.6.1",
+    "yaml": "^2.8.1"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "workerd@1.20261023.1": true
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@types/node": "^24.19.2",
+    "prettier": "^3.9.10",
+    "prettier-plugin-astro": "^1.1.1",
+    "typescript": "^5.9.3",
+    "wrangler": "4.154.0"
+  }
+}

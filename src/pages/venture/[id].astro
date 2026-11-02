@@ -1,0 +1,517 @@
+---
+import Base from "../../layouts/Base.astro";
+import MonitorWorkbench from "../../components/MonitorWorkbench.astro";
+import VentureAvatar from "../../components/VentureAvatar.astro";
+import VentureCard from "../../components/VentureCard.astro";
+import VentureTimeline from "../../components/VentureTimeline.astro";
+import CompanyNewsList from "../../components/CompanyNewsList.astro";
+import "../../styles/ventures.css";
+import "../../styles/mapping.css";
+import {
+  getVentures,
+  getMemberships,
+  getRelations,
+  getTrack,
+  getSegment,
+  formatDate,
+  formatValuation,
+  segmentSlot,
+  splitSegmentName,
+  REGION_LABEL,
+} from "../../lib/ventures";
+import { getCompanyNews } from "../../lib/news";
+import { getDexterityForCompany } from "../../lib/dexterity";
+import type { Venture } from "../../lib/ventures";
+
+export function getStaticPaths() {
+  return getVentures().map((venture) => ({
+    params: { id: venture.id },
+    props: { venture },
+  }));
+}
+
+interface Props {
+  venture: Venture;
+}
+
+const { venture: v } = Astro.props;
+const memberships = getMemberships(v);
+const slot = segmentSlot(v.track, v.segment);
+const companies = getVentures();
+const index = new Map(companies.map((c) => [c.id, c]));
+const peers = companies
+  .filter(
+    (c) =>
+      c.id !== v.id &&
+      getMemberships(c).some((m) =>
+        memberships.some((n) => m.track === n.track && m.segment === n.segment),
+      ),
+  )
+  .slice(0, 8);
+
+const dex = getDexterityForCompany(v.id);
+const sources = [
+  ...new Map(
+    [
+      ...(v.sources || []),
+      ...v.events.flatMap((e) => e.sources),
+      ...dex.roles.map((r) => r.evidence),
+      ...dex.products.flatMap((p) => p.evidence),
+    ].map((s) => [s.url, s]),
+  ).values(),
+];
+
+const relationships = getRelations(v.id);
+const relationLabels: Record<string, string> = {
+  supplier: "供应 →",
+  customer: "采购自 →",
+  partner: "合作 ↔",
+  investor: "投资 →",
+  subsidiary: "母子公司 →",
+};
+
+const news = getCompanyNews(v.id);
+const directNews = news.filter((i) =>
+  i.associations.some((a) => a.companyId === v.id && a.matchType !== "summary"),
+);
+const mentions = news.filter((i) => !directNews.includes(i));
+
+const positions = memberships.map((m) => {
+  const track = getTrack(m.track);
+  const segment = getSegment(m.track, m.segment);
+  const split = splitSegmentName(segment?.name || m.segment);
+  return {
+    m,
+    track,
+    segment,
+    stage: split.stage || "环节",
+    shortSegName: split.name,
+  };
+});
+
+const uniqueTrackIds = [...new Set(memberships.map((m) => m.track))];
+const trackChains = uniqueTrackIds
+  .map((tid) => getTrack(tid))
+  .filter((t): t is NonNullable<typeof t> => Boolean(t));
+
+const val = formatValuation(v.valuation);
+
+const facts = [
+  { k: "国家 / 地区", v: v.country || REGION_LABEL[v.region] },
+  ...(v.en ? [{ k: "英文名称", v: v.en }] : []),
+  ...(v.aliases?.length
+    ? [{ k: "关联名 / 产品", v: v.aliases.join("、") }]
+    : []),
+  ...(v.founded ? [{ k: "成立年份", v: `${v.founded} 年` }] : []),
+  ...(v.founders?.length ? [{ k: "核心团队", v: v.founders.join("、") }] : []),
+  {
+    k: "公开估值",
+    v: val
+      ? `${val}（${v.valuation!.asof}${v.valuation!.status === "reported" ? " · 报道" : ""}）`
+      : "未披露",
+  },
+  {
+    k: "资料核验",
+    v: v.verifiedAt || `${v.events.length} 条事件记录`,
+  },
+];
+---
+
+<Base
+  title={`${v.name} · 公司档案`}
+  description={v.intro.slice(0, 150)}
+  current="ventures"
+>
+  <div class="wrap page" data-slot={slot}>
+    <nav class="crumbs" aria-label="位置">
+      <a href="/">首页</a>
+      <span class="sep">/</span>
+      <a href="/ventures/">产业图谱</a>
+      <span class="sep">/</span>
+      <a href={`/ventures/${v.track}/`}>{getTrack(v.track)?.name}</a>
+      <span class="sep">/</span>
+      <span aria-current="page">{v.name}</span>
+    </nav>
+
+    <section class="panel profile company-profile" data-cat="venture">
+      <div class="profile-top">
+        <VentureAvatar venture={v} size="lg" />
+        <div class="profile-title">
+          <h1>{v.name}</h1>
+          <p class="legal">
+            {[
+              v.en,
+              v.country || REGION_LABEL[v.region],
+              v.founded ? `${v.founded} 年成立` : null,
+              v.founders?.length ? `团队：${v.founders.join("、")}` : null,
+            ]
+              .filter(Boolean)
+              .join(" · ")}
+          </p>
+          <div class="badges">
+            {positions.map((p) => (
+              <a
+                class="badge"
+                href={`/ventures/?track=${p.m.track}&seg=${p.m.track}/${p.m.segment}`}
+              >
+                <span class="badge-dot"></span>
+                {p.track?.name} · {p.shortSegName}
+              </a>
+            ))}
+            {v.region === "global" && (
+              <span class="badge badge-plain">
+                {v.country || REGION_LABEL[v.region]}
+              </span>
+            )}
+            {memberships.length > 1 && (
+              <span class="badge badge-plain">
+                跨 {memberships.length} 个环节
+              </span>
+            )}
+          </div>
+        </div>
+        <div class="actions">
+          <button
+            type="button"
+            class="btn primary-action"
+            data-company-follow={v.id}
+          >
+            ＋ 关注公司
+          </button>
+          <a class="btn" id="back-to-map" href={`/ventures/?track=${v.track}`}>
+            ← 返回图谱
+          </a>
+          {v.website && (
+            <a
+              class="btn"
+              href={v.website}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              访问官网 ↗
+            </a>
+          )}
+        </div>
+      </div>
+
+      <p class="intro">{v.intro}</p>
+
+      {v.tags && v.tags.length > 0 && (
+        <div class="tags">
+          {v.tags.map((t) => (
+            <a class="tag" href={`/ventures/?q=${encodeURIComponent(t)}`}>
+              #{t}
+            </a>
+          ))}
+        </div>
+      )}
+    </section>
+
+    <nav class="company-section-nav" aria-label="公司档案内容">
+      <a href="#company-updates">最新动态</a>
+      <a href="#positions">产业位置</a>
+      {(dex.roles.length > 0 || dex.products.length > 0) && (
+        <a href="#dexterity-specs">产品与技术</a>
+      )}
+      <a href="#company-facts">公司资料</a>
+      <a href="#sources">公开来源</a>
+    </nav>
+    <section id="company-updates">
+      <MonitorWorkbench company={v.id} />
+    </section>
+
+    <div class="layout" style="margin-top:var(--sp-4)">
+      <div class="stack">
+        {(dex.roles.length > 0 || dex.products.length > 0) && (
+          <section class="panel" id="dexterity-specs">
+            <div class="panel-head">
+              <h2>产品参数与技术规格</h2>
+              <span class="hint">灵巧操作专题收录</span>
+              <span class="right">
+                <a href="/ventures/dexterity/">在专题中并排对比 →</a>
+              </span>
+            </div>
+            <div class="panel-body">
+              {dex.products.map((p) => (
+                <div class="v-spec-block">
+                  <div class="v-spec-head">
+                    <h3>{p.product}</h3>
+                    <span class="badge badge-plain">{p.form}</span>
+                    <span class="badge badge-code">核验 {p.verifiedAt}</span>
+                  </div>
+                  <dl class="kv">
+                    <div>
+                      <dt>驱动与传动</dt>
+                      <dd>{p.actuation}</dd>
+                    </div>
+                    <div>
+                      <dt>自由度与关节</dt>
+                      <dd>{p.dof}</dd>
+                    </div>
+                    <div>
+                      <dt>重量与范围</dt>
+                      <dd>{p.weight}</dd>
+                    </div>
+                    <div>
+                      <dt>触觉 / 力觉</dt>
+                      <dd>{p.sensing}</dd>
+                    </div>
+                    <div>
+                      <dt>软件与仿真</dt>
+                      <dd>{p.software}</dd>
+                    </div>
+                    <div>
+                      <dt>规格出处</dt>
+                      <dd>
+                        {p.evidence.map((ev, i) => (
+                          <>
+                            {i > 0 && " · "}
+                            <a
+                              href={ev.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {ev.title} ↗
+                            </a>
+                          </>
+                        ))}
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              ))}
+
+              {dex.roles.length > 0 && (
+                <div class:list={[dex.products.length > 0 && "v-roles-sub"]}>
+                  <dl class="kv">
+                    {dex.roles.map((r) => (
+                      <div>
+                        <dt>{r.stageName}</dt>
+                        <dd>
+                          <strong>{r.product}</strong>（{r.role}） ·{" "}
+                          <a
+                            href={r.evidence.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {r.evidence.title} ↗
+                          </a>
+                        </dd>
+                      </div>
+                    ))}
+                  </dl>
+                </div>
+              )}
+            </div>
+          </section>
+        )}
+
+        {relationships.length > 0 && (
+          <section class="panel" id="relationships">
+            <div class="panel-head">
+              <h2>已披露商业与投资关系</h2>
+              <span class="right">{relationships.length} 条</span>
+            </div>
+            <ul class="map-relations">
+              {relationships.map((r) => (
+                <li>
+                  <div class="map-relation-edge">
+                    <a class="link" href={`/venture/${r.from}/`}>
+                      {index.get(r.from)?.name || r.from}
+                    </a>
+                    <span class="badge badge-plain">
+                      {relationLabels[r.type] || r.type}
+                    </span>
+                    <a class="link" href={`/venture/${r.to}/`}>
+                      {index.get(r.to)?.name || r.to}
+                    </a>
+                    <time class="mono map-rel-date">{r.date}</time>
+                  </div>
+                  <p>{r.title}</p>
+                  <small>
+                    {r.sources.map((s) => (
+                      <a href={s.url} target="_blank" rel="noopener noreferrer">
+                        {s.title} ↗{" "}
+                      </a>
+                    ))}
+                  </small>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {v.events.length > 0 && (
+          <section class="panel" id="events">
+            <div class="panel-head">
+              <h2>重要事件时间线</h2>
+              <span class="right">{v.events.length} 条</span>
+            </div>
+            <VentureTimeline events={v.events} showCompany={false} />
+          </section>
+        )}
+
+        <section class="panel" id="news">
+          <div class="panel-head">
+            <h2>公开新闻归档</h2>
+            <span class="hint">
+              {directNews.length
+                ? `直接相关 ${directNews.length} 条`
+                : "暂无直接标题报道"}
+              {mentions.length > 0 ? ` · 摘要提及 ${mentions.length} 条` : ""}
+            </span>
+            <span class="right">
+              <a href={`/ventures/news/?company=${v.id}`}>新闻检索 →</a>
+            </span>
+          </div>
+          {directNews.length ? (
+            <CompanyNewsList items={directNews.slice(0, 25)} companyId={v.id} />
+          ) : (
+            <p class="panel-body muted">
+              当前公开资讯抓取窗口内暂无该公司的直接标题报道。
+            </p>
+          )}
+          {mentions.length > 0 && (
+            <details class="v-mentions-details">
+              <summary>展开查看仅摘要提及线索（{mentions.length} 条）</summary>
+              <CompanyNewsList items={mentions.slice(0, 15)} companyId={v.id} />
+            </details>
+          )}
+        </section>
+
+        {peers.length > 0 && (
+          <section class="panel">
+            <div class="panel-head">
+              <h2>同环节可比公司</h2>
+              <span class="hint">
+                {positions.map((p) => p.shortSegName).join(" / ")}
+              </span>
+              <span class="right">
+                <a
+                  href={`/ventures/?track=${v.track}&seg=${v.track}/${v.segment}`}
+                >
+                  全部 →
+                </a>
+              </span>
+            </div>
+            <div class="v-list">
+              {peers.map((p) => (
+                <VentureCard
+                  venture={p}
+                  currentTrack={v.track}
+                  currentSegment={v.segment}
+                />
+              ))}
+            </div>
+          </section>
+        )}
+      </div>
+
+      <aside class="stack">
+        <section class="panel" id="positions">
+          <div class="panel-head">
+            <h2>产业链位置</h2>
+            <span class="right">
+              <a href={`/ventures/?track=${v.track}`}>查看图谱 →</a>
+            </span>
+          </div>
+          <div class="panel-body">
+            {trackChains.map((t, tIdx) => {
+              const activeSegIds = new Set(
+                memberships
+                  .filter((m) => m.track === t.id)
+                  .map((m) => m.segment),
+              );
+              return (
+                <div class:list={[tIdx > 0 && "v-chain-block"]}>
+                  <div class="v-chain-track-head">
+                    <a class="link" href={`/ventures/${t.id}/`}>
+                      {t.name}
+                    </a>
+                  </div>
+                  <ol class="chain">
+                    {t.segments.map((s) => {
+                      const isHere = activeSegIds.has(s.id);
+                      const sp = splitSegmentName(s.name);
+                      const segCount = companies.filter((c) =>
+                        getMemberships(c).some(
+                          (m) => m.track === t.id && m.segment === s.id,
+                        ),
+                      ).length;
+                      return (
+                        <li class:list={[isHere && "is-self"]}>
+                          <a
+                            href={`/ventures/?track=${t.id}&seg=${t.id}/${s.id}`}
+                          >
+                            {sp.stage ? `${sp.stage} · ${sp.name}` : sp.name}
+                          </a>
+                          <span class="pct">
+                            {isHere ? "本公司" : `${segCount} 家`}
+                          </span>
+                        </li>
+                      );
+                    })}
+                  </ol>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+
+        <section class="panel" id="company-facts">
+          <div class="panel-head">
+            <h2>基本信息</h2>
+          </div>
+          <div class="panel-body">
+            <dl class="kv">
+              {facts.map((f) => (
+                <div>
+                  <dt>{f.k}</dt>
+                  <dd>{f.v}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
+
+        <section class="panel is-compact" id="sources">
+          <div class="panel-head">
+            <h2>公开来源</h2>
+            <span class="right">{sources.length} 条</span>
+          </div>
+          <div class="panel-body">
+            <ul class="sources">
+              {sources.map((s) => (
+                <li>
+                  <a href={s.url} target="_blank" rel="noopener noreferrer">
+                    <span class="src-title">{s.title}</span>
+                  </a>
+                  <span class="src-host">
+                    {new URL(s.url).hostname}
+                    {s.date ? ` · ${formatDate(s.date)}` : ""}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    const backBtn = document.getElementById(
+      "back-to-map",
+    ) as HTMLAnchorElement | null;
+    if (backBtn) {
+      try {
+        const saved = sessionStorage.getItem("finmap-return-url");
+        if (saved && saved.startsWith("/ventures")) {
+          backBtn.href = saved;
+        }
+      } catch {
+        // ignore storage errors
+      }
+    }
+  </script>
+</Base>

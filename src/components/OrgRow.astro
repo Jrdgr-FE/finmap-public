@@ -1,0 +1,62 @@
+---
+import { getTypeName, getCategory, formatStake, stakeNeedsDate } from '../lib/data';
+import type { Entity } from '../lib/data';
+
+interface Props {
+  entity: Entity & { collectionId?: string; collectionName?: string };
+  showCollection?: boolean;
+  showCategory?: boolean;
+}
+
+const { entity: e, showCollection = false, showCategory = false } = Astro.props;
+const stake = formatStake(e);
+const undated = stakeNeedsDate(e);
+const cat = showCategory ? getCategory(e.category) : undefined;
+const statusLabel =
+  e.status === 'exited'
+    ? '已退出'
+    : e.status === 'distressed'
+      ? '风险处置中'
+      : e.status === 'merging'
+        ? '整合中'
+        : undefined;
+const isMass = e.tier === 'mass';
+const muted = e.status === 'exited' || e.status === 'distressed';
+---
+
+<a
+  class:list={[
+    'org-row',
+    e.status === 'exited' && 'is-inactive',
+    e.status === 'distressed' && 'is-distressed',
+    isMass && 'is-mass',
+  ]}
+  href={`/org/${e.id}/`}
+  data-cat={e.category}
+  data-type={e.type}
+  data-tier={e.tier ?? 'detailed'}
+  data-search={[e.name, e.short, getTypeName(e.type), e.license_code ?? '', e.region ?? '', ...(e.listed ?? [])].join(' ').toLowerCase()}
+>
+  <div class="org-row-main">
+    <span class="org-row-name">{e.short}</span>
+    <span class="org-row-full">{e.name}</span>
+    {e.relation === 'affiliate' && <span class="badge badge-affiliate">非控股</span>}
+    {statusLabel && <span class:list={['badge', muted ? 'badge-inactive' : '']}>{statusLabel}</span>}
+    {isMass && <span class="badge badge-mass" title="来自监管名单的名册级导入，未逐一核实官网与经营情况">名册</span>}
+  </div>
+  <div class="org-row-meta">
+    {e.region && isMass && <span class="stake">{e.region}</span>}
+    {cat && <span class="badge">{cat.name}</span>}
+    <span class="badge badge-plain">{getTypeName(e.type)}</span>
+    {/* 只有集团归属有信息量；「全牌照名录」「监管与基础设施」是数据集合名，不展示 */}
+    {showCollection && e.collectionName && e.collectionId !== 'registry' && e.collectionId !== 'supervision' && (
+      <span class="badge badge-plain">{e.collectionName}</span>
+    )}
+    {e.listed && e.listed.length > 0 && <span class="stake">{e.listed[0]}</span>}
+    {stake && (
+      <span class="stake" title={undated ? '该比例未标注时点' : `截至 ${e.stake_asof}`}>
+        {stake}{undated && <span class="undated">*</span>}
+      </span>
+    )}
+  </div>
+</a>

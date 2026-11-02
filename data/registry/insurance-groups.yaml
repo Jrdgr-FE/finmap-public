@@ -1,0 +1,191 @@
+note: >-
+  保险集团（控股）公司。这类主体本身不直接承保，而是控股并管理集团内的保险子公司，持保险机构法人许可证，机构编码为 6 位。中国平安保险（集团）股份有限公司的股权谱系另见 /group/pingan/。
+sources:
+  - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+entities:
+  - id: insg-000001
+    name: "中国人民保险集团股份有限公司"
+    short: "中国人民保险集团"
+    category: insurance
+    type: insurance-group
+    license_code: "000001"
+    regulator: 国家金融监督管理总局
+    listed: ["601319.SH", "1339.HK"]
+    website: https://www.picc.com.cn
+    intro: >-
+      保险集团（控股）公司，保险机构法人许可证机构编码 000001。中国人民保险集团 1949 年 10 月成立，2012 年 12 月 H 股上市、2018 年 11 月 A 股上市；旗下人保财险（2328.HK）、人保寿险、人保健康、人保资产、人保养老、人保再保等。
+    business: [保险集团管控, 保险资金运用, 子公司管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+  - id: insg-000004
+    name: "中国人寿保险（集团）公司"
+    short: "中国人寿保险集团"
+    category: insurance
+    type: insurance-group
+    license_code: "000004"
+    regulator: 国家金融监督管理总局
+    intro: >-
+      保险集团（控股）公司，保险机构法人许可证机构编码 000004。旗下上市主体为中国人寿保险股份有限公司（601628.SH／2628.HK）。
+    business: [保险集团管控, 保险资金运用, 子公司管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+  - id: insg-000007
+    name: "中国再保险（集团）股份有限公司"
+    short: "中国再保险集团"
+    category: insurance
+    type: insurance-group
+    license_code: "000007"
+    regulator: 国家金融监督管理总局
+    intro: >-
+      保险集团（控股）公司，保险机构法人许可证机构编码 000007。旗下有中再产险、中再寿险、中国大地财产保险等。
+    business: [保险集团管控, 保险资金运用, 子公司管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+  - id: insg-000013
+    name: "中国太平洋保险（集团）股份有限公司"
+    short: "中国太平洋保险集团"
+    category: insurance
+    type: insurance-group
+    license_code: "000013"
+    regulator: 国家金融监督管理总局
+    listed: ["601601.SH", "2601.HK"]
+    website: https://www.cpic.com.cn
+    intro: >-
+      保险集团（控股）公司，保险机构法人许可证机构编码 000013。中国太保，A+H+GDR 三地上市；旗下太保产险、太保寿险、太平洋健康险、太平洋资产等。
+    business: [保险集团管控, 保险资金运用, 子公司管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+  - id: insg-000016
+    name: "中国平安保险（集团）股份有限公司"
+    short: "中国平安保险集团"
+    category: insurance
+    type: insurance-group
+    license_code: "000016"
+    regulator: 国家金融监督管理总局
+    intro: >-
+      保险集团（控股）公司，保险机构法人许可证机构编码 000016。股权谱系另见集团页，本条目仅作名册收录。
+    business: [保险集团管控, 保险资金运用, 子公司管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+  - id: insg-000020
+    name: "泰康保险集团股份有限公司"
+    short: "泰康保险集团"
+    category: insurance
+    type: insurance-group
+    license_code: "000020"
+    regulator: 国家金融监督管理总局
+    intro: >-
+      保险集团（控股）公司，保险机构法人许可证机构编码 000020。旗下有泰康人寿、泰康资产、泰康养老、泰康在线财险等。
+    business: [保险集团管控, 保险资金运用, 子公司管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+  - id: insg-000021
+    name: "华泰保险集团股份有限公司"
+    short: "华泰保险集团"
+    category: insurance
+    type: insurance-group
+    license_code: "000021"
+    regulator: 国家金融监督管理总局
+    intro: >-
+      保险集团（控股）公司，保险机构法人许可证机构编码 000021。旗下有华泰财产保险、华泰人寿、华泰资产管理等。
+    business: [保险集团管控, 保险资金运用, 子公司管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+  - id: insg-000065
+    name: "中国太平保险集团有限责任公司"
+    short: "中国太平保险集团"
+    category: insurance
+    type: insurance-group
+    license_code: "000065"
+    regulator: 国家金融监督管理总局
+    intro: >-
+      保险集团（控股）公司，保险机构法人许可证机构编码 000065。旗下有太平人寿、太平财产保险、太平养老等。
+    business: [保险集团管控, 保险资金运用, 子公司管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+  - id: insg-000107
+    name: "中华联合保险集团股份有限公司"
+    short: "中华联合保险集团"
+    category: insurance
+    type: insurance-group
+    license_code: "000107"
+    regulator: 国家金融监督管理总局
+    intro: >-
+      保险集团（控股）公司，保险机构法人许可证机构编码 000107。旗下有中华联合财产保险等。
+    business: [保险集团管控, 保险资金运用, 子公司管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+  - id: insg-000123
+    name: "阳光保险集团股份有限公司"
+    short: "阳光保险集团"
+    category: insurance
+    type: insurance-group
+    license_code: "000123"
+    regulator: 国家金融监督管理总局
+    intro: >-
+      保险集团（控股）公司，保险机构法人许可证机构编码 000123。旗下有阳光财产保险、阳光人寿等。
+    business: [保险集团管控, 保险资金运用, 子公司管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+  - id: insg-000197
+    name: "富德保险控股股份有限公司"
+    short: "富德保险控股"
+    category: insurance
+    type: insurance-group
+    license_code: "000197"
+    regulator: 国家金融监督管理总局
+    intro: >-
+      保险集团（控股）公司，保险机构法人许可证机构编码 000197。旗下有富德生命人寿、富德财产保险等。
+    business: [保险集团管控, 保险资金运用, 子公司管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+  - id: insg-000241
+    name: "大家保险集团有限责任公司"
+    short: "大家保险集团"
+    category: insurance
+    type: insurance-group
+    license_code: "000241"
+    regulator: 国家金融监督管理总局
+    intro: >-
+      保险集团（控股）公司，保险机构法人许可证机构编码 000241。由原安邦保险集团重组设立，旗下有大家人寿、大家财产保险、大家养老等。
+    business: [保险集团管控, 保险资金运用, 子公司管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+  - id: insg-000243
+    name: "安联（中国）保险控股有限公司"
+    short: "安联（中国）保险控股有限"
+    category: insurance
+    type: insurance-group
+    license_code: "000243"
+    regulator: 国家金融监督管理总局
+    intro: >-
+      保险集团（控股）公司，保险机构法人许可证机构编码 000243。中国首家外资独资保险控股公司。
+    business: [保险集团管控, 保险资金运用, 子公司管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }

@@ -1,0 +1,11 @@
+[Unit]
+Description=Check due FinMap company sources hourly
+
+[Timer]
+OnCalendar=*-*-* *:17:00 UTC
+RandomizedDelaySec=60
+Persistent=true
+Unit=finmap-monitor.service
+
+[Install]
+WantedBy=timers.target

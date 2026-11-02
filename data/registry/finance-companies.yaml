@@ -1,0 +1,3545 @@
+note: >-
+  企业集团财务公司，为集团成员单位提供存贷结算的内部金融机构。
+sources:
+  - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+entities:
+  - id: rk-l0001h211000001
+    name: "五矿集团财务有限责任公司"
+    short: "五矿集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0001H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0001H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0002h211000001
+    name: "中国石化财务有限责任公司"
+    short: "中国石化财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0002H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0002H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0003h211000001
+    name: "中油财务有限责任公司"
+    short: "中油财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0003H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0003H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0004h313310001
+    name: "中国华能财务有限责任公司"
+    short: "中国华能财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0004H313310001
+    regulator: 河北金融监管局
+    region: 河北
+    tier: mass
+    intro: >-
+      河北的企业集团财务公司法人机构，金融许可证机构编码 L0004H313310001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0006h211000001
+    name: "中国电力财务有限公司"
+    short: "中国电力财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0006H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0006H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0007h211000002
+    name: "中海石油财务有限责任公司"
+    short: "中海石油财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0007H211000002
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0007H211000002。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0008h211000001
+    name: "华联财务有限责任公司"
+    short: "华联财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0008H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0008H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0009h211000001
+    name: "航天科工财务有限责任公司"
+    short: "航天科工财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0009H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0009H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0010h211000001
+    name: "国机财务有限责任公司"
+    short: "国机财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0010H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0010H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0011h211000001
+    name: "中核财务有限责任公司"
+    short: "中核财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0011H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0011H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0012h211000001
+    name: "兵工财务有限责任公司"
+    short: "兵工财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0012H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0012H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0014h211000001
+    name: "中国电子财务有限责任公司"
+    short: "中国电子财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0014H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0014H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0015h211000001
+    name: "航天科技财务有限责任公司"
+    short: "航天科技财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0015H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0015H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0016h211000001
+    name: "中国航空集团财务有限责任公司"
+    short: "中国航空集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0016H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0016H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0019h211000001
+    name: "兵器装备集团财务有限责任公司"
+    short: "兵器装备集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0019H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0019H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0020h211000001
+    name: "京能集团财务有限公司"
+    short: "京能集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0020H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0020H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0022h211000001
+    name: "国家能源集团财务有限公司"
+    short: "国家能源集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0022H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0022H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0023h211000001
+    name: "中粮财务有限责任公司"
+    short: "中粮财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0023H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0023H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0024h211000001
+    name: "中国华电集团财务有限公司"
+    short: "中国华电集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0024H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0024H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0025h211000001
+    name: "中国大唐集团财务有限公司"
+    short: "中国大唐集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0025H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0025H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0026h211000001
+    name: "国家电投集团财务有限公司"
+    short: "国家电投集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0026H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0026H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0027h212000001
+    name: "天津渤海集团财务有限责任公司"
+    short: "天津渤海集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0027H212000001
+    regulator: 天津金融监管局
+    region: 天津
+    tier: mass
+    intro: >-
+      天津的企业集团财务公司法人机构，金融许可证机构编码 L0027H212000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0028h212000001
+    name: "天津港财务有限公司"
+    short: "天津港财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0028H212000001
+    regulator: 天津金融监管局
+    region: 天津
+    tier: mass
+    intro: >-
+      天津的企业集团财务公司法人机构，金融许可证机构编码 L0028H212000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0029h213010001
+    name: "冀中能源集团财务有限责任公司"
+    short: "冀中能源集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0029H213010001
+    regulator: 河北金融监管局
+    region: 河北
+    tier: mass
+    intro: >-
+      河北的企业集团财务公司法人机构，金融许可证机构编码 L0029H213010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0031h221030001
+    name: "鞍钢集团财务有限责任公司"
+    short: "鞍钢集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0031H221030001
+    regulator: 辽宁金融监管局
+    region: 辽宁
+    tier: mass
+    intro: >-
+      辽宁的企业集团财务公司法人机构，金融许可证机构编码 L0031H221030001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0033h222010001
+    name: "一汽财务有限公司"
+    short: "一汽财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0033H222010001
+    regulator: 吉林金融监管局
+    region: 吉林
+    tier: mass
+    intro: >-
+      吉林的企业集团财务公司法人机构，金融许可证机构编码 L0033H222010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0036h231000001
+    name: "锦江国际集团财务有限责任公司"
+    short: "锦江国际集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0036H231000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的企业集团财务公司法人机构，金融许可证机构编码 L0036H231000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0037h231000001
+    name: "宝武集团财务有限责任公司"
+    short: "宝武集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0037H231000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的企业集团财务公司法人机构，金融许可证机构编码 L0037H231000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0038h231000001
+    name: "上海汽车集团财务有限责任公司"
+    short: "上海汽车集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0038H231000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的企业集团财务公司法人机构，金融许可证机构编码 L0038H231000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0039h231000001
+    name: "东航集团财务有限责任公司"
+    short: "东航集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0039H231000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的企业集团财务公司法人机构，金融许可证机构编码 L0039H231000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0040h231000001
+    name: "上海电气集团财务有限责任公司"
+    short: "上海电气集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0040H231000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的企业集团财务公司法人机构，金融许可证机构编码 L0040H231000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0041h231000001
+    name: "上海浦东发展集团财务有限责任公司"
+    short: "上海浦东发展集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0041H231000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的企业集团财务公司法人机构，金融许可证机构编码 L0041H231000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0042h231000001
+    name: "中船财务有限责任公司"
+    short: "中船财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0042H231000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的企业集团财务公司法人机构，金融许可证机构编码 L0042H231000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0044h332050001
+    name: "苏州创元集团财务有限公司"
+    short: "苏州创元集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0044H332050001
+    regulator: 苏州金融监管分局
+    region: 苏州
+    tier: mass
+    intro: >-
+      苏州的企业集团财务公司法人机构，金融许可证机构编码 L0044H332050001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0045h233010001
+    name: "万向财务有限公司"
+    short: "万向财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0045H233010001
+    regulator: 浙江金融监管局
+    region: 浙江
+    tier: mass
+    intro: >-
+      浙江的企业集团财务公司法人机构，金融许可证机构编码 L0045H233010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0046h233010001
+    name: "浙江省能源集团财务有限责任公司"
+    short: "浙江省能源集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0046H233010001
+    regulator: 浙江金融监管局
+    region: 浙江
+    tier: mass
+    intro: >-
+      浙江的企业集团财务公司法人机构，金融许可证机构编码 L0046H233010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0047h236010001
+    name: "江铃汽车集团财务有限公司"
+    short: "江铃汽车集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0047H236010001
+    regulator: 江西金融监管局
+    region: 江西
+    tier: mass
+    intro: >-
+      江西的企业集团财务公司法人机构，金融许可证机构编码 L0047H236010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0048h237010001
+    name: "中国重汽财务有限公司"
+    short: "中国重汽财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0048H237010001
+    regulator: 山东金融监管局
+    region: 山东
+    tier: mass
+    intro: >-
+      山东的企业集团财务公司法人机构，金融许可证机构编码 L0048H237010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0049h237020001
+    name: "海尔集团财务有限责任公司"
+    short: "海尔集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0049H237020001
+    regulator: 青岛金融监管局
+    region: 青岛
+    tier: mass
+    intro: >-
+      青岛的企业集团财务公司法人机构，金融许可证机构编码 L0049H237020001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0050h245010001
+    name: "广西交通投资集团财务有限责任公司"
+    short: "广西交通投资集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0050H245010001
+    regulator: 广西金融监管局
+    region: 广西
+    tier: mass
+    intro: >-
+      广西的企业集团财务公司法人机构，金融许可证机构编码 L0050H245010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0052h242010001
+    name: "东风汽车财务有限公司"
+    short: "东风汽车财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0052H242010001
+    regulator: 湖北金融监管局
+    region: 湖北
+    tier: mass
+    intro: >-
+      湖北的企业集团财务公司法人机构，金融许可证机构编码 L0052H242010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0054h332030001
+    name: "徐工集团财务有限公司"
+    short: "徐工集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0054H332030001
+    regulator: 徐州金融监管分局
+    region: 徐州
+    tier: mass
+    intro: >-
+      徐州的企业集团财务公司法人机构，金融许可证机构编码 L0054H332030001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0055h211000001
+    name: "中国能源建设集团财务有限公司"
+    short: "中国能源建设集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0055H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0055H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0056h242050001
+    name: "三峡财务有限责任公司"
+    short: "三峡财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0056H242050001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0056H242050001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0057h243010001
+    name: "湖南钢铁集团财务有限公司"
+    short: "湖南钢铁集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0057H243010001
+    regulator: 湖南金融监管局
+    region: 湖南
+    tier: mass
+    intro: >-
+      湖南的企业集团财务公司法人机构，金融许可证机构编码 L0057H243010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0059h244010001
+    name: "中国南航集团财务有限公司"
+    short: "中国南航集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0059H244010001
+    regulator: 广东金融监管局
+    region: 广东
+    tier: mass
+    intro: >-
+      广东的企业集团财务公司法人机构，金融许可证机构编码 L0059H244010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0060h244010001
+    name: "南方电网财务有限公司"
+    short: "南方电网财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0060H244010001
+    regulator: 广东金融监管局
+    region: 广东
+    tier: mass
+    intro: >-
+      广东的企业集团财务公司法人机构，金融许可证机构编码 L0060H244010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0061h244010001
+    name: "广东能源集团财务有限公司"
+    short: "广东能源集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0061H244010001
+    regulator: 广东金融监管局
+    region: 广东
+    tier: mass
+    intro: >-
+      广东的企业集团财务公司法人机构，金融许可证机构编码 L0061H244010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0062h344040001
+    name: "珠海格力集团财务有限责任公司"
+    short: "珠海格力集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0062H344040001
+    regulator: 珠海金融监管分局
+    region: 珠海
+    tier: mass
+    intro: >-
+      珠海的企业集团财务公司法人机构，金融许可证机构编码 L0062H344040001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0065h244030001
+    name: "中广核财务有限责任公司"
+    short: "中广核财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0065H244030001
+    regulator: 深圳金融监管局
+    region: 深圳
+    tier: mass
+    intro: >-
+      深圳的企业集团财务公司法人机构，金融许可证机构编码 L0065H244030001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0066h344130001
+    name: "美的集团财务有限公司"
+    short: "美的集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0066H344130001
+    regulator: 惠州金融监管分局
+    region: 惠州
+    tier: mass
+    intro: >-
+      惠州的企业集团财务公司法人机构，金融许可证机构编码 L0066H344130001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0067h251010001
+    name: "东方电气集团财务有限公司"
+    short: "东方电气集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0067H251010001
+    regulator: 四川金融监管局
+    region: 四川
+    tier: mass
+    intro: >-
+      四川的企业集团财务公司法人机构，金融许可证机构编码 L0067H251010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0069h231000001
+    name: "百联集团财务有限责任公司"
+    short: "百联集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0069H231000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的企业集团财务公司法人机构，金融许可证机构编码 L0069H231000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0071h211000001
+    name: "中交财务有限公司"
+    short: "中交财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0071H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0071H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0072h261010001
+    name: "西电集团财务有限责任公司"
+    short: "西电集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0072H261010001
+    regulator: 陕西金融监管局
+    region: 陕西
+    tier: mass
+    intro: >-
+      陕西的企业集团财务公司法人机构，金融许可证机构编码 L0072H261010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0073h237010001
+    name: "山东黄金集团财务有限公司"
+    short: "山东黄金集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0073H237010001
+    regulator: 山东金融监管局
+    region: 山东
+    tier: mass
+    intro: >-
+      山东的企业集团财务公司法人机构，金融许可证机构编码 L0073H237010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0074h211000001
+    name: "西门子财务服务有限责任公司"
+    short: "西门子财务服务"
+    category: nonbank
+    type: finance-company
+    license_code: L0074H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0074H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0077h341040001
+    name: "中国平煤神马集团财务有限责任公司"
+    short: "中国平煤神马集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0077H341040001
+    regulator: 平顶山金融监管分局
+    region: 平顶山
+    tier: mass
+    intro: >-
+      平顶山的企业集团财务公司法人机构，金融许可证机构编码 L0077H341040001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0078h244030001
+    name: "中开财务有限公司"
+    short: "中开财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0078H244030001
+    regulator: 深圳金融监管局
+    region: 深圳
+    tier: mass
+    intro: >-
+      深圳的企业集团财务公司法人机构，金融许可证机构编码 L0078H244030001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0080h236010001
+    name: "江西铜业集团财务有限公司"
+    short: "江西铜业集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0080H236010001
+    regulator: 江西金融监管局
+    region: 江西
+    tier: mass
+    intro: >-
+      江西的企业集团财务公司法人机构，金融许可证机构编码 L0080H236010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0081h211000001
+    name: "中航工业集团财务有限责任公司"
+    short: "中航工业集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0081H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0081H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0082h231000001
+    name: "申能集团财务有限公司"
+    short: "申能集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0082H231000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的企业集团财务公司法人机构，金融许可证机构编码 L0082H231000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0083h231000001
+    name: "松下电器（中国）财务有限公司"
+    short: "松下电器（中国）财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0083H231000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的企业集团财务公司法人机构，金融许可证机构编码 L0083H231000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0085h314040001
+    name: "潞安集团财务有限公司"
+    short: "潞安集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0085H314040001
+    regulator: 长治金融监管分局
+    region: 长治
+    tier: mass
+    intro: >-
+      长治的企业集团财务公司法人机构，金融许可证机构编码 L0085H314040001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0087h334040001
+    name: "淮南矿业集团财务有限公司"
+    short: "淮南矿业集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0087H334040001
+    regulator: 淮南金融监管分局
+    region: 淮南
+    tier: mass
+    intro: >-
+      淮南的企业集团财务公司法人机构，金融许可证机构编码 L0087H334040001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0088h231000001
+    name: "日立（中国）财务有限公司"
+    short: "日立（中国）财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0088H231000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的企业集团财务公司法人机构，金融许可证机构编码 L0088H231000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0089h244030001
+    name: "深圳能源财务有限公司"
+    short: "深圳能源财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0089H244030001
+    regulator: 深圳金融监管局
+    region: 深圳
+    tier: mass
+    intro: >-
+      深圳的企业集团财务公司法人机构，金融许可证机构编码 L0089H244030001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0090h211000001
+    name: "保利财务有限公司"
+    short: "保利财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0090H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0090H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0091h313310001
+    name: "中化集团财务有限责任公司"
+    short: "中化集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0091H313310001
+    regulator: 河北金融监管局
+    region: 河北
+    tier: mass
+    intro: >-
+      河北的企业集团财务公司法人机构，金融许可证机构编码 L0091H313310001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0092h237020001
+    name: "海信集团财务有限公司"
+    short: "海信集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0092H237020001
+    regulator: 青岛金融监管局
+    region: 青岛
+    tier: mass
+    intro: >-
+      青岛的企业集团财务公司法人机构，金融许可证机构编码 L0092H237020001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0093h332020001
+    name: "国联财务有限责任公司"
+    short: "国联财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0093H332020001
+    regulator: 无锡金融监管分局
+    region: 无锡
+    tier: mass
+    intro: >-
+      无锡的企业集团财务公司法人机构，金融许可证机构编码 L0093H332020001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0094h211000001
+    name: "首都机场集团财务有限公司"
+    short: "首都机场集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0094H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0094H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0095h332020001
+    name: "红豆集团财务有限公司"
+    short: "红豆集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0095H332020001
+    regulator: 无锡金融监管分局
+    region: 无锡
+    tier: mass
+    intro: >-
+      无锡的企业集团财务公司法人机构，金融许可证机构编码 L0095H332020001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0096h246010001
+    name: "海马财务有限公司"
+    short: "海马财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0096H246010001
+    regulator: 海南金融监管局
+    region: 海南
+    tier: mass
+    intro: >-
+      海南的企业集团财务公司法人机构，金融许可证机构编码 L0096H246010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0097h337060001
+    name: "南山集团财务有限公司"
+    short: "南山集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0097H337060001
+    regulator: 烟台金融监管分局
+    region: 烟台
+    tier: mass
+    intro: >-
+      烟台的企业集团财务公司法人机构，金融许可证机构编码 L0097H337060001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0098h211000001
+    name: "国投财务有限公司"
+    short: "国投财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0098H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0098H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0099h241010001
+    name: "河南能源集团财务有限公司"
+    short: "河南能源集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0099H241010001
+    regulator: 河南金融监管局
+    region: 河南
+    tier: mass
+    intro: >-
+      河南的企业集团财务公司法人机构，金融许可证机构编码 L0099H241010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0101h332020001
+    name: "江苏华西集团财务有限公司"
+    short: "江苏华西集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0101H332020001
+    regulator: 无锡金融监管分局
+    region: 无锡
+    tier: mass
+    intro: >-
+      无锡的企业集团财务公司法人机构，金融许可证机构编码 L0101H332020001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0102h335080001
+    name: "紫金矿业集团财务有限公司"
+    short: "紫金矿业集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0102H335080001
+    regulator: 龙岩金融监管分局
+    region: 龙岩
+    tier: mass
+    intro: >-
+      龙岩的企业集团财务公司法人机构，金融许可证机构编码 L0102H335080001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0103h314050001
+    name: "晋煤集团财务有限公司"
+    short: "晋煤集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0103H314050001
+    regulator: 晋城金融监管分局
+    region: 晋城
+    tier: mass
+    intro: >-
+      晋城的企业集团财务公司法人机构，金融许可证机构编码 L0103H314050001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0104h314030001
+    name: "阳泉煤业集团财务有限责任公司"
+    short: "阳泉煤业集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0104H314030001
+    regulator: 阳泉金融监管分局
+    region: 阳泉
+    tier: mass
+    intro: >-
+      阳泉的企业集团财务公司法人机构，金融许可证机构编码 L0104H314030001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0105h214010001
+    name: "山西焦煤集团财务有限责任公司"
+    short: "山西焦煤集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0105H214010001
+    regulator: 山西金融监管局
+    region: 山西
+    tier: mass
+    intro: >-
+      山西的企业集团财务公司法人机构，金融许可证机构编码 L0105H214010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0107h231000001
+    name: "中远海运集团财务有限责任公司"
+    short: "中远海运集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0107H231000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的企业集团财务公司法人机构，金融许可证机构编码 L0107H231000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0108h244030001
+    name: "中集集团财务有限公司"
+    short: "中集集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0108H244030001
+    regulator: 深圳金融监管局
+    region: 深圳
+    tier: mass
+    intro: >-
+      深圳的企业集团财务公司法人机构，金融许可证机构编码 L0108H244030001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0109h332050001
+    name: "沙钢财务有限公司"
+    short: "沙钢财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0109H332050001
+    regulator: 苏州金融监管分局
+    region: 苏州
+    tier: mass
+    intro: >-
+      苏州的企业集团财务公司法人机构，金融许可证机构编码 L0109H332050001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0110h344060001
+    name: "美的集团财务有限公司"
+    short: "美的集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0110H344060001
+    regulator: 佛山金融监管分局
+    region: 佛山
+    tier: mass
+    intro: >-
+      佛山的企业集团财务公司法人机构，金融许可证机构编码 L0110H344060001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0111h233020001
+    name: "浙江海港集团财务有限公司"
+    short: "浙江海港集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0111H233020001
+    regulator: 宁波金融监管局
+    region: 宁波
+    tier: mass
+    intro: >-
+      宁波的企业集团财务公司法人机构，金融许可证机构编码 L0111H233020001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0113h223010001
+    name: "哈尔滨电气集团财务有限责任公司"
+    short: "哈尔滨电气集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0113H223010001
+    regulator: 黑龙江金融监管局
+    region: 黑龙江
+    tier: mass
+    intro: >-
+      黑龙江的企业集团财务公司法人机构，金融许可证机构编码 L0113H223010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0115h211000001
+    name: "通用技术集团财务有限责任公司"
+    short: "通用技术集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0115H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0115H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0116h334070001
+    name: "铜陵有色金属集团财务有限公司"
+    short: "铜陵有色金属集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0116H334070001
+    regulator: 铜陵金融监管分局
+    region: 铜陵
+    tier: mass
+    intro: >-
+      铜陵的企业集团财务公司法人机构，金融许可证机构编码 L0116H334070001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0117h211000001
+    name: "中建财务有限公司"
+    short: "中建财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0117H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0117H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0118h232010001
+    name: "江苏省国信集团财务有限公司"
+    short: "江苏省国信集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0118H232010001
+    regulator: 江苏金融监管局
+    region: 江苏
+    tier: mass
+    intro: >-
+      江苏的企业集团财务公司法人机构，金融许可证机构编码 L0118H232010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0119h250000001
+    name: "重庆化医控股集团财务有限公司"
+    short: "重庆化医控股集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0119H250000001
+    regulator: 重庆金融监管局
+    region: 重庆
+    tier: mass
+    intro: >-
+      重庆的企业集团财务公司法人机构，金融许可证机构编码 L0119H250000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0120h262010001
+    name: "金川集团财务有限公司"
+    short: "金川集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0120H262010001
+    regulator: 甘肃金融监管局
+    region: 甘肃
+    tier: mass
+    intro: >-
+      甘肃的企业集团财务公司法人机构，金融许可证机构编码 L0120H262010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0121h251010001
+    name: "新希望财务有限公司"
+    short: "新希望财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0121H251010001
+    regulator: 四川金融监管局
+    region: 四川
+    tier: mass
+    intro: >-
+      四川的企业集团财务公司法人机构，金融许可证机构编码 L0121H251010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0122h315020001
+    name: "包钢集团财务有限责任公司"
+    short: "包钢集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0122H315020001
+    regulator: 包头金融监管分局
+    region: 包头
+    tier: mass
+    intro: >-
+      包头的企业集团财务公司法人机构，金融许可证机构编码 L0122H315020001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0123h262010001
+    name: "酒钢集团财务有限公司"
+    short: "酒钢集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0123H262010001
+    regulator: 甘肃金融监管局
+    region: 甘肃
+    tier: mass
+    intro: >-
+      甘肃的企业集团财务公司法人机构，金融许可证机构编码 L0123H262010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0124h213100001
+    name: "新奥财务有限责任公司"
+    short: "新奥财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0124H213100001
+    regulator: 廊坊金融监管分局
+    region: 廊坊
+    tier: mass
+    intro: >-
+      廊坊的企业集团财务公司法人机构，金融许可证机构编码 L0124H213100001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0125h211000001
+    name: "招商局集团财务有限公司"
+    short: "招商局集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0125H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0125H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0126h237020001
+    name: "青岛啤酒财务有限责任公司"
+    short: "青岛啤酒财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0126H237020001
+    regulator: 青岛金融监管局
+    region: 青岛
+    tier: mass
+    intro: >-
+      青岛的企业集团财务公司法人机构，金融许可证机构编码 L0126H237020001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0127h211000001
+    name: "中铝财务有限责任公司"
+    short: "中铝财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0127H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0127H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0128h231000001
+    name: "上海复星高科技集团财务有限公司"
+    short: "上海复星高科技集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0128H231000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的企业集团财务公司法人机构，金融许可证机构编码 L0128H231000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0129h244030001
+    name: "中兴通讯集团财务有限公司"
+    short: "中兴通讯集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0129H244030001
+    regulator: 深圳金融监管局
+    region: 深圳
+    tier: mass
+    intro: >-
+      深圳的企业集团财务公司法人机构，金融许可证机构编码 L0129H244030001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0131h235010001
+    name: "福建省能源石化集团财务有限公司"
+    short: "福建省能源石化集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0131H235010001
+    regulator: 福建金融监管局
+    region: 福建
+    tier: mass
+    intro: >-
+      福建的企业集团财务公司法人机构，金融许可证机构编码 L0131H235010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0132h243010001
+    name: "湖南高速集团财务有限公司"
+    short: "湖南高速集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0132H243010001
+    regulator: 湖南金融监管局
+    region: 湖南
+    tier: mass
+    intro: >-
+      湖南的企业集团财务公司法人机构，金融许可证机构编码 L0132H243010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0134h342050001
+    name: "湖北宜化集团财务有限责任公司"
+    short: "湖北宜化集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0134H342050001
+    regulator: 宜昌金融监管分局
+    region: 宜昌
+    tier: mass
+    intro: >-
+      宜昌的企业集团财务公司法人机构，金融许可证机构编码 L0134H342050001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0135h211000001
+    name: "北京汽车集团财务有限公司"
+    short: "北京汽车集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0135H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0135H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0137h211000001
+    name: "信科（北京）财务有限公司"
+    short: "信科（北京）财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0137H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0137H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0138h211000001
+    name: "中国航油集团财务有限公司"
+    short: "中国航油集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0138H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0138H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0139h313020001
+    name: "开滦集团财务有限责任公司"
+    short: "开滦集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0139H313020001
+    regulator: 唐山金融监管分局
+    region: 唐山
+    tier: mass
+    intro: >-
+      唐山的企业集团财务公司法人机构，金融许可证机构编码 L0139H313020001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0140h246010001
+    name: "海南农垦集团财务有限公司"
+    short: "海南农垦集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0140H246010001
+    regulator: 海南金融监管局
+    region: 海南
+    tier: mass
+    intro: >-
+      海南的企业集团财务公司法人机构，金融许可证机构编码 L0140H246010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0141h263010001
+    name: "西部矿业集团财务有限公司"
+    short: "西部矿业集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0141H263010001
+    regulator: 青海金融监管局
+    region: 青海
+    tier: mass
+    intro: >-
+      青海的企业集团财务公司法人机构，金融许可证机构编码 L0141H263010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0142h232010001
+    name: "江苏交通控股集团财务有限公司"
+    short: "江苏交通控股集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0142H232010001
+    regulator: 江苏金融监管局
+    region: 江苏
+    tier: mass
+    intro: >-
+      江苏的企业集团财务公司法人机构，金融许可证机构编码 L0142H232010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0143h211000001
+    name: "中国移动通信集团财务有限公司"
+    short: "中国移动通信集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0143H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0143H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0144h237010001
+    name: "山东钢铁集团财务有限公司"
+    short: "山东钢铁集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0144H237010001
+    regulator: 山东金融监管局
+    region: 山东
+    tier: mass
+    intro: >-
+      山东的企业集团财务公司法人机构，金融许可证机构编码 L0144H237010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0145h211000001
+    name: "国药集团财务有限公司"
+    short: "国药集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0145H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0145H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0146h241010001
+    name: "郑州宇通集团财务有限公司"
+    short: "郑州宇通集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0146H241010001
+    regulator: 河南金融监管局
+    region: 河南
+    tier: mass
+    intro: >-
+      河南的企业集团财务公司法人机构，金融许可证机构编码 L0146H241010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0147h211000001
+    name: "中国铁建财务有限公司"
+    short: "中国铁建财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0147H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0147H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0148h237010001
+    name: "山东省商业集团财务有限公司"
+    short: "山东省商业集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0148H237010001
+    regulator: 山东金融监管局
+    region: 山东
+    tier: mass
+    intro: >-
+      山东的企业集团财务公司法人机构，金融许可证机构编码 L0148H237010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0149h211000001
+    name: "诚通财务有限责任公司"
+    short: "诚通财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0149H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0149H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0150h244030001
+    name: "深圳华强集团财务有限公司"
+    short: "深圳华强集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0150H244030001
+    regulator: 深圳金融监管局
+    region: 深圳
+    tier: mass
+    intro: >-
+      深圳的企业集团财务公司法人机构，金融许可证机构编码 L0150H244030001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0151h237010001
+    name: "山东重工集团财务有限公司"
+    short: "山东重工集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0151H237010001
+    regulator: 山东金融监管局
+    region: 山东
+    tier: mass
+    intro: >-
+      山东的企业集团财务公司法人机构，金融许可证机构编码 L0151H237010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0153h244030001
+    name: "中旅集团财务有限公司"
+    short: "中旅集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0153H244030001
+    regulator: 深圳金融监管局
+    region: 深圳
+    tier: mass
+    intro: >-
+      深圳的企业集团财务公司法人机构，金融许可证机构编码 L0153H244030001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0154h231000001
+    name: "上海华谊集团财务有限责任公司"
+    short: "上海华谊集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0154H231000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的企业集团财务公司法人机构，金融许可证机构编码 L0154H231000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0155h261010001
+    name: "陕西煤业化工集团财务有限公司"
+    short: "陕西煤业化工集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0155H261010001
+    regulator: 陕西金融监管局
+    region: 陕西
+    tier: mass
+    intro: >-
+      陕西的企业集团财务公司法人机构，金融许可证机构编码 L0155H261010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0156h251070001
+    name: "四川长虹集团财务有限公司"
+    short: "四川长虹集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0156H251070001
+    regulator: 绵阳金融监管分局
+    region: 绵阳
+    tier: mass
+    intro: >-
+      绵阳的企业集团财务公司法人机构，金融许可证机构编码 L0156H251070001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0158h211000001
+    name: "中化工程集团财务有限公司"
+    short: "中化工程集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0158H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0158H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0159h234010001
+    name: "安徽省能源集团财务有限公司"
+    short: "安徽省能源集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0159H234010001
+    regulator: 安徽金融监管局
+    region: 安徽
+    tier: mass
+    intro: >-
+      安徽的企业集团财务公司法人机构，金融许可证机构编码 L0159H234010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0160h212000001
+    name: "天津天保财务有限公司"
+    short: "天津天保财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0160H212000001
+    regulator: 天津金融监管局
+    region: 天津
+    tier: mass
+    intro: >-
+      天津的企业集团财务公司法人机构，金融许可证机构编码 L0160H212000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0161h211000001
+    name: "亿利集团财务有限公司"
+    short: "亿利集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0161H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0161H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0162h235020001
+    name: "厦门国贸控股集团财务有限公司"
+    short: "厦门国贸控股集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0162H235020001
+    regulator: 厦门金融监管局
+    region: 厦门
+    tier: mass
+    intro: >-
+      厦门的企业集团财务公司法人机构，金融许可证机构编码 L0162H235020001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0163h211000001
+    name: "中信财务有限公司"
+    short: "中信财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0163H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0163H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0164h233010001
+    name: "浙江省交通投资集团财务有限责任公司"
+    short: "浙江省交通投资集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0164H233010001
+    regulator: 浙江金融监管局
+    region: 浙江
+    tier: mass
+    intro: >-
+      浙江的企业集团财务公司法人机构，金融许可证机构编码 L0164H233010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0166h211000001
+    name: "中车财务有限公司"
+    short: "中车财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0166H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0166H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0167h211000001
+    name: "中国电子科技财务有限公司"
+    short: "中国电子科技财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0167H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0167H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0168h250040001
+    name: "重庆机电控股集团财务有限公司"
+    short: "重庆机电控股集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0168H250040001
+    regulator: 重庆金融监管局
+    region: 重庆
+    tier: mass
+    intro: >-
+      重庆的企业集团财务公司法人机构，金融许可证机构编码 L0168H250040001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0169h213010001
+    name: "河北建投集团财务有限公司"
+    short: "河北建投集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0169H213010001
+    regulator: 河北金融监管局
+    region: 河北
+    tier: mass
+    intro: >-
+      河北的企业集团财务公司法人机构，金融许可证机构编码 L0169H213010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0172h233010001
+    name: "海亮集团财务有限责任公司"
+    short: "海亮集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0172H233010001
+    regulator: 浙江金融监管局
+    region: 浙江
+    tier: mass
+    intro: >-
+      浙江的企业集团财务公司法人机构，金融许可证机构编码 L0172H233010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0173h252030001
+    name: "贵州茅台集团财务有限公司"
+    short: "贵州茅台集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0173H252030001
+    regulator: 贵州金融监管局
+    region: 贵州
+    tier: mass
+    intro: >-
+      贵州的企业集团财务公司法人机构，金融许可证机构编码 L0173H252030001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0174h211000001
+    name: "中国建材集团财务有限公司"
+    short: "中国建材集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0174H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0174H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0175h211000001
+    name: "北京首都旅游集团财务有限公司"
+    short: "北京首都旅游集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0175H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0175H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0176h252010001
+    name: "贵州能源集团财务有限公司"
+    short: "贵州能源集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0176H252010001
+    regulator: 贵州金融监管局
+    region: 贵州
+    tier: mass
+    intro: >-
+      贵州的企业集团财务公司法人机构，金融许可证机构编码 L0176H252010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0177h244030001
+    name: "创维集团财务有限公司"
+    short: "创维集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0177H244030001
+    regulator: 深圳金融监管局
+    region: 深圳
+    tier: mass
+    intro: >-
+      深圳的企业集团财务公司法人机构，金融许可证机构编码 L0177H244030001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0178h344040001
+    name: "珠海华发集团财务有限公司"
+    short: "珠海华发集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0178H344040001
+    regulator: 珠海金融监管分局
+    region: 珠海
+    tier: mass
+    intro: >-
+      珠海的企业集团财务公司法人机构，金融许可证机构编码 L0178H344040001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0179h332050001
+    name: "江苏国泰财务有限公司"
+    short: "江苏国泰财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0179H332050001
+    regulator: 苏州金融监管分局
+    region: 苏州
+    tier: mass
+    intro: >-
+      苏州的企业集团财务公司法人机构，金融许可证机构编码 L0179H332050001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0180h332050001
+    name: "亨通财务有限公司"
+    short: "亨通财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0180H332050001
+    regulator: 苏州金融监管分局
+    region: 苏州
+    tier: mass
+    intro: >-
+      苏州的企业集团财务公司法人机构，金融许可证机构编码 L0180H332050001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0181h211000001
+    name: "北京金隅财务有限公司"
+    short: "北京金隅财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0181H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0181H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0182h253010001
+    name: "云南云天化集团财务有限公司"
+    short: "云南云天化集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0182H253010001
+    regulator: 云南金融监管局
+    region: 云南
+    tier: mass
+    intro: >-
+      云南的企业集团财务公司法人机构，金融许可证机构编码 L0182H253010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0183h211000001
+    name: "北京控股集团财务有限公司"
+    short: "北京控股集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0183H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0183H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0184h261010001
+    name: "陕西延长石油财务有限公司"
+    short: "陕西延长石油财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0184H261010001
+    regulator: 陕西金融监管局
+    region: 陕西
+    tier: mass
+    intro: >-
+      陕西的企业集团财务公司法人机构，金融许可证机构编码 L0184H261010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0185h215010001
+    name: "伊利财务有限公司"
+    short: "伊利财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0185H215010001
+    regulator: 内蒙古金融监管局
+    region: 内蒙古
+    tier: mass
+    intro: >-
+      内蒙古的企业集团财务公司法人机构，金融许可证机构编码 L0185H215010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0186h215010001
+    name: "鄂尔多斯财务有限公司"
+    short: "鄂尔多斯财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0186H215010001
+    regulator: 内蒙古金融监管局
+    region: 内蒙古
+    tier: mass
+    intro: >-
+      内蒙古的企业集团财务公司法人机构，金融许可证机构编码 L0186H215010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0187h237010001
+    name: "山东能源集团财务有限公司"
+    short: "山东能源集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0187H237010001
+    regulator: 山东金融监管局
+    region: 山东
+    tier: mass
+    intro: >-
+      山东的企业集团财务公司法人机构，金融许可证机构编码 L0187H237010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0188h242010001
+    name: "有色矿业集团财务有限公司"
+    short: "有色矿业集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0188H242010001
+    regulator: 湖北金融监管局
+    region: 湖北
+    tier: mass
+    intro: >-
+      湖北的企业集团财务公司法人机构，金融许可证机构编码 L0188H242010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0190h233080001
+    name: "巨化集团财务有限责任公司"
+    short: "巨化集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0190H233080001
+    regulator: 衢州金融监管分局
+    region: 衢州
+    tier: mass
+    intro: >-
+      衢州的企业集团财务公司法人机构，金融许可证机构编码 L0190H233080001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0191h211000001
+    name: "供销集团财务有限公司"
+    short: "供销集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0191H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0191H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0192h211000001
+    name: "中铁财务有限责任公司"
+    short: "中铁财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0192H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0192H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0193h211000001
+    name: "中煤财务有限责任公司"
+    short: "中煤财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0193H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0193H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0194h334060001
+    name: "淮北矿业集团财务有限公司"
+    short: "淮北矿业集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0194H334060001
+    regulator: 淮北金融监管分局
+    region: 淮北
+    tier: mass
+    intro: >-
+      淮北的企业集团财务公司法人机构，金融许可证机构编码 L0194H334060001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0195h334130001
+    name: "安徽省皖北煤电集团财务有限公司"
+    short: "安徽省皖北煤电集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0195H334130001
+    regulator: 宿州金融监管分局
+    region: 宿州
+    tier: mass
+    intro: >-
+      宿州的企业集团财务公司法人机构，金融许可证机构编码 L0195H334130001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0196h243010001
+    name: "湖南出版投资控股集团财务有限公司"
+    short: "湖南出版投资控股集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0196H243010001
+    regulator: 湖南金融监管局
+    region: 湖南
+    tier: mass
+    intro: >-
+      湖南的企业集团财务公司法人机构，金融许可证机构编码 L0196H243010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0197h251150001
+    name: "四川省宜宾五粮液集团财务有限公司"
+    short: "四川省宜宾五粮液集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0197H251150001
+    regulator: 宜宾金融监管分局
+    region: 宜宾
+    tier: mass
+    intro: >-
+      宜宾的企业集团财务公司法人机构，金融许可证机构编码 L0197H251150001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0199h313030001
+    name: "河北港口集团财务有限公司"
+    short: "河北港口集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0199H313030001
+    regulator: 秦皇岛金融监管分局
+    region: 秦皇岛
+    tier: mass
+    intro: >-
+      秦皇岛的企业集团财务公司法人机构，金融许可证机构编码 L0199H313030001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0200h211000001
+    name: "中节能财务有限公司"
+    short: "中节能财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0200H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0200H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0201h237020001
+    name: "山东港口集团财务有限责任公司"
+    short: "山东港口集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0201H237020001
+    regulator: 青岛金融监管局
+    region: 青岛
+    tier: mass
+    intro: >-
+      青岛的企业集团财务公司法人机构，金融许可证机构编码 L0201H237020001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0202h231000001
+    name: "上海上实集团财务有限公司"
+    short: "上海上实集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0202H231000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的企业集团财务公司法人机构，金融许可证机构编码 L0202H231000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0203h250000001
+    name: "重庆市能源投资集团财务有限公司"
+    short: "重庆市能源投资集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0203H250000001
+    regulator: 重庆金融监管局
+    region: 重庆
+    tier: mass
+    intro: >-
+      重庆的企业集团财务公司法人机构，金融许可证机构编码 L0203H250000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0204h244010001
+    name: "广东省交通集团财务有限公司"
+    short: "广东省交通集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0204H244010001
+    regulator: 广东金融监管局
+    region: 广东
+    tier: mass
+    intro: >-
+      广东的企业集团财务公司法人机构，金融许可证机构编码 L0204H244010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0205h231000001
+    name: "光明食品集团财务有限公司"
+    short: "光明食品集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0205H231000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的企业集团财务公司法人机构，金融许可证机构编码 L0205H231000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0209h335050001
+    name: "福建七匹狼集团财务有限公司"
+    short: "福建七匹狼集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0209H335050001
+    regulator: 泉州金融监管分局
+    region: 泉州
+    tier: mass
+    intro: >-
+      泉州的企业集团财务公司法人机构，金融许可证机构编码 L0209H335050001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0210h211000001
+    name: "天府清源控股集团财务有限责任公司"
+    short: "天府清源控股集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0210H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0210H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0211h211000001
+    name: "中国黄金集团财务有限公司"
+    short: "中国黄金集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0211H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0211H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0213h211000001
+    name: "物美商业财务有限责任公司"
+    short: "物美商业财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0213H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0213H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0215h243010001
+    name: "中联重科集团财务有限公司"
+    short: "中联重科集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0215H243010001
+    regulator: 湖南金融监管局
+    region: 湖南
+    tier: mass
+    intro: >-
+      湖南的企业集团财务公司法人机构，金融许可证机构编码 L0215H243010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0216h244010001
+    name: "广东省广晟财务有限公司"
+    short: "广东省广晟财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0216H244010001
+    regulator: 广东金融监管局
+    region: 广东
+    tier: mass
+    intro: >-
+      广东的企业集团财务公司法人机构，金融许可证机构编码 L0216H244010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0217h242010001
+    name: "湖北交投集团财务有限公司"
+    short: "湖北交投集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0217H242010001
+    regulator: 湖北金融监管局
+    region: 湖北
+    tier: mass
+    intro: >-
+      湖北的企业集团财务公司法人机构，金融许可证机构编码 L0217H242010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0219h211000001
+    name: "首钢集团财务有限公司"
+    short: "首钢集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0219H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0219H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0220h211000001
+    name: "北京金融街集团财务有限公司"
+    short: "北京金融街集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0220H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0220H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0221h337060001
+    name: "山东招金集团财务有限公司"
+    short: "山东招金集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0221H337060001
+    regulator: 烟台金融监管分局
+    region: 烟台
+    tier: mass
+    intro: >-
+      烟台的企业集团财务公司法人机构，金融许可证机构编码 L0221H337060001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0222h231000001
+    name: "上海外高桥集团财务有限公司"
+    short: "上海外高桥集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0222H231000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的企业集团财务公司法人机构，金融许可证机构编码 L0222H231000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0223h215010001
+    name: "内蒙古电力集团财务有限责任公司"
+    short: "内蒙古电力集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0223H215010001
+    regulator: 内蒙古金融监管局
+    region: 内蒙古
+    tier: mass
+    intro: >-
+      内蒙古的企业集团财务公司法人机构，金融许可证机构编码 L0223H215010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0224h315060001
+    name: "内蒙古伊泰财务有限公司"
+    short: "内蒙古伊泰财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0224H315060001
+    regulator: 鄂尔多斯金融监管分局
+    region: 鄂尔多斯
+    tier: mass
+    intro: >-
+      鄂尔多斯的企业集团财务公司法人机构，金融许可证机构编码 L0224H315060001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0225h211000001
+    name: "中国铁路财务有限责任公司"
+    short: "中国铁路财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0225H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0225H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0226h241010001
+    name: "天瑞集团财务有限责任公司"
+    short: "天瑞集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0226H241010001
+    regulator: 河南金融监管局
+    region: 河南
+    tier: mass
+    intro: >-
+      河南的企业集团财务公司法人机构，金融许可证机构编码 L0226H241010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0227h253010001
+    name: "云南昆钢集团财务有限公司"
+    short: "云南昆钢集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0227H253010001
+    regulator: 云南金融监管局
+    region: 云南
+    tier: mass
+    intro: >-
+      云南的企业集团财务公司法人机构，金融许可证机构编码 L0227H253010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0229h244010001
+    name: "粤海集团财务有限公司"
+    short: "粤海集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0229H244010001
+    regulator: 广东金融监管局
+    region: 广东
+    tier: mass
+    intro: >-
+      广东的企业集团财务公司法人机构，金融许可证机构编码 L0229H244010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0230h211000001
+    name: "中国电建集团财务有限责任公司"
+    short: "中国电建集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0230H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0230H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0231h237010001
+    name: "西王集团财务有限公司"
+    short: "西王集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0231H237010001
+    regulator: 山东金融监管局
+    region: 山东
+    tier: mass
+    intro: >-
+      山东的企业集团财务公司法人机构，金融许可证机构编码 L0231H237010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0232h332090001
+    name: "江苏悦达集团财务有限公司"
+    short: "江苏悦达集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0232H332090001
+    regulator: 盐城金融监管分局
+    region: 盐城
+    tier: mass
+    intro: >-
+      盐城的企业集团财务公司法人机构，金融许可证机构编码 L0232H332090001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0233h233010001
+    name: "物产中大集团财务有限公司"
+    short: "物产中大集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0233H233010001
+    regulator: 浙江金融监管局
+    region: 浙江
+    tier: mass
+    intro: >-
+      浙江的企业集团财务公司法人机构，金融许可证机构编码 L0233H233010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0235h253010001
+    name: "云南建投集团财务有限公司"
+    short: "云南建投集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0235H253010001
+    regulator: 云南金融监管局
+    region: 云南
+    tier: mass
+    intro: >-
+      云南的企业集团财务公司法人机构，金融许可证机构编码 L0235H253010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0236h213010001
+    name: "河钢集团财务有限公司"
+    short: "河钢集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0236H213010001
+    regulator: 河北金融监管局
+    region: 河北
+    tier: mass
+    intro: >-
+      河北的企业集团财务公司法人机构，金融许可证机构编码 L0236H213010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0237h262010001
+    name: "甘肃电投集团财务有限公司"
+    short: "甘肃电投集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0237H262010001
+    regulator: 甘肃金融监管局
+    region: 甘肃
+    tier: mass
+    intro: >-
+      甘肃的企业集团财务公司法人机构，金融许可证机构编码 L0237H262010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0238h264010001
+    name: "宝塔石化集团财务有限公司"
+    short: "宝塔石化集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0238H264010001
+    regulator: 宁夏金融监管局
+    region: 宁夏
+    tier: mass
+    intro: >-
+      宁夏的企业集团财务公司法人机构，金融许可证机构编码 L0238H264010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0239h211000001
+    name: "北京首农食品集团财务有限公司"
+    short: "北京首农食品集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0239H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0239H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0241h211000001
+    name: "联通集团财务有限公司"
+    short: "联通集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0241H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0241H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0242h341110001
+    name: "河南双汇集团财务有限公司"
+    short: "河南双汇集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0242H341110001
+    regulator: 漯河金融监管分局
+    region: 漯河
+    tier: mass
+    intro: >-
+      漯河的企业集团财务公司法人机构，金融许可证机构编码 L0242H341110001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0243h235020001
+    name: "厦门翔业集团财务有限公司"
+    short: "厦门翔业集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0243H235020001
+    regulator: 厦门金融监管局
+    region: 厦门
+    tier: mass
+    intro: >-
+      厦门的企业集团财务公司法人机构，金融许可证机构编码 L0243H235020001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0244h211000001
+    name: "新华联控股集团财务有限责任公司"
+    short: "新华联控股集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0244H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0244H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0245h244010001
+    name: "广州发展集团财务有限公司"
+    short: "广州发展集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0245H244010001
+    regulator: 广东金融监管局
+    region: 广东
+    tier: mass
+    intro: >-
+      广东的企业集团财务公司法人机构，金融许可证机构编码 L0245H244010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0246h232010001
+    name: "江苏凤凰出版传媒集团财务有限公司"
+    short: "江苏凤凰出版传媒集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0246H232010001
+    regulator: 江苏金融监管局
+    region: 江苏
+    tier: mass
+    intro: >-
+      江苏的企业集团财务公司法人机构，金融许可证机构编码 L0246H232010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0247h244030001
+    name: "顺丰控股集团财务有限公司"
+    short: "顺丰控股集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0247H244030001
+    regulator: 深圳金融监管局
+    region: 深圳
+    tier: mass
+    intro: >-
+      深圳的企业集团财务公司法人机构，金融许可证机构编码 L0247H244030001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0248h212000001
+    name: "天津医药集团财务有限公司"
+    short: "天津医药集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0248H212000001
+    regulator: 天津金融监管局
+    region: 天津
+    tier: mass
+    intro: >-
+      天津的企业集团财务公司法人机构，金融许可证机构编码 L0248H212000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0249h237020001
+    name: "青建集团财务有限责任公司"
+    short: "青建集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0249H237020001
+    regulator: 青岛金融监管局
+    region: 青岛
+    tier: mass
+    intro: >-
+      青岛的企业集团财务公司法人机构，金融许可证机构编码 L0249H237020001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0250h231000001
+    name: "上海文化广播影视集团财务有限公司"
+    short: "上海文化广播影视集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0250H231000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的企业集团财务公司法人机构，金融许可证机构编码 L0250H231000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0252h244010001
+    name: "广州汽车集团财务有限公司"
+    short: "广州汽车集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0252H244010001
+    regulator: 广东金融监管局
+    region: 广东
+    tier: mass
+    intro: >-
+      广东的企业集团财务公司法人机构，金融许可证机构编码 L0252H244010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0254h332070001
+    name: "连云港港口集团财务有限公司"
+    short: "连云港港口集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0254H332070001
+    regulator: 连云港金融监管分局
+    region: 连云港
+    tier: mass
+    intro: >-
+      连云港的企业集团财务公司法人机构，金融许可证机构编码 L0254H332070001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0255h261010001
+    name: "陕西投资集团财务有限责任公司"
+    short: "陕西投资集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0255H261010001
+    regulator: 陕西金融监管局
+    region: 陕西
+    tier: mass
+    intro: >-
+      陕西的企业集团财务公司法人机构，金融许可证机构编码 L0255H261010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0256h242010001
+    name: "三环集团财务有限公司"
+    short: "三环集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0256H242010001
+    regulator: 湖北金融监管局
+    region: 湖北
+    tier: mass
+    intro: >-
+      湖北的企业集团财务公司法人机构，金融许可证机构编码 L0256H242010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0257h231000001
+    name: "红星美凯龙家居集团财务有限责任公司"
+    short: "红星美凯龙家居集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0257H231000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的企业集团财务公司法人机构，金融许可证机构编码 L0257H231000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0258h212000001
+    name: "天津能源集团财务有限公司"
+    short: "天津能源集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0258H212000001
+    regulator: 天津金融监管局
+    region: 天津
+    tier: mass
+    intro: >-
+      天津的企业集团财务公司法人机构，金融许可证机构编码 L0258H212000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0259h233010001
+    name: "杭州锦江集团财务有限责任公司"
+    short: "杭州锦江集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0259H233010001
+    regulator: 浙江金融监管局
+    region: 浙江
+    tier: mass
+    intro: >-
+      浙江的企业集团财务公司法人机构，金融许可证机构编码 L0259H233010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0260h231000001
+    name: "东方国际集团财务有限公司"
+    short: "东方国际集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0260H231000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的企业集团财务公司法人机构，金融许可证机构编码 L0260H231000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0261h233030001
+    name: "正泰集团财务有限公司"
+    short: "正泰集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0261H233030001
+    regulator: 温州金融监管分局
+    region: 温州
+    tier: mass
+    intro: >-
+      温州的企业集团财务公司法人机构，金融许可证机构编码 L0261H233030001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0262h211000001
+    name: "国新集团财务有限责任公司"
+    short: "国新集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0262H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0262H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0263h231000001
+    name: "商飞集团财务有限责任公司"
+    short: "商飞集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0263H231000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的企业集团财务公司法人机构，金融许可证机构编码 L0263H231000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0264h265010001
+    name: "金风科技集团财务有限公司"
+    short: "金风科技集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0264H265010001
+    regulator: 新疆金融监管局
+    region: 新疆
+    tier: mass
+    intro: >-
+      新疆的企业集团财务公司法人机构，金融许可证机构编码 L0264H265010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0265h365230001
+    name: "特变电工集团财务有限公司"
+    short: "特变电工集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0265H365230001
+    regulator: 昌吉金融监管分局
+    region: 昌吉
+    tier: mass
+    intro: >-
+      昌吉的企业集团财务公司法人机构，金融许可证机构编码 L0265H365230001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0266h211000001
+    name: "中国航发集团财务有限公司"
+    short: "中国航发集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0266H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0266H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0267h344530001
+    name: "广东温氏集团财务有限公司"
+    short: "广东温氏集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0267H344530001
+    regulator: 云浮金融监管分局
+    region: 云浮
+    tier: mass
+    intro: >-
+      云浮的企业集团财务公司法人机构，金融许可证机构编码 L0267H344530001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0268h236010001
+    name: "江西省交通投资集团财务有限公司"
+    short: "江西省交通投资集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0268H236010001
+    regulator: 江西金融监管局
+    region: 江西
+    tier: mass
+    intro: >-
+      江西的企业集团财务公司法人机构，金融许可证机构编码 L0268H236010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0269h211000001
+    name: "中国电信集团财务有限公司"
+    short: "中国电信集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0269H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0269H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0271h235010001
+    name: "福建省港口集团财务有限公司"
+    short: "福建省港口集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0271H235010001
+    regulator: 福建金融监管局
+    region: 福建
+    tier: mass
+    intro: >-
+      福建的企业集团财务公司法人机构，金融许可证机构编码 L0271H235010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0272h244010001
+    name: "广东省农垦集团财务有限公司"
+    short: "广东省农垦集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0272H244010001
+    regulator: 广东金融监管局
+    region: 广东
+    tier: mass
+    intro: >-
+      广东的企业集团财务公司法人机构，金融许可证机构编码 L0272H244010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0273h231000001
+    name: "上海城投集团财务有限公司"
+    short: "上海城投集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0273H231000001
+    regulator: 上海金融监管局
+    region: 上海
+    tier: mass
+    intro: >-
+      上海的企业集团财务公司法人机构，金融许可证机构编码 L0273H231000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0274h233010001
+    name: "传化集团财务有限公司"
+    short: "传化集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0274H233010001
+    regulator: 浙江金融监管局
+    region: 浙江
+    tier: mass
+    intro: >-
+      浙江的企业集团财务公司法人机构，金融许可证机构编码 L0274H233010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0275h237010001
+    name: "浪潮集团财务有限公司"
+    short: "浪潮集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0275H237010001
+    regulator: 山东金融监管局
+    region: 山东
+    tier: mass
+    intro: >-
+      山东的企业集团财务公司法人机构，金融许可证机构编码 L0275H237010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0277h237010001
+    name: "华泰集团财务有限公司"
+    short: "华泰集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0277H237010001
+    regulator: 山东金融监管局
+    region: 山东
+    tier: mass
+    intro: >-
+      山东的企业集团财务公司法人机构，金融许可证机构编码 L0277H237010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0278h244010001
+    name: "广州港集团财务有限公司"
+    short: "广州港集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0278H244010001
+    regulator: 广东金融监管局
+    region: 广东
+    tier: mass
+    intro: >-
+      广东的企业集团财务公司法人机构，金融许可证机构编码 L0278H244010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0279h211000001
+    name: "中储粮集团财务有限公司"
+    short: "中储粮集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0279H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0279H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0280h223010001
+    name: "一重集团财务有限公司"
+    short: "一重集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0280H223010001
+    regulator: 黑龙江金融监管局
+    region: 黑龙江
+    tier: mass
+    intro: >-
+      黑龙江的企业集团财务公司法人机构，金融许可证机构编码 L0280H223010001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0282h211000001
+    name: "新兴际华集团财务有限公司"
+    short: "新兴际华集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0282H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0282H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0283h337170001
+    name: "山东东明石化集团财务有限公司"
+    short: "山东东明石化集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0283H337170001
+    regulator: 菏泽金融监管分局
+    region: 菏泽
+    tier: mass
+    intro: >-
+      菏泽的企业集团财务公司法人机构，金融许可证机构编码 L0283H337170001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0284h211000001
+    name: "中国融通集团财务有限责任公司"
+    short: "中国融通集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0284H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0284H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0285h211000001
+    name: "通号集团财务有限公司"
+    short: "通号集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0285H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0285H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: rk-l0287h211000001
+    name: "中国物流集团财务有限公司"
+    short: "中国物流集团财务"
+    category: nonbank
+    type: finance-company
+    license_code: L0287H211000001
+    regulator: 北京金融监管局
+    region: 北京
+    tier: mass
+    intro: >-
+      北京的企业集团财务公司法人机构，金融许可证机构编码 L0287H211000001。本条目为监管总局法人名单的名册级导入，未逐一核实官网与经营情况。
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }

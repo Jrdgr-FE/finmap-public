@@ -1,0 +1,387 @@
+---
+import Base from "../../layouts/Base.astro";
+import VentureCard from "../../components/VentureCard.astro";
+import VentureTimeline from "../../components/VentureTimeline.astro";
+import "../../styles/ventures.css";
+import "../../styles/mapping.css";
+import {
+  getTracks,
+  getVentures,
+  getMemberships,
+  venturesForSegment,
+  getTimeline,
+  splitSegmentName,
+  segmentSlot,
+  getRelations,
+} from "../../lib/ventures";
+import type { Track } from "../../lib/ventures";
+
+export function getStaticPaths() {
+  return getTracks().map((track) => ({
+    params: { track: track.id },
+    props: { track },
+  }));
+}
+
+interface Props {
+  track: Track;
+}
+
+const { track } = Astro.props;
+const allTracks = getTracks();
+const allCompanies = new Map(getVentures().map((c) => [c.id, c]));
+const companies = venturesForSegment(track.id).sort((a, b) =>
+  a.name.localeCompare(b.name, "zh-CN"),
+);
+const cnCount = companies.filter((c) => c.region === "cn").length;
+const globalCount = companies.length - cnCount;
+const crossCompanies = companies.filter((c) => getMemberships(c).length > 1);
+const ids = new Set(companies.map((c) => c.id));
+const timeline = getTimeline((c) =>
+  getMemberships(c).some((m) => m.track === track.id),
+);
+const relations = getRelations().filter(
+  (r) => ids.has(r.from) || ids.has(r.to),
+);
+const relationLabels: Record<string, string> = {
+  supplier: "供应 →",
+  customer: "采购自 →",
+  partner: "合作 ↔",
+  investor: "投资 →",
+  subsidiary: "母子公司 →",
+};
+---
+
+<Base
+  title={`${track.name} · 产业链图谱`}
+  description={track.desc}
+  current="ventures"
+>
+  <div class="wrap page" data-track-page={track.id}>
+    <nav class="crumbs" aria-label="位置">
+      <a href="/">首页</a>
+      <span class="sep">/</span>
+      <a href="/ventures/">产业图谱</a>
+      <span class="sep">/</span>
+      <span aria-current="page">{track.name}</span>
+    </nav>
+
+    <section class="panel profile" data-cat="venture">
+      <div class="profile-top">
+        <div class="profile-title">
+          <h1>{track.name}</h1>
+        </div>
+        <div class="actions">
+          {(track.id === "robot-parts" || track.id === "embodied") && (
+            <a class="btn" href="/ventures/dexterity/">
+              灵巧操作专题 →
+            </a>
+          )}
+          <a class="btn" href={`/ventures/?track=${track.id}`}>
+            在总图谱中筛选
+          </a>
+        </div>
+      </div>
+      <p class="intro">{track.desc}</p>
+      <div class="profile-stats">
+        <div>
+          <b class="num">{companies.length}</b>赛道公司
+        </div>
+        <div>
+          <b class="num">{cnCount}</b>国内公司
+        </div>
+        <div>
+          <b class="num">{globalCount}</b>海外公司
+        </div>
+        <div>
+          <b class="num">{track.segments.length}</b>产业链环节
+        </div>
+        <div>
+          <b class="num">{crossCompanies.length}</b>跨环节布局
+        </div>
+      </div>
+    </section>
+
+    <div class="panel" style="margin-top:var(--sp-4)">
+      <div class="toolbar">
+        <div class="map-filter-top">
+          <label class="filter-input map-search-box">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="m20 20-3.5-3.5"></path>
+            </svg>
+            <input
+              type="search"
+              id="track-query"
+              placeholder={`在「${track.name}」中搜索公司、产品型号或标签…`}
+              autocomplete="off"
+            />
+          </label>
+
+          <div class="map-region-group" role="group" aria-label="地区筛选">
+            <button
+              type="button"
+              class="map-region-btn is-active"
+              data-track-region=""
+            >
+              全部 <span class="n">{companies.length}</span>
+            </button>
+            <button type="button" class="map-region-btn" data-track-region="cn">
+              国内 <span class="n">{cnCount}</span>
+            </button>
+            <button
+              type="button"
+              class="map-region-btn"
+              data-track-region="global"
+            >
+              海外 <span class="n">{globalCount}</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="chips" role="tablist" aria-label="产业链环节">
+          <button
+            type="button"
+            class="chip is-on"
+            data-stage-filter=""
+          >
+            全部环节 <span class="n">{companies.length}</span>
+          </button>
+          {track.segments.map((s) => {
+            const members = venturesForSegment(track.id, s.id);
+            const name = splitSegmentName(s.name);
+            return (
+              <button
+                type="button"
+                class="chip"
+                data-stage-filter={s.id}
+              >
+                {name.name} <span class="n">{members.length}</span>
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+
+    <div id="track-bands">
+      {track.segments.map((s) => {
+        const members = venturesForSegment(track.id, s.id).sort((a, b) =>
+          a.name.localeCompare(b.name, "zh-CN"),
+        );
+        const sCn = members.filter((c) => c.region === "cn").length;
+        const name = splitSegmentName(s.name);
+        const slot = segmentSlot(track.id, s.id);
+        return (
+          <section
+            class="panel"
+            id={`seg-${s.id}`}
+            data-track-band={s.id}
+            data-slot={slot}
+            style="margin-top:var(--sp-4)"
+          >
+            <div class="panel-head">
+              <h2>{name.name}</h2>
+              <span class="hint">
+                {name.stage ? `${name.stage} · ` : ""}
+                {s.desc}
+              </span>
+              <span class="right">
+                <span class="mono" data-band-count>{members.length} 家</span>
+                <span class="muted">（国 {sCn} / 外 {members.length - sCn}）</span>
+              </span>
+            </div>
+
+            {members.length > 0 ? (
+              <div class="v-list">
+                {members.map((c) => (
+                  <VentureCard
+                    venture={c}
+                    currentTrack={track.id}
+                    currentSegment={s.id}
+                  />
+                ))}
+              </div>
+            ) : (
+              <p class="panel-body muted">此环节公司样本待补充。</p>
+            )}
+          </section>
+        );
+      })}
+    </div>
+
+    <div id="track-empty" class="panel search-empty" style="margin-top:var(--sp-4)" hidden>
+      当前筛选下没有匹配的公司。
+    </div>
+
+    {relations.length > 0 && (
+      <section class="panel" style="margin-top:var(--sp-4)">
+        <div class="panel-head">
+          <h2>本赛道已披露公司关系</h2>
+          <span class="right">{relations.length} 条</span>
+        </div>
+        <ul class="map-relations">
+          {relations.map((r) => (
+            <li>
+              <div class="map-relation-edge">
+                <a class="link" href={`/venture/${r.from}/`}>
+                  {allCompanies.get(r.from)?.name || r.from}
+                </a>
+                <span class="badge badge-plain">{relationLabels[r.type] || r.type}</span>
+                <a class="link" href={`/venture/${r.to}/`}>
+                  {allCompanies.get(r.to)?.name || r.to}
+                </a>
+                <time class="mono map-rel-date">{r.date}</time>
+              </div>
+              <p>{r.title}</p>
+              <small>
+                {r.sources.map((s) => (
+                  <a href={s.url} target="_blank" rel="noopener noreferrer">
+                    {s.title} ↗
+                  </a>
+                ))}
+              </small>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {timeline.length > 0 && (
+      <section class="panel" style="margin-top:var(--sp-4)">
+        <div class="panel-head">
+          <h2>已整理事件时间线</h2>
+          <span class="right">{timeline.length} 条</span>
+        </div>
+        <VentureTimeline events={timeline.slice(0, 40)} filter />
+      </section>
+    )}
+
+    <section class="panel" style="margin-top:var(--sp-4)">
+      <div class="panel-head">
+        <h2>切换其他赛道</h2>
+        <span class="right">
+          <a href="/ventures/">返回全部赛道 →</a>
+        </span>
+      </div>
+      <div class="panel-body chips">
+        {allTracks.map((t) => (
+          <a
+            class:list={["chip", t.id === track.id && "is-on"]}
+            href={`/ventures/${t.id}/`}
+          >
+            {t.name}
+          </a>
+        ))}
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const page = document.querySelector("[data-track-page]");
+    if (page) {
+      const stageTabs = [
+        ...page.querySelectorAll<HTMLButtonElement>("[data-stage-filter]"),
+      ];
+      const regionBtns = [
+        ...page.querySelectorAll<HTMLButtonElement>("[data-track-region]"),
+      ];
+      const queryInput = document.getElementById(
+        "track-query",
+      ) as HTMLInputElement | null;
+      const bands = [
+        ...page.querySelectorAll<HTMLElement>("[data-track-band]"),
+      ];
+      const emptyEl = document.getElementById("track-empty");
+
+      let activeStage = "";
+      let activeRegion = "";
+
+      function saveReturnState() {
+        try {
+          sessionStorage.setItem(
+            "finmap-return-url",
+            location.pathname + location.search,
+          );
+        } catch {
+          // ignore
+        }
+      }
+
+      function filterTrackPage() {
+        const q = (queryInput?.value || "").trim().toLowerCase();
+        let totalVisible = 0;
+
+        bands.forEach((band) => {
+          const segId = band.dataset.trackBand || "";
+          const stageMatch = !activeStage || activeStage === segId;
+          const cards = [
+            ...band.querySelectorAll<HTMLElement>(".v-card[data-region]"),
+          ];
+          let bandVisible = 0;
+          cards.forEach((card) => {
+            const regMatch =
+              !activeRegion || card.dataset.region === activeRegion;
+            const textMatch =
+              !q ||
+              q
+                .split(/\s+/)
+                .every((term) => (card.dataset.search || "").includes(term));
+            const show = stageMatch && regMatch && textMatch;
+            card.hidden = !show;
+            if (show) bandVisible++;
+          });
+          const countEl = band.querySelector("[data-band-count]");
+          if (countEl) countEl.textContent = `${bandVisible} 家`;
+          band.hidden =
+            !stageMatch || ((!!activeRegion || !!q) && bandVisible === 0);
+          totalVisible += bandVisible;
+        });
+
+        stageTabs.forEach((tab) => {
+          tab.classList.toggle(
+            "is-on",
+            (tab.dataset.stageFilter || "") === activeStage,
+          );
+        });
+        regionBtns.forEach((btn) => {
+          btn.classList.toggle(
+            "is-active",
+            (btn.dataset.trackRegion || "") === activeRegion,
+          );
+        });
+        if (emptyEl) emptyEl.hidden = totalVisible > 0;
+      }
+
+      stageTabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          activeStage = tab.dataset.stageFilter || "";
+          filterTrackPage();
+        });
+      });
+
+      regionBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          activeRegion = btn.dataset.trackRegion || "";
+          filterTrackPage();
+        });
+      });
+
+      queryInput?.addEventListener("input", filterTrackPage);
+
+      page
+        .querySelectorAll<HTMLAnchorElement>("[data-company-link]")
+        .forEach((a) => {
+          a.addEventListener("click", saveReturnState);
+        });
+      saveReturnState();
+    }
+  </script>
+</Base>

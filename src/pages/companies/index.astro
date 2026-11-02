@@ -1,0 +1,189 @@
+---
+import Base from "../../layouts/Base.astro";
+import Icon from "../../components/Icon.astro";
+import {
+  getVentures,
+  getTracks,
+  getMemberships,
+  getTrack,
+  getSegment,
+} from "../../lib/ventures";
+import { getMonitorSnapshot } from "../../lib/monitor";
+import { initial, hue } from "../../lib/ui";
+import { sortEvents } from "../../lib/monitor-query";
+import "../../styles/companies.css";
+const snapshot = getMonitorSnapshot();
+const recentEvents = sortEvents(snapshot.events).filter((e) => e.publishedAt);
+const rows = getVentures().map((c) => ({
+  id: c.id,
+  name: c.name,
+  en: c.en ?? "",
+  intro: c.intro,
+  country: c.country ?? (c.region === "cn" ? "中国" : "海外"),
+  region: c.region,
+  tags: c.tags ?? [],
+  aliases: c.aliases ?? [],
+  memberships: getMemberships(c),
+  trackName: getTrack(c.track)?.name ?? c.track,
+  segmentName: (getSegment(c.track, c.segment)?.name ?? c.segment)
+    .split("·")
+    .at(-1),
+  latest:
+    recentEvents.find((e) => e.companyId === c.id && e.role === "subject") ??
+    null,
+}));
+const data = JSON.stringify(rows).replaceAll("<", "\\u003c");
+const cn = rows.filter((c) => c.region === "cn").length;
+---
+
+<Base
+  title="公司库"
+  current="companies"
+  description="发现并关注国内与全球硬科技公司，从产业定位、公开资料到最新动态，建立自己的研究清单。"
+>
+  <div class="wrap page company-library" data-company-library>
+    <div class="page-head">
+      <div>
+        <p class="page-kicker">COMPANY UNIVERSE</p>
+        <h1>
+          公司库<span class="count">{rows.length}</span>
+        </h1>
+        <p>从产业位置发现公司，把持续关注留给你的研究清单。</p>
+      </div>
+      <div class="actions">
+        <a class="btn" href="/ventures/">
+          <Icon name="network" />
+          查看产业地图
+        </a>
+        <button class="btn" data-export-companies>
+          <Icon name="download" />
+          导出当前列表
+        </button>
+      </div>
+    </div>
+    <div class="library-overview">
+      <div>
+        <strong>{rows.length}</strong>
+        <span>已收录公司</span>
+      </div>
+      <div>
+        <strong>{cn}</strong>
+        <span>国内公司</span>
+      </div>
+      <div>
+        <strong>{rows.length - cn}</strong>
+        <span>海外公司</span>
+      </div>
+      <div class="library-watch-stat">
+        <Icon name="star" />
+        <strong data-watched-total>0</strong>
+        <span>我的关注</span>
+        <a href="/?scope=watching">查看动态 →</a>
+      </div>
+    </div>
+    <div class="panel">
+      <form class="library-toolbar" data-company-filters role="search">
+        <label class="library-search">
+          <Icon name="search" />
+          <input
+            name="q"
+            type="search"
+            aria-label="搜索公司库"
+            placeholder="公司名称、产品、技术方向…"
+            autocomplete="off"
+          />
+        </label>
+        <select name="track" aria-label="公司赛道">
+          <option value="">全部赛道</option>
+          {getTracks().map((t) => (
+            <option value={t.id}>{t.name}</option>
+          ))}
+        </select>
+        <select name="region" aria-label="公司地区">
+          <option value="">国内与海外</option>
+          <option value="cn">国内</option>
+          <option value="global">海外</option>
+        </select>
+        <button type="button" data-only-watched aria-pressed="false">
+          <Icon name="star" />
+          只看关注
+        </button>
+      </form>
+      <div class="library-result">
+        <span data-company-count>{rows.length} 家公司</span>
+        <span>按最近公开动态排序 · 关注状态保存在本机</span>
+      </div>
+      <div class="library-table-scroll">
+        <table class="company-table">
+          <thead>
+            <tr>
+              <th>公司 / 研究方向</th>
+              <th>产业位置</th>
+              <th>地区</th>
+              <th>最近动态</th>
+              <th>
+                <span class="sr-only">关注</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody data-company-rows>
+            {rows.slice(0, 30).map((c) => (
+              <tr>
+                <td>
+                  <a class="company-identity" href={"/venture/" + c.id + "/"}>
+                    <span class="entity-avatar" data-hue={hue(c.id)}>
+                      {initial(c.name)}
+                    </span>
+                    <span>
+                      <strong>{c.name}</strong>
+                      <small>{c.en}</small>
+                    </span>
+                  </a>
+                  <p>{c.intro}</p>
+                </td>
+                <td>
+                  <span>{c.trackName}</span>
+                  <small>{c.segmentName}</small>
+                </td>
+                <td>{c.country}</td>
+                <td>
+                  <a href={"/?company=" + c.id + "&days=0"}>
+                    {c.latest?.title ?? "查看公司动态"}
+                  </a>
+                </td>
+                <td>
+                  <button
+                    data-library-watch={c.id}
+                    aria-label={"关注" + c.name}
+                  >
+                    <Icon name="plus" />
+                  </button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div class="library-empty" data-library-empty hidden>
+        <Icon name="search" />
+        <h2>没有匹配的公司</h2>
+        <p>调整关键词和筛选条件，或从全部公司开始。</p>
+        <button class="btn" data-library-reset>
+          清除筛选
+        </button>
+      </div>
+      <div class="library-pagination">
+        <span data-library-page></span>
+        <div>
+          <button data-library-prev>上一页</button>
+          <button data-library-next>下一页</button>
+        </div>
+      </div>
+    </div>
+    <p class="library-note" data-library-status>
+      资料库持续扩展，不代表完整行业名录。公开动态有来源与抓取边界。
+    </p>
+    <script type="application/json" data-company-data set:html={data}></script>
+  </div>
+</Base>
+<script src="../../scripts/companies.ts"></script>

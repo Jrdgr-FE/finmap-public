@@ -1,0 +1,982 @@
+note: >
+  本文件收录中国境内两类持牌保险机构：再保险公司（含中资/外资法人再保险与外国再保险公司在华分公司）和保险资产管理公司，共 50 家。名单依据国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）与同局《外国再保险公司分公司名单》（截至2024年12月31日）逐条核对，机构编码取自官方名单；金融监管总局 2026-08-14 披露的截至2025年末家数（保险机构法人 239 家、外国再保险公司分公司 8 家）与上述两份名单一致，年内无增减。保险资管口径另与中国银行保险资产管理业协会《中国保险资产管理业
+  发展报告（2025）》交叉核对：该报告按「35 家保险资产管理公司」统计，即名单内 34 家保险资产管理公司
+  加长江养老保险股份有限公司（2023 年变更业务范围后按保险资产管理公司管理），本文件按 35 家收录。外国再保险公司在华分支均为分公司、不是独立法人，其法人母体写在各条 intro 中；本文件不重复收录
+  中国再保险（集团）股份有限公司等保险集团（控股）公司。
+sources:
+  - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+  - { title: "国家金融监督管理总局 外国再保险公司分公司名单（截至2024年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/4fa9ae7e292145198b4609d126fffce8.pdf", date: "2024-12-31" }
+  - { title: "中国银行保险资产管理业协会《中国保险资产管理业发展报告（2025）》（截至2024年末共35家保险资产管理公司）", url: "https://www.eeo.com.cn/2025/1124/768679.shtml", date: "2025-11-24" }
+entities:
+  # ── 再保险公司：境内法人主体 ─────────────────────────────
+  - id: insr-china-re-pnc
+    name: 中国财产再保险有限责任公司
+    short: 中再产险
+    category: insurance
+    type: reinsurer
+    license_code: "000008"
+    regulator: 国家金融监督管理总局
+    founded: 2003
+    listed: []
+    website: https://www.cpcr.com.cn
+    intro: >
+      中国再保险（集团）股份有限公司的全资子公司，2003 年 12 月 15 日成立，是境内唯一专门经营财产再保险业务的法人主体，承担国内财险分保的主渠道职能。
+    business: [财产再保险, 巨灾风险研究, 农业与巨灾再保险, 再保险定价工具]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中再产险官网 · 公司简介（成立于2003年12月15日）", url: "https://www.cpcr.com.cn/", date: "2026-09-30" }
+
+  - id: insr-china-life-re
+    name: 中国人寿再保险有限责任公司
+    short: 中再寿险
+    category: insurance
+    type: reinsurer
+    license_code: "000009"
+    regulator: 国家金融监督管理总局
+    founded: 2003
+    listed: []
+    website: https://www.chinarelife.cn
+    intro: >
+      中国再保险（集团）股份有限公司旗下专业子公司，2003 年 12 月经国务院同意、原中国保监会批准成立，是境内唯一专门经营人寿再保险业务的法人公司。
+    business: [人身再保险, 医疗保险再保, 长寿风险, 精算与产品开发]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中再寿险官网 · 公司概况（2003年12月成立）", url: "https://www.chinarelife.cn/chinarelife/gywm/gsgk/index.html", date: "2026-09-30" }
+
+  - id: insr-axa-intl-re-shanghai
+    name: 安盛环球再保险（上海）有限公司
+    short: 安盛环球再保险
+    category: insurance
+    type: reinsurer
+    license_code: "000147"
+    regulator: 国家金融监督管理总局
+    founded: 2011
+    listed: []
+    intro: >
+      2011 年 3 月成立、注册于上海的外资再保险法人公司，原名信利再保险（中国）有限公司，
+      2024 年 10 月 14 日经国家金融监督管理总局批准更名为现名，股东为安盛保险（百慕达）有限公司（100%），最终控制人为法国安盛集团（AXA S.A.），2020 年 6 月经批准将经营范围由直接保险变更为再保险。
+    business: [非寿险再保险, 财产再保险, 保险资金运用]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "AXA 安盛官网 · 安盛环球再保险（上海）有限公司（成立于2011年3月；2024年10月14日获批更名）", url: "https://www.axa.com.hk/cn/about-xl-reinsurance-china-company-limited", date: "2026-09-30" }
+      - { title: "美通社 · 安盛保险宣布「信利再中国」更名为「安盛环球再保险」（2024年10月16日完成工商变更登记）", url: "https://www.prnewswire.com/apac/zh/news-releases/-302278986.html", date: "2024-10-17" }
+
+  - id: insr-taiping-re-china
+    name: 太平再保险（中国）有限公司
+    short: 太平再（中国）
+    category: insurance
+    type: reinsurer
+    license_code: "000201"
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    listed: []
+    website: https://cntpre.cntaiping.com/
+    intro: >
+      中国太平保险集团旗下的境内专业再保险法人子公司，2016 年成立，在上海设有分公司与再保险运营中心。
+    business: [财产再保险, 人身再保险, 跨境再保险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "太平再保险（中国）官网 · 公司简介（成立于2016年）", url: "https://cntpre.cntaiping.com/", date: "2026-09-30" }
+
+  - id: insr-qianhai-re
+    name: 前海再保险股份有限公司
+    short: 前海再
+    category: insurance
+    type: reinsurer
+    license_code: "000215"
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    listed: []
+    website: https://www.qianhaire.com
+    intro: >
+      2016 年 12 月 5 日在深圳前海成立，注册资本 30 亿元人民币，是国内首家国有资本控股的
+      混合所有制再保险公司，业务以财产与意外险再保险为主，并设有前海再保险研究院。
+    business: [财产再保险, 意外险再保险, 风险管理, 再保险研究]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "前海再保险官网 · 关于我们（2016年12月5日在深圳前海成立，注册资本30亿元）", url: "https://www.qianhaire.com/about-us.html", date: "2026-09-30" }
+
+  - id: insr-picc-re
+    name: 人保再保险股份有限公司
+    short: 人保再保
+    category: insurance
+    type: reinsurer
+    license_code: "000222"
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    listed: []
+    website: https://www.piccre.com.cn
+    intro: >
+      2017 年 2 月成立的专业再保险公司，注册资本 59.6 亿元，由中国人民保险集团股份有限公司
+      与中国人民财产保险股份有限公司共同持有股权，是中国人保体系内的再保险法人平台。
+    business: [财产再保险, 人身再保险, 巨灾风险, 国际再保险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "人保再保险官网（成立于2017年2月，注册资本59.6亿元）", url: "https://www.piccre.com.cn/", date: "2026-09-30" }
+
+  - id: insr-china-agri-re
+    name: 中国农业再保险股份有限公司
+    short: 中国农再
+    category: insurance
+    type: reinsurer
+    license_code: "000248"
+    regulator: 国家金融监督管理总局
+    founded: 2020
+    listed: []
+    website: https://www.china-agrore.com
+    intro: >
+      2019 年 11 月由国务院批复设立、2020 年 12 月底获批开业的政策性定位再保险公司，承担财政支持的农业保险大灾风险分散机制职能，主要对经办农业保险的保险公司提供再保险保障。
+    business: [农业再保险, 大灾风险分散, 农业风险管理, 农再研究]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中国农再官网 · 公司简介（2019年11月国务院正式批复设立，2020年12月底获批开业）", url: "https://www.china-agrore.com/abouts4.html", date: "2026-09-30" }
+
+  # ── 再保险公司：外国再保险公司在华分公司（均非独立法人） ──
+  - id: insr-swiss-re-beijing
+    name: 瑞士再保险股份有限公司北京分公司
+    short: 瑞再北分
+    category: insurance
+    type: reinsurer
+    license_code: "000058"
+    regulator: 国家金融监督管理总局
+    founded: 2003
+    listed: []
+    intro: >
+      瑞士再保险股份有限公司（Swiss Reinsurance Company Ltd）在北京设立的分公司，不是独立法人，
+      2003 年 9 月 27 日正式成立，是中国保险市场对外开放后首批进入中国市场的外资再保险公司之一，在全国经营产险与寿险再保险业务。
+    business: [财产再保险, 人身再保险, 巨灾风险模型, 保险科技]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 外国再保险公司分公司名单（截至2024年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/4fa9ae7e292145198b4609d126fffce8.pdf", date: "2024-12-31" }
+      - { title: "新浪财经《瑞再与中国市场的20年》（2003年9月27日，瑞士再保险股份有限公司北京分公司正式成立）", url: "https://finance.sina.com.cn/esg/2023-09-27/doc-imzpeaxc3769490.shtml", date: "2023-09-27" }
+
+  - id: insr-munich-re-beijing
+    name: 慕尼黑再保险公司北京分公司
+    short: 慕再北分
+    category: insurance
+    type: reinsurer
+    license_code: "000059"
+    regulator: 国家金融监督管理总局
+    founded: 2003
+    listed: []
+    website: https://www.munichre.com
+    intro: >
+      慕尼黑再保险公司（Munich Reinsurance Company）在北京设立的分公司，不是独立法人，
+      2003 年成为首家获得中国外资再保险经营许可的机构，在上海设有代表处并在台北设有联络处。
+    business: [财产再保险, 人身再保险, 巨灾风险研究]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 外国再保险公司分公司名单（截至2024年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/4fa9ae7e292145198b4609d126fffce8.pdf", date: "2024-12-31" }
+      - { title: "Munich Re 官网 · Greater China About us（2003年北京分公司成为首家获得中国外资再保险牌照的机构）", url: "https://www.munichre.com/en/company/about-munich-re/munich-re-worldwide/greater-china/about-us.item-ea29e63f8c56c76faa0442fe64ecafa3.html", date: "2026-09-30" }
+
+  - id: insr-gen-re-shanghai
+    name: 德国通用再保险股份公司上海分公司
+    short: 通用再上海
+    category: insurance
+    type: reinsurer
+    license_code: "000066"
+    regulator: 国家金融监督管理总局
+    founded: 2004
+    listed: []
+    website: https://www.genre.com
+    intro: >
+      德国通用再保险股份公司（General Reinsurance AG）在上海设立的分公司，不是独立法人，
+      2004 年 7 月 30 日成立，营运资金 4.38714 亿元人民币，经营人寿与非人寿再保险业务。
+    business: [财产再保险, 人身再保险, 转分保]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 外国再保险公司分公司名单（截至2024年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/4fa9ae7e292145198b4609d126fffce8.pdf", date: "2024-12-31" }
+      - { title: "德国通用再保险股份公司上海分公司 2024年年度信息披露报告（成立时间 2004年7月30日；营运资金 438,714,000 元）", url: "https://www.genre.com/content/dam/generalreinsuranceprogram/documents/gen-re-shanghai-annual-information-disclosure-report-24-cn.pdf", date: "2024-12-31" }
+
+  - id: insr-scor-beijing
+    name: 法国再保险公司北京分公司
+    short: 法再北分
+    category: insurance
+    type: reinsurer
+    license_code: "000125"
+    regulator: 国家金融监督管理总局
+    founded: null
+    listed: []
+    website: https://www.scor.com
+    intro: >
+      法国再保险公司（SCOR SE）在北京设立的分公司，不是独立法人，总公司对其出资，经营人寿与非人寿再保险、转分保及国际再保险业务，总经理任职资格自 2009 年 7 月起获监管核准。
+    business: [财产再保险, 人身再保险, 转分保, 国际再保险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 外国再保险公司分公司名单（截至2024年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/4fa9ae7e292145198b4609d126fffce8.pdf", date: "2024-12-31" }
+      - { title: "法国再保险公司北京分公司 偿付能力季度报告摘要（SCOR 官网；公司为法国再保险公司的分公司）", url: "https://www.scor.com/en/file/24239/download?token=vi5cdB-q", date: "2019-03-31" }
+
+  - id: insr-hannover-re-shanghai
+    name: 汉诺威再保险股份公司上海分公司
+    short: 汉诺威再上海
+    category: insurance
+    type: reinsurer
+    license_code: "000128"
+    regulator: 国家金融监督管理总局
+    founded: 2008
+    listed: []
+    website: https://www.hannover-re.com
+    intro: >
+      汉诺威再保险股份公司（Hannover Rück SE）在上海设立的分公司，不是独立法人，
+      2008 年 3 月经原中国保监会批准成立，2008 年 5 月 19 日取得营业执照，经营人寿与非人寿再保险业务，母体持股 100%。
+    business: [人寿再保险, 非人寿再保险, 转分保]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 外国再保险公司分公司名单（截至2024年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/4fa9ae7e292145198b4609d126fffce8.pdf", date: "2024-12-31" }
+      - { title: "汉诺威再保险股份公司上海分公司 2024年第1季度偿付能力季度报告摘要（成立时间 2008年5月19日；开业时间二零零八年五月）", url: "https://assets.hannover-re.com/asset/533267266226/document_58c1kkind96u78ofndpg76jv78", date: "2024-03-31" }
+
+  - id: insr-rga-shanghai
+    name: RGA美国再保险公司上海分公司
+    short: RGA上海
+    category: insurance
+    type: reinsurer
+    license_code: "000182"
+    regulator: 国家金融监督管理总局
+    founded: 2014
+    listed: []
+    website: https://www.rgare.com
+    intro: >
+      RGA 美国再保险公司（RGA Reinsurance Company）在上海设立的分公司，不是独立法人，
+      2014 年 9 月 26 日成立，营运资金 3 亿元人民币，主要经营人身保险的再保险及咨询服务；母体隶属于在纽约证券交易所上市的美国再保险集团（Reinsurance Group of America, Incorporated）。
+    business: [人身再保险, 健康险再保险, 精算咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 外国再保险公司分公司名单（截至2024年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/4fa9ae7e292145198b4609d126fffce8.pdf", date: "2024-12-31" }
+      - { title: "RGA 官网 · RGA美国再保险公司上海分公司基本信息披露（成立时间 2014年9月26日，营运资金3亿元，系分公司、不是独立法人）", url: "https://www.rgare.com/docs/default-source/regulatory-documents/basic-information-202308.pdf", date: "2023-08-01" }
+
+  - id: insr-korean-re-shanghai
+    name: 大韩再保险公司上海分公司
+    short: 大韩再上海
+    category: insurance
+    type: reinsurer
+    license_code: "000245"
+    regulator: 国家金融监督管理总局
+    founded: 2020
+    listed: []
+    website: https://www.koreanre.co.kr
+    intro: >
+      大韩再保险公司（Korean Reinsurance Company）在上海设立的分公司，不是独立法人，
+      2020 年 1 月获批开业，营运资金 5 亿元人民币，经营人寿再保险与非人寿再保险业务；母体 1963 年成立、1969 年在韩国证券交易所上市，1997 年即在北京设立代表处。
+    business: [人寿再保险, 非人寿再保险, 跨境再保险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 外国再保险公司分公司名单（截至2024年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/4fa9ae7e292145198b4609d126fffce8.pdf", date: "2024-12-31" }
+      - { title: "中证网《大韩再保险盛春：中国再保险潜力大》（2020年1月大韩再保险上海分公司获批开业，营运资金5亿元）", url: "https://www.cs.com.cn/bx/202010/t20201029_6106150.html", date: "2020-10-29" }
+
+  - id: insr-mapfre-re-beijing
+    name: 曼福再保险公司北京分公司
+    short: 曼福再北分
+    category: insurance
+    type: reinsurer
+    license_code: "000263"
+    regulator: 国家金融监督管理总局
+    founded: 2024
+    listed: []
+    website: https://www.mapfrere.com
+    intro: >
+      曼福再保险公司（MAPFRE RE，母体为西班牙曼福保险集团 MAPFRE, S.A.）在北京设立的分公司，不是独立法人，2024 年 7 月 4 日经国家金融监督管理总局批复开业、2024 年 7 月 30 日成立，营运资金 5 亿元人民币，经营财产保险再保险、短期健康险与意外险再保险及人身保险再保险业务。
+    business: [财产再保险, 短期健康险再保险, 人身再保险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 外国再保险公司分公司名单（截至2024年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/4fa9ae7e292145198b4609d126fffce8.pdf", date: "2024-12-31" }
+      - { title: "曼福再保险公司北京分公司 2024年度信息披露报告（成立时间 2024年7月30日；营运资金5亿元；系分公司、不是独立法人）", url: "https://www.mapfrere.com/media/%E6%9B%BC%E7%A6%8F%E5%86%8D%E5%8C%97%E5%88%862024%E5%B9%B4%E5%BA%A6%E4%BF%A1%E6%81%AF%E6%8A%AB%E9%9C%B2%E6%8A%A5%E5%91%8A.pdf", date: "2025-04-28" }
+
+  # ── 保险资产管理公司（34 家） ─────────────────────────────
+  - id: insr-picc-am
+    name: 中国人保资产管理有限公司
+    short: 人保资产
+    category: asset-management
+    type: insurance-amc
+    license_code: "000003"
+    regulator: 国家金融监督管理总局
+    founded: 2003
+    listed: []
+    website: https://www.piccamc.com
+    intro: >
+      2003 年 7 月成立，系境内第一家保险资产管理公司，中国人民保险集团旗下全资子公司，受托管理集团内保险资金及第三方资金，并开展组合类保险资管产品与另类投资业务。
+    business: [保险资金运用, 组合类资管产品, 另类投资, 第三方资产管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "人保资产官网 · 公司简介（2003年7月成立，系境内第一家保险资产管理公司）", url: "https://www.piccamc.com/gsjj.html", date: "2026-09-30" }
+
+  - id: insr-china-life-am
+    name: 中国人寿资产管理有限公司
+    short: 国寿资产
+    category: asset-management
+    type: insurance-amc
+    license_code: "000006"
+    regulator: 国家金融监督管理总局
+    founded: 2003
+    listed: []
+    website: https://www.clamc.com
+    intro: >
+      中国人寿保险（集团）公司旗下的保险资产管理公司，2003 年成立，是国内管理资产规模最大的
+      保险资管机构之一，受托管理中国人寿系统保险资金并经营第三方资管业务。
+    business: [保险资金运用, 第三方资产管理, 组合类资管产品, 固收与权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "国寿资产官网 · 公司简介（2003年成立）", url: "https://www.clamc.com/channel/11002/index.html", date: "2026-09-30" }
+
+  - id: insr-huatai-am
+    name: 华泰资产管理有限公司
+    short: 华泰资产
+    category: asset-management
+    type: insurance-amc
+    license_code: "000081"
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    listed: []
+    website: https://www.htam.com.cn
+    intro: >
+      2005 年 1 月 18 日成立，华泰保险集团旗下，是《保险资产管理公司管理暂行规定》出台后
+      原中国保监会批准设立的第一家保险资产管理公司，业务覆盖银行保险委托投资、养老金受托管理和项目计划发行三大领域。
+    business: [银行保险委托投资, 养老金受托管理, 债权投资计划, 证券投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "华泰保险集团官网《同行二十载 一起向未来——庆祝华泰资产管理有限公司成立20周年》（2005年1月18日成立，是原保监会批准设立的第一家保险资产管理公司）", url: "https://www.ehuatai.com/news/detail/15.html", date: "2025-01-18" }
+
+  - id: insr-ping-an-am
+    name: 平安资产管理有限责任公司
+    short: 平安资管
+    category: asset-management
+    type: insurance-amc
+    license_code: "000088"
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    listed: []
+    website: https://asset.pingan.com
+    intro: >
+      2005 年 5 月成立，前身是 1997 年设立的中国平安保险股份有限公司投资管理中心，注册资本 15 亿元，中国平安集团持股 100%，受托管理平安人寿、平安产险等集团保险资金并开展第三方资管与国际业务。
+    business: [保险资金运用, 第三方资产管理, 债权投资计划, 组合类资管产品]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中国平安官网 · 平安资产管理集团简介（成立于2005年5月）", url: "http://css2.pingan.com/about/cn/assets.jsp", date: "2026-09-30" }
+
+  - id: insr-china-re-am
+    name: 中再资产管理股份有限公司
+    short: 中再资产
+    category: asset-management
+    type: insurance-amc
+    license_code: "000089"
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    listed: []
+    website: https://www.cramc.cn
+    intro: >
+      经原中国保监会批准、由中国再保险（集团）股份有限公司发起，2005 年 2 月成立，是中国首批保险资产管理公司之一，业务涵盖组合管理、另类投资与第三方机构业务。
+    business: [保险资金运用, 组合管理, 另类投资, 第三方资产管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中再资产官网 · 公司简介（2005年2月成立，中国首批保险资产管理公司）", url: "https://www.cramc.cn/zhzzc/gywm/gsjj88/index.html", date: "2026-09-30" }
+
+  - id: insr-taikang-am
+    name: 泰康资产管理有限责任公司
+    short: 泰康资产
+    category: asset-management
+    type: insurance-amc
+    license_code: "000105"
+    regulator: 国家金融监督管理总局
+    founded: 2006
+    listed: []
+    website: https://www.taikangasset.cn
+    intro: >
+      2006 年成立，泰康保险集团旗下资产管理子公司，下设泰康资产管理（香港）、北京泰康投资管理
+      与泰康基金三家子公司，管理规模居国内保险资管机构前列，养老金管理规模在同业中领先。
+    business: [保险资金运用, 第三方资产管理, 养老金管理, 另类投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "新浪财经 · 泰康资产管理有限责任公司公司资料（成立时间 2006/2/21；公司网址 www.taikangasset.cn）", url: "http://finance.sina.com.cn/fund/company/80061674.shtml", date: "2026-09-30" }
+
+  - id: insr-cpic-am
+    name: 太平洋资产管理有限责任公司
+    short: 太保资产
+    category: asset-management
+    type: insurance-amc
+    license_code: "000114"
+    regulator: 国家金融监督管理总局
+    founded: 2006
+    listed: []
+    website: https://asset.cpic.com.cn
+    intro: >
+      2006 年 6 月经中国保监会批准成立，由中国太平洋保险（集团）股份有限公司控股，受托管理太保集团内保险资金并经营第三方资产管理与保险资管产品业务。
+    business: [保险资金运用, 第三方资产管理, 保险资管产品, 固定收益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "太保资产官网 · 公司介绍（2006年6月经中国保监会批准成立，由中国太平洋保险（集团）股份有限公司控股）", url: "https://Asset.cpic.com.cn/xzcgl/xgygs/", date: "2026-09-30" }
+
+  - id: insr-taiping-am
+    name: 太平资产管理有限公司
+    short: 太平资产
+    category: asset-management
+    type: insurance-amc
+    license_code: "000115"
+    regulator: 国家金融监督管理总局
+    founded: 2006
+    listed: []
+    website: https://asset.cntaiping.com
+    intro: >
+      2006 年 9 月成立，是国内首批成立的 9 家保险资产管理公司之一，也是中国太平保险集团
+      主要的保险资金委托投资机构，经营范围涵盖受托管理保险资金与其他资金、发行保险资管产品。
+    business: [保险资金受托管理, 保险资管产品, 固定收益投资, 另类投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "太平资产官网 · 公司简介（成立于2006年9月，国内首批成立的9家保险资产管理公司之一）", url: "https://asset.cntaiping.com", date: "2026-09-30" }
+
+  - id: insr-new-china-am
+    name: 新华资产管理股份有限公司
+    short: 新华资产
+    category: asset-management
+    type: insurance-amc
+    license_code: "000119"
+    regulator: 国家金融监督管理总局
+    founded: 2006
+    listed: []
+    website: https://www.ncamc.com.cn
+    intro: >
+      2006 年 7 月正式挂牌成立，是国内首批专业保险资产管理机构（最早 7 家保险资管机构之一），控股股东为新华人寿保险股份有限公司。
+    business: [保险资金运用, 组合类资管产品, 债权投资计划, 第三方资产管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "新华资产官网 · 公司简介（2006年7月正式挂牌成立，控股股东为新华人寿保险股份有限公司）", url: "https://www.ncamc.com.cn/channel/gongsijianjie", date: "2026-09-30" }
+
+  - id: insr-changjiang-pension
+    name: 长江养老保险股份有限公司
+    short: 长江养老
+    category: asset-management
+    type: insurance-amc
+    license_code: "000120"
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    listed: []
+    website: https://www.cj-pension.com.cn
+    intro: >
+      2007 年 5 月成立，发起股东包括 11 家大型央企和上海国资企业，总部位于上海，以养老金融服务为核心，全面服务养老保障三支柱资金的管理运营；
+      2023 年变更业务范围后按保险资产管理公司管理，在监管名单中标注为「养老保险公司（按照保险资产管理公司管理）」。
+    business: [企业年金, 职业年金, 养老保障产品, 保险资金受托管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日｜机构类型：养老保险公司（按照保险资产管理公司管理））", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "长江养老官网 · 公司简介（公司成立于2007年5月）", url: "https://www.cj-pension.com.cn/cjyl/Channel/348208/", date: "2026-09-30" }
+
+  - id: insr-dajia-am
+    name: 大家资产管理有限责任公司
+    short: 大家资产
+    category: asset-management
+    type: insurance-amc
+    license_code: "000150"
+    regulator: 国家金融监督管理总局
+    founded: 2011
+    listed: []
+    website: https://asset.djbx.com
+    intro: >
+      2011 年 5 月经原中国保险监督管理委员会批准正式设立，注册资本 6 亿元人民币，是大家保险集团旗下的保险资产管理公司，业务覆盖固定收益、权益投资、创新业务与专户定制。
+    business: [保险资金运用, 专户定制产品, 固收投资, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "大家资产官网 · 公司简介（2011年5月经原中国保监会批准正式设立，注册资本6亿元）", url: "https://asset.djbx.com/col/col203/index.html", date: "2026-09-30" }
+
+  - id: insr-sino-life-am
+    name: 生命保险资产管理有限公司
+    short: 生命资产
+    category: asset-management
+    type: insurance-amc
+    license_code: "000153"
+    regulator: 国家金融监督管理总局
+    founded: 2011
+    listed: []
+    website: https://www.sinolifeamc.com
+    intro: >
+      2011 年 7 月 15 日成立，注册资本 5 亿元，是富德生命人寿体系内的保险资产管理公司，开展保险资金受托管理、保险资管产品与另类投资业务。
+    business: [保险资金受托管理, 保险资管产品, 另类投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "生命资产官网 · 公司简介（成立于2011年7月15日，注册资本5亿元）", url: "https://www.sinolifeamc.com/about/intro/", date: "2026-09-30" }
+
+  - id: insr-sleb-am
+    name: 光大永明资产管理股份有限公司
+    short: 光大永明资产
+    category: asset-management
+    type: insurance-amc
+    license_code: "000161"
+    regulator: 国家金融监督管理总局
+    founded: 2012
+    listed: []
+    website: https://www.slebam.com/html/1/index.html
+    intro: >
+      2012 年 4 月 11 日在北京正式开业，是原中国保监会核准的第十二家保险资产管理公司，注册资本 5 亿元人民币，由光大永明人寿持股 99%、中国光大集团持股 1%，
+      2024 年末总资产管理规模超 4000 亿元。
+    business: [资管投行, 保险资金受托管理, 第三方资产管理, 债权投资计划]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "光大永明资产官网 · 公司介绍（2012年4月11日开业，原保监会核准的第十二家保险资产管理公司，注册资本5亿元）", url: "https://www.slebam.com/html/1/155/156/index.html", date: "2026-09-30" }
+
+  - id: insr-union-am
+    name: 合众资产管理股份有限公司
+    short: 合众资产
+    category: asset-management
+    type: insurance-amc
+    license_code: "000162"
+    regulator: 国家金融监督管理总局
+    founded: 2012
+    listed: []
+    website: https://www.unionasset.com.cn
+    intro: >
+      由合众人寿保险股份有限公司和北京宸瑜企业管理有限公司共同发起设立，
+      2012 年 3 月 8 日获得原中国保险监督管理委员会开业批复，2012 年 5 月正式开业，业务包括债权投资计划、股权投资计划、项目资产支持计划等另类投资。
+    business: [保险资金运用, 另类投资, 债权投资计划, 股权投资计划]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "合众资产官网 · 公司简介（2012年3月8日获原中国保监会开业批复，2012年5月正式开业）", url: "https://www.unionasset.com.cn/gsjj/index.jhtml", date: "2026-09-30" }
+
+  - id: insr-minsheng-tonghui-am
+    name: 民生通惠资产管理有限公司
+    short: 民生通惠资产
+    category: asset-management
+    type: insurance-amc
+    license_code: "000170"
+    regulator: 国家金融监督管理总局
+    founded: 2012
+    listed: []
+    website: https://www.thamco.com
+    intro: >
+      2012 年 11 月 15 日成立，由民生人寿保险股份有限公司出资设立，是经原中国保监会批准成立的第 14 家保险资产管理公司，注册资本 1 亿元人民币，以不动产投资计划、基础设施债权投资计划与项目资产支持计划为主要产品线。
+    business: [不动产投资计划, 基础设施债权投资计划, 项目资产支持计划, 组合类资管产品]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "民生通惠资产官网 · 公司简介（2012年11月15日成立，由民生人寿出资设立，原保监会批准成立的第14家保险资产管理公司）", url: "https://www.thamco.com/intro/4.html", date: "2026-09-30" }
+
+  - id: insr-sunshine-am
+    name: 阳光资产管理股份有限公司
+    short: 阳光资产
+    category: asset-management
+    type: insurance-amc
+    license_code: "000172"
+    regulator: 国家金融监督管理总局
+    founded: null
+    listed: []
+    website: https://asset.sinosig.com
+    intro: >
+      阳光保险集团旗下的保险资产管理公司，前身为阳光保险集团资产管理中心，可投资存款、债券、股票、证券投资基金等传统领域，以及基础设施投资计划、不动产投资计划和项目资产支持计划等金融产品。
+    business: [保险资金运用, 债权投资计划, 不动产投资计划, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "阳光资产管理官网（阳光保险集团股份有限公司版权所有）", url: "https://asset.sinosig.com/client/pages/409174347311713/index.html", date: "2026-09-30" }
+
+  - id: insr-ac-am
+    name: 中英益利资产管理股份有限公司
+    short: 中英益利资产
+    category: asset-management
+    type: insurance-amc
+    license_code: "000174"
+    regulator: 国家金融监督管理总局
+    founded: null
+    listed: []
+    website: https://www.zyylamc.com
+    intro: >
+      经原中国保监会批准，由中英人寿保险有限公司联合保险、信托和私募机构共同出资组建的专业保险资产管理公司，注册资本 1 亿元人民币，2012 年 6 月获原中国保监会批复筹建，注册地北京，是业内首家由中外合资保险公司作为主发起人的保险资产管理公司。
+    business: [保险资金受托管理, 保险资管产品, 组合类资管产品]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中英益利资产官网 · 公司简介（股东与注册资本）", url: "https://www.zyylamc.com/About/page.html", date: "2026-09-30" }
+      - { title: "中粮集团官网《中英资产管理公司获批筹建》（2012年6月26日保监会批复筹建，注册资本1亿元）", url: "https://www.cofco.com/cn/News/Allnews/Latest/2012/0629/42681.html", date: "2012-06-29" }
+
+  - id: insr-generali-china-am
+    name: 中意资产管理有限责任公司
+    short: 中意资产
+    category: asset-management
+    type: insurance-amc
+    license_code: "000175"
+    regulator: 国家金融监督管理总局
+    founded: 2013
+    listed: []
+    website: https://www.gc-amc.com
+    intro: >
+      2013 年由原中国保监会批准设立，是具有合资背景的保险资产管理公司，控股股东中意人寿保险有限公司由中国石油天然气集团有限公司与意大利忠利保险有限公司合资组建。
+    business: [保险资金受托管理, 保险资管产品, 债权投资计划, 股权投资计划]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中意资产官网 · 公司简介（成立于2013年，由原中国保监会批准设立的合资背景保险资产管理公司）", url: "https://www.gc-amc.com/gyzy/gsjj/", date: "2026-09-30" }
+
+  - id: insr-sinosafe-am
+    name: 华安财保资产管理有限责任公司
+    short: 华安财保资产
+    category: asset-management
+    type: insurance-amc
+    license_code: "000178"
+    regulator: 国家金融监督管理总局
+    founded: 2013
+    listed: []
+    website: https://www.hacbzc.com
+    intro: >
+      2013 年 9 月成立，由华安财产保险股份有限公司与特华投资控股有限公司共同组建，注册地位于天津市和平区，业务涵盖保险资管产品发行与受托管理专户。
+    business: [保险资管产品, 受托管理专户, 公开市场投资, 另类投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "华安资产官网 · 公司简介（成立于2013年9月，由华安财产保险与特华投资控股共同组建，注册地天津市和平区）", url: "https://www.hacbzc.com/index/list?catid=1", date: "2026-09-30" }
+
+  - id: insr-greatwall-wealth-am
+    name: 长城财富保险资产管理股份有限公司
+    short: 长城财富资产
+    category: asset-management
+    type: insurance-amc
+    license_code: "000191"
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    listed: []
+    intro: >
+      由长城人寿保险股份有限公司等四方共同发起设立，2014 年 9 月获批筹建、2015 年 3 月 18 日正式开业，是原中国保监会核准的第十九家保险资产管理公司；2019 年由「长城财富资产管理股份有限公司」更名为现名，注册地在深圳前海，营业场所在北京。
+    business: [保险资金受托管理, 保险资管产品, 另类投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "长城人寿《24年报告附件-案例04》发展历程（2015年控股子公司长城财富资产管理股份有限公司成立；2019年更名为长城财富保险资产管理股份有限公司）", url: "https://www.baoxianguancha.com/content-45-7883-1.html", date: "2024-09-29" }
+
+  - id: insr-yingda-am
+    name: 英大保险资产管理有限公司
+    short: 英大资产
+    category: asset-management
+    type: insurance-amc
+    license_code: "000193"
+    regulator: 国家金融监督管理总局
+    founded: null
+    listed: []
+    intro: >
+      国家电网英大集团体系内的保险资产管理公司，开展保险资金受托管理、保险资管产品
+      与另类投资业务，服务英大系统内保险机构的资金运用需求。
+    business: [保险资金受托管理, 保险资管产品, 另类投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+
+  - id: insr-china-evermin-am
+    name: 华夏久盈资产管理有限责任公司
+    short: 华夏久盈资产
+    category: asset-management
+    type: insurance-amc
+    license_code: "000194"
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    listed: []
+    website: http://www.hxjyam.com
+    intro: >
+      2015 年成立，是经原中国保监会批准设立的第 21 家保险资产管理公司，原为华夏人寿保险股份有限公司旗下的保险资管平台，业务涵盖债权投资计划、股权投资计划与资产支持计划。
+    business: [保险资金受托管理, 债权投资计划, 股权投资计划, 资产支持计划]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "华夏久盈资产官网 · 公司简介（成立于2015年，经原中国保监会批准设立的第21家保险资产管理公司）", url: "http://www.hxjyam.com/hxjy/gywm/index.html", date: "2026-09-30" }
+
+  - id: insr-ccb-life-am
+    name: 建信保险资产管理有限公司
+    short: 建信保险资管
+    category: asset-management
+    type: insurance-amc
+    license_code: "000207"
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    listed: []
+    website: https://www.ccblifeamc.com
+    intro: >
+      2016 年 4 月 1 日正式开业，由建信人寿保险股份有限公司和建银国际（中国）有限公司共同发起设立，是国内首家银行系保险资产管理公司，也是建设银行集团大资管板块的成员单位。
+    business: [资金受托管理, 组合类产品, 另类产品, PE股权投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "建信保险资管官网 · 公司简介（2016年4月1日正式开业，国内首家银行系保险资产管理公司）", url: "https://www.ccblifeamc.com/1/Company.html", date: "2026-09-30" }
+
+  - id: insr-aeon-am
+    name: 百年保险资产管理有限责任公司
+    short: 百年资产
+    category: asset-management
+    type: insurance-amc
+    license_code: "000214"
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    listed: []
+    website: http://www.aeoniamc.com
+    intro: >
+      2016 年 11 月 16 日获中国保险监督管理委员会批复正式成立，注册资本人民币 1 亿元，是百年人寿保险股份有限公司旗下的保险资产管理公司，产品线包括基础设施债权计划、不动产债权计划、资产支持计划与组合类资产管理产品。
+    business: [基础设施债权计划, 不动产债权计划, 资产支持计划, 组合类资管产品]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "百年资产官网 · 公司简介（2016年11月16日获原中国保监会批复正式成立，注册资本1亿元）", url: "http://www.aeoniamc.com/gxwm/gcjg/index.shtml", date: "2026-09-30" }
+
+  - id: insr-alltrust-am
+    name: 永诚保险资产管理有限公司
+    short: 永诚资产
+    category: asset-management
+    type: insurance-amc
+    license_code: "000227"
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    listed: []
+    website: https://www.allasset.com.cn
+    intro: >
+      2016 年 4 月获原中国银保监会批准筹建，2017 年 8 月正式开业，是中国第 24 家综合性保险资产管理公司，也是宁波国家保险创新综合试验区内的第一家保险资产管理公司，股东为永诚财产保险股份有限公司。
+    business: [保险资管产品发行, 受托资金管理, 债权投资计划]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "永诚资产官网 · 关于我们（2016年4月获批筹建，2017年8月正式开业，中国第24家综合性保险资产管理公司）", url: "https://www.allasset.com.cn/col7/index", date: "2026-09-30" }
+
+  - id: insr-icbc-axa-am
+    name: 工银安盛资产管理有限公司
+    short: 工银安盛资产
+    category: asset-management
+    type: insurance-amc
+    license_code: "000239"
+    regulator: 国家金融监督管理总局
+    founded: 2019
+    listed: []
+    website: https://amc.icbc-axa.com
+    intro: >
+      2019 年 5 月 13 日正式成立，是工银安盛人寿保险有限公司旗下的保险资产管理公司；工银安盛人寿由中国工商银行、法国安盛集团与五矿集团合资组建。
+    business: [保险资金受托管理, 保险资管产品, 组合类产品]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "工银安盛资产官网 · 公司简介（于2019年5月13日正式成立）", url: "https://amc.icbc-axa.com", date: "2026-09-30" }
+
+  - id: insr-bocom-am
+    name: 交银保险资产管理有限公司
+    short: 交银保险资管
+    category: asset-management
+    type: insurance-amc
+    license_code: "000240"
+    regulator: 国家金融监督管理总局
+    founded: null
+    listed: []
+    intro: >
+      交银人寿保险有限公司全资设立的保险资产管理公司，原名「交银康联资产管理有限公司」，
+      2018 年 7 月 19 日获中国银保监会批复筹建，注册资本 1 亿元人民币，是银行系保险资管机构之一。
+    business: [保险资金受托管理, 保险资管产品, 组合类产品]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "每日经济新闻《交银康联旗下资管公司正式获批筹建 国内保险资管不断扩容》（2018年7月19日银保监会批复筹建，注册资本1亿元，交银康联全资设立）", url: "https://m.nbd.com.cn/articles/2018-07-22/1237481.html", date: "2018-07-22" }
+
+  - id: insr-citic-prudential-am
+    name: 中信保诚资产管理有限责任公司
+    short: 中信保诚资管
+    category: asset-management
+    type: insurance-amc
+    license_code: "000246"
+    regulator: 国家金融监督管理总局
+    founded: 2020
+    listed: []
+    website: https://citicpru-amc.com.cn
+    intro: >
+      中信保诚人寿保险有限公司全资的保险资产管理公司，2019 年 12 月 16 日获得中国银保监会开业批复，
+      2020 年 3 月 31 日正式成立，主要受托管理保险资金。
+    business: [保险资金运用, 组合类资管产品, 投资管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中信保诚资管官网 · 公司简介（2019年12月16日获开业批复，2020年3月31日正式成立）", url: "https://citicpru-amc.com.cn/index.php?m=content&c=index&a=lists&catid=19", date: "2026-09-30" }
+
+  - id: insr-cignacmb-am
+    name: 招商信诺资产管理有限公司
+    short: 招商信诺资管
+    category: asset-management
+    type: insurance-amc
+    license_code: "000247"
+    regulator: 国家金融监督管理总局
+    founded: 2020
+    listed: []
+    website: https://www.cignacmbamc.com
+    intro: >
+      2020 年 9 月 30 日获得中国银保监会开业批复、2020 年 10 月 18 日正式对外开业，注册资本 5 亿元，注册地北京，由招商信诺人寿保险有限公司与招商银行旗下的
+      招银金融控股（深圳）、招银国际金融控股（深圳）、招银国际资本管理（深圳）共同发起设立，其中招商信诺人寿持股 87.3458%。
+    business: [保险资金受托管理, 保险资产管理产品, 自有资金运用, 资管咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "招商信诺资管官网 · 公司简介（2020年9月30日获开业批复，2020年10月18日正式开业）", url: "https://www.cignacmbamc.com/aboutus/summary/index.html", date: "2026-09-30" }
+
+  - id: insr-china-life-invest
+    name: 国寿投资保险资产管理有限公司
+    short: 国寿投资
+    category: asset-management
+    type: insurance-amc
+    license_code: "000250"
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    listed: []
+    website: https://www.chinalifeinvest.com
+    intro: >
+      中国人寿保险（集团）公司全资子公司，成立于 2007 年，注册资本 37 亿元，
+      2021 年获得原中国银保监会核准颁发的《保险资产管理公司法人许可证》，是国内首家专注另类投资的大型保险资产管理公司，业务涵盖股权投资、不动产投资、基础设施投资、特殊机会投资与普惠金融。
+    business: [另类投资, 股权投资, 不动产投资, 特殊机会投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "国寿投资官网（首页 · 关于我们）", url: "https://www.chinalifeinvest.com", date: "2026-09-30" }
+      - { title: "国寿投资保险资产管理有限公司工商与公司简介（成立于2007年，注册资本37亿元，2021年获保险资产管理公司法人许可证）", url: "https://www.tianyancha.com/organize/b1aeb10047", date: "2026-09-30" }
+
+  - id: insr-gh-shining-am
+    name: 国华兴益保险资产管理有限公司
+    short: 国华兴益资产
+    category: asset-management
+    type: insurance-amc
+    license_code: "000251"
+    regulator: 国家金融监督管理总局
+    founded: 2021
+    listed: []
+    website: https://www.ghshining.com
+    intro: >
+      2021 年 5 月获中国银保监会开业批复，注册资本 5 亿元，注册地上海，由国华人寿保险股份有限公司出资 4 亿元持股 80%、新理益集团有限公司出资 1 亿元持股 20%；
+      2020 年 10 月获批复筹建。
+    business: [保险资金受托管理, 保险资产管理产品, 第三方资产管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "天茂集团《关于设立国华兴益保险资产管理有限公司的进展公告》（银保监复【2021】346号，2021年5月12日收到开业批复；注册资本5亿元，国华人寿80%、新理益20%）", url: "http://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESZ_STOCK/2021/2021-5/2021-05-12/7237227.PDF", date: "2021-05-12" }
+
+  - id: insr-allianz-am
+    name: 安联保险资产管理有限公司
+    short: 安联保险资管
+    category: asset-management
+    type: insurance-amc
+    license_code: "000252"
+    regulator: 国家金融监督管理总局
+    founded: 2021
+    listed: []
+    website: https://www.allianziamc.com.cn
+    intro: >
+      2021 年 7 月 27 日获得中国银行保险监督管理委员会开业批复，成为中国首家获批开业的
+      外资独资保险资产管理公司，注册资本 5 亿元人民币，注册地北京，隶属安联（中国）保险控股有限公司。
+    business: [保险资金受托管理, 保险资管产品, 权益投资, 固定收益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "安联保险资管官网 · 公司简介（2021年7月27日获开业批复，中国首家获批开业的外资独资保险资产管理公司，注册资本5亿元）", url: "https://www.allianziamc.com.cn/cms/jianjie.html", date: "2026-09-30" }
+
+  - id: insr-picc-capital-am
+    name: 人保资本保险资产管理有限公司
+    short: 人保资本
+    category: asset-management
+    type: insurance-amc
+    license_code: "000253"
+    regulator: 国家金融监督管理总局
+    founded: 2021
+    listed: []
+    website: https://www.picccim.com.cn
+    intro: >
+      2021 年获中国银保监会批复设立（2021 年 10 月 14 日收到设立批复），注册资本 2 亿元人民币，中国人民保险集团股份有限公司持股 100%，是人保集团旗下聚焦另类投资的保险资产管理公司，承担人保系统内另类投资主渠道责任，业务涵盖债权投资、股权投资、资产证券化与实物资产投资。
+    business: [另类投资, 债权投资, 股权投资, 资产证券化]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "人保资本官网 · 关于公司设立有关事项的信息披露公告（临时信息披露编号 20211027-1；2021年10月14日收到银保监会设立批复）", url: "https://www.picccim.com.cn/uploadfile/2023/1011/20231011110148543.pdf", date: "2021-10-29" }
+
+  - id: insr-taiping-capital-am
+    name: 太平资本保险资产管理有限公司
+    short: 太平资本
+    category: asset-management
+    type: insurance-amc
+    license_code: "000254"
+    regulator: 国家金融监督管理总局
+    founded: null
+    listed: []
+    website: https://tpca.cntaiping.com
+    intro: >
+      中国太平保险集团有限责任公司旗下的保险资产管理公司，聚焦另类投资业务，与中国太平体系内的太平资产管理有限公司分设，是集团境内主要成员公司之一。
+    business: [另类投资, 保险资金受托管理, 保险资管产品]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "太平资本保险资产管理有限公司官网（中国太平集团成员公司）", url: "https://tpca.cntaiping.com", date: "2026-09-30" }
+
+  - id: insr-china-post-am
+    name: 中邮保险资产管理有限公司
+    short: 中邮保险资管
+    category: asset-management
+    type: insurance-amc
+    license_code: "000261"
+    regulator: 国家金融监督管理总局
+    founded: 2023
+    listed: []
+    intro: >
+      2023 年 10 月 30 日经国家金融监督管理总局批复开业、2023 年 10 月 27 日正式成立，注册资本 5 亿元人民币，由中邮人寿保险股份有限公司全资出资，是《保险资产管理公司管理规定》发布后首家获批成立的保险资管机构。
+    business: [保险资金受托管理, 保险资管产品, 固定收益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 保险机构法人名单（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中国邮政集团官网《中邮保险资管公司获批开业》", url: "https://www.chinapost.com.cn/cn/report/2311/1984-1.htm", date: "2023-10-30" }
+      - { title: "保险资管行业业绩报道（中邮资管由中邮保险全资发起设立，注册资本5亿元，注册地北京，2023年10月27日正式成立）", url: "https://finance.sina.com.cn/am/insurance/2026-05-08/doc-inhxfamx7466931.shtml", date: "2026-05-08" }

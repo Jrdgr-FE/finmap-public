@@ -1,0 +1,138 @@
+[
+  {
+    "id": "linkerbot",
+    "website": "https://www.linkerbot.cn/",
+    "country": "中国",
+    "verifiedAt": "2026-10-23",
+    "sources": [
+      {
+        "title": "灵心巧手官网 — Linker Hand 与遥操作产品",
+        "url": "https://www.linkerbot.cn/"
+      },
+      {
+        "title": "Linkerbot 官方 SDK 组织",
+        "url": "https://github.com/linker-bot"
+      }
+    ],
+    "memberships": [
+      {
+        "track": "robot-parts",
+        "segment": "hands"
+      }
+    ]
+  },
+  {
+    "id": "robotera",
+    "website": "https://www.robotera.com/",
+    "country": "中国",
+    "verifiedAt": "2026-10-23",
+    "sources": [
+      {
+        "title": "星动纪元官网 — XHAND 系列",
+        "url": "https://www.robotera.com/application.html"
+      },
+      {
+        "title": "星动纪元 XHAND1 官方产品资料",
+        "url": "https://www.robotera.com/static/pc/default/images/cnXhand.pdf"
+      }
+    ],
+    "memberships": [
+      {
+        "track": "robot-parts",
+        "segment": "hands"
+      }
+    ]
+  },
+  {
+    "id": "paxini",
+    "website": "https://paxini.com/product/dex",
+    "country": "中国",
+    "verifiedAt": "2026-10-23",
+    "sources": [
+      {
+        "title": "PaXini 官方 DexH 灵巧手产品",
+        "url": "https://paxini.com/product/dex"
+      },
+      {
+        "title": "PaXini 官方商城 — 数据手套与执行末端",
+        "url": "https://mall.paxini.com/"
+      }
+    ],
+    "memberships": [
+      {
+        "track": "robot-parts",
+        "segment": "hands"
+      },
+      {
+        "track": "embodied",
+        "segment": "components-data"
+      }
+    ]
+  },
+  {
+    "id": "unitree",
+    "website": "https://www.unitree.com/",
+    "country": "中国",
+    "verifiedAt": "2026-10-23",
+    "sources": [
+      {
+        "title": "Unitree Dex5-1 / Dex5-1P 官方产品参数",
+        "url": "https://www.unitree.com/Dex5-1/"
+      }
+    ],
+    "memberships": [
+      {
+        "track": "robot-parts",
+        "segment": "hands"
+      }
+    ]
+  },
+  {
+    "id": "daimon",
+    "website": "https://www.dmrobot.com/",
+    "country": "中国",
+    "verifiedAt": "2026-10-23",
+    "sources": [
+      {
+        "title": "戴盟 DM-Tac G 双指视触觉夹爪",
+        "url": "https://www.dmrobot.com/devices/dm-tac-g.html"
+      },
+      {
+        "title": "戴盟 DM-DataClaw 无本体数采夹爪",
+        "url": "https://www.dmrobot.com/daas/dm-dataclaw.html"
+      }
+    ],
+    "memberships": [
+      {
+        "track": "robot-parts",
+        "segment": "hands"
+      },
+      {
+        "track": "embodied",
+        "segment": "components-data"
+      }
+    ]
+  },
+  {
+    "id": "inspire-robots",
+    "website": "https://www.inspire-robots.com/",
+    "country": "中国",
+    "verifiedAt": "2026-10-23",
+    "sources": [
+      {
+        "title": "因时 RH56DFX 仿人五指手产品页",
+        "url": "https://www.inspire-robots.com/dexterous%20hands/rh56dfx-series/"
+      },
+      {
+        "title": "因时微型伺服电缸与仿人五指手驱动结构",
+        "url": "https://www.inspire-robots.com/news/company%20news/2024-06-03/215.html"
+      }
+    ],
+    "memberships": [
+      {
+        "track": "robot-parts",
+        "segment": "actuators"
+      }
+    ]
+  }
+]

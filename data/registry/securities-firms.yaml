@@ -1,0 +1,2172 @@
+note: >
+  收录中国证监会口径下全部证券公司法人机构 115 家，即 taxonomy 中 category 为 
+  securities、type 为 securities-firm 的全部主体。基准名单取自中国证券业协会证券公
+  司基本信息公示的证券公司类 150 条，其中券商资管子公司与承销保荐子公司 35 条不属于本文件范围、另归其他 
+  type，已剔除；并用证监会各辖区证券公司名录逐区交叉核对，未发现协会名单遗漏的证券公司法人体。注册地、注册资本
+  、统一社会信用代码或业务许可证号、业务资格范围与官网取自协会公示，成立年份取自协会公示所附各公司年度报告公开披露
+  信息或公司官网公司简介，上市地与代码取自沪深交易所与港交所上市数据。数据截至 2026 年 9 月 30 日。
+
+sources:
+  - { title: "中国证券业协会《证券公司基本信息公示》（证券公司法人基本情况、业务资格范围、官网、注册资本）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+  - { title: "中国证券业协会《证券公司网站链接》", url: "https://www.sac.net.cn/fwdt/tzzfw/ffzqhd/zqgswzlj/", date: "2026-09-30" }
+  - { title: "中国证券业协会《证券公司财务报告信息公示》（各公司年度报告公开披露信息，含公司简介、股东情况、历史沿革）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+  - { title: "上海证监局《上海辖区证券公司名录（2026年8月底）》", url: "https://www.csrc.gov.cn/shanghai/c103854/c7659496/content.shtml", date: "2026-08-31" }
+  - { title: "深圳证监局《深圳辖区证券公司名录（202608）》", url: "https://www.csrc.gov.cn/shenzhen/c104310/c7659972/content.shtml", date: "2026-08-31" }
+  - { title: "江苏证监局《江苏辖区证券公司名录（2026年8月）》", url: "https://www.csrc.gov.cn/jiangsu/c103903/c7661913/content.shtml", date: "2026-08-31" }
+  - { title: "山东证监局《山东辖区证券公司名录（截至2026年8月31日）》", url: "https://www.csrc.gov.cn/shandong/c104214/c7658909/content.shtml", date: "2026-08-31" }
+  - { title: "北京证监局《北京辖区证券公司、分公司、营业部名录（截至2026年6月30日）》", url: "https://www.csrc.gov.cn/beijing/c103568/c7650439/content.shtml", date: "2026-06-30" }
+  - { title: "大连证监局《大连辖区证券经营机构名录（2026.8）》", url: "https://www.csrc.gov.cn/dalian/c104232/c7657012/content.shtml", date: "2026-08-31" }
+  - { title: "江西证监局《江西辖区证券经营机构名录（2026年8月）》", url: "https://www.csrc.gov.cn/jiangxi/c104158/c7654954/content.shtml", date: "2026-08-31" }
+  - { title: "甘肃证监局《甘肃辖区证券经营机构名录（2026年8月31日）》", url: "https://www.csrc.gov.cn/gansu/c104573/c7659183/content.shtml", date: "2026-08-31" }
+  - { title: "吉林证监局《吉林辖区证券经营机构名录》", url: "https://www.csrc.gov.cn/jilin/c103775/c7661975/content.shtml", date: "2026-09-16" }
+
+entities:
+  - id: sec-aijian
+    name: 爱建证券有限责任公司
+    short: 爱建证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2002
+    website: http://www.ajzq.com/
+    intro: >
+      爱建证券注册于上海，注册资本 22.00 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（爱建证券有限责任公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（爱建证券有限责任公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "爱建证券·官网首页", url: "http://www.ajzq.com/", date: "2026-09-30" }
+
+  - id: sec-avic
+    name: 中航证券有限公司
+    short: 中航证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: https://www.avicsec.com
+    intro: >
+      中航证券注册于江西南昌，注册资本 73.28 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代
+      销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（中航证券有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中航证券·官网首页", url: "https://www.avicsec.com", date: "2026-09-30" }
+
+  - id: sec-beijing-gaohua
+    name: 北京高华证券有限责任公司
+    short: 北京高华证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2004
+    website: https://www.gaohuasec.com
+    intro: >
+      北京高华证券注册于北京，注册资本 10.86 亿元。业务资格覆盖证券经纪、资产管理、证券自营、金融产品代
+      销、基金代销等。现有股东为北京厚丰创业投资有限公司、北京高望创业投资有限公司、北京德尚创业投资有限公司各
+      持 33.3%，公司无实际控制人。
+    business: [证券经纪, 资产管理, 证券自营, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（北京高华证券有限责任公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "北京高华证券·公司简介", url: "https://www.gaohuasec.com/company", date: "2026-09-30" }
+      - { title: "北京高华证券·官网首页", url: "https://www.gaohuasec.com", date: "2026-09-30" }
+
+  - id: sec-beijing-securities
+    name: 北京证券有限责任公司
+    short: 北京证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2008
+    website: https://www.bsamsec.com
+    intro: >
+      北京证券注册于北京，注册资本 10.89 亿元。业务资格覆盖证券经纪、投资银行、证券自营等。
+    business: [证券经纪, 投资银行, 证券自营]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（北京证券有限责任公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（北京证券有限责任公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "北京证券·官网首页", url: "https://www.bsamsec.com", date: "2026-09-30" }
+
+  - id: sec-bnp-paribas-china
+    name: 法巴证券（中国）有限公司
+    short: 法巴证券（中国）
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: http://bnpparibas-sec.cn
+    intro: >
+      法巴证券（中国）注册于上海，注册资本 11.00 亿元。业务资格覆盖证券经纪、资产管理、证券自营等。
+    business: [证券经纪, 资产管理, 证券自营]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（法巴证券（中国）有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "法巴证券（中国）·官网首页", url: "http://bnpparibas-sec.cn", date: "2026-09-30" }
+
+  - id: sec-boc-international
+    name: 中银国际证券股份有限公司
+    short: 中银证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2002
+    listed: ["601696.SH"]
+    website: http://www.bocichina.com
+    intro: >
+      中银证券注册于上海，注册资本 27.78 亿元。在上交所主板上市（601696.SH）。业务资格覆盖证券
+      经纪、投资银行、资产管理、债券市场做市、QDII等。第一大股东为中银国际控股有限公司，直接持股 
+      33.42%。
+    business: [证券经纪, 投资银行, 资产管理, 债券市场做市, QDII]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（中银国际证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（中银国际证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "中银证券·官网首页", url: "http://www.bocichina.com", date: "2026-09-30" }
+
+  - id: sec-bohai
+    name: 渤海证券股份有限公司
+    short: 渤海证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2001
+    website: https://www.bhzq.com
+    intro: >
+      渤海证券注册于天津，注册资本 80.37 亿元。业务资格覆盖证券经纪、投资银行、融资融券、债券市场做市、金融产品代销等。
+    business: [证券经纪, 投资银行, 融资融券, 债券市场做市, 金融产品代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（渤海证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（渤海证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "渤海证券·官网首页", url: "https://www.bhzq.com", date: "2026-09-30" }
+
+  - id: sec-caida
+    name: 财达证券股份有限公司
+    short: 财达证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2002
+    listed: ["600906.SH"]
+    website: https://www.95363.com
+    intro: >
+      财达证券注册于河北石家庄，注册资本 32.45 亿元。在上交所主板上市（600906.SH）。业务资格覆
+      盖证券经纪、投资银行、资产管理、金融产品代销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（财达证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "财达证券·公司简介", url: "https://www.95363.com/main/intocd/index.shtml", date: "2026-09-30" }
+      - { title: "财达证券·官网首页", url: "https://www.95363.com", date: "2026-09-30" }
+
+  - id: sec-caitong
+    name: 财通证券股份有限公司
+    short: 财通证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2003
+    listed: ["601108.SH"]
+    website: http://www.ctsec.com
+    intro: >
+      财通证券注册于浙江杭州，注册资本 46.44 亿元。在上交所主板上市（601108.SH）。业务资格覆盖
+      证券经纪、投资银行、资产管理、金融产品代销、基金代销等。浙江省政府直属企业，前身是 1993 年成立的浙
+      江财政证券公司。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（财通证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "财通证券·公司简介", url: "https://www.ctsec.com/company/", date: "2026-09-30" }
+      - { title: "财通证券·官网首页", url: "http://www.ctsec.com", date: "2026-09-30" }
+
+  - id: sec-caixin
+    name: 财信证券股份有限公司
+    short: 财信证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2002
+    website: https://stock.hnchasing.com/
+    intro: >
+      财信证券注册于湖南长沙，注册资本 66.98 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代
+      销、基金代销等。湖南财信金融控股集团有限公司旗下核心企业，是湖南省唯一的省属国有控股证券公司。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（财信证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "财信证券·公司简介", url: "https://stock.hnchasing.com/", date: "2026-09-30" }
+      - { title: "财信证券·官网首页", url: "https://stock.hnchasing.com/", date: "2026-09-30" }
+
+  - id: sec-capital
+    name: 首创证券股份有限公司
+    short: 首创证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2000
+    listed: ["601136.SH"]
+    website: http://www.sczq.com.cn/
+    intro: >
+      首创证券注册于北京，注册资本 27.33 亿元。在上交所主板上市（601136.SH）。业务资格覆盖证券
+      经纪、投资银行、资产管理、金融产品代销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（首创证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "首创证券·官网首页", url: "http://www.sczq.com.cn/", date: "2026-09-30" }
+
+  - id: sec-cdb
+    name: 国开证券股份有限公司
+    short: 国开证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2003
+    website: http://www.gkzq.com.cn
+    intro: >
+      国开证券注册于北京，注册资本 95.00 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（国开证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（国开证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "国开证券·官网首页", url: "http://www.gkzq.com.cn", date: "2026-09-30" }
+
+  - id: sec-central-china
+    name: 中原证券股份有限公司
+    short: 中原证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2002
+    listed: ["601375.SH", "01375.HK"]
+    website: http://www.ccnew.com
+    intro: >
+      中原证券注册于郑州，注册资本 46.43 亿元。在上交所主板上市（601375.SH），在港交所上市（
+      01375.HK）。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代销、基金代销等。控股股东为河南投
+      资集团有限公司，实际控制人为河南省财政厅。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（中原证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（中原证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "中原证券·官网首页", url: "http://www.ccnew.com", date: "2026-09-30" }
+
+  - id: sec-century
+    name: 世纪证券有限责任公司
+    short: 世纪证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1990
+    website: http://www.csco.com.cn
+    intro: >
+      世纪证券注册于深圳，注册资本 40.00 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（世纪证券有限责任公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（世纪证券有限责任公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "世纪证券·官网首页", url: "http://www.csco.com.cn", date: "2026-09-30" }
+
+  - id: sec-changjiang
+    name: 长江证券股份有限公司
+    short: 长江证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1997
+    listed: ["000783.SZ"]
+    website: https://www.95579.com/
+    intro: >
+      长江证券注册于湖北武汉，注册资本 55.30 亿元。在深交所上市（000783.SZ）。业务资格覆盖证券
+      经纪、投资银行、资产管理、基金托管、股票期权做市等。
+    business: [证券经纪, 投资银行, 资产管理, 基金托管, 股票期权做市]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（长江证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "长江证券·公司简介", url: "https://www.95579.com/", date: "2026-09-30" }
+      - { title: "长江证券·官网首页", url: "https://www.95579.com/", date: "2026-09-30" }
+
+  - id: sec-chengtong
+    name: 诚通证券股份有限公司
+    short: 诚通证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2003
+    website: http://www.cctgsc.com.cn
+    intro: >
+      诚通证券注册于北京，注册资本 29.10 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（诚通证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（诚通证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "诚通证券·官网首页", url: "http://www.cctgsc.com.cn", date: "2026-09-30" }
+
+  - id: sec-china-post
+    name: 中邮证券有限责任公司
+    short: 中邮证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: https://www.cnpsec.com/
+    intro: >
+      中邮证券注册于陕西西安，注册资本 61.68 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代
+      销、基金代销等。控股股东为中国邮政集团有限公司。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（中邮证券有限责任公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（中邮证券有限责任公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "中邮证券·官网首页", url: "https://www.cnpsec.com/", date: "2026-09-30" }
+
+  - id: sec-china-renaissance
+    name: 华兴证券有限公司
+    short: 华兴证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2016
+    website: http://www.huaxingsec.com
+    intro: >
+      华兴证券注册于上海，注册资本 30.24 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代销、期货IB等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 期货IB]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（华兴证券有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "华兴证券·公司简介", url: "https://www.huaxingsec.com/", date: "2026-09-30" }
+      - { title: "华兴证券·官网首页", url: "http://www.huaxingsec.com", date: "2026-09-30" }
+
+  - id: sec-chinalion
+    name: 华林证券股份有限公司
+    short: 华林证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1997
+    listed: ["002945.SZ"]
+    website: http://www.chinalions.com
+    intro: >
+      华林证券注册于拉萨，注册资本 27.00 亿元。在深交所上市（002945.SZ）。业务资格覆盖证券经纪
+      、投资银行、资产管理、金融产品代销、基金代销等。控股股东为深圳市立业集团有限公司，实际控制人为林立。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（华林证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（华林证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "华林证券·官网首页", url: "http://www.chinalions.com", date: "2026-09-30" }
+
+  - id: sec-chuancai
+    name: 川财证券有限责任公司
+    short: 川财证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1988
+    website: http://www.cczq.com/
+    intro: >
+      川财证券，注册资本 10.00 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代销、基金代销等
+      。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（川财证券有限责任公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "川财证券·公司简介", url: "http://www.cczq.com/", date: "2026-09-30" }
+      - { title: "川财证券·官网首页", url: "http://www.cczq.com/", date: "2026-09-30" }
+
+  - id: sec-cicc
+    name: 中国国际金融股份有限公司
+    short: 中金公司
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    listed: ["601995.SH", "03908.HK"]
+    website: https://www.cicc.com
+    intro: >
+      中金公司注册于北京，注册资本 48.27 亿元。在上交所主板上市（601995.SH），在港交所上市（
+      03908.HK）。业务资格覆盖证券经纪、投资银行、资产管理、股票期权做市、债券市场做市等。实际控制人为
+      中央汇金投资有限责任公司。
+    business: [证券经纪, 投资银行, 资产管理, 股票期权做市, 债券市场做市]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（中国国际金融股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（中国国际金融股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "中金公司·官网首页", url: "https://www.cicc.com", date: "2026-09-30" }
+
+  - id: sec-cicc-wealth
+    name: 中国中金财富证券有限公司
+    short: 中国中金财富证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2005
+    website: https://www.ciccwm.com/ciccwmweb/
+    intro: >
+      中国中金财富证券注册于深圳，注册资本 80.00 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产
+      品代销、基金代销等。中国国际金融股份有限公司的全资子公司。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（中国中金财富证券有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（中国中金财富证券有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "中国中金财富证券·官网首页", url: "https://www.ciccwm.com/ciccwmweb/", date: "2026-09-30" }
+
+  - id: sec-cinda
+    name: 信达证券股份有限公司
+    short: 信达证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2007
+    listed: ["601059.SH"]
+    website: http://www.cindasc.com
+    intro: >
+      信达证券注册于北京，注册资本 32.43 亿元。在上交所主板上市（601059.SH）。业务资格覆盖证券
+      经纪、投资银行、资产管理、金融产品代销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（信达证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "信达证券·官网首页", url: "http://www.cindasc.com", date: "2026-09-30" }
+
+  - id: sec-citic
+    name: 中信证券股份有限公司
+    short: 中信证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    listed: ["600030.SH", "06030.HK"]
+    website: http://www.citics.com
+    intro: >
+      中信证券注册于广东深圳，注册资本 148.21 亿元。在上交所主板上市（600030.SH），在港交所上
+      市（06030.HK）。业务资格覆盖证券经纪、投资银行、资产管理、股票期权做市、债券市场做市等。第一大股
+      东为中国中信金融控股有限公司，报告期末持股 19.84%。
+    business: [证券经纪, 投资银行, 资产管理, 股票期权做市, 债券市场做市]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（中信证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（中信证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "中信证券·官网首页", url: "http://www.citics.com", date: "2026-09-30" }
+
+  - id: sec-citic-shandong
+    name: 中信证券（山东）有限责任公司
+    short: 中信证券（山东）
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1988
+    website: http://sd.citics.com
+    intro: >
+      中信证券（山东）注册于山东深圳，注册资本 24.94 亿元。业务资格覆盖证券经纪、融资融券、投资咨询、金
+      融产品代销、基金代销等。中信证券股份有限公司的全资子公司，前身为 1988 年设立的青岛证券公司。
+    business: [证券经纪, 融资融券, 投资咨询, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（中信证券（山东）有限责任公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中信证券（山东）·公司简介", url: "http://sd.citics.com", date: "2026-09-30" }
+      - { title: "中信证券（山东）·官网首页", url: "http://sd.citics.com", date: "2026-09-30" }
+
+  - id: sec-citic-south-china
+    name: 中信证券华南股份有限公司
+    short: 中信证券华南
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1988
+    website: http://www.gzs.com.cn/
+    intro: >
+      中信证券华南注册于广州，注册资本 50.91 亿元。业务资格覆盖证券经纪、融资融券、证券自营、金融产品代
+      销、基金代销等。中信证券股份有限公司的全资子公司，前身为 1988 年设立的广州证券。
+    business: [证券经纪, 融资融券, 证券自营, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（中信证券华南股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中信证券华南·公司简介", url: "http://www.gzs.com.cn/", date: "2026-09-30" }
+      - { title: "中信证券华南·官网首页", url: "http://www.gzs.com.cn/", date: "2026-09-30" }
+
+  - id: sec-cms
+    name: 招商证券股份有限公司
+    short: 招商证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    listed: ["600999.SH", "06099.HK"]
+    website: http://www.cmschina.com/
+    intro: >
+      招商证券注册于深圳，注册资本 86.97 亿元。在上交所主板上市（600999.SH），在港交所上市（
+      06099.HK）。业务资格覆盖证券经纪、投资银行、资产管理、基金托管、股票期权做市等。控股股东为招商局
+      金融控股有限公司。
+    business: [证券经纪, 投资银行, 资产管理, 基金托管, 股票期权做市]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（招商证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（招商证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "招商证券·官网首页", url: "http://www.cmschina.com/", date: "2026-09-30" }
+
+  - id: sec-csc
+    name: 中信建投证券股份有限公司
+    short: 中信建投
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2005
+    listed: ["601066.SH", "06066.HK"]
+    website: http://www.csc108.com/
+    intro: >
+      中信建投注册于北京，注册资本 77.57 亿元。在上交所主板上市（601066.SH），在港交所上市（
+      06066.HK）。业务资格覆盖证券经纪、投资银行、资产管理、基金托管、股票期权做市等。
+    business: [证券经纪, 投资银行, 资产管理, 基金托管, 股票期权做市]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（中信建投证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中信建投·官网首页", url: "http://www.csc108.com/", date: "2026-09-30" }
+
+  - id: sec-daiwa-china
+    name: 大和证券（中国）有限责任公司
+    short: 大和证券（中国）
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: http://www.daiwa.cn
+    intro: >
+      大和证券（中国）注册于北京，注册资本 10.00 亿元。业务资格覆盖证券经纪、投资银行、证券自营等。
+    business: [证券经纪, 投资银行, 证券自营]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（大和证券（中国）有限责任公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "大和证券（中国）·官网首页", url: "http://www.daiwa.cn", date: "2026-09-30" }
+
+  - id: sec-daton
+    name: 大通证券股份有限公司
+    short: 大通证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2001
+    website: http://www.daton.com.cn
+    intro: >
+      大通证券注册于辽宁大连，注册资本 33.00 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代
+      销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（大通证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（大通证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "大通证券·官网首页", url: "http://www.daton.com.cn", date: "2026-09-30" }
+
+  - id: sec-datong
+    name: 大同证券有限责任公司
+    short: 大同证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: http://www.dtsbc.com.cn
+    intro: >
+      大同证券注册于山西大同，注册资本 8.24 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代销
+      、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（大同证券有限责任公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "大同证券·官网首页", url: "http://www.dtsbc.com.cn", date: "2026-09-30" }
+
+  - id: sec-dbs-china
+    name: 星展证券（中国）有限公司
+    short: 星展证券（中国）
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: http://www.dbssecurities.com.cn
+    intro: >
+      星展证券（中国）注册于上海，注册资本 15.00 亿元。业务资格覆盖证券经纪、投资银行、证券自营等。由星
+      展集团与中方股东合资设立，经营地在上海。
+    business: [证券经纪, 投资银行, 证券自营]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（星展证券（中国）有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "星展证券（中国）·公司简介", url: "https://www.dbssecurities.com.cn/dbss/default.page", date: "2026-09-30" }
+      - { title: "星展证券（中国）·官网首页", url: "http://www.dbssecurities.com.cn", date: "2026-09-30" }
+
+  - id: sec-dongguan
+    name: 东莞证券股份有限公司
+    short: 东莞证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: http://www.dgzq.com.cn
+    intro: >
+      东莞证券注册于广东东莞，注册资本 15.00 亿元。业务资格覆盖证券经纪、投资银行、资产管理、场外期权、金融产品代销等。
+    business: [证券经纪, 投资银行, 资产管理, 场外期权, 金融产品代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（东莞证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "东莞证券·官网首页", url: "http://www.dgzq.com.cn", date: "2026-09-30" }
+
+  - id: sec-donghai
+    name: 东海证券股份有限公司
+    short: 东海证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: https://www.longone.com.cn
+    intro: >
+      东海证券注册于江苏常州，注册资本 18.56 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代
+      销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（东海证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "东海证券·官网首页", url: "https://www.longone.com.cn", date: "2026-09-30" }
+
+  - id: sec-dongxing
+    name: 东兴证券股份有限公司
+    short: 东兴证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2008
+    listed: ["601198.SH"]
+    website: https://www.dxzq.net
+    intro: >
+      东兴证券注册于北京，注册资本 32.32 亿元。在上交所主板上市（601198.SH）。业务资格覆盖证券
+      经纪、投资银行、资产管理、金融产品代销、基金代销等。主要股东为中国东方资产管理股份有限公司。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（东兴证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（东兴证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "东兴证券·官网首页", url: "https://www.dxzq.net", date: "2026-09-30" }
+
+  - id: sec-east-asia-qianhai
+    name: 东亚前海证券有限责任公司
+    short: 东亚前海证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2017
+    website: http://www.easec.com.cn
+    intro: >
+      东亚前海证券注册于深圳，注册资本 15.00 亿元。业务资格覆盖证券经纪、投资银行、资产管理等。
+    business: [证券经纪, 投资银行, 资产管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（东亚前海证券有限责任公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（东亚前海证券有限责任公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "东亚前海证券·官网首页", url: "http://www.easec.com.cn", date: "2026-09-30" }
+
+  - id: sec-east-money
+    name: 东方财富证券股份有限公司
+    short: 东方财富证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2000
+    website: http://www.18.cn
+    intro: >
+      东方财富证券注册于西藏拉萨，注册资本 127.00 亿元。业务资格覆盖证券经纪、投资银行、资产管理、基金
+      托管、债券市场做市等。
+    business: [证券经纪, 投资银行, 资产管理, 基金托管, 债券市场做市]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（东方财富证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（东方财富证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "东方财富证券·官网首页", url: "http://www.18.cn", date: "2026-09-30" }
+
+  - id: sec-everbright
+    name: 光大证券股份有限公司
+    short: 光大证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    listed: ["601788.SH", "06178.HK"]
+    website: http://www.ebscn.com
+    intro: >
+      光大证券注册于上海，注册资本 46.11 亿元。在上交所主板上市（601788.SH），在港交所上市（
+      06178.HK）。业务资格覆盖证券经纪、投资银行、融资融券、基金托管、股票期权做市等。
+    business: [证券经纪, 投资银行, 融资融券, 基金托管, 股票期权做市]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（光大证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "光大证券·官网首页", url: "http://www.ebscn.com", date: "2026-09-30" }
+
+  - id: sec-financial-street
+    name: 金融街证券股份有限公司
+    short: 金融街证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1998
+    listed: ["01476.HK"]
+    website: http://www.cnht.com.cn
+    intro: >
+      金融街证券注册于内蒙古呼和浩特，注册资本 26.05 亿元。在港交所上市（01476.HK）。业务资格覆
+      盖证券经纪、投资银行、资产管理、QDII、金融产品代销等。
+    business: [证券经纪, 投资银行, 资产管理, QDII, 金融产品代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（金融街证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（金融街证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "金融街证券·官网首页", url: "http://www.cnht.com.cn", date: "2026-09-30" }
+
+  - id: sec-first-capital
+    name: 第一创业证券股份有限公司
+    short: 第一创业
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1998
+    listed: ["002797.SZ"]
+    website: http://www.firstcapital.com.cn
+    intro: >
+      第一创业注册于广东深圳，注册资本 42.02 亿元。在深交所上市（002797.SZ）。业务资格覆盖证券
+      经纪、投资银行、资产管理、股票期权做市、债券市场做市等。北京国有资本运营管理有限公司为公司第一大股东。
+    business: [证券经纪, 投资银行, 资产管理, 股票期权做市, 债券市场做市]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（第一创业证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（第一创业证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "第一创业·官网首页", url: "http://www.firstcapital.com.cn", date: "2026-09-30" }
+
+  - id: sec-founder
+    name: 方正证券股份有限公司
+    short: 方正证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1994
+    listed: ["601901.SH"]
+    website: http://www.foundersc.com
+    intro: >
+      方正证券注册于长沙，注册资本 82.32 亿元。在上交所主板上市（601901.SH）。业务资格覆盖证券
+      经纪、投资银行、资产管理、QDII、金融产品代销等。
+    business: [证券经纪, 投资银行, 资产管理, QDII, 金融产品代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（方正证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "方正证券·官网首页", url: "http://www.foundersc.com", date: "2026-09-30" }
+
+  - id: sec-galaxy
+    name: 中国银河证券股份有限公司
+    short: 中国银河
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2007
+    listed: ["601881.SH", "06881.HK"]
+    website: http://www.chinastock.com.cn
+    intro: >
+      中国银河注册于北京，注册资本 109.34 亿元。在上交所主板上市（601881.SH），在港交所上市（
+      06881.HK）。业务资格覆盖证券经纪、投资银行、融资融券、QDII、金融产品代销等。
+    business: [证券经纪, 投资银行, 融资融券, QDII, 金融产品代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（中国银河证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国银河·官网首页", url: "http://www.chinastock.com.cn", date: "2026-09-30" }
+
+  - id: sec-gf
+    name: 广发证券股份有限公司
+    short: 广发证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1994
+    listed: ["000776.SZ", "01776.HK"]
+    website: http://www.gf.com.cn
+    intro: >
+      广发证券注册于广东广州，注册资本 78.25 亿元。在深交所上市（000776.SZ），在港交所上市（
+      01776.HK）。业务资格覆盖证券经纪、投资银行、资产管理、基金托管、股票期权做市等。股东为吉林敖东药
+      业集团股份有限公司、辽宁成大股份有限公司和中山公用事业集团股份有限公司，无控股股东及实际控制人。
+    business: [证券经纪, 投资银行, 资产管理, 基金托管, 股票期权做市]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（广发证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（广发证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "广发证券·官网首页", url: "http://www.gf.com.cn", date: "2026-09-30" }
+
+  - id: sec-goldman-sachs-china
+    name: 高盛（中国）证券有限责任公司
+    short: 高盛（中国）
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: https://www.goldmansachs.cn/
+    intro: >
+      高盛（中国）注册于北京，注册资本 33.86 亿元。业务资格覆盖证券经纪、投资银行、证券自营、金融产品代
+      销、基金代销等。高盛集团有限公司的全资子公司，总部位于北京。
+    business: [证券经纪, 投资银行, 证券自营, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（高盛（中国）证券有限责任公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "高盛（中国）·公司简介", url: "https://www.goldmansachs.cn/", date: "2026-09-30" }
+      - { title: "高盛（中国）·官网首页", url: "https://www.goldmansachs.cn/", date: "2026-09-30" }
+
+  - id: sec-goldstate
+    name: 金元证券股份有限公司
+    short: 金元证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2002
+    website: http://www.jyzq.cn
+    intro: >
+      金元证券注册于海口，注册资本 40.31 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（金元证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（金元证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "金元证券·官网首页", url: "http://www.jyzq.cn", date: "2026-09-30" }
+
+  - id: sec-great-wall
+    name: 长城证券股份有限公司
+    short: 长城证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    listed: ["002939.SZ"]
+    website: http://www.cgws.com
+    intro: >
+      长城证券注册于深圳，注册资本 40.34 亿元。在深交所上市（002939.SZ）。业务资格覆盖证券经纪
+      、投资银行、资产管理、金融产品代销、基金代销等。控股股东为华能资本服务有限公司，实际控制人为中国华能集团
+      有限公司。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（长城证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（长城证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "长城证券·官网首页", url: "http://www.cgws.com", date: "2026-09-30" }
+
+  - id: sec-great-wall-glory
+    name: 长城国瑞证券有限公司
+    short: 长城国瑞证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1988
+    website: http://www.gwgsc.com
+    intro: >
+      长城国瑞证券注册于厦门，注册资本 33.50 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代
+      销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（长城国瑞证券有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（长城国瑞证券有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "长城国瑞证券·官网首页", url: "http://www.gwgsc.com", date: "2026-09-30" }
+
+  - id: sec-guodu
+    name: 国都证券股份有限公司
+    short: 国都证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: http://www.guodu.com
+    intro: >
+      国都证券注册于北京，注册资本 58.30 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（国都证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "国都证券·官网首页", url: "http://www.guodu.com", date: "2026-09-30" }
+
+  - id: sec-guohai
+    name: 国海证券股份有限公司
+    short: 国海证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    listed: ["000750.SZ"]
+    website: https://www.ghzq.com.cn
+    intro: >
+      国海证券注册于广西桂林，注册资本 63.86 亿元。在深交所上市（000750.SZ）。业务资格覆盖证券
+      经纪、投资银行、资产管理、金融产品代销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（国海证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "国海证券·官网首页", url: "https://www.ghzq.com.cn", date: "2026-09-30" }
+
+  - id: sec-guolian-minsheng
+    name: 国联民生证券股份有限公司
+    short: 国联民生
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1999
+    listed: ["601456.SH", "01456.HK"]
+    website: http://www.glsc.com.cn
+    intro: >
+      国联民生注册于无锡，注册资本 56.81 亿元。在上交所主板上市（601456.SH），在港交所上市（
+      01456.HK）。业务资格覆盖证券经纪、投资银行、资产管理、债券市场做市、场外期权等。控股股东为无锡市
+      国联发展（集团）有限公司。
+    business: [证券经纪, 投资银行, 资产管理, 债券市场做市, 场外期权]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（国联民生证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（国联民生证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "国联民生·官网首页", url: "http://www.glsc.com.cn", date: "2026-09-30" }
+
+  - id: sec-guorong
+    name: 国融证券股份有限公司
+    short: 国融证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2002
+    website: http://www.grzq.com
+    intro: >
+      国融证券注册于内蒙古呼和浩特，注册资本 17.83 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融
+      产品代销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（国融证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（国融证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "国融证券·官网首页", url: "http://www.grzq.com", date: "2026-09-30" }
+
+  - id: sec-guosen
+    name: 国信证券股份有限公司
+    short: 国信证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1994
+    listed: ["002736.SZ"]
+    website: https://www.guosen.com.cn
+    intro: >
+      国信证券注册于深圳，注册资本 102.42 亿元。在深交所上市（002736.SZ）。业务资格覆盖证券经
+      纪、投资银行、资产管理、基金托管、股票期权做市等。控股股东为深圳市投资控股有限公司。
+    business: [证券经纪, 投资银行, 资产管理, 基金托管, 股票期权做市]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（国信证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（国信证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "国信证券·官网首页", url: "https://www.guosen.com.cn", date: "2026-09-30" }
+
+  - id: sec-guosheng
+    name: 国盛证券股份有限公司
+    short: 国盛证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    listed: ["002670.SZ"]
+    website: http://www.gszq.com
+    intro: >
+      国盛证券注册于江西南昌，注册资本 19.35 亿元。在深交所上市（002670.SZ）。业务资格覆盖证券
+      经纪、投资银行、融资融券、金融产品代销、基金代销等。
+    business: [证券经纪, 投资银行, 融资融券, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（国盛证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "国盛证券·官网首页", url: "http://www.gszq.com", date: "2026-09-30" }
+
+  - id: sec-guotai-haitong
+    name: 国泰海通证券股份有限公司
+    short: 国泰海通
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1999
+    listed: ["601211.SH", "02611.HK"]
+    website: https://www.gtht.com
+    intro: >
+      国泰海通注册于上海，注册资本 176.29 亿元。在上交所主板上市（601211.SH），在港交所上市（
+      02611.HK）。业务资格覆盖证券经纪、投资银行、资产管理、债券市场做市、QDII等。
+    business: [证券经纪, 投资银行, 资产管理, 债券市场做市, QDII]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（国泰海通证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "国泰海通·官网首页", url: "https://www.gtht.com", date: "2026-09-30" }
+
+  - id: sec-guotou
+    name: 国投证券股份有限公司
+    short: 国投证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2006
+    website: http://www.sdicsc.com.cn
+    intro: >
+      国投证券注册于深圳，注册资本 100.00 亿元。业务资格覆盖证券经纪、投资银行、融资融券、债券市场做市
+      、金融产品代销等。股东为国投资本股份有限公司（持股 99.9969%）与上海毅胜投资有限公司，实际控制人
+      为国家开发投资集团有限公司。
+    business: [证券经纪, 投资银行, 融资融券, 债券市场做市, 金融产品代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（国投证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "国投证券·公司简介", url: "https://www.sdicsc.com.cn/intro/brief", date: "2026-09-30" }
+      - { title: "国投证券·官网首页", url: "http://www.sdicsc.com.cn", date: "2026-09-30" }
+
+  - id: sec-guoxin
+    name: 国新证券股份有限公司
+    short: 国新证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2007
+    website: https://www.crsec.com.cn
+    intro: >
+      国新证券注册于北京，注册资本 58.41 亿元。业务资格覆盖证券经纪、投资银行、资产管理、融资融券、基金
+      代销等。中国国新控股有限责任公司为实际控制人，总部设在北京。
+    business: [证券经纪, 投资银行, 资产管理, 融资融券, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（国新证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "国新证券·公司简介", url: "https://www.crsec.com.cn", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（国新证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "国新证券·官网首页", url: "https://www.crsec.com.cn", date: "2026-09-30" }
+
+  - id: sec-guoyuan
+    name: 国元证券股份有限公司
+    short: 国元证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1997
+    listed: ["000728.SZ"]
+    website: http://www.gyzq.com.cn
+    intro: >
+      国元证券注册于安徽合肥，注册资本 43.64 亿元。在深交所上市（000728.SZ）。业务资格覆盖证券
+      经纪、投资银行、资产管理、基金托管、金融产品代销等。控股股东为安徽国元金融控股集团有限责任公司。
+    business: [证券经纪, 投资银行, 资产管理, 基金托管, 金融产品代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（国元证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（国元证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "国元证券·官网首页", url: "http://www.gyzq.com.cn", date: "2026-09-30" }
+
+  - id: sec-hengtai-changcai
+    name: 恒泰长财证券有限责任公司
+    short: 恒泰长财证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: https://cczq.cnht.com.cn/
+    intro: >
+      恒泰长财证券注册于长春，注册资本 2.00 亿元。业务资格覆盖证券经纪、投资银行、基金代销等。股东为长春
+      资产管理有限责任公司和长春亚泰投资有限责任公司。
+    business: [证券经纪, 投资银行, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（恒泰长财证券有限责任公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（恒泰长财证券有限责任公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "恒泰长财证券·官网首页", url: "https://cczq.cnht.com.cn/", date: "2026-09-30" }
+
+  - id: sec-hongta
+    name: 红塔证券股份有限公司
+    short: 红塔证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2002
+    listed: ["601236.SH"]
+    website: https://www.hongtastock.com
+    intro: >
+      红塔证券注册于云南北京，注册资本 47.17 亿元。在上交所主板上市（601236.SH）。业务资格覆盖
+      证券经纪、投资银行、资产管理、金融产品代销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（红塔证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "红塔证券·官网首页", url: "https://www.hongtastock.com", date: "2026-09-30" }
+
+  - id: sec-hsbc-qianhai
+    name: 汇丰前海证券有限责任公司
+    short: 汇丰前海证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2017
+    website: http://www.hsbcqh.com.cn/
+    intro: >
+      汇丰前海证券注册于深圳，注册资本 18.00 亿元。业务资格覆盖证券经纪、投资银行、资产管理等。香港上海
+      汇丰银行有限公司持股 90%、前海金融控股有限公司持股 10%。
+    business: [证券经纪, 投资银行, 资产管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（汇丰前海证券有限责任公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "汇丰前海证券·公司简介", url: "https://www.hsbcqh.com.cn/zh-cn/about-us", date: "2026-09-30" }
+      - { title: "汇丰前海证券·官网首页", url: "http://www.hsbcqh.com.cn/", date: "2026-09-30" }
+
+  - id: sec-huaan
+    name: 华安证券股份有限公司
+    short: 华安证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2001
+    listed: ["600909.SH"]
+    website: https://www.hazq.com
+    intro: >
+      华安证券注册于安徽合肥，注册资本 50.24 亿元。在上交所主板上市（600909.SH）。业务资格覆盖
+      证券经纪、投资银行、资产管理、基金托管、金融产品代销等。控股股东为安徽省国有资本运营控股集团有限公司，实
+      际控制人为安徽省国资委。
+    business: [证券经纪, 投资银行, 资产管理, 基金托管, 金融产品代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（华安证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（华安证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "华安证券·官网首页", url: "https://www.hazq.com", date: "2026-09-30" }
+
+  - id: sec-huachuang
+    name: 华创证券有限责任公司
+    short: 华创证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2002
+    website: http://www.hczq.com
+    intro: >
+      华创证券注册于贵州贵阳，注册资本 113.39 亿元。业务资格覆盖证券经纪、投资银行、资产管理、债券市场
+      做市、金融产品代销等。华创云信数字技术股份有限公司为唯一股东。
+    business: [证券经纪, 投资银行, 资产管理, 债券市场做市, 金融产品代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（华创证券有限责任公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（华创证券有限责任公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "华创证券·官网首页", url: "http://www.hczq.com", date: "2026-09-30" }
+
+  - id: sec-huafu
+    name: 华福证券股份有限公司
+    short: 华福证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1988
+    website: http://www.hfzq.com.cn
+    intro: >
+      华福证券注册于福建福州，注册资本 44.91 亿元。业务资格覆盖证券经纪、投资银行、资产管理、基金托管、金融产品代销等。股东为福建省金融投资有限责任公司、福建省投资开发集团有限责任公司等。
+    business: [证券经纪, 投资银行, 资产管理, 基金托管, 金融产品代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（华福证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（华福证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "华福证券·官网首页", url: "http://www.hfzq.com.cn", date: "2026-09-30" }
+
+  - id: sec-huajin
+    name: 华金证券股份有限公司
+    short: 华金证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2000
+    website: http://www.huajinsc.cn
+    intro: >
+      华金证券注册于上海，注册资本 34.50 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（华金证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（华金证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "华金证券·官网首页", url: "http://www.huajinsc.cn", date: "2026-09-30" }
+
+  - id: sec-hualong
+    name: 华龙证券股份有限公司
+    short: 华龙证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2001
+    website: http://www.hlzq.com
+    intro: >
+      华龙证券注册于甘肃兰州，注册资本 63.35 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代
+      销、基金代销等。实际控制人为甘肃省人民政府。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（华龙证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（华龙证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "华龙证券·官网首页", url: "http://www.hlzq.com", date: "2026-09-30" }
+
+  - id: sec-huatai
+    name: 华泰证券股份有限公司
+    short: 华泰证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1991
+    listed: ["601688.SH", "06886.HK"]
+    website: https://www.htsc.com.cn
+    intro: >
+      华泰证券注册于江苏南京，注册资本 90.27 亿元。在上交所主板上市（601688.SH），在港交所上市
+      （06886.HK）。业务资格覆盖证券经纪、融资融券、证券自营、基金托管、股票期权做市等。实际控制人为江
+      苏省国资委。
+    business: [证券经纪, 融资融券, 证券自营, 基金托管, 股票期权做市]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（华泰证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（华泰证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "华泰证券·官网首页", url: "https://www.htsc.com.cn", date: "2026-09-30" }
+
+  - id: sec-huatai-united
+    name: 华泰联合证券有限责任公司
+    short: 华泰联合证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: http://www.lhzq.com
+    intro: >
+      华泰联合证券注册于深圳，注册资本 9.97 亿元。业务资格覆盖投资银行、投资咨询、财务顾问等。
+    business: [投资银行, 投资咨询, 财务顾问]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（华泰联合证券有限责任公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "华泰联合证券·官网首页", url: "http://www.lhzq.com", date: "2026-09-30" }
+
+  - id: sec-huaxi
+    name: 华西证券股份有限公司
+    short: 华西证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2000
+    listed: ["002926.SZ"]
+    website: https://www.hx168.com.cn
+    intro: >
+      华西证券，注册资本 26.25 亿元。在深交所上市（002926.SZ）。业务资格覆盖证券经纪、投资银行
+      、资产管理、金融产品代销、基金代销等。实际控制人为泸州市国资委。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（华西证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（华西证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "华西证券·官网首页", url: "https://www.hx168.com.cn", date: "2026-09-30" }
+
+  - id: sec-huaxin
+    name: 华鑫证券有限责任公司
+    short: 华鑫证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2001
+    website: https://www.cfsc.com.cn
+    intro: >
+      华鑫证券注册于深圳，注册资本 36.00 亿元。业务资格覆盖证券经纪、投资银行、资产管理、基金托管、
+      QDII等。唯一股东为上海华鑫股份有限公司。
+    business: [证券经纪, 投资银行, 资产管理, 基金托管, QDII]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（华鑫证券有限责任公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（华鑫证券有限责任公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "华鑫证券·官网首页", url: "https://www.cfsc.com.cn", date: "2026-09-30" }
+
+  - id: sec-huayuan
+    name: 华源证券股份有限公司
+    short: 华源证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2002
+    website: http://www.huayuanstock.com
+    intro: >
+      华源证券注册于西宁，注册资本 45.76 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（华源证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（华源证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "华源证券·官网首页", url: "http://www.huayuanstock.com", date: "2026-09-30" }
+
+  - id: sec-hwabao
+    name: 华宝证券股份有限公司
+    short: 华宝证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: http://www.cnhbstock.com
+    intro: >
+      华宝证券注册于上海，注册资本 40.00 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代销、基金代销等。中国宝武钢铁集团有限公司旗下成员，由华宝投资有限公司与华宝信托有限责任公司共同持股。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（华宝证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（华宝证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "华宝证券·官网首页", url: "http://www.cnhbstock.com", date: "2026-09-30" }
+
+  - id: sec-industrial
+    name: 兴业证券股份有限公司
+    short: 兴业证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2000
+    listed: ["601377.SH"]
+    website: http://www.xyzq.com.cn
+    intro: >
+      兴业证券注册于福州，注册资本 86.36 亿元。在上交所主板上市（601377.SH）。业务资格覆盖证券
+      经纪、投资银行、资产管理、基金托管、股票期权做市等。福建省属金融机构，主要股东有福建省财政厅、福建省投资
+      开发集团有限责任公司等。
+    business: [证券经纪, 投资银行, 资产管理, 基金托管, 股票期权做市]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（兴业证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "兴业证券·公司简介", url: "https://www.xyzq.com.cn/xysec/aboutus/11084", date: "2026-09-30" }
+      - { title: "兴业证券·官网首页", url: "http://www.xyzq.com.cn", date: "2026-09-30" }
+
+  - id: sec-jianghai
+    name: 江海证券有限公司
+    short: 江海证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2003
+    website: https://www.jhzq.com.cn
+    intro: >
+      江海证券注册于黑龙江哈尔滨，注册资本 67.67 亿元。业务资格覆盖证券经纪、投资银行、资产管理、债券市
+      场做市、金融产品代销等。股东为哈尔滨哈投投资股份有限公司，持股 100%。
+    business: [证券经纪, 投资银行, 资产管理, 债券市场做市, 金融产品代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（江海证券有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（江海证券有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "江海证券·官网首页", url: "https://www.jhzq.com.cn", date: "2026-09-30" }
+
+  - id: sec-jintong
+    name: 金通证券有限责任公司
+    short: 金通证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2014
+    website: http://www.cs.ecitic.com/xjt/index.html
+    intro: >
+      金通证券注册于浙江杭州，注册资本 1.35 亿元。业务资格覆盖证券经纪、融资融券、投资咨询等。中信证券股
+      份有限公司的全资子公司，中信证券为唯一股东。
+    business: [证券经纪, 融资融券, 投资咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（金通证券有限责任公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "金通证券·公司简介", url: "https://www.cs.ecitic.com/xjt/aboutUs/index.html", date: "2026-09-30" }
+      - { title: "金通证券·官网首页", url: "http://www.cs.ecitic.com/xjt/index.html", date: "2026-09-30" }
+
+  - id: sec-jinyuan-president
+    name: 金圆统一证券有限公司
+    short: 金圆统一证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: http://www.jypscnet.com
+    intro: >
+      金圆统一证券，注册资本 15.00 亿元。业务资格覆盖证券经纪、投资银行、证券自营、金融产品代销等。
+    business: [证券经纪, 投资银行, 证券自营, 金融产品代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（金圆统一证券有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "金圆统一证券·官网首页", url: "http://www.jypscnet.com", date: "2026-09-30" }
+
+  - id: sec-jpmorgan-china
+    name: 摩根大通证券（中国）有限公司
+    short: 摩根大通证券（中国）
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2019
+    website: https://www.jpmorganchina.com
+    intro: >
+      摩根大通证券（中国）注册于上海，注册资本 19.99 亿元。业务资格覆盖证券经纪、投资银行、证券自营等。由摩根大通全资控股。
+    business: [证券经纪, 投资银行, 证券自营]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（摩根大通证券（中国）有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "摩根大通证券（中国）·公司简介", url: "https://www.jpmorganchina.com/CN/zh/about-us", date: "2026-09-30" }
+      - { title: "摩根大通证券（中国）·官网首页", url: "https://www.jpmorganchina.com", date: "2026-09-30" }
+
+  - id: sec-kaiyuan
+    name: 开源证券股份有限公司
+    short: 开源证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1994
+    website: http://www.kysec.cn/
+    intro: >
+      开源证券注册于西安，注册资本 46.14 亿元。业务资格覆盖证券经纪、投资银行、资产管理、场外期权、金融
+      产品代销等。控股股东为陕西煤业化工集团有限责任公司。
+    business: [证券经纪, 投资银行, 资产管理, 场外期权, 金融产品代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（开源证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "开源证券·公司简介", url: "https://www.kysec.cn/html/zoujinkaiyuan/gongsijianjie/", date: "2026-09-30" }
+      - { title: "开源证券·官网首页", url: "http://www.kysec.cn/", date: "2026-09-30" }
+
+  - id: sec-lianchu
+    name: 联储证券股份有限公司
+    short: 联储证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: https://www.lczq.com
+    intro: >
+      联储证券注册于山东青岛，注册资本 32.40 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代
+      销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（联储证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "联储证券·官网首页", url: "https://www.lczq.com", date: "2026-09-30" }
+
+  - id: sec-maigao
+    name: 麦高证券有限责任公司
+    short: 麦高证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: http://www.mgzq.com
+    intro: >
+      麦高证券注册于沈阳，注册资本 17.00 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（麦高证券有限责任公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "麦高证券·官网首页", url: "http://www.mgzq.com", date: "2026-09-30" }
+
+  - id: sec-minmetals
+    name: 五矿证券有限公司
+    short: 五矿证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2000
+    website: https://www.wkzq.com.cn
+    intro: >
+      五矿证券注册于深圳，注册资本 97.98 亿元。业务资格覆盖证券经纪、投资银行、资产管理、债券市场做市、金融产品代销等。
+    business: [证券经纪, 投资银行, 资产管理, 债券市场做市, 金融产品代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（五矿证券有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（五矿证券有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "五矿证券·官网首页", url: "https://www.wkzq.com.cn", date: "2026-09-30" }
+
+  - id: sec-minsheng
+    name: 民生证券股份有限公司
+    short: 民生证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1986
+    website: http://www.mszq.com
+    intro: >
+      民生证券注册于上海，注册资本 115.10 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代销
+      、基金代销等。注册地为上海，具备证券经纪、证券承销与保荐等全牌照业务资格。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（民生证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "民生证券·公司简介", url: "https://www.mszq.com/", date: "2026-09-30" }
+      - { title: "民生证券·官网首页", url: "http://www.mszq.com", date: "2026-09-30" }
+
+  - id: sec-morgan-stanley-china
+    name: 摩根士丹利证券（中国）有限公司
+    short: 摩根士丹利证券（中国）
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: https://www.morganstanleysecurities.com.cn
+    intro: >
+      摩根士丹利证券（中国）注册于上海，注册资本 17.18 亿元。业务资格覆盖投资银行、证券自营等。
+    business: [投资银行, 证券自营]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（摩根士丹利证券（中国）有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "摩根士丹利证券（中国）·官网首页", url: "https://www.morganstanleysecurities.com.cn", date: "2026-09-30" }
+
+  - id: sec-nanjing
+    name: 南京证券股份有限公司
+    short: 南京证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1990
+    listed: ["601990.SH"]
+    website: http://www.njzq.com.cn
+    intro: >
+      南京证券注册于江苏南京，注册资本 44.00 亿元。在上交所主板上市（601990.SH）。业务资格覆盖
+      证券经纪、投资银行、资产管理、基金托管、金融产品代销等。
+    business: [证券经纪, 投资银行, 资产管理, 基金托管, 金融产品代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（南京证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "南京证券·官网首页", url: "http://www.njzq.com.cn", date: "2026-09-30" }
+
+  - id: sec-nomura-orient
+    name: 野村东方国际证券有限公司
+    short: 野村东方国际证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: http://www.nomuraoi-sec.com
+    intro: >
+      野村东方国际证券注册于上海，注册资本 20.00 亿元。业务资格覆盖证券经纪、资产管理、证券自营、金融产
+      品代销、期货IB等。野村控股株式会社持股 51%、东方国际集团有限公司持股 24.9%、上海黄浦投资控股
+      集团有限公司持股 24.1%。
+    business: [证券经纪, 资产管理, 证券自营, 金融产品代销, 期货IB]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（野村东方国际证券有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "野村东方国际证券·公司简介", url: "https://www.nomuraoi-sec.com/cn/", date: "2026-09-30" }
+      - { title: "野村东方国际证券·官网首页", url: "http://www.nomuraoi-sec.com", date: "2026-09-30" }
+
+  - id: sec-northeast
+    name: 东北证券股份有限公司
+    short: 东北证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1992
+    listed: ["000686.SZ"]
+    website: http://www.nesc.cn
+    intro: >
+      东北证券注册于吉林长春，注册资本 23.40 亿元。在深交所上市（000686.SZ）。业务资格覆盖证券
+      经纪、投资银行、融资融券、债券市场做市、金融产品代销等。
+    business: [证券经纪, 投资银行, 融资融券, 债券市场做市, 金融产品代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（东北证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "东北证券·官网首页", url: "http://www.nesc.cn", date: "2026-09-30" }
+
+  - id: sec-orient
+    name: 东方证券股份有限公司
+    short: 东方证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1997
+    listed: ["600958.SH", "03958.HK"]
+    website: http://www.dfzq.com.cn
+    intro: >
+      东方证券注册于上海，注册资本 84.97 亿元。在上交所主板上市（600958.SH），在港交所上市（
+      03958.HK）。业务资格覆盖证券经纪、投资银行、融资融券、基金托管、股票期权做市等。第一大股东为申能
+      （集团）有限公司。
+    business: [证券经纪, 投资银行, 融资融券, 基金托管, 股票期权做市]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（东方证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（东方证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "东方证券·官网首页", url: "http://www.dfzq.com.cn", date: "2026-09-30" }
+
+  - id: sec-pacific
+    name: 太平洋证券股份有限公司
+    short: 太平洋证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2004
+    listed: ["601099.SH"]
+    website: http://www.tpyzq.com
+    intro: >
+      太平洋证券注册于云南北京，注册资本 68.16 亿元。在上交所主板上市（601099.SH）。业务资格覆
+      盖证券经纪、投资银行、资产管理、QDII、金融产品代销等。
+    business: [证券经纪, 投资银行, 资产管理, QDII, 金融产品代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（太平洋证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "太平洋证券·官网首页", url: "http://www.tpyzq.com", date: "2026-09-30" }
+
+  - id: sec-pingan
+    name: 平安证券股份有限公司
+    short: 平安证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1991
+    website: https://stock.pingan.com
+    intro: >
+      平安证券注册于深圳，注册资本 138.00 亿元。业务资格覆盖证券经纪、投资银行、资产管理、债券市场做市
+      、QDII等。控股股东为中国平安保险（集团）股份有限公司。
+    business: [证券经纪, 投资银行, 资产管理, 债券市场做市, QDII]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（平安证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（平安证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "平安证券·官网首页", url: "https://stock.pingan.com", date: "2026-09-30" }
+
+  - id: sec-shanghai
+    name: 上海证券有限责任公司
+    short: 上海证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2001
+    website: https://www.shzq.com
+    intro: >
+      上海证券注册于上海，注册资本 53.27 亿元。业务资格覆盖证券经纪、资产管理、融资融券、金融产品代销、基金代销等。由原上海财政证券公司与原上海国际信托投资公司证券部新设合并组建，2020 年 12 月中国证
+      监会核准百联集团有限公司成为控股股东。
+    business: [证券经纪, 资产管理, 融资融券, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（上海证券有限责任公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "上海证券·公司简介", url: "https://www.shzq.com", date: "2026-09-30" }
+      - { title: "上海证券·官网首页", url: "https://www.shzq.com", date: "2026-09-30" }
+
+  - id: sec-shanxi
+    name: 山西证券股份有限公司
+    short: 山西证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1988
+    listed: ["002500.SZ"]
+    website: http://www.i618.com.cn
+    intro: >
+      山西证券注册于太原，注册资本 35.90 亿元。在深交所上市（002500.SZ）。业务资格覆盖证券经纪
+      、融资融券、证券自营、债券市场做市、场外期权等。
+    business: [证券经纪, 融资融券, 证券自营, 债券市场做市, 场外期权]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（山西证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "山西证券·官网首页", url: "http://www.i618.com.cn", date: "2026-09-30" }
+
+  - id: sec-shengang
+    name: 申港证券股份有限公司
+    short: 申港证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: http://www.shgsec.com
+    intro: >
+      申港证券注册于上海，注册资本 43.15 亿元。业务资格覆盖证券经纪、投资银行、资产管理、债券市场做市、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 债券市场做市, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（申港证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "申港证券·官网首页", url: "http://www.shgsec.com", date: "2026-09-30" }
+
+  - id: sec-shenwan-hongyuan
+    name: 申万宏源证券有限公司
+    short: 申万宏源证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2015
+    website: http://www.swhysc.com
+    intro: >
+      申万宏源证券注册于上海，注册资本 535.00 亿元。业务资格覆盖证券经纪、投资银行、资产管理、QDII
+      、企业年金等。
+    business: [证券经纪, 投资银行, 资产管理, QDII, 企业年金]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（申万宏源证券有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "申万宏源证券·官网首页", url: "http://www.swhysc.com", date: "2026-09-30" }
+
+  - id: sec-shenwan-hongyuan-western
+    name: 申万宏源西部证券有限公司
+    short: 申万宏源西部
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: http://www.swhysc.com
+    intro: >
+      申万宏源西部注册于新疆乌鲁木齐，注册资本 57.00 亿元。业务资格覆盖证券经纪、融资融券、证券自营、金
+      融产品代销、基金代销等。
+    business: [证券经纪, 融资融券, 证券自营, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（申万宏源西部证券有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "申万宏源西部·官网首页", url: "http://www.swhysc.com", date: "2026-09-30" }
+
+  - id: sec-sinolink
+    name: 国金证券股份有限公司
+    short: 国金证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    listed: ["600109.SH"]
+    website: http://www.gjzq.com.cn
+    intro: >
+      国金证券注册于成都，注册资本 37.05 亿元。在上交所主板上市（600109.SH）。业务资格覆盖证券
+      经纪、投资银行、资产管理、基金托管、债券市场做市等。
+    business: [证券经纪, 投资银行, 资产管理, 基金托管, 债券市场做市]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（国金证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "国金证券·公司简介", url: "https://www.gjzq.com.cn/main/company-overview/company-intro.html", date: "2026-09-30" }
+      - { title: "国金证券·官网首页", url: "http://www.gjzq.com.cn", date: "2026-09-30" }
+
+  - id: sec-soochow
+    name: 东吴证券股份有限公司
+    short: 东吴证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1993
+    listed: ["601555.SH"]
+    website: http://www.dwzq.com.cn/
+    intro: >
+      东吴证券注册于苏州，注册资本 49.69 亿元。在上交所主板上市（601555.SH）。业务资格覆盖证券
+      经纪、投资银行、资产管理、金融产品代销、基金代销等。前身为苏州证券，是苏州地区唯一的法人证券公司。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（东吴证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "东吴证券·公司简介", url: "https://www.dwzq.com.cn/main/connectUs/aboutUs/index.html", date: "2026-09-30" }
+      - { title: "东吴证券·官网首页", url: "http://www.dwzq.com.cn/", date: "2026-09-30" }
+
+  - id: sec-southwest
+    name: 西南证券股份有限公司
+    short: 西南证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1990
+    listed: ["600369.SH"]
+    website: http://www.swsc.com.cn
+    intro: >
+      西南证券注册于重庆，注册资本 66.45 亿元。在上交所主板上市（600369.SH）。业务资格覆盖证券
+      经纪、投资银行、资产管理、股票期权做市、金融产品代销等。唯一一家注册地在重庆的全国综合性证券公司。
+    business: [证券经纪, 投资银行, 资产管理, 股票期权做市, 金融产品代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（西南证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "西南证券·公司简介", url: "https://www.swsc.com.cn/", date: "2026-09-30" }
+      - { title: "西南证券·官网首页", url: "http://www.swsc.com.cn", date: "2026-09-30" }
+
+  - id: sec-standard-chartered-china
+    name: 渣打证券（中国）有限公司
+    short: 渣打证券（中国）
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: http://www.scs.com.cn/
+    intro: >
+      渣打证券（中国）注册于北京，注册资本 10.50 亿元。业务资格覆盖证券经纪、投资银行、资产管理等。
+    business: [证券经纪, 投资银行, 资产管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（渣打证券（中国）有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "渣打证券（中国）·官网首页", url: "http://www.scs.com.cn/", date: "2026-09-30" }
+
+  - id: sec-tebon
+    name: 德邦证券股份有限公司
+    short: 德邦证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2003
+    website: http://www.tebon.com.cn
+    intro: >
+      德邦证券注册于山东济南，注册资本 42.07 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代
+      销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（德邦证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（德邦证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "德邦证券·官网首页", url: "http://www.tebon.com.cn", date: "2026-09-30" }
+
+  - id: sec-tianfeng
+    name: 天风证券股份有限公司
+    short: 天风证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2000
+    listed: ["601162.SH"]
+    website: http://www.tfzq.com
+    intro: >
+      天风证券注册于湖北武汉，注册资本 100.74 亿元。在上交所主板上市（601162.SH）。业务资格覆
+      盖证券经纪、投资银行、融资融券、债券市场做市、金融产品代销等。湖北宏泰集团有限公司控股的湖北省属金融企业
+      ，总部设在武汉。
+    business: [证券经纪, 投资银行, 融资融券, 债券市场做市, 金融产品代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（天风证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "天风证券·公司简介", url: "https://www.tfzq.com/", date: "2026-09-30" }
+      - { title: "天风证券·官网首页", url: "http://www.tfzq.com", date: "2026-09-30" }
+
+  - id: sec-tianfu
+    name: 天府证券有限责任公司
+    short: 天府证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2001
+    website: http://www.hxzq.cn
+    intro: >
+      天府证券注册于四川成都，注册资本 10.00 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代
+      销、基金代销等。四川省唯一的省属国有控股证券公司，前身为四川省最早从事证券业务的金融机构之一。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（天府证券有限责任公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "天府证券·公司简介", url: "https://www.hxzq.cn/index.php?id=aboutus", date: "2026-09-30" }
+      - { title: "天府证券·官网首页", url: "http://www.hxzq.cn", date: "2026-09-30" }
+
+  - id: sec-ubs
+    name: 瑞银证券有限责任公司
+    short: 瑞银证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: https://www.ubssecurities.com
+    intro: >
+      瑞银证券注册于北京，注册资本 22.10 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（瑞银证券有限责任公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "瑞银证券·官网首页", url: "https://www.ubssecurities.com", date: "2026-09-30" }
+
+  - id: sec-vanho
+    name: 万和证券股份有限公司
+    short: 万和证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2002
+    website: http://www.vanho.cn
+    intro: >
+      万和证券注册于海口，注册资本 22.73 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（万和证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（万和证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "万和证券·官网首页", url: "http://www.vanho.cn", date: "2026-09-30" }
+
+  - id: sec-wanlian
+    name: 万联证券股份有限公司
+    short: 万联证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2001
+    website: http://www.wlzq.com.cn
+    intro: >
+      万联证券注册于广州，注册资本 68.04 亿元。业务资格覆盖证券经纪、投资银行、资产管理、基金托管、金融
+      产品代销等。
+    business: [证券经纪, 投资银行, 资产管理, 基金托管, 金融产品代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（万联证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（万联证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "万联证券·官网首页", url: "http://www.wlzq.com.cn", date: "2026-09-30" }
+
+  - id: sec-western
+    name: 西部证券股份有限公司
+    short: 西部证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2001
+    listed: ["002673.SZ"]
+    intro: >
+      西部证券注册于陕西西安，注册资本 44.70 亿元。在深交所上市（002673.SZ）。业务资格覆盖证券
+      经纪、投资银行、资产管理、股票期权做市、债券市场做市等。
+    business: [证券经纪, 投资银行, 资产管理, 股票期权做市, 债券市场做市]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（西部证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+
+  - id: sec-xiangcai
+    name: 湘财证券股份有限公司
+    short: 湘财证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1996
+    website: https://www.xcsc.com
+    intro: >
+      湘财证券注册于长沙，注册资本 45.91 亿元。业务资格覆盖证券经纪、投资银行、资产管理、场外期权、金融
+      产品代销等。
+    business: [证券经纪, 投资银行, 资产管理, 场外期权, 金融产品代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（湘财证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（湘财证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "湘财证券·官网首页", url: "https://www.xcsc.com", date: "2026-09-30" }
+
+  - id: sec-yingda
+    name: 英大证券有限责任公司
+    short: 英大证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: https://www.ydsc.com.cn
+    intro: >
+      英大证券注册于深圳，注册资本 43.36 亿元。业务资格覆盖证券经纪、投资银行、资产管理、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（英大证券有限责任公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "英大证券·官网首页", url: "https://www.ydsc.com.cn", date: "2026-09-30" }
+
+  - id: sec-yintai
+    name: 银泰证券有限责任公司
+    short: 银泰证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: https://www.ytzq.com
+    intro: >
+      银泰证券注册于深圳，注册资本 14.00 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（银泰证券有限责任公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "银泰证券·官网首页", url: "https://www.ytzq.com", date: "2026-09-30" }
+
+  - id: sec-yongxing
+    name: 甬兴证券有限公司
+    short: 甬兴证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2020
+    website: http://www.yongxingsec.com
+    intro: >
+      甬兴证券注册于浙江宁波，注册资本 30.00 亿元。业务资格覆盖证券经纪、投资银行、融资融券、基金代销等
+      。
+    business: [证券经纪, 投资银行, 融资融券, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（甬兴证券有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（甬兴证券有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "甬兴证券·官网首页", url: "http://www.yongxingsec.com", date: "2026-09-30" }
+
+  - id: sec-yuekai
+    name: 粤开证券股份有限公司
+    short: 粤开证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1988
+    website: http://www.ykzq.com/
+    intro: >
+      粤开证券注册于广州，注册资本 33.23 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代销、基金代销等。广州开发区控股集团有限公司为控股股东。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（粤开证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "粤开证券·公司简介", url: "http://www.ykzq.com/", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（粤开证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "粤开证券·官网首页", url: "http://www.ykzq.com/", date: "2026-09-30" }
+
+  - id: sec-zheshang
+    name: 浙商证券股份有限公司
+    short: 浙商证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2002
+    listed: ["601878.SH"]
+    website: https://www.stocke.com.cn/zszq/index/index.jsp
+    intro: >
+      浙商证券注册于浙江杭州，注册资本 45.74 亿元。在上交所主板上市（601878.SH）。业务资格覆盖
+      证券经纪、投资银行、融资融券、基金托管、债券市场做市等。
+    business: [证券经纪, 投资银行, 融资融券, 基金托管, 债券市场做市]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（浙商证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "浙商证券·官网首页", url: "https://www.stocke.com.cn/zszq/index/index.jsp", date: "2026-09-30" }
+
+  - id: sec-zhongde
+    name: 中德证券有限责任公司
+    short: 中德证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: http://www.zdzq.com.cn
+    intro: >
+      中德证券注册于北京，注册资本 10.00 亿元。业务资格覆盖投资银行等。山西证券股份有限公司持股 
+      66.7%、德意志银行持股 33.3% 的中外合资券商，实际控制人为山西省财政厅。
+    business: [投资银行]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（中德证券有限责任公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（中德证券有限责任公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "中德证券·官网首页", url: "http://www.zdzq.com.cn", date: "2026-09-30" }
+
+  - id: sec-zhongshan
+    name: 中山证券有限责任公司
+    short: 中山证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    website: http://www.zszq.com
+    intro: >
+      中山证券注册于深圳，注册资本 17.80 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（中山证券有限责任公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中山证券·官网首页", url: "http://www.zszq.com", date: "2026-09-30" }
+
+  - id: sec-zhongtai
+    name: 中泰证券股份有限公司
+    short: 中泰证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2001
+    listed: ["600918.SH"]
+    website: http://www.zts.com.cn/
+    intro: >
+      中泰证券注册于济南，注册资本 79.18 亿元。在上交所主板上市（600918.SH）。业务资格覆盖证券
+      经纪、投资银行、融资融券、基金托管、股票期权做市等。
+    business: [证券经纪, 投资银行, 融资融券, 基金托管, 股票期权做市]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（中泰证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中泰证券·官网首页", url: "http://www.zts.com.cn/", date: "2026-09-30" }
+
+  - id: sec-zhongtian
+    name: 中天证券股份有限公司
+    short: 中天证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2004
+    website: http://www.iztzq.com
+    intro: >
+      中天证券注册于沈阳，注册资本 22.25 亿元。业务资格覆盖证券经纪、投资银行、资产管理、金融产品代销、基金代销等。
+    business: [证券经纪, 投资银行, 资产管理, 金融产品代销, 基金代销]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（中天证券股份有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中国证券业协会·证券公司财务报告信息公示（中天证券股份有限公司 2025 年度报告公开披露信息）", url: "https://jg.sac.net.cn/financePublicityPub", date: "2026-09-30" }
+      - { title: "中天证券·官网首页", url: "http://www.iztzq.com", date: "2026-09-30" }
+
+  - id: sec-ztf
+    name: 中天国富证券有限公司
+    short: 中天国富证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2004
+    website: http://www.ztfsec.com
+    intro: >
+      中天国富证券注册于贵阳，注册资本 32.80 亿元。业务资格覆盖证券经纪、投资银行、证券自营等。由中天金
+      融集团股份有限公司控股。
+    business: [证券经纪, 投资银行, 证券自营]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证券业协会·证券公司基本信息公示（中天国富证券有限公司）", url: "https://jg.sac.net.cn/basicPublicityPub", date: "2026-09-30" }
+      - { title: "中天国富证券·公司简介", url: "https://www.ztfsec.com/about", date: "2026-09-30" }
+      - { title: "中天国富证券·官网首页", url: "http://www.ztfsec.com", date: "2026-09-30" }

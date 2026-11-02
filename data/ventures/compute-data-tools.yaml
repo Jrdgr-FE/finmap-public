@@ -1,0 +1,92 @@
+version: 1
+updated: "2026-10-23"
+companies:
+  - id: zhizi-xinyuan
+    name: 智子芯元
+    aliases: [智子芯元（深圳）科技有限责任公司, KernelCAT]
+    match: [智子芯元, KernelCAT]
+    region: cn
+    country: 中国
+    track: ai-compute
+    segment: optimization
+    tags: [算子优化, KernelCAT, 国产算力适配]
+    intro: 深圳市大数据研究院孵化的算子开发与优化企业。研究院公开介绍其 KernelCAT 工具用于高性能算子开发和性能优化；首程控股公告披露其以 AI 和运筹学进行算法与高性能算子的自动发现与优化。
+    coverage: profile
+    verifiedAt: "2026-10-23"
+    sources:
+      - title: 深圳市大数据研究院：KernelCAT 与算子优化
+        url: https://www.sribd.cn/en/article/1408
+        date: "2026-03-20"
+      - title: 首程控股：关于投资智子芯元的自愿公告
+        url: https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0622/2026062200064_c.pdf
+        date: "2026-06-22"
+    events: []
+  - id: meta-circle
+    name: 元环智能
+    en: MetaCircle
+    aliases: [Meta Circle]
+    match: [元环智能, MetaCircle, Meta Circle]
+    region: cn
+    country: 中国
+    track: foundation-models
+    segment: tooling
+    tags: [AI for AI, 元模型, 自动化研究]
+    intro: 研究自我改进 AI、学习动力学与模型设计工具。官网将研究分为 AI 科学、AI for AI 和 AI for Science，展示 ComfyResearch 研究工作台；其元模型目标是辅助模型设计，不等同于已完成通用自主科研验证。
+    website: https://meta-circle.com/zh
+    coverage: profile
+    verifiedAt: "2026-10-23"
+    sources:
+      - title: MetaCircle 官方研究方向与工作台
+        url: https://meta-circle.com/zh
+      - title: 创始人刘子鸣主页：MetaCircle 与元环智能主体对应
+        url: https://kindxiaoming.github.io/
+    events: []
+  - id: genrobot
+    name: 简智机器人
+    en: GenRobot
+    aliases: [简智新创, 简智新创（北京）机器人科技有限公司, GenRobot.AI, Gen DAS]
+    match: [简智机器人, 简智新创, GenRobot, Gen DAS]
+    region: cn
+    country: 中国
+    track: embodied
+    segment: components-data
+    memberships:
+      - {track: robot-parts, segment: simulation}
+    tags: [第一视角数据, 同构采集, 触觉手套, 数据治理]
+    intro: 简智新创（北京）机器人科技有限公司，提供具身智能数据采集硬件、治理平台和数据服务。公开产品包括 DAS Ego、DAS Dex 手部采集设备及 DAS Controller 同构控制器；采集设备与机器人执行器需要分别看待。
+    website: https://cn.genrobot.com/why
+    coverage: profile
+    verifiedAt: "2026-10-23"
+    sources:
+      - title: GenRobot 官方公司介绍
+        url: https://cn.genrobot.com/why
+      - title: DAS Dex 官方产品页
+        url: https://cn.genrobot.com/products/dex
+      - title: DAS Controller 官方产品页
+        url: https://cn.genrobot.com/products/controller
+    events: []
+  - id: robbyant
+    name: 蚂蚁灵波
+    en: Robbyant
+    aliases: [蚂蚁灵波科技, LingBot, 灵波科技]
+    match: [蚂蚁灵波, Robbyant, LingBot, 灵波科技]
+    region: cn
+    country: 中国
+    track: embodied
+    segment: brain
+    memberships:
+      - {track: embodied, segment: body}
+      - {track: world-model, segment: general}
+    tags: [LingBot-VLA, 世界模型, 深度感知, 机器人开发平台]
+    intro: 蚂蚁集团旗下具身智能公司。公开研发 LingBot 系列空间感知、VLA 与世界模型，以及服务机器人；RobbyantModels 文档提供数据准备、模型调优和端侧部署工作流。模型演示和基准结果应与现场交付分开核验。
+    website: https://www.robbyant.com/
+    coverage: profile
+    verifiedAt: "2026-10-23"
+    sources:
+      - title: 蚂蚁集团：具身智能业务介绍
+        url: https://www.antgroup.com/hk/technology/new-tech-Technology-Antfocuses-Tabcomnent-detail/20260105001
+      - title: Robbyant 官方模型目录
+        url: https://technology.robbyant.com/
+      - title: RobbyantModels 产品文档
+        url: https://docs.robbyant.com/zh-Hans/resources/docs/models/product
+    events: []

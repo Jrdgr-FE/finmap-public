@@ -1,0 +1,2223 @@
+note: >-
+  本文件收录国家金融监督管理总局《银行业金融机构法人名单》（截至 2025 年 6 月 30 日）中机构类型标注为信托公司、消费金融公司、汽车金融公司、
+  货币经纪公司的全部法人机构，共 129 家（信托公司 67 家、消费金融公司 31 家、汽车金融公司 25 家、货币经纪公司 6 家），家数与机构编码均逐条对照该名单，
+  name 与 license_code 取自名单原文。信托公司历史上有 68 家，新华信托已于 2023 年破产清算并被移出名单；名单内仍处于接管、
+  破产重整或破产清算阶段的主体（华信信托、新时代信托、华泰汽车金融）status 记为 exited 并在 intro 说明，四川信托重整后已恢复展业记为 active，
+  其余为 active。官网只在实测可打开且页面内容确属该公司时保留，共 123 家列出 website；国联信托、雪松国际信托、华信信托、苏银凯基消费金融、
+  蚂蚁消费金融、三一汽车金融 6 家因官网无法实测核实而省略该字段；founded 只保留有官方名单、机构官网或机构年报等可核验来源的年份，共 103 家列出，
+  其余 26 家未能核实故省略。
+sources:
+  - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - { title: "国家金融监督管理总局", url: "https://www.nfra.gov.cn", date: "2026-09-30" }
+entities:
+  # ---------------- 信托公司 ----------------
+  - id: nbf-jingu-trust
+    name: "中国金谷国际信托有限责任公司"
+    short: "金谷信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0075H211000001
+    regulator: 国家金融监督管理总局
+    founded: 1993
+    website: http://www.jingutrust.com
+    intro: >-
+      中国信达资产管理股份有限公司控股的北京信托公司，1993 年成立，注册资本 22 亿元。业务以信托业务与固有业务为主，在不良资产和特殊机会领域与股东形成协同。
+    business: [信托业务, 固有业务, 资产证券化, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "金谷信托官网", url: "http://www.jingutrust.com", date: "2026-09-30" }
+  - id: nbf-china-credit-trust
+    name: "中诚信托有限责任公司"
+    short: "中诚信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0001H211000001
+    regulator: 国家金融监督管理总局
+    founded: 1995
+    website: https://www.cctic.com.cn
+    intro: >-
+      中国人民保险集团旗下信托公司，前身为 1995 年 11 月成立的中煤信托，注册地北京，是首批重新登记的信托公司之一。业务覆盖信托业务、固有业务以及消费金融等关联牌照。
+    business: [信托业务, 固有业务, 家族信托, 消费金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中诚信托官网", url: "https://www.cctic.com.cn", date: "2026-09-30" }
+  - id: nbf-cofco-trust
+    name: "中粮信托有限责任公司"
+    short: "中粮信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0072H211000001
+    regulator: 国家金融监督管理总局
+    founded: 2009
+    website: http://www.cofco-trust.com
+    intro: >-
+      中粮集团旗下信托公司，2009 年成立并重新登记，注册地北京。业务围绕农业食品产业链开展供应链金融与产业金融服务，同时经营标准化资产管理信托。
+    business: [信托业务, 供应链金融, 农业产业金融, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中粮信托官网", url: "http://www.cofco-trust.com", date: "2026-09-30" }
+  - id: nbf-beijing-trust
+    name: "北京国际信托有限公司"
+    short: "北京信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0066H211000001
+    regulator: 国家金融监督管理总局
+    founded: 1979
+    website: http://www.bjitic.com
+    intro: >-
+      北京市属国有信托公司，官网载明成立于 1979 年，注册地北京。以信托业务和固有业务为主，服务北京市属国企与基础设施建设融资。
+    business: [信托业务, 固有业务, 财富管理, 慈善信托]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "北京信托官网", url: "http://www.bjitic.com", date: "2026-09-30" }
+  - id: nbf-fotic
+    name: "中国对外经济贸易信托有限公司"
+    short: "外贸信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0003H211000001
+    regulator: 国家金融监督管理总局
+    founded: 1987
+    website: https://www.fotic.com.cn
+    intro: >-
+      中国中化控股有限责任公司旗下信托公司，1987 年 9 月 30 日在北京成立，简称外贸信托。业务条线较全，在资产证券化、标品信托与财富管理方向规模居前。
+    business: [信托业务, 资产证券化, 证券投资, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "外贸信托官网", url: "https://www.fotic.com.cn", date: "2026-09-30" }
+  - id: nbf-yingda-trust
+    name: "英大国际信托有限责任公司"
+    short: "英大信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0040H211000001
+    regulator: 国家金融监督管理总局
+    founded: 1987
+    website: http://www.yditc.sgcc.com.cn
+    intro: >-
+      国家电网体系内的信托公司，1987 年 3 月成立，注册地北京。主要股东为国网英大股份有限公司、南方电网资本控股有限公司，业务定位为服务电网主业的产业金融。
+    business: [信托业务, 产业金融, 供应链金融, 绿色信托]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "英大信托官网", url: "http://www.yditc.sgcc.com.cn", date: "2026-09-30" }
+      - { title: "英大国际信托有限责任公司2024年年度报告（上海证券报）", url: "https://paper.cnstock.com/html/2025-04/29/content_2058685.htm", date: "2025-04-29" }
+  - id: nbf-national-trust
+    name: "国民信托有限公司"
+    short: "国民信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0007H211000001
+    regulator: 国家金融监督管理总局
+    founded: 1987
+    website: https://www.natrust.cn
+    intro: >-
+      注册地北京的信托公司，1987 年成立，2007 年首批完成重新登记。业务以信托业务与固有业务为主，历史上存在产品违约及股东合规风险记录。
+    business: [信托业务, 固有业务, 财富管理, 公益慈善信托]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "国民信托官网", url: "https://www.natrust.cn", date: "2026-09-30" }
+  - id: nbf-citic-trust
+    name: "中信信托有限责任公司"
+    short: "中信信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0002H211000001
+    regulator: 国家金融监督管理总局
+    founded: 1988
+    website: http://www.citictrust.com.cn
+    intro: >-
+      中国中信金融控股有限公司旗下的核心信托平台，前身为 1988 年经中国人民银行批准成立的中信兴业信托投资公司，注册地北京，注册资本 112.76 亿元，
+      信托资产规模长期居行业首位。
+    business: [信托业务, 固有业务, 家族信托, 资产证券化]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中信信托官网", url: "http://www.citictrust.com.cn", date: "2026-09-30" }
+  - id: nbf-china-fortune-trust
+    name: "华鑫国际信托有限公司"
+    short: "华鑫信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0078H211000001
+    regulator: 国家金融监督管理总局
+    website: https://www.cfitc.com
+    intro: >-
+      注册地北京的信托公司，简称华鑫信托，英文简称 CFITC。业务以信托业务和固有业务为主，在标准化资产投资与同业合作方向有布局。
+    business: [信托业务, 固有业务, 标品投资, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "华鑫信托官网", url: "https://www.cfitc.com", date: "2026-09-30" }
+  - id: nbf-minsheng-trust
+    name: "中国民生信托有限公司"
+    short: "民生信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0084H211000001
+    regulator: 国家金融监督管理总局
+    founded: 1994
+    website: http://www.msxt.com
+    intro: >-
+      注册地北京的信托公司，前身为 1994 年 10 月成立的中国旅游国际信托投资有限公司，2012 年经原银监会批复重组并更名。近年处于存量风险化解与业务收缩阶段。
+    business: [信托业务, 固有业务, 房地产信托, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "民生信托官网", url: "http://www.msxt.com", date: "2026-09-30" }
+  - id: nbf-sdic-taikang-trust
+    name: "国投泰康信托有限公司"
+    short: "国投泰康信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0008H211000001
+    regulator: 国家金融监督管理总局
+    website: https://www.sdictktrust.com
+    intro: >-
+      国家开发投资集团与泰康保险集团等共同持股的信托公司，注册地北京。业务覆盖信托业务与固有业务，在股权投资和标准化资产方向有所布局。
+    business: [信托业务, 股权投资, 标品信托, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "国投泰康信托官网", url: "https://www.sdictktrust.com", date: "2026-09-30" }
+  - id: nbf-ccb-trust
+    name: "建信信托有限责任公司"
+    short: "建信信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0034H211000001
+    regulator: 国家金融监督管理总局
+    founded: 2003
+    website: http://www.ccbtrust.com.cn
+    intro: >-
+      中国建设银行控股的信托公司，前身为合肥兴泰信托，2009 年建设银行增资控股重组，注册地北京。受托管理资产规模居行业前列，业务横跨资产管理与股权投资。
+    business: [信托业务, 股权投资, 资产证券化, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "建信信托官网", url: "http://www.ccbtrust.com.cn", date: "2026-09-30" }
+  - id: nbf-tianjin-trust
+    name: "天津信托有限责任公司"
+    short: "天津信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0073H212000001
+    regulator: 国家金融监督管理总局
+    founded: 1980
+    website: http://www.tjtrust.com
+    intro: >-
+      天津市的信托公司，官网载明由中国人民银行天津市分行创建、1980 年 10 月成立，注册地天津。现由上实集团体系控股，业务以信托业务与固有业务为主。
+    business: [信托业务, 固有业务, 财富管理, 慈善信托]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "天津信托官网", url: "http://www.tjtrust.com", date: "2026-09-30" }
+  - id: nbf-northern-trust
+    name: "北方国际信托股份有限公司"
+    short: "北方信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0070H212000001
+    regulator: 国家金融监督管理总局
+    founded: 1987
+    website: https://www.nitic.cn
+    intro: >-
+      总部设在天津的信托公司，前身为 1987 年成立的天津经济技术开发区信托投资公司。业务涵盖资产管理信托、服务信托、公益慈善信托及家族信托，并保留自有资金投融资业务。
+    business: [信托业务, 固有业务, 服务信托, 公益慈善信托]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "北方信托官网", url: "https://www.nitic.cn", date: "2026-09-30" }
+  - id: nbf-bohai-trust
+    name: "渤海国际信托股份有限公司"
+    short: "渤海信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0005H213010001
+    regulator: 国家金融监督管理总局
+    founded: 1983
+    website: http://www.bohaitrust.com
+    intro: >-
+      注册地河北石家庄的信托公司，前身为 1983 年 12 月成立的河北省国际信托投资有限责任公司，2006 年重组引入市场机制。业务以信托业务与固有业务为主。
+    business: [信托业务, 固有业务, 财富管理, 标准资产投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "渤海信托官网", url: "http://www.bohaitrust.com", date: "2026-09-30" }
+  - id: nbf-shanxi-trust
+    name: "山西信托股份有限公司"
+    short: "山西信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0012H214010001
+    regulator: 国家金融监督管理总局
+    website: https://www.sxxt.net
+    intro: >-
+      山西省属国有控股信托公司，注册地太原，是山西省内唯一保留的信托机构。业务以信托业务和固有业务为主，服务地方国企与能源产业融资。
+    business: [信托业务, 固有业务, 财富管理, 服务信托]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "山西信托官网", url: "https://www.sxxt.net", date: "2026-09-30" }
+  - id: nbf-huachen-trust
+    name: "华宸信托有限责任公司"
+    short: "华宸信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0013H215010001
+    regulator: 国家金融监督管理总局
+    website: http://www.hctrust.cn
+    intro: >-
+      注册地内蒙古呼和浩特市的信托公司，总部设于呼和浩特，在北京设有业务部门。业务以信托业务和固有业务为主，服务内蒙古区域经济。
+    business: [信托业务, 固有业务, 财富管理, 服务信托]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "华宸信托官网", url: "http://www.hctrust.cn", date: "2026-09-30" }
+  - id: nbf-new-times-trust
+    name: "新时代信托股份有限公司"
+    short: "新时代信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0014H215020001
+    regulator: 国家金融监督管理总局
+    founded: 1987
+    website: http://www.xsdxt.com
+    intro: >-
+      注册于内蒙古包头的信托公司，前身为 1987 年成立的包头市信托投资公司，原属明天系。2020 年 7 月起被监管部门接管，清产核资显示严重资不抵债，
+      目前处于风险处置与投资者清偿阶段，业务基本停滞。牌照与法人资格仍在，因此状态标为风险处置中而非已退出。
+    business: [信托业务, 固有业务, 风险处置, 财富管理]
+    parent: ROOT
+    status: distressed
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "新时代信托官网", url: "http://www.xsdxt.com", date: "2026-09-30" }
+      - { title: "新时代信托投资者清偿方案说明（界面新闻）", url: "https://www.jiemian.com/article/7554446.html", date: "2022-06-05" }
+  - id: nbf-jilin-trust
+    name: "吉林省信托有限责任公司"
+    short: "吉林信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0016H222010001
+    regulator: 国家金融监督管理总局
+    founded: 1985
+    website: https://www.jptic.cn
+    intro: >-
+      吉林省唯一一家专业从事金融信托业务的非银行金融机构，1985 年成立，注册地长春。业务以信托业务与固有业务为主，服务吉林省属企业与地方融资。
+    business: [信托业务, 固有业务, 财富管理, 产业金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "吉林信托官网", url: "https://www.jptic.cn", date: "2026-09-30" }
+  - id: nbf-zhongrong-trust
+    name: "中融国际信托有限公司"
+    short: "中融信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0019H223010001
+    regulator: 国家金融监督管理总局
+    founded: 1987
+    website: http://www.zritc.com
+    intro: >-
+      注册地黑龙江哈尔滨的信托公司，官网载明成立于 1987 年。2023 年 9 月起聘请建信信托、中信信托提供委托管理服务，部分信托产品无法按期兑付，
+      处于风险化解阶段。
+    business: [信托业务, 固有业务, 房地产信托, 标品投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中融信托官网", url: "http://www.zritc.com", date: "2026-09-30" }
+      - { title: "中融信托聘请建信信托、中信信托提供专业服务（澎湃新闻）", url: "https://www.thepaper.cn/newsDetail_forward_24627661", date: "2023-09-16" }
+  - id: nbf-shanghai-trust
+    name: "上海国际信托有限公司"
+    short: "上海信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0020H231000001
+    regulator: 国家金融监督管理总局
+    founded: 1981
+    website: http://www.shanghaitrust.com
+    intro: >-
+      上海浦东发展银行控股的银行系信托公司，成立于 1981 年，注册地上海。业务覆盖资产管理信托、资产服务信托与公益慈善信托，是全国首批系统重要性信托公司之一。
+    business: [信托业务, 资产证券化, 家族信托, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "上海信托官网", url: "http://www.shanghaitrust.com", date: "2026-09-30" }
+  - id: nbf-huaao-trust
+    name: "华澳国际信托有限公司"
+    short: "华澳信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0074H231000001
+    regulator: 国家金融监督管理总局
+    founded: 1992
+    website: https://www.huaao-trust.com
+    intro: >-
+      注册地上海的信托公司，1992 年成立，前身为昆明国际信托投资公司，2009 年迁址上海并更为现名，注册资本 25 亿元。股东为重庆融达科技发展有限公司与重庆财信企业集团。
+    business: [信托业务, 固有业务, 房地产信托, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "华澳信托官网", url: "https://www.huaao-trust.com", date: "2026-09-30" }
+  - id: nbf-zhongtai-trust
+    name: "中泰信托有限责任公司"
+    short: "中泰信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0024H231000001
+    regulator: 国家金融监督管理总局
+    founded: 1988
+    website: https://www.zhongtaitrust.com
+    intro: >-
+      注册地上海的信托公司，前身为中国农业银行厦门信托投资公司，官网载明成立于 1988 年。业务打通实业投资、资本市场与货币市场，以资产管理和财富管理为主。
+    business: [信托业务, 固有业务, 标品投资, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中泰信托官网", url: "https://www.zhongtaitrust.com", date: "2026-09-30" }
+  - id: nbf-hwabao-trust
+    name: "华宝信托有限责任公司"
+    short: "华宝信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0023H231000001
+    regulator: 国家金融监督管理总局
+    website: http://www.hwabaotrust.com
+    intro: >-
+      中国宝武钢铁集团体系内的信托公司，注册地上海。业务以信托业务与固有业务为主，在证券投资信托与产融结合方向有长期积累。
+    business: [信托业务, 固有业务, 证券投资, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "华宝信托官网", url: "http://www.hwabaotrust.com", date: "2026-09-30" }
+  - id: nbf-zhonghai-trust
+    name: "中海信托股份有限公司"
+    short: "中海信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0022H231000001
+    regulator: 国家金融监督管理总局
+    website: https://www.zhtrust.com
+    intro: >-
+      注册地上海的信托公司，中国海洋石油集团体系内的金融平台之一。业务包括资产服务信托、资产管理信托与公益慈善信托，并经营小微经营贷相关业务。
+    business: [信托业务, 固有业务, 小微经营贷, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中海信托官网", url: "https://www.zhtrust.com", date: "2026-09-30" }
+  - id: nbf-jyuan-trust
+    name: "建元信托股份有限公司"
+    short: "建元信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0025H231000001
+    regulator: 国家金融监督管理总局
+    founded: 1987
+    website: https://www.j-yuantrust.com
+    intro: >-
+      原安信信托股份有限公司，1987 年成立、1992 年转制，注册地上海，是全国最早一批股份制非银行金融机构。经历风险处置与重组后更名为建元信托，
+      业务恢复以信托本源业务为主。
+    business: [信托业务, 固有业务, 风险化解, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "建元信托官网", url: "https://www.j-yuantrust.com", date: "2026-09-30" }
+  - id: nbf-aj-trust
+    name: "上海爱建信托有限责任公司"
+    short: "爱建信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0021H231000001
+    regulator: 国家金融监督管理总局
+    founded: 1986
+    website: https://www.ajxt.com.cn
+    intro: >-
+      注册地上海的信托公司，前身创建于 1986 年 8 月，是我国改革开放后设立的第一家民营非银行金融机构，现控股股东爱建集团为均瑶集团金融板块。
+      业务以信托业务与财富管理为主。
+    business: [信托业务, 固有业务, 财富管理, 家族信托]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "爱建信托官网", url: "https://www.ajxt.com.cn", date: "2026-09-30" }
+  - id: nbf-jiangsu-trust
+    name: "江苏省国际信托有限责任公司"
+    short: "江苏信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0026H232010001
+    regulator: 国家金融监督管理总局
+    founded: 1981
+    website: https://www.jsitc.net
+    intro: >-
+      江苏省国信集团体系内的信托公司，前身为 1981 年 10 月经批准成立的江苏省国际信托投资公司，2002 年重新登记。现由江苏国信股份有限公司控股，
+      业务以信托业务与金融股权投资为主。
+    business: [信托业务, 股权投资, 标品投资, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "江苏信托官网", url: "https://www.jsitc.net", date: "2026-09-30" }
+  - id: nbf-zijin-trust
+    name: "紫金信托有限责任公司"
+    short: "紫金信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0027H232010001
+    regulator: 国家金融监督管理总局
+    founded: 1992
+    website: https://www.zjtrust.com.cn
+    intro: >-
+      注册地江苏南京的信托公司，前身为南京市信托投资公司，官网载明成立于 1992 年。股东为南京紫金投资集团等地方国资企业，业务以信托业务与固有业务为主。
+    business: [信托业务, 固有业务, 财富管理, 标品投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "紫金信托官网", url: "https://www.zjtrust.com.cn", date: "2026-09-30" }
+  - id: nbf-guolian-trust
+    name: "国联信托股份有限公司"
+    short: "国联信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0028H332020001
+    regulator: 国家金融监督管理总局
+    founded: 1987
+    intro: >-
+      江苏省无锡市的地方国有控股信托公司，初创于 1987 年，前身为无锡市信托投资公司，2003 年完成重新登记，2008 年更为现名。注册资本 30 亿元，
+      参股无锡农商行、国联证券等金融机构。
+    business: [信托业务, 固有业务, 金融股权投资, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "国联集团官网：国联信托股份有限公司简介", url: "https://www.glgc.com.cn/jtcy/gljr/3619841088596480.shtml", date: "2026-09-30" }
+  - id: nbf-suzhou-trust
+    name: "苏州信托有限公司"
+    short: "苏州信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0029H332050001
+    regulator: 国家金融监督管理总局
+    founded: 2002
+    website: http://www.trustsz.com
+    intro: >-
+      注册地江苏苏州的信托公司，2002 年重新登记设立，股东为苏州国际发展集团等地方国资企业。业务以信托业务与固有业务为主，服务苏州区域经济。
+    business: [信托业务, 固有业务, 财富管理, 服务信托]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "苏州信托官网", url: "http://www.trustsz.com", date: "2026-09-30" }
+  - id: nbf-hztrust
+    name: "杭州工商信托股份有限公司"
+    short: "杭州工商信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0031H233010001
+    regulator: 国家金融监督管理总局
+    founded: 1986
+    website: http://www.hztrust.com
+    intro: >-
+      注册地浙江杭州的国有控股信托公司，官网载明成立于 1986 年，持信托业务牌照。业务以信托业务与固有业务为主，服务浙江省内实体经济。
+    business: [信托业务, 固有业务, 财富管理, 标品投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "杭州工商信托官网", url: "http://www.hztrust.com", date: "2026-09-30" }
+  - id: nbf-wanxiang-trust
+    name: "万向信托股份公司"
+    short: "万向信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0082H233010001
+    regulator: 国家金融监督管理总局
+    founded: 2012
+    website: http://www.wxtrust.com
+    intro: >-
+      万向集团旗下的信托公司，2012 年 8 月成立，注册地浙江杭州。业务以财富管理服务信托、资产管理信托为主，同时承担存量风险资产处置。
+    business: [信托业务, 财富管理, 服务信托, 公益慈善信托]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "万向信托官网", url: "http://www.wxtrust.com", date: "2026-09-30" }
+      - { title: "万向信托股份公司2024年度报告摘要（证券时报电子报）", url: "https://epaper.stcn.com/att/202504/29/ZQ29B026-XQ_eBook.pdf", date: "2025-04-29" }
+  - id: nbf-zheshang-jinhui-trust
+    name: "浙商金汇信托股份有限公司"
+    short: "浙商金汇信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0033H233010001
+    regulator: 国家金融监督管理总局
+    website: http://www.zsjhtrust.com
+    intro: >-
+      注册地浙江杭州的信托公司，简称浙商金汇信托，股东以浙江省属国有金融企业为主。业务以信托业务与固有业务为主，在标准化资产投资方向有布局。
+    business: [信托业务, 固有业务, 标品投资, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "浙商金汇信托官网", url: "http://www.zsjhtrust.com", date: "2026-09-30" }
+  - id: nbf-jictrust
+    name: "中建投信托股份有限公司"
+    short: "中建投信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0065H233010001
+    regulator: 国家金融监督管理总局
+    founded: 1979
+    website: https://jictrust.cn
+    intro: >-
+      注册地浙江杭州的信托公司，前身可追溯至 1979 年，现为中国建银投资有限责任公司体系内的信托平台，注册资本 50 亿元。业务以信托业务与固有业务为主。
+    business: [信托业务, 固有业务, 财富管理, 标品投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中建投信托官网", url: "https://jictrust.cn", date: "2026-09-30" }
+  - id: nbf-guoyuan-trust
+    name: "安徽国元信托有限责任公司"
+    short: "国元信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0035H234010001
+    regulator: 国家金融监督管理总局
+    founded: 2001
+    website: https://www.gyxt.com.cn
+    intro: >-
+      安徽国元金融控股集团发起设立的信托公司，官网载明创立于 2001 年，注册地安徽合肥，注册资本 42 亿元，为中国信托业协会理事单位。
+    business: [信托业务, 固有业务, 财富管理, 慈善信托]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "国元信托官网", url: "https://www.gyxt.com.cn", date: "2026-09-30" }
+  - id: nbf-ciit
+    name: "兴业国际信托有限公司"
+    short: "兴业国际信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0036H235010001
+    regulator: 国家金融监督管理总局
+    website: https://www.ciit.com.cn
+    intro: >-
+      注册地福建福州的信托公司，简称兴业信托，为兴业银行集团体系内的信托平台。业务以信托业务与固有业务为主，在标准化资产与财富管理方向有布局。
+    business: [信托业务, 固有业务, 标品投资, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "兴业国际信托官网", url: "https://www.ciit.com.cn", date: "2026-09-30" }
+  - id: nbf-cedar-trust
+    name: "雪松国际信托股份有限公司"
+    short: "雪松国际信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0083H236010001
+    regulator: 国家金融监督管理总局
+    founded: 1981
+    intro: >-
+      注册地江西南昌的信托公司，前身为 1981 年 6 月成立的江西省国际信托投资公司，2012 年更名为中江国际信托，2019 年雪松控股入主后更为现名。
+      近年多款产品逾期，处于清产核资与风险处置阶段，2026 年经江西监管局批准换领新的金融许可证，注册地江西南昌。
+    business: [信托业务, 固有业务, 风险处置, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "雪松信托拟开展审计、评估和法律尽调（澎湃新闻）", url: "http://www.thepaper.cn/newsDetail_forward_25990640", date: "2024-01-11" }
+  - id: nbf-avictc-trust
+    name: "中航信托股份有限公司"
+    short: "中航信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0076H236010001
+    regulator: 国家金融监督管理总局
+    website: http://www.avictc.com
+    intro: >-
+      中国航空工业集团体系内的信托公司，注册地江西南昌。业务以信托业务和固有业务为主，在航空产业金融与产融结合方向有布局。
+    business: [信托业务, 固有业务, 航空产业金融, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中航信托官网", url: "http://www.avictc.com", date: "2026-09-30" }
+  - id: nbf-sitic
+    name: "山东省国际信托股份有限公司"
+    short: "山东国信"
+    category: nonbank
+    type: trust-company
+    license_code: K0039H237010002
+    regulator: 国家金融监督管理总局
+    listed: ["1697.HK"]
+    website: http://www.sitic.com.cn
+    intro: >-
+      山东省国际信托股份有限公司，注册地山东济南，是港股上市的信托公司。业务以信托业务与固有业务为主，同时经营家族信托、慈善信托等服务信托业务。
+    business: [信托业务, 固有业务, 财富管理, 慈善信托]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "山东国信官网", url: "http://www.sitic.com.cn", date: "2026-09-30" }
+  - id: nbf-zhongyuan-trust
+    name: "中原信托有限公司"
+    short: "中原信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0042H241010002
+    regulator: 国家金融监督管理总局
+    founded: 1985
+    website: https://www.zyxt.com.cn
+    intro: >-
+      河南省属国有控股信托公司，官网载明成立于 1985 年，注册地河南郑州，是国家金融监督管理总局核准的国有控股金融机构。业务以信托业务与固有业务为主。
+    business: [信托业务, 固有业务, 财富管理, 标品投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中原信托官网", url: "https://www.zyxt.com.cn", date: "2026-09-30" }
+  - id: nbf-bairui-trust
+    name: "百瑞信托有限责任公司"
+    short: "百瑞信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0043H241010001
+    regulator: 国家金融监督管理总局
+    website: http://www.brxt.net
+    intro: >-
+      注册地河南郑州的信托公司，国家电投资本控股有限公司为主要股东，属国有控股金融机构。业务以信托业务与固有业务为主。
+    business: [信托业务, 固有业务, 标品投资, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "百瑞信托官网", url: "http://www.brxt.net", date: "2026-09-30" }
+  - id: nbf-bocomm-trust
+    name: "交银国际信托有限公司"
+    short: "交银国际信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0044H242010001
+    regulator: 国家金融监督管理总局
+    founded: 1981
+    website: https://www.bocommtrust.com
+    intro: >-
+      交通银行控股的银行系信托公司，前身为 1981 年 6 月成立的湖北省国际信托投资公司，注册地湖北武汉。业务以信托业务与固有业务为主，与交通银行集团形成协同。
+    business: [信托业务, 固有业务, 财富管理, 资产证券化]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "交银国际信托官网", url: "https://www.bocommtrust.com", date: "2026-09-30" }
+  - id: nbf-gt-trust
+    name: "国通信托有限责任公司"
+    short: "国通信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0045H242010001
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    website: http://www.gt-trust.com
+    intro: >-
+      注册地湖北武汉的信托公司，原为方正东亚信托有限责任公司，2010 年 1 月 23 日经原银监会批准重组成立。现由武汉金融控股集团控股，业务以信托业务与固有业务为主。
+    business: [信托业务, 固有业务, 财富管理, 标品投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "国通信托官网", url: "http://www.gt-trust.com", date: "2026-09-30" }
+  - id: nbf-caixin-trust
+    name: "湖南省财信信托有限责任公司"
+    short: "财信信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0018H243010001
+    regulator: 国家金融监督管理总局
+    founded: 1985
+    website: https://cxxt.com
+    intro: >-
+      湖南省财信金融控股集团旗下的信托公司，1985 年经湖南省人民政府批准成立，2002 年经中国人民银行总行核准重新登记，是湖南省唯一保留的信托机构。
+    business: [信托业务, 固有业务, 财富管理, 服务信托]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "财信信托官网", url: "https://cxxt.com", date: "2026-09-30" }
+  - id: nbf-yuecai-trust
+    name: "广东粤财信托有限公司"
+    short: "粤财信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0047H244010001
+    regulator: 国家金融监督管理总局
+    founded: 1984
+    website: http://www.utrusts.com
+    intro: >-
+      广东粤财投资控股有限公司旗下的信托公司，1984 年 12 月成立，注册地广东广州，是国内首批设立的信托公司之一。业务以信托业务与固有业务为主。
+    business: [信托业务, 固有业务, 财富管理, 慈善信托]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "粤财信托官网", url: "http://www.utrusts.com", date: "2026-09-30" }
+      - { title: "粤财信托电子交易服务个人信息保护政策（官网载明公司网址）", url: "https://webtrust.yuecaitrust.com/protocols/tmes/personalInformation.html", date: "2026-09-30" }
+  - id: nbf-daye-trust
+    name: "大业信托有限责任公司"
+    short: "大业信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0080H244010001
+    regulator: 国家金融监督管理总局
+    website: https://www.dytrustee.com
+    intro: >-
+      注册地广东广州的信托公司，股东包括广州金融控股集团、中国东方资产与广东京信电力集团。业务涵盖资产管理、服务信托、家族信托与信息披露等板块。
+    business: [信托业务, 固有业务, 家族信托, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "大业信托官网", url: "https://www.dytrustee.com", date: "2026-09-30" }
+  - id: nbf-dongguan-trust
+    name: "东莞信托有限公司"
+    short: "东莞信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0050H244190001
+    regulator: 国家金融监督管理总局
+    website: http://www.dgxt.com
+    intro: >-
+      注册地广东东莞的信托公司，股东为东莞市属国有企业。业务以信托业务与固有业务为主，服务粤港澳大湾区地方经济。
+    business: [信托业务, 固有业务, 财富管理, 服务信托]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "东莞信托官网", url: "http://www.dgxt.com", date: "2026-09-30" }
+  - id: nbf-cqitic
+    name: "重庆国际信托股份有限公司"
+    short: "重庆信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0051H250000001
+    regulator: 国家金融监督管理总局
+    founded: 1984
+    website: http://www.cqitic.com
+    intro: >-
+      注册地重庆的信托公司，1984 年 10 月经中国人民银行批准成立，2002 年引入战略投资者完成重组。业务以信托业务与固有业务为主，参股多家金融机构。
+    business: [信托业务, 固有业务, 标品投资, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "重庆信托官网", url: "http://www.cqitic.com", date: "2026-09-30" }
+  - id: nbf-crtrust
+    name: "中铁信托有限责任公司"
+    short: "中铁信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0053H251010001
+    regulator: 国家金融监督管理总局
+    founded: 2002
+    website: http://www.crtrust.com
+    intro: >-
+      中国中铁股份有限公司控股的信托公司，2002 年 12 月成立、2008 年更为现名，注册地四川成都。业务以信托业务与固有业务为主，在基础设施投融资领域有传统优势。
+    business: [信托业务, 固有业务, 基础设施金融, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中铁信托官网", url: "http://www.crtrust.com", date: "2026-09-30" }
+  - id: nbf-sichuan-trust
+    name: "四川信托有限公司"
+    short: "四川信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0079H251010001
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    website: https://www.schtrust.com
+    intro: >-
+      注册地四川成都的信托公司，2010 年设立。此前因民营股东挪用信托资金导致 TOT 产品大面积逾期并进入破产重整，2025 年 9 月股权变更获监管批复，
+      蜀道投资集团持股 58.6278% 成为控股股东，公司性质转为地方国有控股并推动恢复展业。
+    business: [信托业务, 固有业务, 财富管理, 风险化解]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "四川信托官网", url: "https://www.schtrust.com", date: "2026-09-30" }
+      - { title: "四川信托股权变更获批，蜀道集团成控股股东（每日经济新闻）", url: "https://m.nbd.com.cn/articles/2025-09-24/4073988.html", date: "2025-09-24" }
+  - id: nbf-hngtrust
+    name: "华能贵诚信托有限公司"
+    short: "华能贵诚信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0054H252010001
+    regulator: 国家金融监督管理总局
+    website: http://www.hngtrust.com
+    intro: >-
+      中国华能集团体系内的信托公司，注册地贵州贵阳。业务以信托业务与固有业务为主，在能源产业金融与产业投融资方向有布局。
+    business: [信托业务, 固有业务, 能源产业金融, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "华能贵诚信托官网", url: "http://www.hngtrust.com", date: "2026-09-30" }
+  - id: nbf-yntrust
+    name: "云南国际信托有限公司"
+    short: "云南信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0055H253010001
+    regulator: 国家金融监督管理总局
+    founded: 1991
+    website: http://www.yntrust.com
+    intro: >-
+      注册地云南昆明的信托公司，1991 年成立，2003 年完成重新登记。业务以信托业务与固有业务为主，在资本市场业务和标品投资方向有所布局。
+    business: [信托业务, 固有业务, 标品投资, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "云南信托官网", url: "http://www.yntrust.com", date: "2026-09-30" }
+  - id: nbf-tibet-trust
+    name: "西藏信托有限公司"
+    short: "西藏信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0056H254010001
+    regulator: 国家金融监督管理总局
+    founded: 1991
+    website: http://www.ttco.cn
+    intro: >-
+      注册地西藏拉萨的信托公司，1991 年 10 月成立，原名西藏自治区信托投资公司，2010 年更为现名，由西藏自治区财政厅控股。业务以信托业务与固有业务为主。
+    business: [信托业务, 固有业务, 财富管理, 慈善信托]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "西藏信托官网", url: "http://www.ttco.cn", date: "2026-09-30" }
+      - { title: "西藏信托有限公司2023年度报告（公司概况载明成立时间与网址）", url: "http://static.trust-one.com/img/news_content/20240429/1714374197447067517.pdf", date: "2024-04-29" }
+  - id: nbf-caitc
+    name: "长安国际信托股份有限公司"
+    short: "长安信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0067H261010001
+    regulator: 国家金融监督管理总局
+    website: http://www.caitc.cn
+    intro: >-
+      注册地陕西西安的信托公司，简称长安信托。业务以信托业务与固有业务为主。
+    business: [信托业务, 固有业务, 财富管理, 标品投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "长安信托官网", url: "http://www.caitc.cn", date: "2026-09-30" }
+  - id: nbf-siti
+    name: "陕西省国际信托股份有限公司"
+    short: "陕国投"
+    category: nonbank
+    type: trust-company
+    license_code: K0068H261010001
+    regulator: 国家金融监督管理总局
+    founded: 1985
+    listed: ["000563.SZ"]
+    website: http://www.siti.com.cn
+    intro: >-
+      陕西省国际信托股份有限公司，深交所上市（000563.SZ），1985 年 1 月成立，注册地陕西西安，前身为陕西省金融联合投资公司。是中西部地区唯一的上市信托公司，
+      业务以信托业务与固有业务为主。
+    business: [信托业务, 固有业务, 标品投资, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "陕国投官网", url: "http://www.siti.com.cn", date: "2026-09-30" }
+      - { title: "陕国投A 2024年年度报告（公司网址与基本信息）", url: "https://disc.static.szse.cn/disc/disk03/finalpage/2025-03-17/97ccc7ae-4681-4580-b969-7ac955f44585.PDF", date: "2025-03-17" }
+  - id: nbf-wti-trust
+    name: "西部信托有限公司"
+    short: "西部信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0069H261010001
+    regulator: 国家金融监督管理总局
+    founded: 2002
+    website: https://www.wti-xa.com
+    intro: >-
+      注册地陕西西安的信托公司，2002 年 7 月由原陕西信托投资有限公司与陕西省西北信托投资有限公司合并组建。业务以信托业务与固有业务为主。
+    business: [信托业务, 固有业务, 财富管理, 服务信托]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "西部信托官网", url: "https://www.wti-xa.com", date: "2026-09-30" }
+  - id: nbf-ebtrust
+    name: "光大兴陇信托有限责任公司"
+    short: "光大兴陇信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0060H262010001
+    regulator: 国家金融监督管理总局
+    website: https://www.ebtrust.com
+    intro: >-
+      中国光大集团体系内的信托公司，前身为甘肃信托，注册地甘肃兰州。业务以信托业务与固有业务为主，与光大集团银行、保险等板块形成协同。
+    business: [信托业务, 固有业务, 财富管理, 慈善信托]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "光大兴陇信托官网", url: "https://www.ebtrust.com", date: "2026-09-30" }
+  - id: nbf-mintrust
+    name: "五矿国际信托有限公司"
+    short: "五矿信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0061H263010001
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    website: http://www.mintrust.com
+    intro: >-
+      中国五矿集团旗下信托公司，前身为庆泰信托，2010 年 10 月 8 日经原银监会批准恢复营业并更名，注册地青海西宁，注册资本 130.51 亿元，
+      控股股东为五矿资本控股有限公司。
+    business: [信托业务, 固有业务, 标品投资, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "五矿信托官网", url: "http://www.mintrust.com", date: "2026-09-30" }
+      - { title: "五矿国际信托有限公司2024年度报告（公司概况载明成立时间与网址）", url: "https://www.mintrust.com/xcpcserver/file/image/display?fileName=2024%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A", date: "2025-04-30" }
+  - id: nbf-xingbao-trust
+    name: "兴宝国际信托有限责任公司"
+    short: "兴宝信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0063H265010001
+    regulator: 国家金融监督管理总局
+    website: https://www.xingbao-trust.com
+    intro: >-
+      注册地新疆乌鲁木齐的信托公司，前身为华融国际信托，风险处置后由中国信托业保障基金有限责任公司控股，现名兴宝国际信托有限责任公司。业务以信托业务与固有业务为主。
+    business: [信托业务, 固有业务, 财富管理, 风险处置]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "兴宝信托官网", url: "https://www.xingbao-trust.com", date: "2026-09-30" }
+  - id: nbf-gwxs-trust
+    name: "长城新盛信托有限责任公司"
+    short: "长城新盛信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0081H265010001
+    regulator: 国家金融监督管理总局
+    founded: 1988
+    website: https://www.gwxstrust.com
+    intro: >-
+      注册地新疆乌鲁木齐的国有控股信托公司，1988 年 12 月成立，股东包括中国长城资产等机构。业务以信托业务与固有业务为主。
+    business: [信托业务, 固有业务, 财富管理, 服务信托]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "长城新盛信托官网", url: "https://www.gwxstrust.com", date: "2026-09-30" }
+  - id: nbf-hxtic
+    name: "华信信托股份有限公司"
+    short: "华信信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0015H221020001
+    regulator: 国家金融监督管理总局
+    founded: 1981
+    intro: >-
+      总部位于辽宁大连的信托公司，成立于 1981 年。2025 年 11 月 28 日大连市中级人民法院裁定受理其重整申请，并指定清算组担任管理人，
+      公司处于破产重整程序中并公开招募重整投资人。法人资格未消灭，因此状态标为风险处置中而非已退出。
+    business: [信托业务, 固有业务, 风险处置, 财富管理]
+    parent: ROOT
+    status: distressed
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "华信信托股份有限公司重整案关于公开招募和遴选重整投资人的公告（全国企业破产重整案件信息网）", url: "https://pccz.court.gov.cn/pcgg/ggxq?id=feed8118abac4555a22098939d422782", date: "2026-04-02" }
+  - id: nbf-kunlun-trust
+    name: "昆仑信托有限责任公司"
+    short: "昆仑信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0032H233020001
+    regulator: 国家金融监督管理总局
+    founded: 1986
+    website: http://www.kunluntrust.com
+    intro: >-
+      注册地浙江宁波的信托公司，官网载明成立于 1986 年，由中国石油控股，注册资本 102 亿元。业务以信托业务与固有业务为主，定位能源特色产融结合。
+    business: [信托业务, 固有业务, 能源产业金融, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "昆仑信托官网", url: "http://www.kunluntrust.com", date: "2026-09-30" }
+  - id: nbf-xmitic
+    name: "厦门国际信托有限公司"
+    short: "厦门国际信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0037H235020001
+    regulator: 国家金融监督管理总局
+    founded: 1985
+    website: http://www.xmitic.com
+    intro: >-
+      注册地福建厦门的信托公司，前身为厦门市政府于 1985 年 1 月设立的厦门经济特区财务公司，1986 年经中国人民银行总行批准更名为厦门国际信托投资公司。
+      业务以信托业务与固有业务为主。
+    business: [信托业务, 固有业务, 财富管理, 标品投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "厦门国际信托官网", url: "http://www.xmitic.com", date: "2026-09-30" }
+  - id: nbf-ljzitc
+    name: "陆家嘴国际信托有限公司"
+    short: "陆家嘴信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0041H237020001
+    regulator: 国家金融监督管理总局
+    website: https://www.ljzitc.com.cn
+    intro: >-
+      注册地山东青岛、总部设于上海的信托公司，简称陆家嘴信托，股东为上海陆家嘴（集团）有限公司等。业务以信托业务与固有业务为主。
+    business: [信托业务, 固有业务, 标品投资, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "陆家嘴信托官网", url: "https://www.ljzitc.com.cn", date: "2026-09-30" }
+  - id: nbf-crctrust
+    name: "华润深国投信托有限公司"
+    short: "华润信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0071H244030001
+    regulator: 国家金融监督管理总局
+    founded: 1982
+    website: http://www.crctrust.com
+    intro: >-
+      华润集团旗下的信托公司，前身为成立于 1982 年的深圳国际信托投资公司，业内称信托行业常青树，注册地广东深圳。业务以信托业务与固有业务为主。
+    business: [信托业务, 固有业务, 标品投资, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "华润信托官网", url: "http://www.crctrust.com", date: "2026-09-30" }
+  - id: nbf-pingan-trust
+    name: "平安信托有限责任公司"
+    short: "平安信托"
+    category: nonbank
+    type: trust-company
+    license_code: K0049H244030001
+    regulator: 国家金融监督管理总局
+    founded: 1996
+    website: http://www.pingantrust.com
+    intro: >-
+      中国平安保险（集团）股份有限公司的控股子公司，1996 年 4 月成立，注册地广东深圳。业务以信托业务与固有业务为主，在家族信托、保险金信托等服务信托方向规模居前。
+    business: [信托业务, 固有业务, 家族信托, 财富管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "平安信托官网", url: "http://www.pingantrust.com", date: "2026-09-30" }
+  # ---------------- 消费金融公司 ----------------
+  - id: nbf-bob-cfc
+    name: "北银消费金融有限公司"
+    short: "北银消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0001H211000001
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    website: http://www.bobcfc.com
+    intro: >-
+      北京银行发起设立的消费金融公司，2010 年成立，注册地北京，是全国首家开业的持牌消费金融公司。业务通过线上渠道向个人客户提供小额消费贷款。
+    business: [个人消费贷款, 线上信贷, 信用卡代偿, 受托支付]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "北银消费金融官网", url: "http://www.bobcfc.com", date: "2026-09-30" }
+  - id: nbf-jincheng-cfc
+    name: "四川锦程消费金融有限责任公司"
+    short: "锦程消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0002H251010001
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    website: http://www.jccfc.com
+    intro: >-
+      注册地四川成都的消费金融公司，2010 年 2 月成立，是全国首批、中西部首家开业的持牌消费金融公司。主要股东为成都银行等机构，业务覆盖线下与线上消费信贷。
+    business: [个人消费贷款, 线下大额信贷, 场景分期, 受托支付]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "锦程消费金融官网", url: "http://www.jccfc.com", date: "2026-09-30" }
+  - id: nbf-boc-cfc
+    name: "中银消费金融有限公司"
+    short: "中银消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0003H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    website: https://www.boccfc.cn
+    intro: >-
+      中国银行旗下的持牌消费金融公司，官网载明成立于 2010 年，注册地上海。业务以信用消费贷款和抵押消费贷款为主，依托中国银行综合经营平台开展全国业务。
+    business: [个人消费贷款, 抵押消费贷款, 线上信贷, 场景分期]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中银消费金融官网", url: "https://www.boccfc.cn", date: "2026-09-30" }
+  - id: nbf-jd-cfc
+    name: "天津京东消费金融有限公司"
+    short: "京东消金"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0004H212000001
+    regulator: 国家金融监督管理总局
+    website: https://www.jdcfc.cn
+    intro: >-
+      原捷信消费金融有限公司，2025 年经天津金融监管局批复更名为天津京东消费金融有限公司，注册地天津，由京东集团主导重组并引入天津银行等新股东。
+      业务以线上消费信贷与商品分期为主，产品品牌已更名。
+    business: [个人消费贷款, 线上信贷, 受托支付, 商品分期]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "京东消金官网", url: "https://www.jdcfc.cn", date: "2026-09-30" }
+      - { title: "捷信消金更名京东消金获批（央广网）", url: "https://www.cnr.cn/jrpd/mxdj/20250526/t20250526_527185797.shtml", date: "2025-05-26" }
+  - id: nbf-xyxfjr
+    name: "兴业消费金融股份公司"
+    short: "兴业消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0005H335050001
+    regulator: 国家金融监督管理总局
+    founded: 2014
+    website: https://www.xyxfjr.com
+    intro: >-
+      兴业银行控股的消费金融公司，官网载明成立于 2014 年 12 月，注册地福建泉州，注册资本 53.2 亿元。业务以家庭消费贷款为主，兼营助学与线上小额信贷。
+    business: [个人消费贷款, 家庭消费贷, 助学贷款, 线上信贷]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "兴业消费金融官网", url: "https://www.xyxfjr.com", date: "2026-09-30" }
+  - id: nbf-haier-cfc
+    name: "海尔消费金融有限公司"
+    short: "海尔消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0006H237020001
+    regulator: 国家金融监督管理总局
+    founded: 2014
+    website: https://www.haierxj.cn
+    intro: >-
+      注册地山东青岛的消费金融公司，2014 年 12 月成立，由海尔集团及其财务公司等发起设立。业务依托家电与家居消费场景开展分期和现金贷款。
+    business: [个人消费贷款, 家电场景分期, 线上信贷, 会员分期]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "海尔消费金融官网", url: "https://www.haierxj.cn", date: "2026-09-30" }
+  - id: nbf-mucfc
+    name: "招联消费金融股份有限公司"
+    short: "招联消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0007H244030001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://mucfc.com
+    intro: >-
+      招商银行与中国联通共同组建的消费金融公司，2015 年 3 月成立，注册地广东深圳前海，注册资本 100 亿元。业务全部线上化运营，在互联网消费信贷领域规模居前。
+    business: [个人消费贷款, 线上信贷, 消费分期, 信用支付]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "招联消费金融官网", url: "https://mucfc.com", date: "2026-09-30" }
+  - id: nbf-hubei-cfc
+    name: "湖北消费金融股份有限公司"
+    short: "湖北消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0008H242010001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: http://www.hubeicfc.com
+    intro: >-
+      注册地湖北武汉的消费金融公司，2015 年 4 月成立，是全国第 8 家开业的持牌消费金融公司。主要股东为湖北银行等，业务覆盖线下与线上消费信贷。
+    business: [个人消费贷款, 线下信贷, 场景分期, 受托支付]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "湖北消费金融官网", url: "http://www.hubeicfc.com", date: "2026-09-30" }
+  - id: nbf-boncfc
+    name: "南银法巴消费金融有限公司"
+    short: "南银法巴消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0009H232010001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://www.boncfc.com
+    intro: >-
+      注册地江苏南京的消费金融公司，2015 年 5 月成立，原名苏宁消费金融，后由南京银行接手控股并引入法国巴黎银行集团股东，更为现名。业务以线上消费信贷为主。
+    business: [个人消费贷款, 线上信贷, 消费分期, 受托支付]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "南银法巴消费金融官网", url: "https://www.boncfc.com", date: "2026-09-30" }
+  - id: nbf-msxf
+    name: "马上消费金融股份有限公司"
+    short: "马上消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0010H250000001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://www.msxf.com
+    intro: >-
+      注册地重庆的消费金融公司，2015 年 6 月开业，主要股东包括重庆百货、物美科技等，是行业内以科技能力见长的持牌机构。业务以线上小额消费贷款为主，
+      并对外输出金融科技能力。
+    business: [个人消费贷款, 线上信贷, 科技输出, 场景分期]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "马上消费金融官网", url: "https://www.msxf.com", date: "2026-09-30" }
+  - id: nbf-youcash
+    name: "中邮消费金融有限公司"
+    short: "中邮消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0011H244010001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://www.youcash.com
+    intro: >-
+      中国邮政储蓄银行控股的消费金融公司，2015 年 11 月成立，注册地广东广州。业务依托邮储银行渠道开展消费信贷，官方 App 品牌为中邮钱包。
+    business: [个人消费贷款, 线上信贷, 邮政场景分期, 受托支付]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中邮消费金融官网", url: "https://www.youcash.com", date: "2026-09-30" }
+  - id: nbf-hycfc
+    name: "杭银消费金融股份有限公司"
+    short: "杭银消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0012H233010001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://www.51xf.cn
+    intro: >-
+      杭州银行作为主发起人设立的消费金融公司，2015 年 12 月成立，注册地浙江杭州。业务以线上信用消费贷款为主，主要产品包括尊享贷、轻享贷。
+    business: [个人消费贷款, 线上信贷, 尊享贷, 场景分期]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "杭银消费金融官网", url: "https://www.51xf.cn", date: "2026-09-30" }
+  - id: nbf-cfcbnb
+    name: "浙江宁银消费金融股份有限公司"
+    short: "宁银消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0013H233020001
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: https://www.cfcbnb.com
+    intro: >-
+      注册地浙江宁波的消费金融公司，2016 年 1 月成立，原名华融消费金融股份有限公司，2021 至 2022 年宁波银行受让控股权后更为现名。
+      业务以线上消费信贷为主。
+    business: [个人消费贷款, 线上信贷, 场景分期, 受托支付]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "宁银消费金融官网", url: "https://www.cfcbnb.com", date: "2026-09-30" }
+  - id: nbf-jcfc
+    name: "晋商消费金融股份有限公司"
+    short: "晋商消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0014H214010001
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: https://www.jcfc.cn
+    intro: >-
+      注册地山西太原的消费金融公司，官网载明成立于 2016 年 2 月 23 日，由晋商银行等五家股东发起设立。业务以线上消费信贷与场景分期为主。
+    business: [个人消费贷款, 线上信贷, 场景分期, 受托支付]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "晋商消费金融官网", url: "https://www.jcfc.cn", date: "2026-09-30" }
+  - id: nbf-syxfjr
+    name: "盛银消费金融有限公司"
+    short: "盛银消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0015H221010001
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: https://www.syxfjr.cn
+    intro: >-
+      盛京银行作为主要出资人发起设立的消费金融公司，2016 年 2 月获批开业，注册地辽宁沈阳，是东北地区首家持牌消费金融公司。业务以线上小额消费贷款为主。
+    business: [个人消费贷款, 线上信贷, 辽沈区域信贷, 场景分期]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "盛银消费金融官网", url: "https://www.syxfjr.cn", date: "2026-09-30" }
+  - id: nbf-cycfc
+    name: "陕西长银消费金融有限公司"
+    short: "长银消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0016H261010001
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: https://www.cycfc.com
+    intro: >-
+      注册地陕西西安的消费金融公司，2016 年 11 月成立，主要股东为长安银行等地方金融机构。业务以线上消费信贷为主。
+    business: [个人消费贷款, 线上信贷, 场景分期, 受托支付]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "长银消费金融官网", url: "https://www.cycfc.com", date: "2026-09-30" }
+  - id: nbf-mengshang-cfc
+    name: "内蒙古蒙商消费金融股份有限公司"
+    short: "蒙商消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0017H315020001
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: https://www.mengshangxiaofei.com
+    intro: >-
+      注册地内蒙古包头的消费金融公司，官网载明成立于 2016 年 12 月，是全国第 17 家获批的持牌消费金融公司，原为包银消费金融，后更名。
+      主要股东为蒙商银行与微梦创科网络科技（中国）有限公司。
+    business: [个人消费贷款, 线上信贷, 区域消费金融, 场景分期]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "蒙商消费金融官网", url: "https://www.mengshangxiaofei.com", date: "2026-09-30" }
+  - id: nbf-hnzycfc
+    name: "河南中原消费金融股份有限公司"
+    short: "中原消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0018H241010001
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: https://www.hnzycfc.com
+    intro: >-
+      注册地河南郑州的消费金融公司，2016 年底成立，由中原银行作为主要出资人发起设立。业务以线上消费信贷为主，主打首次借款与灵活还款权益。
+    business: [个人消费贷款, 线上信贷, 首次借款权益, 场景分期]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中原消费金融官网", url: "https://www.hnzycfc.com", date: "2026-09-30" }
+  - id: nbf-hncy58
+    name: "湖南长银五八消费金融股份有限公司"
+    short: "长银五八消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0019H243010001
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: https://www.hncy58.com
+    intro: >-
+      注册地湖南长沙的消费金融公司，2017 年 1 月 16 日成立，由长沙银行控股，另有通程控股等股东。业务以线上个人消费信贷为主。
+    business: [个人消费贷款, 线上信贷, 消费信贷, 受托支付]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "长银五八消费金融官网", url: "https://www.hncy58.com", date: "2026-09-30" }
+  - id: nbf-hrbb-cfc
+    name: "哈尔滨哈银消费金融有限责任公司"
+    short: "哈银消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0020H223010001
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: http://hrbb-cfc.com
+    intro: >-
+      哈尔滨银行发起设立的消费金融公司，2017 年 4 月开业，注册地黑龙江哈尔滨。2019 年引入度小满金融战略投资后注册资本增至 15 亿元，
+      业务以线上消费信贷为主。
+    business: [个人消费贷款, 线上信贷, 银行系信贷, 场景分期]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "哈银消费金融官网", url: "http://hrbb-cfc.com", date: "2026-09-30" }
+  - id: nbf-happycfc
+    name: "河北幸福消费金融股份有限公司"
+    short: "幸福消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0021H213010001
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: https://happycfc.com
+    intro: >-
+      注册地河北石家庄的消费金融公司，2017 年 6 月成立，由张家口银行发起设立。业务以线上消费信贷与场景分期为主。
+    business: [个人消费贷款, 线上信贷, 消费分期, 受托支付]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "幸福消费金融官网", url: "https://happycfc.com", date: "2026-09-30" }
+  - id: nbf-sccfc
+    name: "上海尚诚消费金融股份有限公司"
+    short: "尚诚消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0022H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: https://www.sccfc.cn
+    intro: >-
+      注册地上海的消费金融公司，2016 年 11 月获批筹建、2017 年 8 月完成工商注册，由上海银行、携程集团、博裕资本与红杉资本共同发起设立。
+      业务结合旅游与消费场景开展信贷服务。
+    business: [个人消费贷款, 线上信贷, 旅游场景分期, 受托支付]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "尚诚消费金融官网", url: "https://www.sccfc.cn", date: "2026-09-30" }
+  - id: nbf-jmxcfc
+    name: "厦门金美信消费金融有限责任公司"
+    short: "金美信消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0023H235020001
+    regulator: 国家金融监督管理总局
+    founded: 2018
+    website: https://www.jmxcfc.com
+    intro: >-
+      注册地福建厦门的消费金融公司，2018 年获批筹建并于同年 10 月挂牌开业，是原银保监会批准筹建的首家两岸合资消费金融公司。股东为厦门金圆金控股份有限公司与台湾中国信托商
+      业银行股份有限公司，双方持股比例均为 50%。
+    business: [个人消费贷款, 线上信贷, 两岸合资, 场景分期]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "金美信消费金融官网", url: "https://www.jmxcfc.com", date: "2026-09-30" }
+  - id: nbf-citic-cfc
+    name: "中信消费金融有限公司"
+    short: "中信消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0024H211000001
+    regulator: 国家金融监督管理总局
+    founded: 2019
+    website: https://www.eciticcfc.com
+    intro: >-
+      中信集团体系内的消费金融公司，2019 年 6 月获批开业，注册地北京，是全国第 24 家开业的持牌消费金融机构。业务以线上消费信贷为主。
+    business: [个人消费贷款, 线上信贷, 消费分期, 受托支付]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中信消费金融官网", url: "https://www.eciticcfc.com", date: "2026-09-30" }
+  - id: nbf-pacfc
+    name: "平安消费金融有限公司"
+    short: "平安消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0025H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2020
+    website: https://www.pacfc.com
+    intro: >-
+      中国平安集团旗下的消费金融公司，2020 年 4 月成立，注册地上海。业务以线上消费信贷为主，与平安集团银行、保险、科技板块形成协同。
+    business: [个人消费贷款, 线上信贷, 消费分期, 信用支付]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "平安消费金融官网", url: "https://www.pacfc.com", date: "2026-09-30" }
+  - id: nbf-mixiaojin
+    name: "重庆小米消费金融有限公司"
+    short: "小米消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0026H250000001
+    regulator: 国家金融监督管理总局
+    founded: 2020
+    website: https://www.mixiaojin.com
+    intro: >-
+      注册地重庆的消费金融公司，由小米集团联合重庆农村商业银行等 4 家企业共同发起设立，2020 年 5 月 29 日获开业批复，是全国第 26 家开业的持牌消费金融公司。
+      业务以线上消费信贷为主，App 品牌为诚星借。
+    business: [个人消费贷款, 线上信贷, 场景分期, 受托支付]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "小米消费金融官网", url: "https://www.mixiaojin.com", date: "2026-09-30" }
+  - id: nbf-cebscf
+    name: "北京阳光消费金融股份有限公司"
+    short: "阳光消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0027H211000001
+    regulator: 国家金融监督管理总局
+    founded: 2020
+    website: https://www.cebscf.com
+    intro: >-
+      注册地北京的消费金融公司，2020 年 8 月开业，注册资本 10 亿元。股东为中国光大银行股份有限公司（持股 60%）、中青旅控股股份有限公司与王道商业银行股份有限公司（
+      各持股 20%）。
+    business: [个人消费贷款, 线上信贷, 消费分期, 受托支付]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "阳光消费金融官网", url: "https://www.cebscf.com", date: "2026-09-30" }
+  - id: nbf-sykcfc
+    name: "苏银凯基消费金融有限公司"
+    short: "苏银凯基消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0028H332050001
+    regulator: 国家金融监督管理总局
+    founded: 2021
+    intro: >-
+      注册地江苏昆山的消费金融公司，2021 年 3 月 1 日正式开业，由江苏银行作为主要出资人发起设立并引入台新金控旗下银行参股。业务以线上消费信贷为主。
+    business: [个人消费贷款, 线上信贷, 区域消费金融, 场景分期]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: nbf-ant-cfc
+    name: "重庆蚂蚁消费金融有限公司"
+    short: "蚂蚁消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0029H250000001
+    regulator: 国家金融监督管理总局
+    founded: 2021
+    intro: >-
+      注册地重庆的消费金融公司，2021 年 6 月 3 日经重庆银保监局批准开业、6 月 4 日完成注册登记，承接原蚂蚁集团旗下消费信贷业务。注册资本 230 亿元，
+      股东包括蚂蚁科技集团及多家产业与金融机构。
+    business: [个人消费贷款, 线上信贷, 消费分期, 花呗借呗承接]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+  - id: nbf-vipxf
+    name: "四川省唯品富邦消费金融有限公司"
+    short: "唯品富邦消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0030H251010001
+    regulator: 国家金融监督管理总局
+    founded: 2021
+    website: https://www.vipxf.com
+    intro: >-
+      注册地四川成都的消费金融公司，2021 年 10 月 19 日正式开业，由唯品会（中国）有限公司等股东发起设立。业务结合电商消费场景开展线上信贷与分期服务。
+    business: [个人消费贷款, 线上信贷, 电商场景分期, 受托支付]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "唯品富邦消费金融官网", url: "https://www.vipxf.com", date: "2026-09-30" }
+  - id: nbf-ccbcf
+    name: "建信消费金融有限责任公司"
+    short: "建信消费金融"
+    category: nonbank
+    type: consumer-finance
+    license_code: X0031H211000001
+    regulator: 国家金融监督管理总局
+    founded: 2023
+    website: https://www.ccbcf.cn
+    intro: >-
+      注册地北京海淀的消费金融公司，2023 年 6 月成立，由中国建设银行、北京国资公司、王府井集团共同组建，注册资本 72 亿元。业务面向境内居民个人提供消费贷款服务。
+    business: [个人消费贷款, 线上信贷, 消费分期, 受托支付]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "建信消费金融官网", url: "https://www.ccbcf.cn", date: "2026-09-30" }
+      - { title: "中国建设银行官网：建信消费金融有限责任公司简介", url: "https://www1.ccb.com/chn/2024-11/05/article_2024110509590318982.shtml", date: "2024-11-05" }
+  # ---------------- 汽车金融公司 ----------------
+  - id: nbf-vwfs
+    name: "大众汽车金融（中国）有限公司"
+    short: "大众汽车金融"
+    category: nonbank
+    type: auto-finance
+    license_code: N0001H211000001
+    regulator: 国家金融监督管理总局
+    founded: 2004
+    website: http://www.vwfs.com.cn
+    intro: >-
+      大众汽车金融服务海外股份公司的全资子公司，2004 年在北京成立，是中国第一家外商独资汽车金融公司。业务覆盖新车与二手车零售信贷、经销商库存融资及融资租赁。
+    business: [购车贷款, 经销商库存融资, 融资租赁, 二手车金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "大众汽车金融官网", url: "http://www.vwfs.com.cn", date: "2026-09-30" }
+  - id: nbf-toyota-finance
+    name: "丰田汽车金融（中国）有限公司"
+    short: "丰田汽车金融"
+    category: nonbank
+    type: auto-finance
+    license_code: N0002H211000001
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    website: https://www.toyota-finance.com.cn
+    intro: >-
+      丰田汽车金融（中国）有限公司，2005 年成立，注册地北京，是丰田金融在华设立的持牌汽车金融公司。为丰田及雷克萨斯品牌经销商与终端客户提供零售信贷和库存融资服务。
+    business: [购车贷款, 经销商库存融资, 融资租赁, 品牌零售信贷]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "丰田汽车金融官网", url: "https://www.toyota-finance.com.cn", date: "2026-09-30" }
+  - id: nbf-mercedes-finance
+    name: "梅赛德斯-奔驰汽车金融有限公司"
+    short: "奔驰汽车金融"
+    category: nonbank
+    type: auto-finance
+    license_code: N0003H211000001
+    regulator: 国家金融监督管理总局
+    website: https://www.mercedes-benz-finance.com.cn
+    intro: >-
+      梅赛德斯-奔驰汽车金融有限公司，注册地北京，为梅赛德斯-奔驰品牌经销商与客户提供零售信贷、融资租赁及经销商库存融资服务。
+    business: [购车贷款, 融资租赁, 经销商融资, 保险代理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "奔驰汽车金融官网", url: "https://www.mercedes-benz-finance.com.cn", date: "2026-09-30" }
+  - id: nbf-dfafc
+    name: "东风汽车金融有限公司"
+    short: "东风汽车金融"
+    category: nonbank
+    type: auto-finance
+    license_code: N0004H211000001
+    regulator: 国家金融监督管理总局
+    founded: 2006
+    website: https://www.dfafc.com.cn
+    intro: >-
+      东风汽车集团股份有限公司全资控股的汽车金融公司，2006 年 5 月 28 日在北京设立，原名东风标致雪铁龙汽车金融有限公司。业务围绕东风旗下各整车品牌开展零售信贷与经销商
+      融资。
+    business: [购车贷款, 经销商库存融资, 融资租赁, 绿色金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "东风汽车金融官网", url: "https://www.dfafc.com.cn", date: "2026-09-30" }
+  - id: nbf-volvo-finance
+    name: "沃尔沃汽车金融（中国）有限公司"
+    short: "沃尔沃汽车金融"
+    category: nonbank
+    type: auto-finance
+    license_code: N0005H211000001
+    regulator: 国家金融监督管理总局
+    founded: 2006
+    website: https://www.volvofinancialservices.com/cn/
+    intro: >-
+      沃尔沃汽车金融（中国）有限公司，2006 年成立，注册地北京，是沃尔沃汽车金融服务体系在华的持牌汽车金融公司，为沃尔沃品牌客户与经销商提供贷款和融资租赁服务。
+    business: [购车贷款, 融资租赁, 经销商融资, 品牌零售信贷]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "沃尔沃汽车金融官网", url: "https://www.volvofinancialservices.com/cn/", date: "2026-09-30" }
+  - id: nbf-saicgmac
+    name: "上汽通用汽车金融有限责任公司"
+    short: "上汽通用汽车金融"
+    category: nonbank
+    type: auto-finance
+    license_code: N0006H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2004
+    website: https://www.saicgmac.com
+    intro: >-
+      上汽通用汽车金融有限责任公司（SAIC-GMAC），2004 年 8 月成立，总部设在上海，是通用汽车金融与上汽集团合资的持牌汽车金融公司。
+      业务覆盖零售信贷、经销商库存融资与二手车金融。
+    business: [购车贷款, 经销商库存融资, 融资租赁, 二手车金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "上汽通用汽车金融官网", url: "https://www.saicgmac.com", date: "2026-09-30" }
+  - id: nbf-ford-afc
+    name: "福特汽车金融（中国）有限公司"
+    short: "福特汽车金融"
+    category: nonbank
+    type: auto-finance
+    license_code: N0007H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    website: https://www.ford.com.cn/fafc/
+    intro: >-
+      福特汽车信贷有限责任公司在华设立的全资子公司，2005 年 6 月在上海成立，是首批获牌照的汽车金融公司之一。为福特及林肯品牌客户和经销商提供零售信贷与库存融资。
+    business: [购车贷款, 经销商库存融资, 融资租赁, 品牌零售信贷]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "福特汽车金融官网", url: "https://www.ford.com.cn/fafc/", date: "2026-09-30" }
+  - id: nbf-df-nissanfc
+    name: "东风日产汽车金融有限公司"
+    short: "东风日产汽车金融"
+    category: nonbank
+    type: auto-finance
+    license_code: N0008H231000001
+    regulator: 国家金融监督管理总局
+    website: https://www.df-nissanfc.com
+    intro: >-
+      由日本日产自动车株式会社、东风汽车集团股份有限公司与日产（中国）投资有限公司共同出资设立的中外合资汽车金融公司，注册地上海。为东风日产、启辰、
+      英菲尼迪、郑州日产等品牌提供零售信贷与融资租赁服务。
+    business: [购车贷款, 经销商库存融资, 融资租赁, 品牌零售信贷]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "东风日产汽车金融官网", url: "https://www.df-nissanfc.com", date: "2026-09-30" }
+  - id: nbf-stellantis-afc
+    name: "斯泰兰蒂斯汽车金融有限公司"
+    short: "斯泰兰蒂斯汽车金融"
+    category: nonbank
+    type: auto-finance
+    license_code: N0009H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.stellantisafc.com.cn
+    intro: >-
+      斯泰兰蒂斯汽车金融有限公司，2007 年 12 月成立，注册地上海，原名菲亚特克莱斯勒汽车金融，后随集团更名。为斯泰兰蒂斯旗下品牌客户与经销商提供汽车金融服务。
+    business: [购车贷款, 经销商库存融资, 融资租赁, 品牌零售信贷]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "斯泰兰蒂斯汽车金融官网", url: "https://www.stellantisafc.com.cn", date: "2026-09-30" }
+  - id: nbf-gac-sofinco
+    name: "广汽汇理汽车金融有限公司"
+    short: "广汽汇理汽车金融"
+    category: nonbank
+    type: auto-finance
+    license_code: N0011H244010001
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    website: http://www.gacsofinco.com
+    intro: >-
+      广州汽车集团与法国兴业银行旗下机构合资设立的汽车金融公司，注册地广东广州，为广汽集团旗下各整车品牌提供零售信贷、经销商库存融资与融资租赁服务。
+    business: [购车贷款, 经销商库存融资, 融资租赁, 二手车金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "广汽汇理汽车金融官网", url: "http://www.gacsofinco.com", date: "2026-09-30" }
+  - id: nbf-bmw-finance
+    name: "宝马汽车金融（中国）有限公司"
+    short: "宝马汽车金融"
+    category: nonbank
+    type: auto-finance
+    license_code: N0012H211000001
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    website: https://www.bmw.com.cn/zh/topics/owners/bmw-financial-services.html
+    intro: >-
+      宝马汽车金融（中国）有限公司，2010 年成立，由德国宝马股份公司与华晨宝马汽车有限公司共同合资，注册地北京。为 BMW 与 MINI 品牌客户及经销商提供金融与租赁服务。
+    business: [购车贷款, 融资租赁, 经销商融资, 企业用车金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "宝马汽车金融官网", url: "https://www.bmw.com.cn/zh/topics/owners/bmw-financial-services.html", date: "2026-09-30" }
+  - id: nbf-sany-finance
+    name: "三一汽车金融有限公司"
+    short: "三一汽车金融"
+    category: nonbank
+    type: auto-finance
+    license_code: N0013H243010001
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    intro: >-
+      三一集团控股的汽车金融公司，2010 年 10 月获原银监会批准开业，注册地湖南长沙，是中国工程机械行业首家汽车金融公司。业务主要服务工程机械与商用车购车及设备融资需求。
+    business: [工程机械贷款, 设备融资租赁, 经销商融资, 供应链金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "界面新闻：三一汽车金融股东与开业时间（引用公司官网）", url: "https://www.jiemian.com/article/3771386.html", date: "2019-12-06" }
+  - id: nbf-faw-afc
+    name: "一汽汽车金融有限公司"
+    short: "一汽汽车金融"
+    category: nonbank
+    type: auto-finance
+    license_code: N0014H222010001
+    regulator: 国家金融监督管理总局
+    founded: 2012
+    website: https://af.faf.com.cn
+    intro: >-
+      一汽汽车金融有限公司，2012 年 1 月成立，注册地吉林长春，中国第一汽车股份有限公司为主要股东。业务覆盖一汽集团旗下品牌乘用车与商用车零售信贷、
+      经销商融资。
+    business: [购车贷款, 经销商库存融资, 融资租赁, 品牌零售信贷]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "一汽汽车金融官网", url: "https://af.faf.com.cn", date: "2026-09-30" }
+  - id: nbf-bhaf
+    name: "北京现代汽车金融有限公司"
+    short: "北京现代汽车金融"
+    category: nonbank
+    type: auto-finance
+    license_code: N0015H211000001
+    regulator: 国家金融监督管理总局
+    founded: 2012
+    website: https://www.bhaf.com.cn
+    intro: >-
+      北京现代汽车金融有限公司，2012 年 6 月成立、同年 9 月正式对外营业，注册地北京。主要服务北京现代、起亚汽车、现代商用车、进口现代及捷尼赛思等品牌的经销商与客户。
+    business: [购车贷款, 经销商库存融资, 融资租赁, 二手车金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "北京现代汽车金融官网", url: "https://www.bhaf.com.cn", date: "2026-09-30" }
+  - id: nbf-gwmfc
+    name: "天津长城滨银汽车金融有限公司"
+    short: "长城滨银汽车金融"
+    category: nonbank
+    type: auto-finance
+    license_code: N0016H212000001
+    regulator: 国家金融监督管理总局
+    website: https://www.gwmfc.com
+    intro: >-
+      天津长城滨银汽车金融有限公司，注册地天津，为长城汽车旗下品牌经销商与终端客户提供零售信贷、库存融资及融资租赁服务。
+    business: [购车贷款, 经销商库存融资, 融资租赁, 品牌零售信贷]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "长城滨银汽车金融官网", url: "https://www.gwmfc.com", date: "2026-09-30" }
+  - id: nbf-caafc
+    name: "长安汽车金融有限公司"
+    short: "长安汽车金融"
+    category: nonbank
+    type: auto-finance
+    license_code: N0017H250000001
+    regulator: 国家金融监督管理总局
+    founded: 2012
+    website: https://www.caafc.cn
+    intro: >-
+      长安汽车金融有限公司，前身为重庆汽车金融有限公司，2012 年 8 月在重庆成立，2016 年完成增资重组并更为现名。业务为长安汽车旗下品牌经销商与客户提供汽车金融服务。
+    business: [购车贷款, 经销商库存融资, 融资租赁, 品牌零售信贷]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "长安汽车金融官网", url: "https://www.caafc.cn", date: "2026-09-30" }
+  - id: nbf-fortune-afc
+    name: "瑞福德汽车金融有限公司"
+    short: "瑞福德汽车金融"
+    category: nonbank
+    type: auto-finance
+    license_code: N0018H234010001
+    regulator: 国家金融监督管理总局
+    founded: 2013
+    website: https://www.fortuneautofinance.cn
+    intro: >-
+      瑞福德汽车金融有限公司，2013 年 1 月成立，注册地安徽合肥。为江淮汽车等品牌经销商与终端客户提供零售信贷、库存融资等汽车金融服务。
+    business: [购车贷款, 经销商库存融资, 融资租赁, 品牌零售信贷]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "瑞福德汽车金融官网", url: "https://www.fortuneautofinance.cn", date: "2026-09-30" }
+  - id: nbf-cheryfs
+    name: "奇瑞徽银汽车金融股份有限公司"
+    short: "奇瑞徽银汽车金融"
+    category: nonbank
+    type: auto-finance
+    license_code: N0019H334020001
+    regulator: 国家金融监督管理总局
+    website: https://www.cheryfs.cn
+    intro: >-
+      注册地安徽芜湖的汽车金融公司，由奇瑞汽车与徽商银行等股东发起设立。为奇瑞集团旗下品牌经销商与客户提供零售信贷、库存融资及融资租赁服务。
+    business: [购车贷款, 经销商库存融资, 融资租赁, 二手车金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "奇瑞徽银汽车金融官网", url: "https://www.cheryfs.cn", date: "2026-09-30" }
+  - id: nbf-bydafc
+    name: "比亚迪汽车金融有限公司"
+    short: "比亚迪汽车金融"
+    category: nonbank
+    type: auto-finance
+    license_code: N0020H261010001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://www.bydafc.com.cn
+    intro: >-
+      比亚迪汽车金融有限公司，2014 年 8 月获原银监会批准筹建，2015 年 2 月在陕西西安正式成立，由比亚迪股份有限公司、西安银行股份有限公司与比亚迪精密制造有限公司共
+      同出资，注册资本 100 亿元。业务面向全国开展汽车金融服务，重点服务新能源汽车销售。
+    business: [购车贷款, 经销商库存融资, 融资租赁, 新能源车金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "比亚迪汽车金融官网", url: "https://www.bydafc.com.cn", date: "2026-09-30" }
+  - id: nbf-hawtai-afc
+    name: "华泰汽车金融有限公司"
+    short: "华泰汽车金融"
+    category: nonbank
+    type: auto-finance
+    license_code: N0021H212000001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: http://www.hawtaif.com
+    intro: >-
+      注册地天津自贸区的汽车金融公司，2015 年 2 月 13 日登记成立，注册资本 5 亿元。2023 年 6 月天津市滨海新区人民法院裁定受理其破产清算申请，
+      目前处于破产程序、常规金融服务已停止。法人资格未消灭，因此状态标为风险处置中而非已退出。
+    business: [购车贷款, 经销商库存融资, 融资租赁, 破产清算]
+    parent: ROOT
+    status: distressed
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "华泰汽车金融官网", url: "http://www.hawtaif.com", date: "2026-09-30" }
+      - { title: "华泰汽车金融有限公司招募投资人公告（全国企业破产重整案件信息网）", url: "https://pccz.court.gov.cn/pcajxxw/pcgg/ggxq?id=5F93DCE33A04BDF8B2E5CF0FFBE37AD0", date: "2025-08-29" }
+  - id: nbf-dongzheng-afc
+    name: "上海东正汽车金融股份有限公司"
+    short: "东正汽车金融"
+    category: nonbank
+    type: auto-finance
+    license_code: N0022H231000001
+    regulator: 国家金融监督管理总局
+    website: https://www.dongzhengafc.com
+    intro: >-
+      上海东正汽车金融股份有限公司，注册地上海，为多家汽车品牌经销商与终端客户提供零售信贷、库存融资和融资租赁服务。
+    business: [购车贷款, 经销商库存融资, 融资租赁, 品牌零售信贷]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "东正汽车金融官网", url: "https://www.dongzhengafc.com", date: "2026-09-30" }
+  - id: nbf-brilliance-bea
+    name: "华晨东亚汽车金融有限公司"
+    short: "华晨东亚汽车金融"
+    category: nonbank
+    type: auto-finance
+    license_code: N0023H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://www.brilliance-bea.com
+    intro: >-
+      华晨东亚汽车金融有限公司，2015 年 4 月 7 日成立，注册于中国（上海）自由贸易试验区，由华晨集团与东亚银行体系合资设立，注册资本 16 亿元。
+      业务为整车厂、经销商与终端客户提供汽车金融服务。
+    business: [购车贷款, 经销商库存融资, 融资租赁, 品牌零售信贷]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "华晨东亚汽车金融官网", url: "https://www.brilliance-bea.com", date: "2026-09-30" }
+  - id: nbf-geniusafc
+    name: "吉致汽车金融有限公司"
+    short: "吉致汽车金融"
+    category: nonbank
+    type: auto-finance
+    license_code: N0024H231000001
+    regulator: 国家金融监督管理总局
+    website: https://www.geniusafc.com
+    intro: >-
+      浙江吉利控股集团旗下的汽车金融公司，注册地上海（业务覆盖全国），是吉利控股集团体系内专属汽车金融公司。为吉利、领克、银河等品牌客户与经销商提供零售信贷和融资租赁服务。
+    business: [购车贷款, 经销商库存融资, 融资租赁, 品牌零售信贷]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "吉致汽车金融官网", url: "https://www.geniusafc.com", date: "2026-09-30" }
+  - id: nbf-sinotruk-afc
+    name: "重汽汽车金融有限公司"
+    short: "重汽汽车金融"
+    category: nonbank
+    type: auto-finance
+    license_code: N0025H237010001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: http://qcjr.sinotruk.com
+    intro: >-
+      重汽汽车金融有限公司，2015 年 9 月 18 日成立，注册地山东济南，为中国重汽集团体系内的持牌汽车金融公司。业务重点服务商用车与工程机械的零售信贷和经销商融资需求。
+    business: [购车贷款, 经销商库存融资, 商用车金融, 融资租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "重汽汽车金融官网", url: "http://qcjr.sinotruk.com", date: "2026-09-30" }
+  - id: nbf-baicaf
+    name: "北汽汽车金融（杭州）有限公司"
+    short: "北汽汽车金融（杭州）"
+    category: nonbank
+    type: auto-finance
+    license_code: N0027H233010001
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: https://www.baicaf.com
+    intro: >-
+      北汽汽车金融（杭州）有限公司，2016 年 2 月成立，注册地浙江杭州，注册资本 10 亿元。作为北汽集团汽车金融业务及管理平台，为集团各整车企业客户和经销商提供新车、
+      二手车信贷及批售融资、营运资金融资等服务。
+    business: [购车贷款, 经销商库存融资, 二手车金融, 营运资金融资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "北汽汽车金融（杭州）官网", url: "https://www.baicaf.com", date: "2026-09-30" }
+  # ---------------- 货币经纪公司 ----------------
+  - id: nbf-tpsitico
+    name: "上海国利货币经纪有限公司"
+    short: "国利货币经纪"
+    category: nonbank
+    type: money-broker
+    license_code: P0001H231000001
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    website: https://www.tpsitico.com
+    intro: >-
+      上海国利货币经纪有限公司（Tullett Prebon SITICO (China) Ltd.），2005 年 12 月成立，注册地上海。股东为上海国际信托有限公司（持股 
+      67%）与德利万邦毅联汇业能源与大宗商品有限公司（持股 33%，隶属 TP ICAP 集团）。
+    business: [货币经纪, 外汇经纪, 债券经纪, 衍生品经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "国利货币经纪官网", url: "https://www.tpsitico.com", date: "2026-09-30" }
+  - id: nbf-cfets-nex
+    name: "上海国际货币经纪有限责任公司"
+    short: "上海国际货币经纪"
+    category: nonbank
+    type: money-broker
+    license_code: P0002H231000001
+    regulator: 国家金融监督管理总局
+    website: https://www.cfets-nex.com.cn
+    intro: >-
+      上海国际货币经纪有限责任公司（CFETS-NEX），注册地上海，由中国外汇交易中心等股东合资设立。业务覆盖外汇、货币市场、债券及衍生品的声讯与电子经纪服务。
+    business: [货币经纪, 外汇经纪, 债券经纪, 利率衍生品经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "上海国际货币经纪官网", url: "https://www.cfets-nex.com.cn", date: "2026-09-30" }
+  - id: nbf-pingan-lishun
+    name: "平安利顺国际货币经纪有限责任公司"
+    short: "平安利顺货币经纪"
+    category: nonbank
+    type: money-broker
+    license_code: P0003H244030001
+    regulator: 国家金融监督管理总局
+    founded: 2008
+    website: https://www.pingantradition.com.cn
+    intro: >-
+      平安利顺国际货币经纪有限责任公司，2008 年成立，注册地广东深圳，是中国第三家、华南地区首家获批设立的货币经纪公司。主要股东为中国平安集团与法国 Tradition 集团
+      相关机构，业务覆盖外汇、货币市场与债券经纪。
+    business: [货币经纪, 外汇经纪, 债券经纪, 货币市场经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "平安利顺货币经纪官网", url: "https://www.pingantradition.com.cn", date: "2026-09-30" }
+  - id: nbf-cctbgc
+    name: "中诚宝捷思货币经纪有限公司"
+    short: "中诚宝捷思货币经纪"
+    category: nonbank
+    type: money-broker
+    license_code: P0004H211000001
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    website: https://www.cctbgc.com
+    intro: >-
+      中诚宝捷思货币经纪有限公司，2010 年成立，注册地北京，是一家中外合资货币经纪机构。业务为金融机构提供外汇、货币市场与债券等品种的交易撮合服务。
+    business: [货币经纪, 外汇经纪, 债券经纪, 货币市场经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中诚宝捷思货币经纪官网", url: "https://www.cctbgc.com", date: "2026-09-30" }
+  - id: nbf-xintang
+    name: "天津信唐货币经纪有限责任公司"
+    short: "天津信唐货币经纪"
+    category: nonbank
+    type: money-broker
+    license_code: P0005H212000001
+    regulator: 国家金融监督管理总局
+    founded: 2012
+    website: http://www.tjxintang.com
+    intro: >-
+      天津信唐货币经纪有限责任公司，经原中国银监会 2012 年 1 月 17 日批准开业，注册地天津。业务包括境内外人民币与外币利率掉期、债券及货币市场的交易撮合服务。
+    business: [货币经纪, 利率掉期经纪, 债券经纪, 货币市场经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "天津信唐货币经纪官网", url: "http://www.tjxintang.com", date: "2026-09-30" }
+  - id: nbf-uedachina
+    name: "上田八木货币经纪（中国）有限公司"
+    short: "上田八木货币经纪"
+    category: nonbank
+    type: money-broker
+    license_code: P0006H211000001
+    regulator: 国家金融监督管理总局
+    founded: 2021
+    website: https://www.uedachina.com
+    intro: >-
+      上田八木货币经纪（中国）有限公司，2021 年 6 月 18 日成立，注册地北京，由日本上田八木短资株式会社独资设立，是首家获准在中国设立的外资独资货币经纪公司。
+      业务覆盖外汇、货币市场与债券经纪。
+    business: [货币经纪, 外汇经纪, 债券经纪, 货币市场经纪]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "上田八木货币经纪官网", url: "https://www.uedachina.com", date: "2026-09-30" }

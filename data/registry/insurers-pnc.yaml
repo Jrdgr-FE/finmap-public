@@ -1,0 +1,1614 @@
+note: >
+  覆盖国家金融监督管理总局《保险机构法人名单》中机构类型为「财险公司」的全部 88 家法人机构，另收录政策性保险公司中国出口信用保险公司，合计 89 家，是完整名单而非抽样；人身险、养老险、健康险、再保险、保险资管、保险中介，以及该名单单列为「其他」的 3 家农村保险互助社均不在内，名单本身也只列法人机构、不含分支机构。名单版本为截至 2025-06-30 的一期（该期共 238 家保险法人机构），交叉核对来源为中国保险行业协会会员名录；自保公司与相互保险组织因 taxonomy 无单独类型，统一归 pnc-insurer 并在 intro 说明性质。license_code 取自该名单「机构编码」列，即《保险机构法人许可证》上的机构编码；founded 只用官网公司简介、公司年报或监管批复文书的官方口径；website 已于 2026-09-30 逐一实际打开并确认页面属于该机构，取不到内容的一律留空不估算。
+
+sources:
+  - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+  - { title: "中国保险行业协会", url: "https://www.iachina.cn", date: "2026-09-30" }
+
+entities:
+
+  - id: insp-sinosure
+    name: 中国出口信用保险公司
+    short: 中国信保
+    category: insurance
+    type: pnc-insurer
+    license_code: "000011"
+    regulator: 国家金融监督管理总局
+    founded: 2001
+    website: https://www.sinosure.com.cn/
+    intro: >-
+      政策性保险公司，由国家出资设立，是我国政策性出口信用保险业务的指定承办机构。主营短期出口贸易险、中长期出口信用保险、海外投资保险、国内贸易信用保险，并提供担保与资信服务；官网披露2015年以来业务总规模连续在全球官方出口信用保险机构中排名第一。
+    business: [政策性出口信用保险, 信用保证险, 工程险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中国信保官网", url: "https://www.sinosure.com.cn/", date: "2026-09-30" }
+
+  - id: insp-picc-p-and-c
+    name: 中国人民财产保险股份有限公司
+    short: 人保财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000002"
+    regulator: 国家金融监督管理总局
+    founded: 2003
+    listed: ["2328.HK"]
+    website: https://property.picc.com.cn/
+    intro: >-
+      前身是1949年10月成立的中国人民保险公司，2003年7月由中国人民保险集团独家发起设立，是人保集团的核心成员和标志性主业。2025年保险服务收入5115.94亿元、总资产8604.98亿元，为国内规模最大、全球保费规模前列的财产保险公司。
+    business: [车险, 企财险, 责任险, 农险, 短期健康险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "人保财险官网", url: "https://property.picc.com.cn/", date: "2026-09-30" }
+
+  - id: insp-china-continent
+    name: 中国大地财产保险股份有限公司
+    short: 大地保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000010"
+    regulator: 国家金融监督管理总局
+    founded: 2003
+    website: https://www.ccic-net.com.cn/
+    intro: >-
+      2003年在上海成立的全国性财产保险公司，是中国再保险（集团）股份有限公司旗下唯一的财险直保公司，注册资本151.16亿元。以车险为基本盘，同时发展科技、绿色、普惠等非车业务；官网披露2026年上半年原保费收入281.23亿元、保险服务收入245.68亿元、净利润11.41亿元，规模居国内财险公司前列。
+    business: [车险, 企财险, 责任险, 农险, 短期健康险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "大地保险官网", url: "https://www.ccic-net.com.cn/", date: "2026-09-30" }
+
+  - id: insp-china-united-p-and-c
+    name: 中华联合财产保险股份有限公司
+    short: 中华财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000012"
+    regulator: 国家金融监督管理总局
+    founded: 1986
+    website: https://property.cic.cn/
+    intro: >-
+      始创于1986年，2002年经国务院批复冠名「中华」，是全国唯一冠名「中华」的国有控股财产保险公司，实际控制人为中国东方资产管理股份有限公司。官网披露2025年保费收入706.3亿元、注册资本146.4亿元，保费规模居财险市场第五，农险与政策性健康险规模居行业前列。
+    business: [车险, 农险, 企财险, 责任险, 短期健康险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中华财险官网", url: "https://property.cic.cn/", date: "2026-09-30" }
+
+  - id: insp-cpic-p-and-c
+    name: 中国太平洋财产保险股份有限公司
+    short: 太保产险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000014"
+    regulator: 国家金融监督管理总局
+    founded: 2001
+    website: https://property.cpic.com.cn/xccbx/
+    intro: >-
+      中国太平洋保险（集团）股份有限公司旗下的专业财产保险公司，总部设在上海，注册资本199.48亿元。官网披露2025年原保险保费收入2014.99亿元、保险服务收入1971.91亿元、净利润98.64亿元，保费规模居国内财险市场前三，并设有航运保险事业营运中心。
+    business: [车险, 企财险, 责任险, 农险, 船舶险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "太保产险官网", url: "https://property.cpic.com.cn/xccbx/", date: "2026-09-30" }
+
+  - id: insp-ping-an-p-and-c
+    name: 中国平安财产保险股份有限公司
+    short: 平安产险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000017"
+    regulator: 国家金融监督管理总局
+    founded: 2002
+    website: https://property.pingan.com/
+    intro: >-
+      中国平安保险（集团）股份有限公司旗下控股的财产保险公司，2002年12月24日登记注册，注册资本210亿元，经营范围含财产损失保险、责任保险、信用保险及短期健康险和意外险。以车险为主要业务来源，保费规模居国内财险市场第二。
+    business: [车险, 企财险, 责任险, 意外险, 短期健康险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "平安产险官网", url: "https://property.pingan.com/", date: "2026-09-30" }
+
+  - id: insp-starr-china
+    name: 史带财产保险股份有限公司
+    short: 史带财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000023"
+    regulator: 国家金融监督管理总局
+    founded: 1995
+    website: https://www.starrchina.cn/
+    intro: >-
+      史带集团在中国的财险成员公司，前身为1995年成立的上海国资背景大众保险，2011年起史带系增资入股并于2025年成为外资独资；主营意外健康险、财产险、责任险、水险、金融险与航空航天险，已退出车险，属中小规模外资财险。
+    business: [意外险, 短期健康险, 企财险, 责任险, 货运险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "史带财险官网", url: "https://www.starrchina.cn/", date: "2026-09-30" }
+
+  - id: insp-sinosafe
+    name: 华安财产保险股份有限公司
+    short: 华安保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000024"
+    regulator: 国家金融监督管理总局
+    founded: 1996
+    website: https://www.sinosafe.com.cn/
+    intro: >-
+      1996年经中国人民银行批准设于深圳的全国性财险公司，注册资本21亿元，2002年起由民营股东控股，现由海航系与特华系共同持股；车险、财产险、责任险、信用保证险、农业险并举，31个省市设分公司，属中型全国性财险。
+    business: [车险, 企财险, 责任险, 信用保证险, 农险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "华安保险官网", url: "https://www.sinosafe.com.cn/", date: "2026-09-30" }
+
+  - id: insp-yongan-p-and-c
+    name: 永安财产保险股份有限公司
+    short: 永安保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000025"
+    regulator: 国家金融监督管理总局
+    founded: 1996
+    website: https://www.yaic.com.cn/
+    intro: >-
+      1996年创立于西安的国有资本控股财险公司，注册资本30.09亿元，股东含陕西财金投资、延长石油、复星、兴化集团；经营车险、企业财产险、工程险、货运险、责任险及意外健康险，在25个省区市设省级分公司，属中型全国性财险。
+    business: [车险, 企财险, 工程险, 货运险, 责任险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "永安保险官网", url: "https://www.yaic.com.cn/", date: "2026-09-30" }
+
+  - id: insp-taiping-general
+    name: 太平财产保险有限公司
+    short: 太平财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000026"
+    regulator: 国家金融监督管理总局
+    founded: 2001
+    website: https://caixian.cntaiping.com/
+    intro: >-
+      中国太平保险集团旗下专营境内财产保险的子公司，1929年发端的太平品牌于2001年12月在深圳恢复境内产险业务，2009年更名太平财险；业务涵盖车险与各类非寿险，保费规模居行业第八位左右，属大型全国性财险。
+    business: [车险, 企财险, 责任险, 信用保证险, 工程险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "太平财险官网", url: "https://caixian.cntaiping.com/", date: "2026-09-30" }
+
+  - id: insp-asia-pacific-p-and-c
+    name: 亚太财产保险有限公司
+    short: 亚太财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000038"
+    regulator: 国家金融监督管理总局
+    website: https://www.apiins.com/
+    intro: >-
+      原名民安财产保险有限公司，2016年更名亚太财险，注册资本40.01亿元，第一大股东为泛海控股旗下武汉中央商务区（持股51%）；经营范围覆盖财产损失险、责任险、信用保证险与意外伤害险，前四大股东98%以上股权被质押冻结，2024年亏损约3.06亿元，属中小规模全国性财险。（成立年份口径存疑：工商登记与该法人品牌沿革给出的年份不一致，未取到官方唯一口径，故不填。）
+    business: [车险, 责任险, 信用保证险, 短期健康险, 意外险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "亚太财险官网", url: "https://www.apiins.com/", date: "2026-09-30" }
+
+  - id: insp-aig-china
+    name: 美亚财产保险有限公司
+    short: 美亚保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000039"
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.aig.com.cn/
+    intro: >-
+      AIG在华全资财险子公司，由美国美亚保险公司在华分公司于2007年改建而成，注册资本9.11亿元；经营财产损失险、责任险（含交强险）、信用与保证保险、短期健康险和意外险，仅在上海、北京、广东（含深圳）、江苏、浙江五地展业，设七家省级分支机构含航运保险运营中心，属小规模外资财险。
+    business: [货运险, 责任险, 企财险, 工程险, 意外险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "美亚保险官网", url: "https://www.aig.com.cn/", date: "2026-09-30" }
+
+  - id: insp-tokio-marine-china
+    name: 东京海上日动火灾保险（中国）有限公司
+    short: 东京海上日动
+    category: insurance
+    type: pnc-insurer
+    license_code: "000040"
+    regulator: 国家金融监督管理总局
+    founded: 1994
+    website: https://www.tokiomarine.com.cn/
+    intro: >-
+      日本东京海上日动火灾保险株式会社全资子公司，前身为1994年设立的东京海上上海分公司，2008年7月获批改建为中国境内法人公司，注册资本4亿元人民币，在上海、广东、江苏、北京、浙江设有分支机构。经营企业财产保险、工程保险、货物运输保险、责任保险、车险及意外健康保险，客户以在华日资、外资企业为主，官网自述其事业规模在外资财险公司中位居前列，属中小型外资财险公司。
+    business: [企财险, 工程险, 货运险, 责任险, 车险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "东京海上日动官网", url: "https://www.tokiomarine.com.cn/", date: "2026-09-30" }
+
+  - id: insp-swiss-re-corporate-solutions-china
+    name: 瑞再企商保险有限公司
+    short: 瑞再企商
+    category: insurance
+    type: pnc-insurer
+    license_code: "000042"
+    regulator: 国家金融监督管理总局
+    founded: 2008
+    website: https://www.swissrecorporatesolutions.com.cn/
+    intro: >-
+      瑞士再保险集团在华全资直保公司，总部上海并在北京、江苏设分支机构，注册资本7.7亿元人民币。2015年5月收购太阳联合保险（中国）有限公司100%股权后更名，业务为企业客户提供财产险、责任险、建筑工程险、水险及团体意外险等定制化风险解决方案，不经营个人车险等零售业务，属面向企业客户的小型外资财险公司。
+    business: [企财险, 责任险, 工程险, 货运险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "瑞再企商官网", url: "https://www.swissrecorporatesolutions.com.cn/", date: "2026-09-30" }
+
+  - id: insp-ms-insurance-china
+    name: 三井住友海上火灾保险（中国）有限公司
+    short: 三井住友海上
+    category: insurance
+    type: pnc-insurer
+    license_code: "000044"
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.ms-ins.com.cn/
+    intro: >-
+      MS&AD保险集团核心企业三井住友海上火灾保险株式会社的全资子公司，2007年由原三井住友海上上海分公司改制设立，注册资本5亿元人民币，经营区域为上海及北京、广东、江苏等地。经营企业财产保险、货物运输保险、责任保险（含交强险）、工程保险、机动车保险及短期健康险、意外险，与太平洋保险集团有业务合作，客户以在华日资企业为主，属中小型外资财险公司。
+    business: [企财险, 货运险, 责任险, 工程险, 车险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "三井住友海上官网", url: "https://www.ms-ins.com.cn/", date: "2026-09-30" }
+
+  - id: insp-samsung-p-and-c-china
+    name: 三星财产保险（中国）有限公司
+    short: 三星财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000045"
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    website: https://www.samsunganycar.com/
+    intro: >-
+      前身为韩国三星火灾海上保险公司在华机构，2005年4月改建为国内第一家外资独资财产保险法人公司，2022年8月经原上海银保监局批准增资、引入腾讯等5家新股东，转为由三星、腾讯等共同战略支持的合资财险公司。主要经营车险（电销、网销直销车险）、企业财产保险、货物运输保险、责任保险、工程保险等，注册资本约8.76亿元，2015年至2025年9月连续获标普A级及以上评级，属中小型合资财险公司。
+    business: [车险, 企财险, 货运险, 责任险, 工程险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "三星财险官网", url: "https://www.samsunganycar.com/", date: "2026-09-30" }
+
+  - id: insp-boc-insurance
+    name: 中银保险有限公司
+    short: 中银保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000046"
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    website: https://www.bocins.com/
+    intro: >-
+      中国银行全资子公司，2005年1月成立，是境内第一家银行系财产保险公司，总部北京，在全国27个主要省、市、自治区设有140余家分支机构。公司保险业务覆盖企业财产保险、工程保险、责任保险、信用保证保险、船舶保险、货物运输保险，个人业务有机动车辆保险、家财险、意外险，依托中国银行网点和银保渠道展业，连续多年获标普A-评级，属中型银行系财险公司。
+    business: [企财险, 责任险, 信用保证险, 车险, 货运险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中银保险官网", url: "https://www.bocins.com/", date: "2026-09-30" }
+
+  - id: insp-allianz-jingdong
+    name: 京东安联财产保险有限公司
+    short: 京东安联
+    category: insurance
+    type: pnc-insurer
+    license_code: "000050"
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    website: https://www.jdallianz.com/
+    intro: >-
+      由德国安联集团在华全资子公司安联财产保险（中国）有限公司（2010年1月由安联保险公司广州分公司改建为法人公司）于2018年引入京东等4家股东、2018年10月获批更名而来，现由安联集团与京东集团分别作为第一、第二大股东，注册资本16.1亿元。业务以互联网渠道的儿童高端医疗险等短期健康险、意外险、旅行险和车险、责任险为主，2025年累计生效保费突破74亿元，2026年3月获惠誉A-保险公司财务实力评级，属中小型合资财险公司。
+    business: [短期健康险, 意外险, 车险, 责任险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "京东安联官网", url: "https://www.jdallianz.com/", date: "2026-09-30" }
+
+  - id: insp-sompo-china
+    name: 日本财产保险（中国）有限公司
+    short: 日本财产保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000053"
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    website: https://www.sompo-cn.com/cn/Index.aspx
+    intro: >-
+      日本财产保险公司（SOMPO控股集团旗下）100%出资的外资独资财险公司，2005年5月在大连升格为现地法人，注册资本6亿元人民币，在上海、广东、江苏、北京设有四家分公司。业务以在华日资企业的企财险、货运险、责任险、工程险和车险为主，规模属外资财险公司中的中小体量，标准普尔评级A。
+    business: [企财险, 货运险, 责任险, 工程险, 车险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "日本财产保险官网", url: "https://www.sompo-cn.com/cn/Index.aspx", date: "2026-09-30" }
+
+  - id: insp-liberty-china
+    name: 利宝保险有限公司
+    short: 利宝保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000060"
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.libertymutual.com.cn/
+    intro: >-
+      美国利宝互助保险公司（Liberty Mutual）全资持股的外资独资财险公司，总部重庆，注册资本约19.96亿元人民币。经营车险、责任险、货运险、意外险、短期健康险及信用保证险，在重庆、北京、浙江、宁波、广东、四川、云南、陕西、上海等地设有省级分公司，属外资财险公司中的中等规模。
+    business: [车险, 责任险, 货运险, 意外险, 短期健康险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "利宝保险官网", url: "https://www.libertymutual.com.cn/", date: "2026-09-30" }
+
+  - id: insp-pacific-anxin-agri
+    name: 太平洋安信农业保险股份有限公司
+    short: 安信农险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000064"
+    regulator: 国家金融监督管理总局
+    founded: 2004
+    website: https://www.aaic.com.cn/
+    intro: >-
+      中国太平洋财产保险股份有限公司持股67.78%的控股子公司，公司自身无实际控制人，注册资本10.8亿元人民币，注册地上海。主营农业保险及涉农财产保险，兼营车险、责任险、短期健康险和意外险，经营区域限于上海市、浙江省、江苏省，是国内较早的专业农业保险公司。
+    business: [农险, 车险, 责任险, 短期健康险, 意外险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "安信农险官网", url: "https://www.aaic.com.cn/", date: "2026-09-30" }
+
+  - id: insp-groupama-sdig
+    name: 安盟财产保险有限公司
+    short: 安盟财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000067"
+    regulator: 国家金融监督管理总局
+    founded: 2011
+    website: https://www.groupama-sdig.com/
+    intro: >-
+      法国安盟集团与蜀道投资集团有限责任公司各持50%股权的中外合资财险公司，中方股东实际控制人为四川省国资委，注册资本14亿元人民币，总部成都。以中央和地方政策性农业保险为主业，兼营车险、企财险、家财险、工程险、责任险和货运险，经营覆盖四川、吉林、陕西、黑龙江、辽宁、内蒙古、北京、河北、山东、天津、海南、江西，规模属中小型财险公司。
+    business: [农险, 车险, 企财险, 家财险, 责任险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "安盟财险官网", url: "https://www.groupama-sdig.com/", date: "2026-09-30" }
+
+  - id: insp-alltrust
+    name: 永诚财产保险股份有限公司
+    short: 永诚保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000068"
+    regulator: 国家金融监督管理总局
+    founded: 2004
+    listed: ["834223.NQ"]
+    website: https://www.alltrust.com.cn/
+    intro: >-
+      由中国华能集团牵头、联合国内大型发电集团和产业投资集团发起组建的全国性股份制财险公司，控股股东为华能资本服务有限公司，实际控制人为中国华能集团有限公司。以电力能源领域的企财险、工程险、责任险为核心优势，兼营车险、保证保险、意外险和短期健康险，注册资本21.78亿元人民币，总资产与保费规模属中型财险公司，承保发电装机占全国1/3以上、市场份额行业第一。
+    business: [企财险, 责任险, 车险, 信用保证险, 意外险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "永诚保险官网", url: "https://www.alltrust.com.cn/", date: "2026-09-30" }
+
+  - id: insp-anhua-agri
+    name: 安华农业保险股份有限公司
+    short: 安华农险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000075"
+    regulator: 国家金融监督管理总局
+    founded: 2004
+    website: https://www.ahic.com.cn/
+    intro: >-
+      官网披露公司无实际控制人、股权较为分散，第一大股东融捷投资控股集团有限公司持股17.021%，其余为安华佳和投资、中科恒源科技、联想控股、吉林省投资集团等。经原中国保监会批准成立的全国性专业农业保险公司，以种植险、养殖险、林业险等政策性农业保险为主业，兼营车险、家财险、责任险和团体意外险，注册资本10.575亿元人民币，总部长春，年保费规模超55亿元，属中型农业保险公司。
+    business: [农险, 车险, 家财险, 责任险, 意外险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "安华农险官网", url: "https://www.ahic.com.cn/", date: "2026-09-30" }
+
+  - id: insp-axa-tianping
+    name: 安盛天平财产保险有限公司
+    short: 安盛天平
+    category: insurance
+    type: pnc-insurer
+    license_code: "000078"
+    regulator: 国家金融监督管理总局
+    founded: 2004
+    website: https://www.axa.cn/
+    intro: >-
+      法国安盛集团（AXA）在华全资财产险子公司，2019年起由安盛集团全资控股，是外资财险中规模最大者之一。主营车险、健康险、意外险及企业财产险、责任险，注册资本8.46亿元，在全国设有25家分公司。
+    business: [车险, 短期健康险, 意外险, 企财险, 责任险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "安盛天平官网", url: "https://www.axa.cn/", date: "2026-09-30" }
+
+  - id: insp-sunshine-p-and-c
+    name: 阳光财产保险股份有限公司
+    short: 阳光财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000093"
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    website: https://www.4000-000-000.com/
+    intro: >-
+      阳光保险集团股份有限公司旗下核心财产险子公司，注册资本64.57亿元，在全国36个省市自治区设有二级机构，保费规模居国内财险公司前列。主营车险、企业财产险、责任险以及信用保险和保证保险。
+    business: [车险, 企财险, 责任险, 信用保证险, 短期健康险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "阳光财险官网", url: "https://www.4000-000-000.com/", date: "2026-09-30" }
+
+  - id: insp-sunlight-agri-mutual
+    name: 阳光农业相互保险公司
+    short: 阳光农险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000094"
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    website: https://www.samic.com.cn/
+    intro: >-
+      相互保险组织，无股东、由会员共有；由北大荒集团发起设立，是国内首家相互制农业保险公司，也是黑龙江省唯一一家总部法人保险机构。主营种植业、养殖业等农业保险及涉农车险、财产险、责任险，运营资金20亿元、年保费收入近50亿元，属中型专业农险公司。
+    business: [农险, 相互保险, 车险, 企财险, 责任险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "阳光农险官网", url: "https://www.samic.com.cn/", date: "2026-09-30" }
+
+  - id: insp-dubon
+    name: 都邦财产保险股份有限公司
+    short: 都邦保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000096"
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    website: https://www.dbic.com.cn/
+    intro: >-
+      国有控股的中小型全国性财险公司，吉林省财政厅、吉林市国资委通过6家国企间接持有60%以上股份。注册资本29.44亿元，主营车险、企业财产险、责任险、信用保证险和短期健康险，设有33家省级分公司。
+    business: [车险, 企财险, 责任险, 信用保证险, 短期健康险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "都邦保险官网", url: "https://www.dbic.com.cn/", date: "2026-09-30" }
+
+  - id: insp-bohai-p-and-c
+    name: 渤海财产保险股份有限公司
+    short: 渤海财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000098"
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    website: http://www.bpic.com.cn/
+    intro: >-
+      总部设在天津的全国性财险公司，实际控制人为天津市国资委，第一大股东泰达国际控股持股40.62%。主营车险、企业财产险、工程险、货运险和责任险，设有24家分公司，属中型财险公司。
+    business: [车险, 企财险, 工程险, 货运险, 责任险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "渤海财险官网", url: "http://www.bpic.com.cn/", date: "2026-09-30" }
+
+  - id: insp-huanong-p-and-c
+    name: 华农财产保险股份有限公司
+    short: 华农保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000101"
+    regulator: 国家金融监督管理总局
+    founded: 2006
+    website: https://www.chinahuanong.com.cn/
+    intro: >-
+      股权分散、无实际控制人，华邦控股集团有限公司为第一大股东（20.00%），中国农业发展集团旗下中牧集团等央企及多家民企参股。注册资本10亿元，总部设在广东佛山，主营农业保险、企业财产险、责任险及短期健康险、意外险，设有11家省级分公司，属中小型财险公司。
+    business: [农险, 企财险, 责任险, 短期健康险, 意外险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "华农保险官网", url: "https://www.chinahuanong.com.cn/", date: "2026-09-30" }
+
+  - id: insp-zurich-china
+    name: 苏黎世财产保险（中国）有限公司
+    short: 苏黎世保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000104"
+    regulator: 国家金融监督管理总局
+    founded: 2013
+    website: https://www.zurich.com.cn/
+    intro: >-
+      苏黎世保险集团在华全资子公司，2013年4月经原保监会批准由苏黎世保险公司北京分公司改建为法人机构，注册地上海。主要面向跨国企业、苏黎世全球客户在华机构及国内大中型企业承保企财险、责任险、工程险、货运险等企业商业险种，同时经营旅行及意外险零售业务，属外资中小型财产保险公司。
+    business: [企财险, 责任险, 工程险, 货运险, 意外险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "苏黎世保险官网", url: "https://www.zurich.com.cn/", date: "2026-09-30" }
+
+  - id: insp-china-life-p-and-c
+    name: 中国人寿财产保险股份有限公司
+    short: 国寿财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000108"
+    regulator: 国家金融监督管理总局
+    founded: 2006
+    website: http://www.chinalife-p.com.cn/
+    intro: >-
+      中国人寿保险（集团）公司旗下核心成员，2006年12月30日成立，注册资本278亿元，总部北京。经营车险、责任险、农险、企财险、信用保证险及短期健康险、意外险等，车险为主、非车业务并重，保费规模长期位居国内财产保险行业第一梯队。
+    business: [车险, 责任险, 农险, 企财险, 信用保证险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "国寿财险官网", url: "http://www.chinalife-p.com.cn/", date: "2026-09-30" }
+
+  - id: insp-ancheng-p-and-c
+    name: 安诚财产保险股份有限公司
+    short: 安诚保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000110"
+    regulator: 国家金融监督管理总局
+    founded: 2006
+    website: http://www.e-acic.com/
+    intro: >-
+      唯一一家总部设在重庆的全国性中资财产保险公司，官网载明实际控制人为重庆市国资委，2006年12月成立，注册资本40.76亿元，设有19家省级分公司。经营车险、企财险、责任险、意外险、短期健康险等全牌照财险业务，属中型财产保险公司。
+    business: [车险, 企财险, 责任险, 意外险, 短期健康险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "安诚保险官网", url: "http://www.e-acic.com/", date: "2026-09-30" }
+
+  - id: insp-hyundai-china
+    name: 现代财产保险（中国）有限公司
+    short: 现代财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000111"
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: http://www.hi-ins.com.cn/
+    intro: >-
+      原为韩国现代海上火灾保险株式会社在华独资子公司，2020年增资扩股后引入迪润科技（滴滴）、联想控股等股东，总部北京，官网披露注册资本166666.6666万元、经营区域为北京、山东、广东、湖北、四川。业务聚焦新能源网约车车险及出行生态保险，同时经营企财险、责任险、货运险、意健险，属小型专业化财产保险公司。
+    business: [车险, 责任险, 企财险, 货运险, 短期健康险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "现代财险官网", url: "http://www.hi-ins.com.cn/", date: "2026-09-30" }
+
+  - id: insp-changan-p-and-c
+    name: 长安责任保险股份有限公司
+    short: 长安责任险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000112"
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.capli.com.cn/
+    intro: >-
+      2007年根据国家大力发展责任保险要求、由住房和城乡建设部牵头十部委共同支持组建，注册地为安徽省蚌埠市高新区，注册资本32.5154亿元，经营区域覆盖15个省区市。以责任保险为特色，兼营车险、信用保险和保证保险、财产损失保险、短期健康险和意外险，公司年报披露无最终实际控制人，属中小型财产保险公司。
+    business: [责任险, 车险, 信用保证险, 企财险, 意外险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "长安责任险官网", url: "https://www.capli.com.cn/", date: "2026-09-30" }
+
+  - id: insp-lloyds-china
+    name: 劳合社保险（中国）有限公司
+    short: 劳合社中国
+    category: insurance
+    type: pnc-insurer
+    license_code: "000113"
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.lloyds.com.cn/
+    intro: >-
+      英国劳合社在华全资子公司，2007年3月在上海成立（原名劳合社再保险（中国）有限公司，2010年10月更名），经原保监会批准经营非寿险再保险及非寿险直接保险业务。通过设立承保部承接劳合社辛迪加业务，以共保或单独承保方式提供责任险、货运险、船舶险、意外及短期健康险等，专长特殊风险领域，属外资专业财产保险公司。
+    business: [责任险, 货运险, 船舶险, 意外险, 短期健康险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "劳合社中国官网", url: "https://www.lloyds.com.cn/", date: "2026-09-30" }
+
+  - id: insp-generali-china
+    name: 中意财产保险有限公司
+    short: 中意财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000117"
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.generali.com.cn/
+    intro: >-
+      意大利忠利集团全资控股的外资财险公司，2007年4月经原中国保监会批准在北京成立，注册资本16.92亿元。原为中国石油与忠利集团的合资公司，官网2024年披露股东变更公告后由忠利集团全资持有。主营机动车辆保险、企业及个人财产险、责任险、意外险与短期健康险，属中小规模外资财险公司。
+    business: [车险, 企财险, 责任险, 意外险, 短期健康险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中意财险官网", url: "https://www.generali.com.cn/", date: "2026-09-30" }
+
+  - id: insp-aioi-nissay-dowa-china
+    name: 爱和谊日生同和财产保险（中国）有限公司
+    short: 爱和谊日生同和
+    category: insurance
+    type: pnc-insurer
+    license_code: "000118"
+    regulator: 国家金融监督管理总局
+    founded: 2009
+    website: https://www.aioinissaydowa.cn/
+    intro: >-
+      日本MS&AD保险集团核心企业爱和谊日生同和保险公司全额出资的外商独资财险法人机构，2009年1月由爱和谊保险公司天津分公司改建成立，注册资本10亿元，总部天津。2024年监管批复新增机动车保险（交强险及商业车险），现主营车险、企业/家庭财产及工程险、责任险、船舶货运险、短期健康/意外险。规模偏小，是天津市唯一总部设在当地的外资财险法人公司。
+    business: [车险, 企财险, 责任险, 货运险, 工程险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "爱和谊日生同和官网", url: "https://www.aioinissaydowa.cn/", date: "2026-09-30" }
+
+  - id: insp-guoyuan-agri
+    name: 国元农业保险股份有限公司
+    short: 国元农险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000126"
+    regulator: 国家金融监督管理总局
+    founded: 2008
+    website: https://www.gynybx.com.cn/
+    intro: >-
+      由安徽国元金融控股集团等6家省属大型企业、17家市属企业及若干民营企业共同出资设立，2008年1月成立，注册资本23.14亿元，注册地合肥。全国第四家专业农业保险公司、安徽省农业保险主力军，形成农业保险、商业保险、健康保险「一主两翼」格局，并在河南、湖北、贵州、上海、山东等地设立分支机构，属区域性中型专业农险公司。
+    business: [农险, 车险, 企财险, 责任险, 短期健康险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "国元农险官网", url: "https://www.gynybx.com.cn/", date: "2026-09-30" }
+
+  - id: insp-dinghe-p-and-c
+    name: 鼎和财产保险股份有限公司
+    short: 鼎和保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000129"
+    regulator: 国家金融监督管理总局
+    founded: 2008
+    website: https://www.edhic.com/
+    intro: >-
+      由中国南方电网有限责任公司及广东、广西、云南、贵州、海南电网公司等股东发起设立的全国性财险公司，2008年5月成立，总部深圳，注册资本60亿元。经营范围涵盖机动车辆保险、财产损失保险、责任保险、信用保险和保证保险、短期健康和意外伤害保险；在能源保险领域形成特色，服务多家能源央企及地方能源企业，近年净利润居行业前十。
+    business: [车险, 企财险, 责任险, 信用保证险, 意外险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "鼎和保险官网", url: "https://www.edhic.com/", date: "2026-09-30" }
+
+  - id: insp-china-coal-insurance
+    name: 中煤财产保险股份有限公司
+    short: 中煤保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000132"
+    regulator: 国家金融监督管理总局
+    founded: 2008
+    website: https://www.chinacoal-ins.com/
+    intro: >-
+      山西省属国企山西金融投资控股集团为第一大股东（46.05%），中国中煤能源集团、晋能控股、山西焦煤、潞安等煤炭企业参股，2008年10月成立，注册资本15.2亿元，注册地太原。以煤炭高危领域保险为核心特色，安全生产责任险在山西市场份额第一，同时经营车险、非车财产险、农险及短期健康/意外险，属中型全国性财险公司。
+    business: [车险, 企财险, 责任险, 农险, 意外险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中煤保险官网", url: "https://www.chinacoal-ins.com/", date: "2026-09-30" }
+
+  - id: insp-cathay-insurance
+    name: 国泰财产保险有限责任公司
+    short: 国泰财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000133"
+    regulator: 国家金融监督管理总局
+    founded: 2008
+    website: https://www.cathay-ins.com.cn/
+    intro: >-
+      台湾国泰人寿与国泰世纪产物保险发起设立，2008年8月在上海成立；2016年7月蚂蚁集团入股并持股51%成为控股股东，2023年12月公司变更为无实际控制人，控股股东仍为蚂蚁集团。依托阿里、支付宝生态，以退货运费险、责任险、家财险、短期健康险等互联网保险为主力险种，并经营车险，属中小规模互联网系财险公司。
+    business: [责任险, 货运险, 车险, 短期健康险, 家财险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "国泰财险官网", url: "https://www.cathay-ins.com.cn/", date: "2026-09-30" }
+
+  - id: insp-yingda-taihe-p-and-c
+    name: 英大泰和财产保险股份有限公司
+    short: 英大泰和财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000135"
+    regulator: 国家金融监督管理总局
+    founded: 2008
+    website: http://www.ydpic.com.cn/
+    intro: >-
+      由国家电网公司发起设立，控股股东为国网英大国际控股集团有限公司（英大集团，2024年受让中国电力财务所持股份后持股约27.43%），注册资本66亿元，总部北京；业务以电力能源行业为特色，主营车险、企财险、责任险、工程险和意外险，经营区域覆盖30个省级区域，属国家电网系中型全国性财产保险公司。
+    business: [车险, 企财险, 责任险, 工程险, 意外险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "英大泰和财险官网", url: "http://www.ydpic.com.cn/", date: "2026-09-30" }
+
+  - id: insp-zking-p-and-c
+    name: 紫金财产保险股份有限公司
+    short: 紫金保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000137"
+    regulator: 国家金融监督管理总局
+    founded: 2009
+    website: http://www.zking.com/
+    intro: >-
+      江苏省首家全国性财产保险公司，总部南京，注册资本60亿元，43家股东中国有法人股占比约93.5%，实际控制人为江苏省人民政府，省财政厅主管；主营机动车辆保险、企业财产保险、农业保险、信用保证保险等，分支机构覆盖江苏及20余个省市，规模居国内财险行业中游。
+    business: [车险, 企财险, 责任险, 农险, 信用保证险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "紫金保险官网", url: "http://www.zking.com/", date: "2026-09-30" }
+
+  - id: insp-nipponkoa-china
+    name: 日本兴亚财产保险（中国）有限责任公司
+    short: 日本兴亚
+    category: insurance
+    type: pnc-insurer
+    license_code: "000139"
+    regulator: 国家金融监督管理总局
+    founded: 2009
+    website: https://www.nipponkoa-cn.com/
+    intro: >-
+      由日本兴亚损害保险株式会社（现日本财产保险公司，SOMPO集团）100%出资，注册资本3亿元，总部深圳，是华南地区第一家总部级外资财产保险法人机构；经营区域仅广东、山东，主营企业财产保险、货物运输保险、责任保险、工程保险和意外伤害保险，属规模较小的外资独资财产保险公司。
+    business: [企财险, 货运险, 责任险, 工程险, 意外险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "日本兴亚官网", url: "https://www.nipponkoa-cn.com/", date: "2026-09-30" }
+
+  - id: insp-zheshang-p-and-c
+    name: 浙商财产保险股份有限公司
+    short: 浙商保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000140"
+    regulator: 国家金融监督管理总局
+    founded: 2009
+    website: https://www.zsins.com/
+    intro: >-
+      总部杭州，注册资本50亿元，是国内唯一一家总部设在浙江的全国性、综合性财产保险公司；由浙江交通集团、浙能集团等省属国企与雅戈尔、正泰集团等民企共同组建，依托交通领域资源做差异化经营，主营车辆保险、企财险、责任险等财产险主要险类，设有15家二级机构、227家各级分支机构，属国内中型财产保险公司。
+    business: [车险, 企财险, 责任险, 工程险, 意外险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "浙商保险官网", url: "https://www.zsins.com/", date: "2026-09-30" }
+
+  - id: insp-guoren-p-and-c
+    name: 国任财产保险股份有限公司
+    short: 国任保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000142"
+    regulator: 国家金融监督管理总局
+    founded: 2009
+    website: https://www.guorenpcic.com/
+    intro: >-
+      前身为2009年开业的信达财产保险股份有限公司，2018年更名为国任保险，注册资本40.07亿元，总部深圳；2017年深圳市投资控股有限公司以41%持股成为控制类股东，是深圳市属国资控制的唯一财产保险公司，其他股东含中国信达、联美量子、深圳罗湖投控等18家企业，经营区域覆盖26个省市，属中型全国性财产保险公司。
+    business: [车险, 企财险, 责任险, 信用保证险, 短期健康险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "国任保险官网", url: "https://www.guorenpcic.com/", date: "2026-09-30" }
+
+  - id: insp-kbfg-china
+    name: 凯本财产保险（中国）有限公司
+    short: 凯本财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000143"
+    regulator: 国家金融监督管理总局
+    founded: 2009
+    website: https://www.kbfgins.com.cn/
+    intro: >-
+      首家总部设在江苏省的外商独资保险公司，由韩国四大保险公司之一的株式会社KB财产保险（KB金融集团旗下）100%控股，前身为2009年开业的乐爱金财产保险（中国）有限公司，2021年4月更名为凯本财险；经营区域仅江苏、广东两省，主营企业财产保险、责任险、建筑/安装工程一切险、货物运输保险和短期意外健康保险，年保费收入亿元级，属国内小型外资独资财产保险公司。
+    business: [企财险, 责任险, 工程险, 货运险, 短期健康险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "凯本财险官网", url: "https://www.kbfgins.com.cn/", date: "2026-09-30" }
+
+  - id: insp-fubon-p-and-c
+    name: 富邦财产保险有限公司
+    short: 富邦财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000146"
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    website: https://www.fubon.com.cn
+    intro: >-
+      台资财产保险公司，隶属台湾富邦金控，是ECFA生效后第一家获准在大陆开业的台资保险公司，2010年10月成立于厦门并以海西经济区为发展重心。主营车险、企财险、货运险、责任险、工程险及意外健康险等业务，在内地属中小规模产险公司。
+    business: [车险, 企财险, 货运险, 责任险, 工程险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "富邦财险官网", url: "https://www.fubon.com.cn", date: "2026-09-30" }
+
+  - id: insp-taishan-p-and-c
+    name: 泰山财产保险股份有限公司
+    short: 泰山保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000148"
+    regulator: 国家金融监督管理总局
+    founded: 2011
+    website: https://www.taishanpic.com
+    intro: >-
+      注册地在山东济南的全国性保险法人机构，实际控制人为山东省国资委，第一大股东为山东高速集团有限公司。主营车险、农险、企财险、责任险、意外险及信用保证险，注册资本27.03亿元，已设立14家分公司，属中型产险公司。
+    business: [车险, 农险, 企财险, 责任险, 信用保证险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "泰山保险官网", url: "https://www.taishanpic.com", date: "2026-09-30" }
+
+  - id: insp-jintai-p-and-c
+    name: 锦泰财产保险股份有限公司
+    short: 锦泰保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000149"
+    regulator: 国家金融监督管理总局
+    founded: 2011
+    listed: ["870026.NQ"]
+    website: https://www.ejintai.com
+    intro: >-
+      注册及经营总部均在成都的全国性股份制财产保险机构，成都市国资委实际控制的国有企业，第一大股东成都交子金融控股集团持股33%。主营车险及农业保险、信用保证保险、责任险、意健险等特色业务，2025年保险业务收入32.50亿元、注册资本31.88亿元，属中型产险公司；2016年12月起在全国中小企业股份转让系统挂牌（证券代码870026）。
+    business: [车险, 农险, 信用保证险, 责任险, 短期健康险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "锦泰保险官网", url: "https://www.ejintai.com", date: "2026-09-30" }
+
+  - id: insp-urtrust-auto
+    name: 众诚汽车保险股份有限公司
+    short: 众诚保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000151"
+    regulator: 国家金融监督管理总局
+    founded: 2011
+    listed: ["835987.NQ"]
+    website: https://www.urtrust.com.cn
+    intro: >-
+      国内首家由汽车集团发起设立的专业汽车保险公司，总部设在广州，广汽集团为控股股东，实际控制人为广州市国资委。以车险为主，业务涵盖车险、企财险、责任险、短期健康险与意外险，2025年保险业务收入38.33亿元、注册资本22.6875亿元，属中型产险公司；2016年6月起在新三板挂牌（证券代码835987）。
+    business: [车险, 责任险, 企财险, 短期健康险, 意外险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "众诚保险官网", url: "https://www.urtrust.com.cn", date: "2026-09-30" }
+
+  - id: insp-huatai-p-and-c
+    name: 华泰财产保险有限公司
+    short: 华泰财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000154"
+    regulator: 国家金融监督管理总局
+    founded: 2011
+    website: https://pc.ehuatai.com
+    intro: >-
+      华泰保险集团股份有限公司全资子公司，2011年7月成立，注册地上海，业务和网点延续自1996年创立的华泰财产保险股份有限公司，集团由美国安达集团（Chubb）控股。主营车险、企财险、责任险、货运险、航运保险及意外健康险等，2025年度保费113.67亿元、注册资本30亿元，属中型产险公司。
+    business: [车险, 企财险, 责任险, 货运险, 航运保险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "华泰财险官网", url: "https://pc.ehuatai.com", date: "2026-09-30" }
+
+  - id: insp-changjiang-p-and-c
+    name: 长江财产保险股份有限公司
+    short: 长江财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000156"
+    regulator: 国家金融监督管理总局
+    founded: 2011
+    website: https://www.cjbx.com.cn
+    intro: >-
+      湖北省首家全国性法人财产保险公司，总部位于武汉，由湖北省委、省政府直接管理，第一大股东为湖北宏泰集团有限公司。主营车险、农险、责任险、企财险、工程险、船舶保险等，注册资本27.97亿元，属中型地方国资产险公司。
+    business: [车险, 农险, 责任险, 企财险, 工程险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "长江财险官网", url: "https://www.cjbx.com.cn", date: "2026-09-30" }
+
+  - id: insp-champion-p-and-c
+    name: 诚泰财产保险股份有限公司
+    short: 诚泰保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000158"
+    regulator: 国家金融监督管理总局
+    founded: 2011
+    website: https://www.champion-ic.com/
+    intro: >-
+      唯一一家总部设在云南的全国性财产保险公司，注册资本59.7亿元，新紫光集团有限公司为单一第一大股东、公司无控制类股东；主营车险、企财险、责任险、信用保证险，并以科技保险和全国首个政策性农房地震巨灾保险（云南试点）为特色。规模在国内财险公司中属中小型。
+    business: [车险, 企财险, 责任险, 农险, 科技保险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "诚泰保险官网", url: "https://www.champion-ic.com/", date: "2026-09-30" }
+
+  - id: insp-funde-p-and-c
+    name: 富德财产保险股份有限公司
+    short: 富德财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000163"
+    regulator: 国家金融监督管理总局
+    founded: 2012
+    website: https://www.fundins.com/
+    intro: >-
+      富德保险控股股份有限公司旗下成员公司，2012年5月开业，总部位于深圳，注册资本35亿元，已在深圳、北京、广东、江苏、河南、辽宁等地设分公司，业务以车险为主并兼营企财险、责任险等。规模属中小型财险公司。
+    business: [车险, 企财险, 责任险, 意外险, 短期健康险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "富德财险官网", url: "https://www.fundins.com/", date: "2026-09-30" }
+
+  - id: insp-sanguard-auto
+    name: 鑫安汽车保险股份有限公司
+    short: 鑫安汽车保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000165"
+    regulator: 国家金融监督管理总局
+    founded: 2012
+    website: https://www.sanguard.com.cn/
+    intro: >-
+      由一汽财务、一汽轿车、长春一汽富维、天津一汽夏利、富奥股份等一汽系企业共同发起设立的专业汽车保险公司，主营车险（含交强险）并兼营家财险、意外险，分支机构主要在一汽集团整车及零部件生产厂所在省份。规模较小。
+    business: [车险, 责任险, 家财险, 意外险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "鑫安汽车保险官网", url: "https://www.sanguard.com.cn/", date: "2026-09-30" }
+
+  - id: insp-beibu-gulf-p-and-c
+    name: 北部湾财产保险股份有限公司
+    short: 北部湾财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000173"
+    regulator: 国家金融监督管理总局
+    founded: 2013
+    website: https://www.bgic.com/
+    intro: >-
+      总部设在广西南宁的全国性财产保险公司，第一大股东为广西投资集团金融控股有限公司（广西投资集团/广投集团旗下），实际控制人为广西壮族自治区国资委；主营车险、农险、企财险、责任险等，并承办广西道路交通事故救助相关工作。规模属中小型财险公司。
+    business: [车险, 农险, 企财险, 责任险, 工程险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "北部湾财险官网", url: "https://www.bgic.com/", date: "2026-09-30" }
+
+  - id: insp-zhongan-online
+    name: 众安在线财产保险股份有限公司
+    short: 众安保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000179"
+    regulator: 国家金融监督管理总局
+    founded: 2013
+    listed: ["6060.HK"]
+    website: https://www.zhongan.com/
+    intro: >-
+      国内首家互联网保险公司，2013年10月成立，由蚂蚁科技集团、中国平安、腾讯等联合发起设立、无控股股东，不设分支机构；主营与互联网交易直接相关的短期健康险、意外险、信用保证险、家财险、货运险等。公司本身为香港联交所上市公司（6060.HK），保费体量居国内财险公司前列。
+    business: [短期健康险, 意外险, 信用保证险, 家财险, 货运险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "众安保险官网", url: "https://www.zhongan.com/", date: "2026-09-30" }
+
+  - id: insp-cnpc-captive
+    name: 中石油专属财产保险股份有限公司
+    short: 中石油专属保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000180"
+    regulator: 国家金融监督管理总局
+    founded: 2013
+    website: http://cnpcci.cnpc.com.cn/
+    intro: >-
+      自保公司，主要承保集团内部风险。由中国石油天然气集团公司和中国石油天然气股份有限公司发起设立，是中国境内首家自保公司，2013年12月开业，注册资本60亿元，仅承保中国石油天然气集团有限公司内部的财产损失保险、责任保险、信用保险和保证保险、短期健康险和意外险及上述业务的再保险。
+    business: [自保业务, 企财险, 责任险, 工程险, 货运险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中石油专属保险官网", url: "http://cnpcci.cnpc.com.cn/", date: "2026-09-30" }
+
+  - id: insp-huahai-p-and-c
+    name: 华海财产保险股份有限公司
+    short: 华海保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000183"
+    regulator: 国家金融监督管理总局
+    founded: 2014
+    website: http://www.cnoic.com/
+    intro: >-
+      注册地为山东烟台的全国性、综合性财产保险公司，注册资本12亿元，主要股东为沿海地区和海洋领域实体企业，无控股集团。经营车险、企财险及工程险、责任险、船舶/货运险、短期健康险和意外险，已开设山东、青岛、河南3家省级分公司，属中小规模财险公司。
+    business: [车险, 企财险, 责任险, 货运险, 船舶险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "华海保险官网", url: "http://www.cnoic.com/", date: "2026-09-30" }
+
+  - id: insp-yanzhao-p-and-c
+    name: 燕赵财产保险股份有限公司
+    short: 燕赵财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000185"
+    regulator: 国家金融监督管理总局
+    founded: 2014
+    website: https://www.yanzhaoic.com/
+    intro: >-
+      注册地在河北的全国性保险法人机构，注册资本20.25亿元，8家股东以河北建投、河钢集团、开滦集团等河北省属国企为主。经营车险、企财险及工程险、责任险、船舶/货运险、短期健康/意外险与农险，分支机构集中在河北省内，属中小规模财险公司。
+    business: [车险, 企财险, 责任险, 农险, 意外险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "燕赵财险官网", url: "https://www.yanzhaoic.com/", date: "2026-09-30" }
+
+  - id: insp-hengbang-p-and-c
+    name: 恒邦财产保险股份有限公司
+    short: 恒邦保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000187"
+    regulator: 国家金融监督管理总局
+    founded: 2014
+    website: https://www.hbins.com.cn/
+    intro: >-
+      江西省唯一一家全国性法人保险公司，总部南昌，注册资本约23.63亿元，第一大股东为江西省金控集团。经营车险、企财险及工程险、责任险、农业保险、船舶/货运险、短期健康/意外险，已设江西、安徽、江苏等8家省级分公司和百余家三、四级机构，属中小规模财险公司。
+    business: [车险, 企财险, 责任险, 农险, 货运险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "恒邦保险官网", url: "https://www.hbins.com.cn/", date: "2026-09-30" }
+
+  - id: insp-union-p-and-c
+    name: 合众财产保险股份有限公司
+    short: 合众财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000189"
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://www.union-ins.cn/
+    intro: >-
+      由合众人寿与北京宸瑜（原中发实业）发起设立、2021年吉利控股增资入股的全国性财险公司，注册资本10亿元。经营范围仅限交强险与商业车险、企业/家庭财产保险及工程保险，经营区域为北京、河北、广东，规模较小的财险公司。
+    business: [车险, 企财险, 家财险, 工程险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "合众财险官网", url: "https://www.union-ins.cn/", date: "2026-09-30" }
+
+  - id: insp-zhonglu-p-and-c
+    name: 中路财产保险股份有限公司
+    short: 中路保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000192"
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://www.zhlic.com.cn
+    intro: >-
+      青岛市属国有控股的全国性财险公司，注册资本14.3956亿元，总部青岛，由青岛市财政局履行出资人监管职责，经营区域为山东省（青岛市）与河北省。经营机动车保险、企业/家庭财产保险及工程保险、责任保险、船舶/货运保险、短期健康险与意外险，非车险占比已近七成；2025年保费30.55亿元、连续五年盈利，属中小型财险公司。
+    business: [车险, 企财险, 责任险, 船舶险, 货运险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中路保险官网", url: "https://www.zhlic.com.cn", date: "2026-09-30" }
+
+  - id: insp-zhongyuan-agri
+    name: 中原农业保险股份有限公司
+    short: 中原农险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000195"
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: http://www.zyic.com
+    intro: >-
+      河南省国资控股的农业保险公司，河南省财政厅为实际控制人，国有股权约96.26%，注册资本40亿元，总部郑州，经营区域为河南、内蒙古、黑龙江。以农业保险及涉农保险为主（该部分保费占全部保费不低于60%），兼营财产损失险、责任保险、短期健康险与意外伤害险、信用保险和保证保险。
+    business: [农险, 责任险, 短期健康险, 意外险, 信用保证险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中原农险官网", url: "http://www.zyic.com", date: "2026-09-30" }
+
+  - id: insp-china-railway-captive
+    name: 中国铁路财产保险自保有限公司
+    short: 铁路自保
+    category: insurance
+    type: pnc-insurer
+    license_code: "000196"
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: http://www.china-ric.com
+    intro: >-
+      自保公司，主要承保集团内部风险。由中国国家铁路集团有限公司（原中国铁路总公司）出资设立，注册资本30亿元，业务范围限于国铁集团及所属单位内的财产损失保险、责任保险、信用保险和保证保险、短期健康保险和意外伤害保险，并承做铁路乘意险、货运险等铁路场景产品；2025年保险业务收入约8.27亿元。
+    business: [自保业务, 企财险, 工程险, 责任险, 货运险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "铁路自保官网", url: "http://www.china-ric.com", date: "2026-09-30" }
+
+  - id: insp-taikang-online
+    name: 泰康在线财产保险股份有限公司
+    short: 泰康在线
+    category: insurance
+    type: pnc-insurer
+    license_code: "000199"
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://www.tk.cn
+    intro: >-
+      泰康保险集团全资子公司，互联网财产保险公司，2015年成立，以“保险+科技”“保险+服务”模式经营互联网保险业务。产品以医疗险、重疾险等短期健康险和意外险、车险为主，依托泰康集团医疗健康与养老生态展业，累计付费客户规模较大。
+    business: [短期健康险, 意外险, 车险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "泰康在线官网", url: "https://www.tk.cn", date: "2026-09-30" }
+
+  - id: insp-donghai-marine
+    name: 东海航运保险股份有限公司
+    short: 东海航运保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000202"
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://www.dic-china.com
+    intro: >-
+      国内首家专业航运保险法人机构，2015年12月在宁波设立，注册资本10亿元，经营区域不限。股东为宁波市金江投资、宁波开发投资集团、宁波舟山港集团、上海国际港务集团四家（原发起股东人保财险已于2020年退出），公司无实际控制人、以地方国资为主。主营船舶保险、船舶建造保险、航运货物保险、航运责任保险，规模较小、业务高度集中于航运险。
+    business: [航运保险, 船舶险, 货运险, 责任险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "东海航运保险官网", url: "https://www.dic-china.com", date: "2026-09-30" }
+
+  - id: insp-answern-p-and-c
+    name: 安心财产保险有限责任公司
+    short: 安心财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000203"
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://www.95303.com/
+    intro: >-
+      国内首批专业互联网保险公司之一，注册资本12.85亿元，股权分散、无实际控制人，第一大股东为中诚信投资集团。主营车险、短期健康险、信用保证保险，不设分支机构、全国线上经营。公司自2020年起偿付能力长期严重不足、净资产为负，2024年三季度末核心及综合偿付能力充足率-871.59%，偿付能力报告停留在2024年三季度；2024年3月注册地由北京迁至苏州；2025年12月被金融监管总局责令停止接受信用保证保险新业务36个月、短期健康险新业务24个月、车险新业务6个月，业务基本停滞，属高风险机构。
+    business: [车险, 短期健康险, 信用保证险, 意外险, 家财险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "安心财险官网", url: "https://www.95303.com/", date: "2026-09-30" }
+
+  - id: insp-sunshine-surety
+    name: 阳光信用保证保险股份有限公司
+    short: 阳光信保
+    category: insurance
+    type: pnc-insurer
+    license_code: "000204"
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: https://www.xinyong99.com/
+    intro: >-
+      阳光保险集团旗下专业信用保证保险公司，也是国内首家市场化运营的专业信用保证保险公司，注册资本30亿元人民币（2017年由10亿元增至30亿元）。只经营信用保险与保证保险两类业务，产品覆盖消费金融、汽车金融、供应链金融融资增信及诉讼保全、政府采购履约、预付款保证等非融资场景。截至2025年末累计为3.77万余个中小企业客户和47.36万余名个人客户提供超3341.74亿元风险保障，属中型专业化信保公司。
+    business: [信用保险, 保证保险, 履约保证保险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "阳光信保官网", url: "https://www.xinyong99.com/", date: "2026-09-30" }
+
+  - id: insp-byd-p-and-c
+    name: 深圳比亚迪财产保险有限公司
+    short: 比亚迪财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000205"
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: https://www.bydpcic.com/
+    intro: >-
+      比亚迪汽车工业有限公司全资子公司，注册资本40亿元，注册地深圳，原为四家专业互联网保险公司之一（前身易安财产保险）。依托比亚迪新能源汽车产业与车联网数据，业务以新能源车险为核心，围绕“车生态+人健康”经营车险及短期健康险、意外险等，是国内车企系直营车险的主要样本。
+    business: [车险, 新能源车险, 短期健康险, 意外险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "比亚迪财险官网", url: "https://www.bydpcic.com/", date: "2026-09-30" }
+
+  - id: insp-jiulong-p-and-c
+    name: 久隆财产保险有限公司
+    short: 久隆保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000206"
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: https://www.lpcic.com.cn/
+    intro: >-
+      由三一集团发起设立、注册资本10亿元的专业财产保险公司，股东包含三一集团及珠海大横琴集团、珠海铧创投资管理等十三家，总部在横琴粤澳深度合作区。聚焦装备制造业，经营特种（工程机械）车辆保险、与装备制造业相关的企财险、责任险、信用保证险、货运险、工程险和意外险，无分支机构，属于行业里规模较小的专业化险企。
+    business: [特种车险, 企财险, 责任险, 货运险, 工程险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "久隆保险官网", url: "https://www.lpcic.com.cn/", date: "2026-09-30" }
+
+  - id: insp-xinjiang-qianhai-united
+    name: 新疆前海联合财产保险股份有限公司
+    short: 前海联合财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000208"
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: https://www.qhins.com/
+    intro: >-
+      注册于新疆乌鲁木齐、营业场所在深圳的全国性财产保险公司，注册资本10亿元，股东背景涉及金融投资、建筑地产、仓储物流等产业，第一大股东为宝能集团旗下深圳市钜盛华股份有限公司（所持20%股权2025年进入司法拍卖）。业务覆盖机动车保险（交强险及商业车险）、企业/家庭财产保险及工程保险、责任险、船舶货运险、短期健康及意外伤害保险。近年管理层更替频繁、股权拍卖，属经营承压的中小财险公司。
+    business: [车险, 企财险, 责任险, 船舶货运险, 短期健康险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "前海联合财险官网", url: "https://www.qhins.com/", date: "2026-09-30" }
+
+  - id: insp-qomolangma-p-and-c
+    name: 珠峰财产保险股份有限公司
+    short: 珠峰保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000209"
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: https://www.zhufengic.com/
+    intro: >-
+      注册地在西藏拉萨、营业场所设在北京的全国性财产保险公司，由西藏、新疆等地国资与民营企业共同发起，现注册资本10.8亿元。主要经营机动车保险、企业/家庭财产保险及工程险、责任保险、船舶/货运保险和短期健康意外伤害保险，车险为第一大险种，属中小规模财险主体。
+    business: [车险, 企财险, 工程险, 责任险, 货运险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "珠峰保险官网", url: "https://www.zhufengic.com/", date: "2026-09-30" }
+
+  - id: insp-haixia-goldenbridge
+    name: 海峡金桥财产保险股份有限公司
+    short: 海峡金桥财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000210"
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: https://www.chgic.com/
+    intro: >-
+      福建省唯一省属国有全国性法人财险公司，由福建省投资开发集团有限责任公司联合福建发展高速公路股份有限公司等7家国企民企发起，国有资本占比约80%，注册资本25亿元。主营机动车保险、企业/家庭财产保险及工程险、责任保险、船舶/货运保险、短期健康意外伤害保险和农业保险，经营区域为福建、厦门、江苏，属中小型财险机构。
+    business: [车险, 企财险, 工程险, 责任险, 船舶险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "海峡金桥财险官网", url: "https://www.chgic.com/", date: "2026-09-30" }
+
+  - id: insp-ccb-p-and-c
+    name: 建信财产保险有限公司
+    short: 建信财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000212"
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: https://www.ccbpi.com.cn/
+    intro: >-
+      中国建设银行集团旗下的银行系财产保险公司，注册地在宁夏、经营总部在北京，注册资本10亿元。业务范围含机动车保险、企业/家庭财产保险及工程保险、责任保险、船舶/货运保险和短期健康意外伤害保险，展业主要依托建行渠道与集团客户，属中小规模银行系财险公司。
+    business: [车险, 家财险, 企财险, 工程险, 责任险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "建信财险官网", url: "https://www.ccbpi.com.cn/", date: "2026-09-30" }
+
+  - id: insp-cosco-shipping-captive
+    name: 中远海运财产保险自保有限公司
+    short: 中远海运自保
+    category: insurance
+    type: pnc-insurer
+    license_code: "000219"
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: https://captive.coscoshipping.com/
+    intro: >-
+      自保公司，主要承保集团内部风险。由中国远洋海运集团有限公司全资发起设立，注册资本20亿元，2017年成立，是国内首家航运自保公司。承保险种以船舶保险、货物运输保险、承运人责任险、企业财产保险、雇主责任保险及短期健康/意外伤害保险为主，仅承保集团及成员企业风险，规模较小但承保与投资收益稳定。
+    business: [自保业务, 船舶险, 货运险, 承运人责任险, 责任险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中远海运自保官网", url: "https://captive.coscoshipping.com/", date: "2026-09-30" }
+
+  - id: insp-zhonghui-mutual
+    name: 众惠财产相互保险社
+    short: 众惠相互
+    category: insurance
+    type: pnc-insurer
+    license_code: "000221"
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: https://www.pubmi.org/
+    intro: >-
+      相互保险组织，无股东、由会员共有。国内首家经国务院同意试点、原中国保监会批准设立的全国性相互保险组织，住所深圳前海、实际经营地北京，初始运营资金10亿元。主营短期健康保险、意外伤害保险、信用保险和保证保险，围绕货车司机、慢病及“一老一小”等群体做普惠保障，属中小规模保险机构。
+    business: [相互保险, 短期健康险, 意外险, 信用保证险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "众惠相互官网", url: "https://www.pubmi.org/", date: "2026-09-30" }
+
+  - id: insp-geg-captive
+    name: 广东能源财产保险自保有限公司
+    short: 广东能源自保
+    category: insurance
+    type: pnc-insurer
+    license_code: "000229"
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: https://www.geg.com.cn/zb/
+    intro: >-
+      自保公司，主要承保集团内部风险。由广东省能源集团有限公司（51%）和广东电力发展股份有限公司（49%）共同出资筹建，2017年11月开业，注册资本5亿元，是国内第四家、电力行业第一家自保公司。业务范围限于承保广东能源集团及所属单位的财产损失保险、责任/信用/保证保险、短期健康保险和意外伤害保险及上述再保险业务。
+    business: [自保业务, 企财险, 工程险, 责任险, 信用保证保险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "广东能源自保官网", url: "https://www.geg.com.cn/zb/", date: "2026-09-30" }
+
+  - id: insp-yellow-river-p-and-c
+    name: 黄河财产保险股份有限公司
+    short: 黄河财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000231"
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: https://www.ypic.cn/
+    intro: >-
+      甘肃省首家全国性法人财险公司，注册资本25亿元，注册地兰州并在兰州、北京设双总部，国有控股混合所有制。经营范围含机动车保险、企业/家庭财产保险及工程保险、责任保险、船舶/货运保险、农业保险、信用保证保险和短期健康意外险，以工程保险为特色；规模属中小型财险公司。
+    business: [车险, 企财险, 工程险, 责任险, 信用保证险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "黄河财险官网", url: "https://www.ypic.cn/", date: "2026-09-30" }
+
+  - id: insp-taiping-science-tech
+    name: 太平科技保险股份有限公司
+    short: 太平科技保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000232"
+    regulator: 国家金融监督管理总局
+    founded: 2018
+    website: https://tpkj.cntaiping.com/
+    intro: >-
+      中国太平保险集团旗下的专业科技保险公司，由太平财险等9家股东发起设立，2018年1月获原保监会批复开业，注册资本5亿元，是国内第一家专业科技保险公司。经营范围限于与科技企业相关的企业/家庭财产保险及工程保险、责任保险、船舶/货运保险、短期健康/意外伤害保险、特殊风险保险和信用保证保险；体量小，属行业尾部专营机构。
+    business: [科技保险, 企财险, 工程险, 责任险, 信用保证保险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "太平科技保险官网", url: "https://tpkj.cntaiping.com/", date: "2026-09-30" }
+
+  - id: insp-rongsheng-p-and-c
+    name: 融盛财产保险股份有限公司
+    short: 融盛保险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000238"
+    regulator: 国家金融监督管理总局
+    founded: 2018
+    website: https://www.erongsheng.com/
+    intro: >-
+      由东软集团、沈阳新松机器人等六家企业联合发起设立，2018年6月获银保监会批准开业，注册资本11.95亿元，注册地沈阳，是辽宁省唯一一家财产保险法人机构。经营车险（含交强险）、企业/家庭财产保险及工程保险、责任保险、船舶/货运保险和短期健康/意外伤害保险，主打“商保+医保”健康险模式，规模属中小型。
+    business: [车险, 企财险, 工程险, 责任险, 短期健康险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "融盛保险官网", url: "https://www.erongsheng.com/", date: "2026-09-30" }
+
+  - id: insp-huiyou-mutual
+    name: 汇友财产相互保险社
+    short: 汇友相互
+    category: insurance
+    type: pnc-insurer
+    license_code: "000225"
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: https://www.heromutual.com/
+    intro: >-
+      相互保险组织，无股东、由会员共有。2017年6月获原中国保监会批准开业，初始运营资金6亿元，总部北京，是国内首批三家相互保险试点组织之一。主营住建及工程领域的投标、履约、预付款、农民工工资等保证保险/保函，以及责任保险、企业/家庭财产保险及工程保险、短期健康/意外伤害保险；会员以建工企业为主，规模属小型专营机构。
+    business: [信用保证保险, 工程险, 责任险, 企财险, 短期健康险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "汇友相互官网", url: "https://www.heromutual.com/", date: "2026-09-30" }
+
+  - id: insp-dajia-p-and-c
+    name: 大家财产保险有限责任公司
+    short: 大家财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000242"
+    regulator: 国家金融监督管理总局
+    founded: 2019
+    website: https://property.djbx.com/
+    intro: >-
+      大家财产保险有限责任公司是大家保险集团全资子公司，2019年8月28日成立，注册资本40亿元，总部设在深圳，设立时依法受让原安邦财险的部分保险业务、资产和负债。经营车险、企财险、责任险、信用保证保险、短期健康险和意外险，拥有36家省级分公司、服务网点遍布全国，属全国性中型财险公司。
+    business: [车险, 企财险, 责任险, 信用保证险, 短期健康险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "大家财险官网", url: "https://property.djbx.com/", date: "2026-09-30" }
+
+  - id: insp-china-rongtong-p-and-c
+    name: 中国融通财产保险有限公司
+    short: 中国融通财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000255"
+    regulator: 国家金融监督管理总局
+    founded: 2022
+    website: https://www.crtic.com/
+    intro: >-
+      中国融通财产保险有限公司是中国融通资产管理集团有限公司（央企）下属的全国性财产保险公司，2022年1月30日注册成立，总部设在上海市，注册资本30亿元。以为军保险业务为基本盘，经营车险、企财险及工程险、责任险、船舶/货运险和短期健康/意外险，推出面向现退役军人家庭的「融军保」系列产品，属央企系中小型财险公司。
+    business: [车险, 企财险, 工程险, 责任险, 短期健康险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中国融通财险官网", url: "https://www.crtic.com/", date: "2026-09-30" }
+
+  - id: insp-china-fishery-mutual
+    name: 中国渔业互助保险社
+    short: 中国渔业互助保险社
+    category: insurance
+    type: pnc-insurer
+    license_code: "000257"
+    regulator: 国家金融监督管理总局
+    founded: 2023
+    website: https://www.cfmi.cn/
+    intro: >-
+      中国渔业互助保险社是相互保险组织，无股东、由会员共有，初始运营资金5亿元，由中国渔业互保协会（出资33%）以及浙江、山东、福建、广东、江苏、河北等省级渔业互保协会和宁波市渔业互保协会共同出借，2023年2月经银保监会批复开业，住所北京市西城区。主营渔业行业内的财产损失保险、责任保险和意外伤害保险，覆盖渔船、渔业责任、渔民意外和水产养殖保障，是国内第五家持牌相互保险机构，规模较小。
+    business: [渔业财产损失保险, 渔业责任险, 渔民意外险, 水产养殖保险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中国渔业互助保险社官网", url: "https://www.cfmi.cn/", date: "2026-09-30" }
+
+  - id: insp-shenergy-p-and-c
+    name: 申能财产保险股份有限公司
+    short: 申能财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000262"
+    regulator: 国家金融监督管理总局
+    founded: 2024
+    website: https://www.snpic.com/
+    intro: >-
+      申能财产保险股份有限公司由申能投资管理有限公司（持股45%）等8家国有企业共同发起筹建，2024年1月16日成立，注册资本100亿元，注册地为上海市临港新片区，实际控制人为申能（集团）有限公司。2024年9月经监管批准受让天安财产保险股份有限公司的保险业务，并增加特殊风险保险、信用保险和保证保险经营范围，主营车险、企财险、责任险、信用保证保险和短期健康险，属资本实力较强的新设全国性财险公司。
+    business: [车险, 企财险, 责任险, 信用保证险, 短期健康险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "申能财险官网", url: "https://www.snpic.com/", date: "2026-09-30" }
+
+  - id: insp-soochow-p-and-c
+    name: 苏州东吴财产保险股份有限公司
+    short: 苏州东吴财险
+    category: insurance
+    type: pnc-insurer
+    license_code: "000264"
+    regulator: 国家金融监督管理总局
+    founded: 2025
+    website: https://www.szdwcx.com/
+    intro: >-
+      苏州东吴财产保险股份有限公司由苏州国际发展集团有限公司牵头、共11家法人股东出资组建，2025年4月登记成立，注册资本20亿元，总部位于苏州市相城区，是苏州唯一国有控股财险法人主体，定位「数字金融、科技保险、创新先行」。经营车险、企财险及工程险、责任险、船舶/货运险、短期健康/意外险、信用保证保险、农业保险和特殊风险保险，已获批筹建江苏、浙江、上海、安徽、北京五家分公司，属新设的地方国资中小型财险公司。
+    business: [车险, 企财险, 责任险, 农险, 信用保证险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "苏州东吴财险官网", url: "https://www.szdwcx.com/", date: "2026-09-30" }

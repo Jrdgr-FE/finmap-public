@@ -1,0 +1,310 @@
+# 机器人供应链公开档案：依据公开产品与主体资料，供应关系、销量与融资不作推断。
+version: 1
+updated: 2026-10-23
+companies:
+  - id: motorevo
+    name: 泉智博
+    en: Motorevo
+    region: cn
+    country: 中国
+    track: robot-parts
+    segment: actuators
+    intro: 无锡泉智博科技有限公司围绕机器人一体化关节开展研发制造，产品包含行星、谐波和摆线关节模组，用于人形、四足、协作臂与外骨骼等机器人。
+    sources:
+      - title: 2026 世界机器人大会：无锡泉智博科技有限公司展商资料
+        url: https://www.worldrobotconference.com/expo/company/887.html
+    verifiedAt: 2026-10-23
+    coverage: profile
+    events: []
+    aliases:
+      - 无锡泉智博
+      - 无锡泉智博科技有限公司
+    tags:
+      - 一体化关节
+      - 行星关节
+      - 谐波关节
+      - 摆线关节
+  - id: encos
+    name: 因克斯
+    en: ENCOS
+    region: cn
+    country: 中国
+    track: robot-parts
+    segment: actuators
+    intro: 南京因克斯智能科技有限公司提供机器人关节模组、配套驱动与通信产品，并公开提供 EC-Dexhand 系列灵巧手的产品和开发资料。
+    website: https://www.encos.cn/
+    sources:
+      - title: 因克斯官网：产品与技术资料下载
+        url: https://www.encos.cn/xzzx
+      - title: 因克斯官网：EC-A7220-P2-22H 行星关节
+        url: https://www.encos.cn/productinfo/308469.html?templateId=6217
+      - title: 因克斯官网：EC-Dexhand-5F 灵巧手
+        url: https://www.encos.cn/productinfo/65538.html?templateId=6217
+    verifiedAt: 2026-10-23
+    coverage: profile
+    events: []
+    aliases:
+      - 南京因克斯智能科技有限公司
+    match:
+      - 因克斯
+      - ENCOS robotics
+      - ENCOS 关节
+      - ENCOS关节
+      - ENCOS Dexhand
+      - EC-Dexhand
+    tags:
+      - 关节模组
+      - 行星关节
+      - 谐波关节
+      - 灵巧手
+    memberships:
+      - track: robot-parts
+        segment: hands
+  - id: eyou
+    name: 意优科技
+    en: Eyou
+    region: cn
+    country: 中国
+    track: robot-parts
+    segment: actuators
+    intro: 江苏意优机器人科技有限公司研发和生产机器人驱动系统，产品包括谐波、行星及直线关节模组，覆盖人形机器人、协作机械臂和工业自动化应用。
+    website: https://eyoubot.com/
+    sources:
+      - title: 意优官网：一体化伺服关节模组与公司介绍
+        url: https://eyoubot.com/
+    verifiedAt: 2026-10-23
+    coverage: profile
+    events: []
+    aliases:
+      - 江苏意优机器人科技有限公司
+      - 意优机器人
+    match:
+      - 意优科技
+      - 意优机器人
+      - Eyou Robot
+      - Eyou Robotics
+      - Eyou关节
+      - Eyou 关节
+    tags:
+      - 谐波关节
+      - 行星关节
+      - 直线关节
+      - 驱控系统
+  - id: ti5robot
+    name: 钛虎机器人
+    en: Ti5 Robot
+    region: cn
+    country: 中国
+    track: robot-parts
+    segment: actuators
+    intro: 钛虎机器人科技（上海）有限公司研发轻量化关节模组，并基于关节产品提供力控机械臂、协作机器人和人形机器人硬件平台。
+    website: https://www.ti5robot.com/
+    sources:
+      - title: 钛虎机器人官网：关节模组与力控臂产品
+        url: https://www.ti5robot.com/
+      - title: 钛虎机器人官网：公司简介与产品业务
+        url: https://ti5robot.com/index/news/detail?id=46
+    verifiedAt: 2026-10-23
+    coverage: profile
+    events: []
+    aliases:
+      - 钛虎机器人科技（上海）有限公司
+      - 钛虎科技
+    match:
+      - 钛虎机器人
+      - 钛虎科技
+      - Ti5Robot
+      - Ti5 Robot
+    tags:
+      - 轻量化关节
+      - 力控臂
+      - 人形机器人
+    memberships:
+      - track: industrial-automation
+        segment: industrial-robots
+      - track: embodied
+        segment: body
+  - id: tianji-gento
+    name: 天机智能（广东）
+    en: Gento Robotics
+    region: cn
+    country: 中国
+    track: industrial-automation
+    segment: industrial-robots
+    intro: 广东天机智能系统有限公司开发类人机械臂、机器人控制系统和力控机器人，产品体系包含 MEMS 关节扭矩传感器、一体化力控关节及 Gento 机器人。
+    website: https://cn.gentorobotics.ai/
+    sources:
+      - title: 天机智能 GENTO 官网：广东天机智能系统有限公司与核心产品
+        url: https://cn.gentorobotics.ai/about-us/
+    verifiedAt: 2026-10-23
+    coverage: profile
+    events: []
+    aliases:
+      - 广东天机智能系统有限公司
+      - 天机智能系统
+    match:
+      - 广东天机智能系统
+      - 天机智能系统
+      - Gento Robotics
+      - GENTO 机器人
+      - Gento机器人
+      - 天机力控
+    tags:
+      - 类人机械臂
+      - MEMS扭矩传感器
+      - 力控关节
+      - 控制系统
+    memberships:
+      - track: robot-parts
+        segment: actuators
+      - track: robot-parts
+        segment: sensors
+      - track: embodied
+        segment: body
+  - id: moxian
+    name: 墨现科技
+    region: cn
+    country: 中国
+    track: robot-parts
+    segment: sensors
+    intro: 墨现科技（东莞）有限公司研发柔性压力与触觉传感器，面向机器人电子皮肤、碰撞检测及消费、医疗等场景提供传感器和应用方案。
+    website: https://www.moxiantech.com/
+    sources:
+      - title: 墨现科技官网：公司介绍与触觉传感器业务
+        url: https://www.moxiantech.com/about-us
+      - title: 墨现科技官网：公司主体与联系资料
+        url: https://www.moxiantech.com/contact-us
+      - title: 墨现科技官网：机器人电子皮肤及应用
+        url: https://www.moxiantech.com/
+    verifiedAt: 2026-10-23
+    coverage: profile
+    events: []
+    aliases:
+      - 墨现科技（东莞）有限公司
+    tags:
+      - 柔性压力传感器
+      - 电子皮肤
+      - 触觉传感器
+      - 碰撞检测
+  - id: huaweike-hit
+    name: 华威科（武汉）
+    region: cn
+    country: 中国
+    track: robot-parts
+    segment: sensors
+    intro: 武汉华威科智能技术有限公司聚焦柔性智能感知，公开产品包括用于具身夹爪的触觉传感器及触觉数据采集手套。
+    sources:
+      - title: 2026 世界机器人大会：武汉华威科智能技术有限公司及触觉产品
+        url: https://www.worldrobotconference.com/expo/company/711.html
+    verifiedAt: 2026-10-23
+    coverage: profile
+    events: []
+    aliases:
+      - 武汉华威科智能技术有限公司
+      - HIT华威科
+    match:
+      - 武汉华威科
+      - HIT华威科
+      - HIT 华威科
+      - 华威科触觉
+      - 华威科电子皮肤
+    tags:
+      - 触觉传感器
+      - 柔性感知
+      - 数据采集手套
+  - id: jq-industries
+    name: 矩侨工业
+    en: JQ Industries
+    region: cn
+    country: 中国
+    track: robot-parts
+    segment: sensors
+    intro: 威海矩侨工业科技有限公司围绕柔性纤维传感器和织物电子皮肤开发产品，提供机器人触觉手套、表皮压力感知及康养、汽车座舱传感方案。
+    website: https://jq-industries.com/
+    sources:
+      - title: 矩侨工业官网：柔性纤维传感器与织物电子皮肤
+        url: https://jq-industries.com/
+      - title: 矩侨工业官网：威海矩侨工业科技有限公司联系页
+        url: https://jq-industries.com/contact/
+    verifiedAt: 2026-10-23
+    coverage: profile
+    events: []
+    aliases:
+      - 威海矩侨工业科技有限公司
+    tags:
+      - 纤维传感器
+      - 织物电子皮肤
+      - 触觉手套
+      - 压力感知
+  - id: yotlive
+    name: 尧乐科技
+    en: Yotlive
+    region: cn
+    country: 中国
+    track: robot-parts
+    segment: sensors
+    intro: 尧乐网络科技（上海）有限公司研发柔性织物压力传感器，提供传感器设计、软硬件和算法方案，应用于机器人多模态触觉、智能座椅、护理与穿戴设备。
+    website: https://www.yotlive.com.cn/
+    sources:
+      - title: 尧乐科技官网：公司介绍与柔性织物压力传感业务
+        url: https://www.yotlive.com.cn/company-profile
+    verifiedAt: 2026-10-23
+    coverage: profile
+    events: []
+    aliases:
+      - 尧乐网络科技（上海）有限公司
+    tags:
+      - 织物压力传感器
+      - 多模态触觉
+      - 柔性传感器
+  - id: tashan
+    name: 他山科技
+    en: Tashan Technology
+    region: cn
+    country: 中国
+    track: robot-parts
+    segment: sensors
+    intro: 北京他山科技有限公司研发人工智能触感芯片、触觉传感器和算法，产品包含指尖及夹爪触觉传感器，并提供具身智能多模态数据采集方案。
+    website: https://www.tashantec.com/
+    sources:
+      - title: 他山科技官网：触觉感知产品与技术
+        url: https://www.tashantec.com/
+      - title: ITES 官方产品库：北京他山科技有限公司及 AI 触觉传感器
+        url: https://www.iteschina.com/zh-cn/products/details/30626
+    verifiedAt: 2026-10-23
+    coverage: profile
+    events: []
+    aliases:
+      - 北京他山科技有限公司
+    match:
+      - 他山科技
+      - Tashan Technology
+      - Tashan tactile
+      - 他山触觉
+    tags:
+      - 触觉芯片
+      - 指尖传感器
+      - 夹爪传感器
+      - 多模态数据
+  - id: yuma-precision
+    name: 御马精密
+    en: Yuma Precision
+    region: cn
+    country: 中国
+    track: robot-parts
+    segment: actuators
+    intro: 御马精密科技（江苏）股份有限公司提供电机铁芯设计、模具开发与制造服务，产品涵盖无框电机铁芯及步进、伺服电机定转子铁芯，面向具身智能、工业控制和汽车应用。
+    website: https://www.yumaprecision.com/
+    sources:
+      - title: 御马精密官网：公司介绍、具身智能及工控电机铁芯产品
+        url: https://www.yumaprecision.com/
+    verifiedAt: 2026-10-23
+    coverage: profile
+    events: []
+    aliases:
+      - 御马精密科技（江苏）股份有限公司
+    tags:
+      - 电机铁芯
+      - 无框电机
+      - 定转子
+      - 精密模具

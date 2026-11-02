@@ -1,0 +1,305 @@
+---
+// 全站搜索框。页头一个、首页大号一个，共用同一份懒加载索引（/search.json）。
+interface Props {
+  hero?: boolean;
+  placeholder?: string;
+}
+const { hero = false, placeholder = "搜索公司、机构或技术标签" } = Astro.props;
+---
+
+<div class:list={["site-search", hero && "is-hero"]} data-site-search>
+  <div class="site-search-field">
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      aria-hidden="true"
+    >
+      <circle cx="11" cy="11" r="7"></circle>
+      <path d="m20 20-3.5-3.5"></path>
+    </svg>
+    <input
+      type="search"
+      placeholder={placeholder}
+      autocomplete="off"
+      spellcheck="false"
+      enterkeyhint="search"
+      role="combobox"
+      aria-autocomplete="list"
+      aria-expanded="false"
+      aria-label="搜索公司或机构"
+    />
+    <kbd>/</kbd>
+  </div>
+  <div class="search-pop" role="listbox" hidden></div>
+</div>
+
+<script>
+  type Row = [
+    string,
+    string,
+    string,
+    string,
+    string,
+    string,
+    string,
+    number,
+    number,
+    string,
+    string?,
+  ];
+  type Item = { row: Row; hay: string; short: string; name: string };
+
+  const LIMIT = 8;
+  let index: Promise<Item[]> | null = null;
+  const load = () =>
+    (index ??= fetch("/search.json")
+      .then((r) => {
+        if (!r.ok) throw new Error(String(r.status));
+        return r.json() as Promise<Row[]>;
+      })
+      .then((rows) =>
+        rows.map((row) => ({
+          row,
+          short: row[1].toLowerCase(),
+          name: (row[2] || row[1]).toLowerCase(),
+          hay: [row[1], row[2], row[4], row[5], row[6], row[9]]
+            .join(" ")
+            .toLowerCase(),
+        })),
+      )
+      .catch((err) => {
+        index = null; // 下次聚焦重试，而不是永远卡在失败状态
+        throw err;
+      }));
+
+  // 排序：简称完全相同 > 简称开头 > 全称开头 > 简称包含 > 其余字段命中；同档里逐一核实的在前
+  const rank = (it: Item, q: string) =>
+    (it.short === q
+      ? 0
+      : it.short.startsWith(q)
+        ? 1
+        : it.name.startsWith(q)
+          ? 2
+          : it.short.includes(q)
+            ? 3
+            : 4) +
+    it.row[7] * 0.5;
+
+  const el = (tag: string, cls?: string, text?: string) => {
+    const n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  };
+
+  const highlight = (text: string, q: string) => {
+    const span = el("span", "t");
+    const at = text.toLowerCase().indexOf(q);
+    if (!q || at < 0) {
+      span.textContent = text;
+      return span;
+    }
+    span.append(
+      text.slice(0, at),
+      el("mark", undefined, text.slice(at, at + q.length)),
+      text.slice(at + q.length),
+    );
+    return span;
+  };
+
+  document
+    .querySelectorAll<HTMLElement>("[data-site-search]")
+    .forEach((box) => {
+      const input = box.querySelector("input")!;
+      const pop = box.querySelector<HTMLElement>(".search-pop")!;
+      let hits: HTMLAnchorElement[] = [];
+      let active = -1;
+      let seq = 0;
+
+      const close = () => {
+        pop.hidden = true;
+        input.setAttribute("aria-expanded", "false");
+        active = -1;
+      };
+      const setActive = (i: number) => {
+        hits.forEach((h, k) => h.classList.toggle("is-active", k === i));
+        active = i;
+        hits[i]?.scrollIntoView({ block: "nearest" });
+      };
+
+      const render = async () => {
+        const raw = input.value.trim();
+        const q = raw.toLowerCase();
+        const mine = ++seq;
+        if (!q) return close();
+        let items: Item[];
+        try {
+          items = await load();
+        } catch {
+          if (mine !== seq) return;
+          pop.replaceChildren(
+            el("div", "search-note", "搜索索引加载失败，请检查网络后重试。"),
+          );
+          pop.hidden = false;
+          return;
+        }
+        if (mine !== seq) return;
+        const terms = q.split(/\s+/);
+        const matched = items.filter((it) =>
+          terms.every((t) => it.hay.includes(t)),
+        );
+        const top = matched
+          .map((it) => ({ it, r: rank(it, terms[0]) }))
+          .sort((a, b) => a.r - b.r || a.it.short.length - b.it.short.length)
+          .slice(0, LIMIT);
+
+        hits = top.map(({ it: { row } }) => {
+          const [id, short, name, cat, type, code, region, mass, status] = row;
+          const a = el("a", "search-hit") as HTMLAnchorElement;
+          a.href = row[10] || `/org/${id}/`;
+          a.dataset.cat = cat;
+          a.setAttribute("role", "option");
+          const body = el("span");
+          body.append(
+            highlight(short, terms[0]),
+            el(
+              "span",
+              "s",
+              [name, mass || cat === "venture" ? region : "", code]
+                .filter(Boolean)
+                .join(" · "),
+            ),
+          );
+          const meta = el("span", "m", type);
+          if (status === 1)
+            meta.prepend(el("span", "badge badge-warn", "风险处置"));
+          if (status === 2)
+            meta.prepend(el("span", "badge badge-inactive", "已退出"));
+          if (mass) meta.append(el("span", "badge badge-mass", "名册"));
+          if (cat === "venture")
+            meta.append(el("span", "badge badge-plain", "产业"));
+          a.append(el("span", "dot"), body, meta);
+          return a;
+        });
+
+        const nodes: Node[] = hits.length
+          ? [...hits]
+          : [
+              el(
+                "div",
+                "search-note",
+                `没有找到「${raw}」。试试公司简称、产品型号或赛道关键词。`,
+              ),
+            ];
+        const venturesCount = matched.filter(
+          (it) => it.row[3] === "venture",
+        ).length;
+        const finMatched = matched.filter((it) => it.row[3] !== "venture");
+        const detailed = finMatched.filter((it) => !it.row[7]).length;
+        const mass = finMatched.length - detailed;
+        if (matched.length > LIMIT || venturesCount > 0) {
+          const foot = el("div", "search-foot");
+          foot.append(`共 ${matched.length} 条匹配`);
+          const qs = encodeURIComponent(raw);
+          if (venturesCount) {
+            const a = el(
+              "a",
+              undefined,
+              `产业图谱 ${venturesCount} 家 →`,
+            ) as HTMLAnchorElement;
+            a.href = `/ventures/?q=${qs}`;
+            foot.append(a);
+          }
+          if (detailed) {
+            const a = el(
+              "a",
+              undefined,
+              `机构库 ${detailed} 家 →`,
+            ) as HTMLAnchorElement;
+            a.href = `/orgs/?q=${qs}`;
+            foot.append(a);
+          }
+          if (mass) {
+            const a = el(
+              "a",
+              undefined,
+              `全量名册 ${mass} 家 →`,
+            ) as HTMLAnchorElement;
+            a.href = `/roster/?q=${qs}`;
+            foot.append(a);
+          }
+          nodes.push(foot);
+        }
+        pop.replaceChildren(...nodes);
+        pop.hidden = false;
+        input.setAttribute("aria-expanded", "true");
+        setActive(hits.length ? 0 : -1);
+      };
+
+      input.addEventListener("focus", () => {
+        load().catch(() => {});
+        if (input.value.trim()) render();
+      });
+      input.addEventListener("input", render);
+      input.addEventListener("keydown", (ev) => {
+        if (ev.key === "ArrowDown" && hits.length) {
+          ev.preventDefault();
+          setActive((active + 1) % hits.length);
+        } else if (ev.key === "ArrowUp" && hits.length) {
+          ev.preventDefault();
+          setActive((active - 1 + hits.length) % hits.length);
+        } else if (ev.key === "Enter") {
+          ev.preventDefault();
+          const target = hits[active] ?? hits[0];
+          if (target) location.href = target.href;
+          else if (input.value.trim())
+            location.href = `${document.body.dataset.workspace === "financial" ? "/orgs/" : "/companies/"}?q=${encodeURIComponent(input.value.trim())}`;
+        } else if (ev.key === "Escape") {
+          close();
+          input.blur();
+          box.closest(".site-header")?.classList.remove("is-searching");
+        }
+      });
+      document.addEventListener("pointerdown", (ev) => {
+        if (!box.contains(ev.target as Node)) close();
+      });
+    });
+
+  // 快捷键：/ 或 ⌘K / Ctrl+K 聚焦搜索。首页优先用页面中间的大搜索框。
+  document.addEventListener("keydown", (ev) => {
+    if (
+      document.querySelector("dialog[open]") ||
+      document.body.classList.contains("menu-is-open")
+    )
+      return;
+    const typing = (ev.target as HTMLElement).closest(
+      "input, textarea, select, [contenteditable]",
+    );
+    const open =
+      (ev.key === "/" && !typing) ||
+      (ev.key.toLowerCase() === "k" && (ev.metaKey || ev.ctrlKey));
+    if (!open) return;
+    ev.preventDefault();
+    const boxes = [
+      ...document.querySelectorAll<HTMLElement>("[data-site-search]"),
+    ];
+    const hero = boxes.find(
+      (b) =>
+        b.classList.contains("is-hero") && b.getBoundingClientRect().bottom > 0,
+    );
+    const header = document.querySelector(".site-header");
+    if (
+      !hero &&
+      header &&
+      getComputedStyle(header.querySelector(".site-search")!).display === "none"
+    ) {
+      header.classList.add("is-searching");
+    }
+    (hero ?? boxes.find((b) => !b.classList.contains("is-hero")))
+      ?.querySelector("input")
+      ?.focus();
+  });
+</script>

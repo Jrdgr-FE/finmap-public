@@ -1,0 +1,281 @@
+# 硬科技图谱 · 商业航天（2026-10-22 调研）
+# 结构和口径同 ventures.yaml。国内火箭公司 2026 年扎堆冲科创板，事件以 IPO 进展和发射结果为主。
+version: 1
+updated: "2026-10-22"
+
+tracks:
+  - id: space
+    name: 商业航天
+    desc: 民营火箭、卫星制造与星座运营，以及在轨运输和太空算力。可复用火箭能否回收复飞，决定发射成本和整条链的天花板。
+    segments:
+      - { id: launch, name: 上游·运载火箭, desc: 民营液体和固体火箭，主线是可重复使用和运力。 }
+      - { id: satellites, name: 中游·卫星与星座, desc: 卫星批量制造和低轨通信、遥感星座运营。 }
+      - { id: in-space, name: 下游·在轨服务与太空算力, desc: 轨道转移飞行器、大功率卫星平台，以及把数据中心搬上太空。 }
+
+companies:
+  # ───────── 运载火箭 · 国内 ─────────
+  - id: landspace
+    name: 蓝箭航天
+    en: LandSpace
+    region: cn
+    track: space
+    segment: launch
+    tags: [液氧甲烷, 可复用, 科创板IPO]
+    intro: 国内民营液体火箭龙头，朱雀二号已进入量产商用，不锈钢可复用火箭朱雀三号是中国星网核心供应商；科创板 IPO 拟募资 75 亿元。2025 年营收 5,210 万元，亏损 17.1 亿元。
+    valuation: { value: 750, unit: 亿元, asof: "2026", status: reported, note: 胡润估 }
+    events:
+      - date: "2026-09-30"
+        kind: ipo
+        title: 科创板审核状态因财报更新转为“中止”（此前 6 月 29 日恢复为“已问询”）
+        status: confirmed
+        sources: [{ title: 中新网：商业航天 IPO 生死局，谁能突围？, url: "https://www.chinanews.com.cn/cj/2026/10-15/10715164.shtml", date: "2026-10-15" }]
+      - date: "2026-08-19"
+        kind: product
+        title: 朱雀三号遥二入轨成功，一子级陆上回收成功，进入复用验证
+        status: confirmed
+        sources: [{ title: 中新网：商业航天 IPO 生死局，谁能突围？, url: "https://www.chinanews.com.cn/cj/2026/10-15/10715164.shtml", date: "2026-10-15" }]
+      - date: "2025-12-03"
+        kind: product
+        title: 朱雀三号首飞入轨成功，但一子级软着陆失败
+        status: confirmed
+        sources: [{ title: 21 世纪经济报道：蓝箭航天 IPO 恢复审核, url: "https://www.sfccn.com/2026/6-30/2MMDE0MDRfMjE3MTM2MA.html", date: "2026-06-30" }]
+
+  - id: cas-space
+    name: 中科宇航
+    en: CAS Space
+    region: cn
+    track: space
+    segment: launch
+    tags: [固体火箭, 力箭, 科创板IPO]
+    intro: 中科院力学所孵化，力箭一号固体火箭保持稳定商业发射节奏，液体火箭力箭二号 2026 年首飞成功；科创板 IPO 拟募资 41.8 亿元用于重型可复用火箭。
+    events:
+      - date: "2026-09-30"
+        kind: ipo
+        title: 科创板审核状态因财报更新转为“中止”（3 月 31 日获受理）
+        status: confirmed
+        sources: [{ title: 中新网：商业航天 IPO 生死局，谁能突围？, url: "https://www.chinanews.com.cn/cj/2026/10-15/10715164.shtml", date: "2026-10-15" }]
+      - date: "2026-09-20"
+        kind: product
+        title: 力箭一号第 18 次飞行一箭九星
+        status: confirmed
+        sources: [{ title: 中新网：商业航天 IPO 生死局，谁能突围？, url: "https://www.chinanews.com.cn/cj/2026/10-15/10715164.shtml", date: "2026-10-15" }]
+      - date: "2026-03-30"
+        kind: product
+        title: 液体火箭力箭二号首飞成功
+        status: confirmed
+        sources: [{ title: 中新网：商业航天 IPO 生死局，谁能突围？, url: "https://www.chinanews.com.cn/cj/2026/10-15/10715164.shtml", date: "2026-10-15" }]
+
+  - id: ispace
+    name: 星际荣耀
+    en: iSpace
+    region: cn
+    track: space
+    segment: launch
+    tags: [可复用, 双曲线, 上市辅导]
+    intro: 国内最早实现民营火箭入轨的公司之一，在研可复用液体火箭双曲线三号，已进入上市辅导。
+    events:
+      - date: "2026-02-12"
+        kind: funding
+        title: 完成 50.37 亿元 D 轮
+        amount: { value: 50.37, unit: 亿元 }
+        status: confirmed
+        sources: [{ title: 钛媒体：中国商业航天 2026 中场战事，半年融资 151 亿, url: "https://www.tmtpost.com/8068843.html", date: "2026" }]
+      - date: "2026-10"
+        kind: product
+        title: 双曲线三号计划 2026 年底发射
+        status: reported
+        sources: [{ title: 中新网：商业航天 IPO 生死局，谁能突围？, url: "https://www.chinanews.com.cn/cj/2026/10-15/10715164.shtml", date: "2026-10-15" }]
+
+  - id: space-pioneer
+    name: 天兵科技
+    en: Space Pioneer
+    region: cn
+    track: space
+    segment: launch
+    tags: [液体火箭, 天龙三号, 上市辅导]
+    intro: 液体火箭公司，主力中型火箭天龙三号 2026 年 4 月首飞失利，计划四季度复飞；同时推进重型可复用火箭，已进入上市辅导。
+    events:
+      - date: "2026-04"
+        kind: product
+        title: 天龙三号首飞失利，计划 2026 年四季度复飞
+        status: confirmed
+        sources:
+          - { title: 钛媒体：中国商业航天 2026 中场战事, url: "https://www.tmtpost.com/8068843.html", date: "2026" }
+          - { title: 中新网：商业航天 IPO 生死局，谁能突围？, url: "https://www.chinanews.com.cn/cj/2026/10-15/10715164.shtml", date: "2026-10-15" }
+
+  - id: orienspace
+    name: 东方空间
+    en: Orienspace
+    region: cn
+    track: space
+    segment: launch
+    tags: [固体火箭, 海上发射, 引力]
+    intro: 主打大运力固体捆绑火箭和海上发射，引力一号已多次海上发射，液体可复用火箭引力二号在做首飞前地面试验。
+    events:
+      - date: "2026-09"
+        kind: product
+        title: 引力一号遥三完成海上发射
+        status: confirmed
+        sources: [{ title: 中新网：商业航天 IPO 生死局，谁能突围？, url: "https://www.chinanews.com.cn/cj/2026/10-15/10715164.shtml", date: "2026-10-15" }]
+
+  # ───────── 运载火箭 · 海外 ─────────
+  - id: spacex
+    name: SpaceX
+    region: global
+    track: space
+    segment: launch
+    tags: [可复用, 星链, 纳斯达克]
+    intro: 占全球发射市场约八成，猎鹰 9 号复用和星链让它成为商业航天的定价锚；2026 年 6 月纳斯达克上市，募资约 750 亿美元，史上最大 IPO。
+    founders: [Elon Musk]
+    valuation: { value: 1800, unit: 十亿美元, asof: "2026-06-12", status: confirmed, note: 上市时约 }
+    events:
+      - date: "2026-06-12"
+        kind: ipo
+        title: 纳斯达克上市，发行价 135 美元，募资约 750 亿美元，上市时市值约 1.8 万亿美元；7 月 15 日盘中一度跌破发行价
+        status: confirmed
+        sources:
+          - { title: 钛媒体：中国商业航天 2026 中场战事, url: "https://www.tmtpost.com/8068843.html", date: "2026" }
+          - { title: 中新网：商业航天 IPO 生死局，谁能突围？, url: "https://www.chinanews.com.cn/cj/2026/10-15/10715164.shtml", date: "2026-10-15" }
+
+  - id: stoke-space
+    name: Stoke Space
+    region: global
+    track: space
+    segment: launch
+    tags: [完全可复用, Nova, 前蓝色起源团队]
+    intro: 前蓝色起源工程师创办，做两级都能回收的完全可复用火箭 Nova，首枚 Pathfinder（近地轨道 3 吨）预计 2027 年初首飞，15 吨的 Block 2 目标 2029 年。
+    events:
+      - date: "2026-09-08"
+        kind: funding
+        title: E 轮首关 10 亿美元，累计融资 23 亿美元，Point72 Ventures 和 Spark Capital 领投
+        amount: { value: 1000, unit: 百万美元 }
+        investors: [Point72 Ventures, Spark Capital, Glade Brook, Woven Capital, Y Combinator]
+        status: confirmed
+        sources: [{ title: TechCrunch：Stoke Space raises another billion, url: "https://techcrunch.com/2026/09/08/stoke-space-raises-another-billion-to-rival-spacex-at-re-flying-rockets/", date: "2026-09-08" }]
+
+  - id: isar-aerospace
+    name: Isar Aerospace
+    region: global
+    track: space
+    segment: launch
+    tags: [欧洲, 小型火箭, Spectrum]
+    intro: 德国民营火箭公司，Spectrum 小型运载火箭第二次飞行入轨成功，成为欧洲民营发射的领跑者。
+    events:
+      - date: "2026-09-05"
+        kind: product
+        title: Spectrum 第二次飞行从挪威安岛发射，成功入轨
+        status: confirmed
+        sources: [{ title: ESA：Spectrum launches to orbit, url: "https://www.esa.int/ESA_Multimedia/Images/2026/09/Spectrum_launches_to_orbit", date: "2026-09" }]
+      - date: "2026-06"
+        kind: funding
+        title: 完成 2.7 亿欧元 D 轮，累计融资约 8 亿欧元
+        status: confirmed
+        sources: [{ title: Aviation News：Isar Aerospace prepared for second Spectrum launch, url: "https://aviationnews.eu/news/2026/06/isar-aerospace-prepared-for-second-spectrum-rocket-launch-in-norway-following-significant-funding-boost/", date: "2026-06-15" }]
+
+  # ───────── 卫星与星座 ─────────
+  - id: galaxyspace
+    name: 银河航天
+    en: GalaxySpace
+    region: cn
+    track: space
+    segment: satellites
+    tags: [低轨通信卫星, 卫星工厂, 上市辅导]
+    intro: 低轨宽带通信卫星制造商，已发射 40 余颗卫星，南通工厂年产百颗中型卫星，计划 2026 年做到月产 20 颗；2026 年 3 月 IPO 辅导备案。
+    valuation: { value: 110, unit: 亿元, asof: "2022-09", status: reported, note: B++ 轮投后 }
+    events:
+      - date: "2026-03-30"
+        kind: ipo
+        title: 在北京证监局完成 IPO 辅导备案，华泰联合证券辅导
+        status: confirmed
+        sources: [{ title: 每日经济新闻：银河航天 IPO 辅导备案, url: "https://www.nbd.com.cn/articles/2026-03-31/4318155.html", date: "2026-03-31" }]
+
+  - id: changguang
+    name: 长光卫星
+    en: Chang Guang Satellite
+    region: cn
+    track: space
+    segment: satellites
+    tags: [遥感, 吉林一号]
+    intro: 吉林一号遥感星座的运营商，国内在轨商业遥感卫星最多的公司之一。
+    events:
+      - date: "2026-07-05"
+        kind: funding
+        title: 获 50 亿元战略投资
+        amount: { value: 50, unit: 亿元 }
+        status: confirmed
+        sources: [{ title: 钛媒体：中国商业航天 2026 中场战事, url: "https://www.tmtpost.com/8068843.html", date: "2026" }]
+
+  - id: spacesail
+    name: 垣信卫星
+    en: Spacesail
+    region: cn
+    track: space
+    segment: satellites
+    tags: [千帆星座, 低轨宽带, 上海国资]
+    aliases: [千帆星座]
+    intro: 千帆低轨宽带星座运营方，截至 2026 年 7 月在轨 238 颗，一期 648 颗完成约 37%；上半年发射 8 次。
+    events:
+      - date: "2026-06"
+        kind: funding
+        title: 宣布至多 150 亿元增资，是否全部完成未确认
+        status: reported
+        sources: [{ title: 钛媒体：中国商业航天 2026 中场战事, url: "https://www.tmtpost.com/8068843.html", date: "2026" }]
+      - date: "2026-07-05"
+        kind: deployment
+        title: 7 月 4 日、5 日两次发射分别补网 18 颗、20 颗，在轨达 238 颗
+        status: confirmed
+        sources: [{ title: 钛媒体：中国商业航天 2026 中场战事, url: "https://www.tmtpost.com/8068843.html", date: "2026" }]
+
+  - id: k2-space
+    name: K2 Space
+    region: global
+    track: space
+    segment: satellites
+    tags: [大功率卫星, 平台, 前SpaceX团队]
+    intro: 前 SpaceX 工程师兄弟创办，造远超行业常规功率和载荷的大型卫星平台，下一代 100kW“Giga 级”卫星（2028 下半年）定位为在轨算力平台。
+    valuation: { value: 6.8, unit: 十亿美元, asof: "2026-07-30", status: confirmed }
+    events:
+      - date: "2026-07-30"
+        kind: funding
+        title: 5 亿美元 D 轮，估值 68 亿美元，Kleiner Perkins 与 ICONIQ 领投；下一次任务 Trinity 定于 2027 年二季度
+        amount: { value: 500, unit: 百万美元 }
+        investors: [Kleiner Perkins, ICONIQ]
+        status: confirmed
+        sources: [{ title: Dealroom：K2 Space raises $500M at $6.8B to build big satellites, url: "https://dealroom.co/news/142158-k2-space-raises-500m-at-6-8b-to-build-big-satellites/", date: "2026-07-30" }]
+
+  # ───────── 在轨服务与太空算力 ─────────
+  - id: impulse-space
+    name: Impulse Space
+    region: global
+    track: space
+    segment: in-space
+    tags: [轨道转移, Tom Mueller, 国防]
+    intro: SpaceX 首位员工、梅林发动机负责人 Tom Mueller 创办，做轨道转移飞行器，Mira 已执行 3 次任务，并在研送卫星直达高轨的 Helios。
+    founders: [Tom Mueller]
+    valuation: { value: 4.26, unit: 十亿美元, asof: "2026-06-02", status: reported }
+    events:
+      - date: "2026-06-02"
+        kind: funding
+        title: 5 亿美元 D 轮，据知情人估值约 42.6 亿美元
+        amount: { value: 500, unit: 百万美元 }
+        investors: [Founders Fund, Linse Capital]
+        status: confirmed
+        sources: [{ title: Bloomberg：Startup Impulse Space raises $500 million, valued at $4 billion, url: "https://news.bloomberglaw.com/private-equity/startup-impulse-space-raises-500-million-valued-at-4-billion", date: "2026-06-02" }]
+
+  - id: starcloud
+    name: Starcloud
+    region: global
+    track: space
+    segment: in-space
+    tags: [太空数据中心, 英伟达系, 在轨训练]
+    intro: 要把 AI 数据中心搬上轨道的公司，首颗卫星搭载英伟达 GPU 完成首次在轨 AI 训练，规划 Starcloud-2（2027）到 200kW 的 Starcloud-3 和平方英里级太阳能阵列。
+    founders: [Philip Johnston]
+    valuation: { value: 2.3, unit: 十亿美元, asof: "2026-08-21", status: confirmed }
+    events:
+      - date: "2026-08-21"
+        kind: funding
+        title: A 轮扩充 2.5 亿美元，估值 23 亿美元（3 月刚以 11 亿美元估值融 1.7 亿美元），Manhattan West 领投，英伟达、思科参投
+        amount: { value: 250, unit: 百万美元 }
+        investors: [Manhattan West, Nvidia, Cisco Investments]
+        status: confirmed
+        sources: [{ title: SiliconANGLE：Starcloud raises $250M to build AI data centers in orbit, url: "https://siliconangle.com/2026/08/21/starcloud-raises-250m-to-build-ai-data-centers-in-orbit/", date: "2026-08-21" }]

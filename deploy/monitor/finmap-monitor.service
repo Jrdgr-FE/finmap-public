@@ -1,0 +1,26 @@
+[Unit]
+Description=FinMap public company monitoring
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=finmap-monitor
+Group=finmap-monitor
+WorkingDirectory=/opt/finmap-monitor/current
+ExecStart=/opt/finmap-monitor/node --max-old-space-size=128 scripts/monitor-run.mjs --remote-registry --state /var/lib/finmap-monitor --output /var/lib/finmap-monitor/public/monitor.json
+UMask=0077
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+ReadWritePaths=/var/lib/finmap-monitor
+CPUQuota=25%
+CPUWeight=10
+Nice=15
+MemoryHigh=160M
+MemoryMax=220M
+TimeoutStartSec=25min

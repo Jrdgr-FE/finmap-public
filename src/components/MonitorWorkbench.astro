@@ -1,0 +1,503 @@
+---
+import {
+  getMonitorSnapshot,
+  MONITOR_KINDS,
+  MONITOR_EVIDENCE,
+  isCompanyEvent,
+  eventKindLabel,
+} from "../lib/monitor";
+import { initial, hue } from "../lib/ui";
+import Icon from "./Icon.astro";
+import { sortEvents } from "../lib/monitor-query";
+import "../styles/monitor.css";
+interface Props {
+  company?: string;
+  coverage?: boolean;
+}
+const { company = "", coverage = false } = Astro.props;
+const full = getMonitorSnapshot();
+const snapshot = company
+  ? {
+      ...full,
+      companies: full.companies.filter((c) => c.id === company),
+      events: full.events.filter((e) => e.companyId === company),
+    }
+  : full;
+const index = new Map(snapshot.companies.map((c) => [c.id, c]));
+const events = sortEvents(snapshot.events)
+  .filter(isCompanyEvent)
+  .slice(0, company ? 8 : 20);
+const bootstrap = company
+  ? snapshot
+  : {
+      ...snapshot,
+      events: sortEvents(snapshot.events).slice(0, 200),
+      bootstrapPartial: true,
+    };
+const json = JSON.stringify(bootstrap).replaceAll("<", "\\u003c");
+---
+
+<section
+  class:list={[
+    "monitor-app",
+    { "monitor-embedded": !!company, "terminal-feed": !company && !coverage },
+  ]}
+  data-monitor
+  data-company={company}
+  data-coverage={String(coverage)}
+>
+  <div class="monitor-heading">
+    <div>
+      <p class="page-kicker">
+        {company
+          ? "COMPANY INTELLIGENCE"
+          : coverage
+            ? "DATA & SOURCES"
+            : "FINMAP / COMPANY INTELLIGENCE"}
+      </p>
+      {company ? (
+        <h2>最新动态</h2>
+      ) : (
+        <h1>
+          {coverage ? "信源监测" : "公司动态"}
+          <span class="terminal-heading-en">
+            {coverage ? "SOURCES" : "NEWS FLOW"}
+          </span>
+        </h1>
+      )}
+      {!company && (
+        <p class="monitor-subtitle">
+          {coverage
+            ? "知道信息从哪里来，也知道哪里还没有覆盖。"
+            : "融资、产品与商业进展。把公司的每一步，放回你的研究脉络。"}
+        </p>
+      )}
+    </div>
+    <div class="monitor-heading-actions">
+      {company ? (
+        <a class="section-action" href={"/?company=" + company + "&days=0"}>
+          全部动态
+          <Icon name="arrow" />
+        </a>
+      ) : (
+        <a class="btn primary-action" href="/companies/">
+          <Icon name="plus" />
+          管理关注公司
+        </a>
+      )}
+      <button
+        class="monitor-icon-button"
+        data-refresh
+        aria-label="刷新动态"
+        title="刷新动态"
+      >
+        <Icon name="refresh" />
+      </button>
+    </div>
+  </div>
+  {!company && !coverage && (
+    <div class="research-pulse" aria-label="当前研究范围概览">
+      <div class="pulse-intro">
+        <span class="pulse-mark">
+          <Icon name="activity" />
+        </span>
+        <strong>研究概览</strong>
+        <span data-pulse-range>最近 7 天</span>
+      </div>
+      <button data-pulse="all">
+        <strong data-pulse-events>—</strong>
+        <span>已收录动态</span>
+      </button>
+      <button data-pulse="funding">
+        <strong data-pulse-funding>—</strong>
+        <span>
+          融资与并购线索
+          <Icon name="arrow" />
+        </span>
+      </button>
+      <button data-pulse="product">
+        <strong data-pulse-product>—</strong>
+        <span>
+          产品与研究更新
+          <Icon name="arrow" />
+        </span>
+      </button>
+      <div class="pulse-companies">
+        <strong data-pulse-companies>—</strong>
+        <span>涉及公司</span>
+      </div>
+    </div>
+  )}
+  <div class="monitor-layout">
+    <div class="monitor-main-column">
+      {!coverage && !company && (
+        <div class="monitor-reading" role="group" aria-label="阅读范围">
+          {[
+            ["all", "全部动态"],
+            ["watching", "我的关注"],
+            ["new", "本次新增"],
+            ["unread", "未读"],
+            ["saved", "已收藏"],
+          ].map(([key, label]) => (
+            <button data-scope={key} aria-pressed={key === "all"}>
+              {label}
+              <span data-scope-count={key}></span>
+            </button>
+          ))}
+        </div>
+      )}
+      <div class="monitor-feed-panel">
+        {!company && (
+          <form class="monitor-filters" data-filters role="search">
+            <div class="monitor-filter-primary">
+              <label class="monitor-search">
+                <Icon name="search" />
+                <input
+                  type="search"
+                  name="q"
+                  aria-label="搜索公司或事件"
+                  placeholder={
+                    coverage ? "搜索公司名称…" : "搜索公司、产品或关键词…"
+                  }
+                  autocomplete="off"
+                />
+              </label>
+              <label class="monitor-time">
+                <span class="sr-only">时间范围</span>
+                <select name="days">
+                  <option value="7">最近 7 天</option>
+                  <option value="1">最近 24 小时</option>
+                  <option value="30">最近 30 天</option>
+                  <option value="90">最近 90 天</option>
+                  <option value="0">全部已收录</option>
+                </select>
+              </label>
+              {!coverage && (
+                <label class="monitor-time">
+                  <span class="sr-only">信息范围</span>
+                  <select name="signal">
+                    <option value="key">关键进展</option>
+                    <option value="all">全部收录</option>
+                  </select>
+                </label>
+              )}
+              <button
+                type="button"
+                class="filter-toggle"
+                data-toggle-filters
+                aria-expanded="false"
+              >
+                <Icon name="filter" />
+                筛选<span data-filter-count></span>
+              </button>
+            </div>
+            <div class="monitor-filter-expanded" data-filter-expanded hidden>
+              <label>
+                <span>赛道</span>
+                <select name="track">
+                  <option value="">全部赛道</option>
+                  {snapshot.tracks.map((t) => (
+                    <option value={t.id}>{t.name}</option>
+                  ))}
+                </select>
+              </label>
+              <label>
+                <span>产业环节</span>
+                <select name="segment">
+                  <option value="">全部环节</option>
+                  {snapshot.tracks.map((t) => (
+                    <optgroup label={t.name}>
+                      {t.segments.map((s) => (
+                        <option value={t.id + "/" + s.id}>{s.name}</option>
+                      ))}
+                    </optgroup>
+                  ))}
+                </select>
+              </label>
+              <label>
+                <span>地区</span>
+                <select name="region">
+                  <option value="">国内与海外</option>
+                  <option value="cn">国内</option>
+                  <option value="global">海外</option>
+                </select>
+              </label>
+              <label>
+                <span>公司</span>
+                <select name="company">
+                  <option value="">全部公司</option>
+                  {snapshot.companies.map((c) => (
+                    <option value={c.id}>{c.name}</option>
+                  ))}
+                </select>
+              </label>
+              {!coverage && (
+                <label>
+                  <span>证据来源</span>
+                  <select name="evidence">
+                    <option value="">全部来源</option>
+                    <option value="official">官方渠道</option>
+                    <option value="discovery">检索线索</option>
+                    <option value="reviewed">历史整理</option>
+                  </select>
+                </label>
+              )}
+              {coverage && (
+                <label>
+                  <span>监测状态</span>
+                  <select name="health">
+                    <option value="">全部公司</option>
+                    <option value="issues">存在失败或过期渠道</option>
+                    <option value="missing">没有可用自动渠道</option>
+                    <option value="healthy">所有渠道检查有效</option>
+                  </select>
+                </label>
+              )}
+              {!coverage && (
+                <div class="monitor-kind-options">
+                  <span>事件类型 · 可多选</span>
+                  <div role="group" aria-label="事件类型">
+                    {Object.entries(MONITOR_KINDS).map(([key, label]) => (
+                      <button
+                        type="button"
+                        data-kind={key}
+                        aria-pressed="false"
+                      >
+                        {label}
+                      </button>
+                    ))}
+                  </div>
+                  <label class="monitor-related">
+                    <input type="checkbox" data-include-related />
+                    包含仅检索相关线索
+                  </label>
+                </div>
+              )}
+            </div>
+          </form>
+        )}
+        {!coverage && !company && (
+          <div class="monitor-presets" aria-label="快捷研究视图">
+            <span>快速查看</span>
+            <button data-preset="funding">
+              <i class="kind-dot" data-type="funding"></i>融资与并购
+            </button>
+            <button data-preset="product">
+              <i class="kind-dot" data-type="product"></i>产品与技术
+            </button>
+            <button data-preset="hands">
+              <Icon name="network" />
+              灵巧手
+            </button>
+            <button data-preset="ranking">
+              <i class="kind-dot" data-type="ranking"></i>榜单与奖项
+            </button>
+          </div>
+        )}
+        <div
+          class="monitor-connection-notice"
+          data-connection-notice
+          role="status"
+          hidden
+        >
+          <p data-connection-message></p>
+          <button type="button" data-retry>
+            重新加载
+          </button>
+        </div>
+        <div class="monitor-active-filters" data-active-filters hidden></div>
+        {coverage && <div class="coverage-overview" data-metrics></div>}
+        <div class="monitor-result-head">
+          <span data-result-count aria-live="polite">
+            载入研究动态…
+          </span>
+          <span class="monitor-result-tools">
+            {!coverage && <button data-mark-visible>本页标为已读</button>}
+            {!coverage && (
+              <label>
+                <span class="sr-only">动态排序</span>
+                <select data-order aria-label="动态排序">
+                  <option value="published">按发布时间</option>
+                  <option value="discovered">按首次收录</option>
+                </select>
+              </label>
+            )}
+            {coverage && <span>按公司目录</span>}
+          </span>
+        </div>
+        <div
+          data-monitor-content
+          class={coverage ? "monitor-coverage-list" : "monitor-events"}
+        >
+          {!coverage &&
+            events.map((e) => (
+              <article class="monitor-event">
+                <a
+                  class="entity-avatar"
+                  data-hue={hue(e.companyId)}
+                  href={"/venture/" + e.companyId + "/"}
+                >
+                  {initial(index.get(e.companyId)?.name ?? "")}
+                </a>
+                <div class="event-content">
+                  <div class="event-meta">
+                    <a href={"/venture/" + e.companyId + "/"}>
+                      {index.get(e.companyId)?.name}
+                    </a>
+                    <span class="monitor-tag" data-type={e.kind}>
+                      {eventKindLabel(e)}
+                    </span>
+                    <time>{e.publishedAt?.slice(5, 10) ?? e.dateLabel}</time>
+                  </div>
+                  <h3>
+                    <a
+                      href={e.sources[0]?.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {e.title}
+                    </a>
+                  </h3>
+                  <div class="event-byline">
+                    <span>{MONITOR_EVIDENCE[e.evidence]}</span>
+                    <span>{e.sources[0]?.name}</span>
+                    <span>{e.sources.length} 个出处</span>
+                  </div>
+                </div>
+              </article>
+            ))}
+        </div>
+        <div class="monitor-empty" data-empty hidden>
+          <span class="empty-symbol">
+            <Icon name="inbox" />
+          </span>
+          <h3 data-empty-title>当前范围暂无已收录动态</h3>
+          <p data-empty-description>
+            试试调整时间和筛选条件，或前往公司库发现更多公司。
+          </p>
+          <div>
+            <button class="btn" data-reset>
+              重置筛选
+            </button>
+            <a class="btn primary-action" href="/companies/">
+              探索公司库
+              <Icon name="arrow" />
+            </a>
+          </div>
+        </div>
+        <div class="monitor-pagination">
+          <span data-page></span>
+          <div>
+            <button data-prev aria-label="上一页">
+              <Icon name="chevron" />
+            </button>
+            <button data-next aria-label="下一页">
+              <Icon name="chevron" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="monitor-status-line">
+        <span class="status-dot"></span>
+        <span data-monitor-status role="status">
+          正在获取最新索引…
+        </span>
+      </div>
+    </div>
+    {!company && !coverage && (
+      <aside class="monitor-context" aria-label="研究概览">
+        <section class="context-card watch-card">
+          <div class="context-title">
+            <h2>关注清单</h2>
+            <Icon name="star" />
+          </div>
+          <div data-watch-summary>
+            <p>把关注公司放在一起，持续跟进它们的下一步。</p>
+          </div>
+          <a class="context-action" href="/companies/">
+            发现与关注公司
+            <Icon name="arrow" />
+          </a>
+          <div class="watch-starters" data-watch-starters>
+            <a href="/companies/?track=embodied">
+              具身智能 <Icon name="arrow" />
+            </a>
+            <a href="/companies/?track=robot-parts">
+              核心零部件 <Icon name="arrow" />
+            </a>
+          </div>
+        </section>
+        <section class="context-card">
+          <div class="context-title">
+            <h2>动态分布</h2>
+            <span data-context-window>最近 7 天</span>
+          </div>
+          <div class="signal-bars" data-signal-bars>
+            <p class="context-loading">正在整理当前范围…</p>
+          </div>
+          <p class="context-footnote">按收录线索统计，不代表已核实事件。</p>
+        </section>
+        <section class="context-card reading-tools">
+          <div class="context-title">
+            <h2>研究工具</h2>
+            <Icon name="book" />
+          </div>
+          <a href="/workspace/">
+            关注与收藏备份 <Icon name="arrow" />
+          </a>
+          <button data-show-dismissed>
+            查看暂不关注的动态 <Icon name="arrow" />
+          </button>
+          <p class="context-footnote">
+            阅读记录留在本机，可导出后在另一台设备恢复。
+          </p>
+        </section>
+        <section class="context-card">
+          <div class="context-title">
+            <h2>近期动态较多的公司</h2>
+            <Icon name="activity" />
+          </div>
+          <div data-active-companies></div>
+          <p class="context-footnote">按当前范围内的动态数量排序。</p>
+        </section>
+        <a class="context-topic" href="/ventures/dexterity/">
+          <span>
+            研究专题 <Icon name="external" />
+          </span>
+          <strong>灵巧操作</strong>
+          <p>
+            从技术路线到产业位置
+            <br />
+            回到产品和公司本身
+          </p>
+        </a>
+        <div class="context-health" data-context-health></div>
+      </aside>
+    )}
+    <dialog class="event-drawer" aria-label="动态详情">
+      <div class="drawer-top">
+        <span>
+          动态详情 <small>EVENT BRIEF</small>
+        </span>
+        <div class="reader-controls">
+          <button data-reader-prev aria-label="上一条动态" title="上一条动态">
+            <Icon name="chevron" />
+          </button>
+          <button data-reader-next aria-label="下一条动态" title="下一条动态">
+            <Icon name="chevron" />
+          </button>
+          <button
+            data-close-detail
+            aria-label="关闭动态详情"
+            title="关闭 · Esc"
+          >
+            <Icon name="close" />
+          </button>
+        </div>
+      </div>
+      <div data-event-detail></div>
+    </dialog>
+  </div>
+  <script type="application/json" data-monitor-data set:html={json}></script>
+</section>
+<script src="../scripts/monitor.ts"></script>

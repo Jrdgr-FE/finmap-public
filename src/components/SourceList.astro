@@ -1,0 +1,31 @@
+---
+import type { Source } from '../lib/data';
+
+interface Props {
+  sources: Source[];
+  heading?: string;
+}
+
+const { sources, heading } = Astro.props;
+
+const hostOf = (url: string) => {
+  try {
+    return new URL(url).host.replace(/^www\./, '');
+  } catch {
+    return url;
+  }
+};
+---
+
+{heading && <h3 style="font-size:14px;margin-bottom:4px;">{heading}</h3>}
+<ul class="sources">
+  {sources.map((s) => (
+    <li>
+      <span>
+        <a class="src-title" href={s.url} target="_blank" rel="noopener noreferrer nofollow">{s.title}</a>
+        <span class="src-host">{hostOf(s.url)}</span>
+      </span>
+      {s.date && <span class="date">{s.date}</span>}
+    </li>
+  ))}
+</ul>

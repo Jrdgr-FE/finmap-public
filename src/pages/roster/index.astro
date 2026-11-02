@@ -1,0 +1,167 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getMassEntities, getTaxonomy, getTypeName } from '../../lib/data';
+
+const all = getMassEntities();
+const tax = getTaxonomy();
+const regionCount = new Set(all.map((e) => e.region ?? '其他')).size;
+
+// 按"牌照类型 → 属地"两级归拢。这一层都是名册级记录，
+// 用紧凑表格而不是卡片，否则 3600 多行会撑成几 MB 的页面。
+const byType = tax.categories
+  .flatMap((cat) => cat.types.map((type) => ({ cat, type })))
+  .map(({ cat, type }) => {
+    const items = all.filter((e) => e.type === type.id);
+    const regions = [...new Set(items.map((e) => e.region ?? '其他'))]
+      .map((region) => ({ region, items: items.filter((e) => (e.region ?? '其他') === region) }))
+      .sort((a, b) => b.items.length - a.items.length);
+    return { cat, type, items, regions };
+  })
+  .filter((g) => g.items.length > 0)
+  .sort((a, b) => b.items.length - a.items.length);
+---
+
+<Base title="全量名册" description="国家金融监督管理总局法人名单中的农商行、村镇银行、农信社、财务公司等批量序列，按牌照类型和属地查看。" current="roster">
+  <div class="wrap page">
+    <div class="page-head">
+      <div>
+        <h1>全量名册<span class="count">{all.length.toLocaleString('zh-CN')}</span></h1>
+        <p>
+          来自国家金融监督管理总局《银行业金融机构法人名单》的批量序列，覆盖 {byType.length} 类牌照、{regionCount} 个属地。
+          只收录能确定的事实：机构全称、金融许可证机构编码、牌照类型与监管责任单位；官网与经营情况未逐一核实。
+        </p>
+      </div>
+      <div class="actions">
+        <a class="btn" href="/orgs/">逐一核实的机构库 →</a>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="toolbar">
+        <label class="filter-input">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path>
+          </svg>
+          <input
+            id="q"
+            type="search"
+            placeholder="筛选机构名、机构编码或属地，例如「浙江」「B2138」「村镇银行」"
+            autocomplete="off"
+            aria-label="筛选名册机构"
+          />
+        </label>
+        <div class="chips" id="filters">
+          <button class="chip filter-chip is-on" data-type="*" type="button">
+            全部 <span class="n">{all.length}</span>
+          </button>
+          {byType.map(({ cat, type, items }) => (
+            <button class="chip filter-chip" data-cat={cat.id} data-type={type.id} type="button">
+              {type.name} <span class="n">{items.length}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+      <div class="result-bar">
+        <span id="count" aria-live="polite"></span>
+        <span class="right">点开属地查看机构，搜索时自动展开</span>
+      </div>
+    </div>
+
+    <div class="panel" id="results" style="margin-top:var(--sp-4)">
+      {byType.map(({ type, items, regions }) => (
+        <section class="roster-section" data-type-section={type.id}>
+          <div class="roster-head">
+            <h2>{getTypeName(type.id)}</h2>
+            <span class="hint" data-type-count>{items.length} 家 · {regions.length} 个属地</span>
+          </div>
+          {regions.map(({ region, items: rows }) => (
+            <details class="roster-group">
+              <summary>
+                <span>{region}</span>
+                <span class="mono roster-n">{rows.length}</span>
+              </summary>
+              <table class="roster-table">
+                <thead>
+                  <tr><th>机构全称</th><th>机构编码</th><th>监管责任单位</th></tr>
+                </thead>
+                <tbody>
+                  {rows.map((e) => (
+                    <tr data-search={`${e.name} ${e.license_code ?? ''} ${e.region ?? ''} ${getTypeName(e.type)}`.toLowerCase()}>
+                      <td><a href={`/org/${e.id}/`}>{e.name}</a></td>
+                      <td class="mono">{e.license_code}</td>
+                      <td class="muted">{e.regulator}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </details>
+          ))}
+        </section>
+      ))}
+      <p class="search-empty" id="empty" hidden>没有匹配的机构。</p>
+    </div>
+  </div>
+
+  <script>
+    const q = document.getElementById('q') as HTMLInputElement | null;
+    const chips = [...document.querySelectorAll<HTMLButtonElement>('.filter-chip')];
+    const sections = [...document.querySelectorAll<HTMLElement>('[data-type-section]')];
+    const countEl = document.getElementById('count');
+    const emptyEl = document.getElementById('empty');
+    let activeType = '*';
+
+    const apply = () => {
+      const term = (q?.value ?? '').trim().toLowerCase();
+      let visible = 0;
+      let total = 0;
+
+      for (const section of sections) {
+        const typeOk = activeType === '*' || section.dataset.typeSection === activeType;
+        let shown = 0;
+        let groups = 0;
+
+        for (const group of section.querySelectorAll<HTMLDetailsElement>('.roster-group')) {
+          let groupShown = 0;
+          for (const row of group.querySelectorAll<HTMLElement>('tr[data-search]')) {
+            total++;
+            const hit = typeOk && (!term || (row.dataset.search ?? '').includes(term));
+            row.hidden = !hit;
+            if (hit) groupShown++;
+          }
+          group.hidden = groupShown === 0;
+          // 有搜索词时自动展开，否则结果藏在折叠里看不出来
+          if (term && groupShown > 0) group.open = true;
+          shown += groupShown;
+          if (groupShown) groups++;
+        }
+
+        section.hidden = shown === 0;
+        const badge = section.querySelector('[data-type-count]');
+        if (badge) badge.textContent = `${shown} 家 · ${groups} 个属地`;
+        visible += shown;
+      }
+
+      if (countEl) countEl.textContent = visible === total ? `共 ${total} 家机构` : `显示 ${visible} / ${total} 家机构`;
+      if (emptyEl) emptyEl.hidden = visible !== 0;
+    };
+
+    q?.addEventListener('input', apply);
+    chips.forEach((chip) =>
+      chip.addEventListener('click', () => {
+        activeType = chip.dataset.type ?? '*';
+        chips.forEach((c) => c.classList.toggle('is-on', c === chip));
+        apply();
+      }),
+    );
+
+    const params = new URLSearchParams(location.search);
+    const preset = params.get('type');
+    if (preset) {
+      const chip = chips.find((c) => c.dataset.type === preset);
+      if (chip) chip.click();
+    }
+    const presetQ = params.get('q');
+    if (presetQ && q) q.value = presetQ;
+    apply();
+  </script>
+</Base>

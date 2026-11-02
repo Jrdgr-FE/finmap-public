@@ -1,0 +1,1049 @@
+note: >-
+  本文件收录经原中国银保监会、国家金融监督管理总局公布名单的地方资产管理公司（地方 AMC）共 61 条：以 2022 年 3 月原银保监会官网公布的 59 家名单为基准，加上 2023 年 8 月获批的全国第 60 家深圳资产管理有限公司，以及 2026 年 2 月自上海国有资产经营有限公司承接地方 AMC 业务资质的上海国际集团申信资产管理有限公司。名单内黑龙江省嘉实龙昇金融资产管理有限公司已于 2024 年 1 月注销（status: exited），故在营主体为 60 家；截至 2025 年 6 月末监管口径为 59 家，31 个省级行政区（不含港澳台）与大连、宁波、厦门、青岛、深圳 5 个计划单列市均已设立，无空白省份。监管上由国家金融监督管理总局制定规则并公布名单、省级地方金融管理机构对本地区地方 AMC 监督管理和风险处置负总责，故 regulator 统一记为地方金融管理局；全国性 AMC（中信金融资产、长城、东方、信达、银河）已在 amc-national.yaml 收录，本文件不重复。
+sources:
+  - { title: "原中国银保监会《地方资产管理公司名单》（21世纪经济报道全文转载，共59家）", url: "http://www.21jingji.com/article/20220331/herald/df72babd90aa159cadca5317315a74d7.html", date: "2022-03-31" }
+  - { title: "武汉市地方金融工作局转载：银保监会发布地方资产管理公司名单 59家在列", url: "https://jrj.wuhan.gov.cn/ynzx_57/xwzx/202204/t20220401_1949352.shtml", date: "2022-04-01" }
+  - { title: "国家金融监督管理总局《地方资产管理公司监督管理暂行办法》（金规〔2025〕16号）", url: "https://www.gov.cn/lianbo/bumen/202507/content_7032229.htm", date: "2025-07-15" }
+  - { title: "东方财富研报《地方AMC行业展望》（2024年1月嘉实龙昇注销，数量由60家降至59家，31个省级行政区均有设立）", url: "https://pdf.dfcfw.com/pdf/H3_AP202501171642049469_1.pdf", date: "2025-01-17" }
+  - { title: "深圳市人民政府：深圳市属国企深圳资产管理有限公司获批地方AMC牌照（全国第60家、广东省第4家）", url: "https://www.sz.gov.cn/szzt2010/wgkzl/glgk/jgxxgk/gyqyyy/content/post_10808159.html", date: "2023-08-29" }
+  - { title: "上海国际集团：集团下属上海国际集团申信资产管理有限公司承接AMC业务资质", url: "https://www.sigchina.com/site/news_details/3235", date: "2026-02-03" }
+
+entities:
+  - id: lamc-beijing-guotong
+    name: "北京市国通资产管理有限责任公司"
+    short: "北京国通资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2005
+    website: https://www.bsam.com.cn/bjgtamc/
+    intro: >-
+      北京市国有资产经营有限责任公司全资子公司，2005 年 2 月成立，注册地北京，注册资本 20 亿元。
+      2014 年经北京市人民政府授权、原中国银监会备案，成为北京市首家可开展金融不良资产批量收购处置业务的地方 AMC；
+      2021 年 2 月经原北京市地方金融监督管理局批复，成为全国首批参与单户对公不良贷款转让和个人不良贷款批量转让试点的机构。
+    business: [不良资产收购处置, 个贷不良资产, 特殊机遇投资, 国有企业风险资产处置]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "北京市国通资产管理有限责任公司官网 · 国通概况", url: "https://www.bsam.com.cn/bjgtamc/aboutindex.html", date: "2026-09-30" }
+      - { title: "原中国银保监会《地方资产管理公司名单》（21世纪经济报道全文转载）", url: "http://www.21jingji.com/article/20220331/herald/df72babd90aa159cadca5317315a74d7.html", date: "2022-03-31" }
+
+  - id: lamc-beijing-asset
+    name: "北京资产管理有限公司"
+    short: "北京资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2019
+    website: https://www.bjamc.com.cn/
+    intro: >-
+      2019 年 11 月由北京金融控股集团有限公司牵头发起设立，是北京市第二家地方 AMC。股权结构为北京金融控股集团持股 52%、北京对外经贸控股集团持股 18%、北京首钢基金与京东数字科技各持股 15%，业务聚焦不良资产批量收购处置与首都金融机构风险化解。
+    business: [不良资产批量收购处置, 债权确权与处置, 金融机构风险化解]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "北京资产管理有限公司官网", url: "https://www.bjamc.com.cn/", date: "2026-09-30" }
+      - { title: "新浪财经《北京第二家地方AMC现身》（北京金控52%、北京对外经贸18%、京东数科与首钢基金各15%）", url: "https://finance.sina.com.cn/roll/2019-11-13/doc-iihnzhfy8824172.shtml", date: "2019-11-13" }
+      - { title: "原中国银保监会《地方资产管理公司名单》（21世纪经济报道全文转载）", url: "http://www.21jingji.com/article/20220331/herald/df72babd90aa159cadca5317315a74d7.html", date: "2022-03-31" }
+
+  - id: lamc-tianjin-jinrong
+    name: "天津津融资产管理有限公司"
+    short: "津融资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2016
+    intro: >-
+      2016 年 4 月由天津市管企业天津津融投资服务集团有限公司出资 10 亿元成立，承接津融集团在天津市范围内开展金融不良资产批量收购处置的业务资质，为天津市首家地方 AMC。
+      2018 年 5 月引入东方资产、远东宏信、东疆控股等战略投资者，资本金增至 30 亿元，是天津市唯一持有地方 AMC 牌照的国有机构。
+    business: [不良资产收购处置, 存量资产盘活, 市场化债转股, 企业纾困]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "天津日报《推进区域资源整合 枯树根终成艺术品》（2016年4月由津融集团出资10亿元成立、2018年增资至30亿元）", url: "https://epaper.tianjinwe.com/tjrb/html/2024-12/11/content_143116_1616195.htm", date: "2024-12-11" }
+      - { title: "原中国银保监会《地方资产管理公司名单》（21世纪经济报道全文转载）", url: "http://www.21jingji.com/article/20220331/herald/df72babd90aa159cadca5317315a74d7.html", date: "2022-03-31" }
+
+  - id: lamc-tianjin-binhai-zhengxin
+    name: "天津滨海正信资产管理有限公司"
+    short: "滨海正信"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2016
+    intro: >-
+      2016 年 11 月由天津正信集团旗下合盈资本联合中科金财、上海混沌投资、佰融资产等共同发起设立，实缴注册资本 10 亿元，注册地天津滨海新区。是天津市第二家地方 AMC，以不良资产收购处置、投资管理、专项发展基金管理与综合金融服务为四大业务板块。
+    business: [不良资产收购处置, 投资管理, 专项发展基金, 综合金融服务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "天津正信集团官网 · 合盈资本公司简介（滨海正信为银监会核准公布的地方AMC）", url: "http://www.zhengxingroup.com/jrjianjie/", date: "2026-09-30" }
+      - { title: "北京中科金财《关于对外投资成立天津滨海正信资产管理有限公司的公告》（注册资本10亿元、发起股东）", url: "https://pdf.dfcfw.com/pdf/H2_AN201612200202437541_1.pdf", date: "2016-12-20" }
+      - { title: "原中国银保监会《地方资产管理公司名单》（21世纪经济报道全文转载）", url: "http://www.21jingji.com/article/20220331/herald/df72babd90aa159cadca5317315a74d7.html", date: "2022-03-31" }
+
+  - id: lamc-hebei-asset
+    name: "河北资产管理股份有限公司"
+    short: "河北资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2015
+    website: https://www.hebamc.com/
+    intro: >-
+      2015 年 11 月 24 日经河北省政府批准成立，同年 12 月 9 日列入原中国银保监会名单，为河北省首家地方 AMC，2025 年 6 月 18 日改制为股份有限公司。控股股东为河北建设投资集团有限责任公司（持股 56.5%），河北港口集团、河北航空投资集团、开滦汇金发展、河钢集团各持股 9.2%，是河北省国资委一级监管企业。
+    business: [不良资产批量收购处置, 国有企业改革服务, 企业纾困, 资产重组]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "河北资产管理股份有限公司官网 · 公司简介", url: "https://www.hebamc.com/", date: "2026-09-30" }
+      - { title: "证券时报《省级地方AMC，首次冲击港股IPO》（河北建投集团持股56.5%及股东结构）", url: "https://www.stcn.com/article/detail/2312345.html", date: "2025-06-30" }
+      - { title: "原中国银保监会《地方资产管理公司名单》（21世纪经济报道全文转载）", url: "http://www.21jingji.com/article/20220331/herald/df72babd90aa159cadca5317315a74d7.html", date: "2022-03-31" }
+
+  - id: lamc-shanxi-huarong-jinshang
+    name: "华融晋商资产管理股份有限公司"
+    short: "华融晋商"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2016
+    intro: >-
+      2016 年 2 月由中国华融资产管理股份有限公司与山西省政府共同发起设立、经原中国银监会备案，是山西省首家地方 AMC，注册地太原。
+      2019 年 12 月山西金融投资控股集团增资后，中国华融持股比例降至 48.88%，山西金控及其一致行动人合计持股 51.12%，公司现无控股股东和实际控制人。
+    business: [不良资产收购处置, 债权转股权, 破产管理, 私募股权投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "资产界《AMC的万能牌照与经营错位——华融晋商的业务折射》（2016年成立、股权结构演变）", url: "https://www.zichanjie.com/article/851352.html", date: "2021-04-08" }
+      - { title: "新浪财经《华融晋商资管：高杠杆背后现假不良》（成立日期2016年2月4日、注册资本31.3亿元）", url: "https://finance.sina.cn/2021-04-17/detail-ikmyaawc0136594.d.html", date: "2021-04-17" }
+      - { title: "原中国银保监会《地方资产管理公司名单》（21世纪经济报道全文转载）", url: "http://www.21jingji.com/article/20220331/herald/df72babd90aa159cadca5317315a74d7.html", date: "2022-03-31" }
+
+  - id: lamc-shanxi-jinyang
+    name: "晋阳资产管理股份有限公司"
+    short: "晋阳资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2017
+    intro: >-
+      2017 年 3 月 30 日成立，注册地太原，注册资本 105 亿元，为国有控股非上市股份有限公司，是山西省第二家地方 AMC。经营范围覆盖不良资产收购、管理与处置，受托管理和处置不良资产，担任破产管理人或破产清算组成员，以及咨询顾问与追加投资。
+    business: [不良资产收购管理处置, 受托处置, 破产管理, 咨询顾问]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "原中国银保监会《地方资产管理公司名单》（21世纪经济报道全文转载）", url: "http://www.21jingji.com/article/20220331/herald/df72babd90aa159cadca5317315a74d7.html", date: "2022-03-31" }
+      - { title: "水滴信用：晋阳资产管理股份有限公司工商信息（2017-03-30成立、注册资本105亿元、国有控股）", url: "https://shuidi.cn/company-434439a141a46a6cf8a0be9270da4f81.html", date: "2026-09-30" }
+
+  - id: lamc-innermongolia-financial
+    name: "内蒙古金融资产管理有限公司"
+    short: "内蒙金资"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2015
+    website: http://www.amcim.com/
+    intro: >-
+      2015 年 6 月经内蒙古自治区人民政府批准设立、同年 8 月完成工商注册，由自治区财政厅代行出资人职责，是自治区唯一授权经营区域内金融资产的地方国有 AMC。股东包括自治区财政厅及呼和浩特、包头、鄂尔多斯等盟市财政局和内蒙古水务投资（集团）有限公司，注册资本 96.3 亿元。
+    business: [不良资产收购处置, 债权转股权, 资本市场业务, 基金管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "内蒙古金融资产管理有限公司官网", url: "http://www.amcim.com/", date: "2026-09-30" }
+      - { title: "内蒙古金融资产管理有限公司 2024 年公司债券募集说明书（设立沿革、注册资本96.3亿元、公司网址）", url: "http://www.sse.com.cn/disclosure/bond/announcement/company/c/new/2024-06-27/240045_20240627_UEUW.pdf", date: "2024-06-27" }
+
+  - id: lamc-innermongolia-qingyuan
+    name: "内蒙古庆源绿色金融资产管理有限公司"
+    short: "庆源绿金资管"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2017
+    intro: >-
+      2017 年 12 月经内蒙古自治区政府批准设立、当月 26 日完成工商注册，注册资本 15.7 亿元，注册地为呼和浩特和林格尔新区，是自治区第二家地方 AMC。发起股东以蒙草生态、乌海市君正房地产、长生资产、颐宁贸易、内蒙古饭店、内蒙古博源化工等区内民营企业为主，业务以绿色经济领域的不良资产经营为特色。
+    business: [不良资产收购处置, 绿色金融, 债权转股权, 投资管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "原中国银保监会《地方资产管理公司名单》（21世纪经济报道全文转载）", url: "http://www.21jingji.com/article/20220331/herald/df72babd90aa159cadca5317315a74d7.html", date: "2022-03-31" }
+      - { title: "蒙草生态《关于参与设立内蒙古庆源绿色金融资产管理有限公司的公告》（注册资本10亿元及发起股东名单）", url: "https://m.cngold.org/stock/m_gsgg413225.html", date: "2017-12-12" }
+      - { title: "企查查：内蒙古庆源绿色金融资产管理有限公司工商信息（2017-12-26成立、注册资本15.7亿元、9名股东）", url: "https://m.qcc.com/firm/8e505274afeef02059ae709b00a92868.html", date: "2026-09-30" }
+
+  - id: lamc-liaoning-asset
+    name: "辽宁资产管理有限公司"
+    short: "辽宁资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2021
+    website: https://www.lnzcgs.cn/
+    intro: >-
+      2021 年 6 月经辽宁省人民政府及省金融局批准设立，注册资本 10 亿元，为辽宁金融控股集团有限公司全资子公司，是辽宁省省级国有地方 AMC。成立以来通过不良资产收购处置、企业纾困等方式开展业务，截至 2025 年末总资产 1,044.78 亿元。
+    business: [不良资产收购处置, 企业纾困, 资产运营, 现金清收]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "辽宁资产管理有限公司官网 · 公司介绍", url: "https://www.lnzcgs.cn/profile/", date: "2026-09-30" }
+      - { title: "辽宁金融控股集团有限公司 · 辽宁资产管理公司（成立时间、注册资本、总资产规模）", url: "https://www.lnjkjt.com/blzccz/200.html", date: "2025-07-21" }
+
+  - id: lamc-liaoning-fuan
+    name: "辽宁富安金融资产管理有限公司"
+    short: "富安金融资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2017
+    website: http://www.faamc.com/
+    intro: >-
+      2017 年 3 月 24 日经辽宁省人民政府批准设立、7 月获批复开业，2018 年 1 月 2 日经原中国银监会核准公布，是辽宁省第二家地方 AMC。由瀚华金控股份有限公司与沈阳恒信国有资产经营集团有限公司等共同发起设立，注册资本 10 亿元，重点开展个人信用类与企业应收账款类不良资产包的收购处置。
+    business: [个贷不良资产, 企业应收账款, 不良资产收购处置]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "富安金融资产官方网站 · 关于富安（批准设立文号、开业批复、银监会核准时间）", url: "http://www.faamc.com/about.html", date: "2026-09-30" }
+      - { title: "原中国银保监会《地方资产管理公司名单》（21世纪经济报道全文转载）", url: "http://www.21jingji.com/article/20220331/herald/df72babd90aa159cadca5317315a74d7.html", date: "2022-03-31" }
+
+  - id: lamc-dalian-guoxin
+    name: "大连国新资产管理有限责任公司"
+    short: "大连国新资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2021
+    intro: >-
+      2021 年 9 月由中国国新控股旗下中国国新资产管理有限公司联合大连融达投资有限责任公司、大连高新区产业创业投资有限公司发起设立，注册资本 20 亿元，三家股东分别持股 45%、45%、10%。
+      2021 年 11 月经原中国银保监会备案公告获得金融企业不良资产批量收购处置业务资质，是大连市唯一具备该资质的地方 AMC，也是国内首家由国务院国资委直接管理的国有资本运营公司与地方政府合作设立的地方 AMC。
+    business: [金融不良资产, 重组纾困, 央地融合]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国国新控股 · 大连国新资产（成立时间、业务方向）", url: "https://www.crhc.cn/ywgj/zcgl/2025/3/e68bee5b2d4d4269b5bd1ec14f23468b.htm", date: "2025-03-01" }
+      - { title: "大连高新技术产业园区管理委员会《大连市唯一地方资产管理公司落户高新区》（注册资本20亿元及三家股东持股比例）", url: "https://www.dlhitech.gov.cn/news/view_68069.html", date: "2021-12-01" }
+
+  - id: lamc-jilin-shengrong
+    name: "吉林省盛融资产管理有限责任公司"
+    short: "吉林盛融"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2020
+    intro: >-
+      经吉林省人民政府 2020 年 11 月 3 日批复设立，由吉林省吉盛资产管理有限责任公司与长春市金融控股集团有限公司共同发起，初始注册资本 10 亿元，是吉林省唯一持牌地方 AMC。后经股权划转，现由吉林省金融控股集团股份有限公司控股，长春市金融控股集团有限公司参股。
+    business: [不良资产收购处置, 企业纾困, 债权转股权, 破产管理清算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "吉林省人民政府《关于同意设立吉林省盛融资产管理有限责任公司的批复》（吉政批复、注册资本10亿元、股权结构55%/45%）", url: "https://xxgk.jl.gov.cn/szf/gkml/202011/t20201109_7700084.html", date: "2020-11-03" }
+      - { title: "吉林省国资委《吉林省盛融资产管理有限责任公司市场化选聘经营管理者公告》（地方AMC定位、注册资本10亿元）", url: "http://gzw.jl.gov.cn/gqdt/qyzp/202104/t20210423_2310815.html", date: "2021-04-23" }
+
+  - id: lamc-heilongjiang-jiashi-longsheng
+    name: "黑龙江省嘉实龙昇金融资产管理有限公司"
+    short: "嘉实龙昇"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2016
+    intro: >-
+      2016 年 6 月由嘉实资本管理有限公司作为控股股东牵头发起设立，注册资本 10 亿元，注册地哈尔滨，是黑龙江省首家持牌地方 AMC，也是公募基金子公司首次切入不良资产处置领域的案例。公司于 2024 年 1 月 23 日经决议解散注销、牌照交回，全国持牌地方 AMC 数量随之从 60 家降至 59 家。
+    business: [不良资产批量收购处置, 资产托管重组, 基金管理]
+    parent: ROOT
+    status: exited
+    sources:
+      - { title: "新浪财经《重磅！这家地方AMC注销，牌照交回》（2024年1月注销、2016年6月成立、注册资本10亿元）", url: "https://finance.sina.com.cn/cj/2024-06-27/doc-incaczkf2363550.shtml", date: "2024-06-27" }
+      - { title: "东方财富研报《地方AMC行业展望》（2024年1月嘉实龙昇注销，全国地方AMC数量从60家降至59家）", url: "https://pdf.dfcfw.com/pdf/H3_AP202501171642049469_1.pdf", date: "2025-01-17" }
+
+  - id: lamc-heilongjiang-guorui
+    name: "黑龙江国瑞金融资产管理有限公司"
+    short: "国瑞金资"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2017
+    website: http://www.gramc.com.cn/
+    intro: >-
+      2017 年 7 月 7 日成立，注册资本 10 亿元，注册地哈尔滨，是黑龙江省第二家地方 AMC（曾用名黑龙江国投穗甬资产管理有限公司）。股东为国投资产管理有限公司（40%）、宁波穗甬汇智投资管理合伙企业（39%）、锦州益海商务中心（12%）和黑龙江省龙财资产经营有限公司（9%）。
+    business: [不良资产经营, 单户对公及个贷不良试点, 破产管理人, 综合金融服务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "黑龙江国瑞金融资产管理有限公司官网 · 国瑞简介", url: "http://www.gramc.com.cn/aboutus/", date: "2026-09-30" }
+      - { title: "天眼查：黑龙江国瑞金融资产管理有限公司（曾用名黑龙江国投穗甬资产管理有限公司、成立日期2017-07-07）", url: "https://www.tianyancha.com/company/3464775959", date: "2025-09-03" }
+
+  - id: lamc-shanghai-ssao
+    name: "上海国有资产经营有限公司"
+    short: "上海国资经营"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 1999
+    website: https://www.ssaocorp.com/
+    intro: >-
+      1999 年 10 月经上海市人民政府批准成立，2007 年起为上海国际集团全资子公司，2014 年 7 月经原中国银监会批准成为全国首批地方 AMC 之一，参与上海市金融企业不良资产收购处置。
+      2026 年 1 至 2 月，经国家金融监督管理总局办公厅同意、上海市地方金融管理局批复，其地方资产管理业务资质调整至同集团上海国际集团申信资产管理有限公司。
+    business: [金融股权投资, 国有资产经营, 不良资产收购处置]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "上海国有资产经营有限公司官网 · 公司概况（1999年成立、2014年7月成为首批地方AMC）", url: "https://www.ssaocorp.com/site/about", date: "2026-09-30" }
+      - { title: "上海国际集团：集团下属上海国际集团申信资产管理有限公司承接AMC业务资质", url: "https://www.sigchina.com/site/news_details/3235", date: "2026-02-03" }
+
+  - id: lamc-shanghai-shenxin
+    name: "上海国际集团申信资产管理有限公司"
+    short: "国际AMC"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    intro: >-
+      前身为上海城高资产经营有限公司，系上海国际集团旗下专业化地方资产管理公司。
+      2026 年 1 月其承接地方 AMC 业务资质的申请经国家金融监督管理总局办公厅同意并获上海市地方金融管理局批复，2026 年 2 月 3 日完成更名并取得营业执照，注册资本增至 55 亿元，自上海国有资产经营有限公司承接地方资产管理业务。
+    business: [不良资产收购处置, 市属国企存量资产盘活]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "上海国际集团：集团下属上海国际集团申信资产管理有限公司承接AMC业务资质（更名、批复、注册资本55亿元）", url: "https://www.sigchina.com/site/news_details/3235", date: "2026-02-03" }
+      - { title: "上海国际集团 · 集团简介（申信资产管理有限公司前身为上海城高资产经营有限公司）", url: "https://www.sigchina.com/site/introduction", date: "2026-09-30" }
+
+  - id: lamc-shanghai-ruiyin-shengjia
+    name: "上海睿银盛嘉资产管理有限公司"
+    short: "睿银盛嘉"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2015
+    intro: >-
+      2015 年 6 月 10 日成立，注册资本 20 亿元，注册地上海市嘉定区，由上海地方国资及国有企业联合发起设立、经营层实行市场化管理，是上海市第二家地方 AMC。
+      2016 年 11 月经原中国银保监会核准公布，股东包括上海市嘉定区国有资产经营（集团）有限公司、上海爱建信托有限责任公司、北大荒粮食集团有限公司等。
+    business: [不良资产批量收购处置, 资产管理, 创业投资, 投资管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "上证报《银监会核准五家地方性资产管理公司》（上海睿银盛嘉为上海市第二家地方AMC、首期实缴10亿元）", url: "https://news.cnstock.com/news,bwkx-201611-3943343.htm", date: "2016-11-07" }
+      - { title: "36氪创投平台：上海睿银盛嘉资产管理有限公司（2015-06-10成立、实缴注册资本20亿元、股东名单）", url: "https://pitchhub.36kr.com/project/2316734871652868", date: "2026-09-30" }
+
+  - id: lamc-jiangsu-asset
+    name: "江苏资产管理有限公司"
+    short: "江苏资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2013
+    website: http://www.jsamc.com.cn/
+    intro: >-
+      2013 年 5 月由无锡市国联发展（集团）有限公司与无锡国联金融投资集团有限公司共同出资组建，2014 年 7 月获原中国银监会批复备案，是全国首批、江苏省首家具有金融不良资产批量收购处置业务资质的省级地方 AMC。控股股东为国联集团，实际控制人为无锡市人民政府国有资产监督管理委员会，注册资本 100 亿元，主体信用评级 AAA。
+    business: [不良资产批量转让与处置, 企业纾困, 投资管理, 破产清算服务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "江苏资产管理有限公司官网", url: "http://www.jsamc.com.cn/", date: "2026-09-30" }
+      - { title: "联合资信《江苏资产管理有限公司 2025 年主体长期信用评级报告》（2013年成立、2014年7月获批备案、注册资本100亿元、国联集团控股）", url: "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2025-06-20/115357_20250620_WXEB.pdf", date: "2025-06-20" }
+
+  - id: lamc-suzhou-asset
+    name: "苏州资产管理有限公司"
+    short: "苏州资管"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2016
+    website: https://www.sz-amc.com/
+    intro: >-
+      2016 年 5 月 23 日成立，由苏州市人民政府发起设立，经江苏省人民政府同意、原中国银监会备案，是江苏省第二家可在全省范围内开展金融企业不良资产批量收购处置业务的地方 AMC。实际控制人为苏州市财政局，注册资本 63.69 亿元，业务由不良资产经营、特殊机会投资和综合金融服务等板块构成。
+    business: [不良资产经营, 特殊机会投资, 综合金融服务, 破产清算服务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "苏州资产管理有限公司官网", url: "https://www.sz-amc.com/", date: "2026-09-30" }
+      - { title: "苏州资产管理有限公司 2025 年公司债券募集说明书（成立时间、注册资本、江苏省第二家地方AMC定位、公司网址）", url: "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2025-12-23/115340_20251223_PPN8.pdf", date: "2025-12-23" }
+
+  - id: lamc-zhejiang-zsamc
+    name: "浙江省浙商资产管理股份有限公司"
+    short: "浙商资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2013
+    website: https://www.zsamc.com/
+    intro: >-
+      2013 年 8 月 6 日经浙江省人民政府批准设立，为全国首批 5 家、浙江省第一家具有批量转让金融不良资产资质的省级 AMC，注册地杭州。注册资本 78.85 亿元，主体信用评级 AAA，主要股东为浙江省国际贸易集团、财通创新、湖州交投、宏信远展、国新双百壹号基金、出版投资及员工持股平台杭州敦琢。
+    business: [不良资产收购处置, 投行服务, 基金管理, 资产经营]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "浙江省浙商资产管理股份有限公司官网 · 公司简介", url: "https://www.zsamc.com/about.html", date: "2026-09-30" }
+      - { title: "原中国银保监会《地方资产管理公司名单》（21世纪经济报道全文转载）", url: "http://www.21jingji.com/article/20220331/herald/df72babd90aa159cadca5317315a74d7.html", date: "2022-03-31" }
+
+  - id: lamc-guangda-jinou
+    name: "光大金瓯资产管理有限公司"
+    short: "光大金瓯"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2015
+    website: https://www.cebamc.com/
+    intro: >-
+      2015 年 12 月由中国光大集团与温州方共同出资设立，注册地浙江温州，是中国光大集团特殊资产投资与管理的核心平台。
+      2016 年 11 月取得原中国银监会参与浙江省不良资产批量收购处置资质批复，2016 年 12 月 22 日正式挂牌开业，现注册资本 50 亿元。
+    business: [特殊资产投资, 不良资产收购处置, 企业重整]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "光大金瓯资产管理有限公司官网", url: "https://www.cebamc.com/", date: "2026-09-30" }
+      - { title: "中国光大集团官网 · 光大金瓯（2015年12月注册成立、2016年11月取得银监会资质、12月22日挂牌开业）", url: "https://www.ebchina.com/ebchina/cpfw/zcgl/gdjo/index.html", date: "2026-09-30" }
+
+  - id: lamc-ningbo-financial-asset
+    name: "宁波金融资产管理股份有限公司"
+    short: "宁波AMC"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2017
+    website: http://www.nbfamc.com/
+    intro: >-
+      2017 年 2 月 16 日成立，经宁波市人民政府批准设立、原中国银监会核准公告，开展辖内金融企业不良资产批量收购处置业务，注册资本 10 亿元。现股东为宁波市金融控股有限公司（51%）、宁波开发投资集团有限公司（36%）和昆仑信托有限责任公司（13%），控股股东为宁波金控，实际控制人为宁波市财政局。
+    business: [不良资产经营, 特殊机遇投资, 基金管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "宁波金融资产管理股份有限公司官网", url: "http://www.nbfamc.com/", date: "2026-09-30" }
+      - { title: "宁波金融资产管理股份有限公司 2024 年公司债券募集说明书（2017年2月16日设立、注册资本10亿元、三家股东持股比例）", url: "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202411/050632_20241108_N4BT.pdf", date: "2024-11-08" }
+
+  - id: lamc-anhui-guohou
+    name: "国厚资产管理股份有限公司"
+    short: "国厚资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2014
+    website: http://www.gohoamc.com/
+    intro: >-
+      2014 年 4 月 29 日成立，注册地安徽芜湖，经安徽省政府批准设立并经原中国银保监会核准公布，是安徽省首家具有金融不良资产批量收购处置业务资质的地方 AMC（曾用名国厚金融资产管理股份有限公司）。由中国东方资产联合博雅投资等优势资源企业共同发起设立，北京文投、光大信托、徐工集团等为战略投资者，主体长期信用等级 AA+。
+    business: [不良资产经营, 重组重整, 破产管理人, 基金管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国厚资产管理股份有限公司官网", url: "http://www.gohoamc.com/", date: "2026-09-30" }
+      - { title: "爱企查：国厚资产管理股份有限公司（2014-04-29成立、注册资本27.92亿元、发起股东与战略投资者）", url: "https://aiqicha.baidu.com/company_detail_70029195813196", date: "2026-07-01" }
+
+  - id: lamc-anhui-zhongan
+    name: "安徽省中安金融资产管理股份有限公司"
+    short: "中安金融资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2017
+    website: http://www.amcah.com/
+    intro: >-
+      2017 年 6 月 26 日成立，经安徽省人民政府批准设立，注册资本 40 亿元，由安徽省投资集团控股有限公司等主要股东联合发起，是安徽省第二家地方 AMC。公司为省属国有控股企业，核心业务涵盖不良资产经营、资产管理、股权投资及咨询服务，取得中诚信 AAA 信用评级。
+    business: [不良资产经营, 资产管理, 股权投资, 咨询服务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "安徽省中安金融资产管理股份有限公司官网", url: "http://www.amcah.com/", date: "2026-09-30" }
+      - { title: "天眼查：安徽省中安金融资产管理股份有限公司（2017-06-26成立、注册资本40亿元、省属国有控股）", url: "https://www.tianyancha.com/company/3065025243", date: "2025-07-28" }
+
+  - id: lamc-fujian-mintou
+    name: "福建省闽投资产管理有限公司"
+    short: "闽投资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2014
+    website: http://www.mtamc.com.cn/
+    intro: >-
+      福建省人民政府 2014 年 5 月批准成立、同年 11 月经原中国银监会公开核准发布资质，为福建省首家地方 AMC，前身为福建省闽投工业投资有限公司。公司为福建省投资开发集团有限责任公司全资子公司，注册资本 15 亿元，核心业务为不良资产处置与经营及资产管理相关并购重组。
+    business: [不良资产批量收购处置, 投资管理, 企业并购重组, 破产清算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "福建省闽投资产管理有限公司官网 · 关于公司", url: "http://www.mtamc.com.cn/", date: "2026-09-30" }
+      - { title: "福建投资集团《福建省闽投资产管理有限公司招聘公告》（省内首家省级地方AMC、注册资本15.65亿元）", url: "http://www.fidc.com.cn/rczl/zpxx/202408/t20240821_52036.htm", date: "2024-08-21" }
+
+  - id: lamc-xiamen-asset
+    name: "厦门资产管理有限公司"
+    short: "厦门资管"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2015
+    intro: >-
+      2015 年 12 月由厦门市政府批准设立，2016 年 5 月取得原中国银监会金融企业不良资产批量收购处置业务资质，是全国首批、福建省第二家省级地方 AMC。现股东为厦门金圆金控股份有限公司（62.5%）与厦门国贸资本集团有限公司（37.5%），控股股东金圆金控为厦门市属国有独资金融控股集团金圆集团的全资子公司，实际控制人为厦门市财政局。
+    business: [不良资产经营, 破产清算服务, 投资管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "联合资信《厦门资产管理有限公司 2025 年主体长期信用评级报告》（2015年12月成立、注册资本16亿元、股东及持股比例）", url: "https://www.lhratings.com/reports/A003762-P80985-2025.pdf", date: "2025-07-22" }
+      - { title: "原中国银保监会《地方资产管理公司名单》（21世纪经济报道全文转载）", url: "http://www.21jingji.com/article/20220331/herald/df72babd90aa159cadca5317315a74d7.html", date: "2022-03-31" }
+
+  - id: lamc-fujian-xingye-asset
+    name: "兴业资产管理有限公司"
+    short: "兴业资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2017
+    website: http://ciamc.com.cn/
+    intro: >-
+      2017 年 2 月 20 日经福建省人民政府批准、原中国银监会备案设立，注册地福州市马尾区。公司系兴业银行集团一级子公司，由兴业国信资产管理有限公司全资持股，是目前国内唯一一家银行系地方 AMC，注册资本 19.5 亿元，主体信用评级 AAA。
+    business: [不良资产批量收购处置, 债务重组, 债权转股权, 破产管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "兴业资产管理有限公司官网 · 公司简介", url: "http://ciamc.com.cn/ciamc/aboutCompany/", date: "2026-09-30" }
+      - { title: "兴业资产管理有限公司 2026 年公司债券募集说明书（2017年2月20日工商注册、注册资本19.5亿元、兴业国信全资持股）", url: "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202603/3be1c4_20260309_PWXQ.pdf", date: "2026-03-09" }
+
+  - id: lamc-jiangxi-financial-asset
+    name: "江西省金融资产管理股份有限公司"
+    short: "江西金资"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2016
+    website: https://www.jxfamc.com/
+    intro: >-
+      2016 年 2 月由江西省金融控股集团发起成立，经江西省人民政府批准设立并经原中国银保监会备案，是江西省首家地方资产管理机构。注册资本 30 亿元，主体信用评级 AA+，在南昌、赣州、上饶、宜春、吉安、抚州、新余等设区市以及上海、深圳、海南共设立 12 家子公司。
+    business: [金融不良资产收购处置, 非金不良收购重组, 受托管理处置, 破产管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "江西省金融资产管理股份有限公司官网 · 企业简介", url: "https://www.jxfamc.com/", date: "2026-09-30" }
+      - { title: "江西省金融控股集团 · 资产管理（江西首家地方AMC、2016年2月成立、注册资本30亿元）", url: "https://www.jxfhgc.com/jxfhgc/zichan/ywly.shtml", date: "2026-09-30" }
+
+  - id: lamc-jiangxi-ruijing
+    name: "江西瑞京金融资产管理有限公司"
+    short: "瑞京资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2018
+    website: http://www.ruijingamc.com/
+    intro: >-
+      2018 年 1 月由银泰集团与赣州发展集团联合发起设立，经江西省人民政府批准、原中国银保监会备案，是江西省第二家、赣州市唯一一家地方 AMC。实缴注册资本 15 亿元，赣州发展投资控股集团持股 30%，主营批量收购、管理和处置省内金融企业、类金融企业及其他企业不良资产。
+    business: [不良资产批量收购处置, 企业资产重组, 投资管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "银泰投资与金融集团 · 瑞京资产（2018年1月成立、江西省第二家地方AMC、实缴注册资本15亿元）", url: "https://www.china-yintai.com/zh/business_ruijing", date: "2026-09-30" }
+      - { title: "赣州发展投资控股集团《江西瑞京金融资产管理有限公司正式注册成立》（注册资本15亿元、赣州发展集团持股30%）", url: "https://www.gzfzjt.com/Home/Article/detail/id/4841.html", date: "2018-02-02" }
+
+  - id: lamc-shandong-financial-asset
+    name: "山东省金融资产管理股份有限公司"
+    short: "山东金资"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2014
+    intro: >-
+      2014 年 12 月 31 日经山东省人民政府批准设立（鲁政字〔2014〕233 号），由山东省鲁信投资控股集团等共同发起，是山东省首家省级地方 AMC，注册地济南。控股股东为鲁信集团，注册资本 496.6 亿元，注册资本规模位居全国地方 AMC 首位，业务涵盖不良资产收购处置、债权转股权、资产证券化与破产管理。
+    business: [不良资产收购处置, 债权转股权, 企业纾困, 破产管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "山东省金融资产管理股份有限公司 2024 年公司债券募集说明书（鲁政字〔2014〕233号批复、2014年12月31日成立、注册资本496.6亿元、鲁信集团控股）", url: "http://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2024-03-05/240666_20240305_VZMD.pdf", date: "2024-03-05" }
+      - { title: "原中国银保监会《地方资产管理公司名单》（21世纪经济报道全文转载）", url: "http://www.21jingji.com/article/20220331/herald/df72babd90aa159cadca5317315a74d7.html", date: "2022-03-31" }
+
+  - id: lamc-qingdao-citic
+    name: "中信青岛资产管理有限公司"
+    short: "中信青岛资管"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2015
+    website: http://www.qdamc.citic/
+    intro: >-
+      2015 年 9 月经青岛市人民政府批准成立（原青岛市资产管理有限责任公司），2016 年 2 月获原中国银监会批量收购处置金融机构不良资产业务资质，是全国首家市级地方 AMC。
+      2021 年 5 月完成战略重组，中信集团全资子公司中信百年资产管理有限公司持股 66.67% 成为控股股东，2021 年 8 月更名为现名，注册资本 30 亿元。
+    business: [不良资产收购处置, 债权转股权, 资产证券化, 破产管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中信青岛资产管理有限公司官网 · 公司概况（2015年9月成立、2016年2月取得资质、注册资本30亿元、2021年重组更名）", url: "http://www.qdamc.citic/about.html", date: "2026-09-30" }
+      - { title: "原中国银保监会《地方资产管理公司名单》（21世纪经济报道全文转载）", url: "http://www.21jingji.com/article/20220331/herald/df72babd90aa159cadca5317315a74d7.html", date: "2022-03-31" }
+
+  - id: lamc-shandong-taihe
+    name: "泰合资产管理有限公司"
+    short: "泰合资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2017
+    intro: >-
+      2017 年 1 月根据山东省人民政府《关于同意设立泰合资产管理有限公司的批复》（鲁政字〔2017〕14 号）设立，注册地济南，注册资本 100 亿元，是山东省具备全省展业资质的第二家持牌地方 AMC。
+      2025 年 2 月并购成为山东省财金投资集团有限公司控股子公司，主体信用等级 AAA，累计收购处置金融机构不良资产超过 1000 亿元。
+    business: [不良资产批量收购处置, 企业并购重组, 基金管理, 资产管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "山东省人民政府《关于同意设立泰合资产管理有限公司的批复》（鲁政字〔2017〕14号，注册资本100亿元、发起股东）", url: "http://gb.shandong.gov.cn/art/2017/3/20/art_100623_25948.html", date: "2017-03-20" }
+      - { title: "泰合资产管理有限公司 2026 年社会招聘公告（2017年1月成立、2025年2月成为山东财金集团控股子公司、AAA评级）", url: "https://campus.51job.com/thzc2026/", date: "2026-08-10" }
+
+  - id: lamc-henan-zhongyuan
+    name: "中原资产管理有限公司"
+    short: "中原资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2015
+    website: http://www.zyamc.net/
+    intro: >-
+      2015 年 8 月 31 日由河南省财政厅、郑州发展投资集团、深圳华强资产管理集团、百瑞信托、信达投资等共同出资组建，2015 年 10 月获原中国银监会批复备案，是河南省首家地方 AMC。截至 2025 年 3 月末实收资本 130 亿元，河南省财政厅直接持有 12.31%、间接持有 71.15% 股权，合计持股 83.46%，为公司控股股东及实际控制人。
+    business: [不良资产收购处置, 股权投资, 融资租赁, 供应链金融]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中原资产管理有限公司官网", url: "http://www.zyamc.net/", date: "2026-09-30" }
+      - { title: "联合资信《中原资产管理有限公司 2025 年主体长期信用评级报告》（2015年8月成立、实收资本130亿元、河南省财政厅合计持股83.46%）", url: "https://www.lhratings.com/reports/A014242-P80503-2025.pdf", date: "2025-07-22" }
+
+  - id: lamc-henan-asset
+    name: "河南资产管理有限公司"
+    short: "河南资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2017
+    website: http://www.henanamc.com.cn/
+    intro: >-
+      2017 年 8 月 8 日经河南省人民政府批准设立（豫政文〔2017〕62 号）并经原中国银监会备案，由河南投资集团作为主发起人，联合央企、金融机构、上市公司、行业龙头企业等 8 家股东发起，按股权多元化、机制市场化原则运行、不设行政级别。注册资本 60 亿元，获中诚信与联合资信双 AAA 主体信用评级，是河南省第二家地方 AMC。
+    business: [不良资产收处, 债务重组, 债权转股权, 资产证券化]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "河南资产管理有限公司官网 · 公司简介", url: "http://www.henanamc.com.cn/gywm1/", date: "2026-09-30" }
+      - { title: "河南资产管理有限公司 2024 年度财务报表附注（豫政文〔2017〕62号批复、2017年8月8日成立、注册资本60亿元）", url: "http://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2025-04-27/242707_20250427_NZBG.pdf", date: "2025-04-27" }
+
+  - id: lamc-hubei-asset
+    name: "湖北省资产管理有限公司"
+    short: "湖北资管"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2015
+    website: http://www.hubeiamc.com/
+    intro: >-
+      2015 年 2 月 16 日经湖北省人民政府批准、原中国银监会核准成立，注册资本 30 亿元，是湖北省内唯一一家国有背景地方 AMC。控股股东及最终控制方为湖北宏泰集团有限公司，2021 年获批单户对公不良贷款转让和个人不良贷款批量转让试点资格，拥有 3 家全资子公司和 6 家市州控股子公司。
+    business: [不良资产收购处置, 企业纾困, 债权转股权, 阶段性股权投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "湖北省资产管理有限公司官网 · 公司简介", url: "http://www.hubeiamc.com/", date: "2026-09-30" }
+      - { title: "湖北宏泰集团《湖北省资产管理有限公司不良资产收购数量与规模双双位居全省第一》（全国59家地方AMC、省地方金融管理局监管）", url: "http://www.hbhtgroup.com/xwzx/qydt/202602/t20260211_170795.shtml", date: "2026-02-10" }
+
+  - id: lamc-hubei-tianqian
+    name: "湖北天乾资产管理有限公司"
+    short: "天乾资管"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2016
+    website: http://www.tq-amc.com/
+    intro: >-
+      2016 年 12 月 12 日成立，注册资金 27.2 亿元，2017 年 4 月 25 日经原中国银监会批准（银监办便函〔2017〕702 号）参与地方金融企业不良资产批量转让，是湖北省第二家地方 AMC。股东以武汉天盈投资集团、卓尔控股、宁波穿石投资等民营资本为主，武汉国创资本投资集团、湖北合作投资集团、武汉光谷金融控股集团等国有股东参股。
+    business: [不良资产收购处置, 资产并购重组, 私募基金管理, 财务顾问]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "天乾资管官网（2016年12月12日成立、注册资金27.2亿元、2017年4月25日获批、湖北省第二家地方AMC）", url: "http://www.tq-amc.com/", date: "2026-09-30" }
+      - { title: "爱企查：湖北天乾资产管理有限公司（注册资本27.22亿元、股东名单与持股比例）", url: "https://aiqicha.baidu.com/company_detail_19729481512173", date: "2026-06-13" }
+
+  - id: lamc-hunan-caixin
+    name: "湖南省财信资产管理有限公司"
+    short: "财信资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2015
+    intro: >-
+      2015 年 12 月 31 日经湖南省人民政府批准设立（湘政函〔2015〕104 号），由湖南财信金融控股集团出资组建，是湖南省首家省级地方 AMC（原湖南省资产管理有限公司）。注册资本 30 亿元，2023 年 5 月股权无偿划转至湖南财信投资控股有限责任公司，主体长期信用等级 AAA。
+    business: [不良资产收购处置, 资产重组, 债权转股权, 企业纾困]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "湖南省财信资产管理有限公司 2024 年公司债券募集说明书（湘政函〔2015〕104号批复、2015年12月31日设立、注册资本30亿元、2023年股权划转）", url: "http://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202401/038507_20240124_QTHV.pdf", date: "2024-01-24" }
+      - { title: "腾讯新闻《十年磨一剑 匠心筑标杆——湖南省财信资产管理有限公司成立十周年纪实》（湖南首家省级地方AMC、注册资本30亿元）", url: "https://news.qq.com/rain/a/20260204A01QWF00", date: "2026-02-04" }
+
+  - id: lamc-changsha-xiangjiang
+    name: "长沙湘江资产管理有限公司"
+    short: "湘江资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2019
+    website: https://www.xiangjiang-amc.com/
+    intro: >-
+      2019 年 9 月成立，注册资本 30 亿元且实缴到位，是经湖南省人民政府批准设立、原中国银保监会核准备案公示的省级地方 AMC，为湖南湘江新区发展集团有限公司下属控股子公司。业务涵盖不良资产收购处置、债务重组投资、破产管理、个贷不良资产与财务顾问，获中诚信、大公国际双 AAA 主体信用评级。
+    business: [不良资产收购处置, 债务重组投资, 破产管理, 个贷不良资产]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "长沙湘江资产管理有限公司官网 · 公司概况", url: "https://www.xiangjiang-amc.com/aboutus/31578", date: "2026-09-30" }
+      - { title: "原中国银保监会《地方资产管理公司名单》（21世纪经济报道全文转载）", url: "http://www.21jingji.com/article/20220331/herald/df72babd90aa159cadca5317315a74d7.html", date: "2022-03-31" }
+
+  - id: lamc-guangdong-yuecai
+    name: "广东粤财资产管理有限公司"
+    short: "粤财资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2006
+    website: https://www.utrustamc.com/
+    intro: >-
+      2006 年成立，注册和实缴资本 72 亿元，是广东省政府直属大型金融控股企业广东粤财投资控股有限公司的全资子公司。
+      2014 年经广东省人民政府批准、原中国银行业监督管理委员会核准，成为全国首批、广东省首家获得金融企业不良资产批量收购处置业务资质的省级 AMC，2021 年、2022 年先后获批参与单户对公、个人不良贷款批量转让试点。
+    business: [不良资产收购处置, 上市公司纾困, 重组重整, 资产经营]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "广东粤财资产管理有限公司官网 · 公司简介", url: "https://www.utrustamc.com/Profile/index.aspx", date: "2026-09-30" }
+      - { title: "原中国银保监会《地方资产管理公司名单》（21世纪经济报道全文转载）", url: "http://www.21jingji.com/article/20220331/herald/df72babd90aa159cadca5317315a74d7.html", date: "2022-03-31" }
+
+  - id: lamc-guangzhou-asset
+    name: "广州资产管理有限公司"
+    short: "广州资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2017
+    website: https://www.guangzhouamc.com/
+    intro: >-
+      2017 年 4 月 24 日在广州南沙注册成立，经广东省政府批准并报原中国银保监会备案，由广州越秀资本控股集团股份有限公司牵头设立，是广东省第二家地方 AMC。注册资本 73.61 亿元，股东包括越秀资本、广东恒健投资控股有限公司、广东省粤科金融集团有限公司和广州恒运企业集团股份有限公司，为国资绝对控股企业。
+    business: [对公不良资产收购处置, 问题企业纾困, 个贷不良贷款批量转让]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "广州资产管理有限公司官网（2017年成立、注册资本73.61亿元、全业务资质）", url: "https://www.guangzhouamc.com/", date: "2026-09-30" }
+      - { title: "广州资产管理有限公司 · 公司简介（2017年4月24日成立、股东构成与历次增资）", url: "https://yxamc.yuexiu-finance.com/assets/about_us/profile/", date: "2026-09-30" }
+
+  - id: lamc-shenzhen-cmamc
+    name: "深圳市招商平安资产管理有限责任公司"
+    short: "招商平安资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2017
+    website: https://www.cmamc.net.cn/
+    intro: >-
+      2017 年 3 月 10 日由招商局集团与中国平安共同发起设立，注册资本 30 亿元，2017 年 7 月 28 日获原中国银监会金融机构不良资产批量收购处置业务资质，2017 年 8 月 16 日正式开业，是深圳市首家地方 AMC。股东为招商局金融控股有限公司（51%）、中国平安人寿保险股份有限公司（39%）、深圳市投资控股有限公司（8%）和中证信用增进股份有限公司（2%）。
+    business: [不良资产收购处置, 债权转股权, 破产管理, 资产管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "深圳市招商平安资产管理有限责任公司官网", url: "https://www.cmamc.net.cn/", date: "2026-09-30" }
+      - { title: "财新网《招商局联手平安 开设深圳首家AMC》（2017年3月注册、7月28日获批资质、8月16日开业及股东持股比例）", url: "https://finance.caixin.com/m/2017-08-16/101131485.html", date: "2017-08-16" }
+
+  - id: lamc-shenzhen-asset
+    name: "深圳资产管理有限公司"
+    short: "深圳资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2020
+    website: http://www.szamc.net/szamc/szamc-zcczgs/index.html
+    intro: >-
+      2020 年 4 月由深圳市投资控股有限公司作为主发起人，联合万科企业股份有限公司、深圳市罗湖引导基金投资有限公司、中国国新资产管理有限公司组建，成立时注册资本 41.5 亿元。
+      2023 年 8 月 24 日经国家金融监督管理总局办公厅批复同意在广东省内开展金融企业不良资产批量收购业务，成为全国第 60 家、广东省第 4 家地方 AMC，也是深圳市唯一获准在广东省内开展该业务的地方 AMC。
+    business: [不良资产收购处置, 不良资产收购重组, 科技企业重组重整]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "深圳市人民政府《深圳市属国企深圳资产管理有限公司获批地方AMC牌照》（2023年8月24日批复、全国第60家、广东省第4家）", url: "https://www.sz.gov.cn/szzt2010/wgkzl/glgk/jgxxgk/gyqyyy/content/post_10808159.html", date: "2023-08-29" }
+      - { title: "深圳资产管理有限公司 2024 年公司债券信用评级报告（2020年4月成立、注册资本41.5亿元、四家股东持股比例、2023年8月获地方AMC资质）", url: "http://static.cninfo.com.cn/finalpage/2024-03-22/1219391308.PDF", date: "2024-03-22" }
+      - { title: "深圳资产管理有限公司官网", url: "http://www.szamc.net/szamc/szamc-zcczgs/index.html", date: "2026-09-30" }
+
+  - id: lamc-guangxi-asset
+    name: "广西资产管理有限公司"
+    short: "广西资管"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2013
+    website: http://www.gxjkamc.com/
+    intro: >-
+      2013 年 6 月经广西壮族自治区人民政府国有资产监督管理委员会核准、由广西金融投资集团组建成立，注册资本 60 亿元，是广西首家经原中国银监会核准的地方 AMC。公司原名广西金控资产管理有限公司，2026 年 6 月经批准更名为广西资产管理有限公司，为广西金融投资集团有限公司全资子公司。
+    business: [不良资产收购处置, 并购重组, 资产管理, 金融服务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "广西资产管理有限公司官网 · 公司简介及更名公告（2013年6月组建、注册资本60亿元、2026年6月更名）", url: "http://www.gxjkamc.com/", date: "2026-09-30" }
+      - { title: "原中国银保监会《地方资产管理公司名单》（21世纪经济报道全文转载）", url: "http://www.21jingji.com/article/20220331/herald/df72babd90aa159cadca5317315a74d7.html", date: "2022-03-31" }
+
+  - id: lamc-guangxi-united
+    name: "广西联合资产管理股份有限公司"
+    short: "广西联合资管"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2016
+    website: http://gigamc.com.cn/
+    intro: >-
+      2016 年 10 月 21 日成立，经广西壮族自治区人民政府批准设立并获原中国银监会批复，注册资本 10 亿元，是广西第二家地方 AMC，原名为广西广投资产管理股份有限公司。
+      2023 年 1 月更名为现名；2022 年 7 月完成股权优化后，第一大股东为广西国资委全资的广西宏桂资本运营集团有限公司（持股 36%），为广西唯一持牌混合所有制地方资产管理公司。
+    business: [个贷不良资产, 对公资产管理, 特殊机会投资, 科技服务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "广西联合资产管理股份有限公司官网", url: "http://gigamc.com.cn/", date: "2026-09-30" }
+      - { title: "澎湃新闻《广西第二家地方AMC更名：去年已股权优化，成国资控股企业》（2023年1月更名、股东结构）", url: "https://www.thepaper.cn/newsDetail_forward_21861371", date: "2023-02-09" }
+
+  - id: lamc-hainan-xinchuangjian
+    name: "海南新创建资产管理股份有限公司"
+    short: "海南新创建"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2019
+    intro: >-
+      2019 年 12 月 16 日成立，注册资本 10 亿元，注册地海口江东新区，企业类型为港澳台投资未上市股份有限公司，是海南省地方 AMC。公司由新创建集团有限公司控股，是名单内唯一一家港资控股的地方 AMC，经营范围包括收购、受托经营金融及非金融企业不良资产并依法管理处置。
+    business: [金融及非金融不良资产收购处置, 资产管理, 投资咨询]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "新浪财经《重磅！这家地方AMC注销，牌照交回》（民营地方AMC 10家、港资控股1家为海南新创建）", url: "https://finance.sina.com.cn/cj/2024-06-27/doc-incaczkf2363550.shtml", date: "2024-06-27" }
+      - { title: "天眼查ICP备案查询：海南新创建资产管理股份有限公司（统一社会信用代码、2019-12-16成立、注册资本10亿元、港澳台投资股份有限公司）", url: "https://beian.tianyancha.com/ia7491713301023326750", date: "2026-09-30" }
+
+  - id: lamc-hainan-lianhe
+    name: "海南联合资产管理有限公司"
+    short: "海南联合资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2003
+    website: http://www.hnlhzc.com/
+    intro: >-
+      2003 年 7 月经海南省人民政府出资设立，前身为海南联合资产管理公司，依据国办发〔2002〕60 号文成立，是全国唯一经国务院办公厅发文批准成立的地方性资产管理公司。公司是海南省政府授权、原中国银监会审核公布的海南省第一家地方 AMC，2023 年 3 月注册资本由 1 亿元增至 19.71 亿元，海南省农垦投资控股集团有限公司拥有其 55.43% 表决权。
+    business: [金融机构不良资产收购处置, 积压房地产处置, 国有资产管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "海南联合资产管理有限公司官网 · 公司简介", url: "http://www.hnlhzc.com/html/about/aboutus/", date: "2026-09-30" }
+      - { title: "海南银行《关于向股东关联方企业海南联合资产管理有限公司新增授信额度的议案》（2003年7月18日成立、海南省农垦投资控股集团55.43%表决权）", url: "https://www.hnbankchina.com.cn/zygg/2023/09/6269.shtml", date: "2023-09-01" }
+
+  - id: lamc-chongqing-huarun-yukang
+    name: "华润渝康资产管理有限公司"
+    short: "华润渝康"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2016
+    website: https://www.crykasset.com/
+    intro: >-
+      2016 年 6 月经重庆市人民政府批准成立（原名重庆渝康资产经营管理有限公司），报财政部备案、原中国银保监会核准，是重庆市首家地方金融 AMC。
+      2020 年 5 月华润金控投资有限公司受让 54% 股权成为控股股东，2021 年 5 月更名为现名，注册资本 50 亿元，实际控制人为国务院国有资产监督管理委员会。
+    business: [不良资产收购处置, 受托经营与重组整合, 特殊机遇投资, 资产管理服务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "华润渝康资产管理有限公司官网 · 公司简介", url: "https://www.crykasset.com/companyProfile/index.html", date: "2026-09-30" }
+      - { title: "华润渝康资产管理有限公司 2024 年公司债券募集说明书（2016年6月设立、2020年华润金控受让54%股权、2021年5月更名、注册资本50亿元）", url: "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2024-12-20/242188_20241220_MDXT.pdf", date: "2024-12-20" }
+
+  - id: lamc-chongqing-fucheng
+    name: "重庆富城资产管理有限公司"
+    short: "富城资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2017
+    website: http://www.cqfcamc.com/
+    intro: >-
+      2017 年 1 月经重庆市人民政府批复组建、原中国银监会备案，是重庆市第二家地方金融资产管理公司，注册资本 15 亿元。股权设置以民营资本为主导并吸收国有资本参与，由麦启投资（上海）有限公司、重庆佳利科技有限公司、重庆金融资产交易所有限责任公司、重庆市江北嘴中央商务区投资集团有限公司共同发起设立。
+    business: [不良资产经营, 结构化业务, 特殊地产业务, 个贷不良]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "重庆富城资产管理有限公司官网 · 公司简介", url: "http://www.cqfcamc.com/html/gsgk/", date: "2026-09-30" }
+      - { title: "每日经济新闻《地方版AMC筹建加速 重庆第二家AMC获批组建》（注册资本15亿元、四家发起股东及持股比例）", url: "https://www.nbd.com.cn/articles/2017-01-23/1072355.html", date: "2017-01-23" }
+
+  - id: lamc-sichuan-development
+    name: "四川发展资产管理有限公司"
+    short: "川发资管"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2015
+    website: http://www.scdamc.com/
+    intro: >-
+      2015 年 1 月 28 日成立，经四川省政府批准、原中国银保监会核准，是四川省第一家省级地方资产管理公司，现为四川金融控股集团有限公司控股的国有全资企业。注册资本 50 亿元，获中诚信 AAA 主体信用评级，曾于 2016 至 2022 年连续承办中国地方 AMC 论坛并当选论坛秘书长单位。
+    business: [不良资产收购处置, 问题企业盘活重整, 特殊机会投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "四川发展资产管理有限公司官网 · 公司简介", url: "http://www.scdamc.com/gongsijianjie/", date: "2026-09-30" }
+      - { title: "四川发展资产管理有限公司 2025 年公司债券主承销商核查意见（2015年1月28日设立、注册资本50亿元、四川金控持股85%）", url: "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202506/337fbc_20250611_4DLU.pdf", date: "2025-06-11" }
+
+  - id: lamc-chengdu-yihang
+    name: "成都益航资产管理有限公司"
+    short: "益航资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2018
+    website: https://www.cdyhamc.com/
+    intro: >-
+      2018 年 7 月 26 日经四川省人民政府批准设立并经原中国银保监会备案，由中航工业产融控股股份有限公司、成都交子金融控股集团、杭州众城川商投资合伙企业、成都鼎立资产经营管理有限公司、泸州老窖集团有限责任公司和中国长城资产管理股份有限公司共同发起设立。注册资本 100 亿元，是四川省第二家地方 AMC，也是全国少数注册资本达百亿级的地方 AMC 之一。
+    business: [债务处置与重组, 流动性救助, 困境资产盘活, 金融不良化解]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "成都益航资产管理有限公司官网（2018年7月26日成立、注册资本100亿元、六家发起股东）", url: "https://www.cdyhamc.com/article/detail?id=62", date: "2026-09-30" }
+      - { title: "四川省人民政府《关于设立成都益航资产管理有限公司的批复》解读（六家股东及35%、30%、15%、14.5%、3%、2.5%持股比例）", url: "https://www.sc.gov.cn/10462/10464/13298/13301/2018/7/5/10454738.shtml", date: "2018-07-05" }
+
+  - id: lamc-guizhou-asset
+    name: "贵州省资产管理股份有限公司"
+    short: "贵州资管"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2017
+    intro: >-
+      2017 年经贵州省人民政府批准设立，由贵州金融控股集团（贵州贵民投资集团）、贵州贵安资本运营有限公司、贵州产业并购投资中心（有限合伙）、贵州高速投资集团共同出资组建，是贵州省唯一持牌地方 AMC。初始注册资本 10 亿元，2022 年 2 月增至 100 亿元，控股股东贵州金控持股 58.33%，2018 年 1 月获原中国银保监会资质备案认可。
+    business: [金融与非金融不良资产化解, 国有企业改革服务, 投资管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "腾讯新闻《涉嫌严重违纪违法，贵州首家地方AMC总经理助理被查》（2017年3月省政府批准设立、2022年2月注册资本增至100亿元、贵州金控持股58.33%）", url: "https://news.qq.com/rain/a/20260318A07LQR00", date: "2026-03-18" }
+      - { title: "原中国银保监会《地方资产管理公司名单》（21世纪经济报道全文转载）", url: "http://www.21jingji.com/article/20220331/herald/df72babd90aa159cadca5317315a74d7.html", date: "2022-03-31" }
+
+  - id: lamc-yunnan-asset
+    name: "云南省资产管理有限公司"
+    short: "云南资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2016
+    intro: >-
+      2016 年 12 月 19 日注册成立，经云南省人民政府批准，由云南省投资控股集团有限公司为主体发起设立，是云南省唯一省级地方资产管理公司。注册资本 55.56 亿元，为云投集团全资子公司，主营不良资产收购与处置、受托资产管理及对外投资。
+    business: [不良资产收购与处置, 受托资产管理, 对外投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "云南省资产管理有限公司 2024 年半年度报告（注册资本55.56亿元、公司网址与注册地址）", url: "http://qxb-pdf-osscache.qixin.com/AnBaseinfo/62293ec11b6a167c98af1cabc6572355.pdf", date: "2024-08-30" }
+      - { title: "原中国银保监会《地方资产管理公司名单》（21世纪经济报道全文转载）", url: "http://www.21jingji.com/article/20220331/herald/df72babd90aa159cadca5317315a74d7.html", date: "2022-03-31" }
+
+  - id: lamc-shaanxi-financial-asset
+    name: "陕西金融资产管理股份有限公司"
+    short: "陕西金资"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2016
+    website: https://www.snfamc.com/
+    intro: >-
+      2016 年 8 月成立，经陕西省人民政府批准设立（省政府 2015 年 11 月批复组建方案），是陕西省人民政府唯一授权开展金融资产收购处置业务的省级地方金融资产管理公司。注册资本 85.9 亿元，陕财投、延长石油、榆林城投、经开金控、陕煤集团等 16 家大型国企及金融机构为战略投资者，实际控制人为陕西省人民政府。
+    business: [不良资产批量收购, 债权转股权, 企业纾困, 信用增进]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "陕西金融资产管理股份有限公司官网 · 公司简介（2016年8月成立、注册资本85.9亿元、16家战略投资者）", url: "https://www.snfamc.com/about", date: "2026-09-30" }
+      - { title: "陕西省人民政府《关于组建陕西金融资产管理股份有限公司的批复》（2015年11月7日、省政府唯一授权、注册资本50亿元）", url: "https://www.shaanxi.gov.cn/zfxxgk/fdzdgknr/zcwj/nszfwj/szh/202208/t20220808_2241793_wap.html", date: "2015-11-07" }
+
+  - id: lamc-tibet-haide
+    name: "海徳资产管理有限公司"
+    short: "海徳资管"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2016
+    website: https://www.hdamc-npl.com/
+    intro: >-
+      2016 年 7 月经西藏自治区人民政府批准、同年 10 月报原中国银监会备案，由上市公司海南海德资本管理股份有限公司在西藏自治区全资设立，注册地拉萨，是西藏自治区省级地方 AMC。注册资本 47.21 亿元，业务聚焦能源、上市公司等领域的困境资产重组重整以及个贷不良资产批量收购处置。
+    business: [困境资产重组重整, 个贷不良资产, 特殊机遇投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "海徳资产管理有限公司官网 · 公司介绍（2016年7月经西藏自治区人民政府批准、海德股份全资设立）", url: "https://www.hdamc-npl.com/intro.html", date: "2026-09-30" }
+      - { title: "海南海德资本管理股份有限公司关于融资担保事项的公告（海徳资管注册地拉萨、注册资本472,127万元、成立日期2016年7月4日）", url: "https://www.000567.com/uploads/files/5712ed762e2d9dfe8c9d242c827a957f.pdf", date: "2026-05-20" }
+
+  - id: lamc-gansu-asset
+    name: "甘肃资产管理有限公司"
+    short: "甘肃资管"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2016
+    website: https://www.gansuamc.com/
+    intro: >-
+      2016 年 3 月经甘肃省人民政府批准（甘政函〔2016〕19 号）、原中国银监会核准成立，由甘肃省国有资产投资集团有限公司牵头发起并控股，是甘肃省属国有地方资产管理公司。注册资本 46.89 亿元，取得中诚信 AA+ 主体信用评级，并入选甘肃省高级人民法院企业破产案件一级管理人名册。
+    business: [不良资产收处, 债务重组, 债权转股权, 资产证券化]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "甘肃资产管理有限公司官网 · 公司简介（2016年3月成立、注册资本46.89亿元、甘肃国投控股）", url: "https://www.gansuamc.com/article/K74R96jWQ8ndyGWw.html", date: "2026-09-30" }
+      - { title: "甘肃资产管理有限公司 2024 年公司债券募集说明书（甘政函〔2016〕19号批复、2016年3月24日设立、注册资本46.89亿元）", url: "http://static.sse.com.cn/disclosure/bond/bridge2/disclosure/announcement/c/202406/042441_20240630_5307.pdf", date: "2024-06-30" }
+
+  - id: lamc-gansu-changda
+    name: "甘肃长达金融资产管理股份有限公司"
+    short: "长达金融资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2017
+    website: https://cdfamc.com/
+    intro: >-
+      2017 年 8 月 25 日成立，经甘肃省人民政府批准设立、原中国银监会核准公布，由甘肃盛达集团有限公司、甘肃金融控股集团有限公司等共同发起设立，注册资本 10 亿元，办公地兰州。是甘肃省第二家、也是唯一混合所有制地方 AMC，拥有 AA 主体信用评级，2021 年获批参与银行个贷类不良资产批量转让试点。
+    business: [中小银行不良资产处置, 市场化债转股, 破产重组, 委托处置]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "甘肃长达金融资产管理股份有限公司官网 · 关于我们（2017年8月成立、注册资本10亿元、混合所有制地方AMC）", url: "https://cdfamc.com/about/", date: "2026-09-30" }
+      - { title: "甘肃长达金融资产管理股份有限公司律所入库项目招标公告（2017年8月25日成立、注册资本10亿元、地方AMC资质）", url: "https://www.cdfamc.com/notice/455.html", date: "2026-01-15" }
+
+  - id: lamc-qinghai-kunpeng
+    name: "昆朋资产管理股份有限公司"
+    short: "昆朋资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2016
+    website: http://kunpengamc.com.cn/
+    intro: >-
+      2016 年 6 月 17 日成立，经青海省人民政府批准设立、地方国资控股，注册资本 10 亿元，是青海省唯一的地方资产管理公司，注册地西宁。公司原名华融昆仑青海资产管理股份有限公司，2020 年股权转让后更名，业务中心设在上海，具备参与不良贷款转让试点工作的资格。
+    business: [不良资产经营, 投资业务, 托管重组, 资产证券化]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "昆朋资产管理股份有限公司官网 · 公司简介（2016年6月17日成立、注册资本10亿元、青海省地方AMC）", url: "http://kunpengamc.com.cn/gsjj", date: "2026-09-30" }
+      - { title: "澎湃新闻《华融持续瘦身，拟启动华融融达期货和华融晋商股权转让》（华融昆仑青海资产管理股份有限公司已于2020年转让并更名为昆朋青海资产管理股份有限公司）", url: "https://www.thepaper.cn/newsDetail_forward_15734955", date: "2021-12-07" }
+
+  - id: lamc-ningxia-shunyi
+    name: "宁夏顺亿资产管理有限公司"
+    short: "顺亿资产"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2015
+    website: http://www.nxsyamc.com/
+    intro: >-
+      2015 年 4 月 22 日成立，注册地银川，注册资本 102 亿元，是宁夏回族自治区两家持牌地方 AMC 之一。股东以宁波梅山保税港区鑫木企业管理合伙企业、拉萨经济技术开发区碧景创业投资合伙企业、北京志比天高商贸有限公司等民营及投资机构为主，上海东兴投资控股发展有限公司参股。
+    business: [金融企业不良资产批量收购处置, 资产经营, 股权投资, 投资顾问]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "宁夏顺亿资产管理有限公司官网", url: "http://www.nxsyamc.com/", date: "2026-09-30" }
+      - { title: "爱企查：宁夏顺亿资产管理有限公司（2015-04-22成立、注册资本102亿元、五名股东及持股比例）", url: "https://aiqicha.baidu.com/company_detail_16255949596303", date: "2026-06-24" }
+
+  - id: lamc-ningxia-financial-asset
+    name: "宁夏金融资产管理有限公司"
+    short: "宁夏金资"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2017
+    website: http://www.nxfamc.com/
+    intro: >-
+      2017 年 8 月 28 日经宁夏回族自治区人民政府批准成立，注册资本 10 亿元，是宁夏唯一的国有地方金融资产管理公司。由宁夏国有资产投资控股集团有限公司出资 51%、中国长城资产管理股份有限公司出资 34%、宁夏旅游投资集团出资 10%、中铁资本有限公司出资 5% 共同发起设立，2018 年 3 月 16 日正式获准原中国银保监会批量收购金融机构不良资产资格。
+    business: [不良资产批量收购处置, 投资业务, 中间业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "宁夏金融资产管理有限公司官网 · 公司简介（2017年8月28日成立、注册资本10亿元、四家股东持股比例、2018年3月获准资质）", url: "https://www.nxfamc.com/gywm/gsjj.htm", date: "2026-09-30" }
+      - { title: "原中国银保监会《地方资产管理公司名单》（21世纪经济报道全文转载）", url: "http://www.21jingji.com/article/20220331/herald/df72babd90aa159cadca5317315a74d7.html", date: "2022-03-31" }
+
+  - id: lamc-xinjiang-jintou
+    name: "新疆金投资产管理股份有限公司"
+    short: "新疆资管"
+    category: local-finance
+    type: local-amc
+    regulator: 地方金融管理局
+    founded: 2017
+    intro: >-
+      2017 年 8 月 29 日成立，经新疆维吾尔自治区人民政府批准（新政函〔2017〕39 号），由新疆金融投资（集团）有限责任公司作为主发起人设立，是新疆首家、也是唯一具有金融不良资产批量收购处置业务资质的省级地方金融资产管理公司。注册资本 20.63 亿元，控股股东为新疆金融投资（集团）有限责任公司，实际控制人为新疆维吾尔自治区人民政府国有资产监督管理委员会。
+    business: [不良资产批量收购处置, 债务重组, 企业托管清算, 破产管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "新疆金投资产管理股份有限公司 2025 年公司债券募集说明书（新政函〔2017〕39号批复、2017年8月29日设立、注册资本20.63亿元、新疆金投持股54.28%）", url: "http://reportdocs.static.szse.cn/UpFiles/GsptFiles/mjsms/48507053C042478484DA50F4A4377937.pdf", date: "2025-01-21" }
+      - { title: "新疆维吾尔自治区国资委《新疆首家省级地方资产管理公司成立》（实收资本10亿元、发起股东名单）", url: "https://gzw.xinjiang.gov.cn/gzw/gzyw/201709/260b32cda6d941aa91ddcef62190bd80.shtml", date: "2017-09-01" }

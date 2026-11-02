@@ -1,0 +1,381 @@
+---
+import Base from "../../layouts/Base.astro";
+import CompanyNewsList from "../../components/CompanyNewsList.astro";
+import VentureTimeline from "../../components/VentureTimeline.astro";
+import "../../styles/ventures.css";
+import "../../styles/mapping.css";
+import {
+  getVentures,
+  getTracks,
+  getTimeline,
+} from "../../lib/ventures";
+import {
+  getAllCompanyNews,
+  getNewsStats,
+  getNewsSnapshot,
+} from "../../lib/news";
+
+const items = getAllCompanyNews();
+const stats = getNewsStats();
+const snapshot = getNewsSnapshot();
+const tracks = getTracks();
+const allCompanies = getVentures().sort((a, b) =>
+  a.name.localeCompare(b.name, "zh-CN"),
+);
+const matchedCompanies = allCompanies.filter((c) =>
+  items.some((i) => i.associations.some((a) => a.companyId === c.id)),
+);
+const reviewedEvents = getTimeline();
+
+const officialCount = items.filter((i) => i.origin === "official").length;
+const titleCount = items.filter(
+  (i) =>
+    i.origin !== "official" &&
+    i.associations.some((a) => a.matchType === "title"),
+).length;
+const summaryOnlyCount = items.length - officialCount - titleCount;
+---
+
+<Base
+  title="公司新闻与事件归档"
+  description="按公司、赛道与证据层级归档已公开的新闻与官方渠道动态，区分官方渠道、标题提及、摘要提及与已整理人工事件。"
+  current="news"
+>
+  <div class="wrap page">
+    <div class="page-head">
+      <div>
+        <h1>
+          公司新闻与事件归档<span class="count">{stats.articles}</span>
+        </h1>
+        <p>
+          收录公司官方渠道（{officialCount} 条）、标题提及（{titleCount} 条）与摘要提及线索（{summaryOnlyCount} 条），另附 {reviewedEvents.length} 条人工核对的公司历史事件。
+        </p>
+      </div>
+      <div class="actions">
+        <div class="map-view-switch" role="tablist" aria-label="切换自动归档与已整理事件">
+          <button
+            type="button"
+            class="news-tab-btn"
+            data-news-tab="auto"
+            aria-pressed="true"
+          >
+            公开新闻 ({items.length})
+          </button>
+          <button
+            type="button"
+            class="news-tab-btn"
+            data-news-tab="events"
+            aria-pressed="false"
+          >
+            已整理事件 ({reviewedEvents.length})
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <section class="panel" id="news-auto-panel">
+      <form class="toolbar" id="news-filters" role="search">
+        <div class="map-filter-top">
+          <label class="filter-input map-search-box" for="news-q">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="m20 20-3.5-3.5"></path>
+            </svg>
+            <input
+              type="search"
+              id="news-q"
+              placeholder="搜索新闻标题、摘要、公司名称或来源媒体…"
+              autocomplete="off"
+            />
+          </label>
+
+          <label class="map-select-wrap" for="news-track">
+            <span class="sr-only">所属赛道</span>
+            <select id="news-track">
+              <option value="">全部赛道</option>
+              {tracks.map((t) => (
+                <option value={t.id}>{t.name}</option>
+              ))}
+            </select>
+          </label>
+
+          <label class="map-select-wrap" for="news-company">
+            <span class="sr-only">公司</span>
+            <select id="news-company">
+              <option value="">全部公司（{allCompanies.length} 家）</option>
+              <optgroup label={`已有匹配新闻（${matchedCompanies.length} 家）`}>
+                {matchedCompanies.map((c) => (
+                  <option value={c.id}>{c.name}</option>
+                ))}
+              </optgroup>
+              <optgroup
+                label={`暂未匹配自动新闻（${allCompanies.length - matchedCompanies.length} 家）`}
+              >
+                {allCompanies
+                  .filter((c) => !matchedCompanies.includes(c))
+                  .map((c) => (
+                    <option value={c.id}>{c.name}（暂无自动新闻）</option>
+                  ))}
+              </optgroup>
+            </select>
+          </label>
+
+          <button type="reset" class="map-reset">
+            重置
+          </button>
+        </div>
+
+        <div class="chips" role="group" aria-label="按匹配方式过滤">
+          <button
+            type="button"
+            class="chip is-on"
+            data-news-method=""
+          >
+            全部归档 <span class="n">{items.length}</span>
+          </button>
+          <button
+            type="button"
+            class="chip"
+            data-news-method="direct"
+          >
+            核心动态 (官方+标题) <span class="n">{officialCount + titleCount}</span>
+          </button>
+          <button
+            type="button"
+            class="chip"
+            data-news-method="official"
+          >
+            官方渠道 <span class="n">{officialCount}</span>
+          </button>
+          <button
+            type="button"
+            class="chip"
+            data-news-method="title"
+          >
+            标题提及 <span class="n">{titleCount}</span>
+          </button>
+          <button
+            type="button"
+            class="chip"
+            data-news-method="summary"
+          >
+            仅摘要提及 <span class="n">{summaryOnlyCount}</span>
+          </button>
+        </div>
+      </form>
+
+      <div class="result-bar">
+        <span id="news-count" role="status" aria-live="polite">
+          {items.length} 条归档
+        </span>
+        <span class="right">
+          最近抓取：{stats.updatedAt ? stats.updatedAt.slice(0, 16).replace("T", " ") + " UTC" : "待抓取"} · 保留窗口 {snapshot.retention.days} 天 · <a href="/ventures/coverage/">信源口径 →</a>
+        </span>
+      </div>
+
+      <CompanyNewsList items={items} filterable />
+
+      <div class="search-empty" id="news-empty" hidden>
+        <p id="news-empty-desc">
+          当前筛选条件下暂无匹配的自动归档新闻。早期非上市公司公开报道较少，零匹配不代表公司无业务进展。
+        </p>
+        <div class="news-empty-actions">
+          <a class="btn btn-sm btn-primary" id="news-empty-dossier" href="/ventures/" hidden>
+            查看该公司档案与官网来源 →
+          </a>
+          <button type="button" class="btn btn-sm" id="news-empty-events">
+            查看已整理事件 ({reviewedEvents.length})
+          </button>
+        </div>
+      </div>
+
+      <div class="panel-foot news-more-wrap" id="news-more-wrap">
+        <button type="button" id="news-more" class="btn btn-sm">
+          加载更多归档 ↓
+        </button>
+      </div>
+    </section>
+
+    <section class="panel" id="news-events-panel" hidden>
+      <div class="panel-head">
+        <h2>人工整理公司事件时间线</h2>
+        <span class="hint">按发生月份倒序 · 区分已确认与报道口径</span>
+        <span class="right">{reviewedEvents.length} 条</span>
+      </div>
+      <VentureTimeline events={reviewedEvents} filter />
+    </section>
+  </div>
+
+  <script>
+    const q = document.getElementById("news-q") as HTMLInputElement;
+    const select = document.getElementById("news-company") as HTMLSelectElement;
+    const trackSelect = document.getElementById(
+      "news-track",
+    ) as HTMLSelectElement | null;
+    const methodBtns = [
+      ...document.querySelectorAll<HTMLButtonElement>("[data-news-method]"),
+    ];
+    const tabBtns = [
+      ...document.querySelectorAll<HTMLButtonElement>("[data-news-tab]"),
+    ];
+    const autoPanel = document.getElementById("news-auto-panel");
+    const eventsPanel = document.getElementById("news-events-panel");
+    const emptyDossier = document.getElementById(
+      "news-empty-dossier",
+    ) as HTMLAnchorElement | null;
+    const rows = Array.from(
+      document.querySelectorAll<HTMLElement>("[data-news-item]"),
+    );
+    const more = document.getElementById("news-more") as HTMLButtonElement;
+    const moreWrap = document.getElementById("news-more-wrap");
+
+    let limit = 40;
+    let requestedCompany = "";
+    let requestedTrack = "";
+    let requestedMethod = "";
+    let activeTab = "auto";
+
+    function setTab(tab: string) {
+      activeTab = tab === "events" ? "events" : "auto";
+      tabBtns.forEach((btn) =>
+        btn.setAttribute(
+          "aria-pressed",
+          String(btn.dataset.newsTab === activeTab),
+        ),
+      );
+      if (autoPanel) autoPanel.hidden = activeTab !== "auto";
+      if (eventsPanel) eventsPanel.hidden = activeTab !== "events";
+    }
+
+    tabBtns.forEach((btn) =>
+      btn.addEventListener("click", () => setTab(btn.dataset.newsTab || "auto")),
+    );
+    document
+      .getElementById("news-empty-events")
+      ?.addEventListener("click", () => setTab("events"));
+
+    function restore() {
+      const p = new URLSearchParams(location.search);
+      q.value = p.get("q") || "";
+      requestedCompany = p.get("company") || "";
+      requestedTrack = p.get("track") || "";
+      requestedMethod = p.get("method") || "";
+      select.value = requestedCompany;
+      if (trackSelect) trackSelect.value = requestedTrack;
+      if (p.get("tab") === "events") setTab("events");
+    }
+
+    function render(update = true) {
+      const query = q.value.trim().toLowerCase();
+      const company = requestedCompany;
+      const track = requestedTrack;
+      const method = requestedMethod;
+
+      methodBtns.forEach((btn) =>
+        btn.classList.toggle(
+          "is-on",
+          (btn.dataset.newsMethod || "") === method,
+        ),
+      );
+
+      const matches = rows.filter((r) => {
+        const companyOk =
+          !company ||
+          (r.dataset.companies || "").split(" ").includes(company);
+        const trackOk =
+          !track || (r.dataset.tracks || "").split(" ").includes(track);
+        const rowMethod = r.dataset.method || "";
+        const methodOk =
+          !method ||
+          (method === "direct"
+            ? rowMethod === "official" || rowMethod === "title"
+            : rowMethod === method);
+        const queryOk = !query || (r.dataset.search || "").includes(query);
+        return companyOk && trackOk && methodOk && queryOk;
+      });
+
+      const show = new Set(matches.slice(0, limit));
+      rows.forEach((r) => (r.hidden = !show.has(r)));
+      document.getElementById("news-count")!.textContent =
+        `${matches.length} 条归档 · 当前显示 ${Math.min(matches.length, limit)} 条`;
+      if (moreWrap) moreWrap.hidden = matches.length <= limit;
+      document.getElementById("news-empty")!.hidden = matches.length !== 0;
+
+      if (emptyDossier) {
+        if (company && matches.length === 0) {
+          emptyDossier.href = `/venture/${company}/`;
+          emptyDossier.hidden = false;
+        } else {
+          emptyDossier.hidden = true;
+        }
+      }
+
+      if (update) {
+        const p = new URLSearchParams();
+        if (company) p.set("company", company);
+        if (track) p.set("track", track);
+        if (method) p.set("method", method);
+        if (query) p.set("q", q.value.trim());
+        history.replaceState(
+          null,
+          "",
+          location.pathname + (p.size ? "?" + p : ""),
+        );
+      }
+    }
+
+    q.addEventListener("input", () => {
+      limit = 40;
+      render();
+    });
+    select.addEventListener("change", () => {
+      requestedCompany = select.value;
+      limit = 40;
+      render();
+    });
+    trackSelect?.addEventListener("change", () => {
+      requestedTrack = trackSelect.value;
+      limit = 40;
+      render();
+    });
+    methodBtns.forEach((btn) =>
+      btn.addEventListener("click", () => {
+        requestedMethod = btn.dataset.newsMethod || "";
+        limit = 40;
+        render();
+      }),
+    );
+    more.addEventListener("click", () => {
+      limit += 40;
+      render(false);
+    });
+    document
+      .getElementById("news-filters")
+      ?.addEventListener("submit", (e) => e.preventDefault());
+    document.getElementById("news-filters")?.addEventListener("reset", (e) => {
+      e.preventDefault();
+      q.value = "";
+      select.value = "";
+      if (trackSelect) trackSelect.value = "";
+      requestedCompany = "";
+      requestedTrack = "";
+      requestedMethod = "";
+      limit = 40;
+      render();
+    });
+    window.addEventListener("popstate", () => {
+      restore();
+      limit = 40;
+      render(false);
+    });
+    restore();
+    render(false);
+  </script>
+</Base>

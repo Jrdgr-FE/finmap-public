@@ -1,0 +1,49 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollections } from '../../lib/data';
+import { layoutTree } from '../../lib/tree';
+
+const collections = getCollections();
+const supervision = collections.find((c) => c.id === 'supervision');
+const groups = collections
+  .filter((c) => c.is_group)
+  .map((c) => ({
+    c,
+    depth: Math.max(...layoutTree(c.entities, c.short).nodes.map((n) => n.depth), 0),
+    affiliates: c.entities.filter((e) => e.relation === 'affiliate').length,
+  }));
+---
+
+<Base title="集团谱系" description="中国主要金融集团的持牌主体股权谱系：控股链条、持股比例与非控股关联关系。" current="groups">
+  <div class="wrap page">
+    <div class="page-head">
+      <div>
+        <h1>集团谱系<span class="count">{groups.length}</span></h1>
+        <p>已绘制股权谱系的金融集团。每张谱系图标出控股链条、上层持股比例和时点，参股或仅有品牌关联的用虚线区分。</p>
+      </div>
+    </div>
+
+    <div class="group-grid is-wide">
+      {groups.map(({ c, depth, affiliates }) => (
+        <a class="group-card" href={`/group/${c.id}/`}>
+          <h3>{c.name}</h3>
+          <p>{[c.nature, c.hq && `总部 ${c.hq}`].filter(Boolean).join(' · ')}</p>
+          <p class="intro">{c.intro}</p>
+          <div class="figs">
+            <span><b>{c.entities.length}</b>持牌主体</span>
+            <span><b>{depth}</b>最深层级</span>
+            <span><b>{affiliates}</b>非控股关联</span>
+            <span class="go">查看谱系 →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    {supervision && (
+      <div class="note-box" style="margin-top:var(--sp-5)">
+        监管机构与金融基础设施（{supervision.entities.length} 家）之间没有股权控制关系，按机构类型列在
+        <a href={`/group/${supervision.id}/`}>{supervision.short}</a>。
+      </div>
+    )}
+  </div>
+</Base>

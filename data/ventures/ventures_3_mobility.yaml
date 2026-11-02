@@ -1,0 +1,274 @@
+# 硬科技图谱 · 智能驾驶与低空出行（2026-10-22 调研）
+# 结构和口径同 ventures.yaml。Wayve、Waabi 已在世界模型赛道收录，这里不重复。
+version: 1
+updated: "2026-10-22"
+
+tracks:
+  - id: autonomy
+    name: 智能驾驶与低空出行
+    desc: 让车和飞行器自己开、自己飞的公司：卖给车厂的智驾方案、自营 Robotaxi、无人配送车和无人机，以及载人 eVTOL 和飞行汽车。
+    segments:
+      - { id: adas, name: 量产·智驾方案, desc: 卖给车厂的辅助驾驶和城市 NOA 软硬件方案，按搭载量收费。 }
+      - { id: robotaxi, name: 运营·Robotaxi, desc: 无安全员的自动驾驶出租车，自建或与平台合作运营。 }
+      - { id: delivery, name: 运营·无人配送, desc: 城配无人货车（RoboVan）和配送无人机，最先跑通单位经济的场景。 }
+      - { id: evtol, name: 低空·eVTOL 与飞行汽车, desc: 电动垂直起降飞行器和飞行汽车，卡在适航取证和量产交付。 }
+
+      - { id: sensors, name: 上游·感知硬件, desc: 激光雷达、三维视觉与车载感知系统。 }
+
+companies:
+  # ───────── 智驾方案 ─────────
+  - id: momenta
+    name: Momenta
+    region: cn
+    track: autonomy
+    segment: adas
+    tags: [智驾方案, 世界模型, 港股]
+    intro: 国内第三方智驾方案龙头，搭载车辆超 100 万辆、量产车型超 100 款，合作多家全球车企；2026 年 7 月以“物理 AI 第一股”在港交所上市（6880.HK）。
+    founders: [曹旭东]
+    events:
+      - date: "2026-07-08"
+        kind: ipo
+        title: 港交所主板上市，发行价 295.6 港元，募资约 68 亿港元，公开发售超额认购约 414 倍
+        status: confirmed
+        sources: [{ title: 同花顺（转 IT 之家）：Momenta 正式挂牌港交所, url: "https://stock.10jqka.com.cn/20260708/c678031947.shtml", date: "2026-07-08" }]
+      - date: "2026-07"
+        kind: deployment
+        title: 营收从 2023 年 7.43 亿元增至 2025 年 24.13 亿元；累计定点车型超 210 款
+        status: confirmed
+        sources: [{ title: 同花顺（转 IT 之家）：Momenta 正式挂牌港交所, url: "https://stock.10jqka.com.cn/20260708/c678031947.shtml", date: "2026-07-08" }]
+
+  - id: zhuoyu
+    name: 卓驭科技
+    en: ZYT
+    region: cn
+    track: autonomy
+    segment: adas
+    tags: [大疆系, 舱驾一体, 一汽]
+    aliases: [大疆车载]
+    intro: 大疆孵化的智驾公司（原大疆车载），以低成本单芯片舱驾一体方案见长，量产车型超 50 款、定点超 100 款，一汽为战略股东，搭载红旗等车型。
+    valuation: { value: 125, unit: 亿元, asof: "2026-03", status: reported, note: 投前约 }
+    events:
+      - date: "2026-03"
+        kind: funding
+        title: 启动 20 亿元 Pre-IPO 融资，投前估值约 125 亿元，计划年内港股上市
+        amount: { value: 20, unit: 亿元 }
+        status: reported
+        sources: [{ title: 互联网科技：2026 智驾头部企业卓驭科技, url: "https://www.itbear.com.cn/html/2026-10/1575135.html", date: "2026-10" }]
+      - date: "2025-11"
+        kind: funding
+        title: 中国一汽完成超 36 亿元战略投资，估值突破百亿元
+        amount: { value: 36, unit: 亿元 }
+        investors: [中国一汽]
+        status: confirmed
+        sources: [{ title: 互联网科技：2026 智驾头部企业卓驭科技, url: "https://www.itbear.com.cn/html/2026-10/1575135.html", date: "2026-10" }]
+
+  - id: deeproute
+    name: 元戎启行
+    en: DeepRoute.ai
+    region: cn
+    track: autonomy
+    segment: adas
+    tags: [端到端, VLA, 港股IPO]
+    intro: 主打端到端和 VLA 智驾方案的第三方供应商，核心客户为长城和零跑，已秘密递表港交所。
+    events:
+      - date: "2026-04"
+        kind: ipo
+        title: 已秘密递交港股上市材料，递表比 Momenta 早约两个月，计划年内挂牌
+        status: reported
+        sources: [{ title: 36氪：轻舟、元戎秘交上市资料，和 Momenta 冲刺港股 IPO, url: "https://www.36kr.com/p/3748118174335747", date: "2026-04" }]
+
+  - id: qcraft
+    name: 轻舟智航
+    en: QCraft
+    region: cn
+    track: autonomy
+    segment: adas
+    tags: [城市NOA, 理想供应商, 港股IPO]
+    intro: 智驾方案公司，客户从理想扩展到奇瑞、吉利等车企，已秘密递表港交所。
+    valuation: { value: 1.5, unit: 十亿美元, asof: "2026-04", status: reported, note: 至少 }
+    events:
+      - date: "2026-04"
+        kind: ipo
+        title: 已秘密递交港股上市材料，最新估值 15–20 亿美元
+        status: reported
+        sources: [{ title: 36氪：轻舟、元戎秘交上市资料，和 Momenta 冲刺港股 IPO, url: "https://www.36kr.com/p/3748118174335747", date: "2026-04" }]
+
+  - id: applied-intuition
+    name: Applied Intuition
+    region: global
+    track: autonomy
+    segment: adas
+    tags: [车载软件, 仿真, 国防]
+    intro: 给车厂和国防客户提供自动驾驶软件、车载操作系统和仿真工具，全球前 20 大车企有 18 家在用，业务延伸到卡车、矿山、农业和军用。
+    valuation: { value: 15, unit: 十亿美元, asof: "2025", status: confirmed }
+    events:
+      - date: "2026-10-13"
+        kind: funding
+        title: 据 The Information，投资人报价估值至少 300 亿美元，较上轮 150 亿美元翻倍，新一轮或超 10 亿美元
+        status: reported
+        sources: [{ title: Tech Startups：Applied Intuition receives offers at $30 billion valuation, url: "https://techstartups.com/2026/10/13/applied-intuition-receives-investment-offers-at-30-billion-valuation-doubling-its-15-billion-valuation/", date: "2026-10-13" }]
+      - date: "2026-10-06"
+        kind: deployment
+        title: 宣布与本田、日产合作
+        status: confirmed
+        sources: [{ title: Tech Startups：Applied Intuition receives offers at $30 billion valuation, url: "https://techstartups.com/2026/10/13/applied-intuition-receives-investment-offers-at-30-billion-valuation-doubling-its-15-billion-valuation/", date: "2026-10-13" }]
+
+  # ───────── Robotaxi ─────────
+  - id: waymo
+    name: Waymo
+    region: global
+    track: autonomy
+    segment: robotaxi
+    tags: [Robotaxi, Alphabet, 全无人]
+    intro: Alphabet 旗下 Robotaxi 公司，全球全无人商业运营规模最大，在美国多城收费运营。
+    valuation: { value: 126, unit: 十亿美元, asof: "2026-02-02", status: confirmed, note: 投后 }
+    events:
+      - date: "2026-02-02"
+        kind: funding
+        title: 融资 160 亿美元，投后估值 1,260 亿美元，红杉、DST、Dragoneer 领投，Alphabet 出资大头
+        amount: { value: 16000, unit: 百万美元 }
+        investors: [Alphabet, Sequoia, DST Global, Dragoneer]
+        status: confirmed
+        sources: [{ title: Bloomberg：Waymo raises $16 billion from Alphabet and others, url: "https://news.bloomberglaw.com/private-equity/waymo-raises-16-billion-from-alphabet-others-to-expand-service", date: "2026-02-02" }]
+
+  - id: nuro
+    name: Nuro
+    region: global
+    track: autonomy
+    segment: robotaxi
+    tags: [L4授权, Uber, Lucid]
+    intro: 从无人配送转型为 L4 自动驾驶技术授权商，Uber 采用 Nuro Driver 与 Lucid 合作推出 Robotaxi，计划部署超 2 万辆，首个商业服务目标 2026 年底。
+    valuation: { value: 6, unit: 十亿美元, asof: "2025-08", status: confirmed }
+    events:
+      - date: "2026-01"
+        kind: deployment
+        title: Lucid–Nuro 工程样车开始道路测试，已获加州无安全员测试许可
+        status: confirmed
+        sources: [{ title: Sacra：Nuro valuation, funding & news, url: "https://sacra.com/c/nuro/", date: "2026" }]
+      - date: "2025-08"
+        kind: funding
+        title: E 轮共 2.03 亿美元收官，Uber 和英伟达联合领投，估值 60 亿美元（低于 2021 年峰值 86 亿美元）
+        amount: { value: 203, unit: 百万美元 }
+        investors: [Uber, Nvidia]
+        status: confirmed
+        sources: [{ title: Sacra：Nuro valuation, funding & news, url: "https://sacra.com/c/nuro/", date: "2026" }]
+
+  # ───────── 无人配送 ─────────
+  - id: zelos
+    name: 九识智能
+    en: Zelos
+    region: cn
+    track: autonomy
+    segment: delivery
+    tags: [RoboVan, 无人货运车, 菜鸟]
+    intro: 城配无人货运车（RoboVan）龙头，2026 年 1 月与菜鸟无人车战略合并，车队约 2 万台、覆盖 20 个国家 300 多座城市；中标中国邮政 7,000 台集采。
+    valuation: { value: 100, unit: 亿元, asof: "2026-02", status: reported, note: 超过 }
+    events:
+      - date: "2026-02"
+        kind: funding
+        title: 完成超 3 亿美元新一轮融资，累计融资超 8 亿美元，估值破百亿元
+        amount: { value: 300, unit: 百万美元 }
+        status: confirmed
+        sources: [{ title: 中华网：九识智能，RoboVan 首家百亿估值独角兽, url: "https://m.tech.china.com/hea/articles/20260331/202603311837536.html", date: "2026-03-31" }]
+      - date: "2026-01"
+        kind: deployment
+        title: 与菜鸟无人车战略合并
+        status: confirmed
+        sources: [{ title: 中华网：九识智能，RoboVan 首家百亿估值独角兽, url: "https://m.tech.china.com/hea/articles/20260331/202603311837536.html", date: "2026-03-31" }]
+
+  - id: neolix
+    name: 新石器
+    en: Neolix
+    region: cn
+    track: autonomy
+    segment: delivery
+    tags: [RoboVan, 无人配送, 中东]
+    intro: 北京亦庄的 L4 无人配送车公司，累计交付超 1.7 万台，市场份额约 36% 居第二；理想汽车是天使投资方和第二大股东，2026 年初腾讯入股。
+    founded: 2018
+    events:
+      - date: "2026-03"
+        kind: deployment
+        title: 受中东局势影响，阿联酋商业化运营暂停（2025 年 9 月拿到阿布扎比中东首张无人配送牌照）
+        status: confirmed
+        sources: [{ title: 36氪：新石器, url: "https://eu.36kr.com/zh/p/3887792964352647", date: "2026" }]
+      - date: "2025"
+        kind: funding
+        title: D 轮融资超 6 亿美元，阿联酋磊石资本领投，为国内自动驾驶最大单笔私募融资
+        amount: { value: 600, unit: 百万美元 }
+        investors: [磊石资本]
+        status: confirmed
+        sources: [{ title: 36氪：新石器, url: "https://eu.36kr.com/zh/p/3887792964352647", date: "2026" }]
+
+  - id: zipline
+    name: Zipline
+    region: global
+    track: autonomy
+    segment: delivery
+    tags: [无人机配送, 医疗, 零售]
+    intro: 全球规模最大的无人机配送公司，商业配送超 250 万次、过去 12 个月约 100 万次，从非洲医疗物资起家，进入美国零售和外卖配送。
+    valuation: { value: 7.6, unit: 十亿美元, asof: "2026", status: confirmed }
+    events:
+      - date: "2026-09-16"
+        kind: funding
+        title: 据彭博，洽谈约 10 亿美元新一轮，估值约 200 亿美元（年初一轮为 76 亿美元），Paradigm 领投
+        status: reported
+        sources: [{ title: STAT Times：Zipline in talks to raise $1 billion at a $20 billion valuation, url: "https://www.stattimes.com/amp/aviation/zipline-in-talks-to-raise-1billion-at-a-20billion-valuation-1360718", date: "2026-09-21" }]
+      - date: "2026"
+        kind: funding
+        title: 完成 6 亿美元融资，估值 76 亿美元，累计配送超 200 万次并扩展到休斯顿、凤凰城
+        amount: { value: 600, unit: 百万美元 }
+        status: confirmed
+        sources: [{ title: Bloomberg：Drone delivery startup Zipline hits $7.6 billion valuation, url: "https://news.bgov.com/private-equity/drone-delivery-startup-zipline-hits-7-6-billion-valuation", date: "2026" }]
+
+  # ───────── eVTOL 与飞行汽车 ─────────
+  - id: aeroht
+    name: 小鹏汇天
+    en: XPeng AeroHT
+    region: cn
+    track: autonomy
+    segment: evtol
+    tags: [飞行汽车, 陆地航母, 小鹏系]
+    intro: 小鹏汽车生态的飞行汽车公司，分体式“陆地航母”售价不超过 200 万元，累计预订超 3,000 台；广州黄埔工厂规划年产 1 万台，2026 年 3 月完成批量试产。
+    events:
+      - date: "2026-10-21"
+        kind: deployment
+        title: 向阿联酋拉斯海马酋长交付首架 X3-F 试验机；中东首单 600 台，为国内飞行汽车最大海外订单
+        status: confirmed
+        sources: [{ title: 新浪科技：中东“榜一大哥”率团来华提货，接收首架小鹏飞行汽车, url: "https://finance.sina.com.cn/tech/discovery/2026-10-21/doc-inivyaat6244524.shtml", date: "2026-10-21" }]
+
+  - id: autoflight
+    name: 峰飞航空
+    en: AutoFlight
+    region: cn
+    track: autonomy
+    segment: evtol
+    tags: [eVTOL, 物流, 吨级]
+    intro: 上海 eVTOL 公司，吨级货运 eVTOL V2000CG“凯瑞鸥”已交付客户，载人机型盛世龙在取证中；与顺丰合作低空物流。
+    events:
+      - date: "2026-09-11"
+        kind: deployment
+        title: 与零界航空、皖江金租签 30 架 V2000CG 采购协议（融资租赁模式），年内交付首批 5 架，9 月已交 2 架
+        status: confirmed
+        sources: [{ title: 新华财经：峰飞航空 30 架 eVTOL 三方合作, url: "https://www.cnfin.com/gs-lb/detail/20260911/4468902_1.html", date: "2026-09-11" }]
+
+  - id: volant
+    name: 沃飞长空
+    en: Aerofugia
+    region: cn
+    track: autonomy
+    segment: evtol
+    tags: [eVTOL, 吉利系, 科创板辅导]
+    intro: 吉利控股的载人 eVTOL 公司，6 座倾转机型 AE200 处于型号合格证第四阶段审定试飞，确认订单约 400 架，成都工厂一期年产 40–50 架；正冲刺科创板“低空经济第一股”。
+    events:
+      - date: "2026-04-01"
+        kind: ipo
+        title: 与中信建投签辅导协议，拟科创板上市
+        status: confirmed
+        sources: [{ title: 36氪：沃飞长空冲击“低空经济第一股”, url: "https://36kr.com/p/3797523666705666", date: "2026-05-06" }]
+      - date: "2026-02"
+        kind: funding
+        title: D 轮近 10 亿元，中信建投领投，联新资本、祥峰投资跟投
+        amount: { value: 10, unit: 亿元 }
+        investors: [中信建投, 联新资本, 祥峰投资]
+        status: confirmed
+        sources: [{ title: 36氪：沃飞长空冲击“低空经济第一股”, url: "https://36kr.com/p/3797523666705666", date: "2026-05-06" }]

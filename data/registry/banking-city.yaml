@@ -1,0 +1,2132 @@
+note: >
+  收录国家金融监督管理总局《银行业金融机构法人名单》中机构类型列为“城市商业银行”的全部法人机构，
+  不含其分支机构，也不含城市信用社、农村商业银行、股份制商业银行与民营银行。
+  名单版本为截至 2025 年 12 月 31 日（2026 年 8 月 14 日发布），共 123 家；与截至 2025 年 6 月末的 124 家相比减少 1 家，
+  系新疆汇和银行被新疆银行吸收合并。金融许可证信息查询系统中“机构类型＝城市商业银行、机构级别＝法人”的记录同为 123 条，可相互印证。
+  license_code 取自法人名单的“机构编码”字段；founded 取金融许可证的“批准成立日期”年份（该字段指监管部门批准该机构设立的日期）。
+  威海银行、广东华润银行两家在 2026 年已完成更名换证，本文件机构名称沿用 2025 年末法人名单口径，并在 intro 中注明换证情况。
+sources:
+  - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+  - { title: "国家金融监督管理总局 政府信息公开 机构监管", url: "https://www.nfra.gov.cn/cn/view/pages/governmentDetail.html?docId=1268142&generaltype=1&itemId=863", date: "2026-08-14" }
+  - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+entities:
+  - id: bkc-bank-of-beijing
+    name: 北京银行股份有限公司
+    short: 北京银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0107H211000001
+    regulator: 国家金融监督管理总局
+    founded: 1995
+    listed: ["601169.SH"]
+    website: https://www.bankofbeijing.com.cn/
+    intro: 北京银行总部位于北京，金融许可证批准成立日期为 1995-12-28，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "北京银行官方网站", url: "https://www.bankofbeijing.com.cn/", date: "2026-09-30" }
+  - id: bkc-bank-of-tianjin
+    name: 天津银行股份有限公司
+    short: 天津银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0108H212000001
+    regulator: 国家金融监督管理总局
+    founded: 1996
+    listed: ["01578.HK"]
+    website: https://www.bankoftianjin.com/
+    intro: 天津银行总部位于天津，金融许可证批准成立日期为 1996-10-29，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "天津银行官方网站", url: "https://www.bankoftianjin.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-hebei
+    name: 河北银行股份有限公司
+    short: 河北银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0282H213010001
+    regulator: 国家金融监督管理总局
+    founded: 1996
+    website: https://www.hebbank.com/
+    intro: 河北银行是一家注册在河北省的城市商业银行法人机构，金融许可证批准成立日期为 1996-05-06。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "河北银行官方网站", url: "https://www.hebbank.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-baoding
+    name: 保定银行股份有限公司
+    short: 保定银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0340H313060001
+    regulator: 国家金融监督管理总局
+    founded: 2008
+    website: https://www.bd-bank.com.cn/
+    intro: 保定银行总部位于保定，金融许可证批准成立日期为 2008-07-11，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "保定银行官方网站", url: "https://www.bd-bank.com.cn/", date: "2026-09-30" }
+  - id: bkc-bank-of-cangzhou
+    name: 沧州银行股份有限公司
+    short: 沧州银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1018H313090001
+    regulator: 国家金融监督管理总局
+    founded: 1998
+    website: https://www.bankcz.com/
+    intro: 沧州银行总部位于沧州，金融许可证批准成立日期为 1998-06-14，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "沧州银行官方网站", url: "https://www.bankcz.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-chengde
+    name: 承德银行股份有限公司
+    short: 承德银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1021H313080001
+    regulator: 国家金融监督管理总局
+    founded: 2006
+    website: https://www.chengdebank.com/
+    intro: 承德银行总部位于承德，金融许可证批准成立日期为 2006-04-30，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "承德银行官方网站", url: "https://www.chengdebank.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-handan
+    name: 邯郸银行股份有限公司
+    short: 邯郸银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0331H313040001
+    regulator: 国家金融监督管理总局
+    founded: 2008
+    website: https://hdcb.cn/
+    intro: 邯郸银行总部位于邯郸，金融许可证批准成立日期为 2008-06-10，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "邯郸银行官方网站", url: "https://hdcb.cn/", date: "2026-09-30" }
+  - id: bkc-bank-of-hengshui
+    name: 衡水银行股份有限公司
+    short: 衡水银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1016H313110001
+    regulator: 国家金融监督管理总局
+    founded: 2009
+    website: http://www.hengshuibank.com/
+    intro: 衡水银行总部位于衡水，金融许可证批准成立日期为 2009-05-15，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "衡水银行官方网站", url: "http://www.hengshuibank.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-langfang
+    name: 廊坊银行股份有限公司
+    short: 廊坊银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0277H313100001
+    regulator: 国家金融监督管理总局
+    founded: 2000
+    website: https://www.lccb.com.cn/
+    intro: 廊坊银行总部位于廊坊，金融许可证批准成立日期为 2000-12-20，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "廊坊银行官方网站", url: "https://www.lccb.com.cn/", date: "2026-09-30" }
+  - id: bkc-bank-of-qinhuangdao
+    name: 秦皇岛银行股份有限公司
+    short: 秦皇岛银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0111H313030002
+    regulator: 国家金融监督管理总局
+    founded: 1998
+    website: https://www.qhdbank.cn/
+    intro: 秦皇岛银行总部位于秦皇岛，金融许可证批准成立日期为 1998-04-30，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "秦皇岛银行官方网站", url: "https://www.qhdbank.cn/", date: "2026-09-30" }
+  - id: bkc-bank-of-tangshan
+    name: 唐山银行股份有限公司
+    short: 唐山银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1013H313020001
+    regulator: 国家金融监督管理总局
+    founded: 1998
+    website: https://www.ts-bank.cn/
+    intro: 唐山银行总部位于唐山，金融许可证批准成立日期为 1998-05-20，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "唐山银行官方网站", url: "https://www.ts-bank.cn/", date: "2026-09-30" }
+  - id: bkc-bank-of-xingtai
+    name: 邢台银行股份有限公司
+    short: 邢台银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0301H313050001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://xtbank.com/
+    intro: 邢台银行总部位于邢台，金融许可证批准成立日期为 2007-09-17，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "邢台银行官方网站", url: "https://xtbank.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-zhangjiakou
+    name: 张家口银行股份有限公司
+    short: 张家口银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0772H313070001
+    regulator: 国家金融监督管理总局
+    founded: 2003
+    website: https://www.zjkccb.com/
+    intro: 张家口银行总部位于张家口，金融许可证批准成立日期为 2003-02-10，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "张家口银行官方网站", url: "https://www.zjkccb.com/", date: "2026-09-30" }
+  - id: bkc-jinshang-bank
+    name: 晋商银行股份有限公司
+    short: 晋商银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0116H214010001
+    regulator: 国家金融监督管理总局
+    founded: 1998
+    listed: ["02558.HK"]
+    website: https://www.jshbank.com/
+    intro: 晋商银行总部位于太原，金融许可证批准成立日期为 1998-09-23，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "晋商银行官方网站", url: "https://www.jshbank.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-inner-mongolia
+    name: 内蒙古银行股份有限公司
+    short: 内蒙古银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1033H215010001
+    regulator: 国家金融监督管理总局
+    founded: 1999
+    website: https://www.boimc.com.cn/
+    intro: 内蒙古银行是一家注册在内蒙古自治区的城市商业银行法人机构，金融许可证批准成立日期为 1999-11-19。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "内蒙古银行官方网站", url: "https://www.boimc.com.cn/", date: "2026-09-30" }
+  - id: bkc-ordos-bank
+    name: 鄂尔多斯银行股份有限公司
+    short: 鄂尔多斯银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1067H315060001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.ordosbank.com/
+    intro: 鄂尔多斯银行总部位于鄂尔多斯，金融许可证批准成立日期为 2007-08-20，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "鄂尔多斯银行官方网站", url: "https://www.ordosbank.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-wuhai
+    name: 乌海银行股份有限公司
+    short: 乌海银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1068H315030001
+    regulator: 国家金融监督管理总局
+    founded: 2006
+    website: https://www.wuhaicb.com/
+    intro: 乌海银行总部位于乌海，金融许可证批准成立日期为 2006-08-28，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "乌海银行官方网站", url: "https://www.wuhaicb.com/", date: "2026-09-30" }
+  - id: bkc-shengjing-bank
+    name: 盛京银行股份有限公司
+    short: 盛京银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0264H221010001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    website: https://www.shengjingbank.com.cn/
+    intro: 盛京银行总部位于沈阳，金融许可证批准成立日期为 1997-04-07，是一家城市商业银行法人机构。H 股已于 2025 年 11 月 20 日从香港联合交易所退市。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "盛京银行官方网站", url: "https://www.shengjingbank.com.cn/", date: "2026-09-30" }
+  - id: bkc-bank-of-jinzhou
+    name: 锦州银行股份有限公司
+    short: 锦州银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0127H321070001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    website: https://www.jinzhoubank.com/
+    intro: 锦州银行总部位于锦州，金融许可证批准成立日期为 1997-01-18，是一家城市商业银行法人机构。H 股已于 2024 年 4 月从香港联合交易所退市。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "锦州银行官方网站", url: "https://www.jinzhoubank.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-anshan
+    name: 鞍山银行股份有限公司
+    short: 鞍山银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0124H321030001
+    regulator: 国家金融监督管理总局
+    founded: 1998
+    website: https://www.bankofas.com/
+    intro: 鞍山银行总部位于鞍山，金融许可证批准成立日期为 1998-06-03，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "鞍山银行官方网站", url: "https://www.bankofas.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-benxi
+    name: 本溪银行股份有限公司
+    short: 本溪银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1071H321050001
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    website: https://www.bankofbx.com/
+    intro: 本溪银行总部位于本溪，金融许可证批准成立日期为 2010-03-30，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "本溪银行官方网站", url: "https://www.bankofbx.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-chaoyang
+    name: 朝阳银行股份有限公司
+    short: 朝阳银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0330H321130001
+    regulator: 国家金融监督管理总局
+    founded: 2008
+    website: https://www.cycb.com/
+    intro: 朝阳银行总部位于朝阳，金融许可证批准成立日期为 2008-06-12，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "朝阳银行官方网站", url: "https://www.cycb.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-dandong
+    name: 丹东银行股份有限公司
+    short: 丹东银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0126H321060001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    website: https://www.dandongbank.com/
+    intro: 丹东银行总部位于丹东，金融许可证批准成立日期为 1997-01-29，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "丹东银行官方网站", url: "https://www.dandongbank.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-fushun
+    name: 抚顺银行股份有限公司
+    short: 抚顺银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0125H321040001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    website: https://www.bankoffs.com.cn/
+    intro: 抚顺银行总部位于抚顺，金融许可证批准成立日期为 1997-02-05，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "抚顺银行官方网站", url: "https://www.bankoffs.com.cn/", date: "2026-09-30" }
+  - id: bkc-bank-of-fuxin
+    name: 阜新银行股份有限公司
+    short: 阜新银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0129H321090001
+    regulator: 国家金融监督管理总局
+    founded: 2001
+    website: https://www.fuxinbank.com/
+    intro: 阜新银行总部位于阜新，金融许可证批准成立日期为 2001-08-27，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "阜新银行官方网站", url: "https://www.fuxinbank.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-huludao
+    name: 葫芦岛银行股份有限公司
+    short: 葫芦岛银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0132H321140001
+    regulator: 国家金融监督管理总局
+    founded: 2001
+    website: https://www.bankofhld.com/
+    intro: 葫芦岛银行总部位于葫芦岛，金融许可证批准成立日期为 2001-08-27，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "葫芦岛银行官方网站", url: "https://www.bankofhld.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-panjin
+    name: 盘锦银行股份有限公司
+    short: 盘锦银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0131H321110001
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    website: https://www.bankofpj.com/
+    intro: 盘锦银行总部位于盘锦，金融许可证批准成立日期为 2005-01-25，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "盘锦银行官方网站", url: "https://www.bankofpj.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-tieling
+    name: 铁岭银行股份有限公司
+    short: 铁岭银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0267H321120001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.bankoftieling.com/
+    intro: 铁岭银行总部位于铁岭，金融许可证批准成立日期为 2007-05-29，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "铁岭银行官方网站", url: "https://www.bankoftieling.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-yingkou
+    name: 营口银行股份有限公司
+    short: 营口银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0128H321080001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    website: http://www.bankofyk.com/
+    intro: 营口银行总部位于营口，金融许可证批准成立日期为 1997-04-01，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "营口银行官方网站", url: "http://www.bankofyk.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-jilin
+    name: 吉林银行股份有限公司
+    short: 吉林银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0302H222010001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    website: https://www.jlbank.com.cn/
+    intro: 吉林银行总部位于长春，金融许可证批准成立日期为 1997-12-23，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "吉林银行官方网站", url: "https://www.jlbank.com.cn/", date: "2026-09-30" }
+  - id: bkc-harbin-bank
+    name: 哈尔滨银行股份有限公司
+    short: 哈尔滨银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0306H223010001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    listed: ["06138.HK"]
+    website: https://www.hrbb.com.cn/
+    intro: 哈尔滨银行总部位于哈尔滨，金融许可证批准成立日期为 1997-02-05，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "哈尔滨银行官方网站", url: "https://www.hrbb.com.cn/", date: "2026-09-30" }
+  - id: bkc-longjiang-bank
+    name: 龙江银行股份有限公司
+    short: 龙江银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1056H223010001
+    regulator: 国家金融监督管理总局
+    founded: 2009
+    website: https://www.lj-bank.com/
+    intro: 龙江银行是一家注册在黑龙江省的城市商业银行法人机构，金融许可证批准成立日期为 2009-12-21。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "龙江银行官方网站", url: "https://www.lj-bank.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-shanghai
+    name: 上海银行股份有限公司
+    short: 上海银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0139H231000001
+    regulator: 国家金融监督管理总局
+    founded: 1995
+    listed: ["601229.SH"]
+    website: https://www.bosc.cn/
+    intro: 上海银行总部位于上海，金融许可证批准成立日期为 1995-12-28，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "上海银行官方网站", url: "https://www.bosc.cn/", date: "2026-09-30" }
+  - id: bkc-bank-of-jiangsu
+    name: 江苏银行股份有限公司
+    short: 江苏银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0243H232010001
+    regulator: 国家金融监督管理总局
+    founded: 2006
+    listed: ["600919.SH"]
+    website: https://www.jsbchina.cn/
+    intro: 江苏银行是一家注册在江苏省的城市商业银行法人机构，金融许可证批准成立日期为 2006-12-31。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "江苏银行官方网站", url: "https://www.jsbchina.cn/", date: "2026-09-30" }
+  - id: bkc-bank-of-nanjing
+    name: 南京银行股份有限公司
+    short: 南京银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0140H232010001
+    regulator: 国家金融监督管理总局
+    founded: 1996
+    listed: ["601009.SH"]
+    website: https://www.njcb.com.cn/
+    intro: 南京银行总部位于南京，金融许可证批准成立日期为 1996-01-25，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "南京银行官方网站", url: "https://www.njcb.com.cn/", date: "2026-09-30" }
+  - id: bkc-bank-of-suzhou
+    name: 苏州银行股份有限公司
+    short: 苏州银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0236H332050001
+    regulator: 国家金融监督管理总局
+    founded: 2004
+    listed: ["002966.SZ"]
+    website: https://www.suzhoubank.com/
+    intro: 苏州银行总部位于苏州，金融许可证批准成立日期为 2004-12-17，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "苏州银行官方网站", url: "https://www.suzhoubank.com/", date: "2026-09-30" }
+  - id: bkc-jiangsu-changjiang-commercial-bank
+    name: 江苏长江商业银行股份有限公司
+    short: 江苏长江商业银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0347H332120001
+    regulator: 国家金融监督管理总局
+    founded: 2008
+    website: https://www.cjccb.com/
+    intro: 江苏长江商业银行是一家注册在江苏省的城市商业银行法人机构，金融许可证批准成立日期为 2008-09-17。前身是 1988 年创立的靖江长江城市信用社。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "江苏长江商业银行官方网站", url: "https://www.cjccb.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-hangzhou
+    name: 杭州银行股份有限公司
+    short: 杭州银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0151H233010001
+    regulator: 国家金融监督管理总局
+    founded: 1996
+    listed: ["600926.SH"]
+    website: https://www.hzbank.com.cn/
+    intro: 杭州银行总部位于杭州，金融许可证批准成立日期为 1996-09-21，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "杭州银行官方网站", url: "https://www.hzbank.com.cn/", date: "2026-09-30" }
+  - id: bkc-bank-of-huzhou
+    name: 湖州银行股份有限公司
+    short: 湖州银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0155H233050001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    website: http://www.hzccb.com/
+    intro: 湖州银行总部位于湖州，金融许可证批准成立日期为 1997-12-23，是一家城市商业银行法人机构。以绿色金融为特色，本行官网称其为境内第三家赤道银行。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "湖州银行官方网站", url: "http://www.hzccb.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-jiaxing
+    name: 嘉兴银行股份有限公司
+    short: 嘉兴银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0154H233040001
+    regulator: 国家金融监督管理总局
+    founded: 1996
+    website: https://www.bojx.com/
+    intro: 嘉兴银行总部位于嘉兴，金融许可证批准成立日期为 1996-12-05，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "嘉兴银行官方网站", url: "https://www.bojx.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-jinhua
+    name: 金华银行股份有限公司
+    short: 金华银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0157H233070001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    website: https://www.jhccb.com.cn/
+    intro: 金华银行总部位于金华，金融许可证批准成立日期为 1997-11-24，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "金华银行官方网站", url: "https://www.jhccb.com.cn/", date: "2026-09-30" }
+  - id: bkc-bank-of-shaoxing
+    name: 绍兴银行股份有限公司
+    short: 绍兴银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0156H233060001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    website: https://www.sxccb.com/
+    intro: 绍兴银行总部位于绍兴，金融许可证批准成立日期为 1997-11-27，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "绍兴银行官方网站", url: "https://www.sxccb.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-taizhou
+    name: 台州银行股份有限公司
+    short: 台州银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0159H233100001
+    regulator: 国家金融监督管理总局
+    founded: 2002
+    website: https://www.tzbank.com/
+    intro: 台州银行总部位于台州，金融许可证批准成立日期为 2002-03-11，是一家城市商业银行法人机构。本行官网称其在小微金融领域深耕多年，是浙江省内网点覆盖较全的城商行之一。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "台州银行官方网站", url: "https://www.tzbank.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-wenzhou
+    name: 温州银行股份有限公司
+    short: 温州银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0153H233030001
+    regulator: 国家金融监督管理总局
+    founded: 1998
+    website: https://www.wzbank.cn/
+    intro: 温州银行总部位于温州，金融许可证批准成立日期为 1998-11-17，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "温州银行官方网站", url: "https://www.wzbank.cn/", date: "2026-09-30" }
+  - id: bkc-zhejiang-chouzhou-commercial-bank
+    name: 浙江稠州商业银行股份有限公司
+    short: 浙江稠州商业银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0158H233070001
+    regulator: 国家金融监督管理总局
+    founded: 2006
+    website: https://www.czcb.com.cn/
+    intro: 浙江稠州商业银行是一家注册在浙江省的城市商业银行法人机构，金融许可证批准成立日期为 2006-08-14。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "浙江稠州商业银行官方网站", url: "https://www.czcb.com.cn/", date: "2026-09-30" }
+  - id: bkc-zhejiang-mintai-commercial-bank
+    name: 浙江民泰商业银行股份有限公司
+    short: 浙江民泰商业银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0161H233100001
+    regulator: 国家金融监督管理总局
+    founded: 2006
+    website: https://mintaibank.com/
+    intro: 浙江民泰商业银行总部位于温岭，金融许可证批准成立日期为 2006-08-14，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "浙江民泰商业银行官方网站", url: "https://mintaibank.com/", date: "2026-09-30" }
+  - id: bkc-zhejiang-tailong-commercial-bank
+    name: 浙江泰隆商业银行股份有限公司
+    short: 浙江泰隆商业银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0160H233100001
+    regulator: 国家金融监督管理总局
+    founded: 2006
+    website: https://www.zjtlcb.com/
+    intro: 浙江泰隆商业银行是一家注册在浙江省的城市商业银行法人机构，金融许可证批准成立日期为 2006-08-14。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "浙江泰隆商业银行官方网站", url: "https://www.zjtlcb.com/", date: "2026-09-30" }
+  - id: bkc-huishang-bank
+    name: 徽商银行股份有限公司
+    short: 徽商银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0162H234010001
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    listed: ["03698.HK"]
+    website: https://www.hsbank.com.cn/
+    intro: 徽商银行是一家注册在安徽省的城市商业银行法人机构，金融许可证批准成立日期为 2005-11-30。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "徽商银行官方网站", url: "https://www.hsbank.com.cn/", date: "2026-09-30" }
+  - id: bkc-fujian-haixia-bank
+    name: 福建海峡银行股份有限公司
+    short: 福建海峡银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0163H235010001
+    regulator: 国家金融监督管理总局
+    founded: 1996
+    website: https://www.fjhxbank.com/
+    intro: 福建海峡银行是一家注册在福建省的城市商业银行法人机构，金融许可证批准成立日期为 1996-12-25。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "福建海峡银行官方网站", url: "https://www.fjhxbank.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-quanzhou
+    name: 泉州银行股份有限公司
+    short: 泉州银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0271H335050001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    website: https://www.qzccbank.com/
+    intro: 泉州银行总部位于泉州，金融许可证批准成立日期为 1997-06-17，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "泉州银行官方网站", url: "https://www.qzccbank.com/", date: "2026-09-30" }
+  - id: bkc-jiangxi-bank
+    name: 江西银行股份有限公司
+    short: 江西银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0792H236010001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    listed: ["01916.HK"]
+    website: https://www.jx-bank.com/
+    intro: 江西银行是一家注册在江西省的城市商业银行法人机构，金融许可证批准成立日期为 1997-12-31。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "江西银行官方网站", url: "https://www.jx-bank.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-ganzhou
+    name: 赣州银行股份有限公司
+    short: 赣州银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0353H336070001
+    regulator: 国家金融监督管理总局
+    founded: 2001
+    website: https://www.bankgz.com/
+    intro: 赣州银行总部位于赣州，金融许可证批准成立日期为 2001-01-16，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "赣州银行官方网站", url: "https://www.bankgz.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-jiujiang
+    name: 九江银行股份有限公司
+    short: 九江银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0348H336040001
+    regulator: 国家金融监督管理总局
+    founded: 2000
+    listed: ["06190.HK"]
+    website: https://www.jjccb.com/
+    intro: 九江银行总部位于九江，金融许可证批准成立日期为 2000-10-26，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "九江银行官方网站", url: "https://www.jjccb.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-shangrao
+    name: 上饶银行股份有限公司
+    short: 上饶银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1030H336110001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.srbank.cn/
+    intro: 上饶银行总部位于上饶，金融许可证批准成立日期为 2007-06-12，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "上饶银行官方网站", url: "https://www.srbank.cn/", date: "2026-09-30" }
+  - id: bkc-qilu-bank
+    name: 齐鲁银行股份有限公司
+    short: 齐鲁银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0169H237010001
+    regulator: 国家金融监督管理总局
+    founded: 1996
+    listed: ["601665.SH"]
+    website: https://www.qlbchina.com/
+    intro: 齐鲁银行是一家注册在山东省的城市商业银行法人机构，金融许可证批准成立日期为 1996-05-28。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "齐鲁银行官方网站", url: "https://www.qlbchina.com/", date: "2026-09-30" }
+  - id: bkc-dezhou-bank
+    name: 德州银行股份有限公司
+    short: 德州银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0180H337140001
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    website: https://www.dzbchina.com/
+    intro: 德州银行总部位于德州，金融许可证批准成立日期为 2005-01-01，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "德州银行官方网站", url: "https://www.dzbchina.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-dongying
+    name: 东营银行股份有限公司
+    short: 东营银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0172H337050001
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    website: https://www.dyccb.net/
+    intro: 东营银行总部位于东营，金融许可证批准成立日期为 2005-08-05，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "东营银行官方网站", url: "https://www.dyccb.net/", date: "2026-09-30" }
+  - id: bkc-bank-of-jining
+    name: 济宁银行股份有限公司
+    short: 济宁银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0175H337080001
+    regulator: 国家金融监督管理总局
+    founded: 2006
+    website: https://www.jn-bank.com/
+    intro: 济宁银行总部位于济宁，金融许可证批准成立日期为 2006-08-16，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "济宁银行官方网站", url: "https://www.jn-bank.com/", date: "2026-09-30" }
+  - id: bkc-laishang-bank
+    name: 莱商银行股份有限公司
+    short: 莱商银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0325H337120001
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    website: https://www.lsbankchina.com/
+    intro: 莱商银行是一家注册在山东省的城市商业银行法人机构，金融许可证批准成立日期为 2005-07-13。总行已由济南市莱芜区迁至济南市区，金融许可证机构编码相应换发为 B0325H237010001。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "莱商银行官方网站", url: "https://www.lsbankchina.com/", date: "2026-09-30" }
+  - id: bkc-linshang-bank
+    name: 临商银行股份有限公司
+    short: 临商银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0179H337130001
+    regulator: 国家金融监督管理总局
+    founded: 1998
+    website: https://www.lsbchina.com/
+    intro: 临商银行是一家注册在山东省的城市商业银行法人机构，金融许可证批准成立日期为 1998-01-09。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "临商银行官方网站", url: "https://www.lsbchina.com/", date: "2026-09-30" }
+  - id: bkc-qi-shang-bank
+    name: 齐商银行股份有限公司
+    short: 齐商银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0171H337030001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    website: https://www.qsbank.cc/
+    intro: 齐商银行总部位于淄博，金融许可证批准成立日期为 1997-08-14，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "齐商银行官方网站", url: "https://www.qsbank.cc/", date: "2026-09-30" }
+  - id: bkc-bank-of-rizhao
+    name: 日照银行股份有限公司
+    short: 日照银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0177H337110001
+    regulator: 国家金融监督管理总局
+    founded: 2000
+    website: https://www.bankofrizhao.com.cn/
+    intro: 日照银行总部位于日照，金融许可证批准成立日期为 2000-12-27，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "日照银行官方网站", url: "https://www.bankofrizhao.com.cn/", date: "2026-09-30" }
+  - id: bkc-bank-of-taian
+    name: 泰安银行股份有限公司
+    short: 泰安银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0297H337090001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.taccb.com.cn/
+    intro: 泰安银行总部位于泰安，金融许可证批准成立日期为 2007-06-01，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "泰安银行官方网站", url: "https://www.taccb.com.cn/", date: "2026-09-30" }
+  - id: bkc-weihai-city-commercial-bank
+    name: 威海市商业银行股份有限公司
+    short: 威海市商业银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0176H337100001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    listed: ["09677.HK"]
+    website: https://www.whccb.com/
+    intro: 威海市商业银行是一家注册在山东省的城市商业银行法人机构，金融许可证批准成立日期为 1997-06-28。截至 2026 年 9 月已启用威海银行品牌，金融许可证登记名称为威海银行股份有限公司。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "威海市商业银行官方网站", url: "https://www.whccb.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-weifang
+    name: 潍坊银行股份有限公司
+    short: 潍坊银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0174H337070001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    website: https://www.bankwf.com/
+    intro: 潍坊银行总部位于潍坊，金融许可证批准成立日期为 1997-07-22，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "潍坊银行官方网站", url: "https://www.bankwf.com/", date: "2026-09-30" }
+  - id: bkc-yantai-bank
+    name: 烟台银行股份有限公司
+    short: 烟台银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0173H337060001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    website: https://www.yantaibank.net/
+    intro: 烟台银行总部位于烟台，金融许可证批准成立日期为 1997-10-24，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "烟台银行官方网站", url: "https://www.yantaibank.net/", date: "2026-09-30" }
+  - id: bkc-zaozhuang-bank
+    name: 枣庄银行股份有限公司
+    short: 枣庄银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0290H337040001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: https://www.zaozhuangbank.com/
+    intro: 枣庄银行总部位于枣庄，金融许可证批准成立日期为 2007-05-21，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "枣庄银行官方网站", url: "https://www.zaozhuangbank.com/", date: "2026-09-30" }
+  - id: bkc-zhongyuan-bank
+    name: 中原银行股份有限公司
+    short: 中原银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0615H241010001
+    regulator: 国家金融监督管理总局
+    founded: 2014
+    listed: ["01216.HK"]
+    website: https://www.zybank.com.cn/
+    intro: 中原银行是一家注册在河南省的城市商业银行法人机构，金融许可证批准成立日期为 2014-12-23。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "中原银行官方网站", url: "https://www.zybank.com.cn/", date: "2026-09-30" }
+  - id: bkc-bank-of-zhengzhou
+    name: 郑州银行股份有限公司
+    short: 郑州银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1036H241010001
+    regulator: 国家金融监督管理总局
+    founded: 2009
+    listed: ["002936.SZ", "06196.HK"]
+    website: https://www.zzbank.cn/
+    intro: 郑州银行总部位于郑州，金融许可证批准成立日期为 2009-09-11，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "郑州银行官方网站", url: "https://www.zzbank.cn/", date: "2026-09-30" }
+  - id: bkc-bank-of-hunan
+    name: 湖南银行股份有限公司
+    short: 湖南银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1099H243010001
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    website: https://www.hunan-bank.com/
+    intro: 湖南银行总部位于长沙，金融许可证批准成立日期为 2010-10-08，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "湖南银行官方网站", url: "https://www.hunan-bank.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-changsha
+    name: 长沙银行股份有限公司
+    short: 长沙银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0192H243010001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    listed: ["601577.SH"]
+    website: https://www.cscb.cn/
+    intro: 长沙银行总部位于长沙，金融许可证批准成立日期为 1997-05-13，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "长沙银行官方网站", url: "https://www.cscb.cn/", date: "2026-09-30" }
+  - id: bkc-hankou-bank
+    name: 汉口银行股份有限公司
+    short: 汉口银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0187H242010002
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    website: http://www.hkbchina.com/
+    intro: 汉口银行总部位于武汉，金融许可证批准成立日期为 1997-11-27，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "汉口银行官方网站", url: "http://www.hkbchina.com/", date: "2026-09-30" }
+  - id: bkc-hubei-bank
+    name: 湖北银行股份有限公司
+    short: 湖北银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1151H242010001
+    regulator: 国家金融监督管理总局
+    founded: 2011
+    website: http://www.hubeibank.cn/
+    intro: 湖北银行总部位于武汉，金融许可证批准成立日期为 2011-02-25，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "湖北银行官方网站", url: "http://www.hubeibank.cn/", date: "2026-09-30" }
+  - id: bkc-bank-of-guangzhou
+    name: 广州银行股份有限公司
+    short: 广州银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1041H244010001
+    regulator: 国家金融监督管理总局
+    founded: 1996
+    website: http://www.gzcb.com.cn/
+    intro: 广州银行总部位于广州，金融许可证批准成立日期为 1996-08-08，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "广州银行官方网站", url: "http://www.gzcb.com.cn/", date: "2026-09-30" }
+  - id: bkc-bank-of-dongguan
+    name: 东莞银行股份有限公司
+    short: 东莞银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0201H244190001
+    regulator: 国家金融监督管理总局
+    founded: 1999
+    website: https://www.dongguanbank.cn/
+    intro: 东莞银行总部位于东莞，金融许可证批准成立日期为 1999-08-31，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "东莞银行官方网站", url: "https://www.dongguanbank.cn/", date: "2026-09-30" }
+  - id: bkc-guangdong-huaxing-bank
+    name: 广东华兴银行股份有限公司
+    short: 广东华兴银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1194H244050001
+    regulator: 国家金融监督管理总局
+    founded: 2011
+    website: https://www.ghbank.com.cn/
+    intro: 广东华兴银行总部位于汕头，金融许可证批准成立日期为 2011-08-26，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "广东华兴银行官方网站", url: "https://www.ghbank.com.cn/", date: "2026-09-30" }
+  - id: bkc-guangdong-nanyue-bank
+    name: 广东南粤银行股份有限公司
+    short: 广东南粤银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0200H344080001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    website: https://www.gdnybank.com/
+    intro: 广东南粤银行是一家注册在广东省的城市商业银行法人机构，金融许可证批准成立日期为 1997-12-19。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "广东南粤银行官方网站", url: "https://www.gdnybank.com/", date: "2026-09-30" }
+  - id: bkc-china-resources-bank-of-zhuhai
+    name: 珠海华润银行股份有限公司
+    short: 珠海华润银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0199H244040001
+    regulator: 国家金融监督管理总局
+    founded: 1996
+    website: https://www.crbank.com.cn/
+    intro: 珠海华润银行总部位于珠海，金融许可证批准成立日期为 1996-12-23，是一家城市商业银行法人机构。截至 2026 年 9 月已启用广东华润银行品牌，金融许可证登记名称为广东华润银行股份有限公司，机构编码换发为 B0199H344040001。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "珠海华润银行官方网站", url: "https://www.crbank.com.cn/", date: "2026-09-30" }
+  - id: bkc-guangxi-beibu-gulf-bank
+    name: 广西北部湾银行股份有限公司
+    short: 广西北部湾银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0349H245010001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    website: https://www.bankofbbg.com/
+    intro: 广西北部湾银行总部位于南宁，金融许可证批准成立日期为 1997-03-19，是一家城市商业银行法人机构。业务覆盖南宁、桂林、柳州等广西主要城市，设有北部湾村镇银行等附属机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "广西北部湾银行官方网站", url: "https://www.bankofbbg.com/", date: "2026-09-30" }
+  - id: bkc-guilin-bank
+    name: 桂林银行股份有限公司
+    short: 桂林银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1105H245030001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    website: https://www.guilinbank.com.cn/
+    intro: 桂林银行总部位于桂林，金融许可证批准成立日期为 1997-03-19，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "桂林银行官方网站", url: "https://www.guilinbank.com.cn/", date: "2026-09-30" }
+  - id: bkc-bank-of-liuzhou
+    name: 柳州银行股份有限公司
+    short: 柳州银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1087H245020001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    website: https://www.lzccb.com/
+    intro: 柳州银行总部位于柳州，金融许可证批准成立日期为 1997-03-04，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "柳州银行官方网站", url: "https://www.lzccb.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-hainan
+    name: 海南银行股份有限公司
+    short: 海南银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0729H246010001
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: https://www.hnbankchina.com.cn/
+    intro: 海南银行总部位于海口，金融许可证批准成立日期为 2015-08-14，是一家城市商业银行法人机构。本行官网称其为海南唯一的省级法人城市商业银行。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "海南银行官方网站", url: "https://www.hnbankchina.com.cn/", date: "2026-09-30" }
+  - id: bkc-chongqing-three-gorges-bank
+    name: 重庆三峡银行股份有限公司
+    short: 重庆三峡银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0205H250000001
+    regulator: 国家金融监督管理总局
+    founded: 1998
+    website: https://www.ccqtgb.com/
+    intro: 重庆三峡银行总部位于重庆，金融许可证批准成立日期为 1998-01-27，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "重庆三峡银行官方网站", url: "https://www.ccqtgb.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-chongqing
+    name: 重庆银行股份有限公司
+    short: 重庆银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0206H250000001
+    regulator: 国家金融监督管理总局
+    founded: 1996
+    listed: ["601963.SH", "01963.HK"]
+    website: https://cqcbank.com/
+    intro: 重庆银行总部位于重庆，金融许可证批准成立日期为 1996-09-02，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "重庆银行官方网站", url: "https://cqcbank.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-chengdu
+    name: 成都银行股份有限公司
+    short: 成都银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0207H251010001
+    regulator: 国家金融监督管理总局
+    founded: 1996
+    listed: ["601838.SH"]
+    website: https://www.bocd.com.cn/
+    intro: 成都银行总部位于成都，金融许可证批准成立日期为 1996-12-22，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "成都银行官方网站", url: "https://www.bocd.com.cn/", date: "2026-09-30" }
+  - id: bkc-bank-of-dazhou
+    name: 达州银行股份有限公司
+    short: 达州银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1053H251170001
+    regulator: 国家金融监督管理总局
+    founded: 2001
+    website: https://www.dzccb.com.cn/
+    intro: 达州银行总部位于达州，金融许可证批准成立日期为 2001-10-24，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "达州银行官方网站", url: "https://www.dzccb.com.cn/", date: "2026-09-30" }
+  - id: bkc-great-wall-west-china-bank
+    name: 长城华西银行股份有限公司
+    short: 长城华西银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0211H251060002
+    regulator: 国家金融监督管理总局
+    founded: 1998
+    website: https://www.gwbank.com.cn/
+    intro: 长城华西银行是一家城市商业银行法人机构，金融许可证批准成立日期为 1998-09-02。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "长城华西银行官方网站", url: "https://www.gwbank.com.cn/", date: "2026-09-30" }
+  - id: bkc-leshan-city-commercial-bank
+    name: 乐山市商业银行股份有限公司
+    short: 乐山市商业银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0213H251110001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    website: https://www.lsccb.com/
+    intro: 乐山市商业银行总部位于乐山，金融许可证批准成立日期为 1997-01-29，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "乐山市商业银行官方网站", url: "https://www.lsccb.com/", date: "2026-09-30" }
+  - id: bkc-luzhou-bank
+    name: 泸州银行股份有限公司
+    short: 泸州银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0210H251050001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    listed: ["01983.HK"]
+    website: https://www.lzccb.cn/
+    intro: 泸州银行总部位于泸州，金融许可证批准成立日期为 1997-09-11，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "泸州银行官方网站", url: "https://www.lzccb.cn/", date: "2026-09-30" }
+  - id: bkc-mianyang-city-commercial-bank
+    name: 绵阳市商业银行股份有限公司
+    short: 绵阳市商业银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0212H251070001
+    regulator: 国家金融监督管理总局
+    founded: 2000
+    website: https://www.mycc-bank.com/
+    intro: 绵阳市商业银行总部位于绵阳，金融许可证批准成立日期为 2000-09-22，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "绵阳市商业银行官方网站", url: "https://www.mycc-bank.com/", date: "2026-09-30" }
+  - id: bkc-sichuan-tianfu-bank
+    name: 四川天府银行股份有限公司
+    short: 四川天府银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0214H251130001
+    regulator: 国家金融监督管理总局
+    founded: 2001
+    website: https://www.tf.cn/
+    intro: 四川天府银行是一家注册在四川省的城市商业银行法人机构，金融许可证批准成立日期为 2001-12-25。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "四川天府银行官方网站", url: "https://www.tf.cn/", date: "2026-09-30" }
+  - id: bkc-suining-bank
+    name: 遂宁银行股份有限公司
+    short: 遂宁银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0317H251090001
+    regulator: 国家金融监督管理总局
+    founded: 2008
+    website: https://www.snccb.com/
+    intro: 遂宁银行总部位于遂宁，金融许可证批准成立日期为 2008-01-04，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "遂宁银行官方网站", url: "https://www.snccb.com/", date: "2026-09-30" }
+  - id: bkc-yaan-city-commercial-bank
+    name: 雅安市商业银行股份有限公司
+    short: 雅安市商业银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0343H251180001
+    regulator: 国家金融监督管理总局
+    founded: 2008
+    website: https://www.yaccb.cn/
+    intro: 雅安市商业银行总部位于雅安，金融许可证批准成立日期为 2008-09-01，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "雅安市商业银行官方网站", url: "https://www.yaccb.cn/", date: "2026-09-30" }
+  - id: bkc-yibin-city-commercial-bank
+    name: 宜宾市商业银行股份有限公司
+    short: 宜宾市商业银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0284H251150001
+    regulator: 国家金融监督管理总局
+    founded: 2006
+    listed: ["02596.HK"]
+    website: https://www.ybccb.com/
+    intro: 宜宾市商业银行总部位于宜宾，金融许可证批准成立日期为 2006-12-25，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "宜宾市商业银行官方网站", url: "https://www.ybccb.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-zigong
+    name: 自贡银行股份有限公司
+    short: 自贡银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0208H251030001
+    regulator: 国家金融监督管理总局
+    founded: 2001
+    website: https://www.zgbank.com.cn/
+    intro: 自贡银行总部位于自贡，金融许可证批准成立日期为 2001-12-25，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "自贡银行官方网站", url: "https://www.zgbank.com.cn/", date: "2026-09-30" }
+  - id: bkc-bank-of-guiyang
+    name: 贵阳银行股份有限公司
+    short: 贵阳银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0215H252010001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    listed: ["601997.SH"]
+    website: https://www.bankgy.cn/
+    intro: 贵阳银行总部位于贵阳，金融许可证批准成立日期为 1997-03-19，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "贵阳银行官方网站", url: "https://www.bankgy.cn/", date: "2026-09-30" }
+  - id: bkc-bank-of-guizhou
+    name: 贵州银行股份有限公司
+    short: 贵州银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1383H252010001
+    regulator: 国家金融监督管理总局
+    founded: 2012
+    listed: ["06199.HK"]
+    website: https://www.bgzchina.com/
+    intro: 贵州银行是一家注册在贵州省的城市商业银行法人机构，金融许可证批准成立日期为 2012-09-26。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "贵州银行官方网站", url: "https://www.bgzchina.com/", date: "2026-09-30" }
+  - id: bkc-fudian-bank
+    name: 富滇银行股份有限公司
+    short: 富滇银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0258H253010001
+    regulator: 国家金融监督管理总局
+    founded: 1996
+    website: https://www.fudian-bank.com/
+    intro: 富滇银行是一家注册在云南省的城市商业银行法人机构，金融许可证批准成立日期为 1996-12-28。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "富滇银行官方网站", url: "https://www.fudian-bank.com/", date: "2026-09-30" }
+  - id: bkc-qujing-city-commercial-bank
+    name: 曲靖市商业银行股份有限公司
+    short: 曲靖市商业银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0259H253030001
+    regulator: 国家金融监督管理总局
+    founded: 2006
+    website: https://www.qjccb.com/
+    intro: 曲靖市商业银行总部位于曲靖，金融许可证批准成立日期为 2006-03-23，是一家城市商业银行法人机构。在原曲靖市城市信用社基础上组建，曲靖市人民政府为主发起人。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "曲靖市商业银行官方网站", url: "https://www.qjccb.com/", date: "2026-09-30" }
+  - id: bkc-yunnan-hongta-bank
+    name: 云南红塔银行股份有限公司
+    short: 云南红塔银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0260H253040001
+    regulator: 国家金融监督管理总局
+    founded: 2006
+    website: https://www.ynhtbank.com/
+    intro: 云南红塔银行是一家城市商业银行法人机构，金融许可证批准成立日期为 2006-05-24。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "云南红塔银行官方网站", url: "https://www.ynhtbank.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-tibet
+    name: 西藏银行股份有限公司
+    short: 西藏银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1293H254010001
+    regulator: 国家金融监督管理总局
+    founded: 2011
+    website: https://www.xzbc.com.cn/
+    intro: 西藏银行是一家注册在西藏自治区的城市商业银行法人机构，金融许可证批准成立日期为 2011-12-30。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "西藏银行官方网站", url: "https://www.xzbc.com.cn/", date: "2026-09-30" }
+  - id: bkc-the-bank-of-xi-an
+    name: 西安银行股份有限公司
+    short: 西安银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0274H261010001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    listed: ["600928.SH"]
+    website: https://www.xacbank.com/
+    intro: 西安银行总部位于西安，金融许可证批准成立日期为 1997-04-23，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "西安银行官方网站", url: "https://www.xacbank.com/", date: "2026-09-30" }
+  - id: bkc-chang-an-bank
+    name: 长安银行股份有限公司
+    short: 长安银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1027H261010001
+    regulator: 国家金融监督管理总局
+    founded: 2009
+    website: https://www.ccabchina.com/
+    intro: 长安银行是一家注册在陕西省的城市商业银行法人机构，金融许可证批准成立日期为 2009-07-29。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "长安银行官方网站", url: "https://www.ccabchina.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-gansu
+    name: 甘肃银行股份有限公司
+    short: 甘肃银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1228H262010001
+    regulator: 国家金融监督管理总局
+    founded: 2011
+    listed: ["02139.HK"]
+    website: https://www.gsbankchina.com/
+    intro: 甘肃银行是一家注册在甘肃省的城市商业银行法人机构，金融许可证批准成立日期为 2011-11-18。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "甘肃银行官方网站", url: "https://www.gsbankchina.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-lanzhou
+    name: 兰州银行股份有限公司
+    short: 兰州银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0268H262010001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    listed: ["001227.SZ"]
+    website: https://www.lzbank.com/
+    intro: 兰州银行总部位于兰州，金融许可证批准成立日期为 1997-05-28，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "兰州银行官方网站", url: "https://www.lzbank.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-qinghai
+    name: 青海银行股份有限公司
+    short: 青海银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0223H263010002
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    website: https://www.bankqh.com/
+    intro: 青海银行总部位于西宁，金融许可证批准成立日期为 1997-12-19，是一家城市商业银行法人机构。本行官网称其为青海省唯一一家城市商业银行，前身为西宁市商业银行。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "青海银行官方网站", url: "https://www.bankqh.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-ningxia
+    name: 宁夏银行股份有限公司
+    short: 宁夏银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0314H264010001
+    regulator: 国家金融监督管理总局
+    founded: 1998
+    website: https://www.bankofnx.com.cn/
+    intro: 宁夏银行是一家注册在宁夏回族自治区的城市商业银行法人机构，金融许可证批准成立日期为 1998-09-17。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "宁夏银行官方网站", url: "https://www.bankofnx.com.cn/", date: "2026-09-30" }
+  - id: bkc-bank-of-shizuishan
+    name: 石嘴山银行股份有限公司
+    short: 石嘴山银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1009H364020001
+    regulator: 国家金融监督管理总局
+    founded: 2009
+    website: https://www.szsccb.com/
+    intro: 石嘴山银行总部位于石嘴山，金融许可证批准成立日期为 2009-03-19，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "石嘴山银行官方网站", url: "https://www.szsccb.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-urumqi
+    name: 乌鲁木齐银行股份有限公司
+    short: 乌鲁木齐银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0796H265010001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    website: https://www.uccb.com.cn/
+    intro: 乌鲁木齐银行总部位于乌鲁木齐，金融许可证批准成立日期为 1997-11-27，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "乌鲁木齐银行官方网站", url: "https://www.uccb.com.cn/", date: "2026-09-30" }
+  - id: bkc-bank-of-kunlun
+    name: 昆仑银行股份有限公司
+    short: 昆仑银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0226H365020002
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    website: https://www.klb.com.cn/
+    intro: 昆仑银行是一家注册在新疆维吾尔自治区的城市商业银行法人机构，金融许可证批准成立日期为 2010-04-20。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "昆仑银行官方网站", url: "https://www.klb.com.cn/", date: "2026-09-30" }
+  - id: bkc-hami-city-commercial-bank
+    name: 哈密市商业银行股份有限公司
+    short: 哈密市商业银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1085H365220001
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    website: https://www.hmccb.com/
+    intro: 哈密市商业银行总部位于哈密，金融许可证批准成立日期为 2010-06-07，是一家城市商业银行法人机构。本行官网称其为哈密市唯一具有独立法人资格的城市商业银行。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "哈密市商业银行官方网站", url: "https://www.hmccb.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-dalian
+    name: 大连银行股份有限公司
+    short: 大连银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0261H221020001
+    regulator: 国家金融监督管理总局
+    founded: 1998
+    website: https://www.bankofdl.com/
+    intro: 大连银行总部位于大连，金融许可证批准成立日期为 1998-03-04，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "大连银行官方网站", url: "https://www.bankofdl.com/", date: "2026-09-30" }
+  - id: bkc-bank-of-ningbo
+    name: 宁波银行股份有限公司
+    short: 宁波银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0152H233020001
+    regulator: 国家金融监督管理总局
+    founded: 1997
+    listed: ["002142.SZ"]
+    website: https://www.nbcb.com.cn/
+    intro: 宁波银行总部位于宁波，金融许可证批准成立日期为 1997-03-31，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "宁波银行官方网站", url: "https://www.nbcb.com.cn/", date: "2026-09-30" }
+  - id: bkc-ningbo-donghai-bank
+    name: 宁波东海银行股份有限公司
+    short: 宁波东海银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0358H233020001
+    regulator: 国家金融监督管理总局
+    founded: 2012
+    website: https://www.ndhb.cn/
+    intro: 宁波东海银行总部位于宁波，金融许可证批准成立日期为 2012-03-29，是一家城市商业银行法人机构。本行官网称其为宁波市国有控股的城市商业银行。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "宁波东海银行官方网站", url: "https://www.ndhb.cn/", date: "2026-09-30" }
+  - id: bkc-ningbo-commerce-bank
+    name: 宁波通商银行股份有限公司
+    short: 宁波通商银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1311H233020001
+    regulator: 国家金融监督管理总局
+    founded: 2012
+    website: https://www.ncbank.cn/
+    intro: 宁波通商银行总部位于宁波，金融许可证批准成立日期为 2012-04-16，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "宁波通商银行官方网站", url: "https://www.ncbank.cn/", date: "2026-09-30" }
+  - id: bkc-xiamen-bank
+    name: 厦门银行股份有限公司
+    short: 厦门银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0164H235020001
+    regulator: 国家金融监督管理总局
+    founded: 1996
+    listed: ["601187.SH"]
+    website: http://www.xmbankonline.com/
+    intro: 厦门银行总部位于厦门，金融许可证批准成立日期为 1996-11-16，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "厦门银行官方网站", url: "http://www.xmbankonline.com/", date: "2026-09-30" }
+  - id: bkc-xiamen-international-bank
+    name: 厦门国际银行股份有限公司
+    short: 厦门国际银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0025H235020001
+    regulator: 国家金融监督管理总局
+    founded: 1985
+    website: https://www.xib.com.cn/
+    intro: 厦门国际银行总部位于厦门，金融许可证批准成立日期为 1985-08-02，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "厦门国际银行官方网站", url: "https://www.xib.com.cn/", date: "2026-09-30" }
+  - id: bkc-bank-of-qingdao
+    name: 青岛银行股份有限公司
+    short: 青岛银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B0170H237020001
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    listed: ["002948.SZ", "03866.HK"]
+    website: https://www.qdccb.com/
+    intro: 青岛银行总部位于青岛，金融许可证批准成立日期为 2007-11-06，是一家城市商业银行法人机构。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "青岛银行官方网站", url: "https://www.qdccb.com/", date: "2026-09-30" }
+  - id: bkc-xinjiang-bank
+    name: 新疆银行股份有限公司
+    short: 新疆银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1522H265010001
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: https://www.xjbank.com/
+    intro: 新疆银行总部位于乌鲁木齐，金融许可证批准成立日期为 2016-12-21，是一家城市商业银行法人机构。由新疆维吾尔自治区与新疆生产建设兵团共同发起新设，2025 年吸收合并新疆汇和银行。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "新疆银行官方网站", url: "https://www.xjbank.com/", date: "2026-09-30" }
+  - id: bkc-mengshang-bank
+    name: 蒙商银行股份有限公司
+    short: 蒙商银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1954H215020001
+    regulator: 国家金融监督管理总局
+    founded: 2020
+    website: https://www.msbank.com/
+    intro: 蒙商银行总部位于包头，金融许可证批准成立日期为 2020-04-29，是一家城市商业银行法人机构。2020 年由存款保险基金管理有限责任公司会同内蒙古自治区发起新设，承接原包商银行的相关业务、资产和负债。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "蒙商银行官方网站", url: "https://www.msbank.com/", date: "2026-09-30" }
+  - id: bkc-sichuan-bank
+    name: 四川银行股份有限公司
+    short: 四川银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B1987H251010001
+    regulator: 国家金融监督管理总局
+    founded: 2020
+    website: https://www.scbank.cn/
+    intro: 四川银行是一家注册在四川省的城市商业银行法人机构，金融许可证批准成立日期为 2020-11-04。2020 年以攀枝花市商业银行和凉山州商业银行为基础，采取新设合并方式设立。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "四川银行官方网站", url: "https://www.scbank.cn/", date: "2026-09-30" }
+  - id: bkc-liaoshen-bank
+    name: 辽沈银行股份有限公司
+    short: 辽沈银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B2036H221010001
+    regulator: 国家金融监督管理总局
+    founded: 2021
+    website: https://www.liaoshen-bank.com/
+    intro: 辽沈银行总部位于沈阳，金融许可证批准成立日期为 2021-06-07，是一家城市商业银行法人机构。2021 年经监管批准设立，已吸收合并原辽阳银行和营口沿海银行。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "辽沈银行官方网站", url: "https://www.liaoshen-bank.com/", date: "2026-09-30" }
+  - id: bkc-shanxi-bank
+    name: 山西银行股份有限公司
+    short: 山西银行
+    category: banking
+    type: city-commercial-bank
+    license_code: B2027H214010001
+    regulator: 国家金融监督管理总局
+    founded: 2021
+    website: https://www.shxibank.com/
+    intro: 山西银行是一家注册在山西省的城市商业银行法人机构，金融许可证批准成立日期为 2021-04-24。
+    business: [公司金融, 个人金融, 资金业务, 支付结算]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局 银行业金融机构法人名单（截至2025年12月31日）", url: "https://www.nfra.gov.cn/chinese/docfile/2026/1dcdad9de86f4d9d889356bb64cb313e.pdf", date: "2026-08-14" }
+      - { title: "国家金融监督管理总局 金融许可证信息（机构编码与批准成立日期）", url: "https://xkz.nfra.gov.cn/jr/", date: "2026-09-30" }
+      - { title: "山西银行官方网站", url: "https://www.shxibank.com/", date: "2026-09-30" }

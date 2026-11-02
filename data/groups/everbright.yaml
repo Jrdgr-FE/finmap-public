@@ -1,0 +1,347 @@
+group:
+  id: everbright
+  name: "中国光大集团股份公司"
+  short: "光大集团"
+  en: "China Everbright Group"
+  nature: "中央金融企业"
+  founded: 1983
+  hq: "北京"
+  website: "https://www.ebchina.com"
+  intro: "1983年8月在香港创办、2014年12月8日经国务院批准改制为股份制公司的国有大型金融控股集团，由财政部与中央汇金发起设立，中央汇金持股63.16%、财政部33.43%、北京社保基金理事会3.40%，是2002年国务院批准的三家综合金融控股集团试点之一。金融聚焦商业银行、投资银行、商业保险、资产管理四大板块，牌照横跨银行、证券、公募基金、期货、券商资管、信托、寿险、保险资管、金融租赁、消费金融、银行理财与地方AMC，是集齐主要金融牌照的少数集团之一。集团层面至今没有取得人民银行金融控股公司许可证：2021年6月4日人民银行受理其设立金融控股公司的行政许可申请，首批两张牌照于2022年3月发给中信金控与北京金控，光大集团的申请此后一直停留在审批环节，公开报道普遍把障碍归结为境外上市平台中国光大控股交叉持有光大证券20.73%和光大银行2.66%股权，不符合《金融控股公司监督管理试行办法》对股权清晰的要求。因此本图谱里光大集团只能作为「集团」理解，不能与中信金控、北京金控等持牌金控公司等同看待。境内外两条管理线：境内主体为中国光大集团股份公司，境外通过中国光大集团有限公司（香港）间接持有中国光大控股49.74%，光大控股再反向持有光大证券20.73%和光大银行2.66%——集团、光大控股、光大证券/光大银行之间是交叉持股，这是光大系与一般央企金控最不相同的地方，也是金控牌照迟迟未落地的原因。"
+  sources:
+    - { title: "中国光大集团官网·集团简介（1983年8月18日在香港创办；2014年12月8日改制为股份制公司）", url: "https://www.ebchina.com/ebchina/gywm/jtjj/index.html", date: "2026-09-30" }
+    - { title: "中国光大集团官网·产品服务（金融成员名单：光大银行、光大证券、光大永明人寿、光大资产、光大信托、光大控股、光大金瓯、光大理财、光证资管、光大保德信基金、光大永明资产）", url: "https://www.ebchina.com/ebchina/cpfw/zcgl/gdxt/index.html", date: "2026-09-30" }
+    - { title: "央行受理光大和中信设立金融控股公司申请（中国证券报／中国电子银行网）", url: "https://www.cebnet.com.cn/20210607/102753262.html", date: "2021-06-07" }
+    - { title: "首批金控牌照来了！揭秘5家申设企业背后资本与旗下金融子公司（中国基金报：光大集团直接持股光大金控100%、光大信托51%、光大永明人寿50%、光大金瓯48%、光大证券25.15%）", url: "https://www.chnfund.com/article/AR2022031819061580325676", date: "2022-03-18" }
+    - { title: "金控公司要来了！中信、光大申请获央行受理，模式或不同（第一财经：受理日2021年6月4日；汇金63.16%、财政部33.43%）", url: "https://www.yicai.com/news/101073869.html", date: "2021-06-05" }
+
+entities:
+  # ── 银行业 ────────────────────────────────────────────────
+  - id: eb-everbright-bank
+    name: "中国光大银行股份有限公司"
+    short: "光大银行"
+    category: banking
+    type: joint-stock-commercial-bank
+    license_code: "B0007H111000001"
+    regulator: "国家金融监督管理总局"
+    founded: 1992
+    listed: ["601818.SH", "6818.HK"]
+    website: "https://www.cebbank.com"
+    intro: "1992年8月经国务院批复、人民银行批准设立的全国性股份制商业银行，是光大集团资产规模最大、也是集团内唯一同时在上海和香港两地上市的银行。截至2025年末光大集团直接持有本行44.25%（A股41.23%、H股3.02%），是集团的并表基石。"
+    business: ["公司金融", "零售金融与财富管理", "金融市场业务", "资产管理", "托管", "境外机构（6家分行＋光银国际、光银欧洲）"]
+    parent: ROOT
+    stake: 44.25
+    status: active
+    sources:
+      - { title: "中国光大银行股份有限公司2025年年度报告摘要（控股股东报告期末直接持有本行股份44.25%；中国光大控股有限公司持股2.66%）", url: "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12045223&stockid=601818", date: "2026-03-30" }
+      - { title: "中国光大银行股份有限公司2025年年度业绩公告（港交所披露易：统一社会信用代码91110000100011743X；金融许可证机构编码B0007H111000001）", url: "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0330/2026033001897_c.pdf", date: "2026-03-30" }
+
+  - id: eb-everbright-wealth
+    name: "光大理财有限责任公司"
+    short: "光大理财"
+    category: asset-management
+    type: wealth-management
+    regulator: "国家金融监督管理总局"
+    founded: 2019
+    intro: "光大银行全资的银行理财子公司，2019年9月24日经银保监会批准开业（银保监复〔2019〕869号），是全国股份制银行中首家获批开业的理财子，注册资本50亿元，注册地青岛。承接母行理财业务，是集团资产管理板块的核心载体之一。"
+    business: ["公募理财产品", "私募理财产品", "理财顾问与咨询", "净值型产品体系", "权益与固收投资"]
+    parent: eb-everbright-bank
+    stake: 100
+    status: active
+    sources:
+      - { title: "中国光大银行股份有限公司关于光大理财有限责任公司获准开业的公告（中国证券报：注册资本50亿元、注册地青岛、全资子公司）", url: "https://epaper.cs.com.cn/zgzqb/html/2019-09/25/nw.D110000zgzqb_20190925_2-B001.htm", date: "2019-09-25" }
+      - { title: "光大集团官网·产品服务·光大理财", url: "https://www.ebchina.com/ebchina/cpfw/zcgl/gdlc/index.html", date: "2026-09-30" }
+
+  - id: eb-everbright-financial-leasing
+    name: "光大金融租赁股份有限公司"
+    short: "光大金租"
+    category: nonbank
+    type: financial-leasing
+    regulator: "国家金融监督管理总局"
+    founded: 2010
+    intro: "光大银行持股90%的金融租赁公司，2010年在武汉成立（工商登记2010年5月19日，媒体开业报道为2010年6月18日），是国内第二批银行系金融租赁试点中首家获批开业的，其余5%分别由武汉新港建设投资开发集团和武汉市轨道交通建设公司持有。聚焦航空、航运、车辆、新能源等制造业租赁，为集团租赁板块核心企业。"
+    business: ["融资租赁", "经营租赁", "航空航运租赁", "车辆与新能源租赁", "固定收益类证券投资"]
+    parent: eb-everbright-bank
+    stake: 90
+    status: active
+    sources:
+      - { title: "中国光大银行股份有限公司2025年年度业绩公告（并表被投资金融机构含光大金融租赁股份有限公司）", url: "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0330/2026033001897_c.pdf", date: "2026-03-30" }
+      - { title: "光大集团发力综合金融 旗下多公司增资扩股（21世纪经济报道／全景网：光大银行持股占比90%，武汉新港与武汉轨道各5%）", url: "https://www.p5w.net/stock/news/gsxw/201410/t20141016_797136.htm", date: "2014-10-16" }
+
+  - id: eb-shaoshan-ceb-village-bank
+    name: "韶山光大村镇银行股份有限公司"
+    short: "韶山光大村镇银行"
+    category: banking
+    type: village-bank
+    regulator: "国家金融监督管理总局"
+    founded: 2009
+    intro: "光大银行发起设立的第一家村镇银行，2009年9月成立，注册资本1.5亿元，光大银行持股70%。2025年11月11日经监管批准解散，资产、负债、业务、员工由光大银行承继并改建为湘潭韶山支行——即本集团村镇银行「清零」的第一家。"
+    business: ["吸收公众存款", "发放短期中期长期贷款", "国内结算", "代理收付款项"]
+    parent: eb-everbright-bank
+    stake: 70
+    status: exited
+    sources:
+      - { title: "中国光大银行发起设立的第一家村镇银行获批解散（科技金融在线：成立于2009年9月，光大银行持股70%）", url: "https://www.jrkjaq.com/information/content-id-39792.shtml", date: "2025-11-07" }
+      - { title: "光大银行旗下村镇银行「清零」（新浪财经：韶山2025年11月11日退出、淮安2026年1月20日退出、瑞金2026年1月23日退出，持股比例均为70%）", url: "https://finance.sina.com.cn/stock/relnews/cn/2026-02-03/doc-inhknxzf6793015.shtml", date: "2026-02-03" }
+
+  - id: eb-huaian-ceb-village-bank
+    name: "江苏淮安光大村镇银行股份有限公司"
+    short: "淮安光大村镇银行"
+    category: banking
+    type: village-bank
+    regulator: "国家金融监督管理总局"
+    founded: 2013
+    intro: "光大银行持股70%的村镇银行，2013年2月成立，注册资本1亿元。2026年1月20日经监管批准解散，全部资产、负债、业务、员工及其他权利义务由光大银行承继。"
+    business: ["吸收公众存款", "发放贷款", "国内结算", "代理收付款项"]
+    parent: eb-everbright-bank
+    stake: 70
+    status: exited
+    sources:
+      - { title: "中国光大银行股份有限公司2025年度股东会会议文件（巨潮资讯网：韶山、江苏淮安、江西瑞金三家村镇银行改革重组，三家均已获监管同意解散）", url: "http://static.cninfo.com.cn/finalpage/2026-06-09/1225357785.PDF", date: "2026-06-09" }
+      - { title: "光大银行旗下村镇银行「清零」（新浪财经：淮安2026年1月20日退出，持股70%）", url: "https://finance.sina.com.cn/stock/relnews/cn/2026-02-03/doc-inhknxzf6793015.shtml", date: "2026-02-03" }
+
+  - id: eb-ruijin-ceb-village-bank
+    name: "江西瑞金光大村镇银行股份有限公司"
+    short: "瑞金光大村镇银行"
+    category: banking
+    type: village-bank
+    regulator: "国家金融监督管理总局"
+    founded: 2018
+    intro: "光大银行持股70%的村镇银行，2018年11月成立，注册资本1.5亿元。2026年1月23日退出（金融许可证注销），光大银行发起设立的三家村镇银行至此全部收编，集团村镇银行板块归零。"
+    business: ["吸收公众存款", "发放贷款", "国内结算", "普惠金融"]
+    parent: eb-everbright-bank
+    stake: 70
+    status: exited
+    sources:
+      - { title: "中国光大银行股份有限公司2025年度股东会会议文件（巨潮资讯网：三家村镇银行均已收到监管同意解散的批复，「村改支」主要工作顺利完成）", url: "http://static.cninfo.com.cn/finalpage/2026-06-09/1225357785.PDF", date: "2026-06-09" }
+      - { title: "光大银行旗下已「清零」（21经济网：江西瑞金光大村镇银行2026年1月23日退出，持股70%）", url: "https://www.21jingji.com/article/20260211/herald/e51ffcba04482dc5576aac3cae6b17b5.html", date: "2026-02-11" }
+
+  # ── 证券期货业 ────────────────────────────────────────────
+  - id: eb-everbright-securities
+    name: "光大证券股份有限公司"
+    short: "光大证券"
+    category: securities
+    type: securities-firm
+    regulator: "中国证监会"
+    founded: 1996
+    listed: ["601788.SH", "6178.HK"]
+    website: "https://www.ebscn.com"
+    intro: "1996年经人民银行批准成立、中国证监会首批三家创新试点证券公司之一，A+H两地上市，注册资本46.11亿元，注册地上海。股权上是集团内最典型的交叉持股：中国光大集团直接持有25.15%（第一大股东），中国光大控股持有20.73%（第二大股东），两者同受国务院最终控制。"
+    business: ["财富管理及经纪", "融资融券", "投资银行与股权承销保荐", "机构客户业务", "投资交易与做市", "资产管理"]
+    parent: ROOT
+    stake: 25.15
+    status: active
+    sources:
+      - { title: "光大证券股份有限公司2024年年度报告（上交所：第一大股东中国光大集团、第二大股东中国光大控股；一级子公司含光证资管、光大期货、光证控股、光大保德信）", url: "https://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-03-28/601788_20250328_MG32.pdf", date: "2025-03-28" }
+      - { title: "光大证券2024年年报前十名股东持股情况（证券日报电子报：中国光大集团25.15%、中国光大控股20.73%，并注明「中国光大控股有限公司是中国光大集团股份公司全资子公司中国光大集团有限公司的控股子公司」）", url: "http://epaper.zqrb.cn/images/2025-03/28/D179/zqrb20250328D179.pdf", date: "2025-03-28" }
+
+  - id: eb-everbright-futures
+    name: "光大期货有限公司"
+    short: "光大期货"
+    category: securities
+    type: futures-company
+    regulator: "中国证监会"
+    founded: 1993
+    website: "https://www.ebfcn.com"
+    intro: "光大证券全资期货子公司，前身为1993年4月8日成立的南都期货（2007年由光大证券收购后更名），注册资本15亿元，总部上海，拥有国内全部期货交易所会员席位。是集团期货牌照的唯一持有人。"
+    business: ["商品期货经纪", "金融期货经纪", "期货投资咨询", "资产管理", "公募基金销售", "股票期权做市"]
+    parent: eb-everbright-securities
+    stake: 100
+    status: active
+    sources:
+      - { title: "光大证券股份有限公司2025年年度报告（巨潮资讯网：光大期货有限公司为全资子公司，注册资本人民币15亿元，设立时间1993/4/8）", url: "http://static.cninfo.com.cn/finalpage/2026-03-27/1225035238.PDF", date: "2026-03-27" }
+
+  # ── 资产管理业 ────────────────────────────────────────────
+  - id: eb-everbright-securities-am
+    name: "上海光大证券资产管理有限公司"
+    short: "光证资管"
+    category: asset-management
+    type: securities-amc
+    regulator: "中国证监会"
+    founded: 2012
+    website: "http://www.ebscn-am.com"
+    intro: "经中国证监会证监许可〔2011〕1886号批复设立的光大证券全资证券资产管理子公司，2012年成立，注册资本2亿元，注册地上海，是国内上市券商旗下首家券商资产管理公司。原光大证券资产管理总部整体平移而来，持有QDII、保险资金受托管理等资格。"
+    business: ["集合资产管理", "单一资产管理", "QDII境外投资", "保险资金受托管理", "资产证券化", "FOF与衍生品策略"]
+    parent: eb-everbright-securities
+    stake: 100
+    status: active
+    sources:
+      - { title: "光大证券股份有限公司2025年年度报告（巨潮资讯网：光证资管为全资子公司，注册资本人民币2亿元）", url: "http://static.cninfo.com.cn/finalpage/2026-03-27/1225035238.PDF", date: "2026-03-27" }
+      - { title: "上海光大证券资产管理有限公司·关于我们（成立于2012年5月9日，前身为光大证券资产管理总部，注册资本2亿元，光大证券全资控股）", url: "http://www.ebscn-am.com/about", date: "2026-09-30" }
+
+  - id: eb-everbright-prudential-fund
+    name: "光大保德信基金管理有限公司"
+    short: "光大保德信基金"
+    category: asset-management
+    type: fund-management
+    regulator: "中国证监会"
+    founded: 2004
+    website: "https://www.epf.com.cn"
+    intro: "2004年4月成立的中外合资公募基金管理公司，总部上海，注册资本1.6亿元：光大证券持股55%、美国保德信金融集团旗下保德信投资管理有限公司持股45%。是集团公募基金牌照的持有人，光大证券将其作为基金管理业务平台。"
+    business: ["公募基金募集与管理", "专户产品", "权益投资", "固定收益投资", "指数与量化产品"]
+    parent: eb-everbright-securities
+    stake: 55
+    status: active
+    sources:
+      - { title: "光大保德信瑞和混合型证券投资基金招募说明书（光大证券持股55%、保德信投资管理有限公司持股45%，注册资本1.6亿元）", url: "https://www.epf.com.cn/minisite/20260331/095015_CN_50360000_009486_FB010010_20260002.pdf", date: "2026-03-31" }
+      - { title: "光大证券股份有限公司2025年年度报告（巨潮资讯网：光大保德信基金管理有限公司为控股子公司，持股比例55%，注册资本1.6亿元）", url: "http://static.cninfo.com.cn/finalpage/2026-03-27/1225035238.PDF", date: "2026-03-27" }
+
+  - id: eb-sunlife-everbright-am
+    name: "光大永明资产管理股份有限公司"
+    short: "光大永明资产"
+    category: asset-management
+    type: insurance-amc
+    regulator: "国家金融监督管理总局"
+    founded: 2012
+    intro: "2011年9月获批筹建、2012年4月11日开业，是原中国保监会核准的第十二家保险资产管理公司，注册资本5亿元。股权为光大永明人寿持股99%、光大集团直接持股1%，因此集团对它是「隔一层」的控制。"
+    business: ["受托管理保险资金", "保险资产管理产品", "债权投资计划", "股权投资计划", "第三方资产管理"]
+    parent: eb-sunlife-everbright-life
+    stake: 99
+    status: active
+    sources:
+      - { title: "光大永明人寿保险有限公司2024年年度报告（注册资本54亿元；中国光大集团持股50.00%、加拿大永明人寿24.99%；报告期末公司持有光大永明资产管理股份有限公司49,500万股，持股占比99%）", url: "http://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/BOND/2024/2024-1/2024-01-30/19836303.PDF", date: "2024-01-30" }
+      - { title: "光大永明资产新任总经理获批（界面新闻：2012年由光大永明人寿发起成立，光大永明人寿持股99%、光大集团持股1%，2013年8月增资至5亿元）", url: "https://www.jiemian.com/article/7520387.html", date: "2026-09-30" }
+
+  - id: eb-everbright-holdings
+    name: "中国光大控股有限公司"
+    short: "光大控股"
+    category: asset-management
+    type: private-fund
+    regulator: "香港证券及期货事务监察委员会"
+    founded: 1997
+    listed: ["0165.HK"]
+    website: "https://www.everbright.com"
+    intro: "1997年成立、在香港联交所上市（0165.HK）的跨境资产管理及私募股权投资平台，中国光大集团通过中国光大集团有限公司（香港）间接持有49.74%，是第一大股东。以私募基金投资与管理为核心业务，截至2025年末管理71只基金、在管资产约1,214亿港元；境内基金管理主体以「中国光大控股有限公司」为实际控制人在中国证券投资基金业协会登记为私募基金管理人（如光大控股创业投资（深圳）有限公司P1000750、光大三山创业投资管理有限公司P1002265等）。它同时是光大证券第二大股东（20.73%）和光大银行股东（2.66%），这一「上市平台反向持有集团金融股权」的结构是光大集团金控牌照未获批的核心障碍。"
+    business: ["一级市场私募股权基金", "二级市场基金", "母基金与S基金", "夹层与固定收益基金", "自有资金投资", "飞机租赁与不动产基金培育"]
+    parent: ROOT
+    stake: 49.74
+    held_via: "中国光大集团有限公司（香港）"
+    status: active
+    sources:
+      - { title: "中国光大控股有限公司2025年年度业绩公告（港交所披露易：中国光大集团股份公司是公司最大股东，间接持有光大控股49.74%的股份；截至2025年12月31日在管资产约港币1,214亿元、基金71只）", url: "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0416/2026041601915_c.pdf", date: "2026-04-16" }
+      - { title: "中国证券投资基金业协会私募基金管理人公示·光大控股创业投资（深圳）有限公司（登记编号P1000750，实际控制人中国光大控股有限公司，认缴比例100%）", url: "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000002073.html", date: "2025-12-15" }
+      - { title: "光大证券2024年年报前十名股东持股情况（证券日报电子报：中国光大控股持股20.73%，为中国光大集团有限公司控股子公司）", url: "http://epaper.zqrb.cn/images/2025-03/28/D179/zqrb20250328D179.pdf", date: "2025-03-28" }
+
+  # ── 非银行金融机构 ────────────────────────────────────────
+  - id: eb-everbright-trust
+    name: "光大兴陇信托有限责任公司"
+    short: "光大信托"
+    category: nonbank
+    type: trust-company
+    license_code: "K0060H262010001"
+    regulator: "国家金融监督管理总局"
+    founded: 2014
+    website: "https://www.ebtrust.com"
+    intro: "2014年5月经原中国银监会批准，由光大集团在原甘肃省信托有限责任公司基础上重组设立，集团持股51%为控股股东，注册资本84.18亿元，注册地兰州、管理总部北京。它是集团在2002年失去信托牌照后重新拿回牌照的关键一步，也是光大「全牌照」叙事里补上的最后一块主要拼图。"
+    business: ["资产服务信托", "资产管理信托", "公益慈善信托", "财富管理服务信托", "标品信托"]
+    parent: ROOT
+    stake: 51
+    status: active
+    sources:
+      - { title: "光大兴陇信托有限责任公司关于换领《中华人民共和国金融许可证》的公告（机构编码K0060H262010001，2025年8月18日换发）", url: "https://www.ebtrust.com/ebtrust/2025-08/26/article_2025082610102592225.shtml", date: "2025-08-26" }
+      - { title: "光大兴陇信托有限责任公司2022年年度报告（证券时报：2014年5月经中国银监会批准重组成立，光大集团持股51%、甘肃省国资投资集团23.42%、甘肃金融控股21.58%、天水市财政局4%；注册资本841,819.05万元）", url: "https://epaper.stcn.com/att/202304/28/cf169a99-e4bf-462d-9775-ec7dd4e11d5d.pdf", date: "2023-04-28" }
+
+  - id: eb-sunshine-consumer-finance
+    name: "北京阳光消费金融股份有限公司"
+    short: "阳光消费金融"
+    category: nonbank
+    type: consumer-finance
+    regulator: "国家金融监督管理总局"
+    founded: 2020
+    website: "https://www.cebscf.com"
+    intro: "2020年1月获银保监会批准筹建、2020年8月获北京银保监局批准开业的持牌消费金融公司，注册资本10亿元，注册地北京，是全国第27家开业的持牌消金公司。股权为光大银行60%、中青旅控股20%、台湾王道商业银行20%，集团借此拿到消费金融牌照。"
+    business: ["发放个人消费贷款", "接受股东存款", "向境内金融机构借款", "消费分期", "数字化普惠信贷"]
+    parent: eb-everbright-bank
+    stake: 60
+    status: active
+    sources:
+      - { title: "北京阳光消费金融股份有限公司2024年度信息披露报告（中国光大银行持股60%、中青旅控股20%、王道商业银行20%）", url: "https://www.cebscf.com/cebscf/xfzqybh/xxgg/2025042910141335977/index.html", date: "2025-04-29" }
+      - { title: "关于北京阳光消费金融股份有限公司获准开业的公告（港交所披露易：注册资本人民币10亿元，注册地北京，光大银行控股子公司）", url: "https://www1.hkexnews.hk/listedco/listconews/sehk/2020/0810/2020081000860_c.pdf", date: "2020-08-10" }
+
+  # ── 保险业 ────────────────────────────────────────────────
+  - id: eb-sunlife-everbright-life
+    name: "光大永明人寿保险有限公司"
+    short: "光大永明人寿"
+    category: insurance
+    type: life-insurer
+    regulator: "国家金融监督管理总局"
+    founded: 2002
+    website: "https://www.sunlife-everbright.com"
+    intro: "2002年4月成立、由中国光大集团与加拿大永明金融集团联合组建的寿险公司，是中国北方第一家合资寿险公司；2010年7月股权变更后由光大集团持股50%控股，转为中资寿险公司，注册资本54亿元，注册地天津，在全国24个省市设有分公司。2026年两家小股东中兵投资与鞍山钢铁挂牌转让股权，光大集团明确放弃优先购买权，股权结构存在变数。"
+    business: ["人寿保险", "健康保险", "意外伤害保险", "再保险", "银保与个险渠道", "养老与财富管理"]
+    parent: ROOT
+    stake: 50
+    status: active
+    sources:
+      - { title: "光大永明人寿保险有限公司2024年年度报告（成立时间2002年4月22日，注册资本54亿元；中国光大集团50.00%、加拿大永明人寿24.99%）", url: "http://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/BOND/2024/2024-1/2024-01-30/19836303.PDF", date: "2024-01-30" }
+      - { title: "股东离场叠加「补血」需求 光大永明人寿股权和治理结构或迎重大变局（经济参考网：光大集团持股50%为控股股东，中兵投资与鞍山钢铁各12.505%）", url: "http://jjckb.xinhuanet.com/20260520/d2aa2962ac954c01a0af45f0d8b83bc2/c.html", date: "2026-05-20" }
+
+  # ── 地方金融组织 ──────────────────────────────────────────
+  - id: eb-everbright-jinou-amc
+    name: "光大金瓯资产管理有限公司"
+    short: "光大金瓯"
+    category: local-finance
+    type: local-amc
+    regulator: "国家金融监督管理总局；浙江省地方金融管理局"
+    founded: 2015
+    intro: "2015年12月注册、2016年11月获原银监会「参与浙江省不良资产批量收购、处置资质」批复的地方资产管理公司，注册地温州，是全国第一家地级市AMC，注册资本由10亿元增至50亿元。股东为中国光大集团48%、温州市国有资本投资运营有限公司35%、温州市工业与能源发展集团有限公司10%、中国光大投资管理有限责任公司7%，光大系合计55%。它是集团唯一逆周期战略布局的一级子公司，也是集团涉足地方AMC牌照的唯一主体。"
+    business: ["金融不良资产批量收购与处置", "特殊资产投资", "重组与并购咨询", "资产管理", "财务咨询"]
+    parent: ROOT
+    stake: 48
+    status: active
+    sources:
+      - { title: "首批金控牌照来了！揭秘5家申设企业背后资本与旗下金融子公司（中国基金报：光大集团直接持有光大金瓯资产管理有限公司48%，为第一大股东）", url: "https://www.chnfund.com/article/AR2022031819061580325676", date: "2022-03-18" }
+      - { title: "全国首家地级市「坏账银行」落户温州（浙江在线：光大金瓯获银监会批准从事金融不良资产一级批发处置业务）", url: "https://zjnews.zjol.com.cn/zjnews/wznews/201611/t20161109_2058450.shtml", date: "2016-11-09" }
+      - { title: "光大集团官网·产品服务·光大金瓯（2015年12月注册成立，2016年11月取得资质批复，2016年12月22日挂牌开业，集团唯一逆周期战略布局的一级子公司）", url: "https://www.ebchina.com/ebchina/cpfw/zcgl/gdjo/index.html", date: "2026-09-30" }
+
+  # ── 境外持牌平台 ──────────────────────────────────────────
+  - id: eb-cebi
+    name: "光银国际投资有限公司"
+    short: "光银国际"
+    category: securities
+    type: overseas-securities
+    regulator: "香港证券及期货事务监察委员会"
+    founded: 2015
+    website: "https://www.cebi.com.hk"
+    intro: "2015年6月由光大银行在香港设立的全资子公司，注册资本港币26亿元，是光大银行唯一从事境外投资银行业务的平台，也是集团「商行＋投行」跨境体系的载体。注意它本身是香港的控股平台，实际的香港证监会受规管活动牌照由其全资子公司光银国际资本有限公司、光银国际资产管理有限公司持有。"
+    business: ["保荐与承销", "财务顾问与并购", "上市公司增发配售及再融资", "证券交易", "资产管理", "绿色与可持续债券"]
+    parent: eb-everbright-bank
+    stake: 100
+    status: active
+    sources:
+      - { title: "中国光大银行股份有限公司关于光银国际资本有限公司获香港证监会颁发牌照的公告（证券时报：经中国银监会批准及董事会审议，本行于2015年6月在香港设立全资子公司光银国际投资有限公司）", url: "https://epaper.stcn.com/paper/zqsb/html/2015-12/30/content_769983.htm", date: "2015-12-30" }
+      - { title: "中国光大银行股份有限公司2025年年度业绩公告（并表被投资金融机构含光银国际投资有限公司）", url: "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0330/2026033001897_c.pdf", date: "2026-03-30" }
+      - { title: "中国光大银行官网·光银国际投资有限公司（成立于2015年6月，中国光大银行全资附属子公司，注册资本港币26亿元，注册地中国香港）", url: "http://www.cebbank.com/site/ceb/gdgs59/zgs/252757701/index.html", date: "2026-09-30" }
+
+  - id: eb-cebi-capital
+    name: "光银国际资本有限公司"
+    short: "光银国际资本"
+    category: securities
+    type: overseas-securities
+    regulator: "香港证券及期货事务监察委员会"
+    founded: 2015
+    intro: "光银国际投资有限公司的全资子公司，2015年8月6日在香港注册成立、2015年12月22日获香港证监会发牌（中央编号BGH296），获批受规管活动为第1类证券交易、第4类就证券提供意见、第6类就机构融资提供意见。它是光银国际境外投行业务的实际持牌主体——按内地口径不受中国证监会管辖，放在这里是为了把「光大银行香港投行平台」的牌照落在具体法人上。"
+    business: ["第1类证券交易", "第4类就证券提供意见", "第6类就机构融资提供意见", "IPO保荐与承销", "财务顾问"]
+    parent: eb-cebi
+    stake: 100
+    status: active
+    sources:
+      - { title: "中国光大银行股份有限公司关于光银国际资本有限公司获香港证监会颁发牌照的公告（证券时报：批准业务包括证券交易、就证券提供意见、就机构融资提供意见）", url: "https://epaper.stcn.com/paper/zqsb/html/2015-12/30/content_769983.htm", date: "2015-12-30" }
+      - { title: "CEB International Capital Corporation Limited 光银国际资本有限公司（SFC 公众登记册镜像：CE No. BGH296，受规管活动第1、4、6类，最早牌照日期2015-12-22）", url: "https://thesfcnetwork.com/firm/BGH296/ceb-international-capital-corporation-limited", date: "2026-09-30" }
+
+  - id: eb-everbright-securities-intl
+    name: "光大证券国际控股有限公司"
+    short: "光证控股"
+    category: securities
+    type: overseas-securities
+    regulator: "香港证券及期货事务监察委员会"
+    founded: 2010
+    intro: "光大证券的全资香港子公司，2010年11月19日设立，原称光大证券金融控股有限公司（光证金控），2023年2月更名为光大证券国际控股有限公司，注册资本港币74亿元，是光大证券唯一的海外业务平台。旗下业务以「光大证券国际」品牌经营，实际的香港证监会受规管活动牌照由旗下持牌法团（如中国光大证券（香港）有限公司等）持有。"
+    business: ["香港证券经纪与财富管理", "企业融资与资本市场", "机构业务", "海外资产管理", "投资管理"]
+    parent: eb-everbright-securities
+    stake: 100
+    status: active
+    sources:
+      - { title: "光大证券股份有限公司2024年年度报告（上交所：光证控股＝光大证券国际控股有限公司，全资子公司，注册资本港币74亿元，设立时间2010/11/19）", url: "https://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-03-28/601788_20250328_MG32.pdf", date: "2025-03-28" }
+      - { title: "提升海外业务综合金融服务能力 光大新鸿基正式更名光大证券国际（中证网：光大证券2010年获批在香港设立海外金融控股平台）", url: "https://www.cs.com.cn/qs/202201/t20220110_6234159.html", date: "2022-01-10" }
+      - { title: "光大证券官网·发展历程（设立香港子公司光大证券金融控股有限公司，2023年2月更名为光大证券国际控股有限公司）", url: "http://www.ebscn.com/zjgd/gsjj/fzlc/", date: "2026-09-30" }

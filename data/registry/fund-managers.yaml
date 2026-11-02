@@ -1,0 +1,2262 @@
+note: >
+  本名册收录中国境内依法设立、由中国证监会核准的公募基金管理公司（基金管理公司法人主体），不含取得公募资格的券商资管、保险资管等资产管理机构，也不含基金销售机
+  构与基金托管机构。名单以中国证监会《公募基金管理机构名录》为基准：该名录「基金管理公司名单」页签共 150 家，与中基协披露的口径（截至 2026 年 8 
+  月底境内公募基金管理机构 165 家＝基金管理公司 150 家＋取得公募资格的资产管理机构 15 家）一致。成立年份、股东背景、官网均逐家核对，核对截止日期
+   2026-09-30。
+sources:
+  - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+  - { title: "中国证券投资基金业协会《公募基金管理人名录》", url: "https://www.amac.org.cn/fwdt/wyc/jgcprycx/jgcx/gmjjglrml/", date: "2026-09-30" }
+entities:
+  - id: fund-guo-tai
+    name: 国泰基金管理有限公司
+    short: 国泰基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 1998
+    website: https://www.gtfund.com
+    intro: "国泰基金成立于1998年，是国内首批规范设立的基金管理公司之一，股东由国资平台与意大利忠利集团等中外方共同构成。管理规模居行业前列，产品线覆盖主动权益、固定收益与指数投资。"
+    business: [权益投资, 固定收益, 指数与ETF, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "国泰基金官网", url: "https://www.gtfund.com", date: "2026-09-30" }
+  - id: fund-nan-fang
+    name: 南方基金管理股份有限公司
+    short: 南方基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 1998
+    website: https://www.nffund.com
+    intro: "南方基金成立于1998年，是国内首批规范设立的基金管理公司之一，股东包括华泰证券、深圳市投资控股与厦门国际信托等。管理规模居行业前列，在指数与ETF、固定收益及养老投资方向布局较早。"
+    business: [指数与ETF, 固定收益, 权益投资, 养老目标基金]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "南方基金官网", url: "https://www.nffund.com", date: "2026-09-30" }
+  - id: fund-hua-xia
+    name: 华夏基金管理有限公司
+    short: 华夏基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 1998
+    website: https://www.chinaamc.com
+    intro: "华夏基金成立于1998年，控股股东为中信证券，是国内管理规模最大的公募基金管理公司之一。ETF 产品线与指数投资能力突出，同时在主动权益、固定收益与跨境投资上均有布局。"
+    business: [指数与ETF, 权益投资, 固定收益, 跨境投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "华夏基金官网", url: "https://www.chinaamc.com", date: "2026-09-30" }
+  - id: fund-hua-an
+    name: 华安基金管理有限公司
+    short: 华安基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 1998
+    website: https://www.huaan.com.cn
+    intro: "华安基金成立于1998年，是国内首批规范设立的基金管理公司之一，股东结构以国有资本为主。管理规模居行业前列，在指数与ETF、黄金等另类资产及固定收益方向有特色产品。"
+    business: [指数与ETF, 固定收益, 权益投资, 另类投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "华安基金官网", url: "https://www.huaan.com.cn", date: "2026-09-30" }
+  - id: fund-bo-shi
+    name: 博时基金管理有限公司
+    short: 博时基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 1998
+    website: https://www.bosera.com/index.html
+    intro: "博时基金成立于1998年，是国内首批规范设立的基金管理公司之一，股东以券商与产业资本为主。管理规模居行业前列，固定收益与指数投资是其传统优势方向。"
+    business: [固定收益, 指数与ETF, 权益投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "博时基金官网", url: "https://www.bosera.com/index.html", date: "2026-09-30" }
+  - id: fund-peng-hua
+    name: 鹏华基金管理有限公司
+    short: 鹏华基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 1998
+    website: https://www.phfund.com.cn
+    intro: "鹏华基金成立于1998年，是国内首批规范设立的基金管理公司之一，具有中外合资股东背景。管理规模居行业前列，产品线覆盖权益、固定收益、指数与REITs。"
+    business: [权益投资, 固定收益, 指数与ETF, REITs]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "鹏华基金官网", url: "https://www.phfund.com.cn", date: "2026-09-30" }
+  - id: fund-chang-sheng
+    name: 长盛基金管理有限公司
+    short: 长盛基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 1999
+    website: https://www.csfunds.com.cn
+    intro: "长盛基金成立于1999年，第一大股东为国元证券，实际控制人为安徽省人民政府国有资产监督管理委员会，属券商系公募。管理规模处于行业中游，下设香港与创富两家全资子公司。"
+    business: [权益投资, 固定收益, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "长盛基金官网", url: "https://www.csfunds.com.cn", date: "2026-09-30" }
+  - id: fund-jia-shi
+    name: 嘉实基金管理有限公司
+    short: 嘉实基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 1999
+    website: https://www.jsfund.cn
+    intro: "嘉实基金成立于1999年，股东以国有资本为主导，股权结构相对均衡，属国内最早一批成立的基金管理公司。管理规模居行业前列，在指数投资、固定收益与海外资产配置上布局较早。"
+    business: [指数与ETF, 固定收益, 权益投资, QDII与跨境]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "嘉实基金官网", url: "https://www.jsfund.cn", date: "2026-09-30" }
+  - id: fund-da-cheng
+    name: 大成基金管理有限公司
+    short: 大成基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 1999
+    website: https://www.dcfund.com.cn
+    intro: "大成基金成立于1999年，是国内首批规范设立的基金管理公司之一，股东包括信托与券商背景机构。管理规模居行业前列，主动权益与固定收益产品线较为完整。"
+    business: [权益投资, 固定收益, 量化投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "大成基金官网", url: "https://www.dcfund.com.cn", date: "2026-09-30" }
+  - id: fund-fu-guo
+    name: 富国基金管理有限公司
+    short: 富国基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 1999
+    website: https://www.fullgoal.com.cn
+    intro: "富国基金成立于1999年，是国内首批规范设立的基金管理公司之一，目前拥有四家股东，以国有股份为主导，股权结构相对均衡。管理规模居行业前列，在固定收益、量化与指数投资上积累较深。"
+    business: [固定收益, 量化投资, 指数与ETF, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "富国基金官网", url: "https://www.fullgoal.com.cn", date: "2026-09-30" }
+  - id: fund-yi-fang-da
+    name: 易方达基金管理有限公司
+    short: 易方达基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2001
+    website: https://www.efunds.com.cn
+    intro: "易方达基金成立于2001年，股东包括广发证券与广东省属国资平台等，属国内管理规模最大的公募基金管理公司之一。指数与ETF、固定收益及主动权益三条线均处于行业前列。"
+    business: [指数与ETF, 固定收益, 权益投资, QDII与跨境]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "易方达基金官网", url: "https://www.efunds.com.cn", date: "2026-09-30" }
+  - id: fund-bao-ying
+    name: 宝盈基金管理有限公司
+    short: 宝盈基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2001
+    website: https://www.byfunds.com
+    intro: "宝盈基金成立于2001年，股东以信托背景机构为主，属信托系公募。管理规模处于行业中游，以主动权益投资为主要特色。"
+    business: [权益投资, 固定收益]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "宝盈基金官网", url: "https://www.byfunds.com", date: "2026-09-30" }
+  - id: fund-rong-tong
+    name: 融通基金管理有限公司
+    short: 融通基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2001
+    website: https://www.rtfund.com
+    intro: "融通基金成立于2001年，注册地深圳，股东为诚通证券股份有限公司（持股60%）与奥明资产管理有限公司（持股40%），属券商系中外合资公募。管理规模处于行业中游。"
+    business: [权益投资, 固定收益, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "融通基金官网", url: "https://www.rtfund.com", date: "2026-09-30" }
+  - id: fund-yin-hua
+    name: 银华基金管理股份有限公司
+    short: 银华基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2001
+    website: https://www.yhfund.com.cn
+    intro: "银华基金成立于2001年，股东包括西南证券与北京国资背景机构。管理规模居行业前列，在主动权益、固定收益与量化投资方向均有产品布局。"
+    business: [权益投资, 固定收益, 量化投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "银华基金官网", url: "https://www.yhfund.com.cn", date: "2026-09-30" }
+  - id: fund-chang-cheng
+    name: 长城基金管理有限公司
+    short: 长城基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2001
+    website: https://www.ccfund.com.cn
+    intro: "长城基金成立于2001年，股东为长城证券、东方证券、北方国际信托与中原信托等，属券商与信托混合背景公募。管理规模居行业前列，固定收益与主动权益并重。"
+    business: [固定收益, 权益投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "长城基金官网", url: "https://www.ccfund.com.cn", date: "2026-09-30" }
+  - id: fund-yin-he
+    name: 银河基金管理有限公司
+    short: 银河基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2002
+    website: https://www.cgf.cn
+    intro: "银河基金成立于2002年，控股股东为中国银河金融控股有限责任公司，属中央金融企业背景公募。管理规模处于行业中游。"
+    business: [权益投资, 固定收益, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "银河基金官网", url: "https://www.cgf.cn", date: "2026-09-30" }
+  - id: fund-hong-li
+    name: 宏利基金管理有限公司
+    short: 宏利基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2002
+    website: https://www.manulifefund.com.cn
+    intro: "宏利基金成立于2002年，原为泰达宏利基金，2022年11月股权转让获批后由加拿大宏利金融集团全资控股，转为外商独资公募。管理规模处于行业中游，在权益与多元资产投资上有外资投研体系支撑。"
+    business: [权益投资, 多元资产, 固定收益]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "宏利基金官网", url: "https://www.manulifefund.com.cn", date: "2026-09-30" }
+  - id: fund-guo-tou-rui-yin
+    name: 国投瑞银基金管理有限公司
+    short: 国投瑞银基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2002
+    website: https://www.ubssdic.com
+    intro: "国投瑞银基金成立于2002年，由国家开发投资集团旗下国投泰康信托与瑞士瑞银集团合资组建，属信托系中外合资公募。管理规模处于行业中游，固定收益与量化产品较有特色。"
+    business: [固定收益, 量化投资, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "国投瑞银基金官网", url: "https://www.ubssdic.com", date: "2026-09-30" }
+  - id: fund-wan-jia
+    name: 万家基金管理有限公司
+    short: 万家基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2002
+    website: https://www.wjasset.com
+    intro: "万家基金成立于2002年，注册地上海，股东为山东省国际信托等机构，属券商与信托混合背景公募。管理规模居行业前列，权益、固定收益、量化与组合投资四条业务线均衡发展。"
+    business: [权益投资, 固定收益, 量化投资, FOF]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "万家基金官网", url: "https://www.wjasset.com", date: "2026-09-30" }
+  - id: fund-jin-ying
+    name: 金鹰基金管理有限公司
+    short: 金鹰基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2002
+    website: https://www.gefund.com.cn
+    intro: "金鹰基金成立于2002年，注册地广东，股东包括广州证券等机构。管理规模处于行业中游，以主动权益投资为传统特色。"
+    business: [权益投资, 固定收益, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "金鹰基金官网", url: "https://www.gefund.com.cn", date: "2026-09-30" }
+  - id: fund-zhao-shang
+    name: 招商基金管理有限公司
+    short: 招商基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2002
+    website: https://www.cmfchina.com
+    intro: "招商基金成立于2002年，由招商银行与招商证券联合发起，是中国第一家中外合资基金管理公司，外方股东为荷兰国际集团旗下机构。管理规模居行业前列，固定收益与养老投资方向优势明显。"
+    business: [固定收益, 养老目标基金, 权益投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "招商基金官网", url: "https://www.cmfchina.com", date: "2026-09-30" }
+  - id: fund-hua-bao
+    name: 华宝基金管理有限公司
+    short: 华宝基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2003
+    website: https://www.fsfund.com
+    intro: "华宝基金成立于2003年，股东为华宝信托有限责任公司（持股51%）、美国华平投资集团（持股29%）和江苏省铁路集团有限公司（持股20%），是国内首家由信托公司与外方资产管理公司发起设立的中外合资基金管理公司。管理规模居行业前列，ETF与指数产品线有较强品牌。"
+    business: [指数与ETF, 权益投资, 固定收益]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "华宝基金官网", url: "https://www.fsfund.com", date: "2026-09-30" }
+  - id: fund-mo-gen-shi-dan-li
+    name: 摩根士丹利基金管理（中国）有限公司
+    short: 摩根士丹利基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2003
+    website: https://www.morganstanleyfunds.com.cn
+    intro: "摩根士丹利基金成立于2003年，前身为巨田基金，2023年由摩根士丹利实现全资控股，转为外商独资公募。管理规模处于行业中游，投研以基本面驱动的主动权益为特色。"
+    business: [权益投资, 固定收益, 多元资产]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "摩根士丹利基金官网", url: "https://www.morganstanleyfunds.com.cn", date: "2026-09-30" }
+  - id: fund-guo-lian-an
+    name: 国联安基金管理有限公司
+    short: 国联安基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2003
+    website: https://www.cpicfunds.com
+    intro: "国联安基金成立于2003年，股东为太平洋资产管理有限责任公司（持股51%）与德国安联集团（持股49%），是国内首家获准筹建的中外合资基金管理公司。管理规模处于行业中游。"
+    business: [权益投资, 固定收益, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "国联安基金官网", url: "https://www.cpicfunds.com", date: "2026-09-30" }
+  - id: fund-hai-fu-tong
+    name: 海富通基金管理有限公司
+    short: 海富通基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2003
+    website: https://www.hftfund.com
+    intro: "海富通基金成立于2003年，是中国首批获准成立的中外合资基金管理公司之一，外方股东为法国巴黎资产管理公司。管理规模居行业前列，固定收益与量化投资方向较有特色。"
+    business: [固定收益, 量化投资, 权益投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "海富通基金官网", url: "https://www.hftfund.com", date: "2026-09-30" }
+  - id: fund-chang-xin
+    name: 长信基金管理有限责任公司
+    short: 长信基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2003
+    website: https://www.cxfund.com.cn
+    intro: "长信基金成立于2003年，注册地上海，股东包括长江证券等机构。管理规模处于行业中游，固定收益与主动权益产品线较为均衡。"
+    business: [固定收益, 权益投资, 量化投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "长信基金官网", url: "https://www.cxfund.com.cn", date: "2026-09-30" }
+  - id: fund-tai-xin
+    name: 泰信基金管理有限公司
+    short: 泰信基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2003
+    website: https://www.ftfund.com
+    intro: "泰信基金成立于2003年，注册地上海，股东以山东省国资背景机构为主。管理规模处于行业中游。"
+    business: [权益投资, 固定收益]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "泰信基金官网", url: "https://www.ftfund.com", date: "2026-09-30" }
+  - id: fund-tian-zhi
+    name: 天治基金管理有限公司
+    short: 天治基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2003
+    website: https://www.chinanature.com.cn
+    intro: "天治基金成立于2003年，股东为吉林省信托有限责任公司与中国吉林森林工业集团有限责任公司，出资比例分别为61.25%和38.75%，属信托系公募。管理规模相对有限。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "天治基金官网", url: "https://www.chinanature.com.cn", date: "2026-09-30" }
+  - id: fund-jing-shun-chang-cheng
+    name: 景顺长城基金管理有限公司
+    short: 景顺长城基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2003
+    website: https://www.igwfmc.com
+    intro: "景顺长城基金成立于2003年，由长城证券与美国景顺集团（Invesco）合资组建，属中外合资公募。管理规模居行业前列，主动权益投资能力在业内认可度较高。"
+    business: [权益投资, 固定收益, 量化投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "景顺长城基金官网", url: "https://www.igwfmc.com", date: "2026-09-30" }
+  - id: fund-guang-fa
+    name: 广发基金管理有限公司
+    short: 广发基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2003
+    website: https://www.gffunds.com.cn
+    intro: "广发基金成立于2003年，股东为广发证券与广州科技风险投资等机构，属券商系公募，下设广发国际、瑞元资本等全资子公司。管理规模居行业前列，具备社保基金、基本养老保险基金等委托投资管理资格。"
+    business: [权益投资, 固定收益, 指数与ETF, 养老目标基金]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "广发基金官网", url: "https://www.gffunds.com.cn", date: "2026-09-30" }
+  - id: fund-xing-zheng-quan-qiu
+    name: 兴证全球基金管理有限公司
+    short: 兴证全球基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2003
+    website: https://www.xqfunds.com
+    intro: "兴证全球基金成立于2003年，原为兴全基金，股东为兴业证券股份有限公司（持股51%）与全球人寿保险国际公司（持股49%），属券商系中外合资公募，股权结构长期稳定。管理规模居行业前列，以主动权益和长期价值投资风格见长。"
+    business: [权益投资, 固定收益, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "兴证全球基金官网", url: "https://www.xqfunds.com", date: "2026-09-30" }
+  - id: fund-nuo-an
+    name: 诺安基金管理有限公司
+    short: 诺安基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2003
+    website: https://www.lionfund.com.cn
+    intro: "诺安基金成立于2003年，股东由中国对外经济贸易信托、深圳市捷隆投资与大恒新纪元科技等构成，属信托与产业资本混合背景公募。管理规模处于行业中游，在科技主题权益投资与固定收益方向有布局。"
+    business: [权益投资, 固定收益, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "诺安基金官网", url: "https://www.lionfund.com.cn", date: "2026-09-30" }
+  - id: fund-shen-wan-ling-xin
+    name: 申万菱信基金管理有限公司
+    short: 申万菱信基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2004
+    website: https://www.swsmu.com
+    intro: "申万菱信基金成立于2004年，由申万宏源证券与日本三菱UFJ信托银行合资组建，属券商系中外合资公募。管理规模处于行业中游，在量化与指数增强产品上有特色。"
+    business: [量化投资, 指数与ETF, 固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "申万菱信基金官网", url: "https://www.swsmu.com", date: "2026-09-30" }
+  - id: fund-zhong-hai
+    name: 中海基金管理有限公司
+    short: 中海基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2004
+    website: https://www.zhfund.com
+    intro: "中海基金成立于2004年，前身为国联基金，2006年中海信托入主成为第一大股东，现股东为中海信托股份有限公司（41.591%）、国联证券股份有限公司（33.409%）与法国爱德蒙得洛希尔银行股份有限公司（25.000%）。管理规模相对有限。"
+    business: [权益投资, 固定收益]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "中海基金官网", url: "https://www.zhfund.com", date: "2026-09-30" }
+  - id: fund-guang-da-bao-de-xin
+    name: 光大保德信基金管理有限公司
+    short: 光大保德信基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2004
+    website: https://www.epf.com.cn
+    intro: "光大保德信基金成立于2004年，由光大证券与美国保德信金融集团合资组建，属券商系中外合资公募。管理规模处于行业中游，量化与固定收益产品较有特色。"
+    business: [量化投资, 固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "光大保德信基金官网", url: "https://www.epf.com.cn", date: "2026-09-30" }
+  - id: fund-hua-fu
+    name: 华富基金管理有限公司
+    short: 华富基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2004
+    website: https://www.hffund.com/agate/jweb/
+    intro: "华富基金成立于2004年，注册地上海，股东以上海国资背景机构与券商为主。管理规模处于行业中游，固定收益与主动权益并重。"
+    business: [固定收益, 权益投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "华富基金官网", url: "https://www.hffund.com/agate/jweb/", date: "2026-09-30" }
+  - id: fund-mo-gen
+    name: 摩根基金管理（中国）有限公司
+    short: 摩根基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2004
+    website: https://www.cifm.com
+    intro: "摩根基金成立于2004年，前身为上投摩根基金，2023年1月股权转让获批后由摩根资产管理控股公司全资控股，转为外商独资公募。管理规模处于行业中游，在权益、多元资产与跨境配置上具备全球投研支持。"
+    business: [权益投资, 多元资产, QDII与跨境, 固定收益]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "摩根基金官网", url: "https://www.cifm.com", date: "2026-09-30" }
+  - id: fund-dong-fang
+    name: 东方基金管理股份有限公司
+    short: 东方基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2004
+    website: https://www.orient-fund.com/
+    intro: "东方基金成立于2004年，2020年8月由有限责任公司改制为股份有限公司，控股股东为东北证券股份有限公司（持股57.6%），另有河北国控资本、渤海国际信托及三个核心员工持股平台参股。管理规模处于行业中游。"
+    business: [权益投资, 固定收益, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "东方基金官网", url: "https://www.orient-fund.com/", date: "2026-09-30" }
+  - id: fund-zhong-yin
+    name: 中银基金管理有限公司
+    short: 中银基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2004
+    website: https://www.bocim.com/Channel/11546
+    intro: "中银基金成立于2004年，由中国银行与贝莱德投资管理有限公司合资组建，属银行系公募，是中行体系内的基金管理平台。管理规模居行业前列，固定收益类产品规模占比较高。"
+    business: [固定收益, 货币与现金管理, 权益投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "中银基金官网", url: "https://www.bocim.com/Channel/11546", date: "2026-09-30" }
+  - id: fund-dong-wu
+    name: 东吴基金管理有限公司
+    short: 东吴基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2004
+    website: https://www.scfund.com.cn
+    intro: "东吴基金成立于2004年，注册地上海，股东为东吴证券股份有限公司（持股70%）与海澜集团（持股30%），属券商系公募。管理规模处于行业中游。"
+    business: [权益投资, 固定收益, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "东吴基金官网", url: "https://www.scfund.com.cn", date: "2026-09-30" }
+  - id: fund-guo-hai-fu-lan-ke-lin
+    name: 国海富兰克林基金管理有限公司
+    short: 国海富兰克林基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2004
+    website: https://www.ftsfund.com.cn
+    intro: "国海富兰克林基金成立于2004年，由国海证券股份有限公司（持股51%）与富兰克林邓普顿投资集团旗下邓普顿国际股份有限公司（持股49%）共同出资组建，属券商系中外合资公募。管理规模处于行业中游，主动权益投资借鉴了外方股东的国际化投研框架。"
+    business: [权益投资, 固定收益, 海外投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "国海富兰克林基金官网", url: "https://www.ftsfund.com.cn", date: "2026-09-30" }
+  - id: fund-tian-hong
+    name: 天弘基金管理有限公司
+    short: 天弘基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2004
+    website: https://www.thfund.com.cn
+    intro: "天弘基金成立于2004年，注册地天津，股东为蚂蚁科技集团与天津信托等机构。管理规模居行业前列，凭借互联网渠道积累了庞大的个人客户基础，货币与固定收益类产品规模占比较高。"
+    business: [货币与现金管理, 固定收益, 指数与ETF, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "天弘基金官网", url: "https://www.thfund.com.cn", date: "2026-09-30" }
+  - id: fund-hua-tai-bai-rui
+    name: 华泰柏瑞基金管理有限公司
+    short: 华泰柏瑞基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2004
+    website: https://www.huatai-pb.com
+    intro: "华泰柏瑞基金成立于2004年，股东为华泰证券股份有限公司、Heron View Partners LLC 与苏州新区高新技术产业股份有限公司，属中外合资公募。管理规模居行业前列，指数与ETF产品线是其核心特色。"
+    business: [指数与ETF, 权益投资, 量化投资, 固定收益]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "华泰柏瑞基金官网", url: "https://www.huatai-pb.com", date: "2026-09-30" }
+  - id: fund-xin-hua
+    name: 新华基金管理股份有限公司
+    short: 新华基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2004
+    website: https://www.ncfund.com.cn
+    intro: "新华基金成立于2004年，注册地重庆，股东包含恒泰证券等机构。管理规模处于行业中游，权益与固定收益产品线较为均衡。"
+    business: [权益投资, 固定收益, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "新华基金官网", url: "https://www.ncfund.com.cn", date: "2026-09-30" }
+  - id: fund-hui-tian-fu
+    name: 汇添富基金管理股份有限公司
+    short: 汇添富基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2005
+    website: https://www.99fund.com
+    intro: "汇添富基金成立于2005年，股东为东方证券、上海报业集团与东航金控等机构，属券商系公募。管理规模居行业前列，主动权益投资与消费、医药等赛道产品在业内辨识度较高。"
+    business: [权益投资, 固定收益, 指数与ETF, 养老目标基金]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "汇添富基金官网", url: "https://www.99fund.com", date: "2026-09-30" }
+  - id: fund-gong-yin-rui-xin
+    name: 工银瑞信基金管理有限公司
+    short: 工银瑞信基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2005
+    website: https://www.icbcubs.com.cn
+    intro: "工银瑞信基金成立于2005年，由中国工商银行与瑞士信贷合资组建，是我国首家由银行直接发起设立并控股的合资基金管理公司，属银行系公募。管理规模居行业前列，固定收益与养老金业务规模突出。"
+    business: [固定收益, 养老目标基金, 权益投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "工银瑞信基金官网", url: "https://www.icbcubs.com.cn", date: "2026-09-30" }
+  - id: fund-jiao-yin-shi-luo-de
+    name: 交银施罗德基金管理有限公司
+    short: 交银施罗德基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2005
+    website: https://www.fund001.com
+    intro: "交银施罗德基金成立于2005年，由交通银行与施罗德投资集团合资组建，是中国第一批银行背景基金公司之一。管理规模居行业前列，固定收益与主动权益产品线均较完整。"
+    business: [固定收益, 权益投资, 多元资产, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "交银施罗德基金官网", url: "https://www.fund001.com", date: "2026-09-30" }
+  - id: fund-zhong-xin-bao-cheng
+    name: 中信保诚基金管理有限公司
+    short: 中信保诚基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2005
+    website: https://www.citicprufunds.com.cn
+    intro: "中信保诚基金成立于2005年，由中信集团与英国保诚集团合资组建，属中外合资公募。管理规模处于行业中游，量化与固定收益产品较有特色。"
+    business: [量化投资, 固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "中信保诚基金官网", url: "https://www.citicprufunds.com.cn", date: "2026-09-30" }
+  - id: fund-jian-xin
+    name: 建信基金管理有限责任公司
+    short: 建信基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2005
+    website: https://www.ccbfund.cn
+    intro: "建信基金成立于2005年，由中国建设银行控股并与信安金融集团合资组建，属银行系公募。管理规模居行业前列，固定收益、货币与养老产品规模占比较高。"
+    business: [固定收益, 货币与现金管理, 养老目标基金, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "建信基金官网", url: "https://www.ccbfund.cn", date: "2026-09-30" }
+  - id: fund-hua-shang
+    name: 华商基金管理有限公司
+    short: 华商基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2005
+    website: https://www.hsfund.com
+    intro: "华商基金成立于2005年，注册地北京，股东以产业与投资机构为主。管理规模处于行业中游，主动权益投资是其主要特色。"
+    business: [权益投资, 固定收益, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "华商基金官网", url: "https://www.hsfund.com", date: "2026-09-30" }
+  - id: fund-hui-feng-jin-xin
+    name: 汇丰晋信基金管理有限公司
+    short: 汇丰晋信基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2005
+    website: https://www.hsbcjt.cn
+    intro: "汇丰晋信基金成立于2005年，由山西信托与汇丰环球投资管理合资组建，属信托系中外合资公募。管理规模处于行业中游，在主动权益的估值驱动投资方法上有一定辨识度。"
+    business: [权益投资, 固定收益]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "汇丰晋信基金官网", url: "https://www.hsbcjt.cn", date: "2026-09-30" }
+  - id: fund-yi-min
+    name: 益民基金管理有限公司
+    short: 益民基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2005
+    website: https://www.ymfund.com
+    intro: "益民基金成立于2005年，注册地重庆，股东以信托背景机构为主，属信托系公募。管理规模相对有限，产品数量较少。"
+    business: [权益投资, 固定收益]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "益民基金官网", url: "https://www.ymfund.com", date: "2026-09-30" }
+  - id: fund-zhong-you-chuang-ye
+    name: 中邮创业基金管理股份有限公司
+    short: 中邮创业基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2006
+    website: https://www.postfund.com.cn/portal-view/index
+    intro: "中邮创业基金成立于2006年，注册地北京，股东包括中邮证券与首创证券等机构，属券商系公募。管理规模处于行业中游，主动权益与固定收益产品线并存。"
+    business: [权益投资, 固定收益, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "中邮创业基金官网", url: "https://www.postfund.com.cn/portal-view/index", date: "2026-09-30" }
+  - id: fund-xin-da-ao-ya
+    name: 信达澳亚基金管理有限公司
+    short: 信达澳亚基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2006
+    website: https://www.fscinda.com
+    intro: "信达澳亚基金成立于2006年，由信达证券与澳洲联邦银行合资组建，属券商系中外合资公募。管理规模处于行业中游，主动权益投资尤其是科技成长方向产品较有辨识度。"
+    business: [权益投资, 固定收益, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "信达澳亚基金官网", url: "https://www.fscinda.com", date: "2026-09-30" }
+  - id: fund-nuo-de
+    name: 诺德基金管理有限公司
+    short: 诺德基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2006
+    website: https://www.nuodefund.com
+    intro: "诺德基金成立于2006年，注册地上海，股东以产业与投资机构为主。管理规模处于行业中游，固定收益与主动权益产品线较为均衡。"
+    business: [固定收益, 权益投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "诺德基金官网", url: "https://www.nuodefund.com", date: "2026-09-30" }
+  - id: fund-zhong-ou
+    name: 中欧基金管理有限公司
+    short: 中欧基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2006
+    website: https://www.zofund.com
+    intro: "中欧基金成立于2006年，是国内较早推行核心员工持股的公募基金管理公司之一，股东由员工持股平台与战略投资者共同构成。管理规模居行业前列，以主动权益和长期基本面投资见长。"
+    business: [权益投资, 固定收益, 多元资产, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "中欧基金官网", url: "https://www.zofund.com", date: "2026-09-30" }
+  - id: fund-jin-yuan-shun-an
+    name: 金元顺安基金管理有限公司
+    short: 金元顺安基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2006
+    website: https://www.jysa99.com
+    intro: "金元顺安基金成立于2006年，股东以券商背景机构为主，属券商系公募。管理规模处于行业中游，产品数量相对精简。"
+    business: [权益投资, 固定收益]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "金元顺安基金官网", url: "https://www.jysa99.com", date: "2026-09-30" }
+  - id: fund-pu-yin-an-sheng
+    name: 浦银安盛基金管理有限公司
+    short: 浦银安盛基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2007
+    intro: "浦银安盛基金成立于2007年，由上海浦东发展银行与安盛投资管理公司合资组建，属银行系中外合资公募。管理规模居行业前列，固定收益与多元资产配置类产品规模占比较高。"
+    business: [固定收益, 多元资产, 权益投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "中国证券投资基金业协会《公募基金管理人名录》", url: "https://www.amac.org.cn/fwdt/wyc/jgcprycx/jgcx/gmjjglrml/", date: "2026-09-30" }
+  - id: fund-nong-yin-hui-li
+    name: 农银汇理基金管理有限公司
+    short: 农银汇理基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2008
+    website: https://www.abc-ca.com
+    intro: "农银汇理基金成立于2008年，由中国农业银行（持股51.67%）、东方汇理资产管理公司（持股33.33%）与中铝资本控股有限公司（持股15%）共同出资组建，属银行系中外合资公募。管理规模处于行业中游，固定收益与货币类产品为主力。"
+    business: [固定收益, 货币与现金管理, 权益投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "农银汇理基金官网", url: "https://www.abc-ca.com", date: "2026-09-30" }
+  - id: fund-min-sheng-jia-yin
+    name: 民生加银基金管理有限公司
+    short: 民生加银基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2008
+    website: https://www.msjyfund.com.cn
+    intro: "民生加银基金成立于2008年，由民生银行与加拿大皇家银行合资组建，属银行系中外合资公募。管理规模处于行业中游，固定收益与货币类产品规模占比较高。"
+    business: [固定收益, 货币与现金管理, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "民生加银基金官网", url: "https://www.msjyfund.com.cn", date: "2026-09-30" }
+  - id: fund-xi-bu-li-de
+    name: 西部利得基金管理有限公司
+    short: 西部利得基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2010
+    website: https://www.westleadfund.com
+    intro: "西部利得基金成立于2010年，2014年经历股权变动后，现股东为西部证券股份有限公司（持股51%）与利得科技有限公司（持股49%），属券商系公募。管理规模处于行业中游，固定收益与量化产品较有特色。"
+    business: [固定收益, 量化投资, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "西部利得基金官网", url: "https://www.westleadfund.com", date: "2026-09-30" }
+  - id: fund-zhe-shang
+    name: 浙商基金管理有限公司
+    short: 浙商基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2010
+    website: https://www.zsfund.com
+    intro: "浙商基金成立于2010年，注册地杭州，股东为民生人寿保险股份有限公司（持股50%）、浙商证券股份有限公司（持股25%）与养生堂有限公司（持股25%）。管理规模相对有限，产品线以固定收益与权益为主。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "浙商基金官网", url: "https://www.zsfund.com", date: "2026-09-30" }
+  - id: fund-ping-an
+    name: 平安基金管理有限公司
+    short: 平安基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2011
+    website: https://fund.pingan.com
+    intro: "平安基金成立于2011年，控股股东为平安信托有限责任公司，属中国平安集团旗下的基金管理平台。管理规模居行业前列，固定收益与货币类产品规模占比较高，同时在ETF与养老投资方向亦有布局。"
+    business: [固定收益, 货币与现金管理, 指数与ETF, 养老目标基金]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "平安基金官网", url: "https://fund.pingan.com", date: "2026-09-30" }
+  - id: fund-fu-an-da
+    name: 富安达基金管理有限公司
+    short: 富安达基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2011
+    website: https://www.fadfunds.com
+    intro: "富安达基金成立于2011年，注册地上海，股东分别为南京证券股份有限公司、江苏云杉资本管理有限公司和南京市河西新城区国有资产经营控股（集团）有限责任公司。管理规模相对有限。"
+    business: [权益投资, 固定收益]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "富安达基金官网", url: "https://www.fadfunds.com", date: "2026-09-30" }
+  - id: fund-cai-tong
+    name: 财通基金管理有限公司
+    short: 财通基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2011
+    website: https://www.ctfund.com
+    intro: "财通基金成立于2011年，股东为财通证券等浙江省国资背景机构，属券商系公募。管理规模处于行业中游，在定增与再融资主题投资上曾有较鲜明的业务特色。"
+    business: [权益投资, 固定收益, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "财通基金官网", url: "https://www.ctfund.com", date: "2026-09-30" }
+  - id: fund-fang-zheng-fu-bang
+    name: 方正富邦基金管理有限公司
+    short: 方正富邦基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2011
+    website: https://www.founderff.com
+    intro: "方正富邦基金成立于2011年，注册资本6.6亿元，股东为方正证券股份有限公司（出资66.7%）与富邦证券投资信托股份有限公司（出资33.3%），控股股东方正证券的实际控制人为中国平安保险（集团）股份有限公司，是两岸合资基金管理公司之一。管理规模处于行业中游。"
+    business: [固定收益, 权益投资, 量化投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "方正富邦基金官网", url: "https://www.founderff.com", date: "2026-09-30" }
+  - id: fund-chang-an
+    name: 长安基金管理有限公司
+    short: 长安基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2011
+    website: https://www.changanfunds.com
+    intro: "长安基金成立于2011年，注册地上海，股东为券商与信托背景机构。管理规模相对有限，产品线以固定收益与权益为主。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "长安基金官网", url: "https://www.changanfunds.com", date: "2026-09-30" }
+  - id: fund-guo-jin
+    name: 国金基金管理有限公司
+    short: 国金基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2011
+    website: https://www.gfund.com
+    intro: "国金基金成立于2011年，注册地北京，股东包括国金证券与苏州工业园区国资平台等机构，属券商系公募。管理规模处于行业中游，固定收益与量化投资方向产品较有特色。"
+    business: [固定收益, 量化投资, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "国金基金官网", url: "https://www.gfund.com", date: "2026-09-30" }
+  - id: fund-an-xin
+    name: 安信基金管理有限责任公司
+    short: 安信基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2011
+    website: https://www.essencefund.com
+    intro: "安信基金成立于2011年，注册地深圳，股东为央企金融平台与券商背景机构。管理规模处于行业中游，固定收益与主动权益产品线均较完整。"
+    business: [固定收益, 权益投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "安信基金官网", url: "https://www.essencefund.com", date: "2026-09-30" }
+  - id: fund-de-bang
+    name: 德邦基金管理有限公司
+    short: 德邦基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2012
+    website: https://www.dbfund.com.cn
+    intro: "德邦基金成立于2012年，是中国证监会批准设立的第70家基金管理公司，股东为德邦证券股份有限公司（持股80%）与浙江省土产畜产进出口集团有限公司（持股20%），属国有控股的券商系公募。管理规模处于行业中游。"
+    business: [固定收益, 权益投资, 量化投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "德邦基金官网", url: "https://www.dbfund.com.cn", date: "2026-09-30" }
+  - id: fund-hua-chen-wei-lai
+    name: 华宸未来基金管理有限公司
+    short: 华宸未来基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2012
+    website: https://www.hcmiraefund.com
+    intro: "华宸未来基金成立于2012年，由华宸信托与韩国未来资产集团合资组建，属信托系中外合资公募。管理规模相对有限，产品数量较少。"
+    business: [权益投资, 固定收益]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "华宸未来基金官网", url: "https://www.hcmiraefund.com", date: "2026-09-30" }
+  - id: fund-hong-ta-hong-tu
+    name: 红塔红土基金管理有限公司
+    short: 红塔红土基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2012
+    website: https://www.htamc.com.cn
+    intro: "红塔红土基金成立于2012年，注册地深圳，股东为红塔证券与深圳市创新投资集团等机构，属券商与产业资本混合背景公募。管理规模相对有限。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "红塔红土基金官网", url: "https://www.htamc.com.cn", date: "2026-09-30" }
+  - id: fund-ying-da
+    name: 英大基金管理有限公司
+    short: 英大基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2012
+    website: https://www.ydamc.com
+    intro: "英大基金成立于2012年，控股股东为国网英大国际控股集团，属国家电网体系内的金融机构。管理规模处于行业中游，固定收益与电力能源主题权益产品较有特色。"
+    business: [固定收益, 权益投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "英大基金官网", url: "https://www.ydamc.com", date: "2026-09-30" }
+  - id: fund-jiang-xin
+    name: 江信基金管理有限公司
+    short: 江信基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2013
+    website: https://www.jxfund.cn
+    intro: "江信基金成立于2013年，注册地北京，股东为国盛证券股份有限公司（持股30%）、金麒麟投资有限公司等，公司无实际控制人。管理规模相对有限。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "江信基金官网", url: "https://www.jxfund.cn", date: "2026-09-30" }
+  - id: fund-tai-ping
+    name: 太平基金管理有限公司
+    short: 太平基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2013
+    website: https://www.taipingfund.com.cn
+    intro: "太平基金成立于2013年，由太平资产管理有限公司、太平人寿保险有限公司与安石投资管理有限公司共同出资成立，属保险系中外合资公募，是中国太平保险集团旗下的基金管理平台。管理规模处于行业中游。"
+    business: [固定收益, 权益投资, 多元资产]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "太平基金官网", url: "https://www.taipingfund.com.cn", date: "2026-09-30" }
+  - id: fund-hua-run-yuan-da
+    name: 华润元大基金管理有限公司
+    short: 华润元大基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2013
+    website: https://www.cryuantafund.com
+    intro: "华润元大基金成立于2013年，隶属于华润集团，由华润深国投信托与台湾元大证券投资信托合资组建，属信托系中外合资公募。管理规模相对有限，产品数量较少。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "华润元大基金官网", url: "https://www.cryuantafund.com", date: "2026-09-30" }
+  - id: fund-qian-hai-kai-yuan
+    name: 前海开源基金管理有限公司
+    short: 前海开源基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2013
+    website: https://www.qhkyfund.com
+    intro: "前海开源基金成立于2013年，注册地深圳，股东包括开源证券与深圳前海背景的民营资本。管理规模处于行业中游，主动权益与主题型产品较多。"
+    business: [权益投资, 固定收益, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "前海开源基金官网", url: "https://www.qhkyfund.com", date: "2026-09-30" }
+  - id: fund-dong-hai
+    name: 东海基金管理有限责任公司
+    short: 东海基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2013
+    website: https://www.donghaifunds.com
+    intro: "东海基金成立于2013年，是中国证监会批准设立的第78家公募基金管理公司，第一大股东为东海证券股份有限公司（持股49.9403%），其他主要股东包括苏州市相城区江南化纤集团有限公司、深圳鹏博实业集团有限公司与常州交通建设投资开发有限公司。管理规模相对有限。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "东海基金官网", url: "https://www.donghaifunds.com", date: "2026-09-30" }
+  - id: fund-zhong-jia
+    name: 中加基金管理有限公司
+    short: 中加基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2013
+    website: https://www.bobbns.com
+    intro: "中加基金成立于2013年，注册地北京，注册资本4.65亿元，共有六家股东，分别为北京银行股份有限公司（持股44%）、加拿大丰业银行（持股28%）、北京乾融投资（集团）有限公司、中地种业（集团）有限公司、中国有研科技集团有限公司与绍兴越华开发经营有限公司。属银行系中外合资公募，管理规模处于行业中游。"
+    business: [固定收益, 货币与现金管理, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "中加基金官网", url: "https://www.bobbns.com", date: "2026-09-30" }
+  - id: fund-xing-ye
+    name: 兴业基金管理有限公司
+    short: 兴业基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2013
+    website: https://www.cib-fund.com.cn
+    intro: "兴业基金成立于2013年，控股股东为兴业银行，属银行系公募。管理规模居行业前列，固定收益与货币类产品规模占比较高。"
+    business: [固定收益, 货币与现金管理, 权益投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "兴业基金官网", url: "https://www.cib-fund.com.cn", date: "2026-09-30" }
+  - id: fund-guo-lian
+    name: 国联基金管理有限公司
+    short: 国联基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2013
+    website: https://www.glfund.com
+    intro: "国联基金成立于2013年，前身为中融基金，控股股东为国联证券，属券商系公募。管理规模处于行业中游，固定收益与主动权益产品线较为均衡。"
+    business: [固定收益, 权益投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "国联基金官网", url: "https://www.glfund.com", date: "2026-09-30" }
+  - id: fund-jing-guan-tai-fu
+    name: 北京京管泰富基金管理有限责任公司
+    short: 京管泰富基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2013
+    website: https://www.bscomcfund.com/
+    intro: "北京京管泰富基金成立于2013年，注册地北京，注册资本3.6亿元，股东为北京国有资本运营管理有限公司（出资66.7%）与国泰证券投资信托股份有限公司（出资33.3%），属两岸合资公募。管理规模相对有限。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "京管泰富基金官网", url: "https://www.bscomcfund.com/", date: "2026-09-30" }
+  - id: fund-zhong-xin-jian-tou
+    name: 中信建投基金管理有限公司
+    short: 中信建投基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2013
+    website: https://www.cfund108.com
+    intro: "中信建投基金成立于2013年，注册地北京，由中信建投证券股份有限公司全资持股，属券商系公募。管理规模处于行业中游，固定收益与主动权益产品线均较完整。"
+    business: [固定收益, 权益投资, 指数与ETF]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "中信建投基金官网", url: "https://www.cfund108.com", date: "2026-09-30" }
+  - id: fund-shang-yin
+    name: 上银基金管理有限公司
+    short: 上银基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2013
+    website: https://www.boscam.com.cn
+    intro: "上银基金成立于2013年，由上海银行发起设立并控股，属银行系公募。管理规模处于行业中游，固定收益与货币类产品规模占比较高。"
+    business: [固定收益, 货币与现金管理, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "上银基金官网", url: "https://www.boscam.com.cn", date: "2026-09-30" }
+  - id: fund-xin-yuan
+    name: 鑫元基金管理有限公司
+    short: 鑫元基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2013
+    website: https://www.xyamc.com
+    intro: "鑫元基金成立于2013年，注册资本17亿元，股东为南京银行股份有限公司（出资13.6亿元，股权比例80%），属银行系公募。管理规模处于行业中游，以固定收益与货币类产品为主。"
+    business: [固定收益, 货币与现金管理, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "鑫元基金官网", url: "https://www.xyamc.com", date: "2026-09-30" }
+  - id: fund-yong-ying
+    name: 永赢基金管理有限公司
+    short: 永赢基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2013
+    website: https://www.maxwealthfund.com
+    intro: "永赢基金成立于2013年，由宁波银行控股并与新加坡利安资金管理公司合资组建，属银行系中外合资公募。管理规模居行业前列，固定收益类产品规模突出。"
+    business: [固定收益, 货币与现金管理, 权益投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "永赢基金官网", url: "https://www.maxwealthfund.com", date: "2026-09-30" }
+  - id: fund-xing-yin
+    name: 兴银基金管理有限责任公司
+    short: 兴银基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2013
+    website: https://www.hffunds.cn
+    intro: "兴银基金成立于2013年，前身为华福基金管理有限责任公司，由华福证券与国脉科技共同出资设立，属券商系公募，下设全资子公司上海兴瀚资产管理有限公司。管理规模处于行业中游。"
+    business: [固定收益, 权益投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "兴银基金官网", url: "https://www.hffunds.cn", date: "2026-09-30" }
+  - id: fund-guo-shou-an-bao
+    name: 国寿安保基金管理有限公司
+    short: 国寿安保基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2013
+    website: https://www.gsfunds.com.cn
+    intro: "国寿安保基金成立于2013年，由中国人寿资产管理有限公司与安保资本投资有限公司合资组建，属保险系中外合资公募，是中国人寿体系内的基金管理平台。管理规模居行业前列，固定收益类产品规模占比较高。"
+    business: [固定收益, 货币与现金管理, 权益投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "国寿安保基金官网", url: "https://www.gsfunds.com.cn", date: "2026-09-30" }
+  - id: fund-yuan-xin-yong-feng
+    name: 圆信永丰基金管理有限公司
+    short: 圆信永丰基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2014
+    website: https://www.gtsfund.com.cn
+    intro: "圆信永丰基金成立于2014年，由厦门国际信托与台湾永丰证券投资信托合资组建，属信托系中外合资公募。管理规模处于行业中游，主动权益投资为其主要特色。"
+    business: [权益投资, 固定收益]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "圆信永丰基金官网", url: "https://www.gtsfund.com.cn", date: "2026-09-30" }
+  - id: fund-zhong-jin
+    name: 中金基金管理有限公司
+    short: 中金基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2014
+    website: https://www.ciccfund.com
+    intro: "中金基金成立于2014年，由中国国际金融股份有限公司全资持股，属券商系公募。管理规模处于行业中游，固定收益与指数、多元资产产品线并存。"
+    business: [固定收益, 指数与ETF, 多元资产]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "中金基金官网", url: "https://www.ciccfund.com", date: "2026-09-30" }
+  - id: fund-hua-yin
+    name: 华银基金管理有限公司
+    short: 华银基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2014
+    website: https://www.huayinfund.com
+    intro: "华银基金成立于2014年3月，控股股东为北京国际信托有限公司（持股60%），第二大股东为莱州瑞海投资有限公司（持股40%），属信托系公募；公司于2025年11月17日由北信瑞丰基金更名而来，现名取自其品牌升级，华夏银行在管理、渠道与投研上给予支持但双方暂无股权关系。管理规模处于行业中游。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "华银基金官网", url: "https://www.huayinfund.com", date: "2026-09-30" }
+      - { title: "证券时报：北信瑞丰基金正式更名为华银基金", url: "https://www.stcn.com/article/detail/3501620.html", date: "2025-11-19" }
+  - id: fund-hong-tu-chuang-xin
+    name: 红土创新基金管理有限公司
+    short: 红土创新基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2014
+    website: https://www.htcxfund.com/
+    intro: "红土创新基金成立于2014年，由深圳市创新投资集团发起设立，属产业系公募。管理规模处于行业中游，固定收益与创新主题权益产品为主。"
+    business: [固定收益, 权益投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "红土创新基金官网", url: "https://www.htcxfund.com/", date: "2026-09-30" }
+  - id: fund-jia-he
+    name: 嘉合基金管理有限公司
+    short: 嘉合基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2014
+    website: https://www.haoamc.com
+    intro: "嘉合基金成立于2014年，注册资本3亿元，股东为中航信托股份有限公司、上海慧弘实业集团有限公司、福建圣农控股集团有限公司、广东万和集团有限公司、山东通汇资本投资集团有限公司及北京智勇仁信投资咨询有限公司。管理规模处于行业中游。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "嘉合基金官网", url: "https://www.haoamc.com", date: "2026-09-30" }
+  - id: fund-chuang-jin-he-xin
+    name: 创金合信基金管理有限公司
+    short: 创金合信基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2014
+    website: https://www.cjhxfund.com
+    intro: "创金合信基金成立于2014年，注册地深圳，由第一创业证券与核心员工持股平台共同发起设立，属券商系公募。管理规模处于行业中游，固定收益与量化投资方向产品较多。"
+    business: [固定收益, 量化投资, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "创金合信基金官网", url: "https://www.cjhxfund.com", date: "2026-09-30" }
+  - id: fund-jiu-tai
+    name: 九泰基金管理有限公司
+    short: 九泰基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2014
+    website: https://www.jtamc.com
+    intro: "九泰基金成立于2014年，控股股东为同创九鼎投资管理集团，属产业系公募。管理规模相对有限，定增与再融资主题产品曾是其业务特色。"
+    business: [权益投资, 固定收益, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "九泰基金官网", url: "https://www.jtamc.com", date: "2026-09-30" }
+  - id: fund-hong-de
+    name: 泓德基金管理有限公司
+    short: 泓德基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2015
+    website: https://www.hongdefund.com
+    intro: "泓德基金成立于2015年，经中国证监会批准设立，注册地为西藏拉萨，注册资本1.43亿元，是一家由资深从业者发起、个人系特征明显的公募基金管理公司。管理规模处于行业中游，以主动权益投资见长。"
+    business: [权益投资, 固定收益, 量化投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "泓德基金官网", url: "https://www.hongdefund.com", date: "2026-09-30" }
+  - id: fund-jin-xin
+    name: 金信基金管理有限公司
+    short: 金信基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2015
+    website: https://www.jxfunds.com.cn/front/index.jhtml
+    intro: "金信基金成立于2015年，注册地深圳，属个人系背景的中小型公募。管理规模相对有限，以主动权益投资为主要方向。"
+    business: [权益投资, 固定收益]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "金信基金官网", url: "https://www.jxfunds.com.cn/front/index.jhtml", date: "2026-09-30" }
+  - id: fund-qian-hai-lian-he
+    name: 新疆前海联合基金管理有限公司
+    short: 前海联合基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2015
+    website: https://www.qhlhfund.com/front/index.jhtml;jsessionid=9C04074E2E29009C4B1244033BA80016
+    intro: "新疆前海联合基金成立于2015年，注册地新疆，股东以深圳民营资本为主。管理规模相对有限，产品线以固定收益与权益为主。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "前海联合基金官网", url: "https://www.qhlhfund.com/front/index.jhtml;jsessionid=9C04074E2E29009C4B1244033BA80016", date: "2026-09-30" }
+  - id: fund-xin-wo
+    name: 新沃基金管理有限公司
+    short: 新沃基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2015
+    website: https://www.sinvofund.com
+    intro: "新沃基金成立于2015年，控股股东为新沃资本控股集团，属产业系公募。管理规模相对有限，产品数量较少。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "新沃基金官网", url: "https://www.sinvofund.com", date: "2026-09-30" }
+  - id: fund-zhong-ke-wo-tu
+    name: 中科沃土基金管理有限公司
+    short: 中科沃土基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2015
+    website: http://www.richlandasm.com.cn
+    intro: "中科沃土基金成立于2015年9月，是国内第100家公募基金管理公司，注册地佛山市南海区，股东以广东中科科创创业投资管理有限责任公司（持股62.2273%）与广东省粤科金融集团有限公司等为主，是一家具有创业投资背景的公募基金管理公司。管理规模相对有限。"
+    business: [权益投资, 固定收益]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "中科沃土基金官网", url: "http://www.richlandasm.com.cn", date: "2026-09-30" }
+      - { title: "中科沃土基金官网-公司简介", url: "http://e.richlandasm.com.cn/aboutus/summary/index.html", date: "2026-09-30" }
+  - id: fund-fu-rong
+    name: 富荣基金管理有限公司
+    short: 富荣基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2016
+    website: https://www.furamc.com.cn
+    intro: "富荣基金成立于2016年，注册地广州，股东以广州国资背景机构为主。管理规模相对有限，产品线以固定收益与权益为主。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "富荣基金官网", url: "https://www.furamc.com.cn", date: "2026-09-30" }
+  - id: fund-hui-an
+    name: 汇安基金管理有限责任公司
+    short: 汇安基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2016
+    website: https://www.huianfund.cn
+    intro: "汇安基金成立于2016年，注册地上海，股东以自然人为主，属个人系公募。管理规模处于行业中游，固定收益与主动权益产品线并存。"
+    business: [固定收益, 权益投资, 量化投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "汇安基金官网", url: "https://www.huianfund.cn", date: "2026-09-30" }
+  - id: fund-xian-feng
+    name: 先锋基金管理有限公司
+    short: 先锋基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2016
+    website: https://www.xf-fund.com
+    intro: "先锋基金成立于2016年，注册地深圳，股东以民营产业资本为主。管理规模相对有限，产品数量较少。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "先锋基金官网", url: "https://www.xf-fund.com", date: "2026-09-30" }
+  - id: fund-zhong-hang
+    name: 中航基金管理有限公司
+    short: 中航基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2016
+    website: https://www.avicfund.cn/front/index.jhtml
+    intro: "中航基金成立于2016年，注册地北京，由中航证券等中航工业体系机构发起设立，属产业与券商混合背景公募。管理规模处于行业中游，固定收益产品规模占比较高。"
+    business: [固定收益, 权益投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "中航基金官网", url: "https://www.avicfund.cn/front/index.jhtml", date: "2026-09-30" }
+  - id: fund-hua-tai-bao-xing
+    name: 华泰保兴基金管理有限公司
+    short: 华泰保兴基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2016
+    website: https://www.ehuataifund.com
+    intro: "华泰保兴基金成立于2016年，是华泰保险集团控股的基金管理公司，属保险系公募。管理规模处于行业中游，固定收益与绝对收益策略产品为其主要方向。"
+    business: [固定收益, 绝对收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "华泰保兴基金官网", url: "https://www.ehuataifund.com", date: "2026-09-30" }
+  - id: fund-peng-yang
+    name: 鹏扬基金管理有限公司
+    short: 鹏扬基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2016
+    website: https://www.pyamc.com/front/index.jhtml
+    intro: "鹏扬基金成立于2016年，由资深债券投资人士发起设立，是国内首家由私募基金管理人转为公募基金管理人的公司，属个人系公募。管理规模处于行业中游，固定收益投资是其核心优势。"
+    business: [固定收益, 可转债, 权益投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "鹏扬基金官网", url: "https://www.pyamc.com/front/index.jhtml", date: "2026-09-30" }
+  - id: fund-heng-sheng-qian-hai
+    name: 恒生前海基金管理有限公司
+    short: 恒生前海基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2016
+    website: https://www.hsqhfunds.com
+    intro: "恒生前海基金成立于2016年，由恒生银行与深圳市前海金融控股有限公司合资组建，属银行系中外合资公募。管理规模相对有限，产品线以固定收益与权益为主。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "恒生前海基金官网", url: "https://www.hsqhfunds.com", date: "2026-09-30" }
+  - id: fund-ge-lin
+    name: 格林基金管理有限公司
+    short: 格林基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2016
+    website: https://www.china-greenfund.com
+    intro: "格林基金成立于2016年，注册地北京，股东以产业与投资机构为主。管理规模处于行业中游，固定收益与权益产品线并存。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "格林基金官网", url: "https://www.china-greenfund.com", date: "2026-09-30" }
+  - id: fund-nan-hua
+    name: 南华基金管理有限公司
+    short: 南华基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2016
+    website: https://www.nanhuafunds.com
+    intro: "南华基金成立于2016年，经中国证监会核准设立并于2016年11月17日完成工商注册，是国内第一家由期货公司全资控股的公募基金管理公司，控股股东为南华期货。管理规模相对有限。"
+    business: [固定收益, 权益投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "南华基金官网", url: "https://www.nanhuafunds.com", date: "2026-09-30" }
+  - id: fund-kai-shi
+    name: 凯石基金管理有限公司
+    short: 凯石基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2017
+    website: https://www.vstonefund.com
+    intro: "凯石基金成立于2017年，是全国首批全专业人士持股的公募基金管理公司，股东全部为公司核心团队成员，平均金融从业经历超过20年，属个人系公募。管理规模相对有限。"
+    business: [权益投资, 固定收益]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "凯石基金官网", url: "https://www.vstonefund.com", date: "2026-09-30" }
+  - id: fund-guo-rong
+    name: 国融基金管理有限公司
+    short: 国融基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2017
+    website: https://www.gowinamc.com
+    intro: "国融基金成立于2017年，经中国证监会批准设立，注册资本2.5亿元，股东为国融证券股份有限公司和上海谷若投资中心（有限合伙），实际控制人为陕西投资集团有限公司，属券商系公募。管理规模相对有限。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "国融基金官网", url: "https://www.gowinamc.com", date: "2026-09-30" }
+  - id: fund-dong-fang-a-er-fa
+    name: 东方阿尔法基金管理有限公司
+    short: 东方阿尔法基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2017
+    website: https://www.dfa66.com
+    intro: "东方阿尔法基金成立于2017年，注册地深圳，是华南地区首家纯员工持股的公募基金管理公司，股东为刘明（44.46%）、珠海共同成长投资合伙企业（39.56%）、肖冰（13.98%）与曾健（2.00%），属个人系公募。管理规模相对有限。"
+    business: [权益投资, 固定收益]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "东方阿尔法基金官网", url: "https://www.dfa66.com", date: "2026-09-30" }
+  - id: fund-heng-yue
+    name: 恒越基金管理有限公司
+    short: 恒越基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2017
+    website: https://www.hengyuefund.com
+    intro: "恒越基金成立于2017年，注册地上海，属个人系背景的中小型公募。管理规模相对有限，以主动权益投资为主要方向。"
+    business: [权益投资, 固定收益]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "恒越基金官网", url: "https://www.hengyuefund.com", date: "2026-09-30" }
+  - id: fund-hong-yi-yuan-fang
+    name: 弘毅远方基金管理有限公司
+    short: 弘毅远方基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2018
+    website: https://www.honyfunds.com
+    intro: "弘毅远方基金成立于2018年，办公地点设于上海，注册资本4.09亿元，由弘毅投资（北京）有限公司100%出资，是弘毅投资旗下专事二级市场投资及管理业务的公募基金管理公司。管理规模相对有限。"
+    business: [权益投资, 固定收益, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "弘毅远方基金官网", url: "https://www.honyfunds.com", date: "2026-09-30" }
+  - id: fund-he-xu-zhi-yuan
+    name: 合煦智远基金管理有限公司
+    short: 合煦智远基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2017
+    website: https://www.uvasset.com
+    intro: "合煦智远基金成立于2017年，是国内首批由资深专业人士发起股东的公募基金管理公司，创始股东平均从业经验超过15年，股东包括郑旭（31.29%）、赵新宇（17.17%）、林琦（16.58%）等自然人及员工持股平台。管理规模相对有限。"
+    business: [权益投资, 固定收益]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "合煦智远基金官网", url: "https://www.uvasset.com", date: "2026-09-30" }
+  - id: fund-bo-dao
+    name: 博道基金管理有限公司
+    short: 博道基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2017
+    website: https://www.bdfund.cn/
+    intro: "博道基金成立于2017年，由资深公募人士发起设立，是国内由私募基金管理人转为公募基金管理人的公司之一，属个人系公募。管理规模处于行业中游，量化与主动权益产品并重。"
+    business: [量化投资, 权益投资, 固定收益]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "博道基金官网", url: "https://www.bdfund.cn/", date: "2026-09-30" }
+  - id: fund-feng-chao
+    name: 蜂巢基金管理有限公司
+    short: 蜂巢基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2018
+    website: https://www.hexaamc.com/front/index.jhtml
+    intro: "蜂巢基金成立于2018年，注册地上海，聚焦固定收益增强策略并结合大类资产研究，已形成固定收益、主动权益、量化策略等多条产品线，属个人系公募。管理规模处于行业中游。"
+    business: [固定收益, 权益投资, 量化投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "蜂巢基金官网", url: "https://www.hexaamc.com/front/index.jhtml", date: "2026-09-30" }
+  - id: fund-zhong-geng
+    name: 中庚基金管理有限公司
+    short: 中庚基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2015
+    website: https://www.zgfunds.com.cn
+    intro: "中庚基金成立于2015年，注册地上海，股东由产业资本与专业人士构成。管理规模相对有限，以价值策略的主动权益投资为特色。"
+    business: [权益投资, 固定收益]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "中庚基金官网", url: "https://www.zgfunds.com.cn", date: "2026-09-30" }
+  - id: fund-xiang-cai
+    name: 湘财基金管理有限公司
+    short: 湘财基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2018
+    website: https://www.xc-fund.com
+    intro: "湘财基金成立于2018年，经中国证监会批准设立，注册地为上海，注册资本3.5亿元，股东为湘财证券股份有限公司，属券商系公募。管理规模相对有限。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "湘财基金官网", url: "https://www.xc-fund.com", date: "2026-09-30" }
+  - id: fund-rui-yuan
+    name: 睿远基金管理有限公司
+    short: 睿远基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2018
+    website: https://www.foresightfund.com
+    intro: "睿远基金成立于2018年，注册地上海，由陈光明等资深投资人发起设立，属个人系公募。管理规模处于行业中游，产品数量精简，以长期价值投资的主动权益产品为特色。"
+    business: [权益投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "睿远基金官网", url: "https://www.foresightfund.com", date: "2026-09-30" }
+  - id: fund-zhu-que
+    name: 朱雀基金管理有限公司
+    short: 朱雀基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2018
+    website: https://www.rosefinchfund.com
+    intro: "朱雀基金成立于2018年，注册地为陕西西安，由上海朱雀投资等发起设立，是国内由私募基金管理人转为公募基金管理人的公司之一。管理规模相对有限，以主动权益投资为主。"
+    business: [权益投资, 固定收益]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "朱雀基金官网", url: "https://www.rosefinchfund.com", date: "2026-09-30" }
+  - id: fund-chun-hou
+    name: 淳厚基金管理有限公司
+    short: 淳厚基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2018
+    website: https://www.purekindfund.com
+    intro: "淳厚基金成立于2018年，注册地上海，属个人系背景的中小型公募。管理规模相对有限，固定收益与权益产品线并存。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "淳厚基金官网", url: "https://www.purekindfund.com", date: "2026-09-30" }
+  - id: fund-tong-tai
+    name: 同泰基金管理有限公司
+    short: 同泰基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2018
+    website: https://www.tongtaiamc.com/front/index.jhtml
+    intro: "同泰基金成立于2018年，注册地深圳，属个人系背景的中小型公募。管理规模相对有限，产品数量较多但单只规模偏小。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "同泰基金官网", url: "https://www.tongtaiamc.com/front/index.jhtml", date: "2026-09-30" }
+  - id: fund-hui-sheng
+    name: 惠升基金管理有限责任公司
+    short: 惠升基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2018
+    website: https://www.risingamc.com
+    intro: "惠升基金成立于2018年，注册地北京，属个人系背景的公募基金管理公司。管理规模处于行业中游，固定收益类产品规模占比较高。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "惠升基金官网", url: "https://www.risingamc.com", date: "2026-09-30" }
+  - id: fund-dong-cai
+    name: 东财基金管理有限公司
+    short: 东财基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2018
+    website: https://www.dongcaijijin.com
+    intro: "东财基金成立于2018年10月，是东方财富集团旗下的公募基金公司，实缴注册资本10.101亿元，股东为东方财富证券股份有限公司与东方财富信息股份有限公司。管理规模处于行业中游，依托互联网渠道发展指数与固定收益类产品。"
+    business: [指数与ETF, 固定收益, 货币与现金管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "东财基金官网", url: "https://www.dongcaijijin.com", date: "2026-09-30" }
+  - id: fund-bo-yuan
+    name: 博远基金管理有限公司
+    short: 博远基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2018
+    website: https://www.boyuanfunds.com
+    intro: "博远基金成立于2018年，注册地深圳，属个人系背景的中小型公募。管理规模相对有限，以固定收益投资为主要方向。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "博远基金官网", url: "https://www.boyuanfunds.com", date: "2026-09-30" }
+  - id: fund-guo-xin-guo-zheng
+    name: 国新国证基金管理有限公司
+    short: 国新国证基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2019
+    website: https://www.crsfund.com.cn
+    intro: "国新国证基金成立于2019年，注册资本4.1亿元，股东为国新资本有限公司（持股51.22%）与国新证券股份有限公司（持股48.78%），实际控制人为中国国新控股有限责任公司。管理规模相对有限。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "国新国证基金官网", url: "https://www.crsfund.com.cn", date: "2026-09-30" }
+  - id: fund-ming-ya
+    name: 明亚基金管理有限责任公司
+    short: 明亚基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2019
+    website: https://www.mingyafunds.com
+    intro: "明亚基金成立于2019年，注册地深圳，股东均为资产管理行业专业人士，具有国际视野，属个人系公募。管理规模相对有限。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "明亚基金官网", url: "https://www.mingyafunds.com", date: "2026-09-30" }
+  - id: fund-da-cheng-shanghai
+    name: 达诚基金管理有限公司
+    short: 达诚基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2019
+    website: https://www.integrity-funds.com
+    intro: "达诚基金成立于2019年8月，是经中国证监会核准设立的第129家公募基金管理公司，注册地上海，注册资本1.049亿元。管理规模相对有限。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "达诚基金官网", url: "https://www.integrity-funds.com", date: "2026-09-30" }
+  - id: fund-xing-hua
+    name: 兴华基金管理有限公司
+    short: 兴华基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2020
+    website: https://www.xinghuafund.com.cn/
+    intro: "兴华基金成立于2020年，注册地为山东省青岛市李沧区，是一家全部由资深专业人士持股的公募基金管理公司，也是山东省首家全国性公募基金管理公司。管理规模相对有限。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "兴华基金官网", url: "https://www.xinghuafund.com.cn/", date: "2026-09-30" }
+  - id: fund-dong-xing
+    name: 东兴基金管理有限公司
+    short: 东兴基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2020
+    website: https://www.dxamc.cn
+    intro: "东兴基金成立于2020年3月，注册地北京，注册资本2亿元，由东兴证券股份有限公司100%持股，其控股股东为中国东方资产管理股份有限公司，实际控制人为中央汇金投资有限责任公司。管理规模处于行业中游，固定收益产品规模占比较高。"
+    business: [固定收益, 权益投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "东兴基金官网", url: "https://www.dxamc.cn", date: "2026-09-30" }
+  - id: fund-rui-da
+    name: 瑞达基金管理有限公司
+    short: 瑞达基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2020
+    website: https://www.ruidaamc.com
+    intro: "瑞达基金成立于2020年，注册地厦门，由瑞达期货股份有限公司控股，属期货系公募。管理规模相对有限，产品数量较少。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "瑞达基金官网", url: "https://www.ruidaamc.com", date: "2026-09-30" }
+  - id: fund-hui-quan
+    name: 汇泉基金管理有限公司
+    short: 汇泉基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2020
+    website: https://www.springsfund.com
+    intro: "汇泉基金成立于2020年，注册地北京，由资深公募从业者发起设立，属个人系公募。管理规模相对有限，以主动权益投资为主。"
+    business: [权益投资, 固定收益]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "汇泉基金官网", url: "https://www.springsfund.com", date: "2026-09-30" }
+  - id: fund-bai-jia
+    name: 百嘉基金管理有限公司
+    short: 百嘉基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2020
+    website: https://www.baijiafunds.com.cn
+    intro: "百嘉基金成立于2020年，注册地广东，属个人系背景的中小型公募。管理规模相对有限，固定收益产品规模占比较高。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "百嘉基金官网", url: "https://www.baijiafunds.com.cn", date: "2026-09-30" }
+  - id: fund-shang-zheng
+    name: 尚正基金管理有限公司
+    short: 尚正基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2020
+    website: https://www.toprightfund.com
+    intro: "尚正基金成立于2020年，注册地深圳，属个人系背景的中小型公募。管理规模相对有限。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "尚正基金官网", url: "https://www.toprightfund.com", date: "2026-09-30" }
+  - id: fund-bei-lai-de
+    name: 贝莱德基金管理有限公司
+    short: 贝莱德基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2020
+    website: https://www.blackrock.com.cn
+    intro: "贝莱德基金成立于2020年，由贝莱德金融管理公司全资持有，是中国首家外商独资公募基金管理公司。管理规模相对有限，产品以主动权益、债券与多元资产配置为主。"
+    business: [权益投资, 固定收益, 多元资产]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "贝莱德基金官网", url: "https://www.blackrock.com.cn", date: "2026-09-30" }
+  - id: fund-yi-mi
+    name: 易米基金管理有限公司
+    short: 易米基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2017
+    website: https://www.yimifund.com
+    intro: "易米基金成立于2017年，注册资本1.5亿元，注册地上海，股东为李毅（35.00%）、董涛（19.23%）、郭之英（10.50%）、杨旭蔚（10.50%）等自然人，属个人系公募。管理规模相对有限。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "易米基金官网", url: "https://www.yimifund.com", date: "2026-09-30" }
+  - id: fund-xing-he
+    name: 兴合基金管理有限公司
+    short: 兴合基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2021
+    website: https://www.xhfund.com
+    intro: "兴合基金成立于2021年，注册地安徽，属个人系背景的中小型公募。管理规模相对有限。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "兴合基金官网", url: "https://www.xhfund.com", date: "2026-09-30" }
+  - id: fund-tai-kang
+    name: 泰康基金管理有限公司
+    short: 泰康基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2021
+    website: https://www.tkfunds.com.cn
+    intro: "泰康基金成立于2021年，是泰康保险集团旗下的公募基金管理平台，由泰康资产管理有限责任公司等发起设立，属保险系公募。管理规模处于行业中游，固定收益与养老投资方向产品较有特色。"
+    business: [固定收益, 养老目标基金, 权益投资, 货币与现金管理]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "泰康基金官网", url: "https://www.tkfunds.com.cn", date: "2026-09-30" }
+  - id: fund-quan-guo
+    name: 泉果基金管理有限公司
+    short: 泉果基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2022
+    website: https://www.qgfund.com
+    intro: "泉果基金成立于2022年，注册地上海，由王国斌、任莉等资深投资人发起设立，属个人系公募。管理规模相对有限，以长期价值投资的主动权益产品为特色。"
+    business: [权益投资, 专户业务]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "泉果基金官网", url: "https://www.qgfund.com", date: "2026-09-30" }
+  - id: fund-lu-bo-mai
+    name: 路博迈基金管理（中国）有限公司
+    short: 路博迈基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2021
+    website: https://www.nbchina.com
+    intro: "路博迈基金成立于2021年，由路博迈集团（Neuberger Berman）全资控股，是第一批获批筹建的外商独资公募基金管理公司之一，2022年正式展业。管理规模处于行业中游，产品涵盖债券型、混合型与股票型基金。"
+    business: [固定收益, 权益投资, 多元资产]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "路博迈基金官网", url: "https://www.nbchina.com", date: "2026-09-30" }
+  - id: fund-fu-da
+    name: 富达基金管理（中国）有限公司
+    short: 富达基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2021
+    website: https://www.fidelity.com.cn
+    intro: "富达基金成立于2021年，由富达国际（Fidelity International）全资控股，是外商独资公募基金管理公司之一。管理规模相对有限，产品以固定收益与主动权益为主。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "富达基金官网", url: "https://www.fidelity.com.cn", date: "2026-09-30" }
+  - id: fund-hua-xi
+    name: 华西基金管理有限责任公司
+    short: 华西基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2021
+    website: https://www.hxfund.com.cn
+    intro: "华西基金成立于2021年11月，注册地为四川成都，注册资本1亿元，是四川省属背景的全国性公募基金管理公司。管理规模相对有限。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "华西基金官网", url: "https://www.hxfund.com.cn", date: "2026-09-30" }
+  - id: fund-shi-luo-de
+    name: 施罗德基金管理（中国）有限公司
+    short: 施罗德基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2023
+    website: https://www.schroders.cn
+    intro: "施罗德基金由中国证监会于2023年1月核准设立，由施罗德投资管理有限公司全资持有，是外商独资公募基金管理公司之一，2023年6月在上海揭牌并取得经营证券期货业务许可证。管理规模相对有限，产品以固定收益类基金起步。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "施罗德基金官网", url: "https://www.schroders.cn", date: "2026-09-30" }
+      - { title: "中国证监会：关于核准设立施罗德基金管理（中国）有限公司的批复", url: "http://www.csrc.gov.cn/csrc/c101879/c6987756/content.shtml", date: "2023-01-10" }
+  - id: fund-lian-bo
+    name: 联博基金管理有限公司
+    short: 联博基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2023
+    website: https://www.alliancebernstein.com.cn
+    intro: "联博基金由中国证监会于2023年3月核准设立，由联博香港有限公司（AllianceBernstein Hong Kong Limited）全资持有，属外商独资公募基金管理公司。管理规模相对有限，产品数量较少。"
+    business: [权益投资, 固定收益]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "联博基金官网", url: "https://www.alliancebernstein.com.cn", date: "2026-09-30" }
+      - { title: "中国证监会：关于核准设立联博基金管理有限公司的批复", url: "http://www.csrc.gov.cn/csrc/c101879/c7202850/content.shtml", date: "2023-03-03" }
+  - id: fund-hui-bai-chuan
+    name: 汇百川基金管理有限公司
+    short: 汇百川基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2023
+    website: https://www.riversfund.com
+    intro: "汇百川基金成立于2023年，是经中国证监会批准设立的全国性公募基金管理公司，注册资本1亿元，股东团队共7人且投研人员占比高，属个人系公募。管理规模相对有限。"
+    business: [权益投资, 固定收益]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "汇百川基金官网", url: "https://www.riversfund.com", date: "2026-09-30" }
+  - id: fund-an-lian
+    name: 安联基金管理有限公司
+    short: 安联基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2023
+    website: https://www.allianzgi.com.cn
+    intro: "安联基金成立于2023年，由安联投资有限公司（Allianz Global Investors GmbH）全资控股，是外商独资公募基金管理公司，也是安联集团在国联安基金之外的第二张公募牌照。管理规模相对有限。"
+    business: [权益投资, 固定收益, 多元资产]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "安联基金官网", url: "https://www.allianzgi.com.cn", date: "2026-09-30" }
+  - id: fund-su-xin
+    name: 苏新基金管理有限公司
+    short: 苏新基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2023
+    website: https://www.susingfund.com
+    intro: "苏新基金成立于2023年，注册地江苏，由苏州银行等机构发起设立，属银行系公募。管理规模相对有限，固定收益产品规模占比较高。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "苏新基金官网", url: "https://www.susingfund.com", date: "2026-09-30" }
+  - id: fund-peng-an
+    name: 鹏安基金管理有限公司
+    short: 鹏安基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2024
+    website: https://www.penganfunds.com
+    intro: "鹏安基金成立于2024年，注册地海南，属新设的中小型公募基金管理公司。管理规模相对有限，产品数量较少。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "鹏安基金官网", url: "https://www.penganfunds.com", date: "2026-09-30" }
+  - id: fund-cai-xin
+    name: 财信基金管理有限公司
+    short: 财信基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 2024
+    website: https://mfund.hnchasing.com
+    intro: "财信基金成立于2024年，注册地湖南，由湖南财信金融控股集团等发起设立，属地方国资背景的中小型公募。管理规模相对有限。"
+    business: [固定收益, 权益投资]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国证监会《公募基金管理机构名录》（2026年7月）", url: "http://www.csrc.gov.cn/csrc/c101900/c1029657/content.shtml", date: "2026-07-31" }
+      - { title: "财信基金官网", url: "https://mfund.hnchasing.com", date: "2026-09-30" }

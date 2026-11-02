@@ -1,0 +1,559 @@
+{
+  "stages": [
+    {
+      "id": "transmission",
+      "name": "驱动、传动与精密制造",
+      "description": "分别看手指微型驱动、整机关节与精密部件，避免把不同负载等级的供应商直接混比。",
+      "questions": [
+        "分清手指微型关节与整机大关节，额定与峰值扭矩分别记录。",
+        "核对背隙、温升、循环寿命及负载条件，区分自制与外购。"
+      ],
+      "entries": [
+        {
+          "companyId": "vaxor-motor",
+          "role": "手部微型驱动器件",
+          "product": "微型关节 / 特微型电机",
+          "evidence": {
+            "title": "苏州指尖智擎官网 — 微型关节与电机",
+            "url": "https://cn.vaxor-motor.com/"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "motorevo",
+          "role": "整机一体化关节；需按型号核对负载等级",
+          "product": "行星 / 谐波 / 摆线关节",
+          "evidence": {
+            "title": "2026 世界机器人大会：无锡泉智博科技有限公司展商资料",
+            "url": "https://www.worldrobotconference.com/expo/company/887.html"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "encos",
+          "role": "关节模组与末端硬件",
+          "product": "行星关节 / EC-Dexhand",
+          "evidence": {
+            "title": "因克斯官网：产品与技术资料下载",
+            "url": "https://www.encos.cn/xzzx"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "eyou",
+          "role": "驱动与关节系统",
+          "product": "谐波 / 行星 / 直线关节",
+          "evidence": {
+            "title": "意优官网：一体化伺服关节模组与公司介绍",
+            "url": "https://eyoubot.com/"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "yuma-precision",
+          "role": "电机核心部件制造",
+          "product": "无框 / 伺服电机铁芯",
+          "evidence": {
+            "title": "御马精密官网：公司介绍、具身智能及工控电机铁芯产品",
+            "url": "https://www.yumaprecision.com/"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "inspire-robots",
+          "role": "手指驱动器件",
+          "product": "微型伺服电缸",
+          "evidence": {
+            "title": "因时微型伺服电缸与仿人五指手驱动结构",
+            "url": "https://www.inspire-robots.com/news/company%20news/2024-06-03/215.html"
+          },
+          "verifiedAt": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "hands",
+      "name": "手本体与夹爪",
+      "description": "分别看多指灵巧手和工业夹爪，落到具体型号、版本与运动结构。",
+      "questions": [
+        "主动自由度、总关节数、联动关系分别记录。",
+        "重量是否含外部驱动器；指尖力、整手负载、连续工作寿命口径是否可比？"
+      ],
+      "entries": [
+        {
+          "companyId": "wuji",
+          "role": "五指机器人末端",
+          "product": "Wuji Hand 2.2 Beta（非触觉版样机）",
+          "evidence": {
+            "title": "Wuji Hand 2.2 Beta 非触觉版官方产品介绍",
+            "url": "https://docs.wuji.tech/docs/zh/wuji-hand/latest/overview"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "xynova",
+          "role": "仿生五指机器人末端",
+          "product": "Xynova Flex 2",
+          "evidence": {
+            "title": "曦诺未来官网 — Xynova Flex 2",
+            "url": "https://xynova.tech/"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "rysen",
+          "role": "腱绳驱动五指机器人末端",
+          "product": "Apex Hand",
+          "evidence": {
+            "title": "Rysen Robotics — Apex Hand",
+            "url": "https://www.rysenbot.com/en"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "heyman",
+          "role": "科研与作业末端产品线",
+          "product": "RE100 / IN100 / WA100",
+          "evidence": {
+            "title": "黑漫科技 HeymanDex 官网产品线",
+            "url": "https://www.heymanbot.com/"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "linkerbot",
+          "role": "灵巧手与遥操作产品",
+          "product": "Linker Hand",
+          "evidence": {
+            "title": "灵心巧手官网 — Linker Hand 与遥操作产品",
+            "url": "https://www.linkerbot.cn/"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "robotera",
+          "role": "本体企业的灵巧手产品",
+          "product": "XHAND1",
+          "evidence": {
+            "title": "星动纪元 XHAND1 官方产品资料",
+            "url": "https://www.robotera.com/static/pc/default/images/cnXhand.pdf"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "unitree",
+          "role": "本体企业的灵巧手产品",
+          "product": "Dex5-1 / Dex5-1P",
+          "evidence": {
+            "title": "Unitree Dex5-1 / Dex5-1P 官方产品参数",
+            "url": "https://www.unitree.com/Dex5-1/"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "inspire-robots",
+          "role": "电缸驱动五指末端",
+          "product": "RH56DFX",
+          "evidence": {
+            "title": "因时 RH56DFX 仿人五指手产品页",
+            "url": "https://www.inspire-robots.com/dexterous%20hands/rh56dfx-series/"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "oymotion",
+          "role": "机器人末端产品线",
+          "product": "ROHand",
+          "evidence": {
+            "title": "OYMotion 官方 ROHand 开发文档",
+            "url": "https://oymotion.github.io/en/ROHand/Overview/"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "brainco",
+          "role": "机器人灵巧手产品线",
+          "product": "Revo 3",
+          "evidence": {
+            "title": "BrainCo Revo 3 官方产品页与版本配置",
+            "url": "https://www.brainco.cn/en-US/products/revo3"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "psyonic",
+          "role": "仿生手的机器人集成版本",
+          "product": "Ability Hand（robotics）",
+          "evidence": {
+            "title": "PSYONIC — Ability Hand 机器人集成",
+            "url": "https://www.psyonic.io/robots"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "tesollo",
+          "role": "五指手与工业夹爪产品线",
+          "product": "DG-5F / Delto Gripper",
+          "evidence": {
+            "title": "TESOLLO 官方末端执行器产品目录",
+            "url": "https://en.tesollo.com/products/"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "wonik-robotics",
+          "role": "操作研究与集成末端",
+          "product": "Allegro Hand V6 F",
+          "evidence": {
+            "title": "Wonik Robotics 官方 Allegro Hand V6 F 发布说明",
+            "url": "https://www.allegrohand.com/sub/about/news.php?bid=4&idx=648&mode=view"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "qb-robotics",
+          "role": "协同欠驱动机器人末端",
+          "product": "qb SoftHand",
+          "evidence": {
+            "title": "qbrobotics — qb SoftHand2 Research",
+            "url": "https://qbrobotics.com/product/qb-softhand-2-research/"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "daimon",
+          "role": "双指视触觉夹爪",
+          "product": "DM-Tac G",
+          "evidence": {
+            "title": "戴盟 DM-Tac G 双指视触觉夹爪",
+            "url": "https://www.dmrobot.com/devices/dm-tac-g.html"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "sharpa",
+          "role": "灵巧手与触觉操作平台",
+          "product": "Sharpa Wave",
+          "evidence": {
+            "title": "Sharpa 官方 GTC 产品与技术说明",
+            "url": "https://www.sharpa.com/blogs/news/sharpa-showcases-at-gtc-with-nvidia-advancing-a-new-paradigm-for-robot-training-through-breakthroughs-in-simulation"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "dexrobot",
+          "role": "腱绳驱动五指机器人末端",
+          "product": "DexHand021 量产版",
+          "evidence": {
+            "title": "DexRobot 官方产品页",
+            "url": "https://www.dex-robot.com/productionDexhand"
+          },
+          "verifiedAt": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "sensing",
+      "name": "触觉与力觉",
+      "description": "按感知原理和安装位置找公司，核对传感层、信号处理与系统集成的分工。",
+      "questions": [
+        "区分压阻、电容、磁感、视触觉与六维力，核对量程、迟滞和串扰。",
+        "触觉层是否可更换，磨损后如何标定，原始数据是否可获取？"
+      ],
+      "entries": [
+        {
+          "companyId": "moxian",
+          "role": "柔性压力与触觉传感",
+          "product": "传感器 / 机器人电子皮肤",
+          "evidence": {
+            "title": "墨现科技官网：公司介绍与触觉传感器业务",
+            "url": "https://www.moxiantech.com/about-us"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "huaweike-hit",
+          "role": "触觉器件与采集设备",
+          "product": "夹爪触觉传感器 / 采集手套",
+          "evidence": {
+            "title": "2026 世界机器人大会：武汉华威科智能技术有限公司及触觉产品",
+            "url": "https://www.worldrobotconference.com/expo/company/711.html"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "jq-industries",
+          "role": "纤维传感与柔性触觉层",
+          "product": "织物电子皮肤 / 触觉手套",
+          "evidence": {
+            "title": "矩侨工业官网：柔性纤维传感器与织物电子皮肤",
+            "url": "https://jq-industries.com/"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "yotlive",
+          "role": "柔性压力传感",
+          "product": "织物压力传感器",
+          "evidence": {
+            "title": "尧乐科技官网：公司介绍与柔性织物压力传感业务",
+            "url": "https://www.yotlive.com.cn/company-profile"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "tashan",
+          "role": "触觉芯片与末端传感",
+          "product": "指尖 / 夹爪触觉传感器",
+          "evidence": {
+            "title": "他山科技官网：触觉感知产品与技术",
+            "url": "https://www.tashantec.com/"
+          },
+          "verifiedAt": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "capture",
+      "name": "采集与遥操作",
+      "description": "把手部采集、第一视角、遥操作和数据治理分别看清。",
+      "questions": [
+        "核对动作空间、坐标系、时间同步及采集硬件与执行器的映射。",
+        "区分设备销售、采集服务和数据授权；核对数据权利与有效样本质量。"
+      ],
+      "entries": [
+        {
+          "companyId": "genrobot",
+          "role": "手部采集与同构控制设备",
+          "product": "DAS Dex / DAS Controller",
+          "evidence": {
+            "title": "GenRobot DAS Controller 官方产品页",
+            "url": "https://cn.genrobot.com/products/controller"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "huaweike-hit",
+          "role": "手部触觉数据采集",
+          "product": "触觉数据采集手套",
+          "evidence": {
+            "title": "2026 世界机器人大会：武汉华威科智能技术有限公司及触觉产品",
+            "url": "https://www.worldrobotconference.com/expo/company/711.html"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "wuji",
+          "role": "手部姿态与触觉采集设备",
+          "product": "Wuji Glove",
+          "evidence": {
+            "title": "Wuji Glove 姿态与触觉数据采集",
+            "url": "https://www.wuji.tech/zh/glove"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "daimon",
+          "role": "无本体采集夹爪",
+          "product": "DM-DataClaw",
+          "evidence": {
+            "title": "戴盟 DM-DataClaw 无本体数采夹爪",
+            "url": "https://www.dmrobot.com/daas/dm-dataclaw.html"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "dexrobot",
+          "role": "外骨骼遥操作采集",
+          "product": "DexCap",
+          "evidence": {
+            "title": "DexCap 官方产品页",
+            "url": "https://www.dex-robot.com/dexCap"
+          },
+          "verifiedAt": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "training",
+      "name": "控制与模型",
+      "description": "核对从数据准备、训练到具体硬件部署的公开接口与验证范围。",
+      "questions": [
+        "记录模型版本、本体、任务、测试协议和失败样本。",
+        "区分预训练、中后训练、传统控制与现场工程，核对跨本体迁移成本。"
+      ],
+      "entries": [
+        {
+          "companyId": "robbyant",
+          "role": "模型调优与部署平台",
+          "product": "LingBot / RobbyantModels",
+          "evidence": {
+            "title": "RobbyantModels 官方工作流文档",
+            "url": "https://docs.robbyant.com/zh-Hans/resources/docs/models/product"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "sharpa",
+          "role": "触觉参与的模型与仿真训练",
+          "product": "CraftNet / Tacmap",
+          "evidence": {
+            "title": "Sharpa 官方技术展示说明",
+            "url": "https://www.sharpa.com/blogs/news/sharpa-showcases-at-gtc-with-nvidia-advancing-a-new-paradigm-for-robot-training-through-breakthroughs-in-simulation"
+          },
+          "verifiedAt": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "deployment",
+      "name": "机械臂与集成入口",
+      "description": "先定位可集成的机械臂与控制系统，真实场景订单、产出与验收数据仍需进一步收集。",
+      "questions": [
+        "分别记录演示、试点、订单和验收交付，注明证据日期。",
+        "比较完整流程的有效产出、任务覆盖、人工介入、维护与停机成本。"
+      ],
+      "entries": [
+        {
+          "companyId": "tianji-gento",
+          "role": "机械臂与力控系统",
+          "product": "Gento 机器人 / 控制系统",
+          "evidence": {
+            "title": "天机智能 GENTO 官网：广东天机智能系统有限公司与核心产品",
+            "url": "https://cn.gentorobotics.ai/about-us/"
+          },
+          "verifiedAt": "2026-10-23"
+        },
+        {
+          "companyId": "ti5robot",
+          "role": "机械臂与人形硬件平台",
+          "product": "轻量化力控臂 / 关节平台",
+          "evidence": {
+            "title": "钛虎机器人官网：关节模组与力控臂产品",
+            "url": "https://www.ti5robot.com/"
+          },
+          "verifiedAt": "2026-10-23"
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "companyId": "wuji",
+      "product": "Wuji Hand 2.2 Beta（非触觉版样机）",
+      "form": "五指手",
+      "actuation": "可反驱旋转直驱关节，FOC 驱动，MIT 力位混合控制；以 2.2 Beta 文档为准，不与主站仍保留的 Beta1 参数混用。",
+      "dof": "20 主动自由度、20 机械关节，每指 4 个。",
+      "weight": "800g 整备质量（含软体与输出线缆，不含底座）；裸手 650g；底座 70g 另计。",
+      "sensing": "本对照是非触觉版样机；被动皮肤无传感能力。Wuji Glove 的触觉传感器是另一设备，不属于手本体。",
+      "software": "Python/C SDK、ROS 2 描述包、URDF/MJCF/USD 模型、MuJoCo/Isaac Sim 接入及 Glove 遥操作演示；仅指尖软体模型已提供，整手软体层模型未提供。",
+      "evidence": [
+        {
+          "title": "Wuji Hand 2.2 Beta 非触觉版官方产品介绍",
+          "url": "https://docs.wuji.tech/docs/zh/wuji-hand/latest/overview"
+        },
+        {
+          "title": "Wuji Hand 2.2 / 2.1 硬件与软件兼容矩阵",
+          "url": "https://docs.wuji.tech/docs/zh/wuji-hand/latest/version-compatibility"
+        },
+        {
+          "title": "Wuji Hand 2.2 Beta 能力边界",
+          "url": "https://docs.wuji.tech/docs/zh/wuji-hand/latest/user-notice"
+        },
+        {
+          "title": "主站 Hand2 展示页（仍标 Beta1，仅用于版本差异提示）",
+          "url": "https://www.wuji.tech/zh/hand2"
+        }
+      ],
+      "verifiedAt": "2026-10-23"
+    },
+    {
+      "companyId": "xynova",
+      "product": "Xynova Flex 2",
+      "form": "仿生灵巧手（已读取页面未单列手指数）",
+      "actuation": "官网提及微型电缸输出、腱绳及带载反驱；未披露本页所有关节驱动与传动分配。",
+      "dof": "官方称 23 自由度；主动、被动与机械关节数量未分别披露。",
+      "weight": "官网写手掌 400g；外部驱动、前臂及线缆计入范围未披露，不能视为完整系统重量。",
+      "sensing": "官方称多模感知、自适应抓握、滑移检测和柔顺反射；传感器型号、数量及标配/选配未披露。",
+      "software": "官网称支持开发者定制、拓展和集成；具体 SDK、仿真模型与兼容版本未披露。",
+      "evidence": [
+        {
+          "title": "Xynova Flex 2 官方产品展示",
+          "url": "https://xynova.tech/"
+        }
+      ],
+      "verifiedAt": "2026-10-23"
+    },
+    {
+      "companyId": "rysen",
+      "product": "Apex Hand（官方手册 V0.9）",
+      "form": "五指手",
+      "actuation": "腱绳复合驱动，所有关节支持反驱；驱动、传动、感知与控制集成。",
+      "dof": "16 主动自由度；21 机械关节（官网亦称 21 自由度），两者分开计数。",
+      "weight": "1.2kg；手册未单独说明线缆、法兰或外接供电计入范围。",
+      "sensing": "全关节绝对编码器；电子皮肤为选配，覆盖指尖、指节内侧与掌心。手册注明切向检测更适合定性分析，不保证定量精度。",
+      "software": "Rysen Explorer 与 Rysen SDK；C++、Python、ROS 2 示例。1000Hz 控制需以太网及实时内核，非实时内核口径为 100Hz。",
+      "evidence": [
+        {
+          "title": "Apex Hand 官方用户手册 V0.9",
+          "url": "https://www.rysenbot.com/docs/en/apex-hand/index.html"
+        },
+        {
+          "title": "源升智能官方产品概述",
+          "url": "https://docs.rysenbot.com/"
+        }
+      ],
+      "verifiedAt": "2026-10-23"
+    },
+    {
+      "companyId": "shadow-robot",
+      "product": "Shadow Dexterous Hand（Classic；现行系列页）",
+      "form": "五指手（含腕部）",
+      "actuation": "腱绳驱动，20 个直流电机。",
+      "dof": "20 主动自由度、24 机械关节/运动；包含 2 个腕部自由度，不能直接与不含腕的手比较。",
+      "weight": "当前系列页标整机 4.3kg，未单独说明范围；其链接的历史规格（Release 2021-02，版权 2022）定义为手与前臂合计 4.3kg。现售配置的重量范围仍需厂家确认。",
+      "sensing": "当前系列页：标准 2 个 STF 指尖传感器，可扩至 5 个，40 个腱绳负载传感器及 IMU。历史 PDF 使用 PST 指尖传感器口径，不与当前 STF 配置混列。",
+      "software": "ROS 集成、EtherCAT 主机控制、仿真与 Shadow Glove 遥操作支持。",
+      "evidence": [
+        {
+          "title": "Shadow Dexterous Hand 官方系列规格",
+          "url": "https://shadowrobot.com/dexterous-hand-series/"
+        },
+        {
+          "title": "Shadow 历史技术规格（Release 2021-02，版权 2022；仅辅助理解重量范围）",
+          "url": "https://www.shadowrobot.com/wp-content/uploads/2022/03/shadow_dexterous_hand_e_technical_specification.pdf"
+        }
+      ],
+      "verifiedAt": "2026-10-23"
+    },
+    {
+      "companyId": "inspire-robots",
+      "product": "RH56DFX-2L / RH56DFX-2R（无腕版）",
+      "form": "五指手",
+      "actuation": "6 个微型伺服电缸，连杆传动；分别驱动五指弯曲与拇指侧摆。",
+      "dof": "6 主动自由度、12 手指运动关节；12 不是独立控制自由度。",
+      "weight": "540g，无腕版；有腕 RH56DFXW 为 650g、6+2 自由度。线缆和电源计入范围未披露。",
+      "sensing": "集成力传感器；不得把 RH56DFTP 等其他型号的触觉阵列配置移植到 RH56DFX。",
+      "software": "RS485 控制；官方选型手册列 ROS 支持/插件，文档中心设 SDK 使用说明。",
+      "evidence": [
+        {
+          "title": "因时 RH56DFX 官方参数",
+          "url": "https://www.inspire-robots.com/dexterous%20hands/rh56dfx-series/"
+        },
+        {
+          "title": "因时灵巧手电缸与连杆结构说明",
+          "url": "https://www.inspire-robots.com/news/company%20news/2024-06-03/215.html"
+        },
+        {
+          "title": "因时官方英文选型手册 — RH56DFX",
+          "url": "https://en.inspire-robots.com/wp-content/uploads/2023/11/Inspire-Robots-Products-Selection-Guide-1-2.pdf"
+        },
+        {
+          "title": "因时 RH56DFX 开发资料入口",
+          "url": "https://www.inspire-robots.com/e/action/ListInfo/?classid=92"
+        }
+      ],
+      "verifiedAt": "2026-10-23"
+    }
+  ]
+}

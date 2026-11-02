@@ -1,0 +1,77 @@
+[
+  {
+    "id": "nvidia-flexiv-simulation-2025",
+    "from": "nvidia",
+    "to": "flexiv",
+    "type": "partner",
+    "title": "非夕与 NVIDIA 合作推出 Flexiv-Isaac Bridge，连接力控机器人仿真与 Isaac Sim。",
+    "date": "2025-06-12",
+    "sources": [
+      {
+        "title": "Flexiv and NVIDIA Join Forces in Robotics Simulation",
+        "url": "https://www.flexiv.com/news/flexiv-and-nvidia-join-forces-in-robotics-simulation",
+        "date": "2025-06-12"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-orbbec-jetson-2025",
+    "from": "nvidia",
+    "to": "orbbec",
+    "type": "partner",
+    "title": "奥比中光宣布推进 Gemini 330 深度相机与 NVIDIA Jetson Thor 平台的适配与集成。",
+    "date": "2025-08-28",
+    "sources": [
+      {
+        "title": "Orbbec 3D Cameras Integrated with Jetson Thor",
+        "url": "https://www.orbbec.com/news/humanoid-robots-see-smarter-orbbec-3d-cameras-are-integrated-with-nvidia-jetson-thor",
+        "date": "2025-08-28"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-robosense-ecosystem-2026",
+    "from": "nvidia",
+    "to": "robosense",
+    "type": "partner",
+    "title": "速腾聚创披露其在 NVIDIA Jetson、DRIVE 与 Omniverse 生态中的合作与感知产品应用。",
+    "date": "2026-03-17",
+    "sources": [
+      {
+        "title": "RoboSense Driving Ecosystem Deployment with Global Partners at NVIDIA GTC 2026 - RoboSense | Safer world, Smarter life",
+        "url": "https://www.robosense.ai/en/news-show-1975",
+        "date": "2026-03-17"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-coreweave-investment-2026",
+    "from": "nvidia",
+    "to": "coreweave",
+    "type": "investor",
+    "title": "NVIDIA 宣布以 20 亿美元投资 CoreWeave A 类普通股，并扩大双方 AI 基础设施合作。",
+    "date": "2026-01-26",
+    "sources": [
+      {
+        "title": "CoreWeave - NVIDIA and CoreWeave Strengthen Collaboration to Accelerate Buildout of AI Factories",
+        "url": "https://investors.coreweave.com/news/news-details/2026/NVIDIA-and-CoreWeave-Strengthen-Collaboration-to-Accelerate-Buildout-of-AI-Factories/default.aspx",
+        "date": "2026-01-26"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-figure-series-b-2024",
+    "from": "nvidia",
+    "to": "figure",
+    "type": "investor",
+    "title": "Figure 官方披露 NVIDIA 参与其 2024 年 B 轮融资；此记录仅表示该轮出资，不代表当前持股比例。",
+    "date": "2024-02-29",
+    "sources": [
+      {
+        "title": "Figure Raises $675M at $2.6B Valuation and Signs Collaboration Agreement with OpenAI",
+        "url": "https://www.prnewswire.com/news-releases/figure-raises-675m-at-2-6b-valuation-and-signs-collaboration-agreement-with-openai-302074897.html",
+        "date": "2024-02-29"
+      }
+    ]
+  }
+]

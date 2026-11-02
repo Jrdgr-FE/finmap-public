@@ -1,0 +1,86 @@
+note: >-
+  全国性金融资产管理公司。中国自 1999 年起先后设立五家全国性 AMC，机构编码在监管总局《银行业金融机构法人名单》里是 J0001—J0005。其中中国中信金融资产管理股份有限公司（原中国华融）已在中信集团谱系里收录，本文件收录其余四家。
+sources:
+  - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+
+entities:
+  - id: amc-gwamcc
+    name: "中国长城资产管理股份有限公司"
+    short: "中国长城资产"
+    category: nonbank
+    type: amc
+    license_code: J0002H111000001
+    regulator: 国家金融监督管理总局
+    founded: 1999
+    website: https://www.gwamcc.com
+    intro: >-
+      1999 年经国务院批准设立，前身是中国长城资产管理公司，2016 年 12 月 11 日改制为股份有限公司，注册资本 431.5 亿元，由财政部、全国社会保障基金理事会和中国人寿保险（集团）公司共同发起设立。业务涵盖不良资产经营、银行、证券、保险、信托、租赁，旗下有长城华西银行等平台。
+    business: [不良资产经营, 资产管理, 并购重组, 银行, 证券, 保险]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（机构编码 J0002H111000001）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中国长城资产官网", url: "https://www.gwamcc.com/", date: "2026-09-30" }
+      - { title: "长城环亚控股《公司简介》（中国长城资产注册资本与改制日期）", url: "https://gwpaholdings.com/cn/about-us/company-profile/", date: "2026-09-30" }
+
+  - id: amc-coamc
+    name: "中国东方资产管理股份有限公司"
+    short: "中国东方"
+    category: nonbank
+    type: amc
+    license_code: J0003H111000001
+    regulator: 国家金融监督管理总局
+    founded: 1999
+    website: https://www.coamc.com.cn
+    intro: >-
+      前身为 1999 年 10 月成立的中国东方资产管理公司，2016 年 9 月改制为股份有限公司，由财政部与全国社会保障基金理事会共同发起设立，属中央金融企业。
+      2025 年 2 月公告财政部拟将其持有的 71.55% 股份全部无偿划转至中央汇金投资有限责任公司。下辖中华联合保险集团、大连银行、东兴证券、大业信托等 8 家一类子公司。
+    business: [不良资产经营, 保险, 银行, 证券, 信托, 信用评级]
+    parent: ROOT
+    status: active
+    note: >-
+      2025 年 2 月披露的财政部向中央汇金无偿划转 71.55% 股份事项，以本公司信息披露报告所载为准，划转完成情况需以最新公告核实。
+    sources:
+      - { title: "中国东方资产管理股份有限公司 2024 年度信息披露报告（股权结构、改制日期、子公司）", url: "https://www.coamc.com.cn/xxpl/202504/P020250430681380381927.pdf", date: "2025-04-30" }
+      - { title: "中国东方官网", url: "https://www.coamc.com.cn/", date: "2026-09-30" }
+
+  - id: amc-cinda
+    name: "中国信达资产管理股份有限公司"
+    short: "中国信达"
+    category: nonbank
+    type: amc
+    license_code: J0004H111000001
+    regulator: 国家金融监督管理总局
+    founded: 1999
+    listed: ["1359.HK"]
+    website: https://www.cinda.com.cn
+    intro: >-
+      1999 年 4 月经国务院批准成立，是首家金融资产管理公司。2010 年 6 月整体改制为股份有限公司，
+      2013 年 12 月 12 日在港交所主板上市，成为首家登陆国际资本市场的中国 AMC。2025 年加入中投公司。截至 2025 年末总资产 17,212.27 亿元，旗下有南洋商业银行、信达证券、金谷国际信托、信达金融租赁等平台。
+    business: [不良资产经营, 金融服务, 银行, 证券, 信托, 金融租赁]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "中国信达官网 · 公司简介（成立与改制日期、上市、总资产、平台子公司）", url: "https://www.cinda.com.cn/home/pc/cn/xdjt/gyxd/gsjs/gsjj/list_1.shtml", date: "2026-09-30" }
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（机构编码 J0004H111000001）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+
+  - id: amc-galaxy
+    name: "中国银河资产管理有限责任公司"
+    short: "中国银河资产"
+    category: nonbank
+    type: amc
+    license_code: J0005H111000001
+    regulator: 国家金融监督管理总局
+    founded: 2020
+    website: https://www.galaxyamc.com.cn
+    intro: >-
+      第五家全国性 AMC，也是 1999 年四大 AMC 设立后 21 年来唯一获批的一家。由建投中信资产管理有限公司（2005 年成立，承接原华夏证券非证券类资产）转型更名而来，
+      2020 年 12 月获原银保监会批复开业，2021 年 1 月正式对外营业，注册地北京。股东为中国银河金融控股（65%）、中央汇金（13.3%）、南京紫金投资集团（10%）、北京金融街资本运营中心（6%）、中信证券（5.7%）。官网现载注册资本 105.02 亿元，高于开业批复时的 100 亿元。
+    business: [不良资产经营, 企业纾困化险, 资产管理]
+    parent: ROOT
+    status: active
+    note: >-
+      注册资本口径有两版：2020 年开业批复为 100 亿元，公司官网现载 105.02 亿元（后续增资所致）。此处以官网为准，开业批复口径见来源。
+    sources:
+      - { title: "中国银河资产官网 · 公司概况（注册资本 105.02 亿元、2021 年 1 月营业）", url: "https://www.galaxyamc.com.cn/index.htm", date: "2026-09-30" }
+      - { title: "澎湃新闻《时隔21年，第五大AMC获准开业》（开业批复、注册资本 100 亿元、五家股东及比例）", url: "https://m.thepaper.cn/newsDetail_forward_10457995", date: "2020-12-18" }

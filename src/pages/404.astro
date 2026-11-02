@@ -1,0 +1,33 @@
+---
+import Base from '../layouts/Base.astro';
+import SiteSearch from '../components/SiteSearch.astro';
+import { getStats, getTaxonomy } from '../lib/data';
+
+const stats = getStats();
+const tax = getTaxonomy();
+---
+
+<Base title="页面不存在" description="没有找到这个页面。">
+  <div class="wrap-narrow page" style="padding-top:var(--sp-8)">
+    <div class="page-head" style="display:block">
+      <h1>没有找到这个页面</h1>
+      <p>
+        要查的机构可能已经更名，或者不在收录范围内。直接搜索全部 {stats.entities.toLocaleString('zh-CN')} 家持牌法人主体：
+      </p>
+    </div>
+    <SiteSearch hero />
+    <div class="section">
+      <div class="section-head">
+        <h2>按分类浏览</h2>
+        <a class="more" href="/">回首页 →</a>
+      </div>
+      <div class="chips">
+        {tax.categories.map((c) => (
+          <a class="chip" data-cat={c.id} href={`/category/${c.id}/`}>
+            <span class="badge-dot"></span>{c.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</Base>

@@ -1,0 +1,240 @@
+---
+import Base from '../../layouts/Base.astro';
+import SiteSearch from '../../components/SiteSearch.astro';
+import { getStats, getCollections, getTaxonomy, getHighlights, getCategoryGlyph } from '../../lib/data';
+import { layoutTree } from '../../lib/tree';
+import { getVentures, getTracks, getRelations } from '../../lib/ventures';
+import { getDexterityProducts, getDexterityStages } from '../../lib/dexterity';
+import { getNewsStats } from '../../lib/news';
+
+const stats = getStats();
+const collections = getCollections();
+const tax = getTaxonomy();
+const highlights = getHighlights();
+
+const groups = collections.filter((c) => c.is_group).map((c) => ({
+  c,
+  depth: Math.max(...layoutTree(c.entities, c.short).nodes.map((n) => n.depth), 0),
+}));
+const typeCount = stats.byCategory.reduce((n, c) => n + c.types.length, 0);
+
+const ventures = getVentures();
+const ventureCount = ventures.length;
+const tracks = getTracks();
+const trackCount = tracks.length;
+const segTotal = tracks.reduce((n, t) => n + t.segments.length, 0);
+const dexStages = getDexterityStages();
+const dexProducts = getDexterityProducts();
+const newsStats = getNewsStats();
+const relCount = getRelations().length;
+
+const fmt = (n: number) => n.toLocaleString('zh-CN');
+
+const quick = [
+  { label: '工商银行', href: '/org/bk-icbc/' },
+  { label: '招商银行', href: '/org/cm-merchants-bank/' },
+  { label: '中信证券', href: '/org/citic-securities/' },
+  { label: '中国人寿', href: '/org/ins-china-life/' },
+  { label: '银行理财子公司', href: '/orgs/?cat=asset-management&type=wealth-management' },
+  { label: '村镇银行', href: '/roster/?type=village-bank' },
+];
+---
+
+<Base title="金融机构与硬科技图谱" current="home">
+  <section class="home-hero">
+    <div class="wrap">
+      <h1>金融机构与硬科技图谱</h1>
+      <p class="lede">
+        {fmt(stats.entities)} 家持牌法人主体的牌照类型、机构编码、监管单位与集团控股关系，每条数据附可核对的公开来源。
+      </p>
+      <SiteSearch hero />
+      <div class="quick">
+        <span>常用：</span>
+        {quick.map((q) => <a href={q.href}>{q.label}</a>)}
+      </div>
+      <div class="kpis">
+        <div class="kpi">
+          <div class="kpi-v">{fmt(stats.entities)}</div>
+          <div class="kpi-l">持牌法人主体</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-v">{fmt(stats.detailed)}</div>
+          <div class="kpi-l">逐一核实官网与股权</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-v">{typeCount}</div>
+          <div class="kpi-l">牌照类型 · {tax.categories.length} 个分类</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-v">{fmt(stats.sources)}</div>
+          <div class="kpi-l">去重后的公开来源</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <section class="section" id="ventures">
+      <div class="section-head">
+        <h2>硬科技产业研究</h2>
+        <span class="hint">一级市场产业链定位、产品参数对照与公开证据溯源</span>
+        <a class="more" href="/ventures/">进入工作台 →</a>
+      </div>
+      <div class="group-grid">
+        <a class="group-card" href="/ventures/">
+          <h3>产业图谱与公司库</h3>
+          <p>{trackCount} 条赛道、{segTotal} 个上下游环节，支持跨环节定位、地区筛选与 CSV 导出</p>
+          <div class="figs">
+            <span><b>{ventureCount}</b>家公司</span>
+            <span><b>{trackCount}</b>条赛道</span>
+            <span class="go">查看图谱 →</span>
+          </div>
+        </a>
+        <a class="group-card" href="/ventures/dexterity/">
+          <h3>灵巧操作研究专题</h3>
+          <p>覆盖微型驱动、手本体、触觉传感、数据采集与控制模型，支持多型号并排对比</p>
+          <div class="figs">
+            <span><b>{dexStages.length}</b>类角色</span>
+            <span><b>{dexProducts.length}</b>款型号</span>
+            <span class="go">型号对比 →</span>
+          </div>
+        </a>
+        <a class="group-card" href="/ventures/news/">
+          <h3>公司新闻与事件归档</h3>
+          <p>区分官方渠道、标题提及、摘要提及线索与已核验历史融资/产品事件</p>
+          <div class="figs">
+            <span><b>{newsStats.articles}</b>条新闻</span>
+            <span><b>{newsStats.companies}</b>家关联</span>
+            <span class="go">检索动态 →</span>
+          </div>
+        </a>
+        <a class="group-card" href="/ventures/coverage/">
+          <h3>覆盖边界与数据口径</h3>
+          <p>逐环节披露样本分布与空白缺口，明确产业定位、供货关系与自动匹配证据标准</p>
+          <div class="figs">
+            <span><b>{segTotal}</b>个环节</span>
+            <span><b>{relCount}</b>条关系</span>
+            <span class="go">查看口径 →</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="section-head">
+        <h2>按分类浏览</h2>
+        <span class="hint">口径：人行《金融机构编码规范》+ 银发〔2015〕309 号</span>
+        <a class="more" href="/orgs/">机构库 →</a>
+      </div>
+      <div class="cat-grid">
+        {stats.byCategory.map(({ category, count, types }) => {
+          const top = [...types].sort((a, b) => b.count - a.count);
+          return (
+            <a class="cat-tile" data-cat={category.id} href={`/category/${category.id}/`}>
+              <div class="cat-tile-top">
+                <span class="cat-icon" aria-hidden="true">{getCategoryGlyph(category.id)}</span>
+                <span class="cat-tile-name">{category.name}</span>
+                <span class="cat-tile-n">{fmt(count)}</span>
+              </div>
+              <ul>
+                {top.slice(0, 3).map(({ type, count: n }) => (
+                  <li><span>{type.name}</span><span class="n">{fmt(n)}</span></li>
+                ))}
+              </ul>
+              {top.length > 3 && <span class="more-types">另有 {top.length - 3} 类牌照</span>}
+            </a>
+          );
+        })}
+      </div>
+    </section>
+
+
+
+    <section class="section" id="groups">
+      <div class="section-head">
+        <h2>集团股权谱系</h2>
+        <span class="hint">控股链条、持股比例与非控股的关联关系</span>
+        <a class="more" href="/groups/">全部集团 →</a>
+      </div>
+      <div class="group-grid">
+        {groups.map(({ c, depth }) => (
+          <a class="group-card" href={`/group/${c.id}/`}>
+            <h3>{c.short}</h3>
+            <p>
+              {[c.nature, c.founded && `${c.founded} 年`, c.hq].filter(Boolean).join(' · ')}
+            </p>
+            <div class="figs">
+              <span><b>{c.entities.length}</b>持牌主体</span>
+              <span><b>{depth}</b>层级</span>
+              <span class="go">查看谱系 →</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    {highlights.length > 0 && (
+      <section class="section" id="highlights">
+        <div class="section-head">
+          <h2>容易读错的几处</h2>
+          <span class="hint">均附来源，可点开核对</span>
+        </div>
+        <div class="fact-grid">
+          {highlights.map((h) => (
+            <article class="fact-card">
+              <h3>{h.title}</h3>
+              <p>{h.body}</p>
+              <footer>
+                <a class="src" href={h.source.url} target="_blank" rel="noopener noreferrer nofollow" title={h.source.title}>
+                  来源：{h.source.title} ↗
+                </a>
+                {h.link && <a class="go" href={h.link}>看对应图谱 →</a>}
+              </footer>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <section class="section">
+      <div class="section-head">
+        <h2>数据口径</h2>
+        <a class="more" href="/about/">完整数据说明 →</a>
+      </div>
+      <div class="principles">
+        <div class="principle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 21V9l8-5 8 5v12" /><path d="M9 21v-6h6v6" /><path d="M3 21h18" />
+          </svg>
+          <div>
+            <strong>只收持牌法人</strong>
+            <p>
+              分 {tax.categories.length} 类、{typeCount} 种牌照，不收分支机构。农商行、村镇银行等上千家的序列从监管法人名单整批收录，
+              只保留名称、机构编码、牌照类型和属地，单独放在<a class="link" href="/roster/">全量名册</a>。
+            </p>
+          </div>
+        </div>
+        <div class="principle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" /><path d="M14 3v6h6" /><path d="m9 15 2 2 4-4" />
+          </svg>
+          <div>
+            <strong>每条数据可溯源</strong>
+            <p>
+              {fmt(stats.sources)} 个去重来源，以监管机构名单、公司年报和交易所公告为主。持股比例标注时点，查不到时点的标 <span class="undated">*</span>，查不到的数字留空。
+            </p>
+          </div>
+        </div>
+        <div class="principle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="6" cy="12" r="2.5" /><circle cx="18" cy="6" r="2.5" /><circle cx="18" cy="18" r="2.5" /><path d="M8.5 12C13 12 13 6 15.5 6" /><path d="M8.5 12C13 12 13 18 15.5 18" stroke-dasharray="2 2.5" />
+          </svg>
+          <div>
+            <strong>区分控股与参股</strong>
+            <p>谱系图中实线为控股或实际控制，虚线为参股或仅有品牌关联。挂着集团字号不等于受集团控股。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</Base>

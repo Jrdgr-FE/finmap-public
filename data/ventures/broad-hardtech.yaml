@@ -1,0 +1,1153 @@
+# 拓展硬科技档案：公开官网事实，非完整行业普查；核验日期不作为融资或事件日期。
+version: 1
+updated: 2026-10-23
+companies:
+  - id: empyrean
+    name: 华大九天
+    en: Empyrean
+    region: cn
+    track: semiconductors
+    segment: design
+    tags:
+      - EDA
+      - 模拟设计
+      - 先进封装设计
+    aliases:
+      - 北京华大九天
+      - Empyrean Technology
+    intro: 提供全定制、数字电路、晶圆制造、先进封装及三维集成相关 EDA 工具，并提供基础 IP 和工程服务。
+    website: https://empyrean.com.cn/company/information.html
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 公司简介_关于我们_华大九天 | EDA及相关服务
+        url: https://empyrean.com.cn/company/information.html
+    events: []
+  - id: primarius
+    name: 概伦电子
+    en: Primarius Technologies
+    region: cn
+    track: semiconductors
+    segment: design
+    tags:
+      - EDA
+      - SPICE
+      - DTCO
+    aliases:
+      - Primarius
+      - 概伦电子股份
+    intro: 以设计与工艺协同优化为主线，提供器件测试、SPICE 建模、PDK、标准单元库以及电路仿真与全定制设计工具。
+    website: https://www.primarius-tech.com/en/aboutus
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: PRIMARIUS - PRIMARIUS
+        url: https://www.primarius-tech.com/en/aboutus
+    events: []
+  - id: xinhuazhang
+    name: 芯华章
+    en: X-EPIC
+    region: cn
+    track: semiconductors
+    segment: design
+    tags:
+      - EDA
+      - 数字验证
+      - 仿真
+    aliases:
+      - XEPIC
+      - 芯华章科技
+    intro: 开发面向数字芯片和系统级设计的验证 EDA 工具，产品包括 GalaxSim 系列仿真器及调试解决方案。
+    website: https://www.x-epic.com/index.html
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: "X-EPIC : Silicon Excellence Drive Intelligence"
+        url: https://www.x-epic.com/index.html
+    events: []
+  - id: smic
+    name: 中芯国际
+    en: SMIC
+    region: cn
+    track: semiconductors
+    segment: fabrication
+    tags:
+      - 晶圆代工
+      - 工艺平台
+      - 制造
+    aliases:
+      - Semiconductor Manufacturing International
+      - 中芯国际集成电路制造
+    intro: 提供 8 英寸和 12 英寸晶圆代工及技术服务，并配套光罩制造、设计支持及后段服务。
+    website: https://www.smics.com/site/about_summary
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 中芯国际-关于中芯
+        url: https://www.smics.com/site/about_summary
+    events: []
+  - id: huahong-semi
+    name: 华虹半导体
+    en: Hua Hong Semiconductor
+    region: cn
+    track: semiconductors
+    segment: fabrication
+    tags:
+      - 特色工艺
+      - 功率器件
+      - 非易失存储
+    aliases:
+      - 华虹宏力
+      - Hua Hong Semiconductor
+    intro: 提供特色工艺晶圆代工及配套服务，业务涉及非易失存储器、模拟与电源管理、逻辑与射频、功率器件等工艺。
+    website: https://www.huahonggrace.com/c/index.php
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 華虹宏力半導體有限公司
+        url: https://www.huahonggrace.com/c/index.php
+    events: []
+  - id: tsmc
+    name: 台积电
+    en: TSMC
+    region: cn
+    track: semiconductors
+    segment: fabrication
+    tags:
+      - 晶圆代工
+      - 逻辑工艺
+      - 高性能计算
+    aliases:
+      - 台湾积体电路制造
+      - 台積電
+      - Taiwan Semiconductor Manufacturing
+    intro: 以专业晶圆代工模式制造客户设计的芯片，服务高性能计算、智能手机、汽车和物联网等应用。
+    website: https://www.tsmc.com/english/dedicatedFoundry
+    country: 中国台湾
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Dedicated IC Foundry - Taiwan Semiconductor Manufacturing Company Limited
+        url: https://www.tsmc.com/english/dedicatedFoundry
+    events: []
+  - id: naura
+    name: 北方华创
+    en: NAURA
+    region: cn
+    track: semiconductors
+    segment: equipment
+    tags:
+      - 半导体设备
+      - 真空设备
+      - 精密元器件
+    aliases:
+      - 北方华创科技集团
+      - NAURA Technology
+    intro: 提供半导体装备、真空新能源装备和精密电子元器件，应用覆盖集成电路、功率半导体、先进封装及新型显示等领域。
+    website: https://www.naura.com/about/
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 了解华创 - 北方华创
+        url: https://www.naura.com/about/
+    events: []
+  - id: amec
+    name: 中微公司
+    en: AMEC
+    region: cn
+    track: semiconductors
+    segment: equipment
+    tags:
+      - 刻蚀
+      - MOCVD
+      - 半导体设备
+    aliases:
+      - 中微半导体设备
+      - Advanced Micro-Fabrication Equipment
+    intro: 研发等离子体刻蚀、硅通孔刻蚀和 MOCVD 等微观加工设备，面向芯片制造、先进封装及化合物半导体应用。
+    website: https://www.amec-inc.com/index/Lists/show/catid/4/id/496.html
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 中微上海-关于中微-中微公司
+        url: https://www.amec-inc.com/index/Lists/show/catid/4/id/496.html
+    events: []
+  - id: acm-shanghai
+    name: 盛美上海
+    en: ACM Research Shanghai
+    region: cn
+    track: semiconductors
+    segment: equipment
+    tags:
+      - 晶圆清洗
+      - 电镀
+      - 先进封装
+    aliases:
+      - 盛美半导体设备
+      - ACM Research Shanghai
+    intro: 研发、制造和销售半导体清洗、电镀等设备，服务集成电路、先进晶圆级封装及大硅片制造。
+    website: https://www.acmrcsh.com.cn/index.html
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 首页-盛美半导体设备（上海）股份有限公司
+        url: https://www.acmrcsh.com.cn/index.html
+    events: []
+  - id: asml
+    name: 阿斯麦
+    en: ASML
+    region: global
+    track: semiconductors
+    segment: equipment
+    tags:
+      - 光刻
+      - 计量
+      - 半导体设备
+    aliases:
+      - 阿斯麦控股
+      - ASML Holding
+    intro: 开发用于芯片制造的光刻系统及相关软件，通过光学与精密设备在硅片上形成电路图形。
+    website: https://www.asml.com/en/technology
+    country: 荷兰
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: ASML technology | Supplying the semiconductor industry
+        url: https://www.asml.com/en/technology
+    events: []
+  - id: applied-materials
+    name: 应用材料
+    en: Applied Materials
+    region: global
+    track: semiconductors
+    segment: equipment
+    tags:
+      - 材料工程
+      - 薄膜沉积
+      - 工艺设备
+    aliases:
+      - Applied Materials
+      - 应用材料公司
+    intro: 提供半导体制造系统与材料工程技术，覆盖沉积、去除、材料改性、计量及分析等工艺环节。
+    website: http://www.appliedmaterials.com/us/en/semiconductor.html
+    country: 美国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Semiconductor
+        url: http://www.appliedmaterials.com/us/en/semiconductor.html
+    events: []
+  - id: synopsys
+    name: 新思科技
+    en: Synopsys
+    region: global
+    track: semiconductors
+    segment: design
+    tags:
+      - EDA
+      - 半导体IP
+      - 仿真验证
+    aliases:
+      - Synopsys
+      - 新思科技公司
+    intro: 提供芯片设计与验证 EDA、半导体 IP，以及制造工艺建模和仿真分析工具。
+    website: https://www.synopsys.com/silicon-design.html
+    country: 美国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Electronic Design Automation (EDA) | Synopsys
+        url: https://www.synopsys.com/silicon-design.html
+    events: []
+  - id: jcet
+    name: 长电科技
+    en: JCET
+    region: cn
+    track: semiconductors
+    segment: materials-packaging
+    tags:
+      - 先进封装
+      - 封装测试
+      - 微系统集成
+    aliases:
+      - 江苏长电科技
+      - JCET Group
+    intro: 提供芯片成品制造服务，覆盖微系统集成、设计仿真、晶圆测试、芯片封装和成品测试。
+    website: https://www.jcetglobal.com/cn
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 长电科技 —— 首页
+        url: https://www.jcetglobal.com/cn
+    events: []
+  - id: besi
+    name: Besi
+    en: BE Semiconductor Industries
+    region: global
+    track: semiconductors
+    segment: materials-packaging
+    tags:
+      - 封装设备
+      - 固晶
+      - 混合键合
+    aliases:
+      - BE Semiconductor Industries
+      - Besi Semiconductor
+    intro: 研发和制造半导体组装设备，面向芯片制造商和封测厂提供固晶及封装相关工艺设备。
+    website: http://www.besi.com/company/company-profile
+    country: 荷兰
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Company Profile | Besi
+        url: http://www.besi.com/company/company-profile
+    events: []
+  - id: pony-ai
+    name: 小马智行
+    en: Pony.ai
+    region: cn
+    track: autonomy
+    segment: robotaxi
+    tags:
+      - Robotaxi
+      - 自动驾驶卡车
+      - 虚拟司机
+    aliases:
+      - Pony AI
+      - Pony.ai
+      - 小马智行科技
+    intro: 以虚拟司机技术开发自动驾驶系统，业务覆盖 Robotaxi、Robotruck 和乘用车相关方案。
+    website: https://www.pony.ai/
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Pony.ai
+        url: https://www.pony.ai/
+    events: []
+  - id: weride
+    name: 文远知行
+    en: WeRide
+    region: cn
+    track: autonomy
+    segment: robotaxi
+    tags:
+      - Robotaxi
+      - Robobus
+      - 自动驾驶
+    aliases:
+      - WeRide
+      - 文远知行科技
+    intro: 开发 L2 至 L4 自动驾驶技术，围绕 WeRide One 平台提供 Robotaxi、Robobus 及辅助驾驶等产品。
+    website: https://www.weride.ai/about
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: WeRide | About WeRide
+        url: https://www.weride.ai/about
+      - title: WeRide | Technology
+        url: https://weride.ai/technology
+    events: []
+  - id: aurora
+    name: Aurora Innovation
+    en: Aurora Innovation
+    region: global
+    track: autonomy
+    segment: delivery
+    tags:
+      - 自动驾驶卡车
+      - 干线物流
+      - 自动驾驶系统
+    aliases:
+      - Aurora Innovation
+      - Aurora Driver
+    intro: 开发 Aurora Driver 自动驾驶系统，面向货运卡车及出行车辆提供驾驶即服务方案。
+    website: https://ir.aurora.tech/
+    country: 美国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Aurora Innovation, Inc. (AUR)
+        url: https://ir.aurora.tech/
+    events: []
+  - id: ouster
+    match: [Ouster lidar, Ouster Inc, Ouster激光雷达, Ouster 激光雷达]
+    name: Ouster
+    en: Ouster
+    region: global
+    track: autonomy
+    segment: sensors
+    tags:
+      - 激光雷达
+      - 数字感知
+      - 工业自动化
+    aliases:
+      - Ouster lidar
+      - Ouster Inc
+    intro: 研发三维激光雷达传感器，面向车辆、机器人及工业环境提供感知硬件。
+    website: https://ouster.com/products/hardware/os0
+    country: 美国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: OS0 | Ouster
+        url: https://ouster.com/products/hardware/os0
+    events: []
+  - id: seyond
+    name: 图达通
+    en: Seyond
+    region: global
+    track: autonomy
+    segment: sensors
+    tags:
+      - 激光雷达
+      - ADAS
+      - 智能交通
+    aliases:
+      - Seyond
+      - Innovusion
+      - 图达通科技
+    intro: 研发和制造激光雷达系统及感知软件，服务辅助驾驶、自动驾驶、智能交通、轨道交通和工业自动化。
+    website: https://seyond.com/about
+    country: 美国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: About Us | Seyond, a Leading Global LiDAR Company
+        url: https://seyond.com/about
+    events: []
+  - id: galactic-energy
+    name: 星河动力
+    en: Galactic Energy
+    region: cn
+    track: space
+    segment: launch
+    tags:
+      - 固体火箭
+      - 可复用火箭
+      - 发射服务
+    aliases:
+      - Galactic Energy
+      - 星河动力航天
+    intro: 研制谷神星系列固体运载火箭、智神星系列液体运载火箭及发动机，向商业卫星客户提供发射服务。
+    website: https://www.galactic-energy.cn/
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 星河动力航天
+        url: https://www.galactic-energy.cn/
+    events: []
+  - id: geespace
+    name: 时空道宇
+    en: Geespace
+    region: cn
+    track: space
+    segment: satellites
+    tags:
+      - 卫星物联网
+      - 低轨星座
+      - 通信终端
+    aliases:
+      - Geespace
+      - 浙江时空道宇
+    intro: 设计、建设并运营低轨卫星物联网星座，同时提供卫星通信芯片、模组、终端和行业通信方案。
+    website: https://www.geespace.com/
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 浙江时空道宇科技有限公司
+        url: https://www.geespace.com/
+    events: []
+  - id: rocket-lab
+    name: Rocket Lab
+    en: Rocket Lab
+    region: global
+    track: space
+    segment: launch
+    tags:
+      - 小型火箭
+      - 卫星平台
+      - 航天部件
+    aliases:
+      - Rocket Lab USA
+      - Rocket Lab Corporation
+    intro: 提供火箭发射、航天器设计制造、卫星组件及飞行软件，产品覆盖 Electron 运载火箭和多类航天器平台。
+    website: https://rocketlabcorp.com/
+    country: 美国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Rocket Lab | The Space Company | Rocket Lab
+        url: https://rocketlabcorp.com/
+    events: []
+    memberships:
+      - track: space
+        segment: satellites
+  - id: planet-labs
+    name: Planet Labs
+    en: Planet Labs
+    region: global
+    track: space
+    segment: satellites
+    tags:
+      - 遥感
+      - 卫星影像
+      - 地理空间数据
+    aliases:
+      - Planet Labs
+      - PlanetScope
+    intro: 提供高频卫星影像、地球观测数据和分析工具，支持全球监测及指定区域的遥感任务。
+    website: https://planet.com/
+    country: 美国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: "Planet Labs: Satellite Imagery & Earth Data Analytics"
+        url: https://planet.com/
+    events: []
+  - id: ehang
+    name: 亿航智能
+    en: EHang
+    region: cn
+    track: autonomy
+    segment: evtol
+    tags:
+      - eVTOL
+      - 无人驾驶航空器
+      - 空中交通
+    aliases:
+      - EHang
+      - 亿航智能设备
+    intro: 研发和制造无人驾驶电动垂直起降航空器，面向空中游览、交通运输、物流和消防等应用。
+    website: https://www.ehang.com/about
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: EHang | About EHang
+        url: https://www.ehang.com/about
+    events: []
+  - id: joby
+    name: Joby Aviation
+    en: Joby Aviation
+    region: global
+    track: autonomy
+    segment: evtol
+    tags:
+      - eVTOL
+      - 空中出租车
+      - 电动航空
+    aliases:
+      - Joby Aviation
+      - Joby air taxi
+    intro: 开发全电动空中出租车，并建设与航空和地面交通服务衔接的运营体系。
+    website: https://www.jobyaviation.com/
+    country: 美国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Joby Aviation
+        url: https://www.jobyaviation.com/
+    events: []
+  - id: archer
+    name: Archer Aviation
+    en: Archer Aviation
+    region: global
+    track: autonomy
+    segment: evtol
+    tags:
+      - eVTOL
+      - 电动航空
+      - Midnight
+    aliases:
+      - Archer Aviation
+      - Archer Midnight
+    intro: 开发面向城市短途交通的全电动垂直起降航空器 Midnight，采用有人驾驶及乘客座舱设计。
+    website: https://archer.com/midnight
+    country: 美国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Midnight · Archer
+        url: https://archer.com/midnight
+    events: []
+  - id: catl
+    name: 宁德时代
+    en: CATL
+    region: cn
+    track: energy-tech
+    segment: batteries
+    tags:
+      - 锂电池
+      - 储能电池
+      - 储能系统
+    aliases:
+      - Contemporary Amperex Technology
+      - CATL
+      - 宁德时代新能源
+    intro: 开发电池及储能系统，面向发电侧、电网侧等应用提供能量存储和输出管理方案。
+    website: https://www.catl.com/en/ess
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Energy Storage System
+        url: https://www.catl.com/en/ess
+    events: []
+    memberships:
+      - track: energy-tech
+        segment: storage
+  - id: eve-energy
+    name: 亿纬锂能
+    en: EVE Energy
+    region: cn
+    track: energy-tech
+    segment: batteries
+    tags:
+      - 锂电池
+      - 动力电池
+      - 储能电池
+    aliases:
+      - EVE Energy
+      - 惠州亿纬锂能
+    intro: 提供消费、动力和储能电池及相关系统，产品包含锂原电池、小型锂离子电池和多种动力电池形态。
+    website: https://www.evebattery.com/about
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 企业简介-EVE-亿纬锂能
+        url: https://www.evebattery.com/about
+    events: []
+  - id: hithium
+    name: 海辰储能
+    en: HiTHIUM
+    region: cn
+    track: energy-tech
+    segment: storage
+    tags:
+      - 储能电池
+      - 长时储能
+      - 储能系统
+    aliases:
+      - HiTHIUM
+      - 厦门海辰储能
+    intro: 面向电网级及工商业应用开发储能电池和系统，并提供长时储能方案。
+    website: https://en.hithium.com/
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Battery Storage Solutions Manufacturer
+        url: https://en.hithium.com/
+    events: []
+  - id: sungrow
+    name: 阳光电源
+    en: Sungrow
+    region: cn
+    track: energy-tech
+    segment: power
+    tags:
+      - 光伏逆变器
+      - 储能变流器
+      - 能源转换
+    aliases:
+      - Sungrow Power Supply
+      - 阳光电源股份
+    intro: 研发光伏逆变器及清洁能源转换设备，业务覆盖光伏、风电、储能、电动汽车充电和氢能相关系统。
+    website: https://www.sungrowpower.com/en/about-us/brand-story
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Brand Story
+        url: https://www.sungrowpower.com/en/about-us/brand-story
+    events: []
+    memberships:
+      - track: energy-tech
+        segment: storage
+  - id: starcharge
+    name: 星星充电
+    en: StarCharge
+    region: cn
+    track: energy-tech
+    segment: power
+    tags:
+      - 充电设备
+      - 充电网络
+      - 微电网
+    aliases:
+      - StarCharge
+      - 万帮数字能源
+    intro: 提供电动汽车充电设备、平台与充电网络服务，并布局储能、光储充和能源管理等微电网方案。
+    website: https://www.starcharge.com/
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: StarCharge
+        url: https://www.starcharge.com/
+    events: []
+  - id: longi
+    name: 隆基绿能
+    en: LONGi
+    region: cn
+    track: energy-tech
+    segment: power
+    tags:
+      - 光伏硅片
+      - 光伏组件
+      - 太阳能
+    aliases:
+      - LONGi Green Energy
+      - 隆基绿能科技
+    intro: 提供单晶硅片、光伏组件及多场景光伏解决方案，覆盖光伏材料到发电系统应用。
+    website: https://www.longi.com/cn/
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 成为全球最具价值的太阳能科技公司 - 隆基绿能
+        url: https://www.longi.com/cn/
+    events: []
+  - id: energy-singularity
+    name: 能量奇点
+    en: Energy Singularity
+    region: cn
+    track: energy-tech
+    segment: fusion
+    tags:
+      - 高温超导
+      - 托卡马克
+      - 聚变研发
+    aliases:
+      - Energy Singularity
+      - 能量奇点能源
+    intro: 研发高温超导托卡马克装置及运行控制软件，探索具有商业发电潜力的聚变能源技术。
+    website: https://energysingularity.cn/vision.html
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 愿景 | 能量奇点 Energy Singularity
+        url: https://energysingularity.cn/vision.html
+    events: []
+  - id: startorus
+    name: 星环聚能
+    en: Startorus Fusion
+    region: cn
+    track: energy-tech
+    segment: fusion
+    tags:
+      - 球形托卡马克
+      - 磁体
+      - 聚变研发
+    aliases:
+      - Startorus Fusion
+      - 星环聚能科技
+    intro: 以重复重联球形托卡马克为技术方向，研发聚变装置、磁体及配套工程系统。
+    website: https://startorus.cn/
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 星环聚能
+        url: https://startorus.cn/
+    events: []
+  - id: cfs
+    name: Commonwealth Fusion Systems
+    en: Commonwealth Fusion Systems
+    region: global
+    track: energy-tech
+    segment: fusion
+    tags:
+      - 高温超导
+      - 托卡马克
+      - 聚变研发
+    aliases:
+      - Commonwealth Fusion Systems
+      - CFS SPARC
+    intro: 利用高温超导磁体研发 SPARC 聚变装置，并推进 ARC 聚变电站方案；商业发电属于其工程目标。
+    website: https://cfs.energy/
+    country: 美国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Home | Commonwealth Fusion Systems
+        url: https://cfs.energy/
+    events: []
+  - id: helion
+    name: Helion Energy
+    en: Helion Energy
+    region: global
+    track: energy-tech
+    segment: fusion
+    tags:
+      - 脉冲聚变
+      - 直接能量转换
+      - 聚变研发
+    aliases:
+      - Helion Energy
+      - Helion fusion
+    intro: 研发利用磁场加速和合并等离子体的聚变系统，并探索将释放的能量直接转换为电力。
+    website: https://www.helionenergy.com/
+    country: 美国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Helion | Building the world's first fusion power plant
+        url: https://www.helionenergy.com/
+    events: []
+  - id: form-energy
+    name: Form Energy
+    en: Form Energy
+    region: global
+    track: energy-tech
+    segment: storage
+    tags:
+      - 铁空气电池
+      - 长时储能
+      - 电网储能
+    aliases:
+      - Form Energy
+      - Form Factory
+    intro: 开发用于电网的铁空气电池，产品设计面向多日持续储能与放电需求。
+    website: https://formenergy.com/
+    country: 美国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: "Form Energy: Energy Storage For a Better World"
+        url: https://formenergy.com/
+    events: []
+  - id: redwood-materials
+    name: Redwood Materials
+    en: Redwood Materials
+    region: global
+    track: energy-tech
+    segment: batteries
+    tags:
+      - 电池回收
+      - 关键矿物
+      - 正极材料
+    aliases:
+      - Redwood Materials
+    intro: 开展退役电池回收、关键矿物精炼和电池材料制造，并部署服务数据中心及电网的储能系统。
+    website: http://www.redwoodmaterials.com/about
+    country: 美国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: About | Redwood Materials
+        url: http://www.redwoodmaterials.com/about
+    events: []
+    memberships:
+      - track: energy-tech
+        segment: storage
+  - id: quantumscape
+    name: QuantumScape
+    en: QuantumScape
+    region: global
+    track: energy-tech
+    segment: batteries
+    tags:
+      - 固态电池
+      - 锂金属
+      - 固态隔膜
+    aliases:
+      - QuantumScape Corporation
+      - QuantumScape
+    intro: 研发固态锂金属电池技术，利用固态隔膜和无预置负极设计改善电池性能。
+    website: https://www.quantumscape.com/technology
+    country: 美国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Solid State Battery Technology | QuantumScape
+        url: https://www.quantumscape.com/technology
+    events: []
+  - id: origin-quantum
+    name: 本源量子
+    en: Origin Quantum
+    region: cn
+    track: frontier-tech
+    segment: quantum
+    tags:
+      - 超导量子计算
+      - 测控
+      - 量子云
+    aliases:
+      - Origin Quantum
+      - 本源量子计算
+    intro: 提供超导量子计算机、量子芯片、制冷与测控等硬件，以及量子编程工具和云端计算服务。
+    website: https://originqc.com.cn/
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: originqc.com.cn
+        url: https://originqc.com.cn/
+    events: []
+  - id: quantumctek
+    name: 国盾量子
+    en: QuantumCTek
+    region: cn
+    track: frontier-tech
+    segment: quantum
+    tags:
+      - 量子通信
+      - 量子计算
+      - 量子测量
+    aliases:
+      - QuantumCTek
+      - 科大国盾量子
+    intro: 研发量子通信、量子计算和量子精密测量产品，提供量子保密网络设备、测控组件及相关技术服务。
+    website: https://www.quantum-info.com/about/
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 公司简介_国盾量子 – 量子科技 产业报国
+        url: https://www.quantum-info.com/about/
+    events: []
+  - id: qboson
+    name: 玻色量子
+    en: QBoson
+    region: cn
+    track: frontier-tech
+    segment: quantum
+    tags:
+      - 光量子计算
+      - 组合优化
+      - 量子云
+    aliases:
+      - QBoson
+      - 玻色量子科技
+    intro: 研发专用量子计算机和光量子芯片，并提供 SDK、云平台及行业场景验证服务。
+    website: https://www.qboson.com/
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 玻色量子 - 专用量子计算机 | 国际领先的量子计算技术
+        url: https://www.qboson.com/
+    events: []
+  - id: turingq
+    name: 图灵量子
+    en: TuringQ
+    region: cn
+    track: frontier-tech
+    segment: quantum
+    tags:
+      - 光子芯片
+      - 光量子计算
+      - 系统集成
+    aliases:
+      - TuringQ
+      - 图灵量子科技
+    intro: 以光子芯片和量子计算为技术基础，开展芯片设计、流片、封装测试、系统集成和量子算法研发。
+    website: https://www.turingq.com/about
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 关于图灵量子 | 企业介绍与公司信息 | TuringQ
+        url: https://www.turingq.com/about
+    events: []
+    memberships:
+      - track: frontier-tech
+        segment: photonics
+  - id: psiquantum
+    name: PsiQuantum
+    en: PsiQuantum
+    region: global
+    track: frontier-tech
+    segment: quantum
+    tags:
+      - 光量子计算
+      - 硅光
+      - 容错计算
+    aliases:
+      - PsiQuantum
+    intro: 基于硅光平台开发量子计算系统，将光子芯片、低温控制电子与光学互联组合为可扩展架构。
+    website: https://www.psiquantum.com/technology
+    country: 美国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Technology — PsiQuantum
+        url: https://www.psiquantum.com/technology
+    events: []
+    memberships:
+      - track: frontier-tech
+        segment: photonics
+  - id: quantinuum
+    name: Quantinuum
+    en: Quantinuum
+    region: global
+    track: frontier-tech
+    segment: quantum
+    tags:
+      - 离子阱
+      - 量子计算
+      - 量子软件
+    aliases:
+      - Quantinuum
+    intro: 开发离子阱量子计算系统，并提供用于量子化学和材料研究的软件及计算工具。
+    website: https://www.quantinuum.com/products-solutions/quantinuum-systems
+    country: 美国 / 英国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Our Trapped Ion Quantum Computers
+        url: https://www.quantinuum.com/products-solutions/quantinuum-systems
+    events: []
+  - id: ionq
+    name: IonQ
+    en: IonQ
+    region: global
+    track: frontier-tech
+    segment: quantum
+    tags:
+      - 离子阱
+      - 量子网络
+      - 量子计算
+    aliases:
+      - IonQ Inc
+      - IonQ
+    intro: 研发量子计算系统，并拓展量子网络、传感和安全相关产品。
+    website: https://www.ionq.com/
+    country: 美国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: "IonQ: Trapped Ion Quantum Computing Company"
+        url: https://www.ionq.com/
+    events: []
+  - id: xanadu
+    match: [Xanadu Quantum, Xanadu量子, Xanadu 量子, Xanadu光量子, Xanadu 光量子, Xanadu photonic]
+    name: Xanadu
+    en: Xanadu
+    region: global
+    track: frontier-tech
+    segment: quantum
+    tags:
+      - 光量子计算
+      - PennyLane
+      - 量子软件
+    aliases:
+      - Xanadu Quantum Technologies
+      - Xanadu Quantum
+    intro: 开发光子量子计算系统，并通过 PennyLane 软件工具支持量子程序和应用开发。
+    website: https://www.xanadu.ai/company
+    country: 加拿大
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Xanadu | Welcome to Xanadu
+        url: https://www.xanadu.ai/company
+      - title: Xanadu | Photonics
+        url: https://www.xanadu.ai/photonics/
+      - title: Xanadu | Xanadu Becomes First Pure-Play Photonic Quantum Computing Company to Go Public
+        url: https://xanadu.ai/press/xanadu-becomes-first-pure-play-photonic-quantum-computing-company-to-go-public
+    events: []
+  - id: lightelligence
+    name: 曦智科技
+    en: Lightelligence
+    region: cn
+    track: frontier-tech
+    segment: photonics
+    tags:
+      - 光电计算
+      - 光互联
+      - 计算加速
+    aliases:
+      - Lightelligence
+      - 曦智科技
+    intro: 开发光电计算和光互联产品，覆盖计算加速卡及用于数据中心资源互联的光子技术。
+    website: https://www.lightelligence.ai/
+    country: 中国 / 美国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Lightelligence
+        url: https://www.lightelligence.ai/
+    events: []
+  - id: jbd
+    name: 显耀显示
+    en: Jade Bird Display
+    region: cn
+    track: frontier-tech
+    segment: photonics
+    tags:
+      - MicroLED
+      - 微显示
+      - 近眼显示
+    aliases:
+      - Jade Bird Display
+      - 上海显耀显示
+    intro: 研发 MicroLED 微显示器、投影和光学模组，业务覆盖材料生长、芯片制造、封装测试及显示驱动设计。
+    website: https://www.jb-display.com.cn/about.html
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 关于我们-JBD官方网站-上海JBD公司简介-上海显耀显示科技有限公司
+        url: https://www.jb-display.com.cn/about.html
+    events: []
+  - id: bmf
+    name: 摩方精密
+    en: BMF Precision Tech
+    region: cn
+    track: frontier-tech
+    segment: advanced-materials
+    tags:
+      - 微纳3D打印
+      - 精密制造
+      - 微流控
+    aliases:
+      - BMF Precision Tech
+      - 摩方精密
+      - 重庆摩方精密
+    intro: 开发基于投影微立体光刻的高精度 3D 打印系统，面向微型零部件、电子及微流控等制造应用。
+    website: https://www.bmftec.cn/about
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 关于我们-重庆摩方精密科技股份有限公司
+        url: https://www.bmftec.cn/about
+    events: []
+  - id: polymaker
+    name: Polymaker
+    en: Polymaker
+    region: cn
+    track: frontier-tech
+    segment: advanced-materials
+    tags:
+      - 3D打印材料
+      - 聚合物
+      - 增材制造
+    aliases:
+      - Polymaker
+    intro: 研发和制造 3D 打印材料，提供不同性能的聚合物耗材及相关硬件，服务增材制造应用。
+    website: https://polymaker.com/about-polymaker
+    country: 中国
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Learn more about Polymaker - Polymaker
+        url: https://polymaker.com/about-polymaker
+    events: []

@@ -1,0 +1,132 @@
+---
+import { layoutTree, edgePath, GRAPH_METRICS } from '../lib/tree';
+import { getCategory } from '../lib/data';
+import type { Collection } from '../lib/data';
+
+interface Props {
+  collection: Collection;
+  rootLabel?: string;
+}
+
+const { collection } = Astro.props;
+const rootLabel = Astro.props.rootLabel ?? collection.short;
+const layout = layoutTree(collection.entities, rootLabel);
+const { NODE_H } = GRAPH_METRICS;
+const PAD = 8;
+const vw = Math.round(layout.width + PAD * 2);
+const vh = Math.round(layout.height + PAD * 2);
+
+const hasUndated = layout.nodes.some((n) => n.stakeUndated);
+const hasAggregate = layout.nodes.some((n) => n.stakeBasis === 'aggregate');
+
+const usedCategories = [...new Set(layout.nodes.filter((n) => !n.isVirtualRoot).map((n) => n.category))];
+const hasAffiliate = layout.nodes.some((n) => n.relation === 'affiliate');
+---
+
+<div class="graph-legend">
+  <span class="legend-item">
+    <span class="legend-swatch"></span> 控股或实际控制
+  </span>
+  {hasAffiliate && (
+    <span class="legend-item">
+      <span class="legend-swatch dashed"></span> 参股／品牌关联（不控股）
+    </span>
+  )}
+  <span class="legend-item">
+    <span style="font-family:var(--mono)">%</span> 为上层主体持股比例
+    {hasAggregate && <span>·「合计」指集团多条通道合计口径</span>}
+    {hasUndated && <span>· <span class="undated">*</span> 该比例未标注时点</span>}
+  </span>
+  <span class="legend-item graph-hint">悬停任一节点可高亮其到集团的完整持股路径</span>
+</div>
+
+<div class="graph-shell">
+  <svg
+    class="lineage"
+    viewBox={`${-PAD} ${-PAD} ${vw} ${vh}`}
+    width={vw}
+    height={vh}
+    role="img"
+    aria-label={`${collection.name} 的持牌主体谱系图，共 ${layout.nodes.length - 1} 个主体`}
+  >
+    <g class="edges">
+      {layout.edges.map((e) => (
+        <path
+          class:list={['edge', e.relation === 'affiliate' && 'affiliate']}
+          d={edgePath(e)}
+          data-edge={e.key}
+        />
+      ))}
+    </g>
+    <g class="nodes">
+      {layout.nodes.map((n) => (
+        <a href={n.isVirtualRoot ? `/group/${collection.id}/` : `/org/${n.id}/`} tabindex={n.isVirtualRoot ? -1 : 0}>
+          <g
+            class:list={[
+              'node',
+              n.isVirtualRoot && 'rooth',
+              n.relation === 'affiliate' && 'affiliate',
+              n.status && n.status !== 'active' && 'exited',
+            ]}
+            data-cat={n.category}
+            data-node={n.id}
+            data-path={n.path.join(' ')}
+          >
+            <title>{n.isVirtualRoot ? `${collection.name}（共 ${collection.entities.length} 个持牌主体）` : `${n.name}${n.stakeLabel ? ` · 上层持股 ${n.stakeLabel}` : ''}`}</title>
+            <rect x={n.x} y={n.y} width={n.width} height={NODE_H} rx={5} />
+            {!n.isVirtualRoot && <rect class="bar" x={n.x} y={n.y + 6} width={3} height={NODE_H - 12} rx={1.5} />}
+            <text class="label" x={n.x + (n.isVirtualRoot ? 13 : 14)} y={n.y + NODE_H / 2} dominant-baseline="central">
+              {n.short}
+            </text>
+            {n.stakeLabel && (
+              <text class="stake" x={n.x + n.width - 11} y={n.y + NODE_H / 2} text-anchor="end" dominant-baseline="central">
+                {n.stakeLabel}
+              </text>
+            )}
+          </g>
+        </a>
+      ))}
+    </g>
+  </svg>
+</div>
+
+<script>
+  const REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  document.querySelectorAll<SVGSVGElement>('.lineage').forEach((svg) => {
+    const nodes = [...svg.querySelectorAll<SVGGElement>('.node')];
+    const edgeMap = new Map<string, SVGPathElement>();
+    svg.querySelectorAll<SVGPathElement>('.edge').forEach((p) => edgeMap.set(p.dataset.edge!, p));
+
+    const clear = () => {
+      svg.classList.remove('focused');
+      nodes.forEach((n) => n.classList.remove('on'));
+      edgeMap.forEach((p) => p.classList.remove('on'));
+    };
+
+    const focusPath = (node: SVGGElement) => {
+      const path = (node.dataset.path || '').split(' ').filter(Boolean);
+      if (!path.length) path.push(node.dataset.node!);
+      const full = ['__root__', ...path];
+      svg.classList.add('focused');
+      nodes.forEach((n) => n.classList.toggle('on', path.includes(n.dataset.node!)));
+      edgeMap.forEach((p) => p.classList.remove('on'));
+      for (let i = 0; i < full.length - 1; i++) {
+        edgeMap.get(`${full[i]}>${full[i + 1]}`)?.classList.add('on');
+      }
+    };
+
+    nodes.forEach((node) => {
+      if (node.classList.contains('rooth')) return;
+      node.addEventListener('mouseenter', () => focusPath(node));
+      node.addEventListener('mouseleave', clear);
+    });
+
+    svg.addEventListener('focusin', (ev) => {
+      const n = (ev.target as Element).closest<SVGGElement>('.node');
+      if (n && !n.classList.contains('rooth')) focusPath(n);
+    });
+    svg.addEventListener('focusout', clear);
+    if (!REDUCED) svg.addEventListener('mouseleave', clear);
+  });
+</script>

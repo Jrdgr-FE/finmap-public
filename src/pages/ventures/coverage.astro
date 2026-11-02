@@ -1,0 +1,290 @@
+---
+import Base from "../../layouts/Base.astro";
+import "../../styles/ventures.css";
+import "../../styles/mapping.css";
+import {
+  getTracks,
+  getVentures,
+  getRelations,
+  venturesForSegment,
+  getVenturesUpdated,
+  splitSegmentName,
+} from "../../lib/ventures";
+import { getNewsStats, getNewsSnapshot } from "../../lib/news";
+
+const tracks = getTracks();
+const companies = getVentures();
+const relations = getRelations();
+const stats = getNewsStats();
+const news = getNewsSnapshot();
+const profile = companies.filter((c) => c.verifiedAt).length;
+
+const rawSegments = tracks.flatMap((t) =>
+  t.segments.map((s) => {
+    const members = venturesForSegment(t.id, s.id);
+    const cn = members.filter((c) => c.region === "cn").length;
+    return {
+      track: t,
+      segment: s,
+      shortName: splitSegmentName(s.name).name,
+      stage: splitSegmentName(s.name).stage || "环节",
+      count: members.length,
+      cn,
+      global: members.length - cn,
+    };
+  }),
+);
+
+const maxSegCount = Math.max(...rawSegments.map((s) => s.count), 1);
+const segments = rawSegments.map((s) => ({
+  ...s,
+  pct: Math.round((s.count / maxSegCount) * 100),
+  tier: s.count === 0 ? "empty" : s.count <= 2 ? "thin" : s.count >= 8 ? "dense" : "normal",
+}));
+const emptySegments = segments.filter((s) => s.count === 0);
+const thinSegments = segments.filter((s) => s.count > 0 && s.count <= 2);
+const populatedCount = segments.length - emptySegments.length;
+---
+
+<Base
+  title="图谱覆盖与数据口径"
+  description="查看硬科技图谱的赛道、公司、空白环节与新闻覆盖边界，区分产业定位、已证实公司关系与待核实线索。"
+  current="ventures"
+>
+  <div class="wrap page">
+    <nav class="crumbs" aria-label="位置">
+      <a href="/">首页</a>
+      <span class="sep">/</span>
+      <a href="/ventures/">产业图谱</a>
+      <span class="sep">/</span>
+      <span aria-current="page">覆盖与数据口径</span>
+    </nav>
+
+    <section class="panel profile" data-cat="venture">
+      <div class="profile-top">
+        <div class="profile-title">
+          <h1>图谱覆盖与数据口径</h1>
+        </div>
+        <div class="actions">
+          <a class="btn" href="/ventures/">
+            返回产业图谱 →
+          </a>
+        </div>
+      </div>
+      <p class="intro">
+        本库是一份持续扩充的一级市场研究底稿，不宣称收全全球名册。以下披露 12 条赛道、44 个产业链环节的样本密度与证据标准，帮助定位下一步优先补齐的研究缺口。
+      </p>
+      <div class="profile-stats">
+        <div>
+          <b class="num">{companies.length}</b>去重公司主体（核验 {profile} 家）
+        </div>
+        <div>
+          <b class="num">{populatedCount}/{segments.length}</b>已覆盖产业环节
+        </div>
+        <div>
+          <b class="num">{emptySegments.length + thinSegments.length}</b>空白或薄弱环节
+        </div>
+        <div>
+          <b class="num">{relations.length}</b>已披露商业关系
+        </div>
+        <div>
+          <b class="num">{getVenturesUpdated()}</b>最近更新
+        </div>
+      </div>
+    </section>
+
+    <div class="layout" style="margin-top:var(--sp-4)">
+      <div class="stack">
+        <section class="panel">
+          <div class="panel-head">
+            <h2>全赛道 44 个产业环节样本分布</h2>
+            <div class="chips" style="margin-left:auto" role="group" aria-label="筛选环节密度">
+              <button
+                type="button"
+                class="chip is-on"
+                data-cov-filter="all"
+              >
+                全部 <span class="n">{segments.length}</span>
+              </button>
+              <button
+                type="button"
+                class="chip"
+                data-cov-filter="gap"
+              >
+                空白与薄弱 (≤2 家) <span class="n">{emptySegments.length + thinSegments.length}</span>
+              </button>
+              <button
+                type="button"
+                class="chip"
+                data-cov-filter="dense"
+              >
+                密集环节 (≥8 家)
+              </button>
+            </div>
+          </div>
+
+          <div class="map-table-scroll">
+            <table class="roster-table map-coverage">
+              <thead>
+                <tr>
+                  <th>赛道</th>
+                  <th>产业链环节</th>
+                  <th>公司数与分布</th>
+                  <th>国内 / 海外</th>
+                  <th>状态</th>
+                </tr>
+              </thead>
+              <tbody>
+                {segments.map((r) => (
+                  <tr data-cov-row={r.tier} data-cov-count={r.count}>
+                    <td>
+                      <a class="link" href={`/ventures/${r.track.id}/`}>
+                        {r.track.name}
+                      </a>
+                    </td>
+                    <td>
+                      <a
+                        class="cov-seg-link"
+                        href={`/ventures/?track=${r.track.id}&seg=${r.track.id}/${r.segment.id}`}
+                      >
+                        <strong>{r.segment.name}</strong>
+                        <small>{r.segment.desc}</small>
+                      </a>
+                    </td>
+                    <td>
+                      <div class="cov-bar-cell">
+                        <b class="mono">{r.count}</b>
+                        <div class="cov-bar-track">
+                          <span
+                            class="cov-bar-fill"
+                            style={`width:${r.count ? Math.max(r.pct, 6) : 0}%`}
+                          ></span>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="mono">
+                      {r.count ? `国 ${r.cn} / 外 ${r.global}` : "—"}
+                    </td>
+                    <td>
+                      {r.tier === "empty" ? (
+                        <span class="badge badge-warn">空白 · 待补充</span>
+                      ) : r.tier === "thin" ? (
+                        <span class="badge badge-plain">薄弱样本</span>
+                      ) : (
+                        <span class="muted">已有样本</span>
+                      )}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>公开新闻抓取边界与历史缺口记录</h2>
+            <span class="hint">每 6 小时自动运行</span>
+          </div>
+          <div class="panel-body cov-doc-body">
+            <p>
+              新闻生成器仅访问 FinHot 已公开文章接口及已验证官方 RSS（OpenAI、NVIDIA、Google DeepMind），仅处理公开标题、链接、发布日期和已有公开摘要；绝不读取或发布内部候选稿、私有访谈纪要或本地研究笔记。
+            </p>
+            <p>
+              当前归档 <strong>{stats.articles}</strong> 条去重新闻，涉及{" "}
+              <strong>{stats.companies}</strong> 家公司；保留窗口为最近{" "}
+              {news.retention.days} 天、最多{" "}
+              {news.retention.maxArticles.toLocaleString()} 条。最近成功抓取：
+              <strong>
+                {stats.updatedAt
+                  ? stats.updatedAt.slice(0, 16).replace("T", " ") + " UTC"
+                  : "尚未抓取"}
+              </strong>
+              。
+            </p>
+            {(stats.bootstrapIncomplete || stats.coverageGapCount > 0) && (
+              <div class="note-box" style="margin-top:var(--sp-3)">
+                {stats.bootstrapIncomplete && (
+                  <p>
+                    <strong>初始历史回溯未完成：</strong>首批仅导入 FinHot 的有限分页窗口，不能据此检索 180 天内的全部历史新闻。
+                  </p>
+                )}
+                {stats.coverageGapCount > 0 && (
+                  <p>
+                    <strong>潜在历史覆盖缺口：</strong>存在 {stats.coverageGapCount} 段抓取窗口不连续记录。
+                  </p>
+                )}
+              </div>
+            )}
+          </div>
+        </section>
+      </div>
+
+      <aside class="stack">
+        <section class="panel">
+          <div class="panel-head">
+            <h2>三类信息与证据标准</h2>
+          </div>
+          <div class="panel-body cov-rules-list">
+            <div class="cov-rule-item">
+              <h3>1. 产业定位与跨环节归属</h3>
+              <p>
+                依据已披露产品与主营业务划分环节，同一公司可拥有多个产业位置（复用唯一公司 ID，不重复建档）。
+              </p>
+            </div>
+            <div class="cov-rule-item">
+              <h3>2. 有来源的公司关系（{relations.length} 条）</h3>
+              <p>
+                必须具备明确的关系双方、关系类型（供应 / 客户 / 合作 / 投资）、披露日期及可回查公开出处。产业链相邻不推断为供货关系。
+              </p>
+            </div>
+            <div class="cov-rule-item">
+              <h3>3. 公司事件 vs 自动匹配新闻</h3>
+              <p>
+                历史事件时间线保留原始状态（confirmed / reported）与时点；自动新闻区分「官方渠道」「标题提及」与「摘要提及」，均需回查原文。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>收录范围说明</h2>
+          </div>
+          <div class="panel-body cov-doc-body">
+            <p>
+              公司库同时收录早期初创项目、已上市产业锚点及大型集团旗下业务部门。收录不代表具备投资价值，也不将业务品牌擅自认定为独立法人主体。
+            </p>
+            <p>
+              <a class="link" href="/ventures/dexterity/">
+                灵巧操作专题 →
+              </a>{" "}
+              按六类角色与具体型号记录公开规格，未披露参数明确标注“未披露”，不填零或编造排名。
+            </p>
+          </div>
+        </section>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    const btns = [
+      ...document.querySelectorAll<HTMLButtonElement>("[data-cov-filter]"),
+    ];
+    const rows = [
+      ...document.querySelectorAll<HTMLTableRowElement>("[data-cov-row]"),
+    ];
+    btns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const mode = btn.dataset.covFilter || "all";
+        btns.forEach((b) => b.classList.toggle("is-on", b === btn));
+        rows.forEach((row) => {
+          const count = Number(row.dataset.covCount || "0");
+          if (mode === "gap") row.hidden = count > 2;
+          else if (mode === "dense") row.hidden = count < 8;
+          else row.hidden = false;
+        });
+      });
+    });
+  </script>
+</Base>

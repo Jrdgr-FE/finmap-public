@@ -1,0 +1,185 @@
+---
+import Base from '../../layouts/Base.astro';
+import OrgRow from '../../components/OrgRow.astro';
+import { getDetailedEntities, getTaxonomy, getStats, getTypeName } from '../../lib/data';
+
+// 名册级机构（农商行、村镇银行等 3600 余家）不在这一页，单独走 /roster/，
+// 否则这一页会膨胀到近 3 MB。
+const all = getDetailedEntities();
+const tax = getTaxonomy();
+const stats = getStats();
+const distressed = all.filter((e) => e.status === 'distressed').length;
+const exited = all.filter((e) => e.status === 'exited' || e.status === 'merging').length;
+
+// 按分类归拢，分类顺序跟 taxonomy 一致，方便横向扫读
+const grouped = tax.categories
+  .map((cat) => {
+    const entities = all
+      .filter((e) => e.category === cat.id)
+      .sort((a, b) =>
+        a.type === b.type
+          ? a.short.localeCompare(b.short, 'zh-Hans-CN')
+          : a.type.localeCompare(b.type),
+      );
+    const types = [...new Set(entities.map((e) => e.type))]
+      .map((type) => ({ type, n: entities.filter((e) => e.type === type).length }))
+      .sort((a, b) => b.n - a.n);
+    return { cat, entities, types };
+  })
+  .filter((g) => g.entities.length > 0);
+---
+
+<Base title="机构库" description="逐一核实过官网、业务与股权的中国持牌金融机构，可按分类、牌照类型筛选。" current="orgs">
+  <div class="wrap page">
+    <div class="page-head">
+      <div>
+        <h1>机构库<span class="count">{all.length.toLocaleString('zh-CN')}</span></h1>
+        <p>
+          逐一核实过官网、业务与股权的持牌机构，可按分类和牌照类型筛选。
+          农商行、村镇银行、农信社、财务公司等 {stats.mass.toLocaleString('zh-CN')} 家批量序列见<a class="link" href="/roster/">全量名册</a>。
+        </p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="toolbar">
+        <label class="filter-input">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path>
+          </svg>
+          <input
+            id="q"
+            type="search"
+            placeholder="筛选机构名、简称、牌照类型或上市代码，例如「信托」「理财」「600030」"
+            autocomplete="off"
+            aria-label="筛选机构"
+          />
+        </label>
+        <div class="chips" id="filters">
+          <button class="chip filter-chip is-on" data-cat="*" type="button">
+            全部 <span class="n">{all.length}</span>
+          </button>
+          {grouped.map(({ cat, entities }) => (
+            <button class="chip filter-chip" data-cat={cat.id} type="button">
+              <span class="badge-dot"></span>{cat.name} <span class="n">{entities.length}</span>
+            </button>
+          ))}
+        </div>
+        <div class="chips sub-chips" id="type-filters" hidden>
+          {grouped.map(({ cat, types }) =>
+            types.map(({ type, n }) => (
+              <button class="chip filter-type" data-cat={cat.id} data-parent-cat={cat.id} data-type={type} type="button" hidden>
+                {getTypeName(type)} <span class="n">{n}</span>
+              </button>
+            )),
+          )}
+        </div>
+      </div>
+      <div class="result-bar">
+        <span id="count" aria-live="polite"></span>
+        <span class="right">正常经营 {all.length - distressed - exited} · 风险处置中 {distressed} · 已退出 {exited}</span>
+      </div>
+    </div>
+
+    <div class="panel" id="results" style="margin-top:var(--sp-4)">
+      {grouped.map(({ cat, entities }) => (
+        <section class="org-group" data-cat-section={cat.id}>
+          <div class="group-label" data-cat={cat.id}>
+            <span class="badge-dot"></span>{cat.name}
+            <span class="n" data-group-count>{entities.length}</span>
+          </div>
+          <div class="org-list">
+            {entities.map((e) => <OrgRow entity={e} showCollection />)}
+          </div>
+        </section>
+      ))}
+      <p class="search-empty" id="empty" hidden>
+        没有匹配的机构。试试更短的关键词，或到<a class="link" href="/roster/">全量名册</a>里找农商行、村镇银行等。
+      </p>
+    </div>
+  </div>
+
+  <script>
+    const q = document.getElementById('q') as HTMLInputElement | null;
+    const catChips = [...document.querySelectorAll<HTMLButtonElement>('.filter-chip')];
+    const typeChips = [...document.querySelectorAll<HTMLButtonElement>('.filter-type')];
+    const typeBar = document.getElementById('type-filters');
+    const sections = [...document.querySelectorAll<HTMLElement>('[data-cat-section]')];
+    const countEl = document.getElementById('count');
+    const emptyEl = document.getElementById('empty');
+    let activeCat = '*';
+    let activeType = '*';
+
+    const apply = () => {
+      const term = (q?.value ?? '').trim().toLowerCase();
+      let visible = 0;
+      let total = 0;
+
+      for (const section of sections) {
+        const catOk = activeCat === '*' || section.dataset.catSection === activeCat;
+        let shown = 0;
+        for (const row of section.querySelectorAll<HTMLElement>('.org-row')) {
+          total++;
+          const hit =
+            catOk &&
+            (activeType === '*' || row.dataset.type === activeType) &&
+            (!term || (row.dataset.search ?? '').includes(term));
+          row.hidden = !hit;
+          if (hit) shown++;
+        }
+        section.hidden = shown === 0;
+        const badge = section.querySelector('[data-group-count]');
+        if (badge) badge.textContent = String(shown);
+        visible += shown;
+      }
+
+      if (countEl) countEl.textContent = visible === total ? `共 ${total} 家机构` : `显示 ${visible} / ${total} 家机构`;
+      if (emptyEl) emptyEl.hidden = visible !== 0;
+    };
+
+    const syncTypeBar = () => {
+      const showAll = activeCat === '*';
+      if (typeBar) typeBar.hidden = showAll;
+      typeChips.forEach((chip) => {
+        const relevant = !showAll && chip.dataset.parentCat === activeCat;
+        chip.hidden = !relevant;
+        chip.classList.toggle('is-on', relevant && chip.dataset.type === activeType);
+      });
+    };
+
+    q?.addEventListener('input', apply);
+
+    catChips.forEach((chip) =>
+      chip.addEventListener('click', () => {
+        activeCat = chip.dataset.cat ?? '*';
+        activeType = '*';
+        catChips.forEach((c) => c.classList.toggle('is-on', c === chip));
+        syncTypeBar();
+        apply();
+      }),
+    );
+
+    typeChips.forEach((chip) =>
+      chip.addEventListener('click', () => {
+        activeType = activeType === chip.dataset.type ? '*' : (chip.dataset.type ?? '*');
+        syncTypeBar();
+        apply();
+      }),
+    );
+
+    // 支持从 URL 直接带筛选条件进来，例如 /orgs/?cat=insurance&type=life-insurer 或 /orgs/?q=信托
+    const params = new URLSearchParams(location.search);
+    const presetCat = params.get('cat');
+    const presetType = params.get('type');
+    const presetQ = params.get('q');
+    if (presetCat) {
+      catChips.find((c) => c.dataset.cat === presetCat)?.click();
+    }
+    if (presetType) {
+      typeChips.find((c) => c.dataset.type === presetType)?.click();
+    }
+    if (presetQ && q) q.value = presetQ;
+    syncTypeBar();
+    apply();
+  </script>
+</Base>

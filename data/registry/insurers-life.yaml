@@ -1,0 +1,1470 @@
+note: >
+  本文件收录国家金融监督管理总局《保险机构法人名单》“人身保险公司”口径下的全部法人机构共 92 家，即寿险公司 75 家、养老保险公司 10 家、健康险公司 7 家；信美人寿相互保险社在名单中计入寿险公司，长江养老保险股份有限公司在名单中标注为养老保险公司（按保险资产管理公司管理），本文件仍按人身险口径收录。名单依据为《保险机构法人名单（截至2025年6月30日）》，系截至2026年9月30日可核验的最新一期官方名册。该名单公布的机构编码是保险机构编码，与保险公司偿付能力报告中披露的“保险机构法人许可证号”并非同一字段，因此 license_code 只填写能从公司官方披露文件逐条核实的条目，取不到的条目一律省略，不作推测。
+sources:
+  - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+entities:
+  - id: ins-china-life
+    name: 中国人寿保险股份有限公司
+    short: 中国人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000005"
+    regulator: 国家金融监督管理总局
+    founded: 2003
+    listed: ["601628.SH", "2628.HK"]
+    website: "https://www.e-chinalife.com/"
+    intro: 中国人寿保险（集团）公司旗下核心寿险主体，国有大型金融保险企业，国内寿险市场份额长期居首；A股、H股两地上市。
+    business: ["寿险", "健康险", "意外险", "年金保险", "团体保险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中国人寿官网", url: "https://www.e-chinalife.com/", date: "2026-09-30" }
+      - { title: "中国人寿公开信息披露", url: "https://www.e-chinalife.com/c/2022-06-14/519250.shtml", date: "2026-09-30" }
+  - id: ins-cpic-life
+    name: 中国太平洋人寿保险股份有限公司
+    short: 太保寿险
+    category: insurance
+    type: life-insurer
+    license_code: "000015"
+    regulator: 国家金融监督管理总局
+    founded: 2001
+    website: "https://life.cpic.com.cn/"
+    intro: 中国太平洋保险（集团）旗下寿险子公司，国有控股上市险企的核心人身险经营主体，属行业第一梯队。
+    business: ["寿险", "健康险", "年金保险", "意外险", "银行保险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "太保寿险官网", url: "https://life.cpic.com.cn/", date: "2026-09-30" }
+      - { title: "太保寿险公开信息披露", url: "https://life.cpic.com.cn/xrsbx/gkxxpl/jbxx/gsgk/?subMenu=1&inSub=1", date: "2026-09-30" }
+  - id: ins-pingan-life
+    name: 中国平安人寿保险股份有限公司
+    short: 平安人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000018"
+    regulator: 国家金融监督管理总局
+    website: "https://life.pingan.com/"
+    intro: 中国平安保险（集团）旗下寿险子公司，国内第二大寿险主体，个险代理人渠道与银保渠道并重。
+    business: ["寿险", "健康险", "意外险", "年金保险", "个险渠道"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "平安人寿官网", url: "https://life.pingan.com/", date: "2026-09-30" }
+  - id: ins-new-china-life
+    name: 新华人寿保险股份有限公司
+    short: 新华保险
+    category: insurance
+    type: life-insurer
+    license_code: "000019"
+    regulator: 国家金融监督管理总局
+    founded: 1996
+    listed: ["601336.SH", "01336.HK"]
+    website: "https://www.newchinalife.com/"
+    intro: 中央汇金投资有限责任公司为第一大股东，A股、H股两地上市的全国性大型寿险公司。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "新华保险官网", url: "https://www.newchinalife.com/", date: "2026-09-30" }
+  - id: ins-taiping-life
+    name: 太平人寿保险有限公司
+    short: 太平人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000027"
+    regulator: 国家金融监督管理总局
+    website: "https://life.cntaiping.com/"
+    intro: 中国太平保险集团旗下境内寿险主体，中央金融企业成员；品牌可追溯至1929年，2001年复业经营。
+    business: ["寿险", "健康险", "意外险", "年金保险", "团体保险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "太平人寿官网", url: "https://life.cntaiping.com/", date: "2026-09-30" }
+  - id: ins-manulife-sinochem
+    name: 中宏人寿保险有限公司
+    short: 中宏保险
+    category: insurance
+    type: life-insurer
+    license_code: "000028"
+    regulator: 国家金融监督管理总局
+    founded: 1996
+    website: "https://www.manulife-sinochem.com/"
+    intro: 加拿大宏利金融与中化集团合资组建，1996年成立，是国内首家中外合资寿险公司。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中宏保险官网", url: "https://www.manulife-sinochem.com/", date: "2026-09-30" }
+      - { title: "中宏保险公开信息披露", url: "https://www.manulife-sinochem.com/business/about-us/introduction", date: "2026-09-30" }
+  - id: ins-ccb-life
+    name: 建信人寿保险股份有限公司
+    short: 建信人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000029"
+    regulator: 国家金融监督管理总局
+    founded: 1998
+    website: "https://www.ccb-life.com.cn/"
+    intro: 中国建设银行控股的银行系寿险公司，前身为太平洋安泰人寿，依托母行渠道开展银保业务。
+    business: ["寿险", "健康险", "意外险", "年金保险", "银行保险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "建信人寿官网", url: "https://www.ccb-life.com.cn/", date: "2026-09-30" }
+      - { title: "建信人寿公开信息披露", url: "https://www.ccb-life.com.cn/html/6182/3209/index.html", date: "2026-09-30" }
+  - id: ins-allianz-china-life
+    name: 安联人寿保险有限公司
+    short: 安联人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000030"
+    regulator: 国家金融监督管理总局
+    website: "https://www.allianz.com.cn/"
+    intro: 安联（中国）保险控股有限公司全资持有，外资独资寿险公司；原中德安联人寿，2020年完成股权变更并更名。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "安联人寿官网", url: "https://www.allianz.com.cn/", date: "2026-09-30" }
+  - id: ins-icbc-axa-life
+    name: 工银安盛人寿保险有限公司
+    short: 工银安盛人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000031"
+    regulator: 国家金融监督管理总局
+    website: "https://www.icbc-axa.com/"
+    intro: 中国工商银行、法国安盛集团、中国五矿集团合资组建，工行控股的银行系寿险公司。
+    business: ["寿险", "健康险", "意外险", "年金保险", "银行保险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "工银安盛人寿官网", url: "https://www.icbc-axa.com/", date: "2026-09-30" }
+  - id: ins-citic-prudential-life
+    name: 中信保诚人寿保险有限公司
+    short: 中信保诚人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000032"
+    regulator: 国家金融监督管理总局
+    founded: 2000
+    website: "https://www.citic-prudential.com.cn/"
+    intro: 中国中信集团与英国保诚集团合资组建，总部北京，为中外合资寿险公司。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中信保诚人寿官网", url: "https://www.citic-prudential.com.cn/", date: "2026-09-30" }
+  - id: ins-bocom-msig-life
+    name: 交银人寿保险有限公司
+    short: 交银人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000033"
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    website: "https://www.bocommlife.com/"
+    intro: 交通银行控股的银行系寿险公司，前身为中保康联人寿，后经股权变更更名。
+    business: ["寿险", "健康险", "意外险", "年金保险", "银行保险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "交银人寿官网", url: "https://www.bocommlife.com/", date: "2026-09-30" }
+      - { title: "交银人寿公开信息披露", url: "https://www.bocommlife.com/101649/index.html", date: "2026-09-30" }
+  - id: ins-generali-china-life
+    name: 中意人寿保险有限公司
+    short: 中意人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000035"
+    regulator: 国家金融监督管理总局
+    founded: 2002
+    website: "https://www.generalichina.com/"
+    intro: 中国石油集团资本有限责任公司与意大利忠利集团合资组建，总部北京。
+    business: ["寿险", "健康险", "意外险", "年金保险", "团体保险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中意人寿官网", url: "https://www.generalichina.com/", date: "2026-09-30" }
+      - { title: "中意人寿公开信息披露", url: "https://www.generalichina.com/u/cms/www/202607/27131830snde.pdf", date: "2026-09-30" }
+  - id: ins-sunlife-everbright-life
+    name: 光大永明人寿保险有限公司
+    short: 光大永明人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000036"
+    regulator: 国家金融监督管理总局
+    founded: 2002
+    website: "https://www.sunlife-everbright.com/"
+    intro: 中国光大集团与加拿大永明金融集团合资组建，总部天津。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "光大永明人寿官网", url: "https://www.sunlife-everbright.com/", date: "2026-09-30" }
+      - { title: "光大永明人寿公开信息披露", url: "https://www.sunlife-everbright.com/sleb/info/jbxx/gsgk/index.html", date: "2026-09-30" }
+  - id: ins-aia-china
+    name: 友邦人寿保险有限公司
+    short: 友邦人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000037"
+    regulator: 国家金融监督管理总局
+    founded: 2020
+    website: "https://www.aia.com.cn/"
+    intro: 友邦保险控股有限公司全资子公司，外资独资寿险公司；2020年由友邦保险上海分公司改建为法人机构。
+    business: ["寿险", "健康险", "意外险", "年金保险", "个险渠道"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "友邦人寿官网", url: "https://www.aia.com.cn/", date: "2026-09-30" }
+      - { title: "友邦人寿公开信息披露", url: "https://www.aia.com.cn/zh-cn/gongkaixinxipilou/jibenxinxi/gongsigaikuang.jibenxinxi", date: "2026-09-30" }
+  - id: ins-founder-meiji-life
+    name: 北大方正人寿保险有限公司
+    short: 北大方正人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000047"
+    regulator: 国家金融监督管理总局
+    website: "https://www.pkufi.com/"
+    intro: 北大方正集团、日本明治安田生命保险相互会社与海尔集团合资组建，原名海尔人寿，总部上海。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "北大方正人寿官网", url: "https://www.pkufi.com/", date: "2026-09-30" }
+  - id: ins-bob-cardif-life
+    name: 中荷人寿保险有限公司
+    short: 中荷人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000048"
+    regulator: 国家金融监督管理总局
+    website: "http://www.bob-cardif.com/"
+    intro: 北京银行与法国巴黎保险集团合资组建，原名首创安泰人寿，总部大连。
+    business: ["寿险", "健康险", "意外险", "年金保险", "银行保险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中荷人寿官网", url: "http://www.bob-cardif.com/", date: "2026-09-30" }
+  - id: ins-aviva-cofco-life
+    name: 中英人寿保险有限公司
+    short: 中英人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000049"
+    regulator: 国家金融监督管理总局
+    website: "https://www.aviva-cofco.com.cn/"
+    intro: 中粮集团与英国英杰华集团合资组建，总部北京。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中英人寿官网", url: "https://www.aviva-cofco.com.cn/", date: "2026-09-30" }
+  - id: ins-aegon-thtf-life
+    name: 同方全球人寿保险有限公司
+    short: 同方全球人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000051"
+    regulator: 国家金融监督管理总局
+    founded: 2003
+    website: "https://www.aegonthtf.com/"
+    intro: 同方股份有限公司与荷兰全球人寿保险集团（Aegon）合资组建，原名海康人寿，总部深圳。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "同方全球人寿官网", url: "https://www.aegonthtf.com/", date: "2026-09-30" }
+      - { title: "同方全球人寿公开信息披露", url: "https://www.aegonthtf.com/gkxxpl/jbxx/gsgk/", date: "2026-09-30" }
+  - id: ins-minsheng-life
+    name: 民生人寿保险股份有限公司
+    short: 民生人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000052"
+    regulator: 国家金融监督管理总局
+    founded: 2002
+    website: "https://www.minshenglife.com/"
+    intro: 中国万向控股有限公司系为主要股东的全国性股份制寿险公司，总部北京。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "民生人寿官网", url: "https://www.minshenglife.com/", date: "2026-09-30" }
+      - { title: "民生人寿公开信息披露", url: "https://www.minshenglife.com/articleview/53", date: "2026-09-30" }
+  - id: ins-cignacmb-life
+    name: 招商信诺人寿保险有限公司
+    short: 招商信诺人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000054"
+    regulator: 国家金融监督管理总局
+    founded: 2003
+    website: "https://www.cignacmb.com/"
+    intro: 招商银行与美国信诺集团合资组建，以银保和电话销售渠道见长，总部深圳。
+    business: ["寿险", "健康险", "意外险", "年金保险", "银行保险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "招商信诺人寿官网", url: "https://www.cignacmb.com/", date: "2026-09-30" }
+      - { title: "招商信诺人寿公开信息披露", url: "https://www.cignacmb.com/xinxi/jibenxinxi/gaikuang.html", date: "2026-09-30" }
+  - id: ins-gw-changsheng-life
+    name: 长生人寿保险有限公司
+    short: 长生人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000055"
+    regulator: 国家金融监督管理总局
+    founded: 2003
+    website: "https://www.gwcslife.com/"
+    intro: 中国长城资产管理与日本生命保险等股东合资组建，原名广电日生人寿，总部上海。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "长生人寿官网", url: "https://www.gwcslife.com/", date: "2026-09-30" }
+  - id: ins-heng-an-standard-life
+    name: 恒安标准人寿保险有限公司
+    short: 恒安标准人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000056"
+    regulator: 国家金融监督管理总局
+    website: "https://www.hengansl.com/"
+    intro: 天津市泰达国际控股（集团）与英国安本集团（原标准人寿）合资组建，总部天津。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "恒安标准人寿官网", url: "https://www.hengansl.com/", date: "2026-09-30" }
+  - id: ins-old-mutual-chnenergy-life
+    name: 瑞泰人寿保险有限公司
+    short: 瑞泰人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000057"
+    regulator: 国家金融监督管理总局
+    website: "https://www.oldmutual-chnenergy.com/"
+    intro: 国家能源集团资本控股有限公司与南非耆卫集团（Old Mutual）合资组建，总部北京。
+    business: ["寿险", "健康险", "意外险", "年金保险", "投资连结保险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "瑞泰人寿官网", url: "https://www.oldmutual-chnenergy.com/", date: "2026-09-30" }
+  - id: ins-funde-sino-life
+    name: 富德生命人寿保险股份有限公司
+    short: 富德生命人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000061"
+    regulator: 国家金融监督管理总局
+    founded: 2002
+    website: "https://www.sino-life.com/"
+    intro: 富德保险控股股份有限公司旗下寿险公司，原名生命人寿，总部深圳。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "富德生命人寿官网", url: "https://www.sino-life.com/", date: "2026-09-30" }
+      - { title: "富德生命人寿公开信息披露", url: "https://www.sino-life.com/about/introduction", date: "2026-09-30" }
+  - id: ins-livit-life
+    name: 小康人寿保险有限责任公司
+    short: 小康人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000071"
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    website: "https://www.livit-life.com/"
+    intro: 原中法人寿保险有限责任公司，经股权重组后更名，总部上海。
+    business: ["寿险", "健康险", "意外险", "年金保险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "小康人寿官网", url: "https://www.livit-life.com/", date: "2026-09-30" }
+  - id: ins-union-life
+    name: 合众人寿保险股份有限公司
+    short: 合众人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000074"
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    website: "https://www.unionlife.com.cn/"
+    intro: 由中发集团等民营企业发起设立的全国性寿险公司，总部湖北武汉。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "合众人寿官网", url: "https://www.unionlife.com.cn/", date: "2026-09-30" }
+  - id: ins-huatai-life
+    name: 华泰人寿保险股份有限公司
+    short: 华泰人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000076"
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    website: "https://life.ehuatai.com/"
+    intro: 华泰保险集团旗下寿险子公司，集团主要股东包括安达保险集团（Chubb）。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "华泰人寿官网", url: "https://life.ehuatai.com/", date: "2026-09-30" }
+      - { title: "华泰人寿公开信息披露", url: "https://life.ehuatai.com/Essential_information.html", date: "2026-09-30" }
+  - id: ins-cathay-lujiazui-life
+    name: 陆家嘴国泰人寿保险有限责任公司
+    short: 陆家嘴国泰人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000077"
+    regulator: 国家金融监督管理总局
+    website: "https://www.cathaylife.cn/"
+    intro: 上海陆家嘴金融发展有限公司与台湾地区国泰人寿合资组建，是首家海峡两岸合资寿险公司，总部上海。
+    business: ["寿险", "健康险", "意外险", "年金保险", "长期看护保险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "陆家嘴国泰人寿官网", url: "https://www.cathaylife.cn/", date: "2026-09-30" }
+  - id: ins-sino-us-metlife
+    name: 中美联泰大都会人寿保险有限公司
+    short: 大都会人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000083"
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    website: "https://www.metlife.com.cn/"
+    intro: 美国大都会集团与上海联和投资有限公司合资组建，总部上海。注意两个编号不是一回事：官方名单登记的机构编码是 000083，其偿付能力报告披露的保险机构法人许可证号是 00118000。本站 license_code 统一存机构编码。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "大都会人寿官网", url: "https://www.metlife.com.cn/", date: "2026-09-30" }
+      - { title: "大都会人寿2025年4季度偿付能力季度报告摘要", url: "https://www.metlife.com.cn/strapi-uploads/assets/_3773440e49.pdf", date: "2026-09-30" }
+  - id: ins-boc-samsung-life
+    name: 中银三星人寿保险有限公司
+    short: 中银三星人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000087"
+    regulator: 国家金融监督管理总局
+    website: "http://www.boc-samsunglife.cn/"
+    intro: 中国银行与韩国三星生命保险合资组建，原名中航三星人寿，总部北京。
+    business: ["寿险", "健康险", "意外险", "年金保险", "银行保险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中银三星人寿官网", url: "http://www.boc-samsunglife.cn/", date: "2026-09-30" }
+  - id: ins-jk-life
+    name: 君康人寿保险股份有限公司
+    short: 君康人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000090"
+    regulator: 国家金融监督管理总局
+    founded: 2006
+    website: "https://www.jklife.com/"
+    intro: 全国性股份制寿险公司，原名正德人寿，总部北京。
+    business: ["寿险", "健康险", "意外险", "年金保险", "万能险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "君康人寿官网", url: "https://www.jklife.com/", date: "2026-09-30" }
+  - id: ins-sinatay-life
+    name: 信泰人寿保险股份有限公司
+    short: 信泰人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000091"
+    regulator: 国家金融监督管理总局
+    website: "https://www.xintai.com/"
+    intro: 以浙江民营资本为主要股东的全国性寿险公司，总部浙江杭州。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "信泰人寿官网", url: "https://www.xintai.com/", date: "2026-09-30" }
+  - id: ins-abc-life
+    name: 农银人寿保险股份有限公司
+    short: 农银人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000092"
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    website: "http://www.abchinalife.com/"
+    intro: 中国农业银行控股的银行系寿险公司，原名嘉禾人寿，总部北京。
+    business: ["寿险", "健康险", "意外险", "年金保险", "银行保险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "农银人寿官网", url: "http://www.abchinalife.com/", date: "2026-09-30" }
+      - { title: "农银人寿公开信息披露", url: "http://www.abchinalife.com/xxpl/jbxx/gsgk/index.shtml", date: "2026-09-30" }
+  - id: ins-great-wall-life
+    name: 长城人寿保险股份有限公司
+    short: 长城人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000095"
+    regulator: 国家金融监督管理总局
+    founded: 2005
+    website: "https://www.greatlife.cn/"
+    intro: 由北京金融街投资（集团）有限公司等国有股东发起设立，总部北京。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "长城人寿官网", url: "https://www.greatlife.cn/", date: "2026-09-30" }
+      - { title: "长城人寿公开信息披露", url: "https://www.greatlife.cn/page/aboutus/introduction//about_detail.shtml", date: "2026-09-30" }
+  - id: ins-picc-life
+    name: 中国人民人寿保险股份有限公司
+    short: 人保寿险
+    category: insurance
+    type: life-insurer
+    license_code: "000100"
+    regulator: 国家金融监督管理总局
+    website: "http://www.picclife.com/"
+    intro: 中国人民保险集团旗下寿险子公司，属国有大型保险集团的全国性寿险经营主体。
+    business: ["寿险", "健康险", "意外险", "年金保险", "团体保险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "人保寿险官网", url: "http://www.picclife.com/", date: "2026-09-30" }
+  - id: ins-guohua-life
+    name: 国华人寿保险股份有限公司
+    short: 国华人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000102"
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: "https://www.95549.cn/"
+    intro: 新理益集团系为主要股东的全国性寿险公司，总部湖北武汉，互联网与银保渠道特色明显。
+    business: ["寿险", "健康险", "意外险", "年金保险", "互联网保险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "国华人寿官网", url: "https://www.95549.cn/", date: "2026-09-30" }
+      - { title: "国华人寿公开信息披露", url: "https://www.95549.cn/pages/intro/gsjj.shtml", date: "2026-09-30" }
+  - id: ins-yingda-taihe-life
+    name: 英大泰和人寿保险股份有限公司
+    short: 英大人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000121"
+    regulator: 国家金融监督管理总局
+    website: "http://www.ydthlife.com/"
+    intro: 由国家电网有限公司及其所属公司发起设立，总部北京，简称英大人寿。
+    business: ["寿险", "健康险", "意外险", "年金保险", "团体保险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "英大人寿官网", url: "http://www.ydthlife.com/", date: "2026-09-30" }
+  - id: ins-happy-life
+    name: 幸福人寿保险股份有限公司
+    short: 幸福人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000124"
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: "https://www.happyinsurance.com.cn/"
+    intro: 控股股东为中国信达资产管理股份有限公司，总部北京，全国性国有控股寿险公司。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "幸福人寿官网", url: "https://www.happyinsurance.com.cn/", date: "2026-09-30" }
+  - id: ins-sunshine-life
+    name: 阳光人寿保险股份有限公司
+    short: 阳光人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000127"
+    regulator: 国家金融监督管理总局
+    website: "https://life.sinosig.com/"
+    intro: 阳光保险集团股份有限公司旗下寿险子公司，集团H股上市。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "阳光人寿官网", url: "https://life.sinosig.com/", date: "2026-09-30" }
+  - id: ins-dingcheng-life
+    name: 鼎诚人寿保险有限责任公司
+    short: 鼎诚人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000130"
+    regulator: 国家金融监督管理总局
+    founded: 2009
+    website: "https://dingchenglife.com.cn/"
+    intro: 全国性合资寿险公司，前身为新光海航人寿保险有限责任公司，总部北京。
+    business: ["寿险", "健康险", "意外险", "年金保险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "鼎诚人寿官网", url: "https://dingchenglife.com.cn/", date: "2026-09-30" }
+  - id: ins-hsbc-life-china
+    name: 汇丰人寿保险有限公司
+    short: 汇丰人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000131"
+    regulator: 国家金融监督管理总局
+    founded: 2009
+    website: "https://www.hsbcinsurance.com.cn/"
+    intro: 汇丰控股有限公司全资持有，外资独资寿险公司，总部上海。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "汇丰人寿官网", url: "https://www.hsbcinsurance.com.cn/", date: "2026-09-30" }
+      - { title: "汇丰人寿公开信息披露", url: "https://www.hsbcinsurance.com.cn/about-us/information-disclosure/basic-information/", date: "2026-09-30" }
+  - id: ins-junlong-life
+    name: 君龙人寿保险有限公司
+    short: 君龙人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000136"
+    regulator: 国家金融监督管理总局
+    website: "https://www.junlonglife.com.cn/"
+    intro: 厦门建发集团有限公司与台湾地区人寿保险商业同业公会合资组建，总部厦门。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "君龙人寿官网", url: "https://www.junlonglife.com.cn/", date: "2026-09-30" }
+  - id: ins-aeon-life
+    name: 百年人寿保险股份有限公司
+    short: 百年人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000138"
+    regulator: 国家金融监督管理总局
+    founded: 2009
+    website: "https://www.aeonlife.com.cn/"
+    intro: 全国性寿险公司，主要股东包括大连万达集团股份有限公司等，总部大连。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "百年人寿官网", url: "https://www.aeonlife.com.cn/", date: "2026-09-30" }
+      - { title: "百年人寿公开信息披露", url: "https://www.aeonlife.com.cn/about/summary/index.shtml", date: "2026-09-30" }
+  - id: ins-china-post-life
+    name: 中邮人寿保险股份有限公司
+    short: 中邮保险
+    category: insurance
+    type: life-insurer
+    license_code: "000141"
+    regulator: 国家金融监督管理总局
+    website: "https://www.chinapost-life.com/"
+    intro: 中国邮政集团有限公司旗下寿险公司，依托邮政网络开展银保与邮银渠道业务。
+    business: ["寿险", "健康险", "意外险", "年金保险", "银行保险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中邮保险官网", url: "https://www.chinapost-life.com/", date: "2026-09-30" }
+  - id: ins-zhongrong-life
+    name: 中融人寿保险股份有限公司
+    short: 中融人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000144"
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    website: "http://www.zhongronglife.com/"
+    intro: 全国性股份制寿险公司，总部北京。
+    business: ["寿险", "健康险", "意外险", "年金保险", "万能险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中融人寿官网", url: "http://www.zhongronglife.com/", date: "2026-09-30" }
+      - { title: "中融人寿公开信息披露", url: "http://www.zhongronglife.com/html/web/shouyedaohang/gongkaixinxipilou/index.html", date: "2026-09-30" }
+  - id: ins-dajia-life
+    name: 大家人寿保险股份有限公司
+    short: 大家人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000145"
+    regulator: 国家金融监督管理总局
+    founded: 2010
+    website: "https://life.djbx.com/"
+    intro: 大家保险集团旗下寿险子公司，承接原安邦人寿保险业务，总部北京。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "大家人寿官网", url: "https://life.djbx.com/", date: "2026-09-30" }
+      - { title: "大家人寿公开信息披露", url: "https://life.djbx.com/col/col184/index.html", date: "2026-09-30" }
+  - id: ins-lian-life
+    name: 利安人寿保险股份有限公司
+    short: 利安人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000152"
+    regulator: 国家金融监督管理总局
+    website: "http://www.lianlife.com/"
+    intro: 由江苏省国际信托有限责任公司等江苏国资企业发起设立，总部江苏南京。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "利安人寿官网", url: "http://www.lianlife.com/", date: "2026-09-30" }
+  - id: ins-huahui-life
+    name: 华汇人寿保险股份有限公司
+    short: 华汇人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000157"
+    regulator: 国家金融监督管理总局
+    founded: 2011
+    website: "http://www.sciclife.com/"
+    intro: 全国性专业寿险公司，注册地辽宁沈阳。
+    business: ["寿险", "健康险", "意外险", "年金保险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "华汇人寿官网", url: "http://www.sciclife.com/", date: "2026-09-30" }
+      - { title: "华汇人寿公开信息披露", url: "http://www.sciclife.com/intro_scic/_content/11_09/18/1316323780984_5.html", date: "2026-09-30" }
+  - id: ins-qianhai-life
+    name: 前海人寿保险股份有限公司
+    short: 前海人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000160"
+    regulator: 国家金融监督管理总局
+    website: "https://www.foresealife.com/"
+    intro: 注册于深圳前海的全国性寿险公司，经营个险、银保及团险业务。
+    business: ["寿险", "健康险", "意外险", "年金保险", "万能险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "前海人寿官网", url: "https://www.foresealife.com/", date: "2026-09-30" }
+  - id: ins-soochow-life
+    name: 东吴人寿保险股份有限公司
+    short: 东吴人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000164"
+    regulator: 国家金融监督管理总局
+    website: "https://www.soochowlife.net/"
+    intro: 由苏州国际发展集团等发起设立，是国内第一家在地级城市设立的寿险法人机构，总部江苏苏州。
+    business: ["寿险", "健康险", "意外险", "年金保险", "税优健康险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "东吴人寿官网", url: "https://www.soochowlife.net/", date: "2026-09-30" }
+  - id: ins-hongkang-life
+    name: 弘康人寿保险股份有限公司
+    short: 弘康人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000166"
+    regulator: 国家金融监督管理总局
+    website: "https://www.hongkang-life.com/"
+    intro: 全国性股份制寿险公司，总部北京，以互联网和经代渠道见长。
+    business: ["寿险", "健康险", "意外险", "年金保险", "互联网保险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "弘康人寿官网", url: "https://www.hongkang-life.com/", date: "2026-09-30" }
+  - id: ins-pearl-river-life
+    name: 珠江人寿保险股份有限公司
+    short: 珠江人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000167"
+    regulator: 国家金融监督管理总局
+    founded: 2012
+    website: "https://www.prlife.com.cn/"
+    intro: 由广东珠江投资股份有限公司等发起设立，总部广东广州。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "珠江人寿官网", url: "https://www.prlife.com.cn/", date: "2026-09-30" }
+  - id: ins-jixiang-life
+    name: 财信吉祥人寿保险股份有限公司
+    short: 财信人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000168"
+    regulator: 国家金融监督管理总局
+    founded: 2012
+    website: "https://life.hnchasing.com/"
+    intro: 湖南财信金融控股集团有限公司系为主要股东的全国性寿险公司，总部湖南长沙，品牌简称财信人寿。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "财信人寿官网", url: "https://life.hnchasing.com/", date: "2026-09-30" }
+      - { title: "财信人寿公开信息披露", url: "https://life.hnchasing.com/about_us/about_company/2025-10-27/9.html", date: "2026-09-30" }
+  - id: ins-pramerica-fosun-life
+    name: 复星保德信人寿保险有限公司
+    short: 复星保德信人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000169"
+    regulator: 国家金融监督管理总局
+    website: "https://www.pflife.com.cn/"
+    intro: 上海复星高科技（集团）有限公司与美国保德信金融集团合资组建，总部上海。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "复星保德信人寿官网", url: "https://www.pflife.com.cn/", date: "2026-09-30" }
+  - id: ins-dongfang-jiafu-life
+    name: 东方嘉富人寿保险有限公司
+    short: 东方嘉富人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000171"
+    regulator: 国家金融监督管理总局
+    website: "https://www.sinokorealife.com.cn/"
+    intro: 原中韩人寿保险有限公司，2025年更名；现由浙江东方控股集团股份有限公司控股，韩国韩华生命保险参股。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "东方嘉富人寿官网", url: "https://www.sinokorealife.com.cn/", date: "2026-09-30" }
+  - id: ins-ergo-china-life
+    name: 德华安顾人寿保险有限公司
+    short: 德华安顾人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000176"
+    regulator: 国家金融监督管理总局
+    website: "https://www.ergo-life.cn/"
+    intro: 山东省国有资产投资控股有限公司与德国安顾集团合资组建，总部山东济南。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "德华安顾人寿官网", url: "https://www.ergo-life.cn/", date: "2026-09-30" }
+  - id: ins-bohai-life
+    name: 渤海人寿保险股份有限公司
+    short: 渤海人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000186"
+    regulator: 国家金融监督管理总局
+    website: "https://www.bohailife.net/"
+    intro: 总部天津的全国性寿险公司，由天津地方国有企业及社会资本共同发起。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "渤海人寿官网", url: "https://www.bohailife.net/", date: "2026-09-30" }
+  - id: ins-guolian-life
+    name: 国联人寿保险股份有限公司
+    short: 国联人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000188"
+    regulator: 国家金融监督管理总局
+    website: "https://www.guolian-life.com/"
+    intro: 由无锡市国联发展（集团）有限公司等发起设立，总部江苏无锡。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "国联人寿官网", url: "https://www.guolian-life.com/", date: "2026-09-30" }
+  - id: ins-shanghai-life
+    name: 上海人寿保险股份有限公司
+    short: 上海人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000190"
+    regulator: 国家金融监督管理总局
+    website: "https://www.shanghailife.com.cn/"
+    intro: 注册于中国（上海）自由贸易试验区的全国性寿险公司。
+    business: ["寿险", "健康险", "意外险", "年金保险", "万能险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "上海人寿官网", url: "https://www.shanghailife.com.cn/", date: "2026-09-30" }
+  - id: ins-china-united-life
+    name: 中华联合人寿保险股份有限公司
+    short: 中华人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000200"
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    website: "https://life.cic.cn/"
+    intro: 中华联合保险集团股份有限公司旗下寿险子公司，简称中华人寿，总部北京。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中华人寿官网", url: "https://life.cic.cn/", date: "2026-09-30" }
+  - id: ins-taikang-life
+    name: 泰康人寿保险有限责任公司
+    short: 泰康人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000213"
+    regulator: 国家金融监督管理总局
+    website: "https://www.taikanglife.com/"
+    intro: 泰康保险集团股份有限公司旗下核心寿险子公司，属行业第一梯队，养老社区与保险结合为其特色。
+    business: ["寿险", "健康险", "意外险", "年金保险", "健康养老"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "泰康人寿官网", url: "https://www.taikanglife.com/", date: "2026-09-30" }
+  - id: ins-hengqin-life
+    name: 横琴人寿保险有限公司
+    short: 横琴人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000216"
+    regulator: 国家金融监督管理总局
+    website: "https://www.e-hqins.com/"
+    intro: 注册于横琴粤澳深度合作区的全国性寿险法人机构，以家庭账户、合伙型分销网络和数字化为战略特色。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "横琴人寿官网", url: "https://www.e-hqins.com/", date: "2026-09-30" }
+  - id: ins-hetai-life
+    name: 和泰人寿保险股份有限公司
+    short: 和泰人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000218"
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: "https://www.htlic.com/"
+    intro: 总部山东济南的全国性寿险公司，以互联网保险为主要经营特色。
+    business: ["寿险", "健康险", "意外险", "年金保险", "互联网保险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "和泰人寿官网", url: "https://www.htlic.com/", date: "2026-09-30" }
+      - { title: "和泰人寿公开信息披露", url: "https://www.htlic.com/aboutHt/COMPANY_INTRO", date: "2026-09-30" }
+  - id: ins-huagui-life
+    name: 华贵人寿保险股份有限公司
+    short: 华贵保险
+    category: insurance
+    type: life-insurer
+    license_code: "000220"
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: "https://www.huaguilife.cn/"
+    intro: 由中国贵州茅台酒厂（集团）有限责任公司等发起设立，总部贵州贵阳。
+    business: ["寿险", "健康险", "意外险", "定期寿险", "年金保险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "华贵保险官网", url: "https://www.huaguilife.cn/", date: "2026-09-30" }
+  - id: ins-trust-mutual-life
+    name: 信美人寿相互保险社
+    short: 信美相互
+    category: insurance
+    type: life-insurer
+    license_code: "000223"
+    regulator: 国家金融监督管理总局
+    website: "https://www.trustlife.com/"
+    intro: 国内首家相互制寿险机构，由蚂蚁集团等企业发起设立，总部北京，会员共治、盈余共享。
+    business: ["寿险", "健康险", "意外险", "年金保险", "相互保险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "信美相互官网", url: "https://www.trustlife.com/", date: "2026-09-30" }
+  - id: ins-aixin-life
+    name: 爱心人寿保险股份有限公司
+    short: 爱心人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000224"
+    regulator: 国家金融监督管理总局
+    website: "https://www.aixin-ins.com/"
+    intro: 总部北京的全国性寿险公司，聚焦健康与养老保障领域。
+    business: ["寿险", "健康险", "意外险", "年金保险", "健康养老"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "爱心人寿官网", url: "https://www.aixin-ins.com/", date: "2026-09-30" }
+  - id: ins-china-merchants-renhe-life
+    name: 招商局仁和人寿保险股份有限公司
+    short: 招商仁和人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000226"
+    regulator: 国家金融监督管理总局
+    website: "https://www.cmrh.com/"
+    intro: 由招商局集团有限公司主发起，中国移动通信集团、中国民航信息网络等共同参股，总部深圳。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "招商仁和人寿官网", url: "https://www.cmrh.com/", date: "2026-09-30" }
+  - id: ins-three-gorges-life
+    name: 三峡人寿保险股份有限公司
+    short: 三峡人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000230"
+    regulator: 国家金融监督管理总局
+    website: "https://www.tg-life.com.cn/"
+    intro: 由重庆地方国有企业发起设立，总部重庆，是重庆市属全国性寿险法人机构。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "三峡人寿官网", url: "https://www.tg-life.com.cn/", date: "2026-09-30" }
+  - id: ins-beijing-life
+    name: 北京人寿保险股份有限公司
+    short: 北京人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000233"
+    regulator: 国家金融监督管理总局
+    founded: 2018
+    website: "https://www.beijinglife.com.cn/"
+    intro: 由北京国有资本运营管理有限公司等北京市属国有企业发起设立，总部北京。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "北京人寿官网", url: "https://www.beijinglife.com.cn/", date: "2026-09-30" }
+      - { title: "北京人寿公开信息披露", url: "https://www.beijinglife.com.cn/c/2019-02-18/484946.html", date: "2026-09-30" }
+  - id: ins-guobao-life
+    name: 国宝人寿保险股份有限公司
+    short: 国宝人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000234"
+    regulator: 国家金融监督管理总局
+    website: "https://www.panda-assets.com/"
+    intro: 由四川省委省政府主导、四川金融控股集团等股东发起设立，是唯一总部设在四川成都的全国性人身保险公司。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "国宝人寿官网", url: "https://www.panda-assets.com/", date: "2026-09-30" }
+  - id: ins-haibao-life
+    name: 海保人寿保险股份有限公司
+    short: 海保人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000236"
+    regulator: 国家金融监督管理总局
+    website: "https://www.haibao-life.com/"
+    intro: 总部海南海口的全国性寿险公司，主要在海南、深圳等地设有分支机构。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "海保人寿官网", url: "https://www.haibao-life.com/", date: "2026-09-30" }
+  - id: ins-guofu-life
+    name: 国富人寿保险股份有限公司
+    short: 国富人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000237"
+    regulator: 国家金融监督管理总局
+    founded: 2018
+    website: "https://www.e-guofu.com/"
+    intro: 由广西投资集团等广西地方国有企业发起设立，总部广西南宁。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "国富人寿官网", url: "https://www.e-guofu.com/", date: "2026-09-30" }
+      - { title: "国富人寿公开信息披露", url: "https://www.e-guofu.com/upload/2026/07-24/19-09-130756-1976835526.pdf", date: "2026-09-30" }
+  - id: ins-zhonghui-life
+    name: 中汇人寿保险股份有限公司
+    short: 中汇人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000259"
+    regulator: 国家金融监督管理总局
+    founded: 2023
+    website: "https://www.zhonghuilife.com/"
+    intro: 由中央汇金投资有限责任公司和中国保险保障基金有限责任公司共同发起设立，承接原天安人寿保险业务，总部北京。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "中汇人寿官网", url: "https://www.zhonghuilife.com/", date: "2026-09-30" }
+      - { title: "中汇人寿公开信息披露", url: "https://www.zhonghuilife.com/disclosure/index.html?id=5-26d1671986412fa2eb1b1e847b8bc599", date: "2026-09-30" }
+  - id: ins-ruizhong-life
+    name: 瑞众人寿保险有限责任公司
+    short: 瑞众保险
+    category: insurance
+    type: life-insurer
+    license_code: "000260"
+    regulator: 国家金融监督管理总局
+    founded: 2023
+    website: "https://www.ruiinsurance.com/"
+    intro: 主要股东为九州启航（北京）股权投资基金（有限合伙）和中国保险保障基金有限责任公司，承接原华夏人寿保险业务，总部北京。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "瑞众保险官网", url: "https://www.ruiinsurance.com/", date: "2026-09-30" }
+  - id: ins-haigang-life
+    name: 海港人寿保险股份有限公司
+    short: 海港人寿
+    category: insurance
+    type: life-insurer
+    license_code: "000258"
+    regulator: 国家金融监督管理总局
+    founded: 2023
+    website: "https://www.harbourlife.com.cn/"
+    intro: 注册于深圳前海的全国性寿险公司，承接原恒大人寿保险业务。
+    business: ["寿险", "健康险", "意外险", "年金保险", "分红险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "海港人寿官网", url: "https://www.harbourlife.com.cn/", date: "2026-09-30" }
+      - { title: "海港人寿公开信息披露", url: "https://www.harbourlife.com.cn/channel/10952.html", date: "2026-09-30" }
+  - id: ins-pingan-pension
+    name: 平安养老保险股份有限公司
+    short: 平安养老险
+    category: insurance
+    type: life-insurer
+    license_code: "000072"
+    regulator: 国家金融监督管理总局
+    website: "https://yl.pingan.com/"
+    intro: 中国平安保险（集团）旗下专业养老保险公司，成立于2004年12月，是国内首家专业养老保险公司，主营企业年金、职业年金和团体养老保障。
+    business: ["企业年金", "职业年金", "团体养老保障", "个人养老金", "养老金融"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "平安养老险官网", url: "https://yl.pingan.com/", date: "2026-09-30" }
+  - id: ins-taiping-pension
+    name: 太平养老保险股份有限公司
+    short: 太平养老
+    category: insurance
+    type: life-insurer
+    license_code: "000082"
+    regulator: 国家金融监督管理总局
+    website: "https://tppension.cntaiping.com/"
+    intro: 中国太平保险集团旗下专业养老保险公司，具备企业年金、职业年金受托与投资管理资格。
+    business: ["企业年金", "职业年金", "团体养老保障", "个人养老金", "养老金融"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "太平养老官网", url: "https://tppension.cntaiping.com/", date: "2026-09-30" }
+  - id: ins-china-life-pension
+    name: 中国人寿养老保险股份有限公司
+    short: 国寿养老
+    category: insurance
+    type: life-insurer
+    license_code: "000109"
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: "https://www.clpc.com.cn/"
+    intro: 中国人寿保险（集团）公司旗下专业养老保险公司，专注养老保障三支柱资金的管理运营。
+    business: ["企业年金", "职业年金", "商业养老金", "个人养老金", "养老金融"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "国寿养老官网", url: "https://www.clpc.com.cn/", date: "2026-09-30" }
+      - { title: "国寿养老公开信息披露", url: "https://www.clpc.com.cn/chinalifepension/gywm/gsjj/index.html", date: "2026-09-30" }
+  - id: ins-taikang-pension
+    name: 泰康养老保险股份有限公司
+    short: 泰康养老
+    category: insurance
+    type: life-insurer
+    license_code: "000122"
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: "https://www.tkpension.com/"
+    intro: 泰康保险集团旗下专业养老保险公司，业务涵盖企业年金、职业年金与个人养老金。
+    business: ["企业年金", "职业年金", "个人养老金", "团体养老保障", "养老金融"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "泰康养老官网", url: "https://www.tkpension.com/", date: "2026-09-30" }
+      - { title: "泰康养老公开信息披露", url: "https://www.tkpension.com/gsgk/", date: "2026-09-30" }
+  - id: ins-dajia-pension
+    name: 大家养老保险股份有限公司
+    short: 大家养老
+    category: insurance
+    type: life-insurer
+    license_code: "000181"
+    regulator: 国家金融监督管理总局
+    founded: 2013
+    website: "https://annuity.djbx.com/"
+    intro: 大家保险集团旗下专业养老保险公司，前身为安邦养老保险股份有限公司。
+    business: ["企业年金", "职业年金", "团体养老保障", "个人养老金"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "大家养老官网", url: "https://annuity.djbx.com/", date: "2026-09-30" }
+      - { title: "大家养老公开信息披露", url: "https://annuity.djbx.com/col/col463/index.html", date: "2026-09-30" }
+  - id: ins-new-china-pension
+    name: 新华养老保险股份有限公司
+    short: 新华养老
+    category: insurance
+    type: life-insurer
+    license_code: "000211"
+    regulator: 国家金融监督管理总局
+    founded: 2016
+    website: "https://www.newchinapension.com/"
+    intro: 新华人寿保险股份有限公司旗下专业养老保险公司，主营企业年金与职业年金业务。
+    business: ["企业年金", "职业年金", "团体养老保障", "个人养老金"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "新华养老官网", url: "https://www.newchinapension.com/", date: "2026-09-30" }
+      - { title: "新华养老公开信息披露", url: "https://www.newchinapension.com/xhylbx/_300468/_300664/_300859/index.html", date: "2026-09-30" }
+  - id: ins-picc-pension
+    name: 中国人民养老保险有限责任公司
+    short: 人保养老
+    category: insurance
+    type: life-insurer
+    license_code: "000228"
+    regulator: 国家金融监督管理总局
+    website: "https://www.picc-pension.com.cn/"
+    intro: 中国人民保险集团旗下专业养老保险公司，具备企业年金、职业年金受托及投资管理资格。
+    business: ["企业年金", "职业年金", "团体养老保障", "个人养老金"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "人保养老官网", url: "https://www.picc-pension.com.cn/", date: "2026-09-30" }
+  - id: ins-heng-an-standard-pension
+    name: 恒安标准养老保险有限责任公司
+    short: 恒安标准养老
+    category: insurance
+    type: life-insurer
+    license_code: "000249"
+    regulator: 国家金融监督管理总局
+    founded: 2021
+    website: "https://www.haslpension.com/"
+    intro: 由恒安标准人寿保险有限公司全额出资设立，总部天津，是中国首家具有外资背景的专业养老保险公司。
+    business: ["企业年金", "职业年金", "个人养老金", "养老金融"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "恒安标准养老官网", url: "https://www.haslpension.com/", date: "2026-09-30" }
+      - { title: "恒安标准养老公开信息披露", url: "https://www.haslpension.com/henganyanglao/gkxxpl/jbxx/gsgk/gsjs/index.html", date: "2026-09-30" }
+  - id: ins-guomin-pension
+    name: 国民养老保险股份有限公司
+    short: 国民养老
+    category: insurance
+    type: life-insurer
+    license_code: "000256"
+    regulator: 国家金融监督管理总局
+    website: "https://www.guominpension.com/"
+    intro: 由多家银行理财子公司及大型金融机构共同发起设立的专业养老保险公司，聚焦第三支柱个人养老金。
+    business: ["个人养老金", "商业养老金", "养老金融", "养老保障产品"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "国民养老官网", url: "https://www.guominpension.com/", date: "2026-09-30" }
+  - id: ins-changjiang-pension
+    name: 长江养老保险股份有限公司
+    short: 长江养老
+    category: insurance
+    type: life-insurer
+    regulator: 国家金融监督管理总局
+    founded: 2007
+    website: "https://www.cj-pension.com.cn/"
+    intro: 中国太平洋保险（集团）旗下养老保险公司，按照保险资产管理公司管理，以养老金融服务为核心。
+    business: ["企业年金", "职业年金", "养老金产品", "养老金融", "保险资管"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "长江养老官网", url: "https://www.cj-pension.com.cn/", date: "2026-09-30" }
+      - { title: "长江养老公开信息披露", url: "https://www.cj-pension.com.cn/cjyl/Channel/350518", date: "2026-09-30" }
+  - id: ins-pingan-health
+    name: 平安健康保险股份有限公司
+    short: 平安健康险
+    category: insurance
+    type: life-insurer
+    license_code: "000084"
+    regulator: 国家金融监督管理总局
+    website: "https://health.pingan.com/"
+    intro: 中国平安保险（集团）旗下专业健康保险公司，经营医疗、重疾及团体健康保险业务。
+    business: ["医疗保险", "重疾险", "团体健康险", "健康管理"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "平安健康险官网", url: "https://health.pingan.com/", date: "2026-09-30" }
+  - id: ins-picc-health
+    name: 中国人民健康保险股份有限公司
+    short: 人保健康
+    category: insurance
+    type: life-insurer
+    license_code: "000085"
+    regulator: 国家金融监督管理总局
+    website: "https://www.picchealth.com/"
+    intro: 中国人民保险集团旗下专业健康保险公司，是国内首家专业健康保险公司。
+    business: ["医疗保险", "重疾险", "长期护理保险", "健康管理", "团体健康险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "人保健康官网", url: "https://www.picchealth.com/", date: "2026-09-30" }
+  - id: ins-kunlun-health
+    name: 昆仑健康保险股份有限公司
+    short: 昆仑健康
+    category: insurance
+    type: life-insurer
+    license_code: "000097"
+    regulator: 国家金融监督管理总局
+    website: "https://www.kunlunhealth.com.cn/"
+    intro: 专业健康保险公司，总部上海，主打重疾、护理与医疗保险产品。
+    business: ["医疗保险", "重疾险", "护理保险", "健康管理"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "昆仑健康官网", url: "https://www.kunlunhealth.com.cn/", date: "2026-09-30" }
+  - id: ins-hexie-health
+    name: 和谐健康保险股份有限公司
+    short: 和谐健康
+    category: insurance
+    type: life-insurer
+    license_code: "000099"
+    regulator: 国家金融监督管理总局
+    website: "https://www.hexiehealth.com/"
+    intro: 专业健康保险公司，原名瑞福德健康保险股份有限公司，注册地四川。
+    business: ["医疗保险", "重疾险", "护理保险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "和谐健康官网", url: "https://www.hexiehealth.com/", date: "2026-09-30" }
+  - id: ins-pacific-health
+    name: 太平洋健康保险股份有限公司
+    short: 太平洋健康险
+    category: insurance
+    type: life-insurer
+    license_code: "000184"
+    regulator: 国家金融监督管理总局
+    founded: 2014
+    website: "https://health.cpic.com.cn/"
+    intro: 中国太平洋保险（集团）旗下专业健康保险公司，原名太保安联健康保险股份有限公司。
+    business: ["医疗保险", "重疾险", "长期护理保险", "失能保险", "团体健康险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "太平洋健康险官网", url: "https://health.cpic.com.cn/", date: "2026-09-30" }
+      - { title: "太平洋健康险公开信息披露", url: "https://health.cpic.com.cn/jkx/gkxxpl/?subMenu=1&inSub=1", date: "2026-09-30" }
+  - id: ins-fosun-uhi
+    name: 复星联合健康保险股份有限公司
+    short: 复星联合健康
+    category: insurance
+    type: life-insurer
+    license_code: "000217"
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: "https://www.fosun-uhi.com/"
+    intro: 由上海复星高科技（集团）等发起设立的专业健康保险公司，总部广东广州。
+    business: ["医疗保险", "重疾险", "健康管理", "团体健康险"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "复星联合健康官网", url: "https://www.fosun-uhi.com/", date: "2026-09-30" }
+      - { title: "复星联合健康公开信息披露", url: "https://www.fosun-uhi.com/PublicInformation/BasicInformation/CompanyInformation/", date: "2026-09-30" }
+  - id: ins-ruihua-health
+    name: 瑞华健康保险股份有限公司
+    short: 瑞华保险
+    category: insurance
+    type: life-insurer
+    license_code: "000235"
+    regulator: 国家金融监督管理总局
+    website: "https://www.rhassurance.com/"
+    intro: 专业健康保险公司，注册地陕西西安，经营总部设在上海。
+    business: ["医疗保险", "重疾险", "护理保险", "健康管理"]
+    parent: ROOT
+    status: active
+    sources:
+      - { title: "国家金融监督管理总局《保险机构法人名单》（截至2025年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/2a78efc6d162484f8dfb8d0388b00320.pdf", date: "2025-06-30" }
+      - { title: "瑞华保险官网", url: "https://www.rhassurance.com/", date: "2026-09-30" }

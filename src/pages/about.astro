@@ -1,0 +1,415 @@
+---
+import Base from '../layouts/Base.astro';
+import { getStats, getWarnings, getTaxonomy, getCollections, getRegistryDropped } from '../lib/data';
+
+const stats = getStats();
+const warnings = getWarnings();
+const tax = getTaxonomy();
+const collections = getCollections();
+const groups = collections.filter((c) => c.is_group);
+const registry = collections.find((c) => c.id === 'registry');
+const supervision = collections.find((c) => c.id === 'supervision');
+
+const fmt = (n: number) => n.toLocaleString('zh-CN');
+
+const toc = [
+  { id: 'taxonomy', label: '分类口径' },
+  { id: 'structure', label: '三层结构' },
+  { id: 'scope', label: '收录边界' },
+  { id: 'sources', label: '数据来源' },
+  { id: 'stakes', label: '持股比例' },
+  { id: 'validation', label: '校验与对账' },
+  { id: 'limits', label: '已知局限' },
+  { id: 'ventures', label: '硬科技收录口径' },
+  { id: 'disclaimer', label: '免责声明' },
+];
+---
+
+<Base title="数据说明" description="FinMap 的分类口径、数据来源、校验方式和已知局限。" current="about">
+  <div class="wrap page">
+    <div class="page-head">
+      <div>
+        <h1>数据说明</h1>
+        <p>分类口径、数据来源、校验方式与已知局限。这是一份带校验规则的结构化数据集，下面把口径和缺口都写清楚。</p>
+      </div>
+    </div>
+
+    <div class="doc-layout">
+      <nav class="toc" aria-label="本页目录">
+        <p>本页目录</p>
+        {toc.map((t) => <a href={`#${t.id}`}>{t.label}</a>)}
+      </nav>
+
+      <article class="panel doc">
+        <section class="section" id="taxonomy">
+          <div class="section-head">
+            <h2>分类口径</h2>
+          </div>
+          <p>{tax.note}</p>
+          <p>
+            分成 {tax.categories.length} 个分类：
+            {tax.categories.map((c, i) => (
+              <>
+                <a href={`/category/${c.id}/`}>{c.name}</a>
+                <span class="muted">{i < tax.categories.length - 1 ? '、' : '。'}</span>
+              </>
+            ))}
+          </p>
+          <div class="note-box" data-cat="holding">
+            <strong>为什么单独设"金融控股公司"这一分类。</strong>
+            它决定了整张图谱长什么样：有金控牌照的集团（中信、招商局），
+            金融股权会收拢到一个金控平台上，谱系是一棵树；没有金控牌照的集团（中国平安、光大），
+            金融股权散挂在集团本级和几个中间层下面，谱系是一片灌木。
+            把这两类并排看，比单看任何一家都更能说明中国金融集团的治理差异。
+          </div>
+        </section>
+
+        <section class="section" id="structure">
+          <div class="section-head">
+            <h2>三层结构</h2>
+          </div>
+          <p>
+            数据集分三层，因为"谁持有牌照"和"谁持有了谁"是两个不同的问题，
+            用同一张表表达会两头都不讨好。
+          </p>
+          <div class="facts">
+            <div class="fact">
+              <span class="fact-k">监管与基础设施</span>
+              <span class="fact-v">
+                {supervision ? supervision.entities.length : 0} 家。定规则、发牌照、办登记清算的机构。
+                它们不直接做业务，但决定了谁能做、能做什么。
+              </span>
+            </div>
+            <div class="fact">
+              <span class="fact-k">集团谱系层</span>
+              <span class="fact-v">
+                {groups.length} 个金融集团，共 {groups.reduce((n, g) => n + g.entities.length, 0)} 家主体。
+                这一层有股权关系——谁持谁、持多少、是控股还是只是参股：
+                <a href="/group/citic/">中信</a>、
+                <a href="/group/pingan/">中国平安</a>、
+                <a href="/group/merchants/">招商局</a>、
+                <a href="/group/everbright/">光大</a>。
+              </span>
+            </div>
+            <div class="fact">
+              <span class="fact-k">全牌照名录</span>
+              <span class="fact-v">
+                {registry ? fmt(registry.entities.length) : 0} 家。按牌照序列收全的机构名册，
+                大多不属于某个金融集团，因此没有股权谱系，只有"它持有哪类牌照"。
+              </span>
+            </div>
+          </div>
+          <p style="margin-top:var(--sp-4)">
+            同一家机构如果既在集团里有股权记录、又在名录里出现，<strong>只保留集团版本</strong>——
+            那一版的信息更全。去重按机构名进行，目前自动合并了
+            <span class="mono">{getRegistryDropped().length}</span> 条重复记录。
+          </p>
+          <div class="note-box" data-cat="local-finance">
+            <strong>收录深度分两档，页面上明确区分。</strong>
+            农村商业银行一个序列就 {fmt(1505)} 家、村镇银行 {fmt(1440)} 家，
+            逐个上网核实官网和经营情况不现实。<br />
+            · <strong>逐一核实（{fmt(stats.detailed)} 家）</strong>：核实过官网、业务范围、股权或来源，
+            有完整详情页，见<a href="/orgs/">机构库</a>。<br />
+            · <strong>名册级（{fmt(stats.mass)} 家）</strong>：从监管名单批量收录，只保留机构全称、
+            金融许可证机构编码、牌照类型、监管责任单位——<strong>能确定的就这些，就只写这些</strong>。
+            列表里带"名册"标记，集中在<a href="/roster/">全量名册</a>。<br />
+            两者分开展示，是为了不让读者误以为名册级记录也逐一核实过。
+          </div>
+        </section>
+
+        <section class="section" id="scope">
+          <div class="section-head">
+            <h2>收录边界</h2>
+          </div>
+          <p>共 {fmt(stats.entities)} 个法人主体。规则是：</p>
+          <div class="facts">
+            <div class="fact">
+              <span class="fact-k">收</span>
+              <span class="fact-v">持金融牌照的法人机构；以及控股链条上绕不开的非持牌控股平台</span>
+            </div>
+            <div class="fact">
+              <span class="fact-k">不收</span>
+              <span class="fact-v">分支机构、实业公司、科技公司</span>
+            </div>
+            <div class="fact">
+              <span class="fact-k">例外</span>
+              <span class="fact-v">
+                已退出但仍有解释力的持牌主体（如被"村改支"合并的村镇银行）会收，但状态标注清楚。
+                外国再保险公司在华分公司不是法人，是唯一的另一类例外——它们是境内再保险供给的主要通道，
+                条目里都写明了分公司性质与境外法人母体。
+              </span>
+            </div>
+            <div class="fact">
+              <span class="fact-k">状态分三档</span>
+              <span class="fact-v">
+                <strong>正常经营</strong>（{fmt(stats.active)} 家）／
+                <strong>风险处置中</strong>（{stats.distressed} 家：被接管、破产重整或清算，业务停摆但法人资格还在）／
+                <strong>已退出</strong>（{stats.exited} 家：解散、被合并或注销，法人资格消灭）。
+                华信信托、新时代信托、华泰汽车金融这类属于第二档而不是第三档——
+                它们牌照还在、还有重整复活的可能性，和已经注销的村镇银行不是一回事。
+              </span>
+            </div>
+          </div>
+          <h3 style="font-size:15px;color:var(--ink);margin:var(--sp-6) 0 var(--sp-2)">明确不收录的类型及理由</h3>
+          <p>
+            找典当行的人应该得到一个解释，而不是一个空页面。所以这些类型保留在分类里，但标注为不收录：
+          </p>
+          <div class="facts">
+            <div class="fact">
+              <span class="fact-k">典当行</span>
+              <span class="fact-v">
+                全国约 8,000 家，主体是区域性小额典当业务。收进来不会让图谱更清楚，
+                只会让长尾淹没有信息量的机构；且其监管归属与持牌金融机构不同。
+              </span>
+            </div>
+            <div class="fact">
+              <span class="fact-k">地方交易场所</span>
+              <span class="fact-v">
+                含产权、股权、大宗商品、文化产权等，业态差异极大且不都是金融机构；
+                各省名单口径不统一，收进来会引入不可比的样本。国家级交易场所仍然收录（见监管与基础设施）。
+              </span>
+            </div>
+            <div class="fact">
+              <span class="fact-k">贷款公司</span>
+              <span class="fact-v">
+                这个牌照类别已不存在——监管总局现行法人名单里一家都没有，
+                2009 年前后的试点机构基本都已转制。所以它从分类里移除了，而不是空着。
+              </span>
+            </div>
+          </div>
+          <p style="margin-top:var(--sp-4)">
+            农村商业银行、村镇银行、农村信用社、财务公司这些动辄上千家的序列，这一版<strong>已经收全</strong>——
+            以名册级形式（只保留名称、机构编码、牌照类型、属地），按官方名单批量收录、逐类对账。
+            没做的是<strong>对它们逐一核实官网与经营情况</strong>，页面上用「名册」标记说明。
+          </p>
+          <p>
+            仍在范围外的是保险中介（经纪、代理、公估合计上千家）与私募基金管理人（上万家）。
+            这两类机构名录变动快、数量级不同，放进来会改变这个项目本来的用途，
+            所以这一版不做。<strong>没收录不等于不存在</strong>，只是不在这一版的范围内。
+          </p>
+        </section>
+
+        <section class="section" id="sources">
+          <div class="section-head">
+            <h2>数据来源</h2>
+          </div>
+          <p>共 {fmt(stats.sources)} 个去重来源，按可信度排：</p>
+          <div class="facts">
+            <div class="fact">
+              <span class="fact-k">第一优先</span>
+              <span class="fact-v">监管机构公开名单与批复（金融监管总局法人名单、金融许可证信息、央行与证监会行政许可）</span>
+            </div>
+            <div class="fact">
+              <span class="fact-k">第二优先</span>
+              <span class="fact-v">上市公司年报与交易所公告（巨潮资讯网、上交所、港交所披露易）</span>
+            </div>
+            <div class="fact">
+              <span class="fact-k">第三优先</span>
+              <span class="fact-v">机构官网的股东与治理信息、行业协会名录</span>
+            </div>
+            <div class="fact">
+              <span class="fact-k">辅助</span>
+              <span class="fact-v">财经媒体报道。仅在没有官方口径时使用，并在页面上如实注明</span>
+            </div>
+          </div>
+
+          <h3 style="font-size:15px;color:var(--ink);margin:var(--sp-6) 0 var(--sp-2)">哪些字段是真的稀缺</h3>
+          <p>
+            {fmt(stats.entities)} 个主体里，<strong>{fmt(stats.licensed)}</strong> 家拿到了金融许可证机构编码，
+            {fmt(stats.withWebsite)} 家有能确认的官网。
+            缺口的原因不是没查，是查不到：金融监管总局的许可证库不支持按机构名称反查，
+            证监会与中基协也不公示机构编码——拿不到就留空，没有用推测补过一个字。
+          </p>
+          <div class="note-box" data-cat="insurance">
+            <strong>保险机构有两个容易混淆的编号。</strong>
+            《保险机构法人名单》公布的是 6 位的<strong>机构编码</strong>（如 <span class="mono">000083</span>），
+            而牌照上印的是<strong>保险机构法人许可证号</strong>（如 <span class="mono">00118000</span>）——
+            两个字段，不是同一个东西。中美联泰大都会人寿的偿付能力报告里同时写着这两个号，
+            平安产险的信息披露页写的也是许可证号 00000171，而名单登记的机构编码是 000017。
+            本站「机构编码」统一存<strong>名单公布的机构编码</strong>，
+            这样才能横向对齐；许可证号在对应条目的说明里注明。
+          </div>
+        </section>
+
+        <section class="section" id="stakes">
+          <div class="section-head">
+            <h2>持股比例：口径与缺口</h2>
+          </div>
+          <p>这一栏最容易出错，本站做了三件事：</p>
+          <div class="facts">
+            <div class="fact">
+              <span class="fact-k">标口径</span>
+              <span class="fact-v">"合计"标记表示这是集团多条通道相加的结果。招商银行直接持股 4.55%、合计 26.32%，差二十多个百分点</span>
+            </div>
+            <div class="fact">
+              <span class="fact-k">标时点</span>
+              <span class="fact-v">比例是时点数据。能查到披露日期的写日期，例如"截至 2025-02-14"</span>
+            </div>
+            <div class="fact">
+              <span class="fact-k">标缺口</span>
+              <span class="fact-v">查不到时点的打 <span class="undated">*</span> 号，不替它编一个日期</span>
+            </div>
+          </div>
+          {warnings.length > 0 && (
+            <div class="note-box" data-cat="securities" style="margin-top:var(--sp-4)">
+              <strong>目前还有 {warnings.length} 处持股比例没有标注时点。</strong>
+              它们散布在招商局、光大、平安三份数据里。这是已知缺口，会随更新逐步补上；
+              在补上之前，这些数字旁边的 <span class="undated">*</span> 就是提醒。
+            </div>
+          )}
+        </section>
+
+        <section class="section" id="validation">
+          <div class="section-head">
+            <h2>校验与对账</h2>
+          </div>
+          <p>每次发布前，全部数据都会先自动校验一遍，不通过就不发布。校验规则包括：</p>
+          <div class="facts">
+            <div class="fact">
+              <span class="fact-k">分类合法性</span>
+              <span class="fact-v">分类与牌照类型必须真实存在，且必须互相匹配——不能出现"银行业"下面挂"信托公司"</span>
+            </div>
+            <div class="fact">
+              <span class="fact-k">持股链完整</span>
+              <span class="fact-v">上层主体不能悬空，并且会做环检测，防止 A 持 B、B 持 A 这类数据错误</span>
+            </div>
+            <div class="fact">
+              <span class="fact-k">来源强制</span>
+              <span class="fact-v">每个主体至少一条来源，链接必须是合法的 http(s) 地址</span>
+            </div>
+            <div class="fact">
+              <span class="fact-k">比例可复核</span>
+              <span class="fact-v">"合计"口径必须写清持股通道；非全资比例必须交代时点或打标</span>
+            </div>
+            <div class="fact">
+              <span class="fact-k">退出有交代</span>
+              <span class="fact-v">非正常经营的主体，必须在说明里讲清退出情形</span>
+            </div>
+          </div>
+          <p style="margin-top:var(--sp-4)">
+            金融数据的错误代价不对称：一条错的比例会被当成事实引用，
+            而缺一个字段读者看得出来。所以宁可留空，也不发布错的数据。
+          </p>
+
+          <h3 style="font-size:15px;color:var(--ink);margin:var(--sp-6) 0 var(--sp-2)">跟官方名单对家数</h3>
+          <p>"收全了吗"不能靠感觉。项目里存了两份从监管总局名单解析出来的基线：</p>
+          <div class="facts">
+            <div class="fact">
+              <span class="fact-k">银行业基线</span>
+              <span class="fact-v">
+                《银行业金融机构法人名单》（截至 2025-06-30）解析出 <span class="mono">{fmt(4070)}</span> 家法人，
+                含机构编码与牌照类型
+              </span>
+            </div>
+            <div class="fact">
+              <span class="fact-k">保险业基线</span>
+              <span class="fact-v">
+                《保险机构法人名单》（截至 2025-06-30）解析出 <span class="mono">237</span> 家保险法人，
+                含 6 位机构编码与机构类型
+              </span>
+            </div>
+          </div>
+          <p style="margin-top:var(--sp-4)">
+            每次更新都会拿它们逐类对账：官方有几家、这里收了几家、差哪些，差的名字直接列出来。
+            这是判断"内容完不完善"最硬的依据。
+          </p>
+          <p class="muted" style="font-size:13px">
+            唯一需要人工判断的是：基线名单有截止日期，之后发生的合并、更名会让个别条目"看起来缺了"。
+            这类情况单独列出并写明理由，不计入缺口。
+          </p>
+        </section>
+
+        <section class="section" id="limits">
+          <div class="section-head">
+            <h2>已知局限</h2>
+          </div>
+          <div class="facts">
+            <div class="fact">
+              <span class="fact-k">逐条收全的</span>
+              <span class="fact-v">
+                国有大行、政策性银行、股份制银行、民营银行、城商行、外资法人银行、证券公司、公募基金、
+                期货公司、人身险、财产险、信托、金融租赁、消费金融、汽车金融、理财子公司、货币经纪——
+                这些序列按官方名单逐条收录并核实
+              </span>
+            </div>
+            <div class="fact">
+              <span class="fact-k">名册级收全的</span>
+              <span class="fact-v">
+                农村商业银行、村镇银行、农村信用社、企业集团财务公司等：已按官方名单收全，
+                但只有名册级信息，未逐一核实官网与经营情况
+              </span>
+            </div>
+            <div class="fact">
+              <span class="fact-k">没收的</span>
+              <span class="fact-v">
+                保险中介（经纪／代理／公估）、私募基金管理人、
+                地方金融组织中的小贷、担保、保理、典当。这些序列动辄上千家，不属于这一版范围
+              </span>
+            </div>
+            <div class="fact">
+              <span class="fact-k">谱系只做了 4 家</span>
+              <span class="fact-v">
+                只有中信、中国平安、招商局、光大有股权谱系。四大行、保险系（国寿／人保／太保）、
+                互联网系（蚂蚁／腾讯）的集团谱系尚未做
+              </span>
+            </div>
+            <div class="fact">
+              <span class="fact-k">不在场证明</span>
+              <span class="fact-v">"某集团没有某项牌照"这种结论，本图谱只能给出"没查到"，不能给出"不存在"</span>
+            </div>
+            <div class="fact">
+              <span class="fact-k">时点漂移</span>
+              <span class="fact-v">股权每年在变。页面标注的日期就是数据的新鲜度，越旧越需要回原始来源核对</span>
+            </div>
+            <div class="fact">
+              <span class="fact-k">分类判断</span>
+              <span class="fact-v">境外机构、融资租赁、私募管理人这几类的归类存在争议，处理方式都写在了对应页面的"需要说明"里</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="ventures">
+          <div class="section-head">
+            <h2>硬科技图谱：收录口径</h2>
+          </div>
+          <ul>
+            <li>以一级市场公司为主，赛道内的头部公司即使已上市或属于大厂体系也一并收录，便于对照。</li>
+            <li>传闻与未经公司或权威媒体确认的消息单独标注为「传闻」，不与已确认的动态混排。</li>
+            <li>每条融资、产品、落地动态都附来源链接，可点开核对。</li>
+            <li>估值与融资金额保留原币种，不做汇率折算。</li>
+          </ul>
+        </section>
+
+        <section class="section" id="disclaimer">
+          <div class="section-head">
+            <h2>免责声明</h2>
+          </div>
+          <p>
+            本站是根据公开信息整理的结构化图谱，用于理解中国金融体系的牌照分布与集团治理结构，
+            不构成任何投资建议，也不构成对任何机构业务资质的认定。
+            所有数据以监管机构公告与公司披露原文为准。发现错误欢迎指正。
+          </p>
+        </section>
+      </article>
+    </div>
+  </div>
+
+  <script>
+    // 目录高亮：滚到哪一节就点亮哪一项
+    const links = [...document.querySelectorAll<HTMLAnchorElement>('.toc a')];
+    const byId = new Map(links.map((a) => [a.hash.slice(1), a]));
+    const seen = new Map<string, boolean>();
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => seen.set(e.target.id, e.isIntersecting));
+        const first = links.find((a) => seen.get(a.hash.slice(1)));
+        if (first) links.forEach((a) => a.classList.toggle('is-on', a === first));
+      },
+      { rootMargin: '-72px 0px -55% 0px' },
+    );
+    byId.forEach((_, id) => {
+      const el = document.getElementById(id);
+      if (el) io.observe(el);
+    });
+  </script>
+</Base>

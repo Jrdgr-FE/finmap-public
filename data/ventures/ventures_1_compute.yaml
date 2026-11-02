@@ -1,0 +1,419 @@
+# 硬科技图谱 · AI 芯片与算力（2026-10-22 调研）
+# 结构和口径同 ventures.yaml。已上市公司保留在图谱里，事件以上市和最新财报为主。
+version: 1
+updated: "2026-10-22"
+
+tracks:
+  - id: ai-compute
+    name: AI 芯片与算力
+    desc: 给大模型提供算力的硬件和基础设施公司，从训练和推理芯片、芯片间互联，到算力云和数据中心。
+    segments:
+      - { id: training, name: 上游·训练与通用加速, desc: 能做大模型训练的 GPU 和通用 AI 加速器，国产替代的主战场。 }
+      - { id: inference, name: 上游·推理与专用芯片, desc: 为推理优化的专用芯片（ASIC、存算一体、车端），押注推理需求超过训练。 }
+      - { id: interconnect, name: 中游·互联与光通信, desc: 芯片间和机柜间的光互联、共封装光学（CPO），决定集群能堆多大。 }
+      - { id: cloud, name: 下游·算力云与数据中心, desc: 采购芯片、建数据中心、按算力出租给模型公司的“新云”。 }
+
+      - { id: systems, name: 中游·算力系统, desc: 服务器、集群与软硬件协同系统。 }
+      - { id: optimization, name: 软件·算子与算力优化, desc: 算子开发、编译与模型适配，研究将芯片能力转化为可交付算力的工具与工程服务。 }
+
+companies:
+  # ───────── 训练与通用加速 · 国内 ─────────
+  - id: moore-threads
+    name: 摩尔线程
+    en: Moore Threads
+    region: cn
+    track: ai-compute
+    segment: training
+    tags: [GPU, 全功能GPU, 科创板]
+    intro: 国产全功能 GPU 公司，同时做图形渲染和 AI 训练推理，2025 年底科创板上市，是“国产 GPU 四小龙”中营收最高的一家。
+    founders: [张建中]
+    founded: 2020
+    events:
+      - date: "2026-08"
+        kind: deployment
+        title: 2026 上半年营收 17.36 亿元，同比增长 147%；扣除股份支付后盈利 8,353 万元
+        status: confirmed
+        sources: [{ title: 同花顺：国产 GPU 上市公司步入“业绩兑现”关键期, url: "https://stock.10jqka.com.cn/20260910/c679798662.shtml", date: "2026-09-10" }]
+
+  - id: metax
+    name: 沐曦股份
+    en: MetaX
+    region: cn
+    track: ai-compute
+    segment: training
+    tags: [GPU, 训练, 科创板]
+    intro: 做高性能通用 GPU（曦云系列）的国产芯片公司，团队多来自 AMD，科创板上市。
+    events:
+      - date: "2026-08"
+        kind: deployment
+        title: 2026 上半年营收 13.24 亿元，同比增长 45%；归母净利润 6.12 亿元扭亏，扣非后仍亏损 0.49 亿元
+        status: confirmed
+        sources: [{ title: 同花顺：国产 GPU 上市公司步入“业绩兑现”关键期, url: "https://stock.10jqka.com.cn/20260910/c679798662.shtml", date: "2026-09-10" }]
+
+  - id: biren
+    name: 壁仞科技
+    en: Biren Technology
+    region: cn
+    track: ai-compute
+    segment: training
+    tags: [GPU, 训练, 港股]
+    intro: 通用 GPU 公司，产品 BR100/BR106 系列面向数据中心训练和推理，港股上市（6082.HK）。
+    events:
+      - date: "2026-08"
+        kind: deployment
+        title: 2026 上半年营收 12.36 亿元，同比增长近 20 倍；亏损 3.77 亿元，同比减亏 76%
+        status: confirmed
+        sources: [{ title: 同花顺：国产 GPU 上市公司步入“业绩兑现”关键期, url: "https://stock.10jqka.com.cn/20260910/c679798662.shtml", date: "2026-09-10" }]
+
+  - id: iluvatar
+    name: 天数智芯
+    en: Iluvatar CoreX
+    region: cn
+    track: ai-compute
+    segment: training
+    tags: [GPGPU, 训练, 港股]
+    intro: 国产通用 GPU（GPGPU）公司，天垓训练卡和智铠推理卡并行，2026 年 1 月港股上市（9903.HK）。
+    events:
+      - date: "2026-08"
+        kind: deployment
+        title: 2026 上半年营收 9.46 亿元，同比增长 192%；净利润 1.06 亿元主要来自所持盛合晶微股权的公允价值浮盈，主业仍亏损
+        status: confirmed
+        sources: [{ title: 同花顺：国产 GPU 上市公司步入“业绩兑现”关键期, url: "https://stock.10jqka.com.cn/20260910/c679798662.shtml", date: "2026-09-10" }]
+      - date: "2026-01"
+        kind: ipo
+        title: 港交所主板上市
+        status: confirmed
+        sources: [{ title: 同花顺：国产 GPU 上市公司步入“业绩兑现”关键期, url: "https://stock.10jqka.com.cn/20260910/c679798662.shtml", date: "2026-09-10" }]
+
+  - id: enflame
+    name: 燧原科技
+    en: Enflame
+    region: cn
+    track: ai-compute
+    segment: training
+    tags: [云端AI芯片, 腾讯系, 科创板]
+    intro: 腾讯投资的云端 AI 芯片公司，已做出四代架构、5 款芯片，第三代燧原 S60 在互联网客户和智算中心批量出货，2026 年 9 月科创板上市。
+    events:
+      - date: "2026-09-11"
+        kind: ipo
+        title: 科创板上市，发行价 142.18 元，首日开盘涨 188%，开盘市值超 1,700 亿元
+        status: confirmed
+        sources: [{ title: 澎湃新闻：燧原科技登陆科创板, url: "https://m.thepaper.cn/newsDetail_forward_34037225", date: "2026-09-11" }]
+
+  - id: kunlunxin
+    name: 昆仑芯
+    en: Kunlunxin
+    region: cn
+    track: ai-compute
+    segment: training
+    tags: [百度系, AI芯片, 港股IPO]
+    intro: 百度分拆的 AI 芯片公司，主力 P800 面向数据中心，2025 年国内 AI 加速服务器出货约 11.6 万张卡，与寒武纪并列国产第三；外部客户收入已超过向百度供货。
+    events:
+      - date: "2026-06-29"
+        kind: ipo
+        title: 百度公告分拆昆仑芯赴港上市，已保密递交 A1 表格；同步启动科创板辅导，外媒称目标估值约 500 亿美元
+        status: reported
+        sources:
+          - { title: 投资界：昆仑芯赴港上市，李彦宏最大 IPO 来了, url: "https://news.pedaily.cn/202607/565846.shtml", date: "2026-07" }
+          - { title: 新浪科技：百度分拆昆仑芯冲刺港股 IPO, url: "https://finance.sina.com.cn/tech/roll/2026-06-30/doc-inifenru1598835.shtml", date: "2026-06-30" }
+      - date: "2026"
+        kind: product
+        title: 推理芯片 M100 上市；面向超大规模多模态模型的 M300 计划 2027 年推出
+        status: confirmed
+        sources: [{ title: 投资界：昆仑芯赴港上市，李彦宏最大 IPO 来了, url: "https://news.pedaily.cn/202607/565846.shtml", date: "2026-07" }]
+
+  # ───────── 训练与通用加速 · 海外 ─────────
+  - id: cerebras
+    name: Cerebras
+    region: global
+    track: ai-compute
+    segment: training
+    tags: [晶圆级芯片, 推理云, 纳斯达克]
+    intro: 做整片晶圆大小的 AI 芯片（WSE），近年转向高速推理云。2026 年 5 月纳斯达克上市（CBRS），是当年美国最大 IPO；与 OpenAI 签下超 200 亿美元、750 兆瓦的多年推理合同。
+    founders: [Andrew Feldman]
+    events:
+      - date: "2026-06-23"
+        kind: deployment
+        title: 首份季报营收 1.93 亿美元，核心收入同比增长 92%；但下季毛利率指引降至 36–38%，盘后跌超 10%
+        status: confirmed
+        sources: [{ title: Barchart：Cerebras 财报后股价下挫, url: "https://www.barchart.com/story/news/2629568/cerebras-stock-plunges-on-earnings-even-an-openai-deal-cant-calm-the-margin-panic", date: "2026-06-24" }]
+      - date: "2026-05"
+        kind: ipo
+        title: 纳斯达克上市，发行价 185 美元（高于区间上限），募资 55.5 亿美元，估值约 400 亿美元
+        status: confirmed
+        sources: [{ title: Dealroom：Cerebras raises $5.55B in biggest US IPO of 2026, url: "https://dealroom.co/news/128936-cerebras-raises-5-55b-in-biggest-us-ipo-of-2026/", date: "2026-05-14" }]
+
+  - id: tenstorrent
+    name: Tenstorrent
+    region: global
+    track: ai-compute
+    segment: training
+    tags: [RISC-V, 开放架构, Jim Keller]
+    intro: Jim Keller 领导的 AI 芯片公司，用 RISC-V 和开放软件栈做可授权的 AI 处理器，Galaxy 服务器（32 颗 Blackhole 芯片）2026 年 4 月开始出货。
+    founders: [Jim Keller]
+    valuation: { value: 6.2, unit: 十亿美元, asof: "2026-10-19", status: confirmed }
+    events:
+      - date: "2026-10-19"
+        kind: funding
+        title: 完成 15 亿美元 E 轮，估值 62 亿美元，较上轮翻倍以上
+        amount: { value: 1500, unit: 百万美元 }
+        investors: [Trace Capital, Innovation X, ARK Invest, Fidelity, Morgan Stanley, SanDisk, T. Rowe Price]
+        status: confirmed
+        sources: [{ title: DCD：Tenstorrent raises $1.5bn at $6.2bn valuation, url: "https://www.datacenterdynamics.com/en/news/ai-chip-startup-tenstorrent-raises-15bn-at-62bn-valuation/", date: "2026-10-19" }]
+
+  - id: matx
+    name: MatX
+    region: global
+    track: ai-compute
+    segment: training
+    tags: [LLM芯片, 前谷歌TPU团队]
+    intro: 前谷歌 TPU 工程师创办，专为大模型设计芯片 MatX One，用可拆分的脉动阵列兼顾 SRAM 的低延迟和 HBM 的长上下文，计划 2027 年由台积电代工出货。
+    events:
+      - date: "2026-02-26"
+        kind: funding
+        title: 完成 5 亿美元 B 轮，Situational Awareness 与 Jane Street 联合领投
+        amount: { value: 500, unit: 百万美元 }
+        investors: [Situational Awareness, Jane Street, Spark Capital, Alchip, Marvell]
+        status: confirmed
+        sources: [{ title: DCD：MatX raises $500m for LLM training chip, url: "https://www.datacenterdynamics.com/en/news/ai-chip-startup-matx-raises-500m-for-development-of-llm-training-chip/", date: "2026-02-26" }]
+
+  - id: unconventional-ai
+    name: Unconventional AI
+    region: global
+    track: ai-compute
+    segment: training
+    tags: [新计算范式, 能效, 种子轮]
+    intro: Databricks 前 AI 负责人 Naveen Rao 创办，目标是造出“像生物一样高效”的 AI 计算机，从底层重新设计计算架构。
+    founders: [Naveen Rao]
+    valuation: { value: 4.5, unit: 十亿美元, asof: "2025-12-09", status: confirmed }
+    events:
+      - date: "2025-12-09"
+        kind: funding
+        title: 种子轮 4.75 亿美元，估值 45 亿美元，a16z 和 Lightspeed 领投；计划最终募至 10 亿美元
+        amount: { value: 475, unit: 百万美元 }
+        investors: [a16z, Lightspeed, Lux Capital, DCVC]
+        status: confirmed
+        sources: [{ title: TechCrunch：Unconventional AI confirms its massive $475M seed round, url: "https://techcrunch.com/2025/12/09/unconventional-ai-confirms-its-massive-475m-seed-round", date: "2025-12-09" }]
+
+  # ───────── 推理与专用芯片 · 国内 ─────────
+  - id: sunrise-gpu
+    name: 曦望
+    en: Sunrise
+    region: cn
+    track: ai-compute
+    segment: inference
+    tags: [推理GPU, 商汤系]
+    intro: 前身为商汤科技大芯片部门，专注推理 GPU，2026 年 1 月发布旗舰推理卡启望 S3，已规划 S4、S5；累计融资约 40 亿元，国内首家百亿估值的推理 GPU 公司。
+    valuation: { value: 100, unit: 亿元, asof: "2026-04-20", status: reported, note: 超过 }
+    events:
+      - date: "2026-04-20"
+        kind: funding
+        title: 再获超 10 亿元融资，七轮累计约 40 亿元，资金用于启望 S3 量产交付
+        amount: { value: 10, unit: 亿元 }
+        investors: [杭州资本, 普华资本]
+        status: confirmed
+        sources: [{ title: 中证网：国内推理 GPU 独角兽曦望再获超 10 亿元融资, url: "https://www.cs.com.cn/ssgs/07/2026/04/21/detail_2026042110005458.html", date: "2026-04-21" }]
+      - date: "2026-01"
+        kind: product
+        title: 发布新一代推理 GPU 启望 S3
+        status: confirmed
+        sources: [{ title: 电子工程专辑：融资 30 亿后，曦望发布新一代推理 GPU 芯片启望 S3, url: "https://www.eet-china.com/news/202601288539.html", date: "2026-01-28" }]
+
+  - id: houmo
+    name: 后摩智能
+    en: Houmo AI
+    region: cn
+    track: ai-compute
+    segment: inference
+    tags: [存算一体, 端侧, 智能终端]
+    intro: 以 SRAM 存算一体（CIM）为核心技术的端边侧 AI 芯片公司，同时走 2D 和 3D 存算两条路线，M50 芯片面向 PC、终端和机器人等端侧大模型。
+    events:
+      - date: "2026-10-15"
+        kind: product
+        title: M50 量产不到一年获 150 多个产品定点、服务客户超百家；宣布开源 AI 软件生态
+        status: confirmed
+        sources: [{ title: 北京商报：后摩智能生态合作伙伴大会, url: "https://www.bbtnews.com.cn/2026/1015/608003.shtml", date: "2026-10-15" }]
+
+  - id: mach-heart
+    name: 马赫心科技
+    en: Li Auto Mach
+    region: cn
+    track: ai-compute
+    segment: inference
+    tags: [理想汽车, 车规芯片, 数据流架构]
+    aliases: [理想芯片]
+    intro: 理想汽车分拆的芯片公司，自研 5nm 车规级“动态数据流”AI 芯片 M100（单颗 1,280 TOPS），已上车理想新车型，下一步向车外客户卖芯片、域控和操作系统。
+    valuation: { value: 171, unit: 亿元, asof: "2026-10-16", status: reported, note: 最大投后 }
+    events:
+      - date: "2026-10-16"
+        kind: funding
+        title: 首轮 16.25 亿元融资签约，经韬、蓝驰、华业天成领投；若追加选择权全部行使，投后估值 171 亿元，理想持股 74%
+        amount: { value: 16.25, unit: 亿元 }
+        investors: [杭州经韬, 蓝驰创投, 华业天成, 奇绩创坛]
+        status: confirmed
+        sources: [{ title: 新浪科技：理想汽车芯片子公司首轮 16.25 亿元融资签约, url: "https://finance.sina.com.cn/tech/roll/2026-10-16/doc-inivmprm8408791.shtml", date: "2026-10-16" }]
+
+  # ───────── 推理与专用芯片 · 海外 ─────────
+  - id: etched
+    name: Etched
+    region: global
+    track: ai-compute
+    segment: inference
+    tags: [Transformer专用芯片, Sohu, 推理]
+    intro: 把 Transformer 直接刻进硬件的专用推理芯片 Sohu，放弃通用性换性能；2026 年 7 月首个机柜交付 Jane Street，已签超 10 亿美元合同。
+    valuation: { value: 21, unit: 十亿美元, asof: "2026-08-18", status: confirmed }
+    events:
+      - date: "2026-08-18"
+        kind: funding
+        title: 7 亿美元 D 轮，估值 210 亿美元，距上轮 103 亿美元不到一个月翻倍；Jane Street 领投
+        amount: { value: 700, unit: 百万美元 }
+        investors: [Jane Street, Kleiner Perkins, Sequoia, a16z, Tiger Global, Blackstone, Peter Thiel]
+        status: confirmed
+        sources: [{ title: VKTR：Etched raises $700 million at $21 billion valuation, url: "https://www.vktr.com/ai-news/ai-chip-startup-etched-raises-700-million-at-21-billion-valuation/", date: "2026-08-18" }]
+      - date: "2026-07-23"
+        kind: funding
+        title: 3 亿美元 C 轮，估值 103 亿美元，红杉领投，SK 海力士参投
+        amount: { value: 300, unit: 百万美元 }
+        investors: [Sequoia, SK Hynix, a16z, Jane Street]
+        status: confirmed
+        sources: [{ title: Gadget Scout：Etched reaches $10.3bn valuation with SK Hynix backing, url: "https://www.gadgetscout.co.uk/articles/etched-reaches-10-3bn-valuation-with-sk-hynix-backing.html", date: "2026-08-02" }]
+      - date: "2026-07"
+        kind: deployment
+        title: 首个 Sohu 机柜交付首家客户 Jane Street，投入生产负载
+        status: confirmed
+        sources: [{ title: VKTR：Etched raises $700 million at $21 billion valuation, url: "https://www.vktr.com/ai-news/ai-chip-startup-etched-raises-700-million-at-21-billion-valuation/", date: "2026-08-18" }]
+
+  - id: groq
+    name: Groq
+    region: global
+    track: ai-compute
+    segment: inference
+    tags: [LPU, 推理, 英伟达授权]
+    intro: 推理专用 LPU 芯片公司。2025 年底与英伟达签下约 200 亿美元的非独家技术授权，创始人 Jonathan Ross 和约九成员工加入英伟达，Groq 由原 CFO 带领继续独立运营。
+    founders: [Jonathan Ross]
+    events:
+      - date: "2025-12"
+        kind: people
+        title: 英伟达以约 200 亿美元非独家授权 Groq 技术并吸纳其 CEO 和多数员工；股东按 200 亿美元估值分三期获得分配
+        status: confirmed
+        sources: [{ title: Axios：Nvidia deal a big win for Groq employees and investors, url: "https://www.axios.com/2025/12/28/nvidia-groq-shareholders", date: "2025-12-28" }]
+
+  - id: positron
+    name: Positron AI
+    region: global
+    track: ai-compute
+    segment: inference
+    tags: [推理, 能效, 美国制造]
+    intro: 主打高能效推理的美国芯片公司，首代推理系统 Atlas 已部署在甲骨文云；自研芯片 Asimov 2026 年底在台积电 N3P 流片，2027 下半年量产。
+    valuation: { value: 5, unit: 十亿美元, asof: "2026-09-10", status: confirmed, note: 投后 }
+    events:
+      - date: "2026-09-10"
+        kind: funding
+        title: C 轮及 C-1 轮共 8.75 亿美元，投后估值 50 亿美元，NEA、Jim Clark、SemiAnalysis 等领投
+        amount: { value: 875, unit: 百万美元 }
+        investors: [NEA, Jim Clark, SemiAnalysis Capital, Atreides, Valor Equity Partners]
+        status: confirmed
+        sources: [{ title: PR Newswire：Positron AI raises $875 million at a $5 billion valuation, url: "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html", date: "2026-09-10" }]
+
+  - id: sambanova
+    name: SambaNova
+    region: global
+    track: ai-compute
+    segment: inference
+    tags: [数据流架构, 推理, 企业部署]
+    intro: 数据流架构（RDU）AI 芯片公司，转向企业级推理，SN50 芯片 2026 下半年交付，软银为首个部署方，摩根大通选其做本地推理。2025 年底英特尔曾洽谈约 16 亿美元收购未果。
+    valuation: { value: 11, unit: 十亿美元, asof: "2026-07-08", status: confirmed }
+    events:
+      - date: "2026-07-08"
+        kind: funding
+        title: F 轮首关 10 亿美元，估值 110 亿美元，General Atlantic 领投，英特尔跟投
+        amount: { value: 1000, unit: 百万美元 }
+        investors: [General Atlantic, T. Rowe Price, BlackRock, Vista Equity, QIA, Intel]
+        status: confirmed
+        sources: [{ title: TechCrunch：SambaNova draws $1B at $11B valuation in Series F first close, url: "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close", date: "2026-07-08" }]
+
+  - id: rebellions
+    name: Rebellions
+    region: global
+    track: ai-compute
+    segment: inference
+    tags: [韩国, NPU, IPO]
+    intro: 韩国最大的 AI 芯片初创公司，ATOM 系列 NPU 和 ATOM-Max 服务器面向数据中心推理，已与 Sapeon 合并，计划 2027 上半年在韩国上市。
+    valuation: { value: 2.3, unit: 十亿美元, asof: "2026-03", status: confirmed, note: 约 }
+    events:
+      - date: "2026-08-05"
+        kind: ipo
+        title: CEO 称上市时间推迟到 2027 上半年；ATOM-Max 中标庆尚南道、蔚山公共 CCTV AI 分析
+        status: confirmed
+        sources: [{ title: Korea Times：Korean NPU makers seek track records ahead of potential IPOs, url: "https://www.koreatimes.co.kr/business/tech-science/20260805/korean-npu-makers-seek-track-records-ahead-of-potential-ipos", date: "2026-08-05" }]
+      - date: "2026-03"
+        kind: funding
+        title: Pre-IPO 轮 6,400 亿韩元（约 4.48 亿美元），估值 3.4 万亿韩元（约 23 亿美元）
+        amount: { value: 448, unit: 百万美元 }
+        status: confirmed
+        sources: [{ title: Korea Times：Korean NPU makers seek track records ahead of potential IPOs, url: "https://www.koreatimes.co.kr/business/tech-science/20260805/korean-npu-makers-seek-track-records-ahead-of-potential-ipos", date: "2026-08-05" }]
+
+  - id: furiosa
+    name: FuriosaAI
+    region: global
+    track: ai-compute
+    segment: inference
+    tags: [韩国, 推理, RNGD]
+    intro: 韩国推理芯片公司，RNGD 加速器主打能效，2025 年拒绝 Meta 约 8 亿美元收购；三星 SDS 已上线基于 RNGD 的 NPU 云服务。
+    events:
+      - date: "2026-08-05"
+        kind: funding
+        title: 估值约 3 万亿韩元，正寻求约 8,000 亿韩元 Pre-IPO 融资（含韩国国家成长基金）；拿下瑞典数据中心首期 1,800 张 RNGD 订单
+        status: reported
+        sources: [{ title: Korea Times：Korean NPU makers seek track records ahead of potential IPOs, url: "https://www.koreatimes.co.kr/business/tech-science/20260805/korean-npu-makers-seek-track-records-ahead-of-potential-ipos", date: "2026-08-05" }]
+
+  # ───────── 互联与光通信 ─────────
+  - id: ayar-labs
+    name: Ayar Labs
+    region: global
+    track: ai-compute
+    segment: interconnect
+    tags: [光互联, CPO, 芯粒]
+    intro: 光学 I/O 芯粒公司，TeraPHY 芯粒（格芯代工）配合 SuperNova 多波长光源，用光替代铜线连接 AI 芯片，目标 2028 年进入 AI 系统量产。
+    valuation: { value: 3.75, unit: 十亿美元, asof: "2026-03", status: confirmed }
+    events:
+      - date: "2026-03"
+        kind: funding
+        title: 5 亿美元 E 轮，估值 37.5 亿美元，Neuberger Berman 领投，联发科、世芯、红杉、QIA 参投
+        amount: { value: 500, unit: 百万美元 }
+        investors: [Neuberger Berman, MediaTek, Alchip, ARK Invest, Insight Partners, QIA, 1789 Capital]
+        status: confirmed
+        sources: [{ title: Optics & Photonics News：Ayar Labs raises US$500 million, url: "https://www.optica-opn.org/home/industry/2026/march/ayar_labs_raises_us$500_million/", date: "2026-03-17" }]
+
+  # ───────── 算力云与数据中心 ─────────
+  - id: crusoe
+    name: Crusoe
+    region: global
+    track: ai-compute
+    segment: cloud
+    tags: [新云, 数据中心, 能源]
+    intro: AI 数据中心开发商和算力云，从利用废弃天然气发电起家，客户包括 OpenAI、微软和 Meta，参与建设星际之门（Stargate）园区。
+    valuation: { value: 30, unit: 十亿美元, asof: "2026-09-03", status: reported, note: 约 }
+    events:
+      - date: "2026-09-03"
+        kind: funding
+        title: 据报道完成超 30 亿美元融资，估值约 300 亿美元，Atreides 和 Valor 联合领投，穆巴达拉参投
+        amount: { value: 3000, unit: 百万美元 }
+        investors: [Atreides Management, Valor Equity Partners, Mubadala Capital]
+        status: reported
+        sources: [{ title: Bloomberg：Crusoe raises over $3 billion in round at $30 billion valuation, url: "https://news.bgov.com/crypto/crusoe-raises-over-3-billion-in-round-at-30-billion-valuation", date: "2026-09-03" }]
+
+  - id: lambda
+    name: Lambda
+    region: global
+    track: ai-compute
+    segment: cloud
+    tags: [新云, GPU云, 英伟达系]
+    intro: 英伟达支持的 GPU 云公司，按需出租 GPU 和集群给模型公司，2026 年收入预计超 15 亿美元，正筹备上市。
+    valuation: { value: 6, unit: 十亿美元, asof: "2025-11", status: confirmed, note: 约 }
+    events:
+      - date: "2026-08-24"
+        kind: funding
+        title: 据报道洽谈至多 30 亿美元 Pre-IPO 融资，目标估值超 120 亿美元，最早 2026 年底上市
+        status: reported
+        sources: [{ title: AI Weekly：Lambda in talks for $3B pre-IPO round at $12B+ valuation, url: "https://aiweekly.co/node/10838", date: "2026-08-25" }]

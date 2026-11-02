@@ -1,0 +1,546 @@
+/* ─────────────────────────────────────────────────────────────
+   FinMap 硬科技公司档案、赛道行、时间线与新闻样式 (ventures.css)
+   与 global.css 保持完全一致的极简细线设计
+   ───────────────────────────────────────────────────────────── */
+
+/* 公司缩写徽标：统一克制灰阶/主题色调，不为每家公司乱配彩虹色 */
+.v-ava {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--r);
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 600;
+}
+.v-ava.is-sm {
+  width: 26px;
+  height: 26px;
+  border-radius: var(--r-sm);
+  font-size: 12px;
+}
+.v-ava.is-lg {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--r-lg);
+  background: var(--accent-soft);
+  color: var(--accent-text);
+  border-color: transparent;
+  font-size: 20px;
+}
+.v-ava.is-wide {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: -0.03em;
+}
+.v-ava.is-lg.is-wide {
+  font-size: 15px;
+}
+
+/* ── 赛道页与同环节公司列表（与 .org-row 同构） ───────────── */
+.v-list {
+  display: block;
+}
+.v-row {
+  display: grid;
+  grid-template-columns: minmax(240px, 310px) minmax(0, 1fr) auto;
+  gap: var(--sp-4);
+  align-items: center;
+  padding: 12px var(--sp-4);
+  border-top: 1px solid var(--line);
+  color: var(--ink);
+  transition: background 0.12s;
+}
+.v-list > .v-row:first-child {
+  border-top: 0;
+}
+.v-row:hover {
+  background: var(--paper-2);
+  color: var(--ink);
+}
+.v-row-ident {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+.v-row-titles {
+  min-width: 0;
+}
+.v-row-name-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.v-card-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.v-row:hover .v-card-name {
+  color: var(--accent-text);
+}
+.v-row-en {
+  display: block;
+  font-size: 12px;
+  color: var(--ink-3);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.v-row-intro {
+  margin: 0;
+  font-size: 13px;
+  color: var(--ink-2);
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.v-row-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: 12.5px;
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+.v-row-val b {
+  font-family: var(--mono);
+  color: var(--ink);
+  font-weight: 600;
+}
+.v-row-val small {
+  margin-left: 4px;
+  color: var(--ink-3);
+}
+
+.v-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 28px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  font-size: 12.5px;
+  color: var(--ink);
+}
+.v-pill:hover {
+  border-color: var(--line-2);
+  color: var(--accent-text);
+}
+.v-pill-reg,
+.v-pill-val {
+  font-size: 11.5px;
+  color: var(--ink-3);
+}
+
+/* ── 公司档案页内部模块 ───────────────────────────────────── */
+.v-spec-block + .v-spec-block {
+  margin-top: var(--sp-4);
+  padding-top: var(--sp-4);
+  border-top: 1px solid var(--line);
+}
+.v-spec-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: var(--sp-3);
+}
+.v-spec-head h3 {
+  font-size: 15px;
+}
+.v-roles-sub {
+  margin-top: var(--sp-4);
+  padding-top: var(--sp-3);
+  border-top: 1px dashed var(--line);
+}
+
+.v-chain-block {
+  margin-top: var(--sp-3);
+  padding-top: var(--sp-3);
+  border-top: 1px solid var(--line);
+}
+.v-chain-track-head {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+/* ── 已披露公司关系列表 ───────────────────────────────────── */
+.map-relations {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.map-relations li {
+  padding: 12px var(--sp-4);
+  border-top: 1px solid var(--line);
+}
+.map-relations li:first-child {
+  border-top: 0;
+}
+.map-relation-edge {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 13.5px;
+  margin-bottom: 4px;
+}
+.map-rel-date {
+  margin-left: auto;
+  font-size: 12px;
+  color: var(--ink-3);
+}
+.map-relations p {
+  margin: 0 0 4px;
+  font-size: 13.5px;
+  color: var(--ink-2);
+}
+.map-relations small {
+  font-size: 12px;
+  color: var(--ink-3);
+}
+.map-relations small a {
+  color: var(--accent-text);
+}
+
+/* ── 事件时间线 (VentureTimeline) ─────────────────────────── */
+.v-tl-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 10px var(--sp-4);
+  border-bottom: 1px solid var(--line);
+  background: var(--paper-2);
+}
+.v-tl-filter button {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  height: 26px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--ink-2);
+  font-size: 12.5px;
+  cursor: pointer;
+}
+.v-tl-filter button .n {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-4);
+}
+.v-tl-filter button.is-on {
+  background: var(--accent-soft);
+  color: var(--accent-text);
+  border-color: transparent;
+  font-weight: 500;
+}
+.v-tl-group {
+  border-top: 1px solid var(--line);
+}
+.v-tl > .v-tl-group:first-of-type {
+  border-top: 0;
+}
+.v-tl-month {
+  padding: 8px var(--sp-4);
+  background: var(--paper-2);
+  border-bottom: 1px solid var(--line);
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--ink-2);
+}
+.v-tl-group ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.v-tl-group li {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  gap: var(--sp-3);
+  padding: 11px var(--sp-4);
+  border-bottom: 1px solid var(--line);
+}
+.v-tl-group li:last-child {
+  border-bottom: 0;
+}
+.v-tl-group time {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-3);
+  padding-top: 2px;
+}
+.v-ev-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+.v-kind {
+  display: inline-flex;
+  align-items: center;
+  height: 20px;
+  padding: 0 7px;
+  border-radius: var(--r-sm);
+  background: var(--paper-2);
+  color: var(--ink-2);
+  font-size: 11.5px;
+  font-weight: 500;
+}
+.v-ev-co {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 13.5px;
+}
+.v-amt {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.v-rumor {
+  font-size: 11px;
+  padding: 0 6px;
+  border-radius: 4px;
+  background: #fdf3e2;
+  color: #8a4b00;
+}
+.v-ev-title {
+  margin: 0 0 4px;
+  font-size: 13.5px;
+  color: var(--ink);
+}
+.v-ev-inv {
+  margin: 0 0 4px;
+  font-size: 12.5px;
+  color: var(--ink-3);
+}
+.v-ev-inv .k {
+  margin-right: 6px;
+}
+.v-inv + .v-inv::before {
+  content: "、";
+}
+.v-ev-src {
+  margin: 0;
+  font-size: 12px;
+}
+.v-ev-src a {
+  color: var(--ink-3);
+  margin-right: 10px;
+}
+.v-ev-src a:hover {
+  color: var(--accent-text);
+}
+.v-ev-src a::after {
+  content: " ↗";
+}
+
+/* ── 新闻列表 (CompanyNewsList) ───────────────────────────── */
+.map-news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.map-news-row {
+  display: grid;
+  grid-template-columns: 108px minmax(0, 1fr);
+  gap: var(--sp-3);
+  padding: 12px var(--sp-4);
+  border-top: 1px solid var(--line);
+}
+.map-news-list > .map-news-row:first-child {
+  border-top: 0;
+}
+.map-news-row:hover {
+  background: var(--paper-2);
+}
+.map-news-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.map-news-date {
+  font-size: 12px;
+  color: var(--ink-3);
+}
+.news-match-badge {
+  display: inline-flex;
+  align-items: center;
+  height: 19px;
+  padding: 0 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  background: var(--paper-2);
+  color: var(--ink-3);
+}
+.news-match-badge.is-official {
+  background: var(--accent-soft);
+  color: var(--accent-text);
+  font-weight: 500;
+}
+.map-news-main h3 {
+  font-size: 14px;
+  font-weight: 550;
+  line-height: 1.45;
+  margin-bottom: 4px;
+}
+.map-news-main h3 a:hover {
+  color: var(--accent-text);
+}
+.map-news-summary {
+  margin: 0 0 6px;
+  font-size: 13px;
+  color: var(--ink-2);
+  line-height: 1.6;
+}
+.map-news-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 12px;
+  font-size: 12px;
+  color: var(--ink-3);
+}
+.map-news-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.news-co-chip {
+  padding: 1px 7px;
+  border-radius: 4px;
+  background: var(--paper-2);
+  color: var(--ink-2);
+}
+.news-co-chip:hover {
+  color: var(--accent-text);
+}
+.map-news-links {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+.map-news-links a {
+  color: var(--accent-text);
+}
+
+.v-mentions-details {
+  border-top: 1px solid var(--line);
+}
+.v-mentions-details summary {
+  padding: 10px var(--sp-4);
+  font-size: 13px;
+  color: var(--ink-3);
+  cursor: pointer;
+  background: var(--paper-2);
+}
+.news-empty-actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--sp-2);
+  margin-top: var(--sp-3);
+}
+.news-more-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+/* ── 覆盖页表格与口径说明 ─────────────────────────────────── */
+.map-coverage td:first-child,
+.map-coverage td:nth-child(4),
+.map-coverage td:nth-child(5) {
+  white-space: nowrap;
+}
+.map-coverage td:nth-child(2) {
+  white-space: normal;
+  font-size: 13px;
+  color: var(--ink);
+}
+.cov-seg-link strong {
+  display: block;
+  font-weight: 550;
+  color: var(--ink);
+}
+.cov-seg-link small {
+  display: block;
+  font-size: 12px;
+  color: var(--ink-3);
+  line-height: 1.45;
+  margin-top: 2px;
+}
+.cov-bar-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 120px;
+}
+.cov-bar-cell b {
+  width: 24px;
+  text-align: right;
+}
+.cov-bar-track {
+  flex: 1;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--paper-3);
+  overflow: hidden;
+}
+.cov-bar-fill {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  border-radius: 3px;
+}
+.cov-doc-body p {
+  font-size: 13.5px;
+  color: var(--ink-2);
+  line-height: 1.7;
+}
+.cov-rules-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+.cov-rule-item h3 {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.cov-rule-item p {
+  font-size: 13px;
+  color: var(--ink-2);
+  line-height: 1.65;
+}
+
+@media (max-width: 860px) {
+  .v-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  .map-news-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .map-news-side {
+    flex-direction: row;
+    align-items: center;
+  }
+}

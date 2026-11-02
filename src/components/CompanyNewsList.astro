@@ -1,0 +1,139 @@
+---
+import { getVentures, getMemberships, getTrack } from "../lib/ventures";
+import type { CompanyNewsItem } from "../lib/news";
+
+interface Props {
+  items: CompanyNewsItem[];
+  companyId?: string;
+  filterable?: boolean;
+}
+
+const { items, companyId, filterable = false } = Astro.props;
+const index = new Map(getVentures().map((v) => [v.id, v]));
+---
+
+<ul class="map-news-list">
+  {items.map((item) => {
+    const own = companyId
+      ? item.associations.find((a) => a.companyId === companyId)
+      : undefined;
+    const method =
+      own?.matchType ||
+      (item.origin === "official"
+        ? "official"
+        : item.associations.some((a) => a.matchType === "title")
+          ? "title"
+          : "summary");
+
+    const assocCompanies = item.associations
+      .map((a) => ({
+        assoc: a,
+        venture: index.get(a.companyId),
+      }))
+      .filter((x) => x.venture);
+
+    const trackIds = [
+      ...new Set(
+        assocCompanies.flatMap((x) =>
+          getMemberships(x.venture!).map((m) => m.track),
+        ),
+      ),
+    ];
+
+    const primaryTrackName = trackIds[0]
+      ? getTrack(trackIds[0])?.name
+      : undefined;
+
+    return (
+      <li
+        class="map-news-row"
+        data-news-item={filterable ? item.id : undefined}
+        data-companies={
+          filterable
+            ? item.associations.map((a) => a.companyId).join(" ")
+            : undefined
+        }
+        data-tracks={filterable ? trackIds.join(" ") : undefined}
+        data-method={filterable ? method : undefined}
+        data-search={
+          filterable
+            ? `${item.title} ${item.summary || ""} ${item.sourceName} ${assocCompanies
+                .map((x) => `${x.venture?.name} ${x.venture?.en || ""}`)
+                .join(" ")}`.toLowerCase()
+            : undefined
+        }
+      >
+        <div class="map-news-side">
+          <time class="mono map-news-date" datetime={item.publishedAt}>
+            {item.publishedAt.slice(0, 10)}
+          </time>
+          <span
+            class:list={[
+              "news-match-badge",
+              method === "official"
+                ? "is-official"
+                : method === "title"
+                  ? "is-title"
+                  : "is-summary",
+            ]}
+          >
+            {method === "official"
+              ? "官方渠道"
+              : method === "title"
+                ? "标题提及"
+                : "仅摘要提及"}
+          </span>
+        </div>
+
+        <div class="map-news-main">
+          <h3>
+            <a href={item.url} target="_blank" rel="noopener noreferrer">
+              {item.title} <span aria-hidden="true">↗</span>
+            </a>
+          </h3>
+
+          {item.summary && (
+            <p class="map-news-summary">{item.summary}</p>
+          )}
+
+          <div class="map-news-foot">
+            <span class="map-news-source">{item.sourceName}</span>
+            {primaryTrackName && !companyId && (
+              <span class="map-news-track-tag">{primaryTrackName}</span>
+            )}
+            <div class="map-news-tags">
+              {item.associations
+                .filter((a) => a.companyId !== companyId)
+                .map((a) => (
+                  <a
+                    class:list={[
+                      "news-co-chip",
+                      a.matchType === "summary" && "is-mention",
+                    ]}
+                    href={`/venture/${a.companyId}/`}
+                  >
+                    {index.get(a.companyId)?.name || a.companyId}
+                    {a.matchType === "summary" ? " · 提及" : ""}
+                  </a>
+                ))}
+            </div>
+            <div class="map-news-links">
+              <a href={item.url} target="_blank" rel="noopener noreferrer">
+                阅读原文 ↗
+              </a>
+              {item.finhotUrl && (
+                <a
+                  href={item.finhotUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  FinHot 摘要 ↗
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      </li>
+    );
+  })}
+</ul>

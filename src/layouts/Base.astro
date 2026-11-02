@@ -1,0 +1,250 @@
+---
+import "../styles/global.css";
+import "../styles/product.css";
+import "../styles/terminal.css";
+import SiteSearch from "../components/SiteSearch.astro";
+import Icon from "../components/Icon.astro";
+import ProductSwitch from "../components/ProductSwitch.astro";
+interface Props {
+  title: string;
+  description?: string;
+  current?: string;
+}
+const {
+  title,
+  description = "面向硬科技投资研究的公司动态、关注清单与产业地图。每条公开信息保留可核对的出处。",
+  current,
+} = Astro.props;
+const pathname = Astro.url.pathname;
+const financial =
+  /^\/(financial|orgs?|groups?|category|roster|about)(\/|$)/.test(pathname);
+const active = pathname.startsWith("/companies")
+  ? "companies"
+  : pathname.startsWith("/venture/")
+    ? "companies"
+    : pathname.includes("monitoring")
+      ? "monitoring"
+      : pathname.includes("dexterity")
+        ? "dexterity"
+        : pathname.includes("coverage")
+          ? "guide"
+          : pathname.startsWith("/guide")
+            ? "guide"
+            : current;
+const nav = [
+  { href: "/", label: "动态", key: "updates", icon: "inbox" },
+  {
+    href: "/?scope=watching",
+    label: "关注",
+    key: "watching",
+    icon: "star",
+  },
+  { href: "/?scope=saved", label: "收藏", key: "saved", icon: "bookmark" },
+];
+const research = [
+  { href: "/companies/", label: "公司库", key: "companies", icon: "building" },
+  { href: "/ventures/", label: "产业地图", key: "ventures", icon: "network" },
+  {
+    href: "/ventures/dexterity/",
+    label: "灵巧操作",
+    key: "dexterity",
+    icon: "book",
+  },
+];
+const mark =
+  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#2962ff"/><path d="M9 23V9h14M9 16h11" fill="none" stroke="white" stroke-width="3.4" stroke-linecap="round"/><circle cx="23" cy="23" r="2.4" fill="white"/></svg>';
+const section = financial
+  ? "金融机构资料"
+  : active === "companies"
+    ? "公司研究"
+    : active === "ventures"
+      ? "产业地图"
+      : active === "dexterity"
+        ? "研究专题"
+        : active === "monitoring"
+          ? "监测与数据"
+          : active === "guide"
+            ? "使用指南"
+            : "研究工作区";
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title==='FinMap'?title:title+' · FinMap'}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content="FinMap · 硬科技研究工作台" />
+    <link rel="icon" href={"data:image/svg+xml," + encodeURIComponent(mark)} />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#101b30" />
+    <script is:inline src="/fin-suite.js"></script>
+    <link rel="stylesheet" href="/fin-suite.css" />
+  </head>
+  <body
+    class="product-app"
+    data-section={active}
+    data-workspace={financial ? "financial" : "research"}
+  >
+    <a class="skip-link" href="#main-content">
+      跳至主要内容
+    </a>
+    <aside
+      class="workspace-sidebar"
+      id="workspace-sidebar"
+      aria-label="工作区导航"
+    >
+      <a class="workspace-brand" href="/" aria-label="FinMap 首页">
+        <span set:html={mark} />
+        <strong>
+          FinMap<span>.</span>
+        </strong>
+      </a>
+      <button class="rail-close" data-menu-close aria-label="关闭导航">
+        <Icon name="close" />
+      </button>
+      <div class="workspace-label">
+        <span class="workspace-symbol">F</span>
+        <div>
+          <strong>硬科技研究</strong>
+          <small>PUBLIC WORKSPACE</small>
+        </div>
+      </div>
+      <nav class="workspace-nav" aria-label="主导航">
+        <p class="rail-label">工作空间</p>
+        {nav.map((n) => (
+          <a
+            href={n.href}
+            data-nav={n.key}
+            aria-current={active === n.key ? "page" : undefined}
+          >
+            <Icon name={n.icon} />
+            <span>{n.label}</span>
+            {n.key !== "updates" && <small data-pref-count={n.key}></small>}
+          </a>
+        ))}
+        <p class="rail-label">发现与研究</p>
+        {research.map((n) => (
+          <a
+            href={n.href}
+            data-nav={n.key}
+            aria-current={active === n.key ? "page" : undefined}
+          >
+            <Icon name={n.icon} />
+            <span>{n.label}</span>
+            {n.key === "dexterity" && <i>专题</i>}
+          </a>
+        ))}
+        <p class="rail-label">资料与工具</p>
+        <a
+          href="/workspace/"
+          aria-current={active === "workspace" ? "page" : undefined}
+        >
+          <Icon name="book" />
+          <span>工作台</span>
+        </a>
+        <a
+          href="/ventures/monitoring/"
+          aria-current={active === "monitoring" ? "page" : undefined}
+        >
+          <Icon name="activity" />
+          <span>信源监测</span>
+        </a>
+        <details class="rail-archive" open={financial}>
+          <summary>
+            <Icon name="building" />
+            <span>金融资料</span>
+            <Icon name="down" />
+          </summary>
+          <div>
+            <a href="/financial/">金融概览</a>
+            <a href="/orgs/">机构库</a>
+            <a href="/groups/">集团谱系</a>
+            <a href="/roster/">全量名册</a>
+            <a href="/about/">金融数据说明</a>
+          </div>
+        </details>
+      </nav>
+      <div class="rail-bottom">
+        <a
+          class="rail-guide"
+          href="/guide/"
+          aria-current={active === "guide" ? "page" : undefined}
+        >
+          <Icon name="info" />
+          <span>使用指南</span>
+          <Icon name="arrow" />
+        </a>
+        <div class="rail-caption">
+          <span class="rail-dot"></span>公开信息 · 独立研究
+        </div>
+      </div>
+    </aside>
+    <button
+      class="workspace-scrim"
+      data-menu-close
+      aria-label="关闭导航遮罩"
+      hidden
+    ></button>
+    <div class="workspace-main">
+      <header class="workspace-topbar site-header">
+        <div class="workspace-context">
+          <button
+            class="icon-btn mobile-menu"
+            id="menu-open"
+            aria-controls="workspace-sidebar"
+            aria-expanded="false"
+            aria-label="打开导航"
+          >
+            <Icon name="menu" />
+          </button>
+          <ProductSwitch mark={mark} />
+          <span class="terminal-product">硬科技投研</span>
+          <span class="terminal-section">{section}</span>
+        </div>
+        <div class="header-actions">
+          <SiteSearch placeholder="搜索公司、产品或机构…" />
+          <button
+            class="icon-btn search-open"
+            id="search-open"
+            aria-label="搜索公司或机构"
+          >
+            <Icon name="search" />
+          </button>
+          <span class="topbar-divider"></span>
+          <button
+            class="icon-btn theme-toggle"
+            id="theme-toggle"
+            data-suite-theme
+            aria-label="切换深浅色"
+          >
+            <span class="i-sun">
+              <Icon name="sun" />
+            </span>
+            <span class="i-moon">
+              <Icon name="moon" />
+            </span>
+          </button>
+        </div>
+      </header>
+      <main id="main-content" tabindex="-1">
+        <slot />
+      </main>
+      <footer class="workspace-footer">
+        <span>
+          <b>FinMap</b> · 让研究持续发生
+        </span>
+        <div>
+          <a href="/guide/">使用与数据说明</a>
+          <a href="https://finhot.fun/" rel="noopener">
+            FinHot 行业资讯 ↗
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script src="../scripts/workspace.ts"></script>
+  </body>
+</html>

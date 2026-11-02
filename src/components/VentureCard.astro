@@ -1,0 +1,103 @@
+---
+import VentureAvatar from './VentureAvatar.astro';
+import {
+  KIND_LABEL,
+  REGION_LABEL,
+  formatDate,
+  formatMoney,
+  getVentureUrl,
+  getMemberships,
+  getTrack,
+  getSegment,
+  splitSegmentName,
+  latestEvent,
+  segmentSlot,
+} from '../lib/ventures';
+import { getDexterityForCompany } from '../lib/dexterity';
+import type { Venture } from '../lib/ventures';
+
+interface Props {
+  venture: Venture;
+  variant?: 'card' | 'pill';
+  currentTrack?: string;
+  currentSegment?: string;
+}
+const { venture: v, variant = 'card', currentTrack, currentSegment } = Astro.props;
+const last = latestEvent(v);
+const val = v.valuation ? formatMoney(v.valuation) : null;
+const rumor = v.valuation?.status === 'reported';
+const slot = segmentSlot(currentTrack || v.track, currentSegment || v.segment);
+const memberships = getMemberships(v);
+const otherMemberships = memberships.filter(
+  (m) => !(m.track === (currentTrack || v.track) && m.segment === (currentSegment || v.segment)),
+);
+const dex = getDexterityForCompany(v.id);
+const modelName = dex.products[0]?.product || dex.roles[0]?.product || '';
+const cleanModel = modelName ? modelName.replace(/（.*?）|\(.*?\)/g, '').trim() : '';
+---
+
+{variant === 'pill' ? (
+  <a class="v-pill" href={getVentureUrl(v)} data-slot={slot} data-company-link={v.id}>
+    <span class="v-pill-name">{v.name}</span>
+    {v.region === 'global' && <span class="v-pill-reg">{v.country || '海外'}</span>}
+    {val && <span class="v-pill-val">{val}</span>}
+  </a>
+) : (
+  <a
+    class="v-card v-row"
+    href={getVentureUrl(v)}
+    data-slot={slot}
+    data-company-link={v.id}
+    data-region={v.region}
+    data-search={[
+      v.name,
+      v.en || '',
+      v.intro,
+      ...(v.tags || []),
+      ...(v.aliases || []),
+      modelName,
+    ]
+      .join(' ')
+      .toLowerCase()}
+  >
+    <div class="v-row-ident">
+      <VentureAvatar venture={v} size="sm" />
+      <div class="v-row-titles">
+        <div class="v-row-name-line">
+          <strong class="v-card-name">{v.name}</strong>
+          {v.region === 'global' && (
+            <span class="badge badge-plain">{v.country || REGION_LABEL[v.region]}</span>
+          )}
+          {cleanModel && (
+            <span class="badge">{cleanModel}</span>
+          )}
+          {otherMemberships.length > 0 && (
+            <span class="badge badge-plain" title={`同时布局：${otherMemberships.map((m) => `${getTrack(m.track)?.name}/${splitSegmentName(getSegment(m.track, m.segment)?.name || '').name}`).join('；')}`}>
+              跨 {otherMemberships.length} 环节
+            </span>
+          )}
+        </div>
+        {(v.en && v.en !== v.name) && <span class="v-row-en">{v.en}</span>}
+      </div>
+    </div>
+
+    <p class="v-row-intro">{v.intro}</p>
+
+    <div class="v-row-meta">
+      {val ? (
+        <span class="v-row-val">
+          <b>{val}</b>
+          {rumor && <small>报道</small>}
+        </span>
+      ) : last ? (
+        <span class="v-row-ev">
+          <span>{KIND_LABEL[last.kind]}</span> · <span class="mono">{formatDate(last.date)}</span>
+        </span>
+      ) : (
+        <span class="v-row-verified mono">
+          {v.verifiedAt || '已核验'}
+        </span>
+      )}
+    </div>
+  </a>
+)}

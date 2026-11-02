@@ -1,0 +1,1093 @@
+# 公开产品档案：研究核验日期不是产品发布日期；未作全行业覆盖或融资状态承诺。
+version: 1
+updated: 2026-10-23
+companies:
+  - id: nvidia
+    name: 英伟达
+    en: NVIDIA
+    region: global
+    track: ai-compute
+    segment: training
+    tags:
+      - GPU
+      - AI训练
+      - AI推理
+      - 机器人仿真
+    aliases:
+      - NVIDIA Corporation
+      - 英伟达公司
+    intro: 提供面向 AI 训练与推理的数据中心 GPU、机架级计算系统；Isaac Sim 用于机器人仿真、测试与合成数据生成。
+    website: https://www.nvidia.com/en-us/data-center/products/
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Accelerating the Next Wave of AI Innovation | NVIDIA Data Center Products
+        url: https://www.nvidia.com/en-us/data-center/products/
+      - title: Isaac Sim - Robotics Simulation and Synthetic Data Generation | NVIDIA
+          Developer
+        url: https://developer.nvidia.com/isaac-sim
+    events: []
+    memberships:
+      - track: ai-compute
+        segment: systems
+      - track: robot-parts
+        segment: simulation
+  - id: amd
+    name: 超威半导体
+    en: AMD
+    region: global
+    track: ai-compute
+    segment: training
+    tags:
+      - GPU
+      - AI训练
+      - AI推理
+    aliases:
+      - Advanced Micro Devices
+      - 超微半导体
+    intro: 提供 Instinct 系列数据中心 GPU 加速器，用于生成式 AI 训练、推理与高性能计算。
+    website: https://www.amd.com/en/products/accelerators/instinct/mi300.html
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: AMD Instinct™ MI300 Series Accelerators
+        url: https://www.amd.com/en/products/accelerators/instinct/mi300.html
+    events: []
+  - id: d-matrix
+    name: d-Matrix
+    en: d-Matrix
+    region: global
+    track: ai-compute
+    segment: inference
+    tags:
+      - 推理加速
+      - 存内计算
+      - Corsair
+    aliases:
+      - d-Matrix
+    intro: 提供 Corsair 大模型推理加速平台，并面向机架部署提供推理系统方案。
+    website: https://www.d-matrix.ai/announcements/d-matrix-corsair-ai-inference-platform-enters-full-production-to-meet-customer-demand/
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: d-Matrix Corsair AI Inference Platform Enters Full Production to Meet
+          Customer Demand - d-Matrix
+        url: https://www.d-matrix.ai/announcements/d-matrix-corsair-ai-inference-platform-enters-full-production-to-meet-customer-demand/
+      - title: Corsair at Rack Scale | d-Matrix In-Memory Computing for AI
+        url: https://www.d-matrix.ai/corsair-at-rack-scale
+    events: []
+  - id: lightmatter
+    name: Lightmatter
+    en: Lightmatter
+    region: global
+    track: ai-compute
+    segment: interconnect
+    tags:
+      - 光互连
+      - 硅光
+      - 数据中心
+    aliases:
+      - Lightmatter Inc
+    intro: 研发 Passage 光互连技术，用光传输连接计算芯片，面向 AI 数据中心的高带宽互连需求。
+    website: https://lightmatter.co/session/passage-photonic-interconnect-deep-dive
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Passage Photonic Interconnect Deep Dive - Lightmatter®
+        url: https://lightmatter.co/session/passage-photonic-interconnect-deep-dive
+    events: []
+  - id: celestial-ai
+    name: Celestial AI
+    en: Celestial AI
+    region: global
+    track: ai-compute
+    segment: interconnect
+    tags:
+      - 光互连
+      - Photonic Fabric
+      - 已被收购
+    aliases:
+      - Celestial AI Inc
+    intro: 研发 Photonic Fabric 光互连技术，用于大规模 AI 系统的高带宽、低延迟连接；Marvell 于 2026 年 2 月宣布完成收购。
+    website: https://www.marvell.com/company/newsroom/marvell-completes-acquisition-of-celestial-ai.html
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Marvell Completes Acquisition of Celestial AI
+        url: https://www.marvell.com/company/newsroom/marvell-completes-acquisition-of-celestial-ai.html
+    events: []
+  - id: cambricon
+    name: 寒武纪
+    en: Cambricon
+    region: cn
+    track: ai-compute
+    segment: training
+    tags:
+      - AI芯片
+      - 训练加速
+      - 推理加速
+    aliases:
+      - 中科寒武纪
+      - 寒武纪科技
+    intro: 研发思元系列智能芯片与加速卡，并提供面向训练、推理的软件开发平台。
+    website: https://www.cambricon.com/index.php?a=lists&c=index&catid=360&m=content
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 思元370系列 - 寒武纪
+        url: https://www.cambricon.com/index.php?a=lists&c=index&catid=360&m=content
+    events: []
+    country: 中国
+  - id: coreweave
+    name: CoreWeave
+    en: CoreWeave
+    region: global
+    track: ai-compute
+    segment: cloud
+    tags:
+      - GPU云
+      - 训练基础设施
+      - 推理基础设施
+    aliases:
+      - CoreWeave Inc
+    intro: 提供面向 AI 训练和推理的 GPU 云基础设施，结合计算、网络、存储与集群运行平台。
+    website: https://www.coreweave.com/
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: The Essential Cloud for AI | CoreWeave
+        url: https://www.coreweave.com/
+    events: []
+  - id: siliconflow
+    name: 硅基流动
+    en: SiliconFlow
+    region: cn
+    track: ai-compute
+    segment: cloud
+    tags:
+      - 模型API
+      - 推理加速
+      - 私有部署
+    aliases:
+      - SiliconCloud
+      - 硅基流动科技
+    intro: 提供大模型 API、推理加速引擎、预留实例和企业私有化部署服务，支持多模型与异构计算资源。
+    website: https://siliconflow.cn/
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 硅基流动 SiliconFlow - 大模型 API 与 AI 云服务平台
+        url: https://siliconflow.cn/
+    events: []
+    country: 中国
+  - id: modal
+    name: Modal
+    en: Modal
+    region: global
+    track: ai-compute
+    segment: cloud
+    tags:
+      - 无服务器GPU
+      - AI基础设施
+      - 推理
+    aliases:
+      - Modal Labs
+    match: [Modal Labs, modal.com, Modal GPU, Modal平台, Modal 平台, Modal云, Modal 云]
+    intro: 提供可通过代码调用和扩缩容的 CPU、GPU 计算平台，用于模型训练、推理、批处理和隔离代码执行。
+    website: https://modal.com/
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: "Modal: The platform for production AI"
+        url: https://modal.com/
+    events: []
+  - id: deepseek
+    name: 深度求索
+    en: DeepSeek
+    region: cn
+    track: foundation-models
+    segment: foundation
+    tags:
+      - 基础模型
+      - 多模态
+      - 模型API
+    aliases:
+      - DeepSeek
+      - 杭州深度求索
+    intro: 研发 DeepSeek 模型并提供 API；官方已披露具备视觉理解能力的多模态模型产品。
+    website: https://www.deepseek.com/en/news/deepseek-v4-1-flash/
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: "DeepSeek | Introducing DeepSeek-V4.1-Flash: smarter, faster, more
+          efficient."
+        url: https://www.deepseek.com/en/news/deepseek-v4-1-flash/
+    events: []
+    country: 中国
+  - id: zhipu
+    name: 智谱
+    en: Zhipu AI
+    region: cn
+    track: foundation-models
+    segment: foundation
+    tags:
+      - GLM
+      - 基础模型
+      - 多模态
+    aliases:
+      - 智谱AI
+      - 智谱华章
+      - Z.ai
+      - Zhipu
+    intro: 研发 GLM 系列基础模型，并通过 BigModel 平台提供语言、视觉、语音和智能体能力。
+    website: https://open.bigmodel.cn/
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 智谱丨BigModel 平台
+        url: https://open.bigmodel.cn/
+      - title: Z.ai - Inspiring AGI to Benefit Humanity
+        url: https://www.zhipuai.cn/
+    events: []
+    country: 中国
+  - id: moonshot
+    name: 月之暗面
+    en: Moonshot AI
+    region: cn
+    track: foundation-models
+    segment: foundation
+    tags:
+      - Kimi
+      - 大模型
+      - 智能体
+    aliases:
+      - Moonshot
+      - Kimi
+      - 月之暗面科技
+    intro: 研发 Kimi 系列模型，并提供 Kimi 应用与开发者 API，覆盖知识工作、编程和研究等任务。
+    website: https://www.moonshot.cn/
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Moonshot AI
+        url: https://www.moonshot.cn/
+    events: []
+    country: 中国
+  - id: minimax
+    name: MiniMax
+    en: MiniMax
+    region: cn
+    track: foundation-models
+    segment: foundation
+    tags:
+      - 多模态
+      - 语音
+      - 视频生成
+    aliases:
+      - 稀宇科技
+      - MiniMax AI
+    match: [稀宇科技, MiniMax, MiniMax AI, MiniMax Code, MiniMax M3, MiniMax M3.1, MiniMax H3, MiniMax模型, MiniMax 模型, MiniMax公司, MiniMax 公司]
+    intro: 研发覆盖文本、语音、图像、视频和音乐的多模态模型，并提供 AI 应用和开放 API 平台。
+    website: https://www.minimax.io/about
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: MiniMax - About Us | MiniMax
+        url: https://www.minimax.io/about
+    events: []
+    country: 中国
+  - id: baichuan
+    name: 百川智能
+    en: Baichuan AI
+    region: cn
+    track: foundation-models
+    segment: foundation
+    tags:
+      - 大模型
+      - 医疗AI
+      - 企业API
+    aliases:
+      - Baichuan
+      - 百川大模型
+    intro: 研发通用语言模型和医疗领域模型，并提供面向企业的模型 API 与智能体平台。
+    website: https://www.baichuan-ai.com/home
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 百川大模型-汇聚世界知识 创作妙笔生花-百川智能
+        url: https://www.baichuan-ai.com/home
+      - title: 百川大模型-汇聚世界知识 创作妙笔生花-百川智能
+        url: https://platform.baichuan-ai.com/homePage
+    events: []
+    country: 中国
+  - id: stepfun
+    name: 阶跃星辰
+    en: StepFun
+    region: cn
+    track: foundation-models
+    segment: foundation
+    tags:
+      - 多模态
+      - 语言模型
+      - 语音模型
+    aliases:
+      - StepFun AI
+      - 阶跃
+    match: [阶跃星辰, StepFun, StepFun AI]
+    intro: 研发 Step 系列基础模型与语音模型，通过开放平台提供语言、语音和图像等 API。
+    website: https://www.stepfun.com/
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 阶跃星辰
+        url: https://www.stepfun.com/
+      - title: 阶跃星辰开放平台
+        url: https://platform.stepfun.com/
+    events: []
+    country: 中国
+  - id: openai
+    name: OpenAI
+    en: OpenAI
+    region: global
+    track: foundation-models
+    segment: foundation
+    tags:
+      - 基础模型
+      - 多模态
+      - 开发平台
+    aliases:
+      - OpenAI Inc
+      - ChatGPT
+    intro: 研发通用 AI 模型，并通过开发者平台提供文本、视觉、语音等模型与工具能力。
+    website: https://openai.com/api
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: API Platform | OpenAI
+        url: https://openai.com/api
+    events: []
+  - id: anthropic
+    name: Anthropic
+    en: Anthropic
+    region: global
+    track: foundation-models
+    segment: foundation
+    tags:
+      - Claude
+      - 语言模型
+      - 模型API
+    aliases:
+      - Anthropic PBC
+      - Claude
+    match: [Anthropic, Anthropic PBC, Claude AI, Claude Code, Claude Sonnet, Claude Opus, Claude Haiku, Claude模型, Claude 模型]
+    intro: 研发 Claude 系列大语言模型，提供支持文本、图像理解和工具调用的模型 API。
+    website: https://docs.anthropic.com/en/docs/about-claude/models/overview
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Models overview - Claude Platform Docs
+        url: https://docs.anthropic.com/en/docs/about-claude/models/overview
+    events: []
+  - id: mistral
+    name: Mistral AI
+    en: Mistral AI
+    region: global
+    track: foundation-models
+    segment: foundation
+    tags:
+      - 开放模型
+      - 代码模型
+      - 文档识别
+    aliases:
+      - Mistral AI
+    intro: 提供通用语言、代码、多模态与文档识别等模型，覆盖云端及边缘部署需求。
+    website: https://mistral.ai/models?sa=X
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Models - from cloud to edge | Mistral
+        url: https://mistral.ai/models?sa=X
+    events: []
+  - id: cohere
+    name: Cohere
+    en: Cohere
+    region: global
+    track: foundation-models
+    segment: foundation
+    tags:
+      - 企业AI
+      - 检索增强
+      - 向量模型
+    aliases:
+      - Cohere Inc
+    match: [Cohere Inc, Cohere Command, Cohere Embed, Cohere Rerank, Cohere公司, Cohere 公司, Cohere模型, Cohere 模型]
+    intro: 面向企业提供 Command 生成模型、Embed 嵌入模型和 Rerank 重排序模型及部署平台。
+    website: https://docs.cohere.com/docs/the-cohere-platform.md
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: An Overview of The Cohere Platform
+        url: https://docs.cohere.com/docs/the-cohere-platform.md
+    events: []
+  - id: huggingface
+    name: Hugging Face
+    en: Hugging Face
+    region: global
+    track: foundation-models
+    segment: tooling
+    tags:
+      - 模型平台
+      - 推理部署
+      - 开源生态
+    aliases:
+      - HuggingFace
+    intro: 运营模型开发与协作平台，提供企业 Hub、推理 API 和专属推理端点，支持将模型接入生产工作流。
+    website: https://huggingface.co/learn/cookbook/en/enterprise_cookbook_overview
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Enterprise Hub Cookbook
+        url: https://huggingface.co/learn/cookbook/en/enterprise_cookbook_overview
+    events: []
+  - id: robstride
+    name: 灵足时代
+    en: RobStride
+    region: cn
+    track: robot-parts
+    segment: actuators
+    tags:
+      - 一体化关节
+      - 电机驱动
+      - QDD
+    aliases:
+      - RobStride Dynamics
+      - 灵足
+    intro: 研发集成驱动器、电机、减速器与编码器的关节执行器，可用于四足、人形机器人和机械臂等设备。
+    website: https://robstride.com/products/robStride01
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Our Products
+        url: https://robstride.com/products/robStride01
+    events: []
+    country: 中国
+  - id: leadshine
+    name: 雷赛智能
+    en: Leadshine
+    region: cn
+    track: robot-parts
+    segment: actuators
+    tags:
+      - 运动控制
+      - 伺服
+      - 步进
+    aliases:
+      - 深圳市雷赛智能控制
+      - 雷赛控制
+    intro: 提供运动控制卡、外置控制器和产线控制器，并配套伺服、步进和 IO 产品，用于自动化设备控制。
+    website: https://www.leisai.com/product_1117.html
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 雷赛智能-PC-based控制器
+        url: https://www.leisai.com/product_1117.html
+    events: []
+    country: 中国
+    memberships:
+      - track: industrial-automation
+        segment: manufacturing
+  - id: leaderdrive
+    name: 绿的谐波
+    en: Leaderdrive
+    region: cn
+    track: robot-parts
+    segment: actuators
+    tags:
+      - 谐波减速器
+      - 旋转执行器
+      - 无框电机
+    aliases:
+      - 绿的谐波传动
+      - 苏州绿的谐波
+    intro: 提供谐波减速器、旋转执行器、无框电机和转台等精密传动产品，面向机器人与工业自动化。
+    website: https://www.leaderdrive.com/
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Leaderdrive
+        url: https://www.leaderdrive.com/
+    events: []
+    country: 中国
+  - id: orbbec
+    name: 奥比中光
+    en: Orbbec
+    region: cn
+    track: robot-parts
+    segment: sensors
+    tags:
+      - 3D相机
+      - 深度视觉
+      - RGB-D
+    aliases:
+      - 奥比中光科技
+    intro: 提供双目、结构光和 ToF 等 3D 视觉相机，以及相机计算设备和激光雷达等感知产品。
+    website: https://www.orbbec.com/Products
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 3D Vision Cameras for Robotics | Orbbec Products
+        url: https://www.orbbec.com/Products
+    events: []
+    country: 中国
+  - id: hesai
+    name: 禾赛科技
+    en: Hesai
+    region: cn
+    track: robot-parts
+    segment: sensors
+    tags:
+      - 激光雷达
+      - ADAS
+      - 机器人感知
+    aliases:
+      - Hesai Technology
+      - 禾赛
+    intro: 研发激光雷达，面向辅助驾驶、自动驾驶和机器人提供三维环境感知。
+    website: https://www.hesaitech.com/
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: "Hesai Technology: Infrastructure Platform for Robotics and Physical AI"
+        url: https://www.hesaitech.com/
+      - title: Hesai Unveils "Infinity Eye" Lidar Solution for L2, L3 and L4 Autonomous
+          Driving Systems | Hesai
+        url: https://www.hesaitech.com/hesai-unveils-infinity-eye-lidar-solution-for-l2-l3-and-l4-autonomous-driving-systems
+    events: []
+    country: 中国
+    memberships:
+      - track: autonomy
+        segment: sensors
+  - id: robosense
+    name: 速腾聚创
+    en: RoboSense
+    region: cn
+    track: robot-parts
+    segment: sensors
+    tags:
+      - 激光雷达
+      - 空间相机
+      - 机器人感知
+    aliases:
+      - 速腾聚创科技
+    intro: 提供数字化激光雷达和融合 RGB-D 感知的空间相机，应用于智能汽车与多类机器人。
+    website: https://www.robosense.cn/about
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 企业介绍 - RoboSense速腾聚创 | 让世界更安全，让生活更智能
+        url: https://www.robosense.cn/about
+    events: []
+    country: 中国
+    memberships:
+      - track: autonomy
+        segment: sensors
+  - id: sri
+    name: 宇立仪器
+    en: Sunrise Instruments
+    region: cn
+    track: robot-parts
+    segment: sensors
+    tags:
+      - 六维力传感器
+      - 关节扭矩
+      - 力控
+    aliases:
+      - SRI
+      - Sunrise Instruments
+      - 宇立仪器科技
+    intro: 研发多轴力传感器、关节扭矩传感器及力控打磨设备，服务机器人力感知与接触作业。
+    website: https://www.srisensor.com/about-us
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: About Us - Sunrise Instruments Co., Ltd.
+        url: https://www.srisensor.com/about-us
+    events: []
+    country: 中国
+  - id: robotiq
+    name: Robotiq
+    en: Robotiq
+    region: global
+    track: robot-parts
+    segment: hands
+    tags:
+      - 机器人夹爪
+      - 触觉
+      - 末端执行器
+    aliases:
+      - Robotiq Inc
+    intro: 提供自适应夹爪、真空夹爪与传感产品，并研发结合触觉感知的物理 AI 夹爪。
+    website: https://robotiq.com/company
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Who We Are | Robotiq
+        url: https://robotiq.com/company
+      - title: 2FC Physical AI Gripper with Tactile Sensing | Robotiq
+        url: https://robotiq.com/physical-ai-grippers
+    events: []
+  - id: shadow-robot
+    name: Shadow Robot
+    en: Shadow Robot
+    region: global
+    track: robot-parts
+    segment: hands
+    tags:
+      - 灵巧手
+      - 五指手
+      - 遥操作
+    aliases:
+      - Shadow Robot Company
+      - Shadow Dexterous Hand
+    intro: 研发仿人五指灵巧手和遥操作产品，面向机器人操作研究及工业应用。
+    website: http://shadowrobot.com/dexterous-hand-series
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Shadow Dexterous Hand Series - Research and Development Tool
+        url: http://shadowrobot.com/dexterous-hand-series
+      - title: Shadow Robot | Dexterous Robotic Hands & Teleoperated Robots
+        url: https://www.shadowrobot.com/
+    events: []
+  - id: schunk
+    name: 雄克
+    en: SCHUNK
+    region: global
+    track: robot-parts
+    segment: hands
+    tags:
+      - 夹爪
+      - 末端执行器
+      - 工业抓取
+    aliases:
+      - SCHUNK SE
+      - 雄克公司
+    intro: 提供工业抓取系统，包括平行夹爪、同心夹爪和磁力夹爪等末端执行部件。
+    website: https://schunk.com/us/en/gripping-systems/c/PUB_8293
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Gripping Systems
+        url: https://schunk.com/us/en/gripping-systems/c/PUB_8293
+    events: []
+  - id: mech-mind
+    name: 梅卡曼德
+    en: Mech-Mind Robotics
+    region: cn
+    track: industrial-automation
+    segment: machine-vision
+    tags:
+      - 工业3D视觉
+      - 机器人引导
+      - 视觉软件
+    aliases:
+      - 梅卡曼德机器人
+      - Mech-Mind
+    intro: 提供工业 3D 相机和机器视觉软件，为抓取、上下料、拆码垛与装配等机器人任务提供视觉引导。
+    website: https://www.mech-mind.com/products/mech-vision-machine-vision-software.html
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Mech-Vision Machine Vision Software | Mech-Mind Robotics
+        url: https://www.mech-mind.com/products/mech-vision-machine-vision-software.html
+      - title: Mech-Eye Industrial 3D Cameras | Mech-Mind Robotics
+        url: https://www.mech-mind.com/products/mech-eye-industrial-3d-camera.html
+    events: []
+    country: 中国
+  - id: inovance
+    name: 汇川技术
+    en: Inovance
+    region: cn
+    track: industrial-automation
+    segment: manufacturing
+    tags:
+      - 工业自动化
+      - 伺服驱动
+      - PLC
+    aliases:
+      - 深圳市汇川技术
+      - Inovance Technology
+    intro: 提供变频器、伺服驱动器、电机、PLC 和人机界面等工业自动化产品，并布局工业机器人。
+    website: https://www.inovance.com/portal/product?typeId=1
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 工业自动化
+        url: https://www.inovance.com/portal/product?typeId=1
+      - title: 汇川技术(INOVANCE) - 推进工业文明 共创美好生活
+        url: https://www.inovance.com/
+    events: []
+    country: 中国
+    memberships:
+      - track: robot-parts
+        segment: actuators
+  - id: aubo
+    name: 遨博智能
+    en: AUBO
+    region: cn
+    track: industrial-automation
+    segment: industrial-robots
+    tags:
+      - 协作机器人
+      - 力控
+      - 自动化
+    aliases:
+      - 遨博
+      - AUBO Robotics
+    intro: 研发协作机器人及配套视觉、力控产品，面向工业生产、科研教育和商业服务等场景。
+    website: https://www.aubo-cobot.com/public/index
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: 遨博协作机器人
+        url: https://www.aubo-cobot.com/public/index
+    events: []
+    country: 中国
+  - id: jaka
+    name: 节卡机器人
+    en: JAKA Robotics
+    region: cn
+    track: industrial-automation
+    segment: industrial-robots
+    tags:
+      - 协作机器人
+      - 工业具身
+      - 自动化
+    aliases:
+      - 节卡
+      - JAKA
+    intro: 提供协作机器人本体、控制柜及视觉和力控组件，面向汽车、电子等行业的生产任务。
+    website: https://www.jaka.com/en/index
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Collaborative Robots for Smart Manufacturing | JAKA Robotics Official
+          Website
+        url: https://www.jaka.com/en/index
+    events: []
+    country: 中国
+  - id: dobot
+    name: 越疆科技
+    en: DOBOT
+    region: cn
+    track: industrial-automation
+    segment: industrial-robots
+    tags:
+      - 协作机器人
+      - 桌面机器人
+      - SCARA
+    aliases:
+      - 越疆
+      - DOBOT Robotics
+    intro: 提供协作机器人、SCARA 与桌面机器人等产品，覆盖制造、零售和教育场景。
+    website: https://www.dobot-robots.com/products
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Products | Dobot Robotics
+        url: https://www.dobot-robots.com/products
+    events: []
+    country: 中国
+  - id: flexiv
+    name: 非夕科技
+    en: Flexiv
+    region: cn
+    track: industrial-automation
+    segment: industrial-robots
+    tags:
+      - 自适应机器人
+      - 力控
+      - 视觉感知
+    aliases:
+      - 非夕
+      - Flexiv Robotics
+    intro: 将工业级力控、视觉感知与 AI 结合，开发能够适应位置误差和外部扰动的自适应机器人。
+    website: http://www.flexiv.com/products
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Flexiv | Adaptive Robots, Industrial Cobot/Robotic Arm For Sale
+        url: http://www.flexiv.com/products
+    events: []
+    country: 中国
+  - id: universal-robots
+    name: 优傲机器人
+    en: Universal Robots
+    region: global
+    track: industrial-automation
+    segment: industrial-robots
+    tags:
+      - 协作机器人
+      - 机械臂
+      - 制造自动化
+    aliases:
+      - 优傲
+      - Universal Robots A/S
+    intro: 提供六轴协作机械臂，面向重复性生产流程的自动化部署与人机协作。
+    website: https://www.universal-robots.com/in/collaborative-robots/
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Collaborative Robots - Universal Robots India
+        url: https://www.universal-robots.com/in/collaborative-robots/
+    events: []
+  - id: abb
+    name: ABB 机器人
+    en: ABB Robotics
+    region: global
+    track: industrial-automation
+    segment: industrial-robots
+    tags:
+      - 工业机器人
+      - 协作机器人
+      - AMR
+    aliases:
+      - ABB Robotics
+      - ABB集团
+    match: [ABB Robotics, ABB机器人, ABB 机器人]
+    intro: 提供工业机器人、协作机器人、自主移动机器人及控制器、应用方案与服务。
+    website: https://new.abb.com/robotics
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: ABB Robotics | ABB
+        url: https://new.abb.com/robotics
+    events: []
+  - id: fanuc
+    name: 发那科
+    en: FANUC
+    region: global
+    track: industrial-automation
+    segment: industrial-robots
+    tags:
+      - 工业机器人
+      - 数控
+      - 伺服
+    aliases:
+      - FANUC Corporation
+      - 发那科公司
+    intro: 提供多关节和并联机器人，以及数控、伺服、机床与工业物联网产品。
+    website: https://www.fanuc.com/product/index.html
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: PRODUCT - FANUC GLOBAL
+        url: https://www.fanuc.com/product/index.html
+    events: []
+  - id: dji
+    name: 大疆创新
+    en: DJI
+    region: cn
+    track: smart-hardware
+    segment: consumer
+    tags:
+      - 无人机
+      - 航拍
+      - 消费硬件
+    aliases:
+      - 大疆
+      - DJI Technology
+    intro: 提供消费级与专业航拍无人机，产品覆盖便携航拍、第一视角飞行和专业影像等用途。
+    website: https://www.dji.com/camera-drones
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Buy DJI Camera Drone for Professional Aerial Photography Now - DJI United
+          States
+        url: https://www.dji.com/camera-drones
+    events: []
+    country: 中国
+  - id: insta360
+    name: 影石创新
+    en: Insta360
+    region: cn
+    track: smart-hardware
+    segment: consumer
+    tags:
+      - 全景相机
+      - 运动相机
+      - 影像硬件
+    aliases:
+      - 影石
+      - 影石Insta360
+    intro: 研发全景相机、运动相机、便携摄像设备和影像稳定产品，服务个人创作与专业影像。
+    website: https://www.insta360.com/about
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Insta360 - About us
+        url: https://www.insta360.com/about
+      - title: Insta360 | 360 Cameras - Official Website
+        url: https://www.insta360.com/us/
+    events: []
+    country: 中国
+  - id: bambu-lab
+    name: 拓竹科技
+    en: Bambu Lab
+    region: cn
+    track: smart-hardware
+    segment: consumer
+    tags:
+      - 3D打印
+      - 桌面制造
+      - 多色打印
+    aliases:
+      - 拓竹
+      - BambuLab
+    intro: 提供桌面 3D 打印机及多色打印配套系统，结合运动控制和自动校准功能。
+    website: https://bambulab.com/en-us/a1
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Bambu Lab A1 | Desktop 3D Printer | A1 series | Bambu Lab US
+        url: https://bambulab.com/en-us/a1
+    events: []
+    country: 中国
+  - id: rokid
+    name: 乐奇 Rokid
+    en: Rokid
+    region: cn
+    track: smart-hardware
+    segment: consumer
+    tags:
+      - AR眼镜
+      - AI眼镜
+      - 空间计算
+    aliases:
+      - Rokid
+      - 灵伴科技
+      - 乐奇
+    intro: 研发 AI 与 AR 眼镜，并提供 YodaOS 系统及相关软硬件方案。
+    website: https://www.rokid.com/en-US/about
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Rokid Official Website - About Us | Pioneering the Future of AI Glasses
+        url: https://www.rokid.com/en-US/about
+    events: []
+    country: 中国
+  - id: xreal
+    name: XREAL
+    en: XREAL
+    region: cn
+    track: smart-hardware
+    segment: consumer
+    tags:
+      - AR眼镜
+      - 空间显示
+      - 光学
+    aliases:
+      - Nreal
+      - 太若科技
+      - XREAL眼镜
+    intro: 研发消费级 AR 眼镜及配套硬件和软件，覆盖光学、端侧协处理与空间交互。
+    website: https://www.xreal.com/fr/about
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: XREAL About Us | Making Augmented Reality Accessible to Everyone
+        url: https://www.xreal.com/fr/about
+    events: []
+    country: 中国
+  - id: oura
+    name: Oura
+    en: Oura
+    region: global
+    track: smart-hardware
+    segment: consumer
+    tags:
+      - 智能戒指
+      - 睡眠监测
+      - 健康穿戴
+    aliases:
+      - Oura Ring
+      - ŌURA
+    intro: 提供智能戒指和应用，用于记录睡眠、活动、压力与心率等健康相关指标。
+    website: https://ouraring.com/product/rings
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Discover Oura's health, fitness, and sleep rings | Oura
+        url: https://ouraring.com/product/rings
+    events: []
+  - id: whoop
+    name: WHOOP
+    en: WHOOP
+    region: global
+    track: smart-hardware
+    segment: consumer
+    tags:
+      - 健康穿戴
+      - 运动监测
+      - 睡眠
+    aliases:
+      - WHOOP Inc
+    match: [WHOOP Inc, WHOOP wearable, WHOOP手环, WHOOP 手环, WHOOP可穿戴, WHOOP 可穿戴, WHOOP健康, WHOOP 健康]
+    intro: 提供可穿戴设备及应用，持续记录睡眠、运动负荷、压力和心脏健康相关指标。
+    website: https://www.whoop.com/
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: WHOOP | Unlock Human Performance & Healthspan
+        url: https://www.whoop.com/
+    events: []
+  - id: intuitive-surgical
+    name: 直觉外科
+    en: Intuitive Surgical
+    region: global
+    track: smart-hardware
+    segment: medical-devices
+    tags:
+      - 手术机器人
+      - 达芬奇
+      - 医疗器械
+    aliases:
+      - Intuitive
+      - 达芬奇手术机器人
+      - 直觉外科公司
+    match: [直觉外科, Intuitive Surgical, 达芬奇手术机器人, 直觉外科公司]
+    intro: 研发 da Vinci 手术机器人系统，将机器人、视觉与软件结合，用于辅助微创外科手术。
+    website: https://www.intuitive.com/en-us/products-and-services/da-vinci
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: Da Vinci Robotic Surgical Systems | Intuitive
+        url: https://www.intuitive.com/en-us/products-and-services/da-vinci
+    events: []
+  - id: google-deepmind
+    name: Google DeepMind
+    en: Google DeepMind
+    region: global
+    track: foundation-models
+    segment: foundation
+    tags:
+      - Gemini
+      - 世界模型
+      - 机器人模型
+    aliases:
+      - DeepMind
+      - 谷歌DeepMind
+    intro: Google 的 AI 研究团队，由 Google Brain 与 DeepMind 合并组成；研发 Gemini 模型与 Genie
+      世界模型，并开展机器人研究。
+    website: https://deepmind.google/about/
+    coverage: profile
+    verifiedAt: 2026-10-23
+    sources:
+      - title: About Google DeepMind — Google DeepMind
+        url: https://deepmind.google/about/
+      - title: Models — Google DeepMind
+        url: https://deepmind.google/models/?utm_source=about.google&utm_medium=referral&utm_campaign=about&utm_content=
+    events: []
+    memberships:
+      - track: world-model
+        segment: general

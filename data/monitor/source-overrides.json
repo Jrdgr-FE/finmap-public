@@ -1,0 +1,112 @@
+{
+  "wuji": {
+    "aliases": ["舞肌"],
+    "priority": true,
+    "sources": [
+      {
+        "key": "docs",
+        "kind": "page",
+        "name": "Wuji Hand 官方文档",
+        "url": "https://docs.wuji.tech/docs/zh/wuji-hand/latest/overview"
+      },
+      {
+        "key": "sdk",
+        "kind": "release",
+        "name": "Wuji SDK 官方版本",
+        "product": "SDK",
+        "url": "https://github.com/wuji-technology/wuji-sdk/releases.atom"
+      },
+      {
+        "key": "ros2",
+        "kind": "release",
+        "name": "Wuji ROS 2 官方版本",
+        "product": "ROS 2",
+        "url": "https://github.com/wuji-technology/wuji-ros2/releases.atom"
+      }
+    ],
+    "channels": [
+      {
+        "kind": "x",
+        "name": "Wuji 官方 X",
+        "url": "https://x.com/wuji_global",
+        "evidence": "https://github.com/wuji-technology",
+        "mode": "manual"
+      }
+    ]
+  },
+  "sharpa": {
+    "website": "https://www.sharpa.com/blogs/news",
+    "evidence": "https://www.sharpa.com/blogs/news/sharpa-showcases-at-gtc-with-nvidia-advancing-a-new-paradigm-for-robot-training-through-breakthroughs-in-simulation",
+    "priority": true
+  },
+  "dexrobot": {
+    "website": "https://www.dex-robot.com/",
+    "evidence": "https://www.dex-robot.com/productionDexhand",
+    "priority": true
+  },
+  "openai": {
+    "sources": [
+      {
+        "key": "rss",
+        "kind": "feed",
+        "name": "OpenAI 官方动态",
+        "url": "https://openai.com/news/rss.xml"
+      }
+    ]
+  },
+  "nvidia": {
+    "sources": [
+      {
+        "key": "rss",
+        "kind": "feed",
+        "name": "NVIDIA 官方博客",
+        "url": "https://blogs.nvidia.com/feed/"
+      }
+    ]
+  },
+  "google-deepmind": {
+    "sources": [
+      {
+        "key": "rss",
+        "kind": "feed",
+        "name": "Google DeepMind 官方博客",
+        "url": "https://deepmind.google/blog/rss.xml"
+      }
+    ]
+  },
+  "tian-keyu-newco": {
+    "disabledReason": "公司正式名称尚未公开，无法建立可靠检索范围"
+  },
+  "flexiv": {
+    "website": "https://www.flexiv.com/news",
+    "evidence": "https://www.flexiv.com/"
+  },
+  "universal-robots": {
+    "website": "https://www.universal-robots.com/news-and-media/news-center/",
+    "evidence": "https://www.universal-robots.com/news-and-media/news-center/"
+  },
+  "groq": {
+    "website": "https://groq.com/blog",
+    "evidence": "https://groq.com/"
+  },
+  "psiquantum": {
+    "website": "https://www.psiquantum.com/",
+    "evidence": "https://www.psiquantum.com/"
+  },
+  "anthropic": {
+    "website": "https://platform.claude.com/docs/en/models/overview",
+    "evidence": "https://docs.anthropic.com/en/docs/about-claude/models/overview"
+  },
+  "brainco": {
+    "website": "https://www.brainco.tech/en-US/products/revo3",
+    "evidence": "https://www.brainco.cn/en-US/products/revo3"
+  },
+  "jaka": {
+    "website": "https://www.jaka.com/en",
+    "evidence": "https://www.jaka.com/"
+  },
+  "tesollo": {
+    "website": "https://www.tesollo.com/products/",
+    "evidence": "https://en.tesollo.com/products/"
+  }
+}

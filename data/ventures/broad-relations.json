@@ -1,0 +1,47 @@
+[
+  {
+    "id": "applied-materials-besi-investment-2025",
+    "from": "applied-materials",
+    "to": "besi",
+    "type": "investor",
+    "title": "应用材料公告对 Besi 进行战略投资；这是公告时点的投资关系记录。",
+    "date": "2025-04-14",
+    "sources": [
+      {
+        "title": "Applied Materials Announces a Strategic Investment in BE Semiconductor Industries | Applied Materials",
+        "url": "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-strategic-investment-be",
+        "date": "2025-04-14"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-wayve-investment-2024",
+    "from": "nvidia",
+    "to": "wayve",
+    "type": "investor",
+    "title": "Wayve 公告 NVIDIA 参与其 C 轮融资；这是该轮融资的历史记录。",
+    "date": "2024-05-07",
+    "sources": [
+      {
+        "title": "Wayve Raises Over $1 Billion Led by SoftBank to Develop Embodied AI Products for Automated Driving - Wayve",
+        "url": "http://wayve.ai/press/series-c",
+        "date": "2024-05-07"
+      }
+    ]
+  },
+  {
+    "id": "catl-sungrow-partnership-2022",
+    "from": "catl",
+    "to": "sungrow",
+    "type": "partner",
+    "title": "阳光电源公告披露与宁德时代签署战略合作协议，合作范围包括储能产品创新及全球应用。",
+    "date": "2022-09-04",
+    "sources": [
+      {
+        "title": "阳光电源与宁德时代签署战略合作协议__阳光电源 SUNGROW",
+        "url": "https://cn.sungrowpower.com/news/1374.html",
+        "date": "2022-09-04"
+      }
+    ]
+  }
+]

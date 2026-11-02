@@ -1,0 +1,96 @@
+---
+import Base from "../../layouts/Base.astro";
+import Icon from "../../components/Icon.astro";
+---
+
+<Base title="我的工作台" current="workspace">
+  <div class="wrap page workspace-settings" data-workspace-settings>
+    <div class="page-head">
+      <div>
+        <p class="page-kicker">PERSONAL WORKSPACE</p>
+        <h1>把研究留下来。</h1>
+        <p>管理关注与阅读进度，在设备之间带走你的研究清单。</p>
+      </div>
+      <a class="btn" href="/?scope=watching">
+        返回关注动态 <Icon name="arrow" />
+      </a>
+    </div>
+    <div class="workspace-summary" data-workspace-summary></div>
+    <div class="workspace-settings-grid">
+      <section class="panel">
+        <div class="panel-head">
+          <h2>备份与恢复</h2>
+          <Icon name="download" />
+        </div>
+        <div class="panel-body">
+          <p>
+            关注、收藏、已读和暂不关注状态只保存在当前浏览器。导出一份备份，可在其他设备或清理浏览器前保留它们。
+          </p>
+          <div class="actions">
+            <button class="btn primary-action" data-export-workspace>
+              <Icon name="download" />
+              导出工作台备份
+            </button>
+            <label class="btn import-file">
+              选择备份文件
+              <input
+                type="file"
+                accept="application/json,.json"
+                data-import-workspace
+              />
+            </label>
+          </div>
+          <div class="workspace-import-preview" data-import-preview hidden>
+            <p data-import-description></p>
+            <button class="btn primary-action" data-confirm-import>
+              合并到当前工作台
+            </button>
+            <button class="btn" data-cancel-import>
+              取消
+            </button>
+          </div>
+          <p class="workspace-message" data-workspace-message role="status"></p>
+          <p class="muted">
+            文件仅在本机读取，不上传。导入会合并清单和阅读进度，不清空已有记录。
+          </p>
+        </div>
+      </section>
+      <section class="panel">
+        <div class="panel-head">
+          <h2>继续研究</h2>
+          <Icon name="book" />
+        </div>
+        <div class="workspace-shortcuts">
+          <a href="/companies/?watched=1">
+            <Icon name="star" />
+            <span>
+              <strong>整理关注公司</strong>
+              <small>查看已关注公司，调整研究范围</small>
+            </span>
+            <Icon name="arrow" />
+          </a>
+          <a href="/?scope=saved">
+            <Icon name="bookmark" />
+            <span>
+              <strong>回看收藏动态</strong>
+              <small>保留标题、时间和原文入口</small>
+            </span>
+            <Icon name="arrow" />
+          </a>
+          <a href="/?scope=dismissed&days=0">
+            <Icon name="inbox" />
+            <span>
+              <strong>暂不关注的动态</strong>
+              <small>随时恢复到动态列表</small>
+            </span>
+            <Icon name="arrow" />
+          </a>
+        </div>
+      </section>
+    </div>
+    <p class="workspace-footnote">
+      收藏保留的是公开信息的本地副本，不是原文全文。原文可能更新或下线；本机备份不能替代公司核验，也不会自动跨设备同步。
+    </p>
+  </div>
+  <script src="../../scripts/workspace-settings.ts"></script>
+</Base>

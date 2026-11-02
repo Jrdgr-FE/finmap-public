@@ -1,0 +1,394 @@
+group:
+  id: citic
+  name: 中国中信集团有限公司
+  short: 中信集团
+  en: CITIC Group
+  nature: 中央金融企业（国有独资，财政部代表国务院履行出资人职责）
+  founded: 1979
+  hq: 北京
+  website: https://www.group.citic
+  financial_platform: 中国中信金融控股有限公司（中信金控，2022 年 3 月获批）
+  intro: >-
+    1979 年由荣毅仁创办，是改革开放后最早成立的综合性企业集团之一，业务横跨
+    综合金融服务、先进智造、先进材料、新消费、新型城镇化五大板块。金融牌照的完整度在国内集团里数第一档：银行、证券、信托、保险、金融资产、金融租赁、基金、期货、消费金融、财务公司十类齐全。
+    2022 年设立中信金控，把分散的金融股权集中到一张金控牌照之下。
+  sources:
+    - { title: "中信集团官网 · 多元中信", url: "https://www.group.citic/html/Diversified_Portfolio/", date: "2026-02" }
+    - { title: "中国中信集团有限公司各级财务并表子公司名单（截至2026年3月末）", url: "https://www.group.citic/uploadfile/2026/0416/20260416453660.pdf", date: "2026-03-31" }
+    - { title: "中国经营报《百亿加码金租 中信集团再扩金融版图》", url: "https://app.dahecube.com/nweb/news/20250112/223492n58303fd3302.htm", date: "2025-01-12" }
+
+entities:
+  # ── 控股链条 ──────────────────────────────────────────────
+  - id: citic-corp
+    name: 中国中信股份有限公司
+    short: 中信股份
+    category: holding
+    type: investment-holding
+    listed: ["0267.HK"]
+    website: https://www.citic.com
+    intro: >-
+      中信集团的境外上市平台，承接集团绝大部分经营性资产。中信金控即通过它下面的
+      中信有限间接持有。理解中信的股权，要从这一层往下看。
+    business: [投资控股, 资产整合]
+    parent: ROOT
+    stake: 100
+    stake_asof: "2022-03"
+    sources:
+      - { title: "证券时报《中信保诚人寿50%股权将划转至中信金控》", url: "https://www.stcn.com/company/gsxw/202207/t20220712_4734225.html", date: "2022-07-12" }
+
+  - id: citic-ltd
+    name: 中国中信有限公司
+    short: 中信有限
+    category: holding
+    type: investment-holding
+    intro: 中信股份的全资子公司，划转前是中信银行、中信证券的直接持股主体，2022—2023 年把金融股权陆续划给了中信金控。
+    business: [投资控股]
+    parent: citic-corp
+    stake: 100
+    sources:
+      - { title: "证券时报《中信保诚人寿50%股权将划转至中信金控》", url: "https://www.stcn.com/company/gsxw/202207/t20220712_4734225.html", date: "2022-07-12" }
+
+  - id: citic-holdings
+    name: 中国中信金融控股有限公司
+    short: 中信金控
+    category: holding
+    type: financial-holding
+    regulator: 中国人民银行
+    founded: 2022
+    website: https://www.cfhc.citic
+    intro: >-
+      2022 年 3 月与北京金融控股集团同期获得央行首批金融控股公司设立许可。注册资本 338 亿元，是中信集团综合金融板块的平台主体，直接持有银行、证券、信托、保险、消费金融等主要金融子公司股权。
+    business: [金融股权管理, 融融协同, 风险隔离]
+    parent: citic-ltd
+    stake: 100
+    sources:
+      - { title: "证券时报《中信保诚人寿50%股权将划转至中信金控》", url: "https://www.stcn.com/company/gsxw/202207/t20220712_4734225.html", date: "2022-07-12" }
+      - { title: "中信银行公告（临2024-069）· 中信金控基本情况", url: "https://www.citicbank.com/about/investor/notice/ashare/202411/P020241129669892990590.pdf", date: "2024-11-29" }
+
+  # ── 中信金控直接持有 ───────────────────────────────────────
+  - id: citic-bank
+    name: 中信银行股份有限公司
+    short: 中信银行
+    category: banking
+    type: joint-stock-commercial-bank
+    license_code: B0006H111000001
+    regulator: 国家金融监督管理总局
+    founded: 1987
+    listed: ["601998.SH", "0998.HK"]
+    website: https://www.citicbank.com
+    intro: >-
+      全国 12 家股份制商业银行之一，2007 年 A+H 同步上市。2025 年末总资产突破
+      10 万亿元，占中信集团总资产的八成左右，是集团金融板块的压舱石。持有中信金租、信银理财、信银金投、百信银行、阿尔金银行等 8 家附属机构。
+    business: [公司银行, 投资银行, 交易银行, 零售银行, 金融市场, 财富管理]
+    parent: citic-holdings
+    stake: 64.95
+    stake_asof: "2025-02-14"
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（截至2024年6月30日）", url: "https://www.nfra.gov.cn/chinese/docfile/2024/50630650beb546c5800fed6db230bff0.pdf", date: "2024-06-30" }
+      - { title: "中信银行《关于控股股东因可转债转股持股比例被动稀释的权益变动提示性公告》", url: "http://static.cninfo.com.cn/finalpage/2025-02-14/1222535956.PDF", date: "2025-02-14" }
+      - { title: "中信银行官网 · 银行简介", url: "https://www.citicbank.com/about/introduction/brief/", date: "2025-12-31" }
+
+  - id: citic-securities
+    name: 中信证券股份有限公司
+    short: 中信证券
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 1995
+    listed: ["600030.SH", "6030.HK"]
+    website: https://www.citics.com
+    intro: >-
+      国内首家资产规模破万亿的证券公司，主要财务指标连续十余年行业第一。注意一个容易被忽略的事实：中信证券无控股股东、无实际控制人，中信金控以
+      19.84% 的持股位居第一大股东——它是"被并表"而非"被控股"。
+    business: [投资银行, 财富管理, 机构服务, 资产管理, 自营交易]
+    parent: citic-holdings
+    stake: 19.84
+    stake_asof: "2025-12-31"
+    note: 无控股股东及实际控制人，中信金控为第一大股东。
+    sources:
+      - { title: "中信证券 2026 年面向专业机构投资者公开发行公司债券文件（中诚信评级）", url: "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2026-05-25/245320_20260525_O03I.pdf", date: "2026-05-25" }
+
+  - id: citic-trust
+    name: 中信信托有限责任公司
+    short: 中信信托
+    category: nonbank
+    type: trust-company
+    regulator: 国家金融监督管理总局
+    founded: 1988
+    website: https://www.citictrust.com.cn
+    intro: >-
+      前身为 1988 年经人民银行批准成立的中信兴业信托投资公司，注册资本 112.76 亿元。信托资产余额长期居行业首位，2024 年三季度末达 2.52 万亿元。
+      2023 年 2 月股权划转完成后，成为中信金控全资子公司。
+    business: [信托业务, 固有业务, 家族信托, 资产证券化]
+    parent: citic-holdings
+    stake: 100
+    sources:
+      - { title: "新京报《信托一哥迎来股权变更 中信信托将成为中信金控全资子公司》", url: "https://m.bjnews.com.cn/detail/1677583275168564.html", date: "2023-02-27" }
+      - { title: "中国经营报《百亿加码金租 中信集团再扩金融版图》", url: "https://app.dahecube.com/nweb/news/20250112/223492n58303fd3302.htm", date: "2025-01-12" }
+
+  - id: citic-prudential-life
+    name: 中信保诚人寿保险有限公司
+    short: 中信保诚人寿
+    category: insurance
+    type: life-insurer
+    regulator: 国家金融监督管理总局
+    founded: 2000
+    website: https://www.citic-prudential.com.cn
+    intro: >-
+      中信集团与英国保诚集团 2000 年合资设立，双方各持 50%。
+      2023 年 12 月完成 25 亿元增资，注册资本由 23.6 亿元增至 48.6 亿元，持股比例不变。全资子公司中信保诚资管 2020 年 3 月成立，持有保险资管牌照。
+    business: [人寿保险, 健康保险, 意外伤害保险, 年金]
+    parent: citic-holdings
+    stake: 50
+    stake_asof: "2023-12-14"
+    sources:
+      - { title: "中信保诚人寿《关于变更注册资本有关情况的信息披露公告》", url: "https://www.citic-prudential.com.cn/UploadFiles/file/202312201122209635934-%E6%83%85%E5%86%B5%E7%9A%84%E4%BF%A1%E6%81%AF%E6%8A%AB%E9%9C%B2%E5%85%AC%E5%91%8A.pdf", date: "2023-12-14" }
+      - { title: "证券时报《中信保诚人寿50%股权将划转至中信金控》", url: "https://www.stcn.com/company/gsxw/202207/t20220712_4734225.html", date: "2022-07-12" }
+
+  - id: citic-consumer-finance
+    name: 中信消费金融有限公司
+    short: 中信消费金融
+    category: nonbank
+    type: consumer-finance
+    regulator: 国家金融监督管理总局
+    founded: 2019
+    intro: >-
+      2019 年 7 月开业的全国第 24 家持牌消费金融公司，也是首家由信托公司参与发起的消金公司。股权几经划转：成立时中信有限 35.1% + 中信信托 34.9% + 金蝶 30%，2023 年 7 月后
+      中信金控持股 70%、金蝶持股 30%，注册资本由 3 亿元增至 10 亿元。
+      2023 年末总资产 110.38 亿元，在 30 余家消金公司中规模排名靠后。
+    business: [个人消费贷款, 线上信贷, 智能风控]
+    parent: citic-holdings
+    stake: 70
+    stake_asof: "2023-07-03"
+    sources:
+      - { title: "中信集团官网 · 中信消费金融", url: "https://www.citic.com/html/Diversified_Portfolio/Financial_Business/Eciticcfc/", date: "2026-02" }
+      - { title: "中国网财经《中信金控获准成为中信消费金融控股股东 持股比例70%》", url: "https://www.3news.cn/yaowen/2023/0703/1003035.html", date: "2023-07-03" }
+
+  # ── 中信银行旗下 ──────────────────────────────────────────
+  - id: citic-wealth
+    name: 信银理财有限责任公司
+    short: 信银理财
+    category: asset-management
+    type: wealth-management
+    regulator: 国家金融监督管理总局
+    founded: 2020
+    website: https://www.citic-wealth.com
+    intro: 中信银行全资理财子公司，注册资本 50 亿元，注册地上海，2020 年正式开业。品牌名"中信理财"。
+    business: [理财产品发行, 受托资产管理]
+    parent: citic-bank
+    stake: 100
+    sources:
+      - { title: "信银理财官网", url: "https://www.citic-wealth.com/", date: "2026-02" }
+      - { title: "中信银行官网 · 银行简介", url: "https://www.citicbank.com/about/introduction/brief/", date: "2025-12-31" }
+
+  - id: citic-financial-leasing
+    name: 中信金融租赁有限公司
+    short: 中信金租
+    category: nonbank
+    type: financial-leasing
+    regulator: 国家金融监督管理总局
+    founded: 2015
+    intro: >-
+      中信银行 100% 持股的银行系金融租赁公司，注册资本 70 亿元。中信集团在金融租赁上布局较晚，2025 年收购华融金租后才形成"中信金租 + 华融金租"双牌照格局。
+    business: [融资租赁, 经营租赁, 飞机船舶租赁]
+    parent: citic-bank
+    stake: 100
+    sources:
+      - { title: "中国经营报《百亿加码金租 中信集团再扩金融版图》", url: "https://app.dahecube.com/nweb/news/20250112/223492n58303fd3302.htm", date: "2025-01-12" }
+      - { title: "中信银行官网 · 银行简介", url: "https://www.citicbank.com/about/introduction/brief/", date: "2025-12-31" }
+
+  - id: citic-aic
+    name: 信银金融资产投资有限公司
+    short: 信银金投
+    category: nonbank
+    type: aic
+    regulator: 国家金融监督管理总局
+    founded: 2025
+    website: https://www.citicbank.com
+    intro: >-
+      中信银行全资的金融资产投资公司（AIC），注册资本 100 亿元，注册地广州，
+      2025 年 11 月获金融监管总局批复开业。AIC 牌照的用途是市场化债转股和股权投资。
+    business: [市场化债转股, 股权投资]
+    parent: citic-bank
+    stake: 100
+    sources:
+      - { title: "中信银行官网 · 银行简介", url: "https://www.citicbank.com/about/introduction/brief/", date: "2025-12-31" }
+      - { title: "维基百科 · 中信银行（开业批复记录）", url: "https://zh.wikipedia.org/zh-hans/%E4%B8%AD%E4%BF%A1%E9%93%B6%E8%A1%8C", date: "2025-11-23" }
+
+  - id: aixin-bank
+    name: 中信百信银行股份有限公司
+    short: 百信银行
+    category: banking
+    type: direct-bank
+    regulator: 国家金融监督管理总局
+    founded: 2017
+    website: https://www.aibank.com
+    intro: >-
+      国内首家独立法人直销银行，2017 年 9 月由中信银行与百度联合发起设立。截至 2024 年末股本 56.34 亿元，中信银行持股 65.70%、福建百度博瑞 26.03%、加拿大养老基金投资公司（CPPIB）8.27%。
+    business: [数字银行, 消费信贷, 财富管理代销]
+    parent: citic-bank
+    stake: 65.7
+    stake_asof: "2024-12-31"
+    sources:
+      - { title: "中信百信银行股份有限公司 2025 年跟踪评级报告", url: "https://www.chinamoney.org.cn/dqs/cm-s-notice-query/fileDownLoad.do?contentId=3164703&mode=save&priority=0", date: "2025" }
+
+  - id: citic-bank-intl
+    name: 中信银行（国际）有限公司
+    short: 信银国际
+    category: banking
+    type: overseas-bank
+    founded: 1922
+    website: https://www.cncbinternational.com
+    intro: >-
+      中信银行通过中信国际金融控股持有的香港持牌银行，在香港、澳门、纽约、洛杉矶、新加坡及内地设有 28 家营业网点，是中信的境外业务平台。
+    business: [跨境银行, 公司金融, 私人银行]
+    parent: citic-bank
+    sources:
+      - { title: "中信银行官网 · 银行简介", url: "https://www.citicbank.com/about/introduction/brief/", date: "2025-12-31" }
+
+  - id: altyn-bank
+    name: 阿尔金银行股份有限公司
+    short: 阿尔金银行
+    category: banking
+    type: overseas-bank
+    founded: 1998
+    intro: 中信银行持股的哈萨克斯坦商业银行，在哈设有 7 家营业网点和 1 家私人银行中心，是"一带一路"沿线的落点。
+    business: [商业银行, 跨境结算]
+    parent: citic-bank
+    sources:
+      - { title: "中信银行官网 · 银行简介", url: "https://www.citicbank.com/about/introduction/brief/", date: "2025-12-31" }
+
+  - id: linan-citic-village-bank
+    name: 浙江临安中信村镇银行股份有限公司
+    short: 临安中信村镇银行
+    category: banking
+    type: village-bank
+    regulator: 国家金融监督管理总局
+    intro: 中信银行持股 51% 的村镇银行，服务临安县域小微与农户。
+    business: [县域存贷, 小微金融]
+    parent: citic-bank
+    stake: 51
+    stake_asof: "2024-12-31"
+    sources:
+      - { title: "中信银行 2024 年年度报告", url: "https://pdf.dfcfw.com/pdf/H2_AN202503261647822697_1.pdf", date: "2025-03-26" }
+
+  # ── 中信证券旗下 ──────────────────────────────────────────
+  - id: chinaamc
+    name: 华夏基金管理有限公司
+    short: 华夏基金
+    category: asset-management
+    type: fund-management
+    regulator: 中国证券监督管理委员会
+    founded: 1998
+    website: https://www.chinaamc.com
+    intro: 中信证券持股 62.2% 的第一大股东地位，是国内管理规模最大的公募基金公司之一。
+    business: [公募基金, 专户, ETF, 养老金]
+    parent: citic-securities
+    stake: 62.2
+    stake_asof: "2025-01"
+    sources:
+      - { title: "中国经营报《百亿加码金租 中信集团再扩金融版图》", url: "https://app.dahecube.com/nweb/news/20250112/223492n58303fd3302.htm", date: "2025-01-12" }
+
+  - id: citic-futures
+    name: 中信期货有限公司
+    short: 中信期货
+    category: securities
+    type: futures-company
+    regulator: 中国证券监督管理委员会
+    website: https://www.citicf.com
+    intro: 中信证券 100% 持股的期货公司，是中信系在商品与金融衍生品上的通道。
+    business: [商品期货经纪, 金融期货经纪, 风险管理]
+    parent: citic-securities
+    stake: 100
+    sources:
+      - { title: "中国经营报《百亿加码金租 中信集团再扩金融版图》", url: "https://app.dahecube.com/nweb/news/20250112/223492n58303fd3302.htm", date: "2025-01-12" }
+
+  # ── 中信保诚人寿旗下 ──────────────────────────────────────
+  - id: citic-prudential-am
+    name: 中信保诚资产管理有限责任公司
+    short: 中信保诚资管
+    category: asset-management
+    type: insurance-amc
+    regulator: 国家金融监督管理总局
+    founded: 2020
+    intro: 中信保诚人寿全资的保险资产管理公司，2020 年 3 月成立，主要受托管理保险资金。
+    business: [保险资金运用, 组合类资管产品]
+    parent: citic-prudential-life
+    stake: 100
+    sources:
+      - { title: "证券时报《中信保诚人寿50%股权将划转至中信金控》", url: "https://www.stcn.com/company/gsxw/202207/t20220712_4734225.html", date: "2022-07-12" }
+
+  # ── 金融资产板块 ──────────────────────────────────────────
+  - id: citic-financial-am
+    name: 中国中信金融资产管理股份有限公司
+    short: 中信金融资产
+    category: nonbank
+    type: amc
+    regulator: 国家金融监督管理总局
+    founded: 1999
+    listed: ["2799.HK"]
+    website: https://www.famc.citic
+    intro: >-
+      原中国华融资产管理股份有限公司（1999 年 11 月成立，2015 年港股上市），四大国有 AMC 之一。
+      2021 年引战后中信集团入局，2022 年 11 月银保监会批复中信集团受让财政部股权，中信集团以 26.46% 成为第一大股东，2024 年 1 月完成更名为"中信金融资产"。财政部仍持股 24.76%。
+    business: [不良资产经营, 问题企业重组, 金融服务]
+    parent: ROOT
+    stake: 26.46
+    stake_asof: "2022-11"
+    sources:
+      - { title: "中国证券网《银保监会批准中国华融变更股权结构 中信集团跃升第一大股东》", url: "https://news.cnstock.com/news,bwkx-202211-4982087.htm", date: "2022-11" }
+      - { title: "澎湃新闻《中国华融加入中信集团：拟更名中信金融资产》", url: "https://www.thepaper.cn/newsDetail_forward_25333464", date: "2023-11-17" }
+
+  - id: huarong-financial-leasing
+    name: 华融金融租赁股份有限公司
+    short: 华融金租
+    category: nonbank
+    type: financial-leasing
+    regulator: 国家金融监督管理总局
+    founded: 1984
+    intro: >-
+      1984 年由浙江省租赁公司起步，2001 年 12 月改制为浙江金融租赁股份有限公司，后更名华融金融租赁，总部杭州。中信集团把金融租赁视为六大业态中的短板，2025 年推动收购华融金租，补齐与中信金租的双牌照布局。现由中国中信集团有限公司持股 60%、中信金融资产管理股份有限公司持股 19.92%——
+      注意持股主体是集团本级而不是中信金融资产，公司名称至今未改。
+    business: [融资租赁, 船舶租赁, 飞机租赁, 装备制造租赁]
+    parent: ROOT
+    stake: 60
+    stake_asof: "2026-09"
+    held_via: 中国中信集团有限公司直接持股 60%；中国中信金融资产管理股份有限公司持股 19.92%
+    sources:
+      - { title: "国家金融监督管理总局《银行业金融机构法人名单》（机构编码见名单）", url: "https://www.nfra.gov.cn/chinese/docfile/2025/86c58b1ad810422c8fa6c6d0107f1626.pdf", date: "2025-06-30" }
+      - { title: "中国中信集团有限公司各级财务并表子公司名单（截至2026年3月末）", url: "https://www.group.citic/uploadfile/2026/0416/20260416453660.pdf", date: "2026-03-31" }
+      - { title: "中国经营报《百亿加码金租 中信集团再扩金融版图》", url: "https://app.dahecube.com/nweb/news/20250112/223492n58303fd3302.htm", date: "2025-01-12" }
+
+  # ── 其他持牌主体 ──────────────────────────────────────────
+  - id: citic-finance-co
+    name: 中信财务有限公司
+    short: 中信财务
+    category: nonbank
+    type: finance-company
+    regulator: 国家金融监督管理总局
+    intro: 中信集团的企业集团财务公司，为集团内成员单位提供存贷、结算与票据服务。
+    business: [成员单位存贷, 结算, 票据]
+    parent: ROOT
+    sources:
+      - { title: "中信集团官网 · 多元中信", url: "https://www.group.citic/html/Diversified_Portfolio/", date: "2026-02" }
+
+  # ── 品牌关联但非控股 ──────────────────────────────────────
+  - id: citic-jiantou
+    name: 中信建投证券股份有限公司
+    short: 中信建投
+    category: securities
+    type: securities-firm
+    regulator: 中国证券监督管理委员会
+    founded: 2005
+    listed: ["601066.SH", "6066.HK"]
+    website: https://www.csc108.com
+    intro: >-
+      顶着"中信"字号，但早已不是中信集团的控股企业。2005 年由中信证券与中国建银
+      合资设立，中信证券原持股 60%；2010 年转让 53% 股权后降至 5.58%，
+      2019 年 6 月公告清仓式减持，彻底退出。现第一大股东为北京金融控股集团（34.61%）。中信集团官网仍把它列在综合金融服务板块，容易造成误读。
+    business: [投资银行, 财富管理, 交易及机构客户服务]
+    parent: ROOT
+    relation: affiliate
+    sources:
+      - { title: "每日经济新闻《中信证券要清仓减持中信建投！》", url: "https://www.nbd.com.cn/articles/2019-06-25/1347159.html", date: "2019-06-25" }
+      - { title: "中国基金报《首批金控牌照来了！揭秘5家申设企业背后资本与旗下金融子公司》", url: "https://www.chnfund.com/article/AR2022031819061580325676", date: "2022-03-18" }

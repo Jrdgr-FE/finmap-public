@@ -1,0 +1,26 @@
+[
+  {
+    "id": "openai",
+    "companyId": "openai",
+    "name": "OpenAI 官方动态",
+    "url": "https://openai.com/news/rss.xml",
+    "allowedHosts": ["openai.com", "www.openai.com"],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "id": "nvidia",
+    "companyId": "nvidia",
+    "name": "NVIDIA 官方博客",
+    "url": "https://blogs.nvidia.com/feed/",
+    "allowedHosts": ["blogs.nvidia.com", "nvidia.com", "www.nvidia.com", "nvidianews.nvidia.com"],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "id": "google-deepmind",
+    "companyId": "google-deepmind",
+    "name": "Google DeepMind 官方博客",
+    "url": "https://deepmind.google/blog/rss.xml",
+    "allowedHosts": ["deepmind.google", "www.deepmind.google"],
+    "verifiedAt": "2026-10-23"
+  }
+]
