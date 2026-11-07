@@ -44,6 +44,29 @@ for (const app of document.querySelectorAll<HTMLElement>("[data-monitor]")) {
   ) as MonitorSnapshot;
   const fixedCompany = app.dataset.company ?? "",
     coverage = app.dataset.coverage === "true";
+  const initialEvents = Array.isArray(snapshot.events) ? [...snapshot.events] : [];
+  let supplementalLoaded = fixedCompany !== "";
+  let supplementalEvents: MonitorEvent[] = [...initialEvents];
+  function mergeSupplemental(next: MonitorSnapshot): MonitorSnapshot {
+    if (!supplementalEvents.length) return next;
+    const existingIds = new Set(next.events.map((e) => e.id));
+    const existingUrls = new Set(
+      next.events.flatMap((e) => (e.sources ?? []).map((s) => s.url).filter(Boolean)),
+    );
+    const added: MonitorEvent[] = [];
+    for (const ev of supplementalEvents) {
+      if (fixedCompany && ev.companyId !== fixedCompany) continue;
+      if (existingIds.has(ev.id)) continue;
+      const primaryUrl = ev.sources?.[0]?.url;
+      if (primaryUrl && existingUrls.has(primaryUrl)) continue;
+      existingIds.add(ev.id);
+      if (primaryUrl) existingUrls.add(primaryUrl);
+      added.push(ev);
+    }
+    if (!added.length) return next;
+    const mergedEvents = sortEvents([...next.events, ...added]);
+    return { ...next, events: mergedEvents };
+  }
   const form = app.querySelector<HTMLFormElement>("[data-filters]");
   const dialog = app.querySelector<HTMLDialogElement>(".event-drawer")!;
   const desktopReader = matchMedia("(min-width: 1101px)");
@@ -64,7 +87,9 @@ for (const app of document.querySelectorAll<HTMLElement>("[data-monitor]")) {
     company: fixedCompany || params.get("company") || "",
     days: ["0", "1", "7", "30", "90"].includes(params.get("days") ?? "")
       ? params.get("days")!
-      : params.get("scope") === "saved"
+      : params.get("scope") === "saved" ||
+          params.get("q") ||
+          params.get("company")
         ? "0"
         : "7",
     kind: params.get("kind") ?? "",
@@ -609,20 +634,34 @@ for (const app of document.querySelectorAll<HTMLElement>("[data-monitor]")) {
       button = app.querySelector<HTMLButtonElement>("[data-refresh]");
     if (button) button.disabled = true;
     try {
+      const disclosuresPromise = !supplementalLoaded
+        ? fetch("/data/listed-disclosures.json", {
+            signal: AbortSignal.timeout(10000),
+          })
+            .then((res) => (res.ok ? res.json() : null))
+            .catch(() => null)
+        : Promise.resolve(null);
       const r = await fetch(
         "/api/monitor" +
           (fixedCompany ? "?company=" + encodeURIComponent(fixedCompany) : ""),
         { signal: AbortSignal.timeout(fixedCompany ? 12000 : 30000) },
       );
       if (!r.ok) throw Error("unavailable");
-      const next = await r.json();
+      const [next, disclosures] = await Promise.all([
+        r.json(),
+        disclosuresPromise,
+      ]);
+      if (Array.isArray(disclosures?.events)) {
+        supplementalEvents = [...initialEvents, ...disclosures.events];
+        supplementalLoaded = true;
+      }
       if (
         next.version !== 1 ||
         !Array.isArray(next.events) ||
         !Array.isArray(next.companies)
       )
         throw Error("invalid");
-      snapshot = next;
+      snapshot = mergeSupplemental(next);
       notice.hidden = true;
       cacheSavedEvents(snapshot.events);
       render();
@@ -645,7 +684,7 @@ for (const app of document.querySelectorAll<HTMLElement>("[data-monitor]")) {
             Array.isArray(next.events) &&
             Array.isArray(next.companies)
           ) {
-            snapshot = next;
+            snapshot = mergeSupplemental(next);
             render();
           }
         } catch {}
@@ -667,6 +706,7 @@ for (const app of document.querySelectorAll<HTMLElement>("[data-monitor]")) {
   }
   form?.addEventListener("submit", (e) => e.preventDefault());
   form?.addEventListener("input", (event) => {
+    const changedName = (event.target as HTMLInputElement).name;
     const data = new FormData(form);
     for (const k of [
       "q",
@@ -680,7 +720,14 @@ for (const app of document.querySelectorAll<HTMLElement>("[data-monitor]")) {
       "signal",
     ] as const)
       if (data.has(k)) state[k] = String(data.get(k));
-    reconcileFilters(state, (event.target as HTMLInputElement).name);
+    if (
+      (changedName === "q" || changedName === "company") &&
+      (state.q || state.company) &&
+      state.days === "7"
+    ) {
+      state.days = "0";
+    }
+    reconcileFilters(state, changedName);
     syncControls();
     state.page = 1;
     updateUrl();
@@ -815,6 +862,7 @@ for (const app of document.querySelectorAll<HTMLElement>("[data-monitor]")) {
     }
     if (t.dataset.filterCompany) {
       state.company = t.dataset.filterCompany;
+      if (state.days === "7") state.days = "0";
       state.page = 1;
       syncControls();
       updateUrl();

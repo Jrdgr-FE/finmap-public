@@ -27,28 +27,34 @@ const matchedCompanies = allCompanies.filter((c) =>
 );
 const reviewedEvents = getTimeline();
 
-const officialCount = items.filter((i) => i.origin === "official").length;
+const officialCount = items.filter(
+  (i) => i.origin === "official" || i.origin === "filing",
+).length;
+const reportCount = items.filter((i) => i.origin === "report").length;
 const titleCount = items.filter(
   (i) =>
     i.origin !== "official" &&
+    i.origin !== "filing" &&
+    i.origin !== "report" &&
     i.associations.some((a) => a.matchType === "title"),
 ).length;
-const summaryOnlyCount = items.length - officialCount - titleCount;
+const summaryOnlyCount =
+  items.length - officialCount - reportCount - titleCount;
 ---
 
 <Base
-  title="公司新闻与事件归档"
-  description="按公司、赛道与证据层级归档已公开的新闻与官方渠道动态，区分官方渠道、标题提及、摘要提及与已整理人工事件。"
+  title="公司新闻、公告与研报归档"
+  description="按公司、赛道与证据层级归档法定披露公告（含投资者关系活动记录表/调研纪要）、卖方个股研报、官方渠道动态与媒体报道。"
   current="news"
 >
   <div class="wrap page">
     <div class="page-head">
       <div>
         <h1>
-          公司新闻与事件归档<span class="count">{stats.articles}</span>
+          公司新闻、公告与研报归档<span class="count">{stats.articles}</span>
         </h1>
         <p>
-          收录公司官方渠道（{officialCount} 条）、标题提及（{titleCount} 条）与摘要提及线索（{summaryOnlyCount} 条），另附 {reviewedEvents.length} 条人工核对的公司历史事件。
+          收录法定公告与官方渠道（{officialCount} 条，含机构调研纪要与定期报告）、卖方个股研报（{reportCount} 篇）、标题直接报道（{titleCount} 条）与摘要提及线索（{summaryOnlyCount} 条），另附 {reviewedEvents.length} 条人工核对的公司历史事件。
         </p>
       </div>
       <div class="actions">
@@ -145,21 +151,28 @@ const summaryOnlyCount = items.length - officialCount - titleCount;
             class="chip"
             data-news-method="direct"
           >
-            核心动态 (官方+标题) <span class="n">{officialCount + titleCount}</span>
+            核心文档 (公告+研报+标题) <span class="n">{officialCount + reportCount + titleCount}</span>
           </button>
           <button
             type="button"
             class="chip"
             data-news-method="official"
           >
-            官方渠道 <span class="n">{officialCount}</span>
+            法定公告与官方 <span class="n">{officialCount}</span>
+          </button>
+          <button
+            type="button"
+            class="chip"
+            data-news-method="report"
+          >
+            卖方研报 <span class="n">{reportCount}</span>
           </button>
           <button
             type="button"
             class="chip"
             data-news-method="title"
           >
-            标题提及 <span class="n">{titleCount}</span>
+            标题报道 <span class="n">{titleCount}</span>
           </button>
           <button
             type="button"
@@ -184,7 +197,7 @@ const summaryOnlyCount = items.length - officialCount - titleCount;
 
       <div class="search-empty" id="news-empty" hidden>
         <p id="news-empty-desc">
-          当前筛选条件下暂无匹配的自动归档新闻。早期非上市公司公开报道较少，零匹配不代表公司无业务进展。
+          当前筛选条件下暂无匹配的归档文档。可尝试切换上方证据标签或重置搜索词。
         </p>
         <div class="news-empty-actions">
           <a class="btn btn-sm btn-primary" id="news-empty-dossier" href="/ventures/" hidden>
@@ -278,28 +291,40 @@ const summaryOnlyCount = items.length - officialCount - titleCount;
       const track = requestedTrack;
       const method = requestedMethod;
 
-      methodBtns.forEach((btn) =>
-        btn.classList.toggle(
-          "is-on",
-          (btn.dataset.newsMethod || "") === method,
-        ),
-      );
-
-      const matches = rows.filter((r) => {
+      const baseRows = rows.filter((r) => {
         const companyOk =
           !company ||
           (r.dataset.companies || "").split(" ").includes(company);
         const trackOk =
           !track || (r.dataset.tracks || "").split(" ").includes(track);
-        const rowMethod = r.dataset.method || "";
-        const methodOk =
-          !method ||
-          (method === "direct"
-            ? rowMethod === "official" || rowMethod === "title"
-            : rowMethod === method);
         const queryOk = !query || (r.dataset.search || "").includes(query);
-        return companyOk && trackOk && methodOk && queryOk;
+        return companyOk && trackOk && queryOk;
       });
+
+      const matchMethod = (r: HTMLElement, m: string) => {
+        const rowMethod = r.dataset.method || "";
+        return (
+          !m ||
+          (m === "direct"
+            ? rowMethod === "official" ||
+              rowMethod === "report" ||
+              rowMethod === "title"
+            : rowMethod === m)
+        );
+      };
+
+      methodBtns.forEach((btn) => {
+        const m = btn.dataset.newsMethod || "";
+        btn.classList.toggle("is-on", m === method);
+        const badge = btn.querySelector(".n");
+        if (badge) {
+          badge.textContent = String(
+            baseRows.filter((r) => matchMethod(r, m)).length,
+          );
+        }
+      });
+
+      const matches = baseRows.filter((r) => matchMethod(r, method));
 
       const show = new Set(matches.slice(0, limit));
       rows.forEach((r) => (r.hidden = !show.has(r)));

@@ -32,8 +32,14 @@ export function normalizePublicArticle(raw) {
   if (!title || !url || !date || !Number.isFinite(Date.parse(date))) return null;
   const id = text(raw.id, 100);
   if (!/^[a-zA-Z0-9_-]+$/.test(id)) return null;
+  const origin = ['official', 'filing', 'report', 'monitor'].includes(raw.origin) ? raw.origin : 'finhot';
   return {
-    id, title, url, ...(raw.origin === 'official' ? { origin: 'official', officialFeedId: text(raw.officialFeedId, 100) } : { origin: 'finhot', finhotUrl: `https://finhot.fun/articles/${encodeURIComponent(id)}` }),
+    id, title, url,
+    ...(origin === 'official'
+      ? { origin: 'official', officialFeedId: text(raw.officialFeedId, 100) }
+      : origin === 'filing' || origin === 'report' || origin === 'monitor'
+        ? { origin, companyId: text(raw.companyId, 100), companyName: text(raw.companyName, 160) }
+        : { origin: 'finhot', finhotUrl: `https://finhot.fun/articles/${encodeURIComponent(id)}` }),
     publishedAt: new Date(date).toISOString(),
     sourceName: text(raw.source_name, 160) || new URL(url).hostname,
     summary: text(raw.summary, 1000), status: 'reported',
@@ -88,9 +94,11 @@ export function archiveNews(previous, publicItems, companies, options = {}) {
   for (const item of [...(previous ?? []), ...publicItems.map(normalizePublicArticle).filter(Boolean)]) {
     if (excluded.has(item.id) || Date.parse(item.publishedAt) < cutoff || !safeUrl(item.url)) continue;
     if (item.origin === 'official') { const source = officialSources.get(item.officialFeedId); if (!source || !companyIds.has(source.companyId) || !source.allowedHosts.includes(new URL(item.url).hostname)) continue; }
+    if (['filing', 'report', 'monitor'].includes(item.origin) && item.companyId && !companyIds.has(item.companyId)) continue;
     const key = canonicalUrl(item.url), prior = byUrl.get(key);
-    // The official source is stronger provenance than a syndicated copy, even during a feed outage.
-    if (!prior || (item.origin === 'official' && prior.origin !== 'official') || (prior.origin !== 'official' && item.origin !== 'official' && item.publishedAt >= prior.publishedAt) || (prior.origin === 'official' && item.origin === 'official' && item.publishedAt >= prior.publishedAt)) byUrl.set(key, item);
+    const isStrong = (o) => o === 'official' || o === 'filing' || o === 'report';
+    // The official/statutory source is stronger provenance than a syndicated copy, even during a feed outage.
+    if (!prior || (isStrong(item.origin) && !isStrong(prior.origin)) || (!isStrong(prior.origin) && !isStrong(item.origin) && item.publishedAt >= prior.publishedAt) || (isStrong(prior.origin) && isStrong(item.origin) && item.publishedAt >= prior.publishedAt)) byUrl.set(key, item);
   }
   return [...byUrl.values()].map((item) => {
     const associations = matchCompanies(item, compiled);
@@ -99,10 +107,26 @@ export function archiveNews(previous, publicItems, companies, options = {}) {
       const existing = associations.findIndex((a) => a.companyId === source.companyId);
       if (existing >= 0) associations.splice(existing, 1);
       associations.unshift({ companyId: source.companyId, matchType: 'official', alias: source.name });
+    } else if (item.origin === 'filing' || item.origin === 'report' || item.origin === 'monitor') {
+      const targetCompanyId = item.companyId || associations[0]?.companyId;
+      if (targetCompanyId && companyIds.has(targetCompanyId)) {
+        const existing = associations.findIndex((a) => a.companyId === targetCompanyId);
+        if (existing >= 0) associations.splice(existing, 1);
+        const companyObj = companies.find((c) => c.id === targetCompanyId);
+        associations.unshift({
+          companyId: targetCompanyId,
+          matchType: item.origin === 'filing' ? 'official' : 'title',
+          alias: item.companyName || companyObj?.name || targetCompanyId,
+        });
+      }
     }
     return {
       id: item.id, title: text(item.title, 500), url: canonicalUrl(item.url),
-      ...(item.origin === 'official' ? { origin: 'official', officialFeedId: item.officialFeedId } : { origin: 'finhot', finhotUrl: `https://finhot.fun/articles/${encodeURIComponent(item.id)}` }),
+      ...(item.origin === 'official'
+        ? { origin: 'official', officialFeedId: item.officialFeedId }
+        : item.origin === 'filing' || item.origin === 'report' || item.origin === 'monitor'
+          ? { origin: item.origin, companyId: item.companyId, companyName: item.companyName }
+          : { origin: 'finhot', finhotUrl: `https://finhot.fun/articles/${encodeURIComponent(item.id)}` }),
       publishedAt: item.publishedAt, sourceName: text(item.sourceName, 160), summary: item.origin === 'official' ? '' : text(item.summary, 1000), status: 'reported', associations,
     };
   }).filter((item) => options.matchedOnly === false || item.associations.length)
@@ -144,7 +168,7 @@ export function validatePublicInput(input) {
 export function updateArchiveCoverage(previous, history, input, now = new Date().toISOString()) {
   const prior = previous?.archiveCoverage;
   const gaps = [...(prior?.gaps ?? [])];
-  const oldFinhot = (history ?? []).filter((item) => item.origin !== 'official');
+  const oldFinhot = (history ?? []).filter((item) => !item.origin || item.origin === 'finhot');
   const current = (input.items ?? []).map(normalizePublicArticle).filter(Boolean);
   const oldKeys = new Set(oldFinhot.flatMap((item) => [item.id, canonicalUrl(item.url)]));
   const overlap = current.some((item) => oldKeys.has(item.id) || oldKeys.has(canonicalUrl(item.url)));

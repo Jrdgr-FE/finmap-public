@@ -397,6 +397,15 @@
   color: var(--accent-text);
   font-weight: 500;
 }
+.news-match-badge.is-report {
+  background: color-mix(in srgb, #0284c7 14%, transparent);
+  color: #0369a1;
+  font-weight: 500;
+}
+:root[data-theme="dark"] .news-match-badge.is-report {
+  background: color-mix(in srgb, #38bdf8 16%, transparent);
+  color: #7dd3fc;
+}
 .map-news-main h3 {
   font-size: 14px;
   font-weight: 550;

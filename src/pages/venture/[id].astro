@@ -74,6 +74,8 @@ const news = getCompanyNews(v.id);
 const directNews = news.filter((i) =>
   i.associations.some((a) => a.companyId === v.id && a.matchType !== "summary"),
 );
+const filingCount = directNews.filter((i) => i.origin === "filing").length;
+const reportCount = directNews.filter((i) => i.origin === "report").length;
 const mentions = news.filter((i) => !directNews.includes(i));
 
 const positions = memberships.map((m) => {
@@ -216,6 +218,7 @@ const facts = [
 
     <nav class="company-section-nav" aria-label="公司档案内容">
       <a href="#company-updates">最新动态</a>
+      <a href="#news">公告与新闻 ({news.length})</a>
       <a href="#positions">产业位置</a>
       {(dex.roles.length > 0 || dex.products.length > 0) && (
         <a href="#dexterity-specs">产品与技术</a>
@@ -360,19 +363,28 @@ const facts = [
 
         <section class="panel" id="news">
           <div class="panel-head">
-            <h2>公开新闻归档</h2>
+            <h2>公开新闻、公告与研报归档</h2>
             <span class="hint">
               {directNews.length
-                ? `直接相关 ${directNews.length} 条`
+                ? `直接相关 ${directNews.length} 条${
+                    filingCount || reportCount
+                      ? `（${[
+                          filingCount ? `法定公告与调研纪要 ${filingCount} 份` : "",
+                          reportCount ? `卖方研报 ${reportCount} 篇` : "",
+                        ]
+                          .filter(Boolean)
+                          .join(" · ")}）`
+                      : ""
+                  }`
                 : "暂无直接标题报道"}
               {mentions.length > 0 ? ` · 摘要提及 ${mentions.length} 条` : ""}
             </span>
             <span class="right">
-              <a href={`/ventures/news/?company=${v.id}`}>新闻检索 →</a>
+              <a href={`/ventures/news/?company=${v.id}`}>全部检索 ({news.length}) →</a>
             </span>
           </div>
           {directNews.length ? (
-            <CompanyNewsList items={directNews.slice(0, 25)} companyId={v.id} />
+            <CompanyNewsList items={directNews.slice(0, 30)} companyId={v.id} />
           ) : (
             <p class="panel-body muted">
               当前公开资讯抓取窗口内暂无该公司的直接标题报道。

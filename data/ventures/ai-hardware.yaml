@@ -826,20 +826,69 @@ companies:
     region: cn
     track: robot-parts
     segment: sensors
+    founded: 2013
+    founders:
+      - 黄源浩
     tags:
       - 3D相机
       - 深度视觉
       - RGB-D
+      - 具身数采
     aliases:
       - 奥比中光科技
-    intro: 提供双目、结构光和 ToF 等 3D 视觉相机，以及相机计算设备和激光雷达等感知产品。
+      - 688322.SH
+    intro: 全球机器人 3D 视觉感知龙头（据弗若斯特沙利文数据，2025 年全球机器人 3D 视觉市场份额 29.0% 居首，服务超 1,000 家机器人企业），构建“全栈自研深度引擎芯片 + 结构光 / iToF / dToF / 双目 / LiDAR 全路线光机 + 真实世界无本体数采套件（EGO / UMI / WristCam）”的物理 AI 视觉基座。
     website: https://www.orbbec.com/Products
-    coverage: profile
-    verifiedAt: 2026-10-23
+    coverage: event-reviewed
+    verifiedAt: 2026-11-06
     sources:
       - title: 3D Vision Cameras for Robotics | Orbbec Products
         url: https://www.orbbec.com/Products
-    events: []
+      - title: 奥比中光：投资者关系活动记录表（2026年11月5日）
+        url: https://pdf.dfcfw.com/pdf/H2_AN202611061831491557_1.pdf
+        date: 2026-11-06
+      - title: 奥比中光：2026年第三季度报告
+        url: https://pdf.dfcfw.com/pdf/H2_AN202610261830927404_1.pdf
+        date: 2026-10-27
+      - title: 奥比中光：关于向香港联交所递交境外上市股份(H股)发行上市申请并刊发申请资料的公告
+        url: https://pdf.dfcfw.com/pdf/H2_AN202609241829866909_1.pdf
+        date: 2026-09-25
+    events:
+      - date: 2026-11-06
+        kind: deployment
+        status: confirmed
+        title: 披露与大晓机器人及其合作伙伴签署万台级采购协议并进入交付阶段，提供深度相机、RGB 相机及无本体数据采集硬件；自研无本体数据采集套件（EGO / UMI / WristCam / Hub）推出不到两个月获超 100 家客户下单
+        sources:
+          - title: 奥比中光：投资者关系活动记录表（2026年11月5日）
+            url: https://pdf.dfcfw.com/pdf/H2_AN202611061831491557_1.pdf
+            date: 2026-11-06
+      - date: 2026-10-27
+        kind: product
+        status: confirmed
+        title: 发布 2026 年第三季度报告及业绩说明会纪要：前三季度面向全球机器人市场的视觉方案销售收入达上年同期 2 倍以上，直接境外收入同比翻倍；越南北宁超 10 万平米制造基地预计 2027 年竣工投产
+        sources:
+          - title: 奥比中光：2026年第三季度报告
+            url: https://pdf.dfcfw.com/pdf/H2_AN202610261830927404_1.pdf
+            date: 2026-10-27
+          - title: 奥比中光：投资者关系活动记录表（2026年第三季度业绩说明会及路演）
+            url: https://pdf.dfcfw.com/pdf/H2_AN202610271831033480_1.pdf
+            date: 2026-10-27
+      - date: 2026-09-25
+        kind: ipo
+        status: confirmed
+        title: 向香港联交所递交境外上市外资股（H 股）发行并上市申请并刊发申请资料；据弗若斯特沙利文数据，按 2025 年收入计公司在全球机器人 3D 视觉感知市场排名第一（份额 29.0%），累计服务超 7,000 家客户、超 1,000 家机器人企业
+        sources:
+          - title: 奥比中光：关于向香港联交所递交境外上市股份(H股)发行上市申请并刊发申请资料的公告
+            url: https://pdf.dfcfw.com/pdf/H2_AN202609241829866909_1.pdf
+            date: 2026-09-25
+      - date: 2025-08-25
+        kind: product
+        status: confirmed
+        title: Gemini 335 / 336 系列双目 3D 相机及 Femto Mega ToF 相机完成与英伟达 NVIDIA Jetson Thor 平台集成适配，面向人形机器人提供高帧率深度感知
+        sources:
+          - title: Humanoid Robots See Smarter — Orbbec 3D Cameras Integrated with NVIDIA Jetson Thor
+            url: https://www.orbbec.com/news/humanoid-robots-see-smarter-orbbec-3d-cameras-are-integrated-with-nvidia-jetson-thor
+            date: 2025-08-25
     country: 中国
     valuation:
       {

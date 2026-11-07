@@ -17,13 +17,30 @@ const index = new Map(getVentures().map((v) => [v.id, v]));
     const own = companyId
       ? item.associations.find((a) => a.companyId === companyId)
       : undefined;
+    const isFiling = item.origin === "filing";
+    const isReport = item.origin === "report";
+    const isIr = isFiling && /投资者关系活动记录表/.test(item.title);
     const method =
-      own?.matchType ||
-      (item.origin === "official"
+      isFiling || item.origin === "official"
         ? "official"
-        : item.associations.some((a) => a.matchType === "title")
-          ? "title"
-          : "summary");
+        : isReport
+          ? "report"
+          : own?.matchType ||
+            (item.associations.some((a) => a.matchType === "title")
+              ? "title"
+              : "summary");
+
+    const badgeLabel = isIr
+      ? "调研纪要"
+      : isFiling
+        ? "法定公告"
+        : isReport
+          ? "券商研报"
+          : method === "official"
+            ? "官方渠道"
+            : method === "title"
+              ? "标题提及"
+              : "仅摘要提及";
 
     const assocCompanies = item.associations
       .map((a) => ({
@@ -55,6 +72,7 @@ const index = new Map(getVentures().map((v) => [v.id, v]));
         }
         data-tracks={filterable ? trackIds.join(" ") : undefined}
         data-method={filterable ? method : undefined}
+        data-origin={filterable ? item.origin || "finhot" : undefined}
         data-search={
           filterable
             ? `${item.title} ${item.summary || ""} ${item.sourceName} ${assocCompanies
@@ -72,16 +90,14 @@ const index = new Map(getVentures().map((v) => [v.id, v]));
               "news-match-badge",
               method === "official"
                 ? "is-official"
-                : method === "title"
-                  ? "is-title"
-                  : "is-summary",
+                : method === "report"
+                  ? "is-report"
+                  : method === "title"
+                    ? "is-title"
+                    : "is-summary",
             ]}
           >
-            {method === "official"
-              ? "官方渠道"
-              : method === "title"
-                ? "标题提及"
-                : "仅摘要提及"}
+            {badgeLabel}
           </span>
         </div>
 
@@ -119,7 +135,7 @@ const index = new Map(getVentures().map((v) => [v.id, v]));
             </div>
             <div class="map-news-links">
               <a href={item.url} target="_blank" rel="noopener noreferrer">
-                阅读原文 ↗
+                {isFiling || isReport ? "PDF 原文 ↗" : "阅读原文 ↗"}
               </a>
               {item.finhotUrl && (
                 <a

@@ -12,8 +12,10 @@ export interface CompanyNewsItem {
   title: string;
   url: string;
   finhotUrl?: string;
-  origin?: 'finhot' | 'official';
+  origin?: 'finhot' | 'official' | 'filing' | 'report' | 'monitor';
   officialFeedId?: string;
+  companyId?: string;
+  companyName?: string;
   publishedAt: string;
   sourceName: string;
   summary: string;
@@ -56,10 +58,15 @@ export function getNewsSnapshot(): CompanyNewsSnapshot {
   const ids = new Set(getVentures().map((v) => v.id));
   const officialSources = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data/news/official-feeds.json'), 'utf8')) as Array<{ id: string; companyId: string; allowedHosts: string[] }>;
   for (const item of data.items) {
-    if (!item.title || !isHttp(item.url) || (item.origin !== 'official' && !item.finhotUrl?.startsWith('https://finhot.fun/articles/')) || !Number.isFinite(Date.parse(item.publishedAt)) || item.status !== 'reported') throw new Error(`Invalid public news article ${item.id}`);
-    if (item.origin === 'official') {
+    const origin = item.origin ?? 'finhot';
+    if (!item.title || !isHttp(item.url) || !['finhot', 'official', 'filing', 'report', 'monitor'].includes(origin) || (origin === 'finhot' && !item.finhotUrl?.startsWith('https://finhot.fun/articles/')) || !Number.isFinite(Date.parse(item.publishedAt)) || item.status !== 'reported') throw new Error(`Invalid public news article ${item.id}`);
+    if (origin === 'official') {
       const source = officialSources.find((entry) => entry.id === item.officialFeedId);
       if (!source || !source.allowedHosts.includes(new URL(item.url).hostname) || item.summary || !item.associations?.some((a) => a.companyId === source.companyId && a.matchType === 'official')) throw new Error(`Invalid official-source attribution ${item.id}`);
+    }
+    if (origin === 'filing' || origin === 'report') {
+      const host = new URL(item.url).hostname;
+      if (!['pdf.dfcfw.com', 'data.eastmoney.com', 'www.cninfo.com.cn'].includes(host)) throw new Error(`Invalid disclosure/report host ${item.id}`);
     }
     if (!Array.isArray(item.associations) || item.associations.some((a) => !ids.has(a.companyId) || !['title', 'summary', 'official'].includes(a.matchType) || !a.alias)) throw new Error(`Invalid public news association ${item.id}`);
   }
@@ -80,6 +87,8 @@ export function getNewsStats() {
     titleMatches: associations.filter((a) => a.matchType === 'title').length,
     mentions: associations.filter((a) => a.matchType === 'summary').length,
     officialMatches: associations.filter((a) => a.matchType === 'official').length,
+    filingMatches: items.filter((item) => item.origin === 'filing').length,
+    reportMatches: items.filter((item) => item.origin === 'report').length,
     degraded: snapshot.degraded ?? false, feeds: snapshot.feeds ?? [],
     bootstrapIncomplete: snapshot.archiveCoverage?.bootstrapIncomplete ?? false,
     coverageGapCount: snapshot.archiveCoverage?.gaps.length ?? 0,

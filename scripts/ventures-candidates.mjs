@@ -10,7 +10,7 @@
  *   npm run ventures:candidates            # 默认最近 14 天
  *   npm run ventures:candidates -- --days 30
  *
- * 对 FinHot 只做只读查询：通过 SSH（主机别名由 FINHOT_SSH_HOST 指定）在服务器上跑一条 SELECT，
+ * 对 FinHot 只做只读查询：通过 `ssh cloud-uk` 在服务器上跑一条 SELECT，
  * 不改服务器、数据库和流水线的任何东西。
  */
 import fs from 'node:fs';
@@ -26,11 +26,7 @@ if (!Number.isFinite(DAYS) || DAYS <= 0) {
   process.exit(1);
 }
 
-const SSH_HOST = process.env.FINHOT_SSH_HOST;
-if (!SSH_HOST) {
-  console.error('请设置 FINHOT_SSH_HOST（能连到 FinHot 服务器的 SSH 主机别名）');
-  process.exit(1);
-}
+const SSH_HOST = process.env.FINHOT_SSH_HOST || 'cloud-uk';
 // 服务器上读数据库连接串的方式。默认从 FinHot 的 env 文件里取 DATABASE_URL。
 const DB_URL_CMD = process.env.FINHOT_DB_URL_CMD || "grep -h '^DATABASE_URL=' /etc/finhot/*.env | head -1 | cut -d= -f2- | tr -d '\"'";
 
