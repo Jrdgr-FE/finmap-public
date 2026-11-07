@@ -16,7 +16,9 @@ import {
   isArticleUrl,
   pageIsReadable,
 } from "../scripts/lib/monitor-core.mjs";
+import zlib from "node:zlib";
 import {
+  decodeBody,
   publicAddress,
   publicUrl,
   robotsAllowed,
@@ -534,4 +536,52 @@ test("actual title forms distinguish business developments from market noise", (
       title,
     );
   }
+});
+
+test("gzipped HTTP responses and SPA metadata/form wrappers remain readable", () => {
+  const html =
+    "<html><head><title>汇川技术(INOVANCE)</title></head><body>" +
+    "工业自动化控制与驱动技术解决方案供应商。".repeat(8) +
+    "</body></html>";
+  const gz = zlib.gzipSync(Buffer.from(html, "utf8"));
+  assert.equal(decodeBody(gz, "gzip", 10000), html);
+  assert.throws(() => decodeBody(gz, "gzip", 20), /response_too_large/);
+
+  const whitespaceH1 = parsePage(
+    `<html><head><title>沐曦MetaX | GPU企业</title></head><body><h1>   \n  </h1><div>${"高性能通用GPU芯片与算力解决方案。".repeat(10)}</div></body></html>`,
+    "https://www.metax-tech.com/",
+    now,
+  );
+  assert.equal(whitespaceH1.title, "沐曦MetaX | GPU企业");
+  assert.equal(pageIsReadable(whitespaceH1), true);
+
+  const tinyArticle = parsePage(
+    `<html><head><title>企业介绍 - 速腾聚创</title></head><body><article>短卡片</article><div>${"数字化激光雷达与机器人感知核心部件量产平台。".repeat(8)}</div></body></html>`,
+    "https://www.robosense.cn/about",
+    now,
+  );
+  assert.equal(pageIsReadable(tinyArticle), true);
+
+  const formWrapped = parsePage(
+    `<html><head><title>Archer Aviation - Investor Relations</title></head><body><form id="form1"><p>${"Archer is designing and developing electric vertical takeoff and landing aircraft. ".repeat(3)}</p></form></body></html>`,
+    "https://investors.archer.com/overview/default.aspx",
+    now,
+  );
+  assert.equal(pageIsReadable(formWrapped), true);
+
+  const spaMeta = parsePage(
+    '<html><head><title>智谱丨BigModel 平台</title><meta name="description" content="智谱大模型开放平台是新一代国产自主通用AI大模型开放平台，研发了多款LLM模型与多模态视觉模型产品，致力于将认知智能技术与千行百业应用结合。"><meta name="keywords" content="大模型,LLM,多模态,智谱开放平台"></head><body><div id="app"></div></body></html>',
+    "https://open.bigmodel.cn/",
+    now,
+  );
+  assert.equal(spaMeta.title, "智谱丨BigModel 平台");
+  assert.equal(pageIsReadable(spaMeta), true);
+
+  const jsonLdOrg = parsePage(
+    `<html><head><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"JAKA Robotics","description":"${"JAKA Robotics is a global leader in collaborative robots and smart manufacturing solutions. ".repeat(2)}"}</script></head><body><div id="app"></div></body></html>`,
+    "https://www.jaka.com/en",
+    now,
+  );
+  assert.equal(jsonLdOrg.title, "JAKA Robotics");
+  assert.equal(pageIsReadable(jsonLdOrg), true);
 });

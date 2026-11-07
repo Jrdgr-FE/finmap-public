@@ -72,11 +72,6 @@ const relationLabels: Record<string, string> = {
           <h1>{track.name}</h1>
         </div>
         <div class="actions">
-          {(track.id === "robot-parts" || track.id === "embodied") && (
-            <a class="btn" href="/ventures/dexterity/">
-              灵巧操作专题 →
-            </a>
-          )}
           <a class="btn" href={`/ventures/?track=${track.id}`}>
             在总图谱中筛选
           </a>

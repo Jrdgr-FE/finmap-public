@@ -40,11 +40,13 @@
     "priority": true
   },
   "dexrobot": {
-    "website": "https://www.dex-robot.com/",
+    "website": "https://github.com/dexrobot",
     "evidence": "https://www.dex-robot.com/productionDexhand",
     "priority": true
   },
   "openai": {
+    "website": "https://github.com/openai",
+    "evidence": "https://openai.com/api",
     "sources": [
       {
         "key": "rss",
@@ -98,7 +100,7 @@
     "evidence": "https://docs.anthropic.com/en/docs/about-claude/models/overview"
   },
   "brainco": {
-    "website": "https://www.brainco.tech/en-US/products/revo3",
+    "website": "https://www.brainco-hz.com/docs/revolimb-hand/en/",
     "evidence": "https://www.brainco.cn/en-US/products/revo3"
   },
   "jaka": {
@@ -108,5 +110,94 @@
   "tesollo": {
     "website": "https://www.tesollo.com/products/",
     "evidence": "https://en.tesollo.com/products/"
+  },
+  "empyrean": {
+    "website": "https://www.empyrean.com.cn/company/information.html",
+    "evidence": "https://www.empyrean.com.cn/company/information.html"
+  },
+  "xynova": {
+    "website": "https://www.xynova.com.cn/",
+    "evidence": "https://www.xynova.com.cn/",
+    "priority": true
+  },
+  "aurora": {
+    "website": "https://aurora.tech/newsroom",
+    "evidence": "https://aurora.tech/"
+  },
+  "amd": {
+    "website": "https://rocm.blogs.amd.com/",
+    "evidence": "https://www.amd.com/en/products/accelerators/instinct/mi300.html"
+  },
+  "deepseek": {
+    "website": "https://api-docs.deepseek.com/",
+    "evidence": "https://www.deepseek.com/en/news/deepseek-v4-1-flash/"
+  },
+  "whoop": {
+    "website": "https://developer.whoop.com/",
+    "evidence": "https://www.whoop.com/"
+  },
+  "archer": {
+    "website": "https://investors.archer.com/overview/default.aspx",
+    "evidence": "https://archer.com/midnight"
+  },
+  "cfs": {
+    "website": "https://github.com/cfs-energy",
+    "evidence": "https://cfs.energy/"
+  },
+  "enflame": {
+    "website": "https://github.com/EnflameTechnology",
+    "evidence": "http://www.enflame-tech.com/"
+  },
+  "quantumctek": {
+    "website": "https://github.com/quantumctek",
+    "evidence": "https://www.quantum-info.com/about/"
+  },
+  "oura": {
+    "website": "https://github.com/ouraring",
+    "evidence": "https://ouraring.com/product/rings"
+  },
+  "celestial-ai": {
+    "website": "https://github.com/MarvellEmbeddedProcessors",
+    "evidence": "https://www.marvell.com/company/newsroom/marvell-completes-acquisition-of-celestial-ai.html"
+  },
+  "intuitive-surgical": {
+    "website": "https://github.com/intuitivesurgical",
+    "evidence": "https://www.intuitive.com/en-us/products-and-services/da-vinci"
+  },
+  "applied-materials": {
+    "website": "https://github.com/AppliedMaterials",
+    "evidence": "http://www.appliedmaterials.com/us/en/semiconductor.html"
+  },
+  "spacex": {
+    "website": "https://github.com/spacex",
+    "evidence": "http://www.spacex.com/"
+  },
+  "abb": {
+    "website": "https://github.com/ros-industrial/abb",
+    "evidence": "https://new.abb.com/robotics"
+  },
+  "primarius": {
+    "officialDisabledReason": "官网境外访问返回 HTTP 502，暂仅保留定向新闻检索"
+  },
+  "huahong-semi": {
+    "officialDisabledReason": "官网境外访问受 WAF 拦截（HTTP 403），暂仅保留定向新闻检索"
+  },
+  "amec": {
+    "officialDisabledReason": "官网境外访问受防火墙拦截（HTTP 550），暂仅保留定向新闻检索"
+  },
+  "galactic-energy": {
+    "officialDisabledReason": "官网境外访问受 WAF 拦截（HTTP 403），暂仅保留定向新闻检索"
+  },
+  "rysen": {
+    "priority": true,
+    "officialDisabledReason": "官网 TLS 证书链缺失中间证书，暂仅保留定向新闻检索"
+  },
+  "encos": {
+    "priority": true,
+    "officialDisabledReason": "官网启用纯脚本反爬壳且无静态摘要，暂仅保留定向新闻检索"
+  },
+  "tashan": {
+    "priority": true,
+    "officialDisabledReason": "官网为纯客户端渲染空壳且无静态元数据，暂仅保留定向新闻检索"
   }
 }

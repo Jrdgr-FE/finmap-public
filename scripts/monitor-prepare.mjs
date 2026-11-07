@@ -54,7 +54,9 @@ const companies = getVentures().map((v) => {
       scope: "公开新闻索引，非全网或社交平台完整覆盖",
     });
   }
-  const website = extra.website ?? v.website;
+  const website = extra.officialDisabledReason
+    ? null
+    : (extra.website ?? v.website);
   if (website)
     sources.push({
       id: `${v.id}:official`,
@@ -87,7 +89,10 @@ const companies = getVentures().map((v) => {
     sources,
     channels: extra.channels ?? [],
     gaps: [
-      ...(!website ? ["官网渠道尚未核验"] : []),
+      ...(!website && !extra.officialDisabledReason
+        ? ["官网渠道尚未核验"]
+        : []),
+      ...(extra.officialDisabledReason ? [extra.officialDisabledReason] : []),
       "公众号与社交平台尚未形成完整自动覆盖",
       ...(extra.disabledReason ? [extra.disabledReason] : []),
     ],

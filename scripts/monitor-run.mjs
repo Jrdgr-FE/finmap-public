@@ -102,11 +102,22 @@ let bytes = 0,
   processed = 0,
   failed = 0;
 const robotCache = new Map();
+const transientError = (e) =>
+  /^(?:timeout|http_50[234])$|ECONNRESET|ETIMEDOUT|socket hang up/i.test(
+    String(e?.code || "") + " " + String(e?.message || ""),
+  );
 async function trackedFetch(url, options) {
-  requests++;
-  const r = await fetchPublic(url, options);
-  bytes += r.bytes;
-  return r;
+  for (let attempt = 0; ; attempt++) {
+    try {
+      requests++;
+      const r = await fetchPublic(url, options);
+      bytes += r.bytes;
+      return r;
+    } catch (e) {
+      if (attempt < 1 && transientError(e)) continue;
+      throw e;
+    }
+  }
 }
 async function get(url, { html = false } = {}) {
   if (html) {
@@ -123,7 +134,7 @@ async function get(url, { html = false } = {}) {
               })
             ).body;
           } catch (e) {
-            if (e.message === "http_404") return "";
+            if (/^http_4(?!29)\d\d$/.test(e.message)) return "";
             throw new Error("robots_unavailable");
           }
         })(),

@@ -16,14 +16,33 @@ companies:
       - 北京华大九天
       - Empyrean Technology
     intro: 提供全定制、数字电路、晶圆制造、先进封装及三维集成相关 EDA 工具，并提供基础 IP 和工程服务。
-    website: https://empyrean.com.cn/company/information.html
+    website: https://www.empyrean.com.cn/company/information.html
     country: 中国
     coverage: profile
     verifiedAt: 2026-10-23
     sources:
       - title: 公司简介_关于我们_华大九天 | EDA及相关服务
-        url: https://empyrean.com.cn/company/information.html
-    events: []
+        url: https://www.empyrean.com.cn/company/information.html
+    events:
+      - date: 2026-11-01
+        kind: funding
+        title: 拟出资不超过 2.2 亿元收购逻辑综合与形式验证 EDA 企业奇捷科技不超过 51% 股权
+        amount:
+          value: 2.2
+          unit: 亿元
+        status: confirmed
+        sources:
+          - title: 21世纪经济报道：重磅收购！芯片EDA龙头华大九天，拟出资不超2.2亿元控股奇捷科技
+            url: https://m.21jingji.com/article/20261101/herald/c035a0117ae90e85a513d9aa517862fa.html
+            date: 2026-11-01
+    valuation:
+      {
+        value: 513.1,
+        unit: 亿元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 创业板 301269.SZ · 实时市值
+      }
   - id: primarius
     name: 概伦电子
     en: Primarius Technologies
@@ -46,6 +65,14 @@ companies:
       - title: PRIMARIUS - PRIMARIUS
         url: https://www.primarius-tech.com/en/aboutus
     events: []
+    valuation:
+      {
+        value: 176.1,
+        unit: 亿元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 科创板 688206.SH · 实时市值
+      }
   - id: xinhuazhang
     name: 芯华章
     en: X-EPIC
@@ -68,6 +95,7 @@ companies:
       - title: "X-EPIC : Silicon Excellence Drive Intelligence"
         url: https://www.x-epic.com/index.html
     events: []
+    valuation: { value: 50, unit: 亿元, asof: 2025-12, status: reported, note: B+ 轮估值超 }
   - id: smic
     name: 中芯国际
     en: SMIC
@@ -90,6 +118,14 @@ companies:
       - title: 中芯国际-关于中芯
         url: https://www.smics.com/site/about_summary
     events: []
+    valuation:
+      {
+        value: 9495.7,
+        unit: 亿元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 科创板 688981.SH · 实时市值
+      }
   - id: huahong-semi
     name: 华虹半导体
     en: Hua Hong Semiconductor
@@ -112,6 +148,14 @@ companies:
       - title: 華虹宏力半導體有限公司
         url: https://www.huahonggrace.com/c/index.php
     events: []
+    valuation:
+      {
+        value: 3338.6,
+        unit: 亿元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 科创板 688347.SH · 实时市值
+      }
   - id: tsmc
     name: 台积电
     en: TSMC
@@ -134,7 +178,26 @@ companies:
     sources:
       - title: Dedicated IC Foundry - Taiwan Semiconductor Manufacturing Company Limited
         url: https://www.tsmc.com/english/dedicatedFoundry
-    events: []
+    events:
+      - date: 2026-10-29
+        kind: funding
+        title: 以约 12 亿美元收购友达光电台中工厂及相关设施，扩充先进封装与晶圆制造产能
+        amount:
+          value: 1.2
+          unit: 十亿美元
+        status: confirmed
+        sources:
+          - title: 36氪：台积电以约12亿美元收购友达光电台中工厂及相关设施
+            url: https://36kr.com/newsflashes/4046592758731651
+            date: 2026-10-29
+    valuation:
+      {
+        value: 1944,
+        unit: 十亿美元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: NYSE TSM.US · 实时市值
+      }
   - id: naura
     name: 北方华创
     en: NAURA
@@ -157,6 +220,14 @@ companies:
       - title: 了解华创 - 北方华创
         url: https://www.naura.com/about/
     events: []
+    valuation:
+      {
+        value: 4076.5,
+        unit: 亿元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 深交所 002371.SZ · 实时市值
+      }
   - id: amec
     name: 中微公司
     en: AMEC
@@ -179,6 +250,14 @@ companies:
       - title: 中微上海-关于中微-中微公司
         url: https://www.amec-inc.com/index/Lists/show/catid/4/id/496.html
     events: []
+    valuation:
+      {
+        value: 2432.9,
+        unit: 亿元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 科创板 688012.SH · 实时市值
+      }
   - id: acm-shanghai
     name: 盛美上海
     en: ACM Research Shanghai
@@ -201,6 +280,14 @@ companies:
       - title: 首页-盛美半导体设备（上海）股份有限公司
         url: https://www.acmrcsh.com.cn/index.html
     events: []
+    valuation:
+      {
+        value: 974.9,
+        unit: 亿元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 科创板 688082.SH · 实时市值
+      }
   - id: asml
     name: 阿斯麦
     en: ASML
@@ -223,6 +310,14 @@ companies:
       - title: ASML technology | Supplying the semiconductor industry
         url: https://www.asml.com/en/technology
     events: []
+    valuation:
+      {
+        value: 549.2,
+        unit: 十亿美元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: NASDAQ ASML.US · 实时市值
+      }
   - id: applied-materials
     name: 应用材料
     en: Applied Materials
@@ -245,6 +340,14 @@ companies:
       - title: Semiconductor
         url: http://www.appliedmaterials.com/us/en/semiconductor.html
     events: []
+    valuation:
+      {
+        value: 266.5,
+        unit: 十亿美元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: NASDAQ AMAT.US · 实时市值
+      }
   - id: synopsys
     name: 新思科技
     en: Synopsys
@@ -267,6 +370,14 @@ companies:
       - title: Electronic Design Automation (EDA) | Synopsys
         url: https://www.synopsys.com/silicon-design.html
     events: []
+    valuation:
+      {
+        value: 84.8,
+        unit: 十亿美元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: NASDAQ SNPS.US · 实时市值
+      }
   - id: jcet
     name: 长电科技
     en: JCET
@@ -289,6 +400,14 @@ companies:
       - title: 长电科技 —— 首页
         url: https://www.jcetglobal.com/cn
     events: []
+    valuation:
+      {
+        value: 939.6,
+        unit: 亿元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 上交所 600584.SH · 实时市值
+      }
   - id: besi
     name: Besi
     en: BE Semiconductor Industries
@@ -311,6 +430,14 @@ companies:
       - title: Company Profile | Besi
         url: http://www.besi.com/company/company-profile
     events: []
+    valuation:
+      {
+        value: 10,
+        unit: 十亿美元,
+        asof: 2026-10,
+        status: confirmed,
+        note: "Euronext: BESI · 市值约"
+      }
   - id: pony-ai
     name: 小马智行
     en: Pony.ai
@@ -334,6 +461,14 @@ companies:
       - title: Pony.ai
         url: https://www.pony.ai/
     events: []
+    valuation:
+      {
+        value: 2,
+        unit: 十亿美元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: NASDAQ PONY.US · 实时市值
+      }
   - id: weride
     name: 文远知行
     en: WeRide
@@ -357,7 +492,26 @@ companies:
         url: https://www.weride.ai/about
       - title: WeRide | Technology
         url: https://weride.ai/technology
-    events: []
+    events:
+      - date: 2026-10-29
+        kind: funding
+        title: 旗下物理 AI 子公司「景烁科技」完成数千万美元首轮融资
+        status: confirmed
+        sources:
+          - title: 投资界：文远知行子公司「景烁科技」完成数千万美元首轮融资，加速构建物理AI底座
+            url: https://news.pedaily.cn/202610/571025.shtml
+            date: 2026-10-29
+          - title: 量子位：文远知行001号员工带队，景烁科技首轮融资数千万美元
+            url: https://www.qbitai.com/2026/10/506281.html
+            date: 2026-10-29
+    valuation:
+      {
+        value: 1.4,
+        unit: 十亿美元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: NASDAQ WRD.US · 实时市值
+      }
   - id: aurora
     name: Aurora Innovation
     en: Aurora Innovation
@@ -380,8 +534,16 @@ companies:
       - title: Aurora Innovation, Inc. (AUR)
         url: https://ir.aurora.tech/
     events: []
+    valuation:
+      {
+        value: 8.3,
+        unit: 十亿美元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: NASDAQ AUR.US · 实时市值
+      }
   - id: ouster
-    match: [Ouster lidar, Ouster Inc, Ouster激光雷达, Ouster 激光雷达]
+    match: [ Ouster lidar, Ouster Inc, Ouster激光雷达, Ouster 激光雷达 ]
     name: Ouster
     en: Ouster
     region: global
@@ -403,6 +565,14 @@ companies:
       - title: OS0 | Ouster
         url: https://ouster.com/products/hardware/os0
     events: []
+    valuation:
+      {
+        value: 2.4,
+        unit: 十亿美元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: NYSE OUST.US · 实时市值
+      }
   - id: seyond
     name: 图达通
     en: Seyond
@@ -426,6 +596,14 @@ companies:
       - title: About Us | Seyond, a Leading Global LiDAR Company
         url: https://seyond.com/about
     events: []
+    valuation:
+      {
+        value: 15.2,
+        unit: 亿港元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 港股 02665.HK · 实时市值
+      }
   - id: galactic-energy
     name: 星河动力
     en: Galactic Energy
@@ -448,6 +626,14 @@ companies:
       - title: 星河动力航天
         url: https://www.galactic-energy.cn/
     events: []
+    valuation:
+      {
+        value: 110,
+        unit: 亿元,
+        asof: 2026-06,
+        status: confirmed,
+        note: IPO 辅导 · 估值超
+      }
   - id: geespace
     name: 时空道宇
     en: Geespace
@@ -470,6 +656,7 @@ companies:
       - title: 浙江时空道宇科技有限公司
         url: https://www.geespace.com/
     events: []
+    valuation: { value: 100, unit: 亿元, asof: 2025-12, status: confirmed, note: 吉利旗下 · 估值超 }
   - id: rocket-lab
     name: Rocket Lab
     en: Rocket Lab
@@ -495,6 +682,14 @@ companies:
     memberships:
       - track: space
         segment: satellites
+    valuation:
+      {
+        value: 31.9,
+        unit: 十亿美元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: NASDAQ RKLB.US · 实时市值
+      }
   - id: planet-labs
     name: Planet Labs
     en: Planet Labs
@@ -517,6 +712,14 @@ companies:
       - title: "Planet Labs: Satellite Imagery & Earth Data Analytics"
         url: https://planet.com/
     events: []
+    valuation:
+      {
+        value: 4.4,
+        unit: 十亿美元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: NYSE PL.US · 实时市值
+      }
   - id: ehang
     name: 亿航智能
     en: EHang
@@ -538,7 +741,23 @@ companies:
     sources:
       - title: EHang | About EHang
         url: https://www.ehang.com/about
-    events: []
+    events:
+      - date: 2026-11-04
+        kind: product
+        title: 发布大载重消防 eVTOL 航空器 EH216-EK
+        status: confirmed
+        sources:
+          - title: 华尔街见闻：亿航智能发布EH216-EK大载重消防eVTOL航空器
+            url: https://wallstreetcn.com/livenews/3194290
+            date: 2026-11-04
+    valuation:
+      {
+        value: 284,
+        unit: 百万美元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: NASDAQ EH.US · 实时市值
+      }
   - id: joby
     name: Joby Aviation
     en: Joby Aviation
@@ -561,6 +780,14 @@ companies:
       - title: Joby Aviation
         url: https://www.jobyaviation.com/
     events: []
+    valuation:
+      {
+        value: 5.6,
+        unit: 十亿美元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: NYSE JOBY.US · 实时市值
+      }
   - id: archer
     name: Archer Aviation
     en: Archer Aviation
@@ -583,6 +810,14 @@ companies:
       - title: Midnight · Archer
         url: https://archer.com/midnight
     events: []
+    valuation:
+      {
+        value: 3.2,
+        unit: 十亿美元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: NYSE ACHR.US · 实时市值
+      }
   - id: catl
     name: 宁德时代
     en: CATL
@@ -609,6 +844,14 @@ companies:
     memberships:
       - track: energy-tech
         segment: storage
+    valuation:
+      {
+        value: 11763.4,
+        unit: 亿元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 创业板 300750.SZ · 实时市值
+      }
   - id: eve-energy
     name: 亿纬锂能
     en: EVE Energy
@@ -631,6 +874,14 @@ companies:
       - title: 企业简介-EVE-亿纬锂能
         url: https://www.evebattery.com/about
     events: []
+    valuation:
+      {
+        value: 1130.6,
+        unit: 亿元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 创业板 300014.SZ · 实时市值
+      }
   - id: hithium
     name: 海辰储能
     en: HiTHIUM
@@ -653,6 +904,7 @@ companies:
       - title: Battery Storage Solutions Manufacturer
         url: https://en.hithium.com/
     events: []
+    valuation: { value: 250, unit: 亿元, asof: 2026-06, status: confirmed, note: C 轮估值超 }
   - id: sungrow
     name: 阳光电源
     en: Sungrow
@@ -678,6 +930,14 @@ companies:
     memberships:
       - track: energy-tech
         segment: storage
+    valuation:
+      {
+        value: 1699.4,
+        unit: 亿元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 创业板 300274.SZ · 实时市值
+      }
   - id: starcharge
     name: 星星充电
     en: StarCharge
@@ -700,6 +960,7 @@ companies:
       - title: StarCharge
         url: https://www.starcharge.com/
     events: []
+    valuation: { value: 155, unit: 亿元, asof: 2025-12, status: confirmed, note: B 轮估值约 }
   - id: longi
     name: 隆基绿能
     en: LONGi
@@ -722,6 +983,14 @@ companies:
       - title: 成为全球最具价值的太阳能科技公司 - 隆基绿能
         url: https://www.longi.com/cn/
     events: []
+    valuation:
+      {
+        value: 941.2,
+        unit: 亿元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 上交所 601012.SH · 实时市值
+      }
   - id: energy-singularity
     name: 能量奇点
     en: Energy Singularity
@@ -744,6 +1013,7 @@ companies:
       - title: 愿景 | 能量奇点 Energy Singularity
         url: https://energysingularity.cn/vision.html
     events: []
+    valuation: { value: 30, unit: 亿元, asof: 2025-12, status: reported, note: Pre-A 轮估值约 }
   - id: startorus
     name: 星环聚能
     en: Startorus Fusion
@@ -766,6 +1036,7 @@ companies:
       - title: 星环聚能
         url: https://startorus.cn/
     events: []
+    valuation: { value: 25, unit: 亿元, asof: 2025-12, status: reported, note: Pre-A 轮估值约 }
   - id: cfs
     name: Commonwealth Fusion Systems
     en: Commonwealth Fusion Systems
@@ -788,6 +1059,7 @@ companies:
       - title: Home | Commonwealth Fusion Systems
         url: https://cfs.energy/
     events: []
+    valuation: { value: 2, unit: 十亿美元, asof: 2025-12, status: confirmed, note: B 轮后估值超 }
   - id: helion
     name: Helion Energy
     en: Helion Energy
@@ -810,6 +1082,7 @@ companies:
       - title: Helion | Building the world's first fusion power plant
         url: https://www.helionenergy.com/
     events: []
+    valuation: { value: 5.4, unit: 十亿美元, asof: 2025-01, status: confirmed, note: F 轮估值 }
   - id: form-energy
     name: Form Energy
     en: Form Energy
@@ -832,6 +1105,7 @@ companies:
       - title: "Form Energy: Energy Storage For a Better World"
         url: https://formenergy.com/
     events: []
+    valuation: { value: 3, unit: 十亿美元, asof: 2024-10, status: confirmed, note: F 轮估值超 }
   - id: redwood-materials
     name: Redwood Materials
     en: Redwood Materials
@@ -856,6 +1130,7 @@ companies:
     memberships:
       - track: energy-tech
         segment: storage
+    valuation: { value: 5, unit: 十亿美元, asof: 2024-08, status: confirmed, note: D 轮估值超 }
   - id: quantumscape
     name: QuantumScape
     en: QuantumScape
@@ -878,6 +1153,14 @@ companies:
       - title: Solid State Battery Technology | QuantumScape
         url: https://www.quantumscape.com/technology
     events: []
+    valuation:
+      {
+        value: 2.6,
+        unit: 十亿美元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: NYSE QS.US · 实时市值
+      }
   - id: origin-quantum
     name: 本源量子
     en: Origin Quantum
@@ -900,6 +1183,14 @@ companies:
       - title: originqc.com.cn
         url: https://originqc.com.cn/
     events: []
+    valuation:
+      {
+        value: 70,
+        unit: 亿元,
+        asof: 2026-06,
+        status: reported,
+        note: 科创板 IPO 辅导 · 估值约
+      }
   - id: quantumctek
     name: 国盾量子
     en: QuantumCTek
@@ -922,6 +1213,14 @@ companies:
       - title: 公司简介_国盾量子 – 量子科技 产业报国
         url: https://www.quantum-info.com/about/
     events: []
+    valuation:
+      {
+        value: 306.7,
+        unit: 亿元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 科创板 688027.SH · 实时市值
+      }
   - id: qboson
     name: 玻色量子
     en: QBoson
@@ -944,6 +1243,7 @@ companies:
       - title: 玻色量子 - 专用量子计算机 | 国际领先的量子计算技术
         url: https://www.qboson.com/
     events: []
+    valuation: { value: 15, unit: 亿元, asof: 2026-03, status: reported, note: A+ 轮估值约 }
   - id: turingq
     name: 图灵量子
     en: TuringQ
@@ -969,6 +1269,7 @@ companies:
     memberships:
       - track: frontier-tech
         segment: photonics
+    valuation: { value: 35, unit: 亿元, asof: 2025-12, status: reported, note: B 轮估值约 }
   - id: psiquantum
     name: PsiQuantum
     en: PsiQuantum
@@ -993,6 +1294,7 @@ companies:
     memberships:
       - track: frontier-tech
         segment: photonics
+    valuation: { value: 6, unit: 十亿美元, asof: 2025-06, status: confirmed, note: 最新轮估值 }
   - id: quantinuum
     name: Quantinuum
     en: Quantinuum
@@ -1014,6 +1316,14 @@ companies:
       - title: Our Trapped Ion Quantum Computers
         url: https://www.quantinuum.com/products-solutions/quantinuum-systems
     events: []
+    valuation:
+      {
+        value: 1.3,
+        unit: 十亿美元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: NASDAQ QNT.US · 实时市值
+      }
   - id: ionq
     name: IonQ
     en: IonQ
@@ -1036,8 +1346,24 @@ companies:
       - title: "IonQ: Trapped Ion Quantum Computing Company"
         url: https://www.ionq.com/
     events: []
+    valuation:
+      {
+        value: 12.6,
+        unit: 十亿美元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: NYSE IONQ.US · 实时市值
+      }
   - id: xanadu
-    match: [Xanadu Quantum, Xanadu量子, Xanadu 量子, Xanadu光量子, Xanadu 光量子, Xanadu photonic]
+    match:
+      [
+        Xanadu Quantum,
+        Xanadu量子,
+        Xanadu 量子,
+        Xanadu光量子,
+        Xanadu 光量子,
+        Xanadu photonic
+      ]
     name: Xanadu
     en: Xanadu
     region: global
@@ -1060,9 +1386,18 @@ companies:
         url: https://www.xanadu.ai/company
       - title: Xanadu | Photonics
         url: https://www.xanadu.ai/photonics/
-      - title: Xanadu | Xanadu Becomes First Pure-Play Photonic Quantum Computing Company to Go Public
+      - title: Xanadu | Xanadu Becomes First Pure-Play Photonic Quantum Computing
+          Company to Go Public
         url: https://xanadu.ai/press/xanadu-becomes-first-pure-play-photonic-quantum-computing-company-to-go-public
     events: []
+    valuation:
+      {
+        value: 784,
+        unit: 百万美元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: NASDAQ XNDU.US · 实时市值
+      }
   - id: lightelligence
     name: 曦智科技
     en: Lightelligence
@@ -1084,7 +1419,23 @@ companies:
     sources:
       - title: Lightelligence
         url: https://www.lightelligence.ai/
-    events: []
+    events:
+      - date: 2026-11-04
+        kind: ipo
+        title: 继港股上市募资 27 亿港元后，再度启动 A 股上市辅导备案
+        status: confirmed
+        sources:
+          - title: 华尔街见闻：港股募资27亿港元，曦智科技半年后再启A股辅导
+            url: https://wallstreetcn.com/articles/3785138
+            date: 2026-11-04
+    valuation:
+      {
+        value: 130.5,
+        unit: 亿港元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 港股 01879.HK · 实时市值
+      }
   - id: jbd
     name: 显耀显示
     en: Jade Bird Display
@@ -1107,6 +1458,7 @@ companies:
       - title: 关于我们-JBD官方网站-上海JBD公司简介-上海显耀显示科技有限公司
         url: https://www.jb-display.com.cn/about.html
     events: []
+    valuation: { value: 50, unit: 亿元, asof: 2025-12, status: reported, note: A4 轮估值超 }
   - id: bmf
     name: 摩方精密
     en: BMF Precision Tech
@@ -1130,6 +1482,7 @@ companies:
       - title: 关于我们-重庆摩方精密科技股份有限公司
         url: https://www.bmftec.cn/about
     events: []
+    valuation: { value: 30, unit: 亿元, asof: 2025-12, status: reported, note: D 轮估值超 }
   - id: polymaker
     name: Polymaker
     en: Polymaker

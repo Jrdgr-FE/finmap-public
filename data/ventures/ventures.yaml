@@ -3,7 +3,7 @@
 # 事件 status: confirmed = 公司官宣或多家媒体确认；reported = 传闻 / 洽谈中 / 单一来源
 # match（可选）：候选动态脚本只按这些词匹配新闻，给名字是常用词的公司（Ultra、Sunday、Runway）防误报
 version: 1
-updated: "2026-10-22"
+updated: "2026-11-06"
 
 tracks:
   - id: embodied
@@ -29,20 +29,37 @@ companies:
     region: cn
     track: embodied
     segment: body
-    tags: [人形, 具身大模型, 仿真]
-    intro: 国内出货量最大的人形机器人公司，布局本体矩阵、具身大模型和仿真平台。2026 年上半年出货 9,700 台，全球份额超 43%（Counterpoint）。
+    tags: [ 人形, 具身大模型, 仿真 ]
+    intro: 国内出货量最大的人形机器人公司，布局本体矩阵、具身大模型和仿真平台。2026 年上半年出货 9,700 台，全球份额超
+      43%（Counterpoint）。
     valuation: { value: 500, unit: 亿元, asof: "2026-10-13", status: reported }
     events:
       - date: "2026-10-13"
         kind: funding
         title: 传闻新一轮 10–15 亿元融资接近收尾，估值约 500 亿元；港股 IPO 大概率推迟
         status: reported
-        sources: [{ title: 新浪科技：智元启动新一轮融资，估值约 500 亿元, url: "https://finance.sina.com.cn/tech/digi/2026-10-14/doc-iniveefp7774904.shtml", date: "2026-10-14" }]
+        sources:
+          [
+            {
+                title: 新浪科技：智元启动新一轮融资，估值约 500 亿元,
+                url: "https://finance.sina.com.cn/tech/digi/2026-10-14/doc-iniveefp7774904.shtm\
+                  l",
+                date: "2026-10-14"
+              }
+          ]
       - date: "2026-09-24"
         kind: deployment
         title: 第 2 万台具身智能机器人下线
         status: confirmed
-        sources: [{ title: 新浪科技：智元启动新一轮融资，估值约 500 亿元, url: "https://finance.sina.com.cn/tech/digi/2026-10-14/doc-iniveefp7774904.shtml", date: "2026-10-14" }]
+        sources:
+          [
+            {
+                title: 新浪科技：智元启动新一轮融资，估值约 500 亿元,
+                url: "https://finance.sina.com.cn/tech/digi/2026-10-14/doc-iniveefp7774904.shtm\
+                  l",
+                date: "2026-10-14"
+              }
+          ]
 
   - id: astribot
     name: 星尘智能
@@ -50,7 +67,7 @@ companies:
     region: cn
     track: embodied
     segment: body
-    tags: [人形, 绳驱, 零售]
+    tags: [ 人形, 绳驱, 零售 ]
     intro: 绳驱人形机器人公司，做“AI 模型—具身 OS—绳驱本体”全栈，自营“机器人 MART”零售店已在 6 个城市部署。
     valuation: { value: 150, unit: 亿元, asof: "2026-10-13", status: confirmed }
     events:
@@ -58,14 +75,28 @@ companies:
         kind: funding
         title: 完成 10 亿元新一轮融资，估值 150 亿元，深投控（投控东海）领投
         amount: { value: 10, unit: 亿元 }
-        investors: [投控东海, 洪泰基金, 宁海兴泰合基金, 善恒资本, 先沐]
+        investors: [ 投控东海, 洪泰基金, 宁海兴泰合基金, 善恒资本, 先沐 ]
         status: confirmed
-        sources: [{ title: 央广网：星尘智能完成 10 亿元新一轮融资, url: "https://www.cnr.cn/mspd/zhsh/20261013/t20261013_527840826.shtml", date: "2026-10-13" }]
+        sources:
+          [
+            {
+                title: 央广网：星尘智能完成 10 亿元新一轮融资,
+                url: "https://www.cnr.cn/mspd/zhsh/20261013/t20261013_527840826.shtml",
+                date: "2026-10-13"
+              }
+          ]
       - date: "2026-06"
         kind: product
         title: 新一代人形机器人 T1 开始发货；同月 B 轮系列融资超 10 亿元，估值首破 100 亿元
         status: confirmed
-        sources: [{ title: 央广网：星尘智能完成 10 亿元新一轮融资, url: "https://www.cnr.cn/mspd/zhsh/20261013/t20261013_527840826.shtml", date: "2026-10-13" }]
+        sources:
+          [
+            {
+                title: 央广网：星尘智能完成 10 亿元新一轮融资,
+                url: "https://www.cnr.cn/mspd/zhsh/20261013/t20261013_527840826.shtml",
+                date: "2026-10-13"
+              }
+          ]
 
   - id: robotera
     name: 星动纪元
@@ -73,9 +104,9 @@ companies:
     region: cn
     track: embodied
     segment: body
-    tags: [人形, VLA, 灵巧手, 物流]
+    tags: [ 人形, VLA, 灵巧手, 物流 ]
     intro: 清华交叉信息研究院孵化（陈建宇），自研端到端 VLA 模型 ERA-42、人形本体和 XHAND1 灵巧手，物流场景千台级交付。
-    founders: [陈建宇]
+    founders: [ 陈建宇 ]
     founded: 2023
     valuation: { value: 100, unit: 亿元, asof: "2026-03", status: reported, note: 超过 }
     events:
@@ -83,9 +114,16 @@ companies:
         kind: funding
         title: 完成 10 亿元新一轮融资，诚通基金领投；2026 年累计融资近 50 亿元
         amount: { value: 10, unit: 亿元 }
-        investors: [诚通基金, 江西国控, 国元股权, 渝富中新基金, 杭州资本, 弘毅投资]
+        investors: [ 诚通基金, 江西国控, 国元股权, 渝富中新基金, 杭州资本, 弘毅投资 ]
         status: confirmed
-        sources: [{ title: 网易：星动纪元完成新一轮 10 亿元融资, url: "https://www.163.com/dy/article/L15N8ODO05198NMR.html", date: "2026-07-06" }]
+        sources:
+          [
+            {
+                title: 网易：星动纪元完成新一轮 10 亿元融资,
+                url: "https://www.163.com/dy/article/L15N8ODO05198NMR.html",
+                date: "2026-07-06"
+              }
+          ]
 
   - id: x-square
     name: 自变量机器人
@@ -93,26 +131,47 @@ companies:
     region: cn
     track: embodied
     segment: brain
-    tags: [具身大脑, 世界模型, 开源]
+    tags: [ 具身大脑, 世界模型, 开源 ]
     intro: 做统一世界模型架构（WUM）的具身大脑，模型 WALL-B 把视觉、语言、动作和物理预测放在一个网络里训练，并自研量子系列本体和数据采集设备。
     valuation: { value: 200, unit: 亿元, asof: "2026-06-29", status: confirmed, note: 投后超过 }
     events:
       - date: "2026-06-29"
         kind: funding
         title: 两个月内 B/B+/B++/C 四轮全部交割，投后估值超 200 亿元，小米战投领投 B 轮
-        investors: [小米战投, 美团, 阿里巴巴, 字节跳动, 中国移动, 红杉中国, IDG 资本, 源码资本]
+        investors: [ 小米战投, 美团, 阿里巴巴, 字节跳动, 中国移动, 红杉中国, IDG 资本, 源码资本 ]
         status: confirmed
-        sources: [{ title: 证券时报：自变量两个月完成四轮融资，投后估值超 200 亿元, url: "https://stcn.com/article/detail/3986214.html", date: "2026-06-29" }]
+        sources:
+          [
+            {
+                title: 证券时报：自变量两个月完成四轮融资，投后估值超 200 亿元,
+                url: "https://stcn.com/article/detail/3986214.html",
+                date: "2026-06-29"
+              }
+          ]
       - date: "2026-06"
         kind: model
         title: 开源 WALL-OSS-0.5，发布世界模型 WALL-WM
         status: confirmed
-        sources: [{ title: 证券时报：自变量两个月完成四轮融资, url: "https://stcn.com/article/detail/3986214.html", date: "2026-06-29" }]
+        sources:
+          [
+            {
+                title: 证券时报：自变量两个月完成四轮融资,
+                url: "https://stcn.com/article/detail/3986214.html",
+                date: "2026-06-29"
+              }
+          ]
       - date: "2026-04"
         kind: model
         title: 发布基于统一世界模型架构的具身模型 WALL-B
         status: confirmed
-        sources: [{ title: 证券时报：自变量两个月完成四轮融资, url: "https://stcn.com/article/detail/3986214.html", date: "2026-06-29" }]
+        sources:
+          [
+            {
+                title: 证券时报：自变量两个月完成四轮融资,
+                url: "https://stcn.com/article/detail/3986214.html",
+                date: "2026-06-29"
+              }
+          ]
 
   - id: unitree
     name: 宇树科技
@@ -120,14 +179,45 @@ companies:
     region: cn
     track: embodied
     segment: body
-    tags: [四足, 人形, IPO]
+    tags: [ 四足, 人形, IPO ]
     intro: 四足机器人产品化最成熟的公司之一，人形机器人进入规模化出货，科创板 IPO 已过会。
     events:
+      - date: "2026-10-28"
+        kind: deployment
+        title: 2026 年前三季度归母净利润 3.87 亿元（同比增长 270.54%），其中 Q3 净利润 1.13 亿元、研发投入同比增长
+          250%；并与中国石油推进设立合资公司
+        status: confirmed
+        sources:
+          - {
+              title: 东方财富：宇树科技：Q3净利润同比下降17%环比下降49% 研发投入同比增长250%,
+              url: "http://finance.eastmoney.com/a/202610283912228885.html",
+              date: "2026-10-28"
+            }
+          - {
+              title: 华尔街见闻：从1.36亿元战略配售到拟设合营企业，中石油与宇树科技合作再进一步,
+              url: "https://wallstreetcn.com/articles/3785239",
+              date: "2026-11-05"
+            }
       - date: "2026-06"
         kind: ipo
         title: 科创板 IPO 过会
         status: confirmed
-        sources: [{ title: 界面：2026 具身智能投资窗口，14 家企业最新进展, url: "https://m.jiemian.com/article/14531147.html", date: "2026-10" }]
+        sources:
+          [
+            {
+                title: 界面：2026 具身智能投资窗口，14 家企业最新进展,
+                url: "https://m.jiemian.com/article/14531147.html",
+                date: "2026-10"
+              }
+          ]
+    valuation:
+      {
+        value: 2655.8,
+        unit: 亿元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 科创板 688836.SH · 实时市值
+      }
 
   - id: galaxea
     name: 星海图
@@ -135,7 +225,7 @@ companies:
     region: cn
     track: embodied
     segment: body
-    tags: [轮式双臂, VLA, 世界模型, 开源数据]
+    tags: [ 轮式双臂, VLA, 世界模型, 开源数据 ]
     intro: 以真机数据驱动、模型与硬件协同的具身公司，产品有 R1 Pro/R1 Lite 轮式双臂和 G0 系列 VLA 模型，开源真机数据集 GOD。
     valuation: { value: 200, unit: 亿元, asof: "2026-04-02", status: confirmed, note: 超过 }
     events:
@@ -143,14 +233,28 @@ companies:
         kind: funding
         title: B+ 轮 20 亿元，估值破 200 亿元，一个月内近翻倍
         amount: { value: 20, unit: 亿元 }
-        investors: [华登科技, 蓝思科技, 金融街资本, 北京科创, 中金资本, 洪泰基金]
+        investors: [ 华登科技, 蓝思科技, 金融街资本, 北京科创, 中金资本, 洪泰基金 ]
         status: confirmed
-        sources: [{ title: 量子位：再融 20 亿！星海图把具身智能头部门槛抬到了 200 亿, url: "https://www.qbitai.com/2026/04/394626.html", date: "2026-04-02" }]
+        sources:
+          [
+            {
+                title: 量子位：再融 20 亿！星海图把具身智能头部门槛抬到了 200 亿,
+                url: "https://www.qbitai.com/2026/04/394626.html",
+                date: "2026-04-02"
+              }
+          ]
       - date: "2026-04-02"
         kind: model
         title: G0/G0 Plus/G0 Tiny VLA 与世界模型 Fast-WAM，G0.5 即将发布
         status: confirmed
-        sources: [{ title: 量子位：星海图再融 20 亿, url: "https://www.qbitai.com/2026/04/394626.html", date: "2026-04-02" }]
+        sources:
+          [
+            {
+                title: 量子位：星海图再融 20 亿,
+                url: "https://www.qbitai.com/2026/04/394626.html",
+                date: "2026-04-02"
+              }
+          ]
 
   - id: galbot
     name: 银河通用
@@ -158,17 +262,31 @@ companies:
     region: cn
     track: embodied
     segment: application
-    tags: [具身大模型, 零售, 药房]
+    tags: [ 具身大模型, 零售, 药房 ]
     intro: 具身大模型、本体和场景运营一体，“银河太空舱”便利店和智慧药房已百台级运营。自称人形机器人领域估值最高的未上市企业。
-    valuation: { value: 200, unit: 亿元, asof: "2026-04-02", status: reported, note: 超过（量子位） }
+    valuation:
+      {
+        value: 200,
+        unit: 亿元,
+        asof: "2026-04-02",
+        status: reported,
+        note: 超过（量子位）
+      }
     events:
       - date: "2026-03-02"
         kind: funding
         title: 完成 25 亿元新一轮融资，国家人工智能产业投资基金等投资
         amount: { value: 25, unit: 亿元 }
-        investors: [国家人工智能产业投资基金, 中国石化, 中信投资控股, 上汽金控, 中芯聚源, 亦庄国投]
+        investors: [ 国家人工智能产业投资基金, 中国石化, 中信投资控股, 上汽金控, 中芯聚源, 亦庄国投 ]
         status: confirmed
-        sources: [{ title: 财新：银河通用再融 25 亿元, url: "https://m.caixin.com/m/2026-03-02/102418619.html", date: "2026-03-02" }]
+        sources:
+          [
+            {
+                title: 财新：银河通用再融 25 亿元,
+                url: "https://m.caixin.com/m/2026-03-02/102418619.html",
+                date: "2026-03-02"
+              }
+          ]
 
   - id: psibot
     name: 灵初智能
@@ -176,7 +294,7 @@ companies:
     region: cn
     track: embodied
     segment: brain
-    tags: [灵巧操作, 数据集, 物流, 零售]
+    tags: [ 灵巧操作, 数据集, 物流, 零售 ]
     intro: 专注灵巧操作的具身模型公司，发布 Psi-R2、Psi-W0 模型，开源 1000 小时人类手部操作全模态数据集。
     events:
       - date: "2026"
@@ -184,7 +302,22 @@ companies:
         title: 2026 年完成天使轮及 Pre-A 轮，合计 20 亿元
         amount: { value: 20, unit: 亿元 }
         status: confirmed
-        sources: [{ title: 界面：2026 具身智能投资窗口，14 家企业最新进展, url: "https://m.jiemian.com/article/14531147.html", date: "2026-10" }]
+        sources:
+          [
+            {
+                title: 界面：2026 具身智能投资窗口，14 家企业最新进展,
+                url: "https://m.jiemian.com/article/14531147.html",
+                date: "2026-10"
+              }
+          ]
+    valuation:
+      {
+        value: 60,
+        unit: 亿元,
+        asof: 2026-08,
+        status: reported,
+        note: 累计融资 20 亿元 · 估值约
+      }
 
   - id: ai2robotics
     name: 智平方
@@ -192,7 +325,7 @@ companies:
     region: cn
     track: embodied
     segment: brain
-    tags: [VLA, 本体]
+    tags: [ VLA, 本体 ]
     intro: 做全域 VLA 大模型 GOVLA，AlphaBot 系列本体推进量产。
     valuation: { value: 200, unit: 亿元, asof: "2026-09-12", status: reported }
     events:
@@ -200,14 +333,22 @@ companies:
         kind: funding
         title: 上半年估值从 100 亿元升至 200 亿元（金额未披露）
         status: reported
-        sources: [{ title: 新浪：今年具身智能的融资已基本“结束”了, url: "https://finance.sina.com.cn/tech/roll/2026-09-12/doc-inirpqmn6805811.shtml?froms=ggmp", date: "2026-09-12" }]
+        sources:
+          [
+            {
+                title: 新浪：今年具身智能的融资已基本“结束”了,
+                url: "https://finance.sina.com.cn/tech/roll/2026-09-12/doc-inirpqmn6805811.shtm\
+                  l?froms=ggmp",
+                date: "2026-09-12"
+              }
+          ]
 
   - id: uniqi
     name: 优理奇
     region: cn
     track: embodied
     segment: application
-    tags: [安保, 零售]
+    tags: [ 安保, 零售 ]
     intro: 面向安保、零售等场景的机器人公司，已在这些场景常态化运营。
     events:
       - date: "2026"
@@ -215,7 +356,15 @@ companies:
         title: 完成近 3 亿元融资
         amount: { value: 3, unit: 亿元 }
         status: confirmed
-        sources: [{ title: 界面：2026 具身智能投资窗口，14 家企业最新进展, url: "https://m.jiemian.com/article/14531147.html", date: "2026-10" }]
+        sources:
+          [
+            {
+                title: 界面：2026 具身智能投资窗口，14 家企业最新进展,
+                url: "https://m.jiemian.com/article/14531147.html",
+                date: "2026-10"
+              }
+          ]
+    valuation: { value: 15, unit: 亿元, asof: 2026-06, status: reported, note: 近 3 亿元融资投后约 }
 
   - id: deeprobotics
     name: 云深处
@@ -223,14 +372,29 @@ companies:
     region: cn
     track: embodied
     segment: body
-    tags: [四足, 行业应用, IPO]
+    tags: [ 四足, 行业应用, IPO ]
     intro: 四足机器人行业应用收入领先，科创板 IPO 已获受理。
     events:
       - date: "2026"
         kind: ipo
         title: 科创板 IPO 获受理
         status: confirmed
-        sources: [{ title: 界面：2026 具身智能投资窗口，14 家企业最新进展, url: "https://m.jiemian.com/article/14531147.html", date: "2026-10" }]
+        sources:
+          [
+            {
+                title: 界面：2026 具身智能投资窗口，14 家企业最新进展,
+                url: "https://m.jiemian.com/article/14531147.html",
+                date: "2026-10"
+              }
+          ]
+    valuation:
+      {
+        value: 60,
+        unit: 亿元,
+        asof: 2026-06,
+        status: reported,
+        note: 科创板 IPO 获受理 · 估值约
+      }
 
   - id: youibot
     name: 优艾智合
@@ -238,14 +402,22 @@ companies:
     region: cn
     track: embodied
     segment: application
-    tags: [工业物流, 巡检, IPO]
+    tags: [ 工业物流, 巡检, IPO ]
     intro: “一脑多态”工业机器人，聚焦半导体、能源化工、锂电、3C 的工业物流和巡检运维，已向港交所递表。
     events:
       - date: "2026"
         kind: ipo
         title: 向港交所递交招股书
         status: confirmed
-        sources: [{ title: 界面：2026 具身智能投资窗口，14 家企业最新进展, url: "https://m.jiemian.com/article/14531147.html", date: "2026-10" }]
+        sources:
+          [
+            {
+                title: 界面：2026 具身智能投资窗口，14 家企业最新进展,
+                url: "https://m.jiemian.com/article/14531147.html",
+                date: "2026-10"
+              }
+          ]
+    valuation: { value: 40, unit: 亿元, asof: 2026-06, status: reported, note: 已递表港交所 · 估值约 }
 
   - id: tars
     name: 它石智航
@@ -253,10 +425,11 @@ companies:
     region: cn
     track: embodied
     segment: brain
-    tags: [具身大模型, 工业装配, 数据采集]
-    aliases: [TARS 机器人]
-    intro: 前百度智驾总裁李震宇、前华为自动驾驶 CTO 陈亦伦创办，做通用具身大模型 AWE 3.0，配轮式工业机器人 A 系列和 SenseHub 穿戴式数采系统，先从线束精密装配切入。
-    founders: [李震宇, 陈亦伦, 丁文超]
+    tags: [ 具身大模型, 工业装配, 数据采集 ]
+    aliases: [ TARS 机器人 ]
+    intro: 前百度智驾总裁李震宇、前华为自动驾驶 CTO 陈亦伦创办，做通用具身大模型 AWE 3.0，配轮式工业机器人 A 系列和 SenseHub
+      穿戴式数采系统，先从线束精密装配切入。
+    founders: [ 李震宇, 陈亦伦, 丁文超 ]
     founded: 2025
     valuation: { value: 180, unit: 亿元, asof: "2026-04", status: reported, note: 约 }
     events:
@@ -264,28 +437,57 @@ companies:
         kind: deployment
         title: WAIC 2026 把复杂线束精密装配产线 1:1 搬上展台
         status: confirmed
-        sources: [{ title: 36氪：WAIC 2026 具身智能，万台量产、路线归一, url: "https://36kr.com/p/3883529657462790", date: "2026-07-06" }]
+        sources:
+          [
+            {
+                title: 36氪：WAIC 2026 具身智能，万台量产、路线归一,
+                url: "https://36kr.com/p/3883529657462790",
+                date: "2026-07-06"
+              }
+          ]
       - date: "2026-04-15"
         kind: funding
         title: Pre-A 轮 $455M，中国具身智能最大单轮融资；高瓴创投、红杉中国、美团战投联合领投，传估值约 180 亿元
         amount: { value: 455, unit: 百万美元 }
-        investors: [高瓴创投, 红杉中国, 美团战投, 中金资本, 启明创投, 蓝驰创投, TCL 创投, 北京机器人产业基金, 上海国投先导]
+        investors: [ 高瓴创投, 红杉中国, 美团战投, 中金资本, 启明创投, 蓝驰创投, TCL 创投, 北京机器人产业基金, 上海国投先导 ]
         status: confirmed
         sources:
-          - { title: 界面新闻：它石智航完成 4.55 亿美元 Pre-A 轮融资, url: "https://www.jiemian.com/article/14261692.html", date: "2026-04-16" }
-          - { title: 智能日报：它石智航 Pre-A 轮融资超 30 亿，估值 180 亿, url: "https://www.pcd.com.cn/computer/202604/126477.html", date: "2026-04" }
+          - {
+              title: 界面新闻：它石智航完成 4.55 亿美元 Pre-A 轮融资,
+              url: "https://www.jiemian.com/article/14261692.html",
+              date: "2026-04-16"
+            }
+          - {
+              title: 智能日报：它石智航 Pre-A 轮融资超 30 亿，估值 180 亿,
+              url: "https://www.pcd.com.cn/computer/202604/126477.html",
+              date: "2026-04"
+            }
       - date: "2026-04"
         kind: model
         title: 通用具身大模型迭代到 AWE 3.0；A1 一小时完成百余次亚毫米级线束装配，创吉尼斯纪录
         status: confirmed
-        sources: [{ title: 36氪/智东西：它石智航 Pre-A 轮融资, url: "https://www.36kr.com/p/3768920808391176", date: "2026-04-16" }]
+        sources:
+          [
+            {
+                title: 36氪/智东西：它石智航 Pre-A 轮融资,
+                url: "https://www.36kr.com/p/3768920808391176",
+                date: "2026-04-16"
+              }
+          ]
       - date: "2025-07"
         kind: funding
         title: 天使+ 轮 $122M，美团战投领投；天使轮至此累计约 $242M
         amount: { value: 122, unit: 百万美元 }
-        investors: [美团战投, 钧山投资, 国汽投资, 临港科创投]
+        investors: [ 美团战投, 钧山投资, 国汽投资, 临港科创投 ]
         status: confirmed
-        sources: [{ title: 36氪/智东西：它石智航 Pre-A 轮融资, url: "https://www.36kr.com/p/3768920808391176", date: "2026-04-16" }]
+        sources:
+          [
+            {
+                title: 36氪/智东西：它石智航 Pre-A 轮融资,
+                url: "https://www.36kr.com/p/3768920808391176",
+                date: "2026-04-16"
+              }
+          ]
 
   - id: spirit-ai
     name: 千寻智能
@@ -293,9 +495,10 @@ companies:
     region: cn
     track: embodied
     segment: brain
-    tags: [具身大模型, 开源, 人形, 数据采集]
-    intro: 韩峰涛（前珞石机器人 CTO）与清华高阳创办，开源具身模型 Spirit v1.5，人形机器人“小墨”在宁德时代电池产线做下线检测，累计真机数据超 20 万小时。
-    founders: [韩峰涛, 高阳]
+    tags: [ 具身大模型, 开源, 人形, 数据采集 ]
+    intro: 韩峰涛（前珞石机器人 CTO）与清华高阳创办，开源具身模型 Spirit v1.5，人形机器人“小墨”在宁德时代电池产线做下线检测，累计真机数据超
+      20 万小时。
+    founders: [ 韩峰涛, 高阳 ]
     founded: 2024
     valuation: { value: 100, unit: 亿元, asof: "2026-02-24", status: confirmed, note: 超过 }
     events:
@@ -303,21 +506,43 @@ companies:
         kind: funding
         title: 连续两轮合计近 20 亿元，估值破百亿元；云锋基金、红杉中国、混沌投资等新进，顺为、Prosperity7 加注
         amount: { value: 20, unit: 亿元 }
-        investors: [云锋基金, 红杉中国, 混沌投资, TCL 创投, 360 基金, 顺为资本, Prosperity7]
+        investors: [ 云锋基金, 红杉中国, 混沌投资, TCL 创投, 360 基金, 顺为资本, Prosperity7 ]
         status: confirmed
         sources:
-          - { title: 量子位：20 亿融资，百亿估值，千寻智能开年引爆具身赛道, url: "https://www.qbitai.com/2026/02/381766.html", date: "2026-02-24" }
-          - { title: 澎湃新闻：千寻智能完成近 20 亿元融资, url: "https://www.thepaper.cn/newsDetail_forward_32649366", date: "2026-02-24" }
+          - {
+              title: 量子位：20 亿融资，百亿估值，千寻智能开年引爆具身赛道,
+              url: "https://www.qbitai.com/2026/02/381766.html",
+              date: "2026-02-24"
+            }
+          - {
+              title: 澎湃新闻：千寻智能完成近 20 亿元融资,
+              url: "https://www.thepaper.cn/newsDetail_forward_32649366",
+              date: "2026-02-24"
+            }
       - date: "2026-01"
         kind: model
         title: 开源具身模型 Spirit v1.5，称性能超过 π0.5
         status: confirmed
-        sources: [{ title: 量子位：千寻智能开年引爆具身赛道, url: "https://www.qbitai.com/2026/02/381766.html", date: "2026-02-24" }]
+        sources:
+          [
+            {
+                title: 量子位：千寻智能开年引爆具身赛道,
+                url: "https://www.qbitai.com/2026/02/381766.html",
+                date: "2026-02-24"
+              }
+          ]
       - date: "2025-12"
         kind: deployment
         title: 人形机器人“小墨”在宁德时代中州基地投运，负责 EOL 和 DCR 工序
         status: confirmed
-        sources: [{ title: 澎湃新闻：千寻智能完成近 20 亿元融资, url: "https://www.thepaper.cn/newsDetail_forward_32649366", date: "2026-02-24" }]
+        sources:
+          [
+            {
+                title: 澎湃新闻：千寻智能完成近 20 亿元融资,
+                url: "https://www.thepaper.cn/newsDetail_forward_32649366",
+                date: "2026-02-24"
+              }
+          ]
 
   - id: linkerbot
     name: 灵心巧手
@@ -325,28 +550,50 @@ companies:
     region: cn
     track: embodied
     segment: components-data
-    tags: [灵巧手, 高自由度]
-    aliases: [Linker Hand]
-    intro: 高自由度灵巧手头部厂商（Linker Hand 系列，连杆、腱绳、直驱三条路线），2025 年销量约 1.9 万台、国内并列第二，计划 2026 年交付 5–10 万只。
-    founders: [周永]
+    tags: [ 灵巧手, 高自由度 ]
+    aliases: [ Linker Hand ]
+    intro: 高自由度灵巧手头部厂商（Linker Hand 系列，连杆、腱绳、直驱三条路线），2025 年销量约 1.9 万台、国内并列第二，计划 2026
+      年交付 5–10 万只。
+    founders: [ 周永 ]
     valuation: { value: 200, unit: 亿元, asof: "2026-04", status: reported, note: 约 }
     events:
       - date: "2026-05"
         kind: funding
         title: B+ 轮刚结束即启动新一轮，传目标估值约 $6B（约 424 亿元），计划 2027 年申报港股
         status: reported
-        sources: [{ title: 澎湃新闻/光锥智能：灵心巧手估值路径 16 亿→200 亿, url: "https://m.thepaper.cn/newsDetail_forward_33576291", date: "2026-07-14" }]
+        sources:
+          [
+            {
+                title: 澎湃新闻/光锥智能：灵心巧手估值路径 16 亿→200 亿,
+                url: "https://m.thepaper.cn/newsDetail_forward_33576291",
+                date: "2026-07-14"
+              }
+          ]
       - date: "2026-04-29"
         kind: funding
         title: 完成 B+ 轮，中关村科学城基金、中银资产、复星创富等新进，距 2 月 B 轮不到三个月
-        investors: [中关村科学城基金, 中银资产, 复星创富, 贝克资本, 博佳资本, 力合资本]
+        investors: [ 中关村科学城基金, 中银资产, 复星创富, 贝克资本, 博佳资本, 力合资本 ]
         status: confirmed
-        sources: [{ title: 中国证券报：灵心巧手完成 B+ 轮融资, url: "https://www.cs.com.cn/tzjj/01/2026/04/30/detail_2026043010008612.html", date: "2026-04-30" }]
+        sources:
+          [
+            {
+                title: 中国证券报：灵心巧手完成 B+ 轮融资,
+                url: "https://www.cs.com.cn/tzjj/01/2026/04/30/detail_2026043010008612.html",
+                date: "2026-04-30"
+              }
+          ]
       - date: "2026-01"
         kind: product
         title: 累计订单破 1 万台，单月最高产量 4,000 台；O6 标准版 6,666 元
         status: confirmed
-        sources: [{ title: 澎湃新闻/光锥智能：灵心巧手, url: "https://m.thepaper.cn/newsDetail_forward_33576291", date: "2026-07-14" }]
+        sources:
+          [
+            {
+                title: 澎湃新闻/光锥智能：灵心巧手,
+                url: "https://m.thepaper.cn/newsDetail_forward_33576291",
+                date: "2026-07-14"
+              }
+          ]
 
   - id: leju
     name: 乐聚机器人
@@ -354,25 +601,47 @@ companies:
     region: cn
     track: embodied
     segment: body
-    tags: [人形, 双足, IPO, 开源鸿蒙]
-    aliases: [乐聚智能]
+    tags: [ 人形, 双足, IPO, 开源鸿蒙 ]
+    aliases: [ 乐聚智能 ]
     intro: 2016 年成立的人形机器人公司（冷晓琨），全尺寸双足人形“夸父”2025 年售出 577 台、贡献近七成营收，已申报创业板。
-    founders: [冷晓琨]
+    founders: [ 冷晓琨 ]
     founded: 2016
-    valuation: { value: 43.27, unit: 亿元, asof: "2026-05-21", status: confirmed, note: 最近一轮投后 }
+    valuation:
+      {
+        value: 43.27,
+        unit: 亿元,
+        asof: "2026-05-21",
+        status: confirmed,
+        note: 最近一轮投后
+      }
     events:
       - date: "2026-07"
         kind: product
         title: WAIC 2026 展示真机数据采集与 OpenLET 开源数据集，全网下载超 300 万次
         status: confirmed
-        sources: [{ title: 36氪：WAIC 2026 具身智能, url: "https://36kr.com/p/3883529657462790", date: "2026-07-06" }]
+        sources:
+          [
+            {
+                title: 36氪：WAIC 2026 具身智能,
+                url: "https://36kr.com/p/3883529657462790",
+                date: "2026-07-06"
+              }
+          ]
       - date: "2026-05-19"
         kind: ipo
         title: 创业板 IPO 获受理，首家用创业板第四套标准申报，拟募资 26 亿元；2025 年营收 2.58 亿元、净亏 7,125 万元
         status: confirmed
         sources:
-          - { title: 36氪：乐聚智能冲击创业板 IPO, url: "https://www.36kr.com/p/3818940918727810", date: "2026-05-21" }
-          - { title: 虎嗅/IT 桔子：乐聚机器人, url: "https://www.huxiu.com/article/4886078.html", date: "2026-08-26" }
+          - {
+              title: 36氪：乐聚智能冲击创业板 IPO,
+              url: "https://www.36kr.com/p/3818940918727810",
+              date: "2026-05-21"
+            }
+          - {
+              title: 虎嗅/IT 桔子：乐聚机器人,
+              url: "https://www.huxiu.com/article/4886078.html",
+              date: "2026-08-26"
+            }
 
   - id: fourier
     name: 傅利叶
@@ -380,11 +649,11 @@ companies:
     region: cn
     track: embodied
     segment: body
-    tags: [人形, 康养, 康复]
-    aliases: [傅利叶智能, Fourier Intelligence]
-    match: [傅利叶, Fourier Intelligence, Fourier GR-3, Fourier 人形]
+    tags: [ 人形, 康养, 康复 ]
+    aliases: [ 傅利叶智能, Fourier Intelligence ]
+    match: [ 傅利叶, Fourier Intelligence, Fourier GR-3, Fourier 人形 ]
     intro: 从康复机器人起家的人形机器人公司（顾捷），GR 系列人形，GR-3 定位全尺寸“关怀机器人”，主攻康养陪护。
-    founders: [顾捷]
+    founders: [ 顾捷 ]
     founded: 2015
     valuation: { value: 80, unit: 亿元, asof: "2026-05", status: reported, note: 约 }
     events:
@@ -392,23 +661,52 @@ companies:
         kind: product
         title: WAIC 2026 展示人形机器人康养样板间
         status: confirmed
-        sources: [{ title: 36氪：WAIC 2026 具身智能, url: "https://36kr.com/p/3883529657462790", date: "2026-07-06" }]
+        sources:
+          [
+            {
+                title: 36氪：WAIC 2026 具身智能,
+                url: "https://36kr.com/p/3883529657462790",
+                date: "2026-07-06"
+              }
+          ]
       - date: "2026-05"
         kind: ipo
         title: 完成股改、进入上市筹备，市场估值约 80 亿元
         status: reported
-        sources: [{ title: 36氪：“六小龙”集体冲刺 IPO, url: "https://36kr.com/p/3818707124405120", date: "2026-05-21" }]
+        sources:
+          [
+            {
+                title: 36氪：“六小龙”集体冲刺 IPO,
+                url: "https://36kr.com/p/3818707124405120",
+                date: "2026-05-21"
+              }
+          ]
       - date: "2026-01"
         kind: product
         title: CES 2026 展出 GR-3 关怀机器人（165 cm、55 自由度、31 个压力传感器）
         status: confirmed
-        sources: [{ title: Interesting Engineering：Fourier GR-3 at CES 2026, url: "https://interestingengineering.com/ai-robotics/fouriers-gr-3-humanoid-at-ces-2026", date: "2026-01" }]
+        sources:
+          [
+            {
+                title: Interesting Engineering：Fourier GR-3 at CES 2026,
+                url: "https://interestingengineering.com/ai-robotics/fouriers-gr-3-humanoid-at-\
+                  ces-2026",
+                date: "2026-01"
+              }
+          ]
       - date: "2025-01"
         kind: funding
         title: E 轮近 8 亿元，上海国资加注
         amount: { value: 8, unit: 亿元 }
         status: confirmed
-        sources: [{ title: 澎湃新闻：傅利叶完成新一轮近 8 亿元融资, url: "https://m.thepaper.cn/newsDetail_forward_29861323", date: "2025-01" }]
+        sources:
+          [
+            {
+                title: 澎湃新闻：傅利叶完成新一轮近 8 亿元融资,
+                url: "https://m.thepaper.cn/newsDetail_forward_29861323",
+                date: "2025-01"
+              }
+          ]
 
   - id: limx
     name: 逐际动力
@@ -416,7 +714,7 @@ companies:
     region: cn
     track: embodied
     segment: body
-    tags: [人形, 多形态, 出海]
+    tags: [ 人形, 多形态, 出海 ]
     intro: 做全尺寸人形 LimX Luna 和模块化多形态机器人 TRON 2，累计订单数千台、过半来自海外，2026 年 3 月股改并启动 IPO。
     valuation: { value: 150, unit: 亿元, asof: "2026-07-14", status: confirmed, note: 投后 }
     events:
@@ -424,16 +722,31 @@ companies:
         kind: funding
         title: Pre-IPO 轮近 $200M，投后 150 亿元；IDG、蓝思科技等新进，半年累计融资约 $400M
         amount: { value: 200, unit: 百万美元 }
-        investors: [IDG 资本, 蓝思科技, 磊石资本, 华山资本, 绿洲资本, 蔚来资本]
+        investors: [ IDG 资本, 蓝思科技, 磊石资本, 华山资本, 绿洲资本, 蔚来资本 ]
         status: confirmed
         sources:
-          - { title: 澎湃新闻：逐际动力完成近 2 亿美元 Pre-IPO 轮, url: "https://www.thepaper.cn/newsDetail_forward_33580858", date: "2026-07-14" }
-          - { title: 36氪/硬氪：逐际动力 Pre-IPO 轮, url: "https://eu.36kr.com/zh/p/3893976502287618", date: "2026-07-14" }
+          - {
+              title: 澎湃新闻：逐际动力完成近 2 亿美元 Pre-IPO 轮,
+              url: "https://www.thepaper.cn/newsDetail_forward_33580858",
+              date: "2026-07-14"
+            }
+          - {
+              title: 36氪/硬氪：逐际动力 Pre-IPO 轮,
+              url: "https://eu.36kr.com/zh/p/3893976502287618",
+              date: "2026-07-14"
+            }
       - date: "2026-05"
         kind: product
         title: 发布全尺寸人形 LimX Luna（160 cm、27 自由度），不到一个月国内外批量交付
         status: confirmed
-        sources: [{ title: 36氪/硬氪：逐际动力 Pre-IPO 轮, url: "https://eu.36kr.com/zh/p/3893976502287618", date: "2026-07-14" }]
+        sources:
+          [
+            {
+                title: 36氪/硬氪：逐际动力 Pre-IPO 轮,
+                url: "https://eu.36kr.com/zh/p/3893976502287618",
+                date: "2026-07-14"
+              }
+          ]
 
   - id: booster
     name: 加速进化
@@ -441,16 +754,31 @@ companies:
     region: cn
     track: embodied
     segment: body
-    tags: [小尺寸人形, 教育, 赛事]
+    tags: [ 小尺寸人形, 教育, 赛事 ]
     intro: 小尺寸人形机器人 Booster K1，走“赛事+教育”路线，累计出货超千台、进入 20 多个国家，2025 年 12 月经营现金流转正。
     events:
       - date: "2026-04-17"
         kind: funding
         title: 新一轮近 10 亿元，北京高精尖基金、京国盛、华控基金领投；一季度出货同比 +500%
         amount: { value: 10, unit: 亿元 }
-        investors: [北京高精尖产业基金, 京国盛基金, 华控基金, 联想之星, 深创投, 源码资本, IDG 资本]
+        investors: [ 北京高精尖产业基金, 京国盛基金, 华控基金, 联想之星, 深创投, 源码资本, IDG 资本 ]
         status: confirmed
-        sources: [{ title: 虎嗅：加速进化完成近 10 亿元融资, url: "https://m.huxiu.com/article/4851450.html", date: "2026-04-17" }]
+        sources:
+          [
+            {
+                title: 虎嗅：加速进化完成近 10 亿元融资,
+                url: "https://m.huxiu.com/article/4851450.html",
+                date: "2026-04-17"
+              }
+          ]
+    valuation:
+      {
+        value: 45,
+        unit: 亿元,
+        asof: 2026-04-17,
+        status: reported,
+        note: 近 10 亿元新轮投后约
+      }
 
   - id: engineai
     name: 众擎机器人
@@ -458,7 +786,7 @@ companies:
     region: cn
     track: embodied
     segment: body
-    tags: [人形, 量产, IPO]
+    tags: [ 人形, 量产, IPO ]
     intro: 深圳人形机器人公司，PM01、T800 等型号，2026 年 6 月新工厂投产（号称 15 分钟一台、年产能 1 万台），已秘密递表港交所。
     valuation: { value: 100, unit: 亿元, asof: "2026-04", status: confirmed, note: 超过 }
     events:
@@ -466,24 +794,52 @@ companies:
         kind: model
         title: 发布“仿人脑”具身智能引擎 EngineAI Awaken
         status: confirmed
-        sources: [{ title: 同花顺：众擎机器人发布具身智能引擎 EngineAI Awaken, url: "https://news.10jqka.com.cn/20260822/c679192348.shtml", date: "2026-08-22" }]
+        sources:
+          [
+            {
+                title: 同花顺：众擎机器人发布具身智能引擎 EngineAI Awaken,
+                url: "https://news.10jqka.com.cn/20260822/c679192348.shtml",
+                date: "2026-08-22"
+              }
+          ]
       - date: "2026-06-12"
         kind: ipo
         title: 据彭博，已秘密递表港交所，中金、中信证券保荐
         status: reported
-        sources: [{ title: The Next Web：EngineAI files for a Hong Kong IPO, url: "https://thenextweb.com/news/engineai-hong-kong-ipo-humanoid-robots", date: "2026-06-12" }]
+        sources:
+          [
+            {
+                title: The Next Web：EngineAI files for a Hong Kong IPO,
+                url: "https://thenextweb.com/news/engineai-hong-kong-ipo-humanoid-robots",
+                date: "2026-06-12"
+              }
+          ]
       - date: "2026-06-01"
         kind: product
         title: 深圳 1.2 万平方米工厂投产，首批 T800 发货
         status: confirmed
-        sources: [{ title: The Next Web：EngineAI files for a Hong Kong IPO, url: "https://thenextweb.com/news/engineai-hong-kong-ipo-humanoid-robots", date: "2026-06-12" }]
+        sources:
+          [
+            {
+                title: The Next Web：EngineAI files for a Hong Kong IPO,
+                url: "https://thenextweb.com/news/engineai-hong-kong-ipo-humanoid-robots",
+                date: "2026-06-12"
+              }
+          ]
       - date: "2026-04"
         kind: funding
         title: B 轮 $200M，河南投资集团关联基金与立讯精密领投，估值超 100 亿元
         amount: { value: 200, unit: 百万美元 }
-        investors: [河南投资集团, 立讯精密]
+        investors: [ 河南投资集团, 立讯精密 ]
         status: confirmed
-        sources: [{ title: The Next Web：EngineAI files for a Hong Kong IPO, url: "https://thenextweb.com/news/engineai-hong-kong-ipo-humanoid-robots", date: "2026-06-12" }]
+        sources:
+          [
+            {
+                title: The Next Web：EngineAI files for a Hong Kong IPO,
+                url: "https://thenextweb.com/news/engineai-hong-kong-ipo-humanoid-robots",
+                date: "2026-06-12"
+              }
+          ]
 
   - id: noetix
     name: 松延动力
@@ -491,16 +847,31 @@ companies:
     region: cn
     track: embodied
     segment: body
-    tags: [人形, 消费级, 教育]
+    tags: [ 人形, 消费级, 教育 ]
     intro: 同时做双足人形和仿生人形两条线，消费级小人形“小布米”售价 9,998 元，主攻高校科研和教育市场。
-    founders: [姜哲源]
+    founders: [ 姜哲源 ]
     events:
       - date: "2026-03-02"
         kind: funding
         title: B 轮，宁德时代系晨道资本领投，累计融资近 10 亿元；已完成股改
-        investors: [晨道资本, 国科投资, 京国盛基金, 九合创投]
+        investors: [ 晨道资本, 国科投资, 京国盛基金, 九合创投 ]
         status: confirmed
-        sources: [{ title: 华尔街见闻：10 亿融资弹药补充后，松延动力要渗透更多场景, url: "https://wallstreetcn.com/articles/3766496", date: "2026-03-02" }]
+        sources:
+          [
+            {
+                title: 华尔街见闻：10 亿融资弹药补充后，松延动力要渗透更多场景,
+                url: "https://wallstreetcn.com/articles/3766496",
+                date: "2026-03-02"
+              }
+          ]
+    valuation:
+      {
+        value: 40,
+        unit: 亿元,
+        asof: 2026-03-02,
+        status: reported,
+        note: B 轮及股改后估值约
+      }
 
   - id: magiclab
     name: 魔法原子
@@ -508,7 +879,7 @@ companies:
     region: cn
     track: embodied
     segment: body
-    tags: [人形, 四足, 追觅系]
+    tags: [ 人形, 四足, 追觅系 ]
     intro: 追觅参与孵化、团队来自小米“铁蛋”机器狗，做通用人形和四足机器人；创始人吴长征 2026 年 2 月离职，CTO 陈春玉接任法定代表人。
     founded: 2023
     events:
@@ -516,14 +887,36 @@ companies:
         kind: funding
         title: A 轮 5 亿元，拓普集团等参投；同期发起百亿级具身智能产业基金
         amount: { value: 5, unit: 亿元 }
-        investors: [天空工场创投基金, 拓普集团, 金雨茂物, 爱仕达]
+        investors: [ 天空工场创投基金, 拓普集团, 金雨茂物, 爱仕达 ]
         status: confirmed
-        sources: [{ title: 界面新闻：魔法原子完成 5 亿元融资, url: "https://www.jiemian.com/article/14090359.html", date: "2026-03-10" }]
+        sources:
+          [
+            {
+                title: 界面新闻：魔法原子完成 5 亿元融资,
+                url: "https://www.jiemian.com/article/14090359.html",
+                date: "2026-03-10"
+              }
+          ]
       - date: "2026-02"
         kind: people
         title: 核心创始人吴长征离职，据报启动个人创业
         status: reported
-        sources: [{ title: 界面新闻：魔法原子完成 5 亿元融资, url: "https://www.jiemian.com/article/14090359.html", date: "2026-03-10" }]
+        sources:
+          [
+            {
+                title: 界面新闻：魔法原子完成 5 亿元融资,
+                url: "https://www.jiemian.com/article/14090359.html",
+                date: "2026-03-10"
+              }
+          ]
+    valuation:
+      {
+        value: 35,
+        unit: 亿元,
+        asof: 2026-03-09,
+        status: reported,
+        note: 5 亿元 A 轮投后约
+      }
 
   - id: dexmal
     name: 原力灵机
@@ -531,22 +924,37 @@ companies:
     region: cn
     track: embodied
     segment: brain
-    tags: [具身大模型, 开源, 仓储分拣]
+    tags: [ 具身大模型, 开源, 仓储分拣 ]
     intro: 旷视系团队（唐文斌）做具身原生大模型 DM0 和开源框架 Dexbotic，2026 年 6 月与 Atomix 机器人合并，先做仓储物流分拣。
-    founders: [唐文斌]
+    founders: [ 唐文斌 ]
     valuation: { value: 200, unit: 亿元, asof: "2026-08-21", status: reported, note: 目标 }
     events:
       - date: "2026-08-21"
         kind: funding
         title: 据彭博，新一轮洽谈中，目标估值约 200 亿元（约 $3B）
         status: reported
-        sources: [{ title: Let's Data Science：Dexmal seeks $3 billion valuation, url: "https://letsdatascience.com/news/dexmal-seeks-3-billion-funding-valuation-daf2d298", date: "2026-08-21" }]
+        sources:
+          [
+            {
+                title: Let's Data Science：Dexmal seeks $3 billion valuation,
+                url: "https://letsdatascience.com/news/dexmal-seeks-3-billion-funding-valuation\
+                  -daf2d298",
+                date: "2026-08-21"
+              }
+          ]
       - date: "2026-06-12"
         kind: funding
         title: 与 Atomix 机器人战略合并，同步完成战略融资；智谱、阶跃星辰、商汤、阿里、华勤技术等参投
-        investors: [智谱, 阶跃星辰, 商汤, 阿里巴巴, 华勤技术, 上汽恒旭]
+        investors: [ 智谱, 阶跃星辰, 商汤, 阿里巴巴, 华勤技术, 上汽恒旭 ]
         status: confirmed
-        sources: [{ title: 投资界：原力灵机完成与 Atomix 机器人战略合并, url: "https://t.cj.sina.com.cn/articles/view/2286037382/8842298602001euxs", date: "2026-06-12" }]
+        sources:
+          [
+            {
+                title: 投资界：原力灵机完成与 Atomix 机器人战略合并,
+                url: "https://t.cj.sina.com.cn/articles/view/2286037382/8842298602001euxs",
+                date: "2026-06-12"
+              }
+          ]
 
   - id: noematrix
     name: 穹彻智能
@@ -554,17 +962,32 @@ companies:
     region: cn
     track: embodied
     segment: brain
-    tags: [具身大脑, 力控, 数据采集]
+    tags: [ 具身大脑, 力控, 数据采集 ]
     intro: 上海交大卢策吾团队创办，做“以力为中心”的具身大模型和全链路数采平台，已在智能药房、酒店洗衣、家庭整理、物流分拣等场景部署。
-    founders: [卢策吾]
+    founders: [ 卢策吾 ]
     founded: 2023
     events:
       - date: "2026-02-11"
         kind: funding
         title: A 轮数亿元，C 资本领投，Sea、普华资本跟投，Prosperity7 超额追投
-        investors: [C 资本, Sea Limited, 普华资本, Prosperity7]
+        investors: [ C 资本, Sea Limited, 普华资本, Prosperity7 ]
         status: confirmed
-        sources: [{ title: 新京报：穹彻智能完成 A 轮融资, url: "https://www.bjnews.com.cn/detail/1770770516189119.html", date: "2026-02-11" }]
+        sources:
+          [
+            {
+                title: 新京报：穹彻智能完成 A 轮融资,
+                url: "https://www.bjnews.com.cn/detail/1770770516189119.html",
+                date: "2026-02-11"
+              }
+          ]
+    valuation:
+      {
+        value: 30,
+        unit: 亿元,
+        asof: 2026-02-11,
+        status: reported,
+        note: 数亿元 A 轮投后约
+      }
 
   - id: lightwheel
     name: 光轮智能
@@ -572,18 +995,35 @@ companies:
     region: cn
     track: embodied
     segment: components-data
-    tags: [仿真, 合成数据, 评测]
-    aliases: [Light Wheel]
-    intro: 谢晨创办的具身智能仿真与合成数据公司，覆盖物理仿真、数据引擎（EgoSuite）和评测平台 RoboFinals，合作方含英伟达、Figure、1X、智元、银河通用。
-    founders: [谢晨]
+    tags: [ 仿真, 合成数据, 评测 ]
+    aliases: [ Light Wheel ]
+    intro: 谢晨创办的具身智能仿真与合成数据公司，覆盖物理仿真、数据引擎（EgoSuite）和评测平台
+      RoboFinals，合作方含英伟达、Figure、1X、智元、银河通用。
+    founders: [ 谢晨 ]
     events:
       - date: "2026-03-11"
         kind: funding
         title: A++ 与 A+++ 轮合计 10 亿元，新希望、奥克斯等产业方参投
         amount: { value: 10, unit: 亿元 }
-        investors: [新希望集团, 奥克斯, 建投华科, 国方创新, 道禾长期投资]
+        investors: [ 新希望集团, 奥克斯, 建投华科, 国方创新, 道禾长期投资 ]
         status: confirmed
-        sources: [{ title: EqualOcean：Light Wheel Intelligence raises RMB 1B, url: "https://www.equalocean.com/news/2026031121786-light-wheel-intelligence-raises-rmb-1b-build-physical-ai-infrastructure", date: "2026-03-11" }]
+        sources:
+          [
+            {
+                title: EqualOcean：Light Wheel Intelligence raises RMB 1B,
+                url: "https://www.equalocean.com/news/2026031121786-light-wheel-intelligence-ra\
+                  ises-rmb-1b-build-physical-ai-infrastructure",
+                date: "2026-03-11"
+              }
+          ]
+    valuation:
+      {
+        value: 50,
+        unit: 亿元,
+        asof: 2026-03-11,
+        status: reported,
+        note: A++/A+++ 轮累计 10 亿 · 估值约
+      }
 
   - id: sudo
     name: 苏度科技
@@ -591,9 +1031,10 @@ companies:
     region: cn
     track: embodied
     segment: brain
-    tags: [仿真训练, 通用机器人, 制造]
-    intro: 复旦苏昊（ShapeNet、PointNet、ManiSkill 作者之一）联合创办，主打纯仿真训练，Sudo R1 系统与宁德时代联合开发电池模组装配，计划 2027 年扩大部署。
-    founders: [苏昊, 韩铮]
+    tags: [ 仿真训练, 通用机器人, 制造 ]
+    intro: 复旦苏昊（ShapeNet、PointNet、ManiSkill 作者之一）联合创办，主打纯仿真训练，Sudo R1
+      系统与宁德时代联合开发电池模组装配，计划 2027 年扩大部署。
+    founders: [ 苏昊, 韩铮 ]
     founded: 2025
     valuation: { value: 2, unit: 十亿美元, asof: "2026-04", status: reported, note: 超过 }
     events:
@@ -601,14 +1042,28 @@ companies:
         kind: funding
         title: 新一轮超 10 亿元，上海国投先导、国泰海通、孚腾资本联合领投，小米等老股东跟投
         amount: { value: 10, unit: 亿元 }
-        investors: [上海国投先导, 国泰海通, 孚腾资本, 国开金融, 小米]
+        investors: [ 上海国投先导, 国泰海通, 孚腾资本, 国开金融, 小米 ]
         status: confirmed
-        sources: [{ title: 虎嗅：苏度科技融资超 10 亿元, url: "https://www.huxiu.com/article/4895110.html", date: "2026-10-02" }]
+        sources:
+          [
+            {
+                title: 虎嗅：苏度科技融资超 10 亿元,
+                url: "https://www.huxiu.com/article/4895110.html",
+                date: "2026-10-02"
+              }
+          ]
       - date: "2026-07"
         kind: product
         title: WAIC 2026 发布 Sudo R1，纯仿真训练、零样本抓取成功率近 100%
         status: confirmed
-        sources: [{ title: 36氪：WAIC 2026 具身智能, url: "https://36kr.com/p/3883529657462790", date: "2026-07-06" }]
+        sources:
+          [
+            {
+                title: 36氪：WAIC 2026 具身智能,
+                url: "https://36kr.com/p/3883529657462790",
+                date: "2026-07-06"
+              }
+          ]
 
   - id: ubtech
     name: 优必选
@@ -616,20 +1071,54 @@ companies:
     region: cn
     track: embodied
     segment: body
-    tags: [人形, 工业, 港股上市]
+    tags: [ 人形, 工业, 港股上市 ]
     intro: 港股上市的人形机器人公司（9880.HK），工业人形 Walker S 系列进车厂和产线，2025 年营收 20.01 亿元。
-    founders: [周剑]
+    founders: [ 周剑 ]
     events:
+      - date: "2026-11-02"
+        kind: product
+        title: 正式发布高保真具身智能仿真平台 Thinker-Sim
+        status: confirmed
+        sources:
+          [
+            {
+                title: 机器之心：高保真复刻真实世界，优必选Thinker-Sim具身智能仿真平台正式发布,
+                url: "https://www.jiqizhixin.com/articles/2026-11-02-3",
+                date: "2026-11-02"
+              }
+          ]
       - date: "2026-05"
         kind: deployment
         title: 2025 年营收 20.01 亿元，同比增长 53%
         status: confirmed
-        sources: [{ title: 36氪：“六小龙”集体冲刺 IPO, url: "https://36kr.com/p/3818707124405120", date: "2026-05-21" }]
+        sources:
+          [
+            {
+                title: 36氪：“六小龙”集体冲刺 IPO,
+                url: "https://36kr.com/p/3818707124405120",
+                date: "2026-05-21"
+              }
+          ]
       - date: "2025-11-17"
         kind: product
         title: Walker S2 量产交付，Walker 系列年内订单超 8 亿元；规划 2026 年产能 5,000 台
         status: confirmed
-        sources: [{ title: UBTECH：Walker S2 begins mass production and delivery, url: "https://www.aap.com.au/aapreleases/cision20251117ae25955/", date: "2025-11-17" }]
+        sources:
+          [
+            {
+                title: UBTECH：Walker S2 begins mass production and delivery,
+                url: "https://www.aap.com.au/aapreleases/cision20251117ae25955/",
+                date: "2025-11-17"
+              }
+          ]
+    valuation:
+      {
+        value: 326,
+        unit: 亿港元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 港股 09880.HK · 实时市值
+      }
 
   # ───────── 具身智能 · 海外 ─────────
   - id: ultra
@@ -637,58 +1126,108 @@ companies:
     region: global
     track: embodied
     segment: application
-    tags: [仓储, RaaS]
-    match: [Ultra 机器人, Ultra Robotics, ultra.tech, Jon Miller Schwartz]
+    tags: [ 仓储, RaaS ]
+    match: [ Ultra 机器人, Ultra Robotics, ultra.tech, Jon Miller Schwartz ]
     intro: 布鲁克林的仓储打包机器人公司，按月租赁（RaaS），已打包超 50 万单；与 Physical Intelligence 合作，由 PI 提供模型。
-    founders: [Jon Miller Schwartz]
+    founders: [ Jon Miller Schwartz ]
     events:
       - date: "2026-10-09"
         kind: funding
         title: A 轮 $50M，Framework Ventures 领投（含种子轮累计 $62M）；宣布与 Physical Intelligence 合作
         amount: { value: 50, unit: 百万美元 }
-        investors: [Framework Ventures, Y Combinator]
+        investors: [ Framework Ventures, Y Combinator ]
         status: confirmed
-        sources: [{ title: Fortune：Ultra raises $62 million, url: "https://fortune.com/2026/10/09/ultra-raises-62-million-fast-growing-robots-service-tie-up-ai-research-firm-physical-intelligence/", date: "2026-10-09" }]
+        sources:
+          [
+            {
+                title: Fortune：Ultra raises $62 million,
+                url: "https://fortune.com/2026/10/09/ultra-raises-62-million-fast-growing-robot\
+                  s-service-tie-up-ai-research-firm-physical-intelligence/",
+                date: "2026-10-09"
+              }
+          ]
+    valuation:
+      {
+        value: 250,
+        unit: 百万美元,
+        asof: 2026-10-09,
+        status: reported,
+        note: 5000 万美元 A 轮投后约
+      }
 
   - id: minerva
     name: Minerva Humanoids
     region: global
     track: embodied
     segment: application
-    tags: [人形, 高危作业, 遥操作]
+    tags: [ 人形, 高危作业, 遥操作 ]
     intro: 为海上油气、高压电力、排爆等高危作业做半自主人形机器人 Roger，VR 遥操作 + 自主平衡导航，今秋首批付费试点。
-    founders: [Sandor Felber, Maurice Rahme]
+    founders: [ Sandor Felber, Maurice Rahme ]
     events:
       - date: "2026-10-06"
         kind: funding
         title: 结束隐身，Pre-seed 约 $10M，General Catalyst 领投
         amount: { value: 10, unit: 百万美元 }
-        investors: [General Catalyst, Long Journey Ventures, Credo Ventures]
+        investors: [ General Catalyst, Long Journey Ventures, Credo Ventures ]
         status: confirmed
-        sources: [{ title: GlobeNewswire：Minerva Humanoids emerges from stealth, url: "https://www.globenewswire.com/news-release/2026/10/06/3375277/0/en/minerva-humanoids-emerges-from-stealth-with-10m-pre-seed-round-led-by-general-catalyst-to-build-humanoid-robots-for-the-world-s-most-dangerous-jobs.html", date: "2026-10-06" }]
+        sources:
+          [
+            {
+                title: GlobeNewswire：Minerva Humanoids emerges from stealth,
+                url: "https://www.globenewswire.com/news-release/2026/10/06/3375277/0/en/minerv\
+                  a-humanoids-emerges-from-stealth-with-10m-pre-seed-round-led-\
+                  by-general-catalyst-to-build-humanoid-robots-for-the-world-s-\
+                  most-dangerous-jobs.html",
+                date: "2026-10-06"
+              }
+          ]
+    valuation:
+      {
+        value: 50,
+        unit: 百万美元,
+        asof: 2026-10-06,
+        status: reported,
+        note: 1000 万美元 Pre-seed 投后约
+      }
 
   - id: mecka
     name: Mecka AI
     region: global
     track: embodied
     segment: components-data
-    tags: [数据采集, 第一人称数据]
+    tags: [ 数据采集, 第一人称数据 ]
     intro: 做采集第一人称（egocentric）数据的硬件和传感器，为机器人训练供数。
     events:
       - date: "2026-10"
         kind: funding
         title: B 轮 $60M，Sequoia 领投
         amount: { value: 60, unit: 百万美元 }
-        investors: [Sequoia]
+        investors: [ Sequoia ]
         status: confirmed
-        sources: [{ title: Dealroom：Five robotics startups raise $510M, url: "https://dealroom.co/news/162719-five-robotics-startups-raise-510m-as-investors-chase-physical-ai/", date: "2026-10" }]
+        sources:
+          [
+            {
+                title: Dealroom：Five robotics startups raise $510M,
+                url: "https://dealroom.co/news/162719-five-robotics-startups-raise-510m-as-inve\
+                  stors-chase-physical-ai/",
+                date: "2026-10"
+              }
+          ]
+    valuation:
+      {
+        value: 300,
+        unit: 百万美元,
+        asof: 2026-10,
+        status: reported,
+        note: 6000 万美元 B 轮投后约
+      }
 
   - id: genesis-ai
     name: Genesis AI
     region: global
     track: embodied
     segment: brain
-    tags: [机器人基础模型, 灵巧手]
+    tags: [ 机器人基础模型, 灵巧手 ]
     intro: 做可控制多家厂商本体的通用机器人基础模型，2026 年 5 月展示灵巧手控制模型。
     valuation: { value: 3, unit: 十亿美元, asof: "2026-07-23", status: reported }
     events:
@@ -696,23 +1235,39 @@ companies:
         kind: funding
         title: 传洽谈约 $500M 新一轮，估值约 $3B，Premji Invest 拟领投
         status: reported
-        sources: [{ title: ValueAddVC：Genesis AI $3B, url: "https://valueaddvc.com/blog/genesis-ai-valuation-500m-round-3b-price-tag-vs-figure-ai-skild-ai", date: "2026-08" }]
+        sources:
+          [
+            {
+                title: ValueAddVC：Genesis AI $3B,
+                url: "https://valueaddvc.com/blog/genesis-ai-valuation-500m-round-3b-price-tag-\
+                  vs-figure-ai-skild-ai",
+                date: "2026-08"
+              }
+          ]
       - date: "2025-07"
         kind: funding
         title: 结束隐身，种子轮 $105M，Eclipse 与 Khosla 联合领投
         amount: { value: 105, unit: 百万美元 }
-        investors: [Eclipse Ventures, Khosla Ventures, Bpifrance]
+        investors: [ Eclipse Ventures, Khosla Ventures, Bpifrance ]
         status: confirmed
-        sources: [{ title: ValueAddVC：Genesis AI $3B, url: "https://valueaddvc.com/blog/genesis-ai-valuation-500m-round-3b-price-tag-vs-figure-ai-skild-ai", date: "2026-08" }]
+        sources:
+          [
+            {
+                title: ValueAddVC：Genesis AI $3B,
+                url: "https://valueaddvc.com/blog/genesis-ai-valuation-500m-round-3b-price-tag-\
+                  vs-figure-ai-skild-ai",
+                date: "2026-08"
+              }
+          ]
 
   - id: generalist
     name: Generalist AI
     region: global
     track: embodied
     segment: brain
-    tags: [机器人基础模型]
+    tags: [ 机器人基础模型 ]
     intro: DeepMind 与波士顿动力背景团队做的机器人基础模型公司，2026 年 4 月发布 GEN-1。
-    founders: [Pete Florence, Andy Zeng, Andrew Barry]
+    founders: [ Pete Florence, Andy Zeng, Andrew Barry ]
     founded: 2024
     valuation: { value: 2, unit: 十亿美元, asof: "2026-06", status: reported, note: 约 }
     events:
@@ -720,21 +1275,44 @@ companies:
         kind: funding
         title: $400M，Radical Ventures 领投，累计超 $500M
         amount: { value: 400, unit: 百万美元 }
-        investors: [Radical Ventures, 8VC, Union Square Ventures, NVentures, Bezos Expeditions]
+        investors:
+          [
+            Radical Ventures,
+            8VC,
+            Union Square Ventures,
+            NVentures,
+            Bezos Expeditions
+          ]
         status: confirmed
-        sources: [{ title: TFN：Generalist AI raises $400M, url: "https://techfundingnews.com/the-deepmind-and-boston-dynamics-team-building-the-brain-for-every-robot-raises-400m/", date: "2026-06-05" }]
+        sources:
+          [
+            {
+                title: TFN：Generalist AI raises $400M,
+                url: "https://techfundingnews.com/the-deepmind-and-boston-dynamics-team-buildin\
+                  g-the-brain-for-every-robot-raises-400m/",
+                date: "2026-06-05"
+              }
+          ]
       - date: "2026-04"
         kind: model
         title: 发布机器人基础模型 GEN-1
         status: confirmed
-        sources: [{ title: TFN：Generalist AI raises $400M, url: "https://techfundingnews.com/the-deepmind-and-boston-dynamics-team-building-the-brain-for-every-robot-raises-400m/", date: "2026-06-05" }]
+        sources:
+          [
+            {
+                title: TFN：Generalist AI raises $400M,
+                url: "https://techfundingnews.com/the-deepmind-and-boston-dynamics-team-buildin\
+                  g-the-brain-for-every-robot-raises-400m/",
+                date: "2026-06-05"
+              }
+          ]
 
   - id: figure
     name: Figure AI
     region: global
     track: embodied
     segment: body
-    tags: [人形, VLA, 家用]
+    tags: [ 人形, VLA, 家用 ]
     intro: 通用人形整机 + Helix VLA 模型。Figure 03 交付超 350 台、产能每小时 1 台，计划约 $600/月家用租赁。
     valuation: { value: 39, unit: 十亿美元, asof: "2025-09", status: confirmed }
     events:
@@ -742,43 +1320,71 @@ companies:
         kind: product
         title: Figure 03 自主爬梯演示；6 月底约 740 台在运行
         status: confirmed
-        sources: [{ title: Wikipedia：Figure AI, url: "https://en.wikipedia.org/wiki/Figure_AI", date: "2026-10-21" }]
+        sources:
+          [
+            {
+                title: Wikipedia：Figure AI,
+                url: "https://en.wikipedia.org/wiki/Figure_AI",
+                date: "2026-10-21"
+              }
+          ]
       - date: "2026-01-27"
         kind: model
         title: 发布 Helix 02，扩展到全身自主
         status: confirmed
-        sources: [{ title: Wikipedia：Figure AI, url: "https://en.wikipedia.org/wiki/Figure_AI", date: "2026-10-21" }]
+        sources:
+          [
+            {
+                title: Wikipedia：Figure AI,
+                url: "https://en.wikipedia.org/wiki/Figure_AI",
+                date: "2026-10-21"
+              }
+          ]
       - date: "2025-09"
         kind: funding
         title: C 轮超 $1B，投后估值 $39B
         status: confirmed
-        sources: [{ title: Wikipedia：Figure AI, url: "https://en.wikipedia.org/wiki/Figure_AI", date: "2026-10-21" }]
+        sources:
+          [
+            {
+                title: Wikipedia：Figure AI,
+                url: "https://en.wikipedia.org/wiki/Figure_AI",
+                date: "2026-10-21"
+              }
+          ]
 
   - id: sunday
     name: Sunday
     region: global
     track: embodied
     segment: application
-    tags: [家用, 数据手套]
-    match: [Sunday Robotics, Sunday 机器人, Sunday 家庭机器人, Memo 机器人, Tony Zhao]
+    tags: [ 家用, 数据手套 ]
+    match: [ Sunday Robotics, Sunday 机器人, Sunday 家庭机器人, Memo 机器人, Tony Zhao ]
     intro: 家庭机器人 Memo，用自研技能采集手套收集训练数据，2026 年 Beta 入户。
-    founders: [Tony Zhao, Cheng Chi]
+    founders: [ Tony Zhao, Cheng Chi ]
     valuation: { value: 1.15, unit: 十亿美元, asof: "2026-03-12", status: confirmed }
     events:
       - date: "2026-03-12"
         kind: funding
         title: B 轮 $165M，估值 $1.15B，Coatue 领投
         amount: { value: 165, unit: 百万美元 }
-        investors: [Coatue, Bain Capital Ventures, Fidelity, Tiger Global, Benchmark]
+        investors: [ Coatue, Bain Capital Ventures, Fidelity, Tiger Global, Benchmark ]
         status: confirmed
-        sources: [{ title: AI Magazine：Sunday raises $165M, url: "https://aimagazine.com/globenewswire/3254877", date: "2026-03-12" }]
+        sources:
+          [
+            {
+                title: AI Magazine：Sunday raises $165M,
+                url: "https://aimagazine.com/globenewswire/3254877",
+                date: "2026-03-12"
+              }
+          ]
 
   - id: physical-intelligence
     name: Physical Intelligence
     region: global
     track: embodied
     segment: brain
-    tags: [机器人基础模型, 开源]
+    tags: [ 机器人基础模型, 开源 ]
     intro: 只做通用机器人基础模型（π0、π0.5），不做硬件；10 月起通过 Ultra 进入仓储场景。
     valuation: { value: 5.6, unit: 十亿美元, asof: "2025-11", status: confirmed }
     events:
@@ -786,27 +1392,52 @@ companies:
         kind: deployment
         title: 与 Ultra 合作，为仓储打包机器人提供模型
         status: confirmed
-        sources: [{ title: Fortune：Ultra raises $62 million, url: "https://fortune.com/2026/10/09/ultra-raises-62-million-fast-growing-robots-service-tie-up-ai-research-firm-physical-intelligence/", date: "2026-10-09" }]
+        sources:
+          [
+            {
+                title: Fortune：Ultra raises $62 million,
+                url: "https://fortune.com/2026/10/09/ultra-raises-62-million-fast-growing-robot\
+                  s-service-tie-up-ai-research-firm-physical-intelligence/",
+                date: "2026-10-09"
+              }
+          ]
       - date: "2026-03"
         kind: funding
         title: 传洽谈 $1B 新一轮，估值超 $11B（截至 8 月未确认交割）
         status: reported
-        sources: [{ title: ValueAddVC：Physical Intelligence $5.6B now, $11B in talks, url: "https://valueaddvc.com/blog/physical-intelligence-valuation-2026-robot-foundation-models", date: "2026-08" }]
+        sources:
+          [
+            {
+                title: ValueAddVC：Physical Intelligence $5.6B now,
+                $11B in talks,
+                url: "https://valueaddvc.com/blog/physical-intelligence-valuation-2026-robot-fo\
+                  undation-models",
+                date: "2026-08"
+              }
+          ]
       - date: "2025-11"
         kind: funding
         title: B 轮 $600M，估值 $5.6B
         amount: { value: 600, unit: 百万美元 }
         status: confirmed
-        sources: [{ title: ValueAddVC：Physical Intelligence valuation, url: "https://valueaddvc.com/blog/physical-intelligence-valuation-2026-robot-foundation-models", date: "2026-08" }]
+        sources:
+          [
+            {
+                title: ValueAddVC：Physical Intelligence valuation,
+                url: "https://valueaddvc.com/blog/physical-intelligence-valuation-2026-robot-fo\
+                  undation-models",
+                date: "2026-08"
+              }
+          ]
 
   - id: skild
     name: Skild AI
     region: global
     track: embodied
     segment: brain
-    tags: [机器人基础模型, 跨本体]
+    tags: [ 机器人基础模型, 跨本体 ]
     intro: CMU 教授创办，Skild Brain 一套模型控制四足、人形、机械臂等多种本体。
-    founders: [Deepak Pathak, Abhinav Gupta]
+    founders: [ Deepak Pathak, Abhinav Gupta ]
     founded: 2023
     valuation: { value: 14, unit: 十亿美元, asof: "2026-01", status: confirmed, note: 超过 }
     events:
@@ -814,89 +1445,176 @@ companies:
         kind: funding
         title: C 轮 $1.4B，估值超 $14B，软银领投
         amount: { value: 1400, unit: 百万美元 }
-        investors: [SoftBank, NVentures, Bezos Expeditions, Samsung, LG, Lightspeed, Sequoia]
+        investors:
+          [
+            SoftBank,
+            NVentures,
+            Bezos Expeditions,
+            Samsung,
+            LG,
+            Lightspeed,
+            Sequoia
+          ]
         status: confirmed
-        sources: [{ title: Fintool：Skild AI $14B valuation, url: "https://fintool.com/news/skild-ai-14-billion-valuation-robotics", date: "2026-01" }]
+        sources:
+          [
+            {
+                title: Fintool：Skild AI $14B valuation,
+                url: "https://fintool.com/news/skild-ai-14-billion-valuation-robotics",
+                date: "2026-01"
+              }
+          ]
 
   - id: 1x
     name: 1X Technologies
     region: global
     track: embodied
     segment: body
-    tags: [人形, 家用, 世界模型]
+    tags: [ 人形, 家用, 世界模型 ]
     intro: 家用人形 NEO（$20,000 或 $499/月），自研 14B 参数视频世界模型 1XWM 用于预演动作。
     events:
       - date: "2025-10-28"
         kind: product
         title: NEO 家用机器人开放预订，2026 年交付
         status: confirmed
-        sources: [{ title: Wikipedia：1X Technologies, url: "https://en.wikipedia.org/wiki/1X_Technologies", date: "2026-10-21" }]
+        sources:
+          [
+            {
+                title: Wikipedia：1X Technologies,
+                url: "https://en.wikipedia.org/wiki/1X_Technologies",
+                date: "2026-10-21"
+              }
+          ]
       - date: "2025-09"
         kind: funding
         title: 传洽谈至多 $1B，目标估值至少 $10B（未确认）
         status: reported
-        sources: [{ title: Sacra：1X Technologies, url: "https://sacra.com/research/1x-technologies", date: "2026-10-21" }]
+        sources:
+          [
+            {
+                title: Sacra：1X Technologies,
+                url: "https://sacra.com/research/1x-technologies",
+                date: "2026-10-21"
+              }
+          ]
+    valuation: { value: 10, unit: 十亿美元, asof: 2025-09, status: reported, note: 新一轮洽谈目标估值 }
 
   - id: dyna
     name: Dyna Robotics
     region: global
     track: embodied
     segment: brain
-    tags: [机器人基础模型, 商用]
+    tags: [ 机器人基础模型, 商用 ]
     intro: 商用场景机器人基础模型 DYNA-1，已在多个客户现场部署。
     events:
       - date: "2025-09-22"
         kind: funding
         title: A 轮 $120M，CRV、First Round 等领投，NVIDIA、亚马逊跟投
         amount: { value: 120, unit: 百万美元 }
-        investors: [RoboStrategy, CRV, First Round Capital, NVentures, Amazon Industrial Innovation Fund]
+        investors:
+          [
+            RoboStrategy,
+            CRV,
+            First Round Capital,
+            NVentures,
+            Amazon Industrial Innovation Fund
+          ]
         status: confirmed
-        sources: [{ title: Evertiq：Dyna secures $120 million, url: "https://evertiq.com/news/2025-09-22-dyna-secures-120-million-to-advance-robotic-foundation-models", date: "2025-09-22" }]
+        sources:
+          [
+            {
+                title: Evertiq：Dyna secures $120 million,
+                url: "https://evertiq.com/news/2025-09-22-dyna-secures-120-million-to-advance-r\
+                  obotic-foundation-models",
+                date: "2025-09-22"
+              }
+          ]
+    valuation:
+      {
+        value: 500,
+        unit: 百万美元,
+        asof: 2025-09-22,
+        status: reported,
+        note: 1.2 亿美元 A 轮投后约
+      }
 
   - id: apptronik
     name: Apptronik
     region: global
     track: embodied
     segment: body
-    tags: [人形, 工业, 谷歌系]
+    tags: [ 人形, 工业, 谷歌系 ]
     intro: 德州奥斯汀的人形机器人公司，Apollo 人形面向工厂和物流，Google、奔驰是主要股东。
-    founders: [Jeff Cardenas, Nick Paine]
+    founders: [ Jeff Cardenas, Nick Paine ]
     founded: 2016
     valuation: { value: 5.5, unit: 十亿美元, asof: "2026-02-11", status: confirmed, note: 超过 }
     events:
       - date: "2026-02-11"
         kind: funding
-        title: 约 $520M，估值超 $5.5B（一年约 3 倍）；Google、奔驰、B Capital 领投，AT&T、John Deere、卡塔尔投资局新进
+        title: 约 $520M，估值超 $5.5B（一年约 3 倍）；Google、奔驰、B Capital 领投，AT&T、John
+          Deere、卡塔尔投资局新进
         amount: { value: 520, unit: 百万美元 }
-        investors: [Google, Mercedes-Benz, B Capital, AT&T Ventures, John Deere, Qatar Investment Authority]
+        investors:
+          [
+            Google,
+            Mercedes-Benz,
+            B Capital,
+            AT&T Ventures,
+            John Deere,
+            Qatar Investment Authority
+          ]
         status: confirmed
-        sources: [{ title: Bloomberg Law：Apptronik triples valuation to over $5.5 billion, url: "https://news.bgov.com/private-equity/apptronik-raises-520-million-in-new-funding-to-build-more-humanoids", date: "2026-02-11" }]
+        sources:
+          [
+            {
+                title: Bloomberg Law：Apptronik triples valuation to over $5.5 billion,
+                url: "https://news.bgov.com/private-equity/apptronik-raises-520-million-in-new-\
+                  funding-to-build-more-humanoids",
+                date: "2026-02-11"
+              }
+          ]
 
   - id: agility
     name: Agility Robotics
     region: global
     track: embodied
     segment: body
-    tags: [人形, 物流, SPAC]
-    intro: 双足人形 Digit 已在 Schaeffler、GXO、丰田加拿大、Mercado Libre 商用，9 个客户站点累计运行超 6.5 万小时；正通过 SPAC 上市。
-    valuation: { value: 2.5, unit: 十亿美元, asof: "2026-06-24", status: confirmed, note: 投前 }
+    tags: [ 人形, 物流, SPAC ]
+    intro: 双足人形 Digit 已在 Schaeffler、GXO、丰田加拿大、Mercado Libre 商用，9 个客户站点累计运行超 6.5
+      万小时；正通过 SPAC 上市。
+    valuation:
+      {
+        value: 2,
+        unit: 十亿美元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: NASDAQ AGLT.US · 实时市值
+      }
     events:
       - date: "2026-06-24"
         kind: ipo
         title: 宣布与 Churchill Capital XI 合并上市（代码 AGLT），投前 $2.5B，募资超 $620M，富士康领投 PIPE
-        investors: [Churchill Capital Corp XI, Foxconn]
+        investors: [ Churchill Capital Corp XI, Foxconn ]
         status: confirmed
-        sources: [{ title: Pulse 2.0：Agility Robotics to go public through $2.5B merger, url: "https://pulse2.com/agility-robotics-to-go-public-through-2-5-billion-merger-with-churchill-capital-xi/amp/", date: "2026-06-24" }]
+        sources:
+          [
+            {
+                title: Pulse 2.0：Agility Robotics to go public through $2.5B merger,
+                url: "https://pulse2.com/agility-robotics-to-go-public-through-2-5-billion-merg\
+                  er-with-churchill-capital-xi/amp/",
+                date: "2026-06-24"
+              }
+          ]
 
   - id: the-bot-company
     name: The Bot Company
     region: global
     track: embodied
     segment: application
-    tags: [家用, 家务]
-    aliases: [Bot Company]
+    tags: [ 家用, 家务 ]
+    aliases: [ Bot Company ]
     intro: Cruise 创始人 Kyle Vogt 创办，做替人干家务的家用机器人，成立一年多估值连翻。
-    founders: [Kyle Vogt, Paril Jain, Luke Holoubek]
+    founders: [ Kyle Vogt, Paril Jain, Luke Holoubek ]
     founded: 2024
     valuation: { value: 4, unit: 十亿美元, asof: "2025-10-28", status: reported, note: 超过 }
     events:
@@ -904,14 +1622,31 @@ companies:
         kind: funding
         title: 据彭博，洽谈 $250M 新一轮，估值超 $4B，Eclipse 领投
         status: reported
-        sources: [{ title: Bloomberg Law：Cruise founder's robot startup in talks for $4B value, url: "https://news.bgov.com/private-equity/cruise-founders-robot-startup-is-in-talks-for-4-billion-value", date: "2025-10-28" }]
+        sources:
+          [
+            {
+                title: Bloomberg Law：Cruise founder's robot startup in talks for $4B value,
+                url: "https://news.bgov.com/private-equity/cruise-founders-robot-startup-is-in-\
+                  talks-for-4-billion-value",
+                date: "2025-10-28"
+              }
+          ]
       - date: "2025-03-21"
         kind: funding
         title: $150M，估值约 $2B，Greenoaks 领投
         amount: { value: 150, unit: 百万美元 }
-        investors: [Greenoaks, Spark Capital, Nat Friedman]
+        investors: [ Greenoaks, Spark Capital, Nat Friedman ]
         status: confirmed
-        sources: [{ title: Reuters via MarketScreener：Vogt's robotics startup valued at $2 billion, url: "https://www.marketscreener.com/quote/stock/TESLA-INC-6344549/news/Exclusive-Former-Cruise-CEO-Vogt-s-robotics-startup-valued-at-2-billion-in-new-funding-sources-say-49403686/", date: "2025-03-21" }]
+        sources:
+          [
+            {
+                title: Reuters via MarketScreener：Vogt's robotics startup valued at $2 billion,
+                url: "https://www.marketscreener.com/quote/stock/TESLA-INC-6344549/news/Exclusi\
+                  ve-Former-Cruise-CEO-Vogt-s-robotics-startup-valued-at-2-bill\
+                  ion-in-new-funding-sources-say-49403686/",
+                date: "2025-03-21"
+              }
+          ]
 
   - id: field-ai
     name: FieldAI
@@ -919,32 +1654,56 @@ companies:
     region: global
     track: embodied
     segment: brain
-    tags: [机器人基础模型, 跨本体, 建筑工地]
-    intro: 前 NASA JPL 机器人专家 Ali Agha 创办，做可装在不同本体上的 Field Foundation Models，先在建筑工地、能源等“脏累险”环境做巡检和测绘。
-    founders: [Ali Agha]
+    tags: [ 机器人基础模型, 跨本体, 建筑工地 ]
+    intro: 前 NASA JPL 机器人专家 Ali Agha 创办，做可装在不同本体上的 Field Foundation
+      Models，先在建筑工地、能源等“脏累险”环境做巡检和测绘。
+    founders: [ Ali Agha ]
     valuation: { value: 10, unit: 十亿美元, asof: "2026-10-02", status: reported }
     events:
       - date: "2026-10-02"
         kind: funding
         title: 据 Business Insider，将以 $10B 估值融资 $700M，一年多估值约 5 倍
         status: reported
-        sources: [{ title: OCBJ：FieldAI set to raise $700M at $10B valuation, url: "https://www.ocbj.com/defense-2/robotics-company-fieldai-set-to-raise-700m-at-10b-valuation-bi/", date: "2026-10-02" }]
+        sources:
+          [
+            {
+                title: OCBJ：FieldAI set to raise $700M at $10B valuation,
+                url: "https://www.ocbj.com/defense-2/robotics-company-fieldai-set-to-raise-700m\
+                  -at-10b-valuation-bi/",
+                date: "2026-10-02"
+              }
+          ]
       - date: "2025-08-21"
         kind: funding
         title: $314M，估值 $2B；Khosla、NVentures、Bezos Expeditions 参投，累计 $405M
         amount: { value: 314, unit: 百万美元 }
-        investors: [Khosla Ventures, NVentures, Bezos Expeditions, Canaan Partners, Intel Capital]
+        investors:
+          [
+            Khosla Ventures,
+            NVentures,
+            Bezos Expeditions,
+            Canaan Partners,
+            Intel Capital
+          ]
         status: confirmed
-        sources: [{ title: Entrepreneur India：FieldAI secures USD 314 Mn, url: "https://india.entrepreneur.com/news-and-trends/fieldai-secures-usd-314-mn-funding-valuation-reaches-to/496166", date: "2025-08-21" }]
+        sources:
+          [
+            {
+                title: Entrepreneur India：FieldAI secures USD 314 Mn,
+                url: "https://india.entrepreneur.com/news-and-trends/fieldai-secures-usd-314-mn\
+                  -funding-valuation-reaches-to/496166",
+                date: "2025-08-21"
+              }
+          ]
 
   - id: neura
     name: NEURA Robotics
     region: global
     track: embodied
     segment: body
-    tags: [人形, 协作机器人, 欧洲]
+    tags: [ 人形, 协作机器人, 欧洲 ]
     intro: 德国认知机器人公司（David Reger），做协作机械臂和 4NE1 人形，欧洲融资额最大的机器人公司。
-    founders: [David Reger]
+    founders: [ David Reger ]
     founded: 2019
     valuation: { value: 7, unit: 十亿美元, asof: "2026-06-10", status: reported, note: 约 }
     events:
@@ -952,30 +1711,71 @@ companies:
         kind: funding
         title: C 轮最高 $1.4B（部分按里程碑到位），传估值约 $7B；Tether 领投，高通、亚马逊、英伟达、博世参投
         amount: { value: 1400, unit: 百万美元 }
-        investors: [Tether, Qualcomm, Amazon, Nvidia, Bosch, Schaeffler, European Investment Bank]
+        investors:
+          [
+            Tether,
+            Qualcomm,
+            Amazon,
+            Nvidia,
+            Bosch,
+            Schaeffler,
+            European Investment Bank
+          ]
         status: confirmed
-        sources: [{ title: Let's Data Science：Neura Robotics raises up to $1.4 billion, url: "https://letsdatascience.com/news/neura-robotics-raises-up-to-14-billion-d79da866", date: "2026-06-10" }]
+        sources:
+          [
+            {
+                title: Let's Data Science：Neura Robotics raises up to $1.4 billion,
+                url: "https://letsdatascience.com/news/neura-robotics-raises-up-to-14-billion-d\
+                  79da866",
+                date: "2026-06-10"
+              }
+          ]
 
   - id: bedrock
     name: Bedrock Robotics
     region: global
     track: embodied
     segment: application
-    tags: [工程机械, 自动驾驶改装, 建筑]
+    tags: [ 工程机械, 自动驾驶改装, 建筑 ]
     intro: Waymo 老兵 Boris Sofman 创办，给挖掘机、推土机、装载机加装 Bedrock Operator 套件实现自主作业。
-    founders: [Boris Sofman]
+    founders: [ Boris Sofman ]
     founded: 2024
     valuation: { value: 1.75, unit: 十亿美元, asof: "2026-02-04", status: confirmed }
     events:
+      - date: "2026-10-27"
+        kind: funding
+        title: 累计融资规模逼近 10 亿美元，自主重型工程机械商业需求加速放量
+        status: reported
+        sources:
+          [
+            {
+                title: The Robot Report：Bedrock Robotics nears $1B in total funding as demand
+                  for autonomous heavy equipment surges,
+                url: "https://www.therobotreport.com/bedrock-robotics-nears-1b-in-total-funding\
+                  -as-demand-for-autonomous-heavy-equipment-surges/",
+                date: "2026-10-27"
+              }
+          ]
       - date: "2026-02-04"
         kind: funding
         title: B 轮 $270M，估值 $1.75B，CapitalG 与 Valor Atreides 领投，累计超 $350M
         amount: { value: 270, unit: 百万美元 }
-        investors: [CapitalG, Valor Atreides AI Fund, Eclipse Ventures, 8VC, NVentures]
+        investors: [ CapitalG, Valor Atreides AI Fund, Eclipse Ventures, 8VC, NVentures ]
         status: confirmed
         sources:
-          - { title: SiliconANGLE：Bedrock Robotics raises $270M, url: "https://siliconangle.com/2026/02/04/bedrock-robotics-raises-270m-scale-autonomous-construction-fleets/", date: "2026-02-04" }
-          - { title: Pulse 2.0：Bedrock Robotics $270M Series B at $1.75B, url: "https://pulse2.com/bedrock-robotics-270-million-series-b-at-1-75-billion-valuation", date: "2026-02" }
+          - {
+              title: SiliconANGLE：Bedrock Robotics raises $270M,
+              url: "https://siliconangle.com/2026/02/04/bedrock-robotics-raises-270m-scale-au\
+                tonomous-construction-fleets/",
+              date: "2026-02-04"
+            }
+          - {
+              title: Pulse 2.0：Bedrock Robotics $270M Series B at $1.75B,
+              url: "https://pulse2.com/bedrock-robotics-270-million-series-b-at-1-75-billion-\
+                valuation",
+              date: "2026-02"
+            }
 
   # ───────── 世界模型 · 海外 ─────────
   - id: general-intuition
@@ -983,7 +1783,7 @@ companies:
     region: global
     track: world-model
     segment: general
-    tags: [游戏视频, 智能体]
+    tags: [ 游戏视频, 智能体 ]
     intro: 从游戏视频平台 Medal 分拆，用带动作标注的第一人称视频训练智能体和世界模型，已开始向客户开放模型。
     valuation: { value: 6.2, unit: 十亿美元, asof: "2026-09-30", status: confirmed }
     events:
@@ -991,35 +1791,67 @@ companies:
         kind: funding
         title: $220M，估值 $6.2B（6 月约 $2.3B）
         amount: { value: 220, unit: 百万美元 }
-        investors: [Valor Equity Partners, Atreides, Point72, Khosla Ventures, General Catalyst]
+        investors:
+          [
+            Valor Equity Partners,
+            Atreides,
+            Point72,
+            Khosla Ventures,
+            General Catalyst
+          ]
         status: confirmed
-        sources: [{ title: Pulse 2.0：General Intuition raises $220M at $6.2B, url: "https://pulse2.com/general-intuition-raises-220-million-at-6-2-billion-valuation/", date: "2026-09-30" }]
+        sources:
+          [
+            {
+                title: Pulse 2.0：General Intuition raises $220M at $6.2B,
+                url: "https://pulse2.com/general-intuition-raises-220-million-at-6-2-billion-va\
+                  luation/",
+                date: "2026-09-30"
+              }
+          ]
 
   - id: odyssey
     name: Odyssey
     region: global
     track: world-model
     segment: general
-    tags: [实时世界生成, 多智能体]
-    match: [Odyssey 世界模型, Odyssey ML, Odyssey AI, Odyssey-2, Starchild-1, Agora-1, Oliver Cameron]
+    tags: [ 实时世界生成, 多智能体 ]
+    match:
+      [
+        Odyssey 世界模型,
+        Odyssey ML,
+        Odyssey AI,
+        Odyssey-2,
+        Starchild-1,
+        Agora-1,
+        Oliver Cameron
+      ]
     intro: 自动驾驶背景团队做的实时多模态世界模型，产品有 Odyssey-2 Max、Starchild-1、多智能体 Agora-1。
-    founders: [Oliver Cameron, Jeff Hawke]
+    founders: [ Oliver Cameron, Jeff Hawke ]
     valuation: { value: 1.45, unit: 十亿美元, asof: "2026-06-17", status: confirmed }
     events:
       - date: "2026-06-17"
         kind: funding
         title: B 轮 $310M，估值 $1.45B，Natural Capital 领投；AWS 为首选云
         amount: { value: 310, unit: 百万美元 }
-        investors: [Natural Capital, Amazon, AMD Ventures, GV, EQT]
+        investors: [ Natural Capital, Amazon, AMD Ventures, GV, EQT ]
         status: confirmed
-        sources: [{ title: SiliconANGLE：Odyssey raises $310M, url: "https://siliconangle.com/2026/06/17/odyssey-raises-310m-1-45b-valuation-transform-ai-model-simulation/", date: "2026-06-17" }]
+        sources:
+          [
+            {
+                title: SiliconANGLE：Odyssey raises $310M,
+                url: "https://siliconangle.com/2026/06/17/odyssey-raises-310m-1-45b-valuation-t\
+                  ransform-ai-model-simulation/",
+                date: "2026-06-17"
+              }
+          ]
 
   - id: decart
     name: Decart
     region: global
     track: world-model
     segment: general
-    tags: [实时世界生成, 推理加速, 仿真]
+    tags: [ 实时世界生成, 推理加速, 仿真 ]
     intro: 以色列团队，做实时生成世界模型 Lucy、机器人与驾驶仿真 Oasis，以及推理加速软件 DOS；NVIDIA 和亚马逊既是投资方也是客户。
     valuation: { value: 4, unit: 十亿美元, asof: "2026-05", status: confirmed, note: 约 }
     events:
@@ -1027,95 +1859,187 @@ companies:
         kind: funding
         title: $300M，估值约 $4B，Radical Ventures 领投，累计超 $450M
         amount: { value: 300, unit: 百万美元 }
-        investors: [Radical Ventures, NVIDIA, Amazon, Sequoia, Benchmark]
+        investors: [ Radical Ventures, NVIDIA, Amazon, Sequoia, Benchmark ]
         status: confirmed
         sources:
-          - { title: AI Weekly：Decart raises $300M, url: "https://aiweekly.co/alerts/decart-raises-300m-for-real-time-ai-world-models", date: "2026-05" }
-          - { title: Forbes：VCs pour $3 billion into world models, url: "https://www.forbes.com/sites/josipamajic/2026/06/30/world-model-startups-raise-3-billion-vcs-bet-beyond-llms/", date: "2026-06-30" }
+          - {
+              title: AI Weekly：Decart raises $300M,
+              url: "https://aiweekly.co/alerts/decart-raises-300m-for-real-time-ai-world-mode\
+                ls",
+              date: "2026-05"
+            }
+          - {
+              title: Forbes：VCs pour $3 billion into world models,
+              url: "https://www.forbes.com/sites/josipamajic/2026/06/30/world-model-startups-\
+                raise-3-billion-vcs-bet-beyond-llms/",
+              date: "2026-06-30"
+            }
 
   - id: ami-labs
     name: AMI Labs
     region: global
     track: world-model
     segment: general
-    tags: [JEPA, 潜空间预测]
+    tags: [ JEPA, 潜空间预测 ]
     intro: Yann LeCun 创办，总部巴黎，走 JEPA 潜空间世界模型路线，暂无公开产品，首个落地预计通过临床 AI 公司 Nabla。
-    founders: [Yann LeCun, Alexandre LeBrun]
+    founders: [ Yann LeCun, Alexandre LeBrun ]
     valuation: { value: 3.5, unit: 十亿美元, asof: "2026-03", status: confirmed }
     events:
       - date: "2026-03"
         kind: funding
         title: 种子轮 $1.03B，估值 $3.5B，欧洲最大种子轮
         amount: { value: 1030, unit: 百万美元 }
-        investors: [Cathay Innovation, Greycroft, Bezos Expeditions, NVIDIA, Samsung, Toyota Ventures]
+        investors:
+          [
+            Cathay Innovation,
+            Greycroft,
+            Bezos Expeditions,
+            NVIDIA,
+            Samsung,
+            Toyota Ventures
+          ]
         status: confirmed
-        sources: [{ title: Metavert：World Labs vs AMI Labs, url: "https://metavert.io/world-labs-vs-ami-labs", date: "2026" }]
+        sources:
+          [
+            {
+                title: Metavert：World Labs vs AMI Labs,
+                url: "https://metavert.io/world-labs-vs-ami-labs",
+                date: "2026"
+              }
+          ]
 
   - id: world-labs
     name: World Labs
     region: global
     track: world-model
     segment: general
-    tags: [3D 世界生成, API]
+    tags: [ 3D 世界生成, API ]
     intro: 李飞飞创办，做可探索的 3D 世界生成，产品 Marble（2025-11 上线）、RTFM 实时生成和 World API（2026-01）。
-    founders: [李飞飞]
+    founders: [ 李飞飞 ]
     valuation: { value: 5.4, unit: 十亿美元, asof: "2026-02", status: confirmed }
     events:
       - date: "2026-02"
         kind: funding
         title: $1B，投后 $5.4B，其中 Autodesk 战投 $200M
         amount: { value: 1000, unit: 百万美元 }
-        investors: [Autodesk, NVIDIA, AMD, Fidelity]
+        investors: [ Autodesk, NVIDIA, AMD, Fidelity ]
         status: confirmed
         sources:
-          - { title: Metavert：World Labs vs AMI Labs, url: "https://metavert.io/world-labs-vs-ami-labs", date: "2026" }
-          - { title: Forbes：VCs pour $3 billion into world models, url: "https://www.forbes.com/sites/josipamajic/2026/06/30/world-model-startups-raise-3-billion-vcs-bet-beyond-llms/", date: "2026-06-30" }
+          - {
+              title: Metavert：World Labs vs AMI Labs,
+              url: "https://metavert.io/world-labs-vs-ami-labs",
+              date: "2026"
+            }
+          - {
+              title: Forbes：VCs pour $3 billion into world models,
+              url: "https://www.forbes.com/sites/josipamajic/2026/06/30/world-model-startups-\
+                raise-3-billion-vcs-bet-beyond-llms/",
+              date: "2026-06-30"
+            }
       - date: "2026-01"
         kind: product
         title: 上线 World API
         status: confirmed
-        sources: [{ title: Metavert：World Labs vs AMI Labs, url: "https://metavert.io/world-labs-vs-ami-labs", date: "2026" }]
+        sources:
+          [
+            {
+                title: Metavert：World Labs vs AMI Labs,
+                url: "https://metavert.io/world-labs-vs-ami-labs",
+                date: "2026"
+              }
+          ]
 
   - id: wayve
     name: Wayve
     region: global
     track: world-model
     segment: embodied-driving
-    tags: [端到端自动驾驶, 世界模型, Robotaxi]
-    intro: 伦敦端到端自动驾驶公司（Alex Kendall），AI Driver 基础模型用 70 多国数据训练、不依赖高精地图，另有驾驶世界模型 GAIA；与 Uber 在伦敦上线 Robotaxi，与日产量产 L2+。
-    founders: [Alex Kendall]
+    tags: [ 端到端自动驾驶, 世界模型, Robotaxi ]
+    intro: 伦敦端到端自动驾驶公司（Alex Kendall），AI Driver 基础模型用 70 多国数据训练、不依赖高精地图，另有驾驶世界模型
+      GAIA；与 Uber 在伦敦上线 Robotaxi，与日产量产 L2+。
+    founders: [ Alex Kendall ]
     founded: 2017
     valuation: { value: 8.6, unit: 十亿美元, asof: "2026-02-25", status: confirmed, note: 投后 }
     events:
       - date: "2026-02-25"
         kind: funding
-        title: $1.2B 新一轮，投后 $8.6B；Eclipse、Balderton、软银愿景二期领投，奔驰、Stellantis、日产新进，Uber 追加至多 $300M 里程碑投资
+        title: $1.2B 新一轮，投后 $8.6B；Eclipse、Balderton、软银愿景二期领投，奔驰、Stellantis、日产新进，Uber
+          追加至多 $300M 里程碑投资
         amount: { value: 1200, unit: 百万美元 }
-        investors: [Eclipse, Balderton, SoftBank Vision Fund 2, Microsoft, Nvidia, Uber, Mercedes-Benz, Stellantis, Nissan]
+        investors:
+          [
+            Eclipse,
+            Balderton,
+            SoftBank Vision Fund 2,
+            Microsoft,
+            Nvidia,
+            Uber,
+            Mercedes-Benz,
+            Stellantis,
+            Nissan
+          ]
         status: confirmed
         sources:
-          - { title: Dealroom：Wayve raises $1.2B at $8.6B valuation, url: "https://dealroom.co/news/126121-wayve-raises-1-2b-at-8-6b-valuation-ahead-of-london-robotaxi-launch/", date: "2026-02-25" }
-          - { title: Technology Magazine：Wayve to US$8.6bn valuation, url: "https://technologymagazine.com/news/ai-model-in-70-countries-drives-wayve-to-us-8-6bn-valuation", date: "2026-02-25" }
+          - {
+              title: Dealroom：Wayve raises $1.2B at $8.6B valuation,
+              url: "https://dealroom.co/news/126121-wayve-raises-1-2b-at-8-6b-valuation-ahead\
+                -of-london-robotaxi-launch/",
+              date: "2026-02-25"
+            }
+          - {
+              title: Technology Magazine：Wayve to US$8.6bn valuation,
+              url: "https://technologymagazine.com/news/ai-model-in-70-countries-drives-wayve\
+                -to-us-8-6bn-valuation",
+              date: "2026-02-25"
+            }
 
   - id: waabi
     name: Waabi
     region: global
     track: world-model
     segment: embodied-driving
-    tags: [自动驾驶, 神经仿真, 卡车, Robotaxi]
-    intro: Raquel Urtasun 创办的多伦多自动驾驶公司，仿真优先（神经仿真器 + 端到端模型），从自动驾驶卡车扩展到 Uber 独家 Robotaxi。
-    founders: [Raquel Urtasun]
+    tags: [ 自动驾驶, 神经仿真, 卡车, Robotaxi ]
+    intro: Raquel Urtasun 创办的多伦多自动驾驶公司，仿真优先（神经仿真器 + 端到端模型），从自动驾驶卡车扩展到 Uber 独家
+      Robotaxi。
+    founders: [ Raquel Urtasun ]
     founded: 2021
     events:
       - date: "2026-01-30"
         kind: funding
-        title: C 轮 $750M + Uber 里程碑资金，合计至多 $1B；Khosla、G2VP 领投，计划在 Uber 上部署 2.5 万辆以上 Robotaxi
+        title: C 轮 $750M + Uber 里程碑资金，合计至多 $1B；Khosla、G2VP 领投，计划在 Uber 上部署 2.5 万辆以上
+          Robotaxi
         amount: { value: 750, unit: 百万美元 }
-        investors: [Khosla Ventures, G2 Venture Partners, Uber, NVentures, Volvo Group, Porsche SE, BlackRock]
+        investors:
+          [
+            Khosla Ventures,
+            G2 Venture Partners,
+            Uber,
+            NVentures,
+            Volvo Group,
+            Porsche SE,
+            BlackRock
+          ]
         status: confirmed
         sources:
-          - { title: Pulse 2.0：Waabi $1 billion raised, url: "https://pulse2.com/waabi-1-billion-funding/amp/", date: "2026-01-30" }
-          - { title: Waabi：Waabi secures $1 billion in new funding, url: "https://waabi.ai/insights/waabi-secures-1-billion-in-new-funding-to-lead-physical-ai-revolution", date: "2026-01" }
+          - {
+              title: Pulse 2.0：Waabi $1 billion raised,
+              url: "https://pulse2.com/waabi-1-billion-funding/amp/",
+              date: "2026-01-30"
+            }
+          - {
+              title: Waabi：Waabi secures $1 billion in new funding,
+              url: "https://waabi.ai/insights/waabi-secures-1-billion-in-new-funding-to-lead-\
+                physical-ai-revolution",
+              date: "2026-01"
+            }
+    valuation:
+      {
+        value: 2.5,
+        unit: 十亿美元,
+        asof: 2026-01-30,
+        status: reported,
+        note: 7.5 亿美元 C 轮投后约
+      }
 
   - id: runway
     name: Runway
@@ -1123,10 +2047,19 @@ companies:
     region: global
     track: world-model
     segment: general
-    tags: [视频生成, 世界模型, 机器人仿真]
-    match: [Runway AI, Runway ML, RunwayML, Runway GWM, Runway Gen-4, Runway 视频, GWM-1]
+    tags: [ 视频生成, 世界模型, 机器人仿真 ]
+    match:
+      [
+        Runway AI,
+        Runway ML,
+        RunwayML,
+        Runway GWM,
+        Runway Gen-4,
+        Runway 视频,
+        GWM-1
+      ]
     intro: AI 视频生成公司，2025 年底推出通用世界模型 GWM-1（可为机器人搭虚拟训练环境），2026 年起把重心转向世界模型。
-    founders: [Cristóbal Valenzuela]
+    founders: [ Cristóbal Valenzuela ]
     founded: 2018
     valuation: { value: 5.3, unit: 十亿美元, asof: "2026-02-10", status: reported }
     events:
@@ -1134,53 +2067,101 @@ companies:
         kind: funding
         title: E 轮 $315M，General Atlantic 领投，英伟达、AMD 参投，传估值 $5.3B
         amount: { value: 315, unit: 百万美元 }
-        investors: [General Atlantic, Nvidia, AMD Ventures, Adobe Ventures]
+        investors: [ General Atlantic, Nvidia, AMD Ventures, Adobe Ventures ]
         status: confirmed
-        sources: [{ title: SiliconANGLE：World model startup Runway closes $315M, url: "https://siliconangle.com/2026/02/10/world-model-startup-runway-closes-315m-funding-round/", date: "2026-02-10" }]
+        sources:
+          [
+            {
+                title: SiliconANGLE：World model startup Runway closes $315M,
+                url: "https://siliconangle.com/2026/02/10/world-model-startup-runway-closes-315\
+                  m-funding-round/",
+                date: "2026-02-10"
+              }
+          ]
       - date: "2025-12"
         kind: model
         title: 发布世界模型 GWM-1，基于 Gen-4.5，可为机器人生成训练环境
         status: confirmed
-        sources: [{ title: SiliconANGLE：World model startup Runway closes $315M, url: "https://siliconangle.com/2026/02/10/world-model-startup-runway-closes-315m-funding-round/", date: "2026-02-10" }]
+        sources:
+          [
+            {
+                title: SiliconANGLE：World model startup Runway closes $315M,
+                url: "https://siliconangle.com/2026/02/10/world-model-startup-runway-closes-315\
+                  m-funding-round/",
+                date: "2026-02-10"
+              }
+          ]
 
   - id: luma
     name: Luma AI
     region: global
     track: world-model
     segment: general
-    tags: [多模态, 世界模型, 视频生成]
+    tags: [ 多模态, 世界模型, 视频生成 ]
     intro: 做视频生成模型 Ray 系列，目标是理解和模拟物理世界的多模态“世界模型”，与沙特 HUMAIN 合作建超大算力集群。
-    founders: [Amit Jain]
+    founders: [ Amit Jain ]
     valuation: { value: 4, unit: 十亿美元, asof: "2025-11-20", status: confirmed, note: 约 }
     events:
       - date: "2025-11-20"
         kind: funding
         title: C 轮 $900M，估值约 $4B，沙特 HUMAIN 领投，a16z、Amplify、Matrix 跟投
         amount: { value: 900, unit: 百万美元 }
-        investors: [HUMAIN, Andreessen Horowitz, Amplify Partners, Matrix Partners]
+        investors: [ HUMAIN, Andreessen Horowitz, Amplify Partners, Matrix Partners ]
         status: confirmed
-        sources: [{ title: CairoScene：HUMAIN leads $900M Series C for Luma AI, url: "https://cairoscene.com/Business/Saudi-Based-Humain-Leads-900M-Series-C-Round-for-Luma-AI", date: "2025-11-20" }]
+        sources:
+          [
+            {
+                title: CairoScene：HUMAIN leads $900M Series C for Luma AI,
+                url: "https://cairoscene.com/Business/Saudi-Based-Humain-Leads-900M-Series-C-Ro\
+                  und-for-Luma-AI",
+                date: "2025-11-20"
+              }
+          ]
 
   - id: spaitial
     name: SpAItial
     region: global
     track: world-model
     segment: general
-    tags: [3D 生成, 空间智能, 欧洲]
+    tags: [ 3D 生成, 空间智能, 欧洲 ]
     intro: 慕尼黑工大教授 Matthias Niessner 创办（慕尼黑/伦敦），做生成可交互 3D 世界的空间基础模型，计划授权给合作伙伴。
-    founders: [Matthias Niessner]
+    founders: [ Matthias Niessner ]
     events:
       - date: "2026-04-16"
         kind: model
         title: 首个 3D 基础模型已完成，开始寻找授权合作方
         status: confirmed
-        sources: [{ title: Tech.eu：We are where ChatGPT was five years ago, url: "https://tech.eu/2026/04/16/we-are-where-chatgpt-was-five-years-ago-says-european-3d-ai-foundation-model-startup-boss/", date: "2026-04-16" }]
+        sources:
+          [
+            {
+                title: Tech.eu：We are where ChatGPT was five years ago,
+                url: "https://tech.eu/2026/04/16/we-are-where-chatgpt-was-five-years-ago-says-e\
+                  uropean-3d-ai-foundation-model-startup-boss/",
+                date: "2026-04-16"
+              }
+          ]
       - date: "2025-05"
         kind: funding
         title: 种子轮 $13M
         amount: { value: 13, unit: 百万美元 }
         status: confirmed
-        sources: [{ title: Implicator：European AI researcher raises $13M, url: "https://www.implicator.ai/european-ai-researcher-raises-13m-to-build-interactive-3d-worlds", date: "2025-05" }]
+        sources:
+          [
+            {
+                title: Implicator：European AI researcher raises $13M,
+                url: "https://www.implicator.ai/european-ai-researcher-raises-13m-to-build-inte\
+                  ractive-3d-worlds",
+                date: "2025-05"
+              }
+          ]
+    valuation:
+      {
+        value: 60,
+        unit: 百万美元,
+        asof: 2025-05,
+        status: reported,
+        note: 1300 万美元种子轮投后约
+      }
 
   # ───────── 世界模型 · 国内 ─────────
   - id: tian-keyu-newco
@@ -1188,18 +2169,26 @@ companies:
     region: cn
     track: world-model
     segment: general
-    tags: [视频生成, 视觉符号语言]
-    intro: 北大博士、NeurIPS 2024 最佳论文作者田柯宇创办，构建 AI 专用视觉符号语言，目标把视频生成成本降到 1/10，计划 2027 年发布完整模型。
-    founders: [田柯宇]
+    tags: [ 视频生成, 视觉符号语言 ]
+    intro: 北大博士、NeurIPS 2024 最佳论文作者田柯宇创办，构建 AI 专用视觉符号语言，目标把视频生成成本降到 1/10，计划 2027
+      年发布完整模型。
+    founders: [ 田柯宇 ]
     valuation: { value: 0.2, unit: 十亿美元, asof: "2026-10-08", status: confirmed, note: 投后 }
     events:
       - date: "2026-10-08"
         kind: funding
         title: 近 $3000 万融资，投后估值 $2 亿，五源、IDG 投资
         amount: { value: 30, unit: 百万美元 }
-        investors: [五源资本, IDG 资本]
+        investors: [ 五源资本, IDG 资本 ]
         status: confirmed
-        sources: [{ title: DoNews：田柯宇进军世界模型创业, url: "https://www.donews.com/news/detail/8/6732728.html", date: "2026-10-08" }]
+        sources:
+          [
+            {
+                title: DoNews：田柯宇进军世界模型创业,
+                url: "https://www.donews.com/news/detail/8/6732728.html",
+                date: "2026-10-08"
+              }
+          ]
 
   - id: liberai
     name: LiberAI（将闲科技）
@@ -1207,17 +2196,38 @@ companies:
     region: cn
     track: world-model
     segment: embodied-driving
-    tags: [多模态预训练, 灵巧手, 数据手套]
+    tags: [ 多模态预训练, 灵巧手, 数据手套 ]
     intro: 清华朱军组刘松铭创办，以世界模型为核心做原生多模态预训练，自研 20 自由度灵巧手和已量产的数据手套。
-    founders: [刘松铭]
+    founders: [ 刘松铭 ]
     founded: 2025
     events:
+      - date: "2026-11-04"
+        kind: model
+        title: 发布世界动作模型（World Action Model）Liber-0，将人类操作经验映射为机器人全身动作控制
+        status: confirmed
+        sources:
+          [
+            {
+                title: The Robot Report：LiberAI Unveils Liber-0,
+                a World Action Model That Grounds Human Experience in Robot Action,
+                url: "https://www.therobotreport.com/liberai-unveils-liber-0-a-world-action-mod\
+                  el-that-grounds-human-experience-in-robot-action/",
+                date: "2026-11-04"
+              }
+          ]
       - date: "2026-07-31"
         kind: funding
         title: Pre-A+ 轮数亿元，华人文化产业基金（CMC）投资，年内第 3 轮
-        investors: [CMC 资本]
+        investors: [ CMC 资本 ]
         status: confirmed
-        sources: [{ title: 36 氪：LiberAI 完成新一轮融资, url: "https://www.36kr.com/p/3918990158179721", date: "2026-07-31" }]
+        sources:
+          [
+            {
+                title: 36 氪：LiberAI 完成新一轮融资,
+                url: "https://www.36kr.com/p/3918990158179721",
+                date: "2026-07-31"
+              }
+          ]
 
   - id: gigaai
     name: 极佳视界
@@ -1225,9 +2235,10 @@ companies:
     region: cn
     track: world-model
     segment: embodied-driving
-    tags: [驾驶世界模型, 合成数据, 人形]
-    intro: 前地平线视觉感知负责人黄冠创办，世界模型同时服务自动驾驶和具身。DriveDreamer 已服务 30 多家车企，GigaWorld-1 曾登顶 WorldArena。
-    founders: [黄冠, 朱政]
+    tags: [ 驾驶世界模型, 合成数据, 人形 ]
+    intro: 前地平线视觉感知负责人黄冠创办，世界模型同时服务自动驾驶和具身。DriveDreamer 已服务 30 多家车企，GigaWorld-1 曾登顶
+      WorldArena。
+    founders: [ 黄冠, 朱政 ]
     founded: 2023
     valuation: { value: 100, unit: 亿元, asof: "2026-06", status: reported, note: 超过 }
     events:
@@ -1235,12 +2246,26 @@ companies:
         kind: funding
         title: B2 轮完成，B 系列合计约 35 亿元，估值超 100 亿元（来源轮次表述有出入）
         status: reported
-        sources: [{ title: GigaAI 极佳视界档案, url: "https://xiaopingfeng.com/live/neolab/gigaai", date: "2026" }]
+        sources:
+          [
+            {
+                title: GigaAI 极佳视界档案,
+                url: "https://xiaopingfeng.com/live/neolab/gigaai",
+                date: "2026"
+              }
+          ]
       - date: "2026-03"
         kind: model
         title: GigaWorld-1 以 62.34 分登顶 WorldArena 基准
         status: confirmed
-        sources: [{ title: GigaAI 极佳视界档案, url: "https://xiaopingfeng.com/live/neolab/gigaai", date: "2026" }]
+        sources:
+          [
+            {
+                title: GigaAI 极佳视界档案,
+                url: "https://xiaopingfeng.com/live/neolab/gigaai",
+                date: "2026"
+              }
+          ]
 
   - id: pokebot
     name: 破壳机器人
@@ -1248,59 +2273,116 @@ companies:
     region: cn
     track: world-model
     segment: embodied-driving
-    tags: [视频-动作世界模型]
+    tags: [ 视频-动作世界模型 ]
     intro: 星海图联合创始人许华哲出走创办，放弃 VLA，做“视频—动作”世界模型（UAG 架构），第一代 32B 参数。
-    founders: [许华哲]
+    founders: [ 许华哲 ]
     events:
+      - date: "2026-10-30"
+        kind: product
+        title: 发布具身智能标准化接口平台 RoboAPI
+        status: confirmed
+        sources:
+          [
+            {
+                title: 机器之心：刚刚，破壳机器人发布RoboAPI！具身模型也能「开箱即用」了,
+                url: "https://www.jiqizhixin.com/articles/2026-10-30-5",
+                date: "2026-10-30"
+              }
+          ]
       - date: "2026"
         kind: funding
         title: 成立不到 5 个月完成亿美元级 Pre-A 轮，随后再融一轮
         status: reported
-        sources: [{ title: 23 家新公司扎堆！世界模型赛道为何在 2026 年爆发, url: "https://aiinking.com/article/64867", date: "2026-07" }]
+        sources:
+          [
+            {
+                title: 23 家新公司扎堆！世界模型赛道为何在 2026 年爆发,
+                url: "https://aiinking.com/article/64867",
+                date: "2026-07"
+              }
+          ]
+    valuation:
+      {
+        value: 500,
+        unit: 百万美元,
+        asof: 2026-10,
+        status: reported,
+        note: 亿美元级 Pre-A 轮投后约
+      }
 
   - id: kunlunxing
     name: 昆仑行机器人
     region: cn
     track: world-model
     segment: embodied-driving
-    tags: [因果世界模型, 双系统]
+    tags: [ 因果世界模型, 双系统 ]
     intro: 前阿里高管任庚、前理想汽车自动驾驶负责人郎咸朋创办，昆仑世界模型（KWM）驱动双系统架构。
-    founders: [任庚, 郎咸朋]
+    founders: [ 任庚, 郎咸朋 ]
     events:
       - date: "2026"
         kind: funding
         title: 注册 90 天成为独角兽（金额未披露）
         status: reported
-        sources: [{ title: 23 家新公司扎堆！世界模型赛道为何在 2026 年爆发, url: "https://aiinking.com/article/64867", date: "2026-07" }]
+        sources:
+          [
+            {
+                title: 23 家新公司扎堆！世界模型赛道为何在 2026 年爆发,
+                url: "https://aiinking.com/article/64867",
+                date: "2026-07"
+              }
+          ]
+    valuation:
+      {
+        value: 1,
+        unit: 十亿美元,
+        asof: 2026-06,
+        status: reported,
+        note: 注册 90 天达独角兽估值
+      }
 
   - id: yuyong
     name: 语用科技
     region: cn
     track: world-model
     segment: general
-    tags: [世界模型, 具身大脑]
+    tags: [ 世界模型, 具身大脑 ]
     intro: 据报道由前通义千问负责人林俊旸创办，研发世界模型与具身大脑底层模型（单一来源，待核实）。
     events:
       - date: "2026"
         kind: funding
         title: 据报道种子轮估值 $20 亿（单一来源，待核实）
         status: reported
-        sources: [{ title: 23 家新公司扎堆！世界模型赛道为何在 2026 年爆发, url: "https://aiinking.com/article/64867", date: "2026-07" }]
+        sources:
+          [
+            {
+                title: 23 家新公司扎堆！世界模型赛道为何在 2026 年爆发,
+                url: "https://aiinking.com/article/64867",
+                date: "2026-07"
+              }
+          ]
+    valuation: { value: 2, unit: 十亿美元, asof: 2026-06, status: reported, note: 种子轮传闻估值 }
 
   - id: kunteng
     name: 昆腾动力
     region: cn
     track: world-model
     segment: embodied-driving
-    tags: [物流, World-Action Model]
+    tags: [ 物流, World-Action Model ]
     intro: 前菜鸟 CTO 李强创办，做物流仓储场景的 World-Action Model。
-    founders: [李强]
+    founders: [ 李强 ]
     events:
       - date: "2026"
         kind: funding
         title: 完成融资（金额未披露）
         status: reported
-        sources: [{ title: 23 家新公司扎堆！世界模型赛道为何在 2026 年爆发, url: "https://aiinking.com/article/64867", date: "2026-07" }]
+        sources:
+          [
+            {
+                title: 23 家新公司扎堆！世界模型赛道为何在 2026 年爆发,
+                url: "https://aiinking.com/article/64867",
+                date: "2026-07"
+              }
+          ]
 
   - id: physis
     name: 逆矩阵科技
@@ -1308,30 +2390,44 @@ companies:
     region: cn
     track: world-model
     segment: general
-    tags: [世界模型分级]
+    tags: [ 世界模型分级 ]
     intro: 北大元培本科生陈博远创办，提出 W0–W5 世界模型分级，发布通用世界基座模型“悟界·Physis-v0.1”。
-    founders: [陈博远]
+    founders: [ 陈博远 ]
     events:
       - date: "2026"
         kind: model
         title: 发布悟界·Physis-v0.1
         status: reported
-        sources: [{ title: 23 家新公司扎堆！世界模型赛道为何在 2026 年爆发, url: "https://aiinking.com/article/64867", date: "2026-07" }]
+        sources:
+          [
+            {
+                title: 23 家新公司扎堆！世界模型赛道为何在 2026 年爆发,
+                url: "https://aiinking.com/article/64867",
+                date: "2026-07"
+              }
+          ]
 
   - id: mijizhineng
     name: 幂级智能
     region: cn
     track: world-model
     segment: general
-    tags: [Next State Prediction]
+    tags: [ Next State Prediction ]
     intro: 清华副教授封硕创办，走 Next State Prediction 路线，目标做“物理 AI 的 Claude”。
-    founders: [封硕]
+    founders: [ 封硕 ]
     events:
       - date: "2026"
         kind: people
         title: 公司成立并公开技术路线
         status: reported
-        sources: [{ title: 23 家新公司扎堆！世界模型赛道为何在 2026 年爆发, url: "https://aiinking.com/article/64867", date: "2026-07" }]
+        sources:
+          [
+            {
+                title: 23 家新公司扎堆！世界模型赛道为何在 2026 年爆发,
+                url: "https://aiinking.com/article/64867",
+                date: "2026-07"
+              }
+          ]
 
   - id: primalverse
     name: 元昊动力
@@ -1339,11 +2435,18 @@ companies:
     region: cn
     track: world-model
     segment: embodied-driving
-    tags: [4D 世界模型]
+    tags: [ 4D 世界模型 ]
     intro: 源自清华智能产业研究院，做原生 4D 世界模型，与精锋医疗、极智嘉、长城汽车联合研发。
     events:
       - date: "2026"
         kind: deployment
         title: 与精锋医疗、极智嘉、长城汽车联合研发
         status: reported
-        sources: [{ title: 23 家新公司扎堆！世界模型赛道为何在 2026 年爆发, url: "https://aiinking.com/article/64867", date: "2026-07" }]
+        sources:
+          [
+            {
+                title: 23 家新公司扎堆！世界模型赛道为何在 2026 年爆发,
+                url: "https://aiinking.com/article/64867",
+                date: "2026-07"
+              }
+          ]

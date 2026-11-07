@@ -316,6 +316,8 @@ export function valuationSortKey(v: Venture): number {
   switch (val.unit) {
     case '亿元':
       return val.value;
+    case '亿港元':
+      return val.value * 0.92;
     case '十亿美元':
       return val.value * 10 * USD_CNY;
     case '百万美元':
@@ -337,6 +339,104 @@ export function formatValuation(v?: Valuation): string | null {
   if (!v) return null;
   const note = v.note ? `${v.note} ` : '';
   return `${note}${formatMoney(v)}`;
+}
+
+export interface CapitalInfo {
+  label: string;
+  fullText: string;
+  cardText: string;
+  shortText: string;
+  isListed: boolean;
+}
+
+const CORPORATE_CAPITAL_MAP: Record<string, { fullText: string; cardText: string; shortText: string }> = {
+  'deepseek': {
+    fullText: '幻方量化全资孵化（未对外独立股权融资）',
+    cardText: '幻方量化全资孵化',
+    shortText: '幻方量化孵化',
+  },
+  'google-deepmind': {
+    fullText: 'Alphabet (NASDAQ: GOOGL) 核心 AI 事业部',
+    cardText: 'Alphabet (GOOGL) 事业部',
+    shortText: 'Alphabet 旗下',
+  },
+  'universal-robots': {
+    fullText: 'Teradyne (NASDAQ: TER) 全资子公司',
+    cardText: 'Teradyne (TER) 全资子公司',
+    shortText: 'Teradyne 旗下',
+  },
+  'robbyant': {
+    fullText: '蚂蚁集团旗下全资具身智能子公司',
+    cardText: '蚂蚁集团全资子公司',
+    shortText: '蚂蚁集团旗下',
+  },
+  'tianji-gento': {
+    fullText: '长盈精密（300115.SZ）控股子公司',
+    cardText: '长盈精密控股子公司',
+    shortText: '长盈精密控股',
+  },
+  'wonik-robotics': {
+    fullText: '韩国 Wonik 集团旗下机器人子公司',
+    cardText: 'Wonik 集团子公司',
+    shortText: 'Wonik 旗下',
+  },
+  'schunk': {
+    fullText: '德国雄克家族全资工业集团（非上市）',
+    cardText: '非上市跨国工业集团',
+    shortText: '非上市集团',
+  },
+};
+
+export function getCapitalInfo(v: Venture): CapitalInfo {
+  if (v.valuation) {
+    const valStr = formatValuation(v.valuation)!;
+    const moneyStr = formatMoney(v.valuation);
+    const note = v.valuation.note || '';
+    const isListed = /上市|\b\d{4,6}\.(?:SH|SZ|HK|TW|T)\b|\b(?:NASDAQ|NYSE|SIX|Euronext|东证|港股|科创板|创业板|上交所|深交所|MINIMAX-W)/i.test(note);
+    if (isListed) {
+      const tickerMatch = note.match(/\b(\d{4,6}\.(?:SH|SZ|HK|TW|T)|[A-Z]{2,5}(?=\s*·|$)|MINIMAX-W)\b/);
+      const boardMatch = note.match(/^(科创板|创业板|港股|上交所|深交所|NASDAQ|NYSE)/);
+      const prefix = tickerMatch ? tickerMatch[1] : boardMatch ? boardMatch[1] : '已上市';
+      return {
+        label: '上市与市值',
+        fullText: `${valStr}（${v.valuation.asof}）`,
+        cardText: valStr,
+        shortText: `${prefix} · ${moneyStr}`,
+        isListed: true,
+      };
+    }
+    const shortNote = note && note.length <= 4 ? `${note} ` : '';
+    return {
+      label: '公开估值',
+      fullText: `${valStr}（${v.valuation.asof}${v.valuation.status === 'reported' ? ' · 报道' : ''}）`,
+      cardText: valStr,
+      shortText: `${shortNote}${moneyStr}`,
+      isListed: false,
+    };
+  }
+  const corp = CORPORATE_CAPITAL_MAP[v.id];
+  if (corp) {
+    return { label: '资本属性', ...corp, isListed: false };
+  }
+  const fundEv = v.events.find((e) => e.kind === 'funding' || e.kind === 'ipo');
+  if (fundEv) {
+    const roundMatch = fundEv.title.match(/(Pre-[A-B]\+*\s*轮|[A-F]\+*\s*轮|天使轮|种子轮|战略(?:融资|投资)|Pre-seed|IPO)/i);
+    const round = roundMatch ? roundMatch[1].replace(/\s+/g, '') : '股权融资';
+    return {
+      label: '融资与资本阶段',
+      fullText: `已完成${round}（${fundEv.date}，具体估值未公开）`,
+      cardText: `已完成${round}`,
+      shortText: round,
+      isListed: false,
+    };
+  }
+  return {
+    label: '融资与资本阶段',
+    fullText: '非上市商业化企业（未公开具体估值）',
+    cardText: '非上市 · 已商业化',
+    shortText: '',
+    isListed: false,
+  };
 }
 
 /** 2026-10-13 → 2026.10.13；2026-06 → 2026.06；2026 → 2026 */

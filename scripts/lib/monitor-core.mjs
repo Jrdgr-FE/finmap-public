@@ -155,8 +155,8 @@ export function isArticleUrl(url) {
 export function pageIsReadable(page) {
   return (
     Boolean(page.title) &&
-    page.text.length >= 100 &&
-    !/just a moment|verify you are human|access denied|验证码|enable javascript to continue/i.test(
+    (page.text.length >= 100 || (page.description?.length ?? 0) >= 50) &&
+    !/just a moment|verify you are human|access denied|request unsuccessful|incapsula incident|验证码|enable javascript to continue/i.test(
       page.title + " " + page.text.slice(0, 200),
     )
   );
@@ -172,9 +172,13 @@ export function parsePage(html, url, now) {
   for (const el of document.querySelectorAll(
     'script[type="application/ld+json"]',
   )) {
-    try {
-      structured.push(JSON.parse(el.textContent));
-    } catch {}
+    const raw = el.textContent;
+    for (const candidate of [raw, raw.replace(/"(\s*\r?\n\s*)"/g, '",$1"')]) {
+      try {
+        structured.push(JSON.parse(candidate.replace(/[\r\n\t]+/g, " ")));
+        break;
+      } catch {}
+    }
   }
   function articleOf(x) {
     if (Array.isArray(x)) return x.map(articleOf).find(Boolean);
@@ -184,17 +188,27 @@ export function parsePage(html, url, now) {
     }
     return null;
   }
+  function entityOf(x) {
+    if (Array.isArray(x)) return x.map(entityOf).find(Boolean);
+    if (x && typeof x === "object") {
+      if (x.headline || x.name || x.description) return x;
+      return entityOf(x["@graph"]);
+    }
+    return null;
+  }
   const structuredArticle = structured.map(articleOf).find(Boolean);
+  const structuredEntity = structured.map(entityOf).find(Boolean);
   const meta = (key) =>
     document
       .querySelector(`meta[property="${key}"],meta[name="${key}"]`)
       ?.getAttribute("content");
-  const title = plain(
-    structuredArticle?.headline ||
-      meta("og:title") ||
-      document.querySelector("h1")?.textContent ||
-      document.title,
-  );
+  const title =
+    plain(structuredArticle?.headline) ||
+    plain(meta("og:title")) ||
+    plain(document.querySelector("h1")?.textContent) ||
+    plain(document.title) ||
+    plain(structuredEntity?.name) ||
+    plain(document.querySelector("h2,h3")?.textContent);
   const explicitDate =
     structuredArticle?.datePublished ||
     meta("article:published_time") ||
@@ -212,14 +226,28 @@ export function parsePage(html, url, now) {
     .filter((n) => /rss|atom/.test(n.getAttribute("type") ?? ""))
     .map((n) => publicUrl(new URL(n.getAttribute("href"), url).href))
     .filter(Boolean);
-  for (const e of document.querySelectorAll(
-    "script,style,nav,footer,header,noscript,svg,form",
-  ))
+  for (const e of document.querySelectorAll("script,style,noscript,svg"))
     e.remove();
+  const rawBodyText = plain(document.body?.textContent, 18000);
+  for (const e of document.querySelectorAll("nav,footer,header")) e.remove();
   const main =
     document.querySelector('main,article,[role="main"]') ?? document.body;
-  const text = plain(main?.textContent, 18000);
-  const description = plain(meta("description") || meta("og:description"), 240);
+  const mainText = plain(main?.textContent, 18000);
+  const bodyText = plain(document.body?.textContent, 18000) || rawBodyText;
+  const description = plain(
+    meta("description") ||
+      meta("og:description") ||
+      structuredEntity?.description,
+    500,
+  );
+  const keywords = plain(meta("keywords"), 240);
+  const metaText = [description, keywords].filter(Boolean).join(" ");
+  const text =
+    mainText.length >= 100
+      ? mainText
+      : bodyText.length >= 100
+        ? bodyText
+        : [bodyText, metaText].filter(Boolean).join(" ").trim();
   const paragraph =
     [...(main?.querySelectorAll("p") ?? [])]
       .map((p) => plain(p.textContent, 240))
@@ -253,7 +281,7 @@ export function parsePage(html, url, now) {
   return {
     title,
     description,
-    excerpt: paragraph || (description.length >= 40 ? description : ""),
+    excerpt: paragraph || (description.length >= 40 ? plain(description, 240) : ""),
     text,
     fingerprint: hash(text.replace(/\d{1,2}:\d{2}(:\d{2})?/g, "")),
     publishedAt: isoDate(contentDate, now),

@@ -5,6 +5,7 @@ import {
   REGION_LABEL,
   formatDate,
   formatMoney,
+  getCapitalInfo,
   getVentureUrl,
   getMemberships,
   getTrack,
@@ -24,8 +25,9 @@ interface Props {
 }
 const { venture: v, variant = 'card', currentTrack, currentSegment } = Astro.props;
 const last = latestEvent(v);
-const val = v.valuation ? formatMoney(v.valuation) : null;
-const rumor = v.valuation?.status === 'reported';
+const cap = getCapitalInfo(v);
+const val = cap.shortText || (v.valuation ? formatMoney(v.valuation) : null);
+const rumor = v.valuation?.status === 'reported' && !cap.isListed;
 const slot = segmentSlot(currentTrack || v.track, currentSegment || v.segment);
 const memberships = getMemberships(v);
 const otherMemberships = memberships.filter(
@@ -86,7 +88,7 @@ const cleanModel = modelName ? modelName.replace(/（.*?）|\(.*?\)/g, '').trim(
     <div class="v-row-meta">
       {val ? (
         <span class="v-row-val">
-          <b>{val}</b>
+          <b data-live-cap-short={cap.isListed ? v.id : undefined}>{val}</b>
           {rumor && <small>报道</small>}
         </span>
       ) : last ? (

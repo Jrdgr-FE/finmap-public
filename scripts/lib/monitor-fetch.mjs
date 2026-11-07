@@ -2,6 +2,30 @@ import http from "node:http";
 import https from "node:https";
 import dns from "node:dns/promises";
 import { isIP } from "node:net";
+import zlib from "node:zlib";
+
+export function decodeBody(raw, contentEncoding = "", maxBytes = 2_500_000) {
+  const buf = Buffer.isBuffer(raw) ? raw : Buffer.from(raw);
+  const enc = String(contentEncoding || "")
+    .split(",")[0]
+    .trim()
+    .toLowerCase();
+  let out = buf;
+  try {
+    if (enc === "gzip" || enc === "x-gzip")
+      out = zlib.gunzipSync(buf, { maxOutputLength: maxBytes });
+    else if (enc === "deflate")
+      out = zlib.inflateSync(buf, { maxOutputLength: maxBytes });
+    else if (enc === "br")
+      out = zlib.brotliDecompressSync(buf, { maxOutputLength: maxBytes });
+  } catch (e) {
+    if (e?.code === "ERR_BUFFER_TOO_LARGE")
+      throw new Error("response_too_large");
+    throw new Error("invalid_content_encoding");
+  }
+  if (out.length > maxBytes) throw new Error("response_too_large");
+  return out.toString("utf8");
+}
 
 export const USER_AGENT =
   "FinMapMonitor/1.0 (+https://map.finhot.fun/ventures/monitoring/)";
@@ -91,15 +115,24 @@ export async function fetchPublic(
           chunks.push(chunk);
         });
         res.on("error", reject);
-        res.on("end", () =>
-          resolve({
-            status: res.statusCode,
-            headers: res.headers,
-            body: Buffer.concat(chunks).toString("utf8"),
-            url: safe,
-            bytes: size,
-          }),
-        );
+        res.on("end", () => {
+          try {
+            const body = decodeBody(
+              Buffer.concat(chunks),
+              res.headers["content-encoding"],
+              maxBytes,
+            );
+            resolve({
+              status: res.statusCode,
+              headers: res.headers,
+              body,
+              url: safe,
+              bytes: size,
+            });
+          } catch (e) {
+            reject(e);
+          }
+        });
       },
     );
     const timer = setTimeout(() => req.destroy(new Error("timeout")), timeout);

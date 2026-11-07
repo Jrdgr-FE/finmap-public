@@ -22,23 +22,33 @@ companies:
     region: cn
     track: robot-parts
     segment: hands
-    tags: [灵巧手, 微型伺服电缸, 专精特新]
-    intro: 北京的灵巧手和微型伺服电缸公司，自研微型电机、减速器和行星滚柱丝杠，2025 年灵巧手出货超 1 万只，是全球年出货最多的灵巧手厂商之一，人形整机厂常见供应商。
+    tags: [ 灵巧手, 微型伺服电缸, 专精特新 ]
+    intro: 北京的灵巧手和微型伺服电缸公司，自研微型电机、减速器和行星滚柱丝杠，2025 年灵巧手出货超 1
+      万只，是全球年出货最多的灵巧手厂商之一，人形整机厂常见供应商。
     events:
       - date: "2026-08-09"
         kind: deployment
         title: 入选北京重点“小巨人”企业支持名单；2025 年灵巧手出货超 1 万只，微型伺服电缸年产能 50 万台
         status: confirmed
-        sources: [{ title: 同花顺：因时机器人入选北京重点“小巨人”支持名单, url: "https://stock.10jqka.com.cn/20260809/c678793499.shtml", date: "2026-08-09" }]
+        sources:
+          [
+            {
+                title: 同花顺：因时机器人入选北京重点“小巨人”支持名单,
+                url: "https://stock.10jqka.com.cn/20260809/c678793499.shtml",
+                date: "2026-08-09"
+              }
+          ]
+    valuation: { value: 30, unit: 亿元, asof: 2026-08, status: reported, note: B+ 轮估值约 }
 
   - id: sharpa
     name: Sharpa
     region: global
     track: robot-parts
     segment: hands
-    tags: [灵巧手, 电子皮肤, 禾赛系]
-    intro: 禾赛科技 CEO 李一帆等人 2024 年底在新加坡创办，主打灵巧操作，产品有 21 个主动自由度、不到 750 克的 W02 灵巧手、电子皮肤机器人 D01 和力反馈手套，CES 2026 上走红。
-    founders: [李一帆, 向少卿, 孙恺]
+    tags: [ 灵巧手, 电子皮肤, 禾赛系 ]
+    intro: 禾赛科技 CEO 李一帆等人 2024 年底在新加坡创办，主打灵巧操作，产品有 21 个主动自由度、不到 750 克的 W02
+      灵巧手、电子皮肤机器人 D01 和力反馈手套，CES 2026 上走红。
+    founders: [ 李一帆, 向少卿, 孙恺 ]
     founded: 2024
     valuation: { value: 3.03, unit: 十亿美元, asof: "2026-08-28", status: confirmed, note: 投后 }
     events:
@@ -46,9 +56,17 @@ companies:
         kind: funding
         title: 首次公开融资即超 6 亿美元（约 45 亿元），投后估值 30.3 亿美元，阿里、美团、腾讯、京东、红杉中国等参投
         amount: { value: 618.8, unit: 百万美元 }
-        investors: [阿里巴巴, 美团, 腾讯, 京东, 传音, 红杉中国, 启明创投, 光合创投]
+        investors: [ 阿里巴巴, 美团, 腾讯, 京东, 传音, 红杉中国, 启明创投, 光合创投 ]
         status: confirmed
-        sources: [{ title: Dealroom：Sharpa raises over 4.5B yuan at 22B yuan valuation, url: "https://dealroom.co/news/148267-sharpa-raises-over-4-5b-yuan-at-22b-yuan-valuation-for-dexterous-robots/", date: "2026-09-02" }]
+        sources:
+          [
+            {
+                title: Dealroom：Sharpa raises over 4.5B yuan at 22B yuan valuation,
+                url: "https://dealroom.co/news/148267-sharpa-raises-over-4-5b-yuan-at-22b-yuan-\
+                  valuation-for-dexterous-robots/",
+                date: "2026-09-02"
+              }
+          ]
 
   - id: dexrobot
     name: 灵巧智能
@@ -56,15 +74,30 @@ companies:
     region: cn
     track: robot-parts
     segment: hands
-    tags: [灵巧手, 遥操作, 上海电气]
+    tags: [ 灵巧手, 遥操作, 上海电气 ]
     intro: 灵巧手和灵巧操作全栈公司，推出全系列灵巧手和 DexTele 遥操作系统，2026 年内连续完成天使轮和 A 轮。
     events:
       - date: "2026-07-14"
         kind: funding
         title: 完成数亿元 A 轮，上海电气参投并同步成立产业合资公司
-        investors: [上海电气]
+        investors: [ 上海电气 ]
         status: confirmed
-        sources: [{ title: 东方财富：灵巧智能完成数亿元 A 轮融资, url: "https://finance.eastmoney.com/a/202607143805295989.html", date: "2026-07-14" }]
+        sources:
+          [
+            {
+                title: 东方财富：灵巧智能完成数亿元 A 轮融资,
+                url: "https://finance.eastmoney.com/a/202607143805295989.html",
+                date: "2026-07-14"
+              }
+          ]
+    valuation:
+      {
+        value: 15,
+        unit: 亿元,
+        asof: 2026-07-14,
+        status: reported,
+        note: 数亿元 A 轮投后约
+      }
 
   # ───────── 关节与执行器 ─────────
   - id: direct-drive-tech
@@ -73,19 +106,42 @@ companies:
     region: cn
     track: robot-parts
     segment: actuators
-    tags: [直驱关节, 港股, 轮足机器人]
-    intro: 直驱动力模组公司（占收入 97%），客户覆盖科沃斯、石头、追觅、云鲸等消费机器人头部厂商，2025 年出货 850 万个模组，也做“刑天”“TITA”轮足机器人；2026 年 9 月港股上市。
+    tags: [ 直驱关节, 港股, 轮足机器人 ]
+    intro: 直驱动力模组公司（占收入 97%），客户覆盖科沃斯、石头、追觅、云鲸等消费机器人头部厂商，2025 年出货 850
+      万个模组，也做“刑天”“TITA”轮足机器人；2026 年 9 月港股上市。
     events:
       - date: "2026-09-29"
         kind: ipo
         title: 港交所主板上市，发行价 21.6 港元，募资 10.8 亿港元，首日收涨 7.4%，市值约 82 亿港元
         status: confirmed
-        sources: [{ title: 21 世纪经济报道：本末科技上市, url: "https://m.sfccn.com/2026/10-3/0NMDE0NzNfMjI1ODk0Nw.html", date: "2026-10-03" }]
+        sources:
+          [
+            {
+                title: 21 世纪经济报道：本末科技上市,
+                url: "https://m.sfccn.com/2026/10-3/0NMDE0NzNfMjI1ODk0Nw.html",
+                date: "2026-10-03"
+              }
+          ]
       - date: "2026-06"
         kind: deployment
         title: 2025 年营收约 2.82 亿元（2023 年仅 1,754 万元），2026 上半年约 2 亿元，尚未盈利
         status: confirmed
-        sources: [{ title: 21 世纪经济报道：本末科技上市, url: "https://m.sfccn.com/2026/10-3/0NMDE0NzNfMjI1ODk0Nw.html", date: "2026-10-03" }]
+        sources:
+          [
+            {
+                title: 21 世纪经济报道：本末科技上市,
+                url: "https://m.sfccn.com/2026/10-3/0NMDE0NzNfMjI1ODk0Nw.html",
+                date: "2026-10-03"
+              }
+          ]
+    valuation:
+      {
+        value: 158.3,
+        unit: 亿港元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 港股 06731.HK · 实时市值
+      }
 
   - id: zerodiff
     name: 零差云控
@@ -93,15 +149,31 @@ companies:
     region: cn
     track: robot-parts
     segment: actuators
-    tags: [一体化关节, eRob]
-    intro: 深圳一体化关节模组公司，eRob 系列关节比同负载常见方案轴向缩短 44%、减重 20% 以上，下游客户超 2,000 家，2025 年收入增长超一倍。
+    tags: [ 一体化关节, eRob ]
+    intro: 深圳一体化关节模组公司，eRob 系列关节比同负载常见方案轴向缩短 44%、减重 20% 以上，下游客户超 2,000 家，2025
+      年收入增长超一倍。
     events:
       - date: "2026-07-13"
         kind: funding
         title: 完成数亿元 C++ 轮，同创伟业领投，国泰君安创投跟投，华控基金加注
-        investors: [同创伟业, 国泰君安创投, 华控基金]
+        investors: [ 同创伟业, 国泰君安创投, 华控基金 ]
         status: confirmed
-        sources: [{ title: 36氪：零差云控完成数亿元 C++ 轮融资, url: "https://www.36kr.com/p/3885232033378308", date: "2026-07-13" }]
+        sources:
+          [
+            {
+                title: 36氪：零差云控完成数亿元 C++ 轮融资,
+                url: "https://www.36kr.com/p/3885232033378308",
+                date: "2026-07-13"
+              }
+          ]
+    valuation:
+      {
+        value: 25,
+        unit: 亿元,
+        asof: 2026-07-13,
+        status: reported,
+        note: 数亿元 C++ 轮投后约
+      }
 
   # ───────── 触觉与力觉 ─────────
   - id: paxini
@@ -110,8 +182,9 @@ companies:
     region: cn
     track: robot-parts
     segment: sensors
-    tags: [触觉传感器, 灵巧手, 数据采集]
-    intro: 深圳触觉传感公司，团队来自早稻田大学机器人实验室，基于 6D 霍尔阵列做全栈触觉传感器、灵巧手和人形 TORA-ONE，天津数据采集工厂年采 2 亿条数据；触觉芯片累计出货超百万颗，已在北京证监局辅导备案。
+    tags: [ 触觉传感器, 灵巧手, 数据采集 ]
+    intro: 深圳触觉传感公司，团队来自早稻田大学机器人实验室，基于 6D 霍尔阵列做全栈触觉传感器、灵巧手和人形 TORA-ONE，天津数据采集工厂年采 2
+      亿条数据；触觉芯片累计出货超百万颗，已在北京证监局辅导备案。
     founded: 2021
     valuation: { value: 100, unit: 亿元, asof: "2026-08", status: reported, note: 超过 }
     events:
@@ -120,14 +193,29 @@ companies:
         title: 完成 10 亿元战略融资，估值突破 100 亿元
         amount: { value: 10, unit: 亿元 }
         status: reported
-        sources: [{ title: 同花顺（转 21 世纪经济报道）：帕西尼完成 10 亿元战略融资, url: "https://news.10jqka.com.cn/20260909/c679734533.shtml", date: "2026-09-09" }]
+        sources:
+          [
+            {
+                title: 同花顺（转 21 世纪经济报道）：帕西尼完成 10 亿元战略融资,
+                url: "https://news.10jqka.com.cn/20260909/c679734533.shtml",
+                date: "2026-09-09"
+              }
+          ]
       - date: "2026-03-06"
         kind: funding
         title: 完成超 10 亿元 B 轮（约 1.45 亿美元），估值超 100 亿元，Meta 和京东关联方参投
         amount: { value: 10, unit: 亿元 }
-        investors: [Huangpu River Capital, 凯泰资本, CIM International Group]
+        investors: [ Huangpu River Capital, 凯泰资本, CIM International Group ]
         status: confirmed
-        sources: [{ title: Caixin Global：Robot sensor startup PaXini raises $145 million, url: "https://www.caixinglobal.com/2026-03-07/robot-sensor-startup-paxini-raises-145-million-tops-14-billion-valuation-102420414.html", date: "2026-03-07" }]
+        sources:
+          [
+            {
+                title: Caixin Global：Robot sensor startup PaXini raises $145 million,
+                url: "https://www.caixinglobal.com/2026-03-07/robot-sensor-startup-paxini-raise\
+                  s-145-million-tops-14-billion-valuation-102420414.html",
+                date: "2026-03-07"
+              }
+          ]
 
   - id: yimu-tech
     name: 一目科技
@@ -135,7 +223,7 @@ companies:
     region: cn
     track: robot-parts
     segment: sensors
-    tags: [视触觉, 触觉芯片, 灵巧手]
+    tags: [ 视触觉, 触觉芯片, 灵巧手 ]
     intro: 视触觉路线的机器人触觉公司，做触觉材料、芯片、算法和模型，并推出五指集成视触觉灵巧手；与斯坦福等合作开源触觉数据集 TouchNet。
     valuation: { value: 100, unit: 亿元, asof: "2026-07-20", status: reported, note: 超过 }
     events:
@@ -145,8 +233,17 @@ companies:
         amount: { value: 10, unit: 亿元 }
         status: confirmed
         sources:
-          - { title: 中证网：一目科技完成超 10 亿元 E 轮融资, url: "https://www.cs.com.cn/ssgs/01/2026/07/20/detail_2026072010025507.html", date: "2026-07-20" }
-          - { title: TechNode：Yimu Tech raises over RMB1 billion, url: "https://technode.com/2026/07/20/yimu-tech-raises-over-rmb1-billion-for-robot-tactile-sensing-and-production/", date: "2026-07-20" }
+          - {
+              title: 中证网：一目科技完成超 10 亿元 E 轮融资,
+              url: "https://www.cs.com.cn/ssgs/01/2026/07/20/detail_2026072010025507.html",
+              date: "2026-07-20"
+            }
+          - {
+              title: TechNode：Yimu Tech raises over RMB1 billion,
+              url: "https://technode.com/2026/07/20/yimu-tech-raises-over-rmb1-billion-for-ro\
+                bot-tactile-sensing-and-production/",
+              date: "2026-07-20"
+            }
 
   - id: daimon
     name: 戴盟机器人
@@ -154,30 +251,64 @@ companies:
     region: cn
     track: robot-parts
     segment: sensors
-    tags: [视触觉传感器, VTLA, 触觉世界模型]
-    intro: 视触觉传感器起家，走“视觉-触觉-语言-动作”（VTLA）路线，发布触觉锚定世界模型 Daimon-TWM 和 Daimon-Infinity 数据集。
+    tags: [ 视触觉传感器, VTLA, 触觉世界模型 ]
+    intro: 视触觉传感器起家，走“视觉-触觉-语言-动作”（VTLA）路线，发布触觉锚定世界模型 Daimon-TWM 和 Daimon-Infinity
+      数据集。
     events:
       - date: "2026-08-11"
         kind: funding
         title: 完成数亿元融资，蚂蚁集团领投，老股东超额跟投；两个月前刚完成亿元 A 轮和数亿元战略融资
-        investors: [蚂蚁集团, 汇川产投, 中国移动链长基金, 联想创投, 招商局创投, 中国电信]
+        investors: [ 蚂蚁集团, 汇川产投, 中国移动链长基金, 联想创投, 招商局创投, 中国电信 ]
         status: confirmed
-        sources: [{ title: 新浪：戴盟机器人完成数亿元融资, url: "https://news.sina.cn/sx/2026-08-12/detail-inimzivr6978720.d.html", date: "2026-08-12" }]
+        sources:
+          [
+            {
+                title: 新浪：戴盟机器人完成数亿元融资,
+                url: "https://news.sina.cn/sx/2026-08-12/detail-inimzivr6978720.d.html",
+                date: "2026-08-12"
+              }
+          ]
+    valuation: { value: 20, unit: 亿元, asof: 2026-08-11, status: reported, note: 蚂蚁领投新轮投后约 }
 
   - id: enact
     name: Enact Intelligence
     region: global
     track: robot-parts
     segment: sensors
-    tags: [力觉, 执行器内传感, 苏黎世]
-    intro: 1X 人形 NEO 软件负责人 Manuel Galliker 2026 年 3 月在苏黎世创办，在执行器内部直接测力，代替昂贵的单点力传感器，配合 AI 模型做灵巧操作。
-    founders: [Manuel Yves Galliker]
+    tags: [ 力觉, 执行器内传感, 苏黎世 ]
+    intro: 1X 人形 NEO 软件负责人 Manuel Galliker 2026 年 3
+      月在苏黎世创办，在执行器内部直接测力，代替昂贵的单点力传感器，配合 AI 模型做灵巧操作。
+    founders: [ Manuel Yves Galliker ]
     founded: 2026
     events:
       - date: "2026-10-22"
         kind: funding
-        title: 结束隐身，宣布 3,000 万美元 Pre-seed，redalpine、Notion Capital 领投，Mistral 的 Arthur Mensch、杨立昆为天使
+        title: 结束隐身，宣布 3,000 万美元 Pre-seed，redalpine、Notion Capital 领投，Mistral 的 Arthur
+          Mensch、杨立昆为天使
         amount: { value: 30, unit: 百万美元 }
-        investors: [redalpine, Notion Capital, firstminute capital, Arthur Mensch, Yann LeCun]
+        investors:
+          [
+            redalpine,
+            Notion Capital,
+            firstminute capital,
+            Arthur Mensch,
+            Yann LeCun
+          ]
         status: confirmed
-        sources: [{ title: Unite.AI：Enact Intelligence raises $30M pre-seed, url: "https://www.unite.ai/enact-intelligence-raises-30m-pre-seed-for-force-and-touch-robot-dexterity/", date: "2026-10-22" }]
+        sources:
+          [
+            {
+                title: Unite.AI：Enact Intelligence raises $30M pre-seed,
+                url: "https://www.unite.ai/enact-intelligence-raises-30m-pre-seed-for-force-and\
+                  -touch-robot-dexterity/",
+                date: "2026-10-22"
+              }
+          ]
+    valuation:
+      {
+        value: 150,
+        unit: 百万美元,
+        asof: 2026-10-22,
+        status: reported,
+        note: 3000 万美元 Pre-seed 投后约
+      }

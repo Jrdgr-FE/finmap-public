@@ -17,7 +17,7 @@ async function work() {
         timeout: 12000,
         maxBytes: 200000,
       }).catch((e) => {
-        if (e.message === "http_404") return { body: "" };
+        if (/^http_4(?!29)\d\d$/.test(e.message)) return { body: "" };
         throw Error("robots_unavailable");
       });
       if (!robotsAllowed(r.body, candidate.url))

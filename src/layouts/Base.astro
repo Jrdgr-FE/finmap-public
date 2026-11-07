@@ -24,13 +24,11 @@ const active = pathname.startsWith("/companies")
     ? "companies"
     : pathname.includes("monitoring")
       ? "monitoring"
-      : pathname.includes("dexterity")
-        ? "dexterity"
-        : pathname.includes("coverage")
+      : pathname.includes("coverage")
+        ? "guide"
+        : pathname.startsWith("/guide")
           ? "guide"
-          : pathname.startsWith("/guide")
-            ? "guide"
-            : current;
+          : current;
 const nav = [
   { href: "/", label: "动态", key: "updates", icon: "inbox" },
   {
@@ -44,12 +42,6 @@ const nav = [
 const research = [
   { href: "/companies/", label: "公司库", key: "companies", icon: "building" },
   { href: "/ventures/", label: "产业地图", key: "ventures", icon: "network" },
-  {
-    href: "/ventures/dexterity/",
-    label: "灵巧操作",
-    key: "dexterity",
-    icon: "book",
-  },
 ];
 const mark =
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#2962ff"/><path d="M9 23V9h14M9 16h11" fill="none" stroke="white" stroke-width="3.4" stroke-linecap="round"/><circle cx="23" cy="23" r="2.4" fill="white"/></svg>';
@@ -59,13 +51,11 @@ const section = financial
     ? "公司研究"
     : active === "ventures"
       ? "产业地图"
-      : active === "dexterity"
-        ? "研究专题"
-        : active === "monitoring"
-          ? "监测与数据"
-          : active === "guide"
-            ? "使用指南"
-            : "研究工作区";
+      : active === "monitoring"
+        ? "监测与数据"
+        : active === "guide"
+          ? "使用指南"
+          : "研究工作区";
 ---
 
 <!doctype html>
@@ -135,7 +125,6 @@ const section = financial
           >
             <Icon name={n.icon} />
             <span>{n.label}</span>
-            {n.key === "dexterity" && <i>专题</i>}
           </a>
         ))}
         <p class="rail-label">资料与工具</p>
@@ -246,5 +235,50 @@ const section = financial
       </footer>
     </div>
     <script src="../scripts/workspace.ts"></script>
+    <script is:inline>
+      (() => {
+        const hasTargets = () =>
+          document.querySelector(
+            "[data-live-cap-full],[data-live-cap-card],[data-live-cap-short],[data-mapping]",
+          );
+        if (!hasTargets()) return;
+        async function refreshQuotes() {
+          if (document.hidden) return;
+          try {
+            const res = await fetch("/api/quotes", {
+              headers: { accept: "application/json" },
+            });
+            if (!res.ok) return;
+            const data = await res.json();
+            const quotes = data && data.quotes;
+            if (!quotes) return;
+            window.__finmapQuotes = quotes;
+            document
+              .querySelectorAll("[data-live-cap-full]")
+              .forEach((el) => {
+                const q = quotes[el.getAttribute("data-live-cap-full") || ""];
+                if (q && q.fullText) el.textContent = q.fullText;
+              });
+            document
+              .querySelectorAll("[data-live-cap-card]")
+              .forEach((el) => {
+                const q = quotes[el.getAttribute("data-live-cap-card") || ""];
+                if (q && q.cardText) el.textContent = q.cardText;
+              });
+            document
+              .querySelectorAll("[data-live-cap-short]")
+              .forEach((el) => {
+                const q = quotes[el.getAttribute("data-live-cap-short") || ""];
+                if (q && q.shortText) el.textContent = q.shortText;
+              });
+          } catch {}
+        }
+        refreshQuotes();
+        setInterval(refreshQuotes, 120000);
+        document.addEventListener("visibilitychange", () => {
+          if (!document.hidden) refreshQuotes();
+        });
+      })();
+    </script>
   </body>
 </html>

@@ -4,7 +4,6 @@ import SiteSearch from '../../components/SiteSearch.astro';
 import { getStats, getCollections, getTaxonomy, getHighlights, getCategoryGlyph } from '../../lib/data';
 import { layoutTree } from '../../lib/tree';
 import { getVentures, getTracks, getRelations } from '../../lib/ventures';
-import { getDexterityProducts, getDexterityStages } from '../../lib/dexterity';
 import { getNewsStats } from '../../lib/news';
 
 const stats = getStats();
@@ -23,8 +22,6 @@ const ventureCount = ventures.length;
 const tracks = getTracks();
 const trackCount = tracks.length;
 const segTotal = tracks.reduce((n, t) => n + t.segments.length, 0);
-const dexStages = getDexterityStages();
-const dexProducts = getDexterityProducts();
 const newsStats = getNewsStats();
 const relCount = getRelations().length;
 
@@ -90,13 +87,13 @@ const quick = [
             <span class="go">查看图谱 →</span>
           </div>
         </a>
-        <a class="group-card" href="/ventures/dexterity/">
-          <h3>灵巧操作研究专题</h3>
-          <p>覆盖微型驱动、手本体、触觉传感、数据采集与控制模型，支持多型号并排对比</p>
+        <a class="group-card" href="/companies/">
+          <h3>公司库与多维检索</h3>
+          <p>按赛道、产业链环节、海内外地区与资本状态检索公司档案与实时市值</p>
           <div class="figs">
-            <span><b>{dexStages.length}</b>类角色</span>
-            <span><b>{dexProducts.length}</b>款型号</span>
-            <span class="go">型号对比 →</span>
+            <span><b>{ventureCount}</b>家公司</span>
+            <span><b>{segTotal}</b>个环节</span>
+            <span class="go">进入公司库 →</span>
           </div>
         </a>
         <a class="group-card" href="/ventures/news/">

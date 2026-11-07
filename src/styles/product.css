@@ -929,13 +929,13 @@ body:has(.event-drawer[open]) {
   }
 }
 
-/* Industry positions keep their own columns; companies remain distinct reading targets. */
+/* Industry positions keep their own columns; companies remain compact single-line terminal rows. */
 .product-app .map-cell {
-  background: var(--paper-2);
+  background: var(--card);
   border: 0;
 }
 .product-app .map-cell-head {
-  background: var(--card);
+  background: var(--paper-2);
   border-top: 2px solid #b1a6d0;
 }
 .product-app .map-cell[data-slot="2"] .map-cell-head {
@@ -948,49 +948,55 @@ body:has(.event-drawer[open]) {
   border-top-color: #c1ae8e;
 }
 .product-app .map-cell-filter-btn {
-  padding: 13px 13px;
+  padding: 9px 12px;
 }
 .product-app .map-chips {
-  padding: 10px;
-  gap: 7px;
+  padding: 2px 0;
+  gap: 0;
 }
 .product-app .map-node {
-  border: 1px solid var(--line);
-  border-radius: 7px;
+  border: 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 65%, transparent);
+  border-radius: 0;
   background: var(--card);
+}
+.product-app .map-node:last-child {
+  border-bottom: 0;
 }
 .product-app .map-node:hover,
 .product-app .map-node.is-linked-hover {
-  border-color: var(--accent);
-  background: var(--card);
+  background: var(--paper-2);
 }
 .product-app .map-node-link {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto auto;
+  display: flex;
   align-items: center;
-  gap: 4px 5px;
-  padding: 11px 12px;
-  min-height: 45px;
+  gap: 5px;
+  padding: 6px 12px;
+  min-height: 32px;
 }
 .product-app .map-node-name {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 550;
-  white-space: normal;
-  overflow-wrap: anywhere;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .product-app .map-node-sub {
-  grid-column: 1/-1;
-  max-width: none;
-  margin-left: 0;
-  text-align: left;
-  font-size: 10px;
+  margin-left: auto;
+  max-width: 120px;
+  text-align: right;
+  font-size: 11px;
+  color: var(--ink-3);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .product-app .map-node-sub:empty {
   display: none;
 }
 .product-app .map-cross-pill,
 .product-app .map-node-reg {
-  font-size: 9px;
+  font-size: 10px;
   line-height: 15px;
 }
 .product-app .map-track .panel-head > .right {
@@ -1001,7 +1007,7 @@ body:has(.event-drawer[open]) {
 }
 .product-app .map-cell.is-single-seg .map-chips {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(205px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
 @media (max-width: 680px) {
   .product-app .map-cell.is-single-seg .map-chips {
@@ -1014,10 +1020,10 @@ body:has(.event-drawer[open]) {
     font-size: 11px;
   }
   .product-app .map-cell-filter-btn {
-    padding: 14px;
+    padding: 12px;
   }
   .product-app .map-peek-btn {
-    min-height: 30px;
+    min-height: 26px;
   }
 }
 

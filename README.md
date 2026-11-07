@@ -1,332 +1,167 @@
-# FinMap · 硬科技产业与金融机构图谱
+<div align="center">
 
-> **公开版说明**：这是 FinMap 脱敏后的公开快照，不含提交历史，也不随线上自动更新。
-> 公司动态的接口地址已换成占位符 `monitor.example.com`（`functions/api/monitor.js`、`astro.config.mjs`、`scripts/monitor-snapshot.mjs`），
-> 运维记录已移除，`.github/workflows/deploy.yml` 只能手动触发。自行部署时请换成自己的采集服务地址和 Cloudflare 账号。
+# FinMap · 硬科技产业链与金融机构研究终端
 
-> **2026-10-28 工作台完善**：新增关键进展、证据状态、本次新增和可恢复隐藏；关注与收藏支持本机备份、预览及合并恢复。公司库使用独立小索引，减少约 91% 下载量。修正部分行情噪声与无日期历史排序，并更新静态构建依赖。见本轮验收记录。
+**用结构化代码与公开证据，绘出 247 家全球硬科技公司产业链位置、实时市值与 4,959 家持牌金融机构股权谱系。**
 
-> **2026-10-26 公司监测版**：首页改为[公司动态工作台](https://map.finhot.fun/)，支持按公司、赛道、环节、时间和事件类别筛选，以及本机关注、已读、收藏。现有 247 家公司登记在册，246 家已完成至少一个公开渠道检查；1 家正式名称尚未公开，暂不监测。英国服务器定时采集，Cloudflare 只分发页面与缓存快照，不使用 D1，不调用摘要模型。重点部件公司每小时检查，普通公司每 6 小时检查；页面可见时每 5 分钟刷新结果。公开新闻检索是线索，不能视为全文核验或全网覆盖。
->
-> [监测覆盖](https://map.finhot.fun/ventures/monitoring/)显示每个渠道的最近成功、失败和缺口；X、公众号尚未完整自动接入。规则与部署见公司监测运维说明，产品要求见需求文档。金融概览保留在 `/financial/`。下方旧版本说明仅作历史参考。
+[![Live Terminal](https://img.shields.io/badge/Live_Terminal-map.finhot.fun-2962ff?style=flat-square)](https://map.finhot.fun)
+[![FinHot News](https://img.shields.io/badge/Sibling_App-finhot.fun-0f766e?style=flat-square)](https://finhot.fun)
+[![Hardtech Companies](https://img.shields.io/badge/硬科技公司-247_家_(12_条赛道)-1d4ed8?style=flat-square)](https://map.finhot.fun/ventures/)
+[![Live Market Cap](https://img.shields.io/badge/实时行情接入-60_家上市公司-059669?style=flat-square)](https://map.finhot.fun/companies/)
+[![Financial Institutions](https://img.shields.io/badge/持牌金融机构-4,959_家-4f46e5?style=flat-square)](https://map.finhot.fun/financial/)
+[![Node.js](https://img.shields.io/badge/Node.js-%3E%3D24-339933?style=flat-square&logo=nodedotjs&logoColor=white)](package.json)
 
-> **2026-10-23 产业研究版**：硬科技板块现有 221 家公司、12 个赛道、43 个环节，支持跨赛道归属、产业链筛选、CSV 导出、公司档案和公开新闻归档。每 6 小时经 GitHub Actions 刷新公开新闻并部署。金融机构资料保留。当前为持续扩展的样本库，非全球完整名册；新闻历史有有限抓取窗口。
->
-> 页面：[产业图谱](https://map.finhot.fun/ventures/) · [公司新闻](https://map.finhot.fun/ventures/news/) · [覆盖口径](https://map.finhot.fun/ventures/coverage/)
->
-> 实现、边界、验证与维护：[硬科技 mapping 说明](docs/hardtech-mapping-20261023.md)。使用 `npm run test:ventures`、`npm run check` 和 `npm run validate` 检查，`npm run ventures:news -- --refresh` 刷新公开归档。下方早期金融图谱数字和初始硬科技设计保留作历史说明；现行结构以此说明为准。
+<p align="center">
+  <a href="https://map.finhot.fun"><b>立即访问线上工作台 (map.finhot.fun) ↗</b></a> ·
+  <a href="https://map.finhot.fun/ventures/">硬科技产业图谱</a> ·
+  <a href="https://map.finhot.fun/companies/">公司库与实时市值</a> ·
+  <a href="https://map.finhot.fun/financial/">持牌金融机构谱系</a> ·
+  <a href="#可直接复用的开源数据集">开源数据集</a> ·
+  <a href="#本地运行与构建校验">本地运行</a>
+</p>
 
-把中国的金融机构按牌照分类摊开，再把集团内部的控股链条画出来。
+</div>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/hero-ventures-dark.png">
+    <img src="docs/assets/hero-ventures.png" alt="FinMap 硬科技产业地图：12 条赛道快速跳转、上下游矩阵、代表产品型号与估值/实时市值" width="100%">
+  </picture>
+</p>
+
+<table width="100%">
+  <tr>
+    <td width="50%" align="center">
+      <img src="docs/assets/hero-updates.png" alt="FinMap 公司动态工作台" width="100%"><br>
+      <sub><b>公司动态工作台</b>：396 个一手信源持续跟踪融资、产品发布与商业落地</sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="docs/assets/hero-company.png" alt="FinMap 公司档案与二级市场实时市值" width="100%"><br>
+      <sub><b>公司档案与实时市值</b>：A 股 / 港股 / 美股 60 家上市硬科技公司盘中市值自动更新</sub>
+    </td>
+  </tr>
+</table>
+
+---
+
+## 为什么做 FinMap
+
+做一级市场硬科技尽调（具身智能、人形机器人、世界模型、AI 算力、商业航天）或金融机构穿透研究时，最常遇到三个痛点：
+
+1. **传统的“行研产业图谱”只是一张贴满 Logo 的静态图片**：既看不出一家公司具体卡在哪个上下游环节、做哪款核心型号，也没法点开核验它的公开估值、官网出处与供货关系。
+2. **一级市场估值与二级市场市值脱节**：很多数据库连已上市的龙头（如奥比中光、绿的谐波、速腾聚创、禾赛、汇川技术）还写着“未披露估值”或几年前的静态数字。
+3. **中国持牌金融机构名单是平铺的四千多行 PDF**：能查到名单，却查不到“招商银行那 26.32% 股权是谁持的、穿过了几条集团通道”，也分不清谁有央行金控牌照、谁只是挂名关联。
+
+**FinMap 把这些分散的信息做成了可检索、可交叉跳转、每一条结论都带公开出处的研究终端（并与 [FinHot 金融与 AI 每日信息台](https://finhot.fun) 共享同一套终端交互体系）：**
+
+- **12 条硬科技赛道 × 44 个产业链环节 × 247 家国内外代表公司**：支持左侧赛道目录一键跳转、跨多环节布局标记（`×2` / `×3`）、当前页抽屉速览与 CSV 导出。
+- **核心部件代表型号参数横向并排对比**：在「04 机器人核心部件」赛道内嵌五指灵巧手等核心部件的参数矩阵（主动自由度、直驱/腱绳/连杆传动路线、裸手与含腕重量口径、触觉感知与仿真 SDK），严格注明官方技术手册口径，拒绝把不同口径数字直接硬排。
+- **247 家全量资本状态覆盖 + 60 家上市公司实时市值引擎**：一级市场公司标注最新投后估值与核验时点；60 家 A 股 / 港股 / 美股上市公司通过边缘函数 `/api/quotes` 实时拉取总市值、股价与涨跌幅。
+- **396 个一手渠道与新闻源持续监测**：区分「官方渠道发布」「已核验历史融资/产品事件」与「公开媒体检索线索」，支持本机关注、未读追踪与 JSON 备份恢复。
+- **4,959 家持牌金融机构名册 + 四大集团股权穿透谱系**：对齐人行编码规范与国家金融监管总局官方名单，银行业（4,070 家）与保险业（238 家）逐类对账 0 缺漏。
+
+---
+
+## 可直接复用的开源数据集
+
+如果你在做行业研究、量化映射或构建投研 Agent，仓库里的 YAML / JSON 数据可以直接作为结构化知识库使用：
+
+| 数据路径 | 内容与覆盖范围 | 核心字段 |
+|---|---|---|
+| [`data/ventures/*.yaml`](data/ventures/) | **12 条硬科技赛道与 247 家公司档案**（具身智能 51、机器人核心部件 47、AI 芯片与算力 32、智能驾驶与低空 24、世界模型 22、商业航天 18、半导体 14 等） | `id`, `name`, `en`, `track`, `segment`, `memberships`, `valuation`, `events`, `relations`, `sources` |
+| [`data/topics/dexterity.json`](data/topics/dexterity.json) | **机器人灵巧操作与灵巧手型号参数库**（6 类技术栈角色 + 代表型号工程参数） | `actuation`, `dof`, `weight`, `sensing`, `software`, `evidence` |
+| [`data/monitor/registry.json`](data/monitor/registry.json) | **247 家硬科技公司官方监测源注册表**（396 个一手官网、Blog、GitHub Releases 与检索源） | `companyId`, `sources[]`, `cadenceHours` |
+| [`data/taxonomy.yaml`](data/taxonomy.yaml) | **中国持牌金融机构 8 大分类、50+ 牌照序列骨架**（对齐银发〔2015〕309 号） | `categories`, `types`, `regulator`, `outOfScope` |
+| [`data/groups/*.yaml`](data/groups/) | **中信、中国平安、招商局、光大四大集团股权谱系树**（含穿透持股比例、时点与多通道合计说明） | `parent`, `stake`, `stake_asof`, `stake_basis`, `held_via`, `relation` |
+| [`data/registry/*.yaml`](data/registry/) | **4,959 家持牌金融机构法人全量名册**（含 4,274 个已核实机构编码与 1,183 个核实官网） | `license_code`, `regulator`, `region`, `listed`, `tier`, `status` |
+
+---
+
+## 本地运行与构建校验
+
+环境要求：**Node.js >= 24**。
 
 ```bash
+git clone https://github.com/Jrdgr-FE/finmap-public.git
+cd finmap-public
 npm install
-npm run dev        # http://localhost:4321
-npm run validate   # 数据自检
-npm run report     # 覆盖报告 + 与官方名单逐类对账
-npm run build      # 静态站输出到 dist/
+
+# 启动本地开发服务器 (http://localhost:4321)
+npm run dev
+
+# 运行硬科技图谱、监测引擎与工作台单元测试
+npm run test:ventures
+npm run test:ui
+
+# 运行全量数据完整性校验（断链、悬空节点、环形股权、估值与许可证格式自检）
+npm run validate
+
+# 生成金融机构覆盖报告并与监管总局官方 PDF 基线逐类对账
+npm run report
+
+# 构建生产静态站点与边缘函数 (输出至 dist/)
+npm run build
 ```
 
 ---
 
-## 它解决什么问题
+## 模块一：硬科技产业链图谱与公司监测 (`/`, `/ventures/`, `/companies/`)
 
-网上能查到"中国有哪些银行"，但查不到"招商银行那 26.32% 是谁持的、穿过几条通道"。
-官方名单是公开的，但它们是**平铺的 PDF**——四千多家法人机构排成一张巨表，
-没有集团内部的持股结构，也不区分谁有牌照、谁只是挂个名。
+### 1. 十二条核心硬科技赛道
 
-这个项目做四件事：
+| 编号 | 赛道 | 产业链环节划分 |
+|---|---|---|
+| `01` | **具身智能** | 上游·部件与数据 → 中游·具身大脑 → 中游·整机本体 → 下游·场景与运营 |
+| `02` | **世界模型** | 通用世界模型 → 具身与驾驶世界模型 |
+| `03` | **AI 芯片与算力** | 上游·互连与光通信 → 芯片·训练与通用加速 → 芯片·推理与端侧芯片 → 下游·智算云与集群运营 |
+| `04` | **机器人核心部件** | 末端·灵巧手 → 本体·关节与执行器 → 感知·视觉、触觉与力觉 → 开发·仿真与数据 |
+| `05` | **智能驾驶与低空出行** | 智驾·自动驾驶方案 → 干线·Robotaxi 与干线物流 → 末端·无人配送与特种作业 → 低空·eVTOL 与飞行器 |
+| `06` | **商业航天** | 制造·商业火箭 → 制造·卫星制造与载荷 → 运营·星座运营与航天服务 → 前沿·太空算力与轨道基建 |
+| `07` | **大模型与 AI 软件** | 基础与多模态模型 → 垂类模型与智能体 → 开发工具与 AI 基础设施 |
+| `08` | **半导体与先进封装** | 上游·EDA 与 IP → 设备·前道与量检测设备 → 设备·先进封装与微纳制造 → 制造·晶圆代工与功率芯片 |
+| `09` | **工业自动化与制造** | 核心控制器与伺服系统 → 工业与协作机器人 → 机器视觉与智能产线 |
+| `10` | **智能硬件与终端** | AR / AI 眼镜与穿戴设备 → 消费级机器人与 3D 打印 → 医疗与脑机接口设备 |
+| `11` | **能源与电气化** | 前沿·可控核聚变 → 储能·新型电池与长时储能 → 电网·电力电子与充换电 |
+| `12` | **前沿计算与新材料** | 量子计算与光计算 → 生物计算与先进材料 |
 
-1. **按牌照分类** —— 口径对齐人行《金融机构编码规范》与银发〔2015〕309 号
-2. **画控股谱系** —— 谁持谁、持多少、哪些是控股哪些只是品牌关联
-3. **每个数字都能点回来源** —— 持股比例标口径、标时点，查不到就留空
-4. **跟官方名单对家数** —— 一条命令看出哪个牌照序列还漏着，缺哪些机构
+### 2. 资本状态与实时市值引擎 (`/api/quotes`)
 
-## 数据规模
+- **一级市场公司**：统一展示最新已核实估值（如 `投后 200 亿元`、`约 $10B`）或最新融资轮次（如 `A 轮`、`天使轮`）；高等院校与国立科研院所孵化主体明确标注 `科研机构孵化`。
+- **二级市场上市公司（60 家）**：由 Cloudflare Pages Function [`functions/api/quotes.js`](functions/api/quotes.js) 批量聚合 A 股（科创板/创业板/主板）、港股与美股实时行情（边缘缓存 120 秒），前端进入页面及每 2 分钟自动无感刷新最新市值、股价与涨跌幅。
 
-| | |
+---
+
+## 模块二：中国持牌金融机构图谱 (`/financial/`, `/orgs/`, `/groups/`, `/roster/`)
+
+### 1. 三层结构 + 两档深度
+
+```text
+监管与基础设施层     42 家   定规则、发牌照、办登记清算（央行、金监总局、证监会、交易所、清算所等）
+集团谱系层           90 家   4 个综合金融集团（中信、中国平安、招商局、光大），带穿透股权边
+全牌照名录层      4,700+ 家  按 50+ 牌照序列收全的持牌法人机构名册
+```
+
+- **`tier: detailed`（1,314 家）**：逐一核实官网、业务、股权比例与公开出处，生成完整机构档案页（`/orgs/`）。
+- **`tier: mass`（3,645 家）**：从监管总局官方名单批量导入并对齐机构编码与属地（如农村商业银行 1,505 家、村镇银行 1,440 家），在 `/roster/` 独立展示，不与深度核实档案混淆。
+
+### 2. 构建期质量闸门（`npm run validate` & `npm run report`）
+
+| 校验规则 | 解决的实际工程问题 |
 |---|---|
-| 持牌法人主体 | 4,959 |
-| 其中逐一核实详情 | 1,314（有官网、业务、股权、完整来源） |
-| 其中名册级 | 3,645（名称、机构编码、牌照类型、属地） |
-| 金融分类 / 牌照类型 | 8 / 50+ |
-| 有股权谱系的集团 | 4（中信、中国平安、招商局、光大） |
-| 去重来源 | 1,483 |
-| 已核实机构编码 | 4,274 |
-| 已核实官网 | 1,183 |
-| 输出页面 | 4,978（构建约 6 秒） |
-
-## 三层结构 + 两档深度
-
-```
-监管与基础设施层     42 家   定规则、发牌照、办登记清算
-集团谱系层           90 家   4 个金融集团，带股权边（谁持谁、持多少）
-全牌照名录制      4,700+ 家  按牌照序列收全的机构名册
-```
-
-**为什么分三层。**「谁持有牌照」和「谁持有了谁」是两个不同的问题，
-用同一张表表达会两头都不讨好。名录制回答"这个牌照序列里有哪些机构"，
-谱系层回答"这些机构在集团内部怎么挂"。
-
-**为什么又分两档深度。** 农村商业银行一个序列就 1,505 家、村镇银行 1,440 家，
-逐个上网核实官网和经营情况不现实。所以：
-
-- `tier: detailed` —— 核实过官网、业务、股权，有完整详情页 → `/orgs/`
-- `tier: mass` —— 从监管名单批量导入，只保留能确定的事实 → `/roster/`
-
-把两者混在一起展示，会让读者以为名册级那些也核实过。所以页面上用「名册」标记区分，
-各自走各自的列表页。
-
-## 目录结构
-
-```
-data/
-  taxonomy.yaml            # 分类骨架：8 个分类 + 50 余个牌照类型
-  highlights.yaml          # 编辑内容：几个容易搞错的事实，同样挂来源
-  roster-reference.json    # 银行业官方名单基线（4,070 家）
-  insurance-reference.json # 保险业官方名单基线（238 家）
-  supervision.yaml         # 监管与基础设施层
-  groups/                  # 集团谱系层：citic / pingan / merchants / everbright
-  registry/                # 全牌照名录制，每个牌照序列一个文件
-src/
-  lib/data.ts        # 数据加载 + 构建期校验 + 名录制去重 + 正文兜底清理
-  lib/tree.ts        # 谱系树布局算法
-  components/        # LineageGraph / OrgRow / SourceList / SiteSearch（全站搜索）
-  pages/             # index / orgs / roster / groups / group / org / category / about
-                     # search.json.ts：构建期生成全站搜索索引
-scripts/
-  validate.mjs               # 数据自检
-  report.mjs                 # 覆盖报告 + 官方基线逐类对账
-  import-nfra-roster.mjs     # 从监管名单 PDF 批量导入名册级机构
-```
-
-## 数据模型
-
-```yaml
-- id: citic-bank
-  name: 中信银行股份有限公司
-  short: 中信银行
-  category: banking                          # 必须是 taxonomy 里的分类
-  type: joint-stock-commercial-bank          # 必须是该分类下的类型
-  license_code: B0006H111000001              # 机构编码，必须写成字符串
-  regulator: 国家金融监督管理总局
-  region: 全国                                # 名册级记录用来分组
-  founded: 1987
-  listed: ["601998.SH", "0998.HK"]
-  website: https://www.citicbank.com
-  intro: >-
-    全国 12 家股份制商业银行之一……
-  business: [公司银行, 投资银行, 交易银行]
-  parent: citic-holdings                     # 上层主体 id，直接归集团写 ROOT
-  stake: 64.95                               # 上层持股比例
-  stake_asof: "2025-02-14"                   # 非全资比例必须标时点
-  stake_basis: aggregate                     # aggregate = 集团多通道合计口径
-  held_via: 中信集团直接持股 + 中信金控……     # aggregate 必须写清通道
-  relation: affiliate                        # affiliate = 参股／品牌关联，不控股
-  status: active                             # active | distressed | exited | merging
-  tier: detailed                             # detailed | mass
-  sources:
-    - { title: "…", url: "https://…", date: "2025-02-14" }
-```
-
-## 质量闸门
-
-### 一、构建期校验（不过就构建失败）
-
-```bash
-npm run validate
-```
-
-| 规则 | 为什么 |
-|---|---|
-| `category`/`type` 必须存在且互相匹配 | 防止「银行业」下面挂「信托公司」 |
-| 机构 id 全局唯一 | 跨集团不能重名 |
-| `parent` 不能悬空 + 环检测 | 防止 A 持 B、B 持 A |
-| 每个主体至少一条来源，URL 必须合法 | 「点回来源」不能是空头承诺 |
-| 非 100% 持股比例必须有 `stake_asof` | 比例是时点数据 |
-| `stake_basis: aggregate` 必须有 `held_via` | 「合计」不写通道就没法复核 |
-| `status` 非 active 必须说明退出情形 | 已退出的主体不能混在现役里 |
-| `tier: mass` 必须有 `region` | 名册级靠属地分组展示 |
-| **`license_code` 必须是字符串且格式合法** | 写成裸数字会被 YAML 当整数，`000017` 变成 `17`，前导零全丢——真踩过 |
-
-缺 `stake_asof` 进**警告**而不是错误——编一个日期比留个缺口更糟，
-界面会把这类比例标上 `*`。
-
-### 二、与官方名单逐类对账
-
-```bash
-npm run report
-```
-
-两份基线都来自对监管总局官方 PDF 的解析，逐条含机构编码与类型：
-
-- 银行业：《银行业金融机构法人名单》（截至 2025-06-30，4,070 家法人）
-- 保险业：《保险机构法人名单》（截至 2025-06-30，238 家法人）
-
-报告逐类对账并列出缺口机构名；没有全量基线的序列（公募基金、期货、证券公司、地方 AMC）
-按官方公布家数做回归检查：
-
-```
-  牌照类型                      官方    已收     漏
-  rural-commercial-bank   1505  1505     0
-  village-bank            1440  1440     0
-  …
-✓ 官方名单覆盖的每一个牌照序列都已收全。
-```
-
-基线有截止日期，之后发生的合并、更名会让个别条目"看起来缺了"。
-这类情况在脚本里单独列了白名单并写明理由，不计入缺口：
-
-- 中邮邮惠万家银行（已被邮储银行吸收合并，直销银行 2→1）
-- 新疆汇和银行（已被新疆银行吸收合并，城商行 124→123）
-
-## 名册级批量导入
-
-`scripts/import-nfra-roster.mjs` 把监管名单 PDF 转成 YAML：
-
-```bash
-pdftotext -layout 名单.pdf roster.txt
-node scripts/import-nfra-roster.mjs roster.txt --write
-```
-
-解析上有四个坑，都是踩过才定下来的：
-
-1. **行解析不可靠** —— 大表的行会跨行、列会错位，用行正则只能解析出 1,886 家（真值 4,070）
-2. **要以机构编码为锚点** —— 先在全文定位编码，再取其后 60 字符窗口确定牌照类型与监管单位
-3. **名称不在编码紧前面** —— 中间夹着英文名，要往前找最后一个「序号 + 中文名」对；
-   紧贴编码取只能拿到 46%
-4. **名称可能折行到序号之前** —— 此时"编码前最后一个序号+中文名"会命中上一行编码的后 4 位
-   和本行的类型标签，把「村镇银行」当成机构名。加 `(?<!\d)` 拒绝从编码中间截断的匹配
-
-保险业的《保险机构法人名单》格式不同：机构类型会折成两三行（`保险集团（控股）` / `公司`），
-要以连续前缀匹配而不是完整标签。
-
-## 设计取舍
-
-**只收持牌法人，不收分支机构。** 一家银行的分行不是法人，不进图谱。
-唯一例外是外国再保险公司在华分公司——它们是境内再保险供给的主要通道，
-收了，但每条都写明分公司性质与境外法人母体。
-
-**区分控股与非控股。** 谱系图实线是控股或实际控制，虚线是参股或只有品牌关联。
-中信建投挂着「中信」字号，但中信证券 2019 年已经清仓减持，现在第一大股东是北京金融控股集团。
-
-**状态分三档而不是两档。** 被接管、破产重整的主体（华信信托、新时代信托、华泰汽车金融）
-法人资格还在、还有重整复活的可能性，和已经注销的村镇银行不是一回事，
-所以 `distressed` 与 `exited` 分开，界面标记也不同。
-
-**手写 SVG 而不是引入图可视化库。** 集团谱系本质是层次树，不是力导向图。
-这里用左右向层次布局：x 轴是层级，y 轴按叶子顺序排，父节点纵向居中于其子树，
-行距按叶子数自适应。构建后有几何校验：0 重叠、0 越界、0 文字溢出。
-
-**明确不收录的类别，连同理由一起写进分类。** 典当行、地方交易场所保留在 taxonomy 里
-但标注 `outOfScope` 与原因，`npm run report` 会把它们与真正的缺口分开显示。
-把类别悄悄删掉，对找典当行的读者没有任何帮助。
-
-**为什么单设「金融控股公司」分类。** 它决定了整张图谱长什么样：
-有金控牌照的集团（中信、招商局）金融股权收拢到一个平台，谱系是一棵树；
-没有的（中国平安）股权散挂在集团本级，谱系是一片灌木。
-各省叫「XX金融控股集团」的平台绝大多数并没有央行金控牌照，所以按有无牌照分列。
-
-## 已知局限
-
-- 有股权谱系的只有 4 个集团，四大行、保险系、互联网系的谱系未做
-- 名册级 3,645 家没有官网与经营情况，这是刻意的取舍，不是遗漏
-- 「某集团没有某项牌照」只能给出「我没查到」，不能给出「不存在」
-- 股权每年在变，页面标注的日期就是数据新鲜度
-- 保险中介（上千家）与私募基金管理人（上万家）不在范围内
-- 境外机构、融资租赁、私募管理人这几类归类存在争议，处理方式写在对应页面的「需要说明」里
-
-## 界面
-
-2026-10-20 改版：原来的纸感底色、英文等宽小标题和大段说明读起来像个人笔记，改成与 finhot.fun、Lab Gateway 控制台同一套设计令牌（中性灰底、白色面板、紫色强调色、系统字体），三个站点属于同一产品家族。
-
-- 页头全站搜索（`/` 或 ⌘K），覆盖全部 4,959 家：名称、简称、机构编码、上市代码、属地。索引 `/search.json` 构建期生成（约 760 KB，压缩后约 100 KB），首次聚焦时才下载；逐一核实的排在名册级前面。
-- 导航：机构库（`/orgs/`）、全量名册（`/roster/`）、集团谱系（新增 `/groups/`）、数据说明。两个列表页支持 `?q=` 带关键词进入，与原有 `?cat=`、`?type=` 一起用。
-- 首页：搜索为主，下面是核心数字、8 个分类磁贴、4 个集团、「容易读错的几处」和三条数据口径；方法论细节移到数据说明页。
-- 机构页改为档案式：顶部机构卡（分类、上市代码、状态、名册标记），左侧股权链（集团 → 中间层 → 本机构，逐层持股比例）、旗下主体、同类机构，右侧基本信息与来源。集团页与分类页同样改为面板布局，分类页的牌照类型分布改为条形图（区分逐一核实与名册级）。
-- 数据说明页加目录，改用读者能看懂的说法（不再出现 YAML、npm 命令、字段名）；「已知局限」与「收录边界」对名册级序列的说法统一为「已按官方名单收全，未逐一核实」。
-- 修正：名册页导航高亮落在「机构总览」上；机构行不再显示「全牌照名录」「监管与基础设施」这类数据集合名；分类页「按集团分布」只列真正的金融集团。
-
-数据、URL 与收录口径未变；全部 4,979 个页面、10 万余条站内链接构建后核对无断链。
-
-## 硬科技图谱
-
-`/ventures/` 板块收录具身智能、世界模型等赛道的一级市场公司（头部公司也收），按产业链环节分类，每家公司附简介、估值和带来源的动态时间线。页面：`/ventures/`（总览）、`/ventures/<track>/`（赛道）、`/venture/<id>/`（公司）。
-
-### 数据文件
-
-`data/ventures/*.yaml`（目前是 `ventures.yaml`），结构为 `tracks`（赛道）→ `segments`（产业链环节）→ `companies`。代码在 `src/lib/ventures.ts`。
-
-| 字段 | 说明 |
-|---|---|
-| `id` | 小写字母、数字、连字符；不能与金融机构 id 重名 |
-| `name` / `en` | 中文名 / 英文名 |
-| `region` | `cn` 或 `global` |
-| `track` / `segment` | 所属赛道与产业链环节，必须在 `tracks` 里定义 |
-| `tags` | 标签，参与全站搜索 |
-| `intro` | 一两句简介 |
-| `valuation` | `{ value, unit, asof, status }`，保留原币种，必须标时点 |
-| `events` | `{ date, kind, title, status, sources }`；`kind` 为 funding / product / model / deployment / ipo / people；`status` 为 `confirmed`（官宣或多方确认）或 `reported`（传闻、单一来源） |
-
-### 校验规则（`npm run validate`，不过就构建失败）
-
-- id 格式合法、不重复、不与金融机构重名；`name`、`intro` 必填；`region` 只能是 cn / global
-- `track`、`segment` 必须存在且对应；每个赛道至少一个环节
-- 估值必须有 `asof` 和 `status`
-- 公司须有可回查资料：已有事件档案保留事件；新增 `coverage: profile` 可先收录官网简介（必须有 `sources`、`verifiedAt`），不得编造新闻日期。事件 `date` 为 YYYY / YYYY-MM / YYYY-MM-DD，`kind`、`status` 合法，`title` 必填
-- 每条事件至少一个来源，来源 URL 合法且有标题
-
-### 候选动态
-
-```bash
-npm run ventures:candidates            # 默认最近 14 天
-npm run ventures:candidates -- --days 30
-```
-
-通过 SSH（主机别名由环境变量 `FINHOT_SSH_HOST` 指定）只读查询 FinHot 的文章库，按公司名匹配出相关报道，写到 `data/ventures/candidates.json`（已 gitignore，不上线，含 FinHot 未公开的 AI 源文章，且匹配只看名字会有误报）。审核后把确认的事件连同来源写进 YAML。表名、列名可用环境变量覆盖：`FINHOT_ARTICLES_TABLE`、`FINHOT_COL_ID`、`FINHOT_COL_TITLE`、`FINHOT_COL_SUMMARY`、`FINHOT_COL_URL`、`FINHOT_COL_TIME`、`FINHOT_PUBLIC_EXPR`、`FINHOT_DB_URL_CMD`。
-
-## 部署
-
-线上地址：**https://map.finhot.fun**
-
-```bash
-npm run deploy   # = npm run build && wrangler pages deploy dist --project-name=finmap --branch=main
-```
-
-首次使用需要认证，二选一：
-
-```bash
-npx wrangler login                                  # OAuth，浏览器授权
-export CLOUDFLARE_API_TOKEN=<你的 API Token>          # 或在环境里给 token
-```
-
-### 为什么不是 `cf deploy`
-
-Cloudflare 新出的 `cf` CLI 是走「Pages on Workers」路线的，但有两个坑：
-
-1. **`cf pages deploy` 已经不支持**，会直接报错让你改用 `cf deploy`（旧版 Pages 被弃用）
-2. **`cf deploy` 只认 Vite 工程**。它的 Build Output Specification 期望
-   `.cloudflare/output/v0/config.json`，而那个文件由 `@cloudflare/vite-plugin` 产出。
-   Astro 自己的构建输出不符合，`cf build` 和 `cf deploy` 都会停在
-   `no root config found at .cloudflare/output/v0/config.json`。
-   `cf init .` 会自动跑 `astro add cloudflare` 加上 `@astrojs/cloudflare` 适配器，
-   但仍然生成不出这个文件——这是 beta CLI 的框架适配范围问题，不是配置错。
-
-所以本站用同一路线（Workers 静态资源）的稳定实现 `wrangler pages deploy`。
-两者最终都是把纯静态目录托管在 Cloudflare 全球网络上，对这个站没有功能差别。
-
-### 关于 workers.dev
-
-如果要用 Workers 而非 Pages（`wrangler deploy` + `assets.directory`），
-账号需要先注册一个 `workers.dev` 子域，否则会报
-`You need to register a workers.dev subdomain before publishing to workers.dev`。
-Pages 项目不需要这一步，URL 也更干净，所以选了 Pages。
-
-### 部署前会自动经过的检查
-
-`npm run build` 之前建议先跑 `npm run validate` 和 `npm run report`——
-数据校验不过会导致构建直接失败，这是刻意的：宁可部署失败，也不要上线一份错数据。
-
-## 免责
-
-个人整理的结构化图谱，用于理解中国金融体系的牌照分布与集团治理结构，
-不构成投资建议，也不构成对任何机构业务资质的认定。数据以监管机构公告与公司披露原文为准。
+| `category` / `type` 严格对齐 taxonomy | 防止「银行业」下误挂「信托公司」 |
+| 全局唯一 ID + `parent` 环检测 | 跨集团与硬科技公司绝不重名，防止循环持股 |
+| 非 100% 持股必须标 `stake_asof` | 股权比例是时点数据，拒绝无时点模糊数字 |
+| `stake_basis: aggregate` 必须写明 `held_via` | 集团多通道合计持股必须写清穿透路径方可复核 |
+| `license_code` 强制字符串校验 | 防止 YAML 将 `000017` 解析为整数 `17` 吞掉前导零 |
+| 与银行业（4,070 家）、保险业（238 家）官方 PDF 逐类对账 | 一条命令检查每个牌照序列是否收全，合并注销机构单独建白名单说明 |
+
+---
+
+## English Overview
+
+**FinMap** ([map.finhot.fun](https://map.finhot.fun)) is an open-source research terminal and structured dataset for **Hardtech Venture Mapping** and **Chinese Licensed Financial Institutions**, built alongside [**FinHot**](https://finhot.fun) (AI & Financial Intelligence Terminal).
+
+- **247 Hardtech Companies Across 12 Supply Chains**: Covers Embodied AI & Humanoid Robotics (Unitree, AgiBot, Figure, 1X, Physical Intelligence, Galbot, Spirit AI), Robot Core Components (Dexterous Hands, Actuators, Tactile Sensors), World Models, AI Compute & Semiconductors, Autonomous Driving & eVTOL, and Commercial Space.
+- **Live Market Cap Engine (`/api/quotes`)**: Automatically tracks real-time market capitalizations, stock prices, and daily changes for 60 publicly listed hardtech anchors across STAR Market,SZSE, HKEX, and NASDAQ/NYSE, alongside verified post-money valuations for private ventures.
+- **First-Party Source Monitoring**: Tracks 396 official websites, blogs, GitHub orgs, and news feeds across all 247 companies, separating first-party disclosures from media leads.
+- **4,959 Licensed Chinese Financial Institutions**: Reconciled 1:1 against official NFRA banking (4,070) and insurance (238) corporate rosters, complete with multi-channel equity lineage trees for major financial holding conglomerates (CITIC, Ping An, China Merchants, Everbright).

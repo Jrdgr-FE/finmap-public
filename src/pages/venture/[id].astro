@@ -14,7 +14,7 @@ import {
   getTrack,
   getSegment,
   formatDate,
-  formatValuation,
+  getCapitalInfo,
   segmentSlot,
   splitSegmentName,
   REGION_LABEL,
@@ -94,7 +94,7 @@ const trackChains = uniqueTrackIds
   .map((tid) => getTrack(tid))
   .filter((t): t is NonNullable<typeof t> => Boolean(t));
 
-const val = formatValuation(v.valuation);
+const cap = getCapitalInfo(v);
 
 const facts = [
   { k: "国家 / 地区", v: v.country || REGION_LABEL[v.region] },
@@ -105,10 +105,9 @@ const facts = [
   ...(v.founded ? [{ k: "成立年份", v: `${v.founded} 年` }] : []),
   ...(v.founders?.length ? [{ k: "核心团队", v: v.founders.join("、") }] : []),
   {
-    k: "公开估值",
-    v: val
-      ? `${val}（${v.valuation!.asof}${v.valuation!.status === "reported" ? " · 报道" : ""}）`
-      : "未披露",
+    k: cap.label,
+    v: cap.fullText,
+    liveId: cap.isListed ? v.id : undefined,
   },
   {
     k: "资料核验",
@@ -161,6 +160,14 @@ const facts = [
             {v.region === "global" && (
               <span class="badge badge-plain">
                 {v.country || REGION_LABEL[v.region]}
+              </span>
+            )}
+            {cap.shortText && (
+              <span
+                class="badge badge-plain"
+                data-live-cap-short={cap.isListed ? v.id : undefined}
+              >
+                {cap.shortText}
               </span>
             )}
             {memberships.length > 1 && (
@@ -226,9 +233,9 @@ const facts = [
           <section class="panel" id="dexterity-specs">
             <div class="panel-head">
               <h2>产品参数与技术规格</h2>
-              <span class="hint">灵巧操作专题收录</span>
+              <span class="hint">官方公开规格核验</span>
               <span class="right">
-                <a href="/ventures/dexterity/">在专题中并排对比 →</a>
+                <a href="/ventures/?track=robot-parts#robot-parts-hand-specs">在核心部件图谱中对比 →</a>
               </span>
             </div>
             <div class="panel-body">
@@ -467,7 +474,7 @@ const facts = [
               {facts.map((f) => (
                 <div>
                   <dt>{f.k}</dt>
-                  <dd>{f.v}</dd>
+                  <dd data-live-cap-full={f.liveId}>{f.v}</dd>
                 </div>
               ))}
             </dl>

@@ -26,12 +26,34 @@ companies:
       - title: Isaac Sim - Robotics Simulation and Synthetic Data Generation | NVIDIA
           Developer
         url: https://developer.nvidia.com/isaac-sim
-    events: []
+    events:
+      - date: 2026-10-27
+        kind: deployment
+        title: 宣布向 Meta 股权发行投资 30 亿美元并扩大 AI 战略合作，Meta 将大规模部署 Vera Rubin、Vera
+          CPU、Spectrum-X 与 BlueField-4，并深化 Muse 系列模型合作
+        status: confirmed
+        sources:
+          - title: NVIDIA 新闻稿：NVIDIA and Meta to Expand Collaboration on Muse and Muse
+              Family of Models Amid Robust Growth
+            url: https://nvidianews.nvidia.com/news/nvidia-and-meta-to-expand-collaboration-on-muse-and-muse-family-of-models-amid-robust-growth
+            date: 2026-10-27
+          - title: WSJ：Nvidia to Invest $3 Billion in Meta’s Equity Offering as They Expand
+              AI Partnership
+            url: https://www.wsj.com/tech/ai/nvidia-to-invest-3-billion-in-metas-equity-offering-as-they-expand-ai-partnership-e8d3850a
+            date: 2026-10-27
     memberships:
       - track: ai-compute
         segment: systems
       - track: robot-parts
         segment: simulation
+    valuation:
+      {
+        value: 4586.1,
+        unit: 十亿美元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: NASDAQ NVDA.US · 实时市值
+      }
   - id: amd
     name: 超威半导体
     en: AMD
@@ -52,7 +74,28 @@ companies:
     sources:
       - title: AMD Instinct™ MI300 Series Accelerators
         url: https://www.amd.com/en/products/accelerators/instinct/mi300.html
-    events: []
+    events:
+      - date: 2026-10-27
+        kind: deployment
+        title: 宣布向 Meta 股权发行投资 10 亿美元并深化战略合作，为 Meta 超智能基础设施提供算力支持；Q3 营收同比增长 45%，EPYC
+          Venice 已开启出货，Helios 机架级 AI 系统预计 Q4 放量
+        status: confirmed
+        sources:
+          - title: AMD IR：AMD and Meta Advance Strategic Partnership to Power Meta’s
+              Superintelligence Infrastructure
+            url: https://ir.amd.com/news-events/press-releases/detail/1302/amd-and-meta-advance-strategic-partnership-to-power-metas-superintelligence-infrastructure
+            date: 2026-10-27
+          - title: 华尔街见闻：AMD Q3营收超预期增45%，数据中心收入近翻倍，Q4指引提速又新高
+            url: https://wallstreetcn.com/articles/3785112
+            date: 2026-11-04
+    valuation:
+      {
+        value: 731.8,
+        unit: 十亿美元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: NASDAQ AMD.US · 实时市值
+      }
   - id: d-matrix
     name: d-Matrix
     en: d-Matrix
@@ -76,6 +119,7 @@ companies:
       - title: Corsair at Rack Scale | d-Matrix In-Memory Computing for AI
         url: https://www.d-matrix.ai/corsair-at-rack-scale
     events: []
+    valuation: { value: 2, unit: 十亿美元, asof: 2025-11, status: confirmed, note: C 轮估值 }
   - id: lightmatter
     name: Lightmatter
     en: Lightmatter
@@ -96,6 +140,7 @@ companies:
       - title: Passage Photonic Interconnect Deep Dive - Lightmatter®
         url: https://lightmatter.co/session/passage-photonic-interconnect-deep-dive
     events: []
+    valuation: { value: 4.4, unit: 十亿美元, asof: 2024-10, status: confirmed, note: D 轮估值 }
   - id: celestial-ai
     name: Celestial AI
     en: Celestial AI
@@ -116,6 +161,7 @@ companies:
       - title: Marvell Completes Acquisition of Celestial AI
         url: https://www.marvell.com/company/newsroom/marvell-completes-acquisition-of-celestial-ai.html
     events: []
+    valuation: { value: 2.5, unit: 十亿美元, asof: 2025-03, status: confirmed, note: C1 轮估值 }
   - id: cambricon
     name: 寒武纪
     en: Cambricon
@@ -136,8 +182,28 @@ companies:
     sources:
       - title: 思元370系列 - 寒武纪
         url: https://www.cambricon.com/index.php?a=lists&c=index&catid=360&m=content
-    events: []
+    events:
+      - date: 2026-10-23
+        kind: deployment
+        title: 2026 年前三季度净利润约 37.15 亿元（同比增长 131.49%），其中 Q3 营收同比增长 104.47%、归母净利润 14.04
+          亿元（同比增长 147.74%）
+        status: confirmed
+        sources:
+          - title: 华尔街见闻：AI芯片需求持续释放，寒武纪Q3营收同比增长104.47%，净利润增147.74%
+            url: https://wallstreetcn.com/articles/3784326
+            date: 2026-10-23
+          - title: 21世纪经济报道：寒武纪：前三季度净利润约37.15亿元，同比增长131.49%
+            url: https://m.21jingji.com/article/20261023/herald/d7b03e5b34c684c8e4080a123c618aed.html
+            date: 2026-10-23
     country: 中国
+    valuation:
+      {
+        value: 5049.1,
+        unit: 亿元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 科创板 688256.SH · 实时市值
+      }
   - id: coreweave
     name: CoreWeave
     en: CoreWeave
@@ -158,6 +224,14 @@ companies:
       - title: The Essential Cloud for AI | CoreWeave
         url: https://www.coreweave.com/
     events: []
+    valuation:
+      {
+        value: 25,
+        unit: 十亿美元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: NASDAQ CRWV.US · 实时市值
+      }
   - id: siliconflow
     name: 硅基流动
     en: SiliconFlow
@@ -178,8 +252,27 @@ companies:
     sources:
       - title: 硅基流动 SiliconFlow - 大模型 API 与 AI 云服务平台
         url: https://siliconflow.cn/
-    events: []
+    events:
+      - date: 2026-10-30
+        kind: ipo
+        title: 境外发行上市（港股 IPO）备案材料获中国证监会接收，冲刺「AI Token 工厂第一股」
+        status: confirmed
+        sources:
+          - title: 东方财富：硅基流动赴港IPO备案申请状态显示为“已接收” 拟冲刺“AI Token工厂第一股”
+            url: http://finance.eastmoney.com/a/202611013917666915.html
+            date: 2026-11-01
+          - title: 华尔街见闻：硅基流动港股发行上市备案材料获中国证监会接收
+            url: https://wallstreetcn.com/livenews/3191752
+            date: 2026-10-30
     country: 中国
+    valuation:
+      {
+        value: 10,
+        unit: 亿元,
+        asof: 2026-10-30,
+        status: reported,
+        note: 港股 IPO 备案 · 估值超
+      }
   - id: modal
     name: Modal
     en: Modal
@@ -192,7 +285,7 @@ companies:
       - 推理
     aliases:
       - Modal Labs
-    match: [Modal Labs, modal.com, Modal GPU, Modal平台, Modal 平台, Modal云, Modal 云]
+    match: [ Modal Labs, modal.com, Modal GPU, Modal平台, Modal 平台, Modal云, Modal 云 ]
     intro: 提供可通过代码调用和扩缩容的 CPU、GPU 计算平台，用于模型训练、推理、批处理和隔离代码执行。
     website: https://modal.com/
     coverage: profile
@@ -201,6 +294,7 @@ companies:
       - title: "Modal: The platform for production AI"
         url: https://modal.com/
     events: []
+    valuation: { value: 1.1, unit: 十亿美元, asof: 2025-10, status: confirmed, note: B 轮估值 }
   - id: deepseek
     name: 深度求索
     en: DeepSeek
@@ -222,7 +316,42 @@ companies:
       - title: "DeepSeek | Introducing DeepSeek-V4.1-Flash: smarter, faster, more
           efficient."
         url: https://www.deepseek.com/en/news/deepseek-v4-1-flash/
-    events: []
+    events:
+      - date: 2026-10-31
+        kind: model
+        title: 开源推理框架 DeepInfer 与全新智能体底座架构 Super-agent，并推出自主编程智能体原型与创作者模式
+        status: confirmed
+        sources:
+          - title: 量子位：刚刚，DeepSeek重磅开源：Agent底座架构！
+            url: https://www.qbitai.com/2026/10/506904.html
+            date: 2026-10-31
+          - title: The Information：DeepSeek Unveils Autonomous Coding Agent Prototype
+            url: https://www.theinformation.com/briefings/deepseek-unveils-autonomous-coding-agent-prototype
+            date: 2026-11-02
+          - title: 雷峰网：DeepSeek 又一开源重器！深挖 DeepInfer 究竟藏着多少技术狠活？
+            url: https://www.leiphone.com/category/ai/HecXToP0EHbPjPd0.html
+            date: 2026-10-30
+      - date: 2026-10-23
+        kind: funding
+        title: 完成近 1,000 亿元（约 160 亿美元）第二轮融资，腾讯、宁德时代、长鑫存储、vivo、美团等近 30 家机构参投，国资占比约 27%
+        amount:
+          value: 1000
+          unit: 亿元
+        investors:
+          - 腾讯
+          - 宁德时代
+          - 长鑫存储
+          - vivo
+          - 美团
+        status: reported
+        sources:
+          - title: 21世纪经济报道：确认！多家A股公司，参与DeepSeek新一轮千亿级融资
+            url: https://m.21jingji.com/article/20261023/herald/886c1c153d83461a59c3cac2f3f599d6.html
+            date: 2026-10-23
+          - title: "The Information：Behind DeepSeek’s $16 Billion Funding: Chinese Tech
+              Titans and State Players"
+            url: https://www.theinformation.com/articles/behind-deepseeks-16-billion-funding-chinese-tech-titans-state-players
+            date: 2026-10-30
     country: 中国
   - id: zhipu
     name: 智谱
@@ -250,6 +379,14 @@ companies:
         url: https://www.zhipuai.cn/
     events: []
     country: 中国
+    valuation:
+      {
+        value: 2078.1,
+        unit: 亿港元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 港股 02513.HK · 实时市值
+      }
   - id: moonshot
     name: 月之暗面
     en: Moonshot AI
@@ -271,8 +408,24 @@ companies:
     sources:
       - title: Moonshot AI
         url: https://www.moonshot.cn/
-    events: []
+    events:
+      - date: 2026-10-24
+        kind: model
+        title: 发布新一代开源旗舰模型 Kimi K3.1 Pro 与 K3.1 Pro Highspeed，并于 11 月 5 日开放模型权重及上线 Kimi
+          Hosted Agents 托管智能体服务
+        status: confirmed
+        sources:
+          - title: 21世纪经济报道：全球参数规模最大的开源模型再突破！月之暗面发布Kimi K3.1 Pro
+            url: https://m.21jingji.com/article/20261024/herald/4c9009568577be5603a14dfea81e0bd0.html
+            date: 2026-10-24
+          - title: The Information：Moonshot AI Launches New Kimi K3.1 Pro Model
+            url: https://www.theinformation.com/briefings/moonshot-ai-launches-new-kimi-k3-1-pro-model
+            date: 2026-10-24
+          - title: 华尔街见闻：月之暗面发布托管智能体服务，沙箱运行与插件调用单独计费
+            url: https://wallstreetcn.com/articles/3785283
+            date: 2026-11-05
     country: 中国
+    valuation: { value: 3.3, unit: 十亿美元, asof: 2025-08, status: reported, note: B 轮估值约 }
   - id: minimax
     name: MiniMax
     en: MiniMax
@@ -286,7 +439,20 @@ companies:
     aliases:
       - 稀宇科技
       - MiniMax AI
-    match: [稀宇科技, MiniMax, MiniMax AI, MiniMax Code, MiniMax M3, MiniMax M3.1, MiniMax H3, MiniMax模型, MiniMax 模型, MiniMax公司, MiniMax 公司]
+    match:
+      [
+        稀宇科技,
+        MiniMax,
+        MiniMax AI,
+        MiniMax Code,
+        MiniMax M3,
+        MiniMax M3.1,
+        MiniMax H3,
+        MiniMax模型,
+        MiniMax 模型,
+        MiniMax公司,
+        MiniMax 公司
+      ]
     intro: 研发覆盖文本、语音、图像、视频和音乐的多模态模型，并提供 AI 应用和开放 API 平台。
     website: https://www.minimax.io/about
     coverage: profile
@@ -296,6 +462,14 @@ companies:
         url: https://www.minimax.io/about
     events: []
     country: 中国
+    valuation:
+      {
+        value: 549.2,
+        unit: 亿港元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 港股 00100.HK · 实时市值
+      }
   - id: baichuan
     name: 百川智能
     en: Baichuan AI
@@ -320,6 +494,7 @@ companies:
         url: https://platform.baichuan-ai.com/homePage
     events: []
     country: 中国
+    valuation: { value: 200, unit: 亿元, asof: 2025-07, status: confirmed, note: A 轮估值约 }
   - id: stepfun
     name: 阶跃星辰
     en: StepFun
@@ -333,7 +508,7 @@ companies:
     aliases:
       - StepFun AI
       - 阶跃
-    match: [阶跃星辰, StepFun, StepFun AI]
+    match: [ 阶跃星辰, StepFun, StepFun AI ]
     intro: 研发 Step 系列基础模型与语音模型，通过开放平台提供语言、语音和图像等 API。
     website: https://www.stepfun.com/
     coverage: profile
@@ -345,6 +520,7 @@ companies:
         url: https://platform.stepfun.com/
     events: []
     country: 中国
+    valuation: { value: 2, unit: 十亿美元, asof: 2025-12, status: reported, note: B 轮估值超 }
   - id: openai
     name: OpenAI
     en: OpenAI
@@ -365,7 +541,58 @@ companies:
     sources:
       - title: API Platform | OpenAI
         url: https://openai.com/api
-    events: []
+    events:
+      - date: 2026-11-06
+        kind: model
+        title: 发布专门面向防御性网络安全的模型 GPT-6 Cyber（网络安全能力评级达“关键”级）及图像生成模型 Images 2.6
+        status: confirmed
+        sources:
+          - title: TechCrunch：OpenAI released a new cybersecurity model. Is that enough?
+            url: https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/
+            date: 2026-11-06
+          - title: 华尔街见闻：OpenAI发布GPT-6 Cyber：网络安全AI能力跃升，已协助发现数百个高危漏洞
+            url: https://wallstreetcn.com/articles/3785295
+            date: 2026-11-06
+      - date: 2026-11-05
+        kind: funding
+        title: 收购代码托管与开发者工具初创公司 Pierre Computer，强化 Codex 工程协作能力
+        status: confirmed
+        sources:
+          - title: 机器之心：刚刚，OpenAI收购Pierre，Codex要对Git下手？
+            url: https://www.jiqizhixin.com/articles/2026-11-05
+            date: 2026-11-05
+          - title: 36氪：OpenAI将收购开发工具初创公司Pierre Computer
+            url: https://36kr.com/newsflashes/4055381539345536
+            date: 2026-11-04
+      - date: 2026-10-31
+        kind: funding
+        title: 据英国金融时报，受二级市场科技股回调影响，OpenAI 将新一轮融资目标由 300 亿美元下调至约 200 亿美元，投前估值目标约 1.25
+          万亿美元
+        amount:
+          value: 20
+          unit: 十亿美元
+        status: reported
+        sources:
+          - title: Financial Times：OpenAI slashes funding target by $10bn as tech anxieties
+              mount
+            url: https://www.ft.com/content/7a3ad950-1b3b-4d9e-8c15-65a61ae6180f
+            date: 2026-10-31
+          - title: TechCrunch：OpenAI reportedly lowers funding target for new round
+            url: https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/
+            date: 2026-11-01
+      - date: 2026-10-27
+        kind: model
+        title: 推出主力模型 GPT-6.1 Terra，电脑操作（Computer Use）速度提升逾 3 倍，API 定价下调 50%
+        status: confirmed
+        sources:
+          - title: The Information：OpenAI Unveils Cheaper Terra Model Amid Anthropic Pricing
+              Battle
+            url: https://www.theinformation.com/briefings/openai-unveils-cheaper-terra-model-amid-anthropic-pricing-battle
+            date: 2026-10-27
+          - title: 华尔街见闻：OpenAI推出GPT-6.1 Terra，电脑操作速度提升逾3倍 API价格降低50%
+            url: https://wallstreetcn.com/livenews/3186427
+            date: 2026-10-27
+    valuation: { value: 500, unit: 十亿美元, asof: 2026-10, status: confirmed, note: 最新轮投后约 }
   - id: anthropic
     name: Anthropic
     en: Anthropic
@@ -379,7 +606,18 @@ companies:
     aliases:
       - Anthropic PBC
       - Claude
-    match: [Anthropic, Anthropic PBC, Claude AI, Claude Code, Claude Sonnet, Claude Opus, Claude Haiku, Claude模型, Claude 模型]
+    match:
+      [
+        Anthropic,
+        Anthropic PBC,
+        Claude AI,
+        Claude Code,
+        Claude Sonnet,
+        Claude Opus,
+        Claude Haiku,
+        Claude模型,
+        Claude 模型
+      ]
     intro: 研发 Claude 系列大语言模型，提供支持文本、图像理解和工具调用的模型 API。
     website: https://docs.anthropic.com/en/docs/about-claude/models/overview
     coverage: profile
@@ -387,7 +625,42 @@ companies:
     sources:
       - title: Models overview - Claude Platform Docs
         url: https://docs.anthropic.com/en/docs/about-claude/models/overview
-    events: []
+    events:
+      - date: 2026-10-28
+        kind: funding
+        title: 收购罕见病 AI 药物研发初创公司 Mithril Medicine，并联合百时美施贵宝等六家制药与研究机构将 Claude
+          拓展至临床试验与药物发现
+        status: confirmed
+        sources:
+          - title: 机器之心：Anthropic药物研发新进展：合作六家制药机构，收购「一人药企」
+            url: https://www.jiqizhixin.com/articles/2026-10-28-8
+            date: 2026-10-28
+          - title: 华尔街见闻：Anthropic全面杀入AI制药！收购“一人药企”，联手6大巨头
+            url: https://wallstreetcn.com/articles/3784640
+            date: 2026-10-28
+      - date: 2026-10-26
+        kind: ipo
+        title: 向美国 SEC 公开提交纳斯达克 IPO 招股书（S-1），股票代码 ANT；2026 上半年营收 163 亿美元、Q3 营收近 170
+          亿美元，披露未来算力采购承诺达 4,170 亿美元
+        status: confirmed
+        sources:
+          - title: Financial Times：Anthropic begins countdown to IPO with prospectus filing
+            url: https://www.ft.com/content/f6ecfecd-d797-4d2c-b427-d333297949cb
+            date: 2026-10-26
+          - title: TechCrunch：Anthropic officially files for its public debut
+            url: https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/
+            date: 2026-10-26
+          - title: 华尔街见闻：Anthropic正式提交IPO申请！股票代码“ANT”，上半年净亏807亿美元
+            url: https://wallstreetcn.com/articles/3784495
+            date: 2026-10-26
+    valuation:
+      {
+        value: 350,
+        unit: 十亿美元,
+        asof: 2026-10,
+        status: reported,
+        note: Pre-IPO 估值约
+      }
   - id: mistral
     name: Mistral AI
     en: Mistral AI
@@ -408,6 +681,7 @@ companies:
       - title: Models - from cloud to edge | Mistral
         url: https://mistral.ai/models?sa=X
     events: []
+    valuation: { value: 6.2, unit: 十亿美元, asof: 2025-06, status: confirmed, note: B 轮估值 }
   - id: cohere
     name: Cohere
     en: Cohere
@@ -420,7 +694,17 @@ companies:
       - 向量模型
     aliases:
       - Cohere Inc
-    match: [Cohere Inc, Cohere Command, Cohere Embed, Cohere Rerank, Cohere公司, Cohere 公司, Cohere模型, Cohere 模型]
+    match:
+      [
+        Cohere Inc,
+        Cohere Command,
+        Cohere Embed,
+        Cohere Rerank,
+        Cohere公司,
+        Cohere 公司,
+        Cohere模型,
+        Cohere 模型
+      ]
     intro: 面向企业提供 Command 生成模型、Embed 嵌入模型和 Rerank 重排序模型及部署平台。
     website: https://docs.cohere.com/docs/the-cohere-platform.md
     coverage: profile
@@ -429,6 +713,7 @@ companies:
       - title: An Overview of The Cohere Platform
         url: https://docs.cohere.com/docs/the-cohere-platform.md
     events: []
+    valuation: { value: 5.5, unit: 十亿美元, asof: 2025-07, status: confirmed, note: D 轮估值 }
   - id: huggingface
     name: Hugging Face
     en: Hugging Face
@@ -449,6 +734,7 @@ companies:
       - title: Enterprise Hub Cookbook
         url: https://huggingface.co/learn/cookbook/en/enterprise_cookbook_overview
     events: []
+    valuation: { value: 4.5, unit: 十亿美元, asof: 2024-08, status: confirmed, note: D 轮估值 }
   - id: robstride
     name: 灵足时代
     en: RobStride
@@ -496,6 +782,14 @@ companies:
     memberships:
       - track: industrial-automation
         segment: manufacturing
+    valuation:
+      {
+        value: 158,
+        unit: 亿元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 深交所 002979.SZ · 实时市值
+      }
   - id: leaderdrive
     name: 绿的谐波
     en: Leaderdrive
@@ -518,6 +812,14 @@ companies:
         url: https://www.leaderdrive.com/
     events: []
     country: 中国
+    valuation:
+      {
+        value: 522.6,
+        unit: 亿元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 科创板 688017.SH · 实时市值
+      }
   - id: orbbec
     name: 奥比中光
     en: Orbbec
@@ -539,6 +841,14 @@ companies:
         url: https://www.orbbec.com/Products
     events: []
     country: 中国
+    valuation:
+      {
+        value: 450.2,
+        unit: 亿元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 科创板 688322.SH · 实时市值
+      }
   - id: hesai
     name: 禾赛科技
     en: Hesai
@@ -567,6 +877,14 @@ companies:
     memberships:
       - track: autonomy
         segment: sensors
+    valuation:
+      {
+        value: 172.5,
+        unit: 亿港元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 港股 02525.HK · 实时市值
+      }
   - id: robosense
     name: 速腾聚创
     en: RoboSense
@@ -591,6 +909,14 @@ companies:
     memberships:
       - track: autonomy
         segment: sensors
+    valuation:
+      {
+        value: 70.6,
+        unit: 亿港元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 港股 02498.HK · 实时市值
+      }
   - id: sri
     name: 宇立仪器
     en: Sunrise Instruments
@@ -704,6 +1030,14 @@ companies:
         url: https://www.mech-mind.com/products/mech-eye-industrial-3d-camera.html
     events: []
     country: 中国
+    valuation:
+      {
+        value: 104.7,
+        unit: 亿港元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 港股 09615.HK · 实时市值
+      }
   - id: inovance
     name: 汇川技术
     en: Inovance
@@ -731,6 +1065,14 @@ companies:
     memberships:
       - track: robot-parts
         segment: actuators
+    valuation:
+      {
+        value: 1536.1,
+        unit: 亿元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 创业板 300124.SZ · 实时市值
+      }
   - id: aubo
     name: 遨博智能
     en: AUBO
@@ -753,6 +1095,7 @@ companies:
         url: https://www.aubo-cobot.com/public/index
     events: []
     country: 中国
+    valuation: { value: 50, unit: 亿元, asof: 2025-12, status: reported, note: D 轮估值约 }
   - id: jaka
     name: 节卡机器人
     en: JAKA Robotics
@@ -776,6 +1119,14 @@ companies:
         url: https://www.jaka.com/en/index
     events: []
     country: 中国
+    valuation:
+      {
+        value: 50,
+        unit: 亿元,
+        asof: 2025-12,
+        status: confirmed,
+        note: 科创板 IPO 推进 · 估值约
+      }
   - id: dobot
     name: 越疆科技
     en: DOBOT
@@ -798,6 +1149,14 @@ companies:
         url: https://www.dobot-robots.com/products
     events: []
     country: 中国
+    valuation:
+      {
+        value: 73.5,
+        unit: 亿港元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 港股 02432.HK · 实时市值
+      }
   - id: flexiv
     name: 非夕科技
     en: Flexiv
@@ -820,6 +1179,7 @@ companies:
         url: http://www.flexiv.com/products
     events: []
     country: 中国
+    valuation: { value: 1, unit: 十亿美元, asof: 2025-12, status: confirmed, note: B+ 轮估值超 }
   - id: universal-robots
     name: 优傲机器人
     en: Universal Robots
@@ -854,7 +1214,7 @@ companies:
     aliases:
       - ABB Robotics
       - ABB集团
-    match: [ABB Robotics, ABB机器人, ABB 机器人]
+    match: [ ABB Robotics, ABB机器人, ABB 机器人 ]
     intro: 提供工业机器人、协作机器人、自主移动机器人及控制器、应用方案与服务。
     website: https://new.abb.com/robotics
     coverage: profile
@@ -863,6 +1223,14 @@ companies:
       - title: ABB Robotics | ABB
         url: https://new.abb.com/robotics
     events: []
+    valuation:
+      {
+        value: 105,
+        unit: 十亿美元,
+        asof: 2026-10,
+        status: confirmed,
+        note: "SIX: ABBN 集团市值约"
+      }
   - id: fanuc
     name: 发那科
     en: FANUC
@@ -884,6 +1252,14 @@ companies:
       - title: PRODUCT - FANUC GLOBAL
         url: https://www.fanuc.com/product/index.html
     events: []
+    valuation:
+      {
+        value: 28,
+        unit: 十亿美元,
+        asof: 2026-10,
+        status: confirmed,
+        note: 东证 6954.T · 市值约
+      }
   - id: dji
     name: 大疆创新
     en: DJI
@@ -905,8 +1281,17 @@ companies:
       - title: Buy DJI Camera Drone for Professional Aerial Photography Now - DJI United
           States
         url: https://www.dji.com/camera-drones
-    events: []
+    events:
+      - date: 2026-11-06
+        kind: product
+        title: 发布轻型行业旗舰无人机 Matrice 5T
+        status: confirmed
+        sources:
+          - title: 同花顺快讯：大疆发布轻型旗舰无人机Matrice 5T
+            url: https://news.10jqka.com.cn/20261106/c681526801.shtml
+            date: 2026-11-06
     country: 中国
+    valuation: { value: 1000, unit: 亿元, asof: 2026-06, status: reported, note: 独角兽估值超 }
   - id: insta360
     name: 影石创新
     en: Insta360
@@ -931,6 +1316,14 @@ companies:
         url: https://www.insta360.com/us/
     events: []
     country: 中国
+    valuation:
+      {
+        value: 427.7,
+        unit: 亿元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: 科创板 688775.SH · 实时市值
+      }
   - id: bambu-lab
     name: 拓竹科技
     en: Bambu Lab
@@ -951,8 +1344,20 @@ companies:
     sources:
       - title: Bambu Lab A1 | Desktop 3D Printer | A1 series | Bambu Lab US
         url: https://bambulab.com/en-us/a1
-    events: []
+    events:
+      - date: 2026-11-04
+        kind: product
+        title: 发布新一代多色多材料旗舰 3D 打印机 H3C，配备 9 个独立打印头、最快 6 秒切换
+        status: confirmed
+        sources:
+          - title: 36氪：最前线 | 拓竹发布新一代3D打印机，9个独立打印头、最快6秒切换
+            url: https://36kr.com/p/4054776330900353
+            date: 2026-11-04
+          - title: 雷峰网：拓竹年度机皇 H3C 发布：9 头闪切、6 秒换头，开启多色多材料新时代
+            url: https://www.leiphone.com/category/industrynews/xBbVCZ6pFQNa7XzR.html
+            date: 2026-11-04
     country: 中国
+    valuation: { value: 200, unit: 亿元, asof: 2026-06, status: reported, note: 估值超 }
   - id: rokid
     name: 乐奇 Rokid
     en: Rokid
@@ -974,8 +1379,17 @@ companies:
     sources:
       - title: Rokid Official Website - About Us | Pioneering the Future of AI Glasses
         url: https://www.rokid.com/en-US/about
-    events: []
+    events:
+      - date: 2026-10-27
+        kind: product
+        title: 发布全彩 AI 眼镜新品，起售价 4,999 元
+        status: confirmed
+        sources:
+          - title: 华尔街见闻：乐奇发布全彩AI眼镜，4999元起售
+            url: https://wallstreetcn.com/livenews/3187096
+            date: 2026-10-27
     country: 中国
+    valuation: { value: 70, unit: 亿元, asof: 2026-06, status: confirmed, note: C+ 轮估值超 }
   - id: xreal
     name: XREAL
     en: XREAL
@@ -997,8 +1411,21 @@ companies:
     sources:
       - title: XREAL About Us | Making Augmented Reality Accessible to Everyone
         url: https://www.xreal.com/fr/about
-    events: []
+    events:
+      - date: 2026-10-27
+        kind: product
+        title: 发布消费级 AR 眼镜 XREAL 1 Pro+（端侧 2D 转 3D 升级至 60fps），并联合谷歌发布搭载 Android XR 的有线
+          XR 眼镜 XREAL AURA
+        status: confirmed
+        sources:
+          - title: 机器之心：消费级AR眼镜迎来“帧”实力跃升： XREAL 1 Pro+正式发布
+            url: https://www.jiqizhixin.com/articles/2026-10-27-13
+            date: 2026-10-27
+          - title: 华尔街见闻：谷歌与XREAL发布XREAL AURA有线XR眼镜，由安卓XR支持
+            url: https://wallstreetcn.com/livenews/3189312
+            date: 2026-10-29
     country: 中国
+    valuation: { value: 1, unit: 十亿美元, asof: 2025-12, status: confirmed, note: 战略轮估值超 }
   - id: oura
     name: Oura
     en: Oura
@@ -1020,6 +1447,7 @@ companies:
       - title: Discover Oura's health, fitness, and sleep rings | Oura
         url: https://ouraring.com/product/rings
     events: []
+    valuation: { value: 5.2, unit: 十亿美元, asof: 2024-11, status: confirmed, note: D 轮估值 }
   - id: whoop
     name: WHOOP
     en: WHOOP
@@ -1032,7 +1460,17 @@ companies:
       - 睡眠
     aliases:
       - WHOOP Inc
-    match: [WHOOP Inc, WHOOP wearable, WHOOP手环, WHOOP 手环, WHOOP可穿戴, WHOOP 可穿戴, WHOOP健康, WHOOP 健康]
+    match:
+      [
+        WHOOP Inc,
+        WHOOP wearable,
+        WHOOP手环,
+        WHOOP 手环,
+        WHOOP可穿戴,
+        WHOOP 可穿戴,
+        WHOOP健康,
+        WHOOP 健康
+      ]
     intro: 提供可穿戴设备及应用，持续记录睡眠、运动负荷、压力和心脏健康相关指标。
     website: https://www.whoop.com/
     coverage: profile
@@ -1041,6 +1479,7 @@ companies:
       - title: WHOOP | Unlock Human Performance & Healthspan
         url: https://www.whoop.com/
     events: []
+    valuation: { value: 3.6, unit: 十亿美元, asof: 2024-08, status: confirmed, note: F 轮估值 }
   - id: intuitive-surgical
     name: 直觉外科
     en: Intuitive Surgical
@@ -1055,7 +1494,7 @@ companies:
       - Intuitive
       - 达芬奇手术机器人
       - 直觉外科公司
-    match: [直觉外科, Intuitive Surgical, 达芬奇手术机器人, 直觉外科公司]
+    match: [ 直觉外科, Intuitive Surgical, 达芬奇手术机器人, 直觉外科公司 ]
     intro: 研发 da Vinci 手术机器人系统，将机器人、视觉与软件结合，用于辅助微创外科手术。
     website: https://www.intuitive.com/en-us/products-and-services/da-vinci
     coverage: profile
@@ -1064,6 +1503,14 @@ companies:
       - title: Da Vinci Robotic Surgical Systems | Intuitive
         url: https://www.intuitive.com/en-us/products-and-services/da-vinci
     events: []
+    valuation:
+      {
+        value: 161.9,
+        unit: 十亿美元,
+        asof: 2026-11-06,
+        status: confirmed,
+        note: NASDAQ ISRG.US · 实时市值
+      }
   - id: google-deepmind
     name: Google DeepMind
     en: Google DeepMind
@@ -1087,7 +1534,16 @@ companies:
         url: https://deepmind.google/about/
       - title: Models — Google DeepMind
         url: https://deepmind.google/models/?utm_source=about.google&utm_medium=referral&utm_campaign=about&utm_content=
-    events: []
+    events:
+      - date: 2026-10-29
+        kind: model
+        title: 发布新一代模型 Gemini 4 Carbon，距前代 Argon 发布仅两周，多项基准全面提升
+        status: confirmed
+        sources:
+          - title: The Decoder：Google Deepmind releases Gemini 4 Carbon just two weeks after
+              Argon with gains across the board
+            url: https://the-decoder.com/google-deepmind-releases-gemini-4-carbon-just-two-weeks-after-argon-with-gains-across-the-board/
+            date: 2026-10-29
     memberships:
       - track: world-model
         segment: general

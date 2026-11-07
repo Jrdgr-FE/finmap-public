@@ -579,7 +579,343 @@
   margin-top: 4px;
 }
 
+/* ── 双栏产业链工作台与左侧常驻快速跳转目录 ───────────────── */
+.map-tab-badge {
+  display: inline-flex;
+  align-items: center;
+  height: 17px;
+  padding: 0 5px;
+  margin-left: 4px;
+  border-radius: 4px;
+  background: var(--accent-soft);
+  color: var(--accent-text);
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.map-workbench {
+  display: grid;
+  grid-template-columns: 226px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+  margin-top: var(--sp-4);
+}
+.map-workbench[hidden] {
+  display: none !important;
+}
+.map-workbench .map-chain-stack {
+  margin-top: 0;
+  min-width: 0;
+}
+
+.map-jump-rail {
+  position: sticky;
+  top: 62px;
+  max-height: calc(100dvh - 78px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+.map-jump-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  overflow: hidden;
+}
+.map-jump-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background: var(--paper-2);
+  border-bottom: 1px solid var(--line);
+}
+.map-jump-head strong {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.map-jump-action {
+  border: 0;
+  background: transparent;
+  color: var(--ink-3);
+  font-size: 11.5px;
+  padding: 2px 4px;
+  cursor: pointer;
+}
+.map-jump-action:hover {
+  color: var(--accent-text);
+  text-decoration: underline;
+}
+
+.map-jump-list {
+  list-style: none;
+  margin: 0;
+  padding: 4px 0;
+}
+.map-jump-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  color: var(--ink-2);
+  font-size: 12.5px;
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  transition: background 0.1s, color 0.1s, border-color 0.1s;
+}
+.map-jump-link:hover {
+  background: var(--paper-2);
+  color: var(--ink);
+}
+.map-jump-link.is-active {
+  background: var(--accent-soft);
+  color: var(--accent-text);
+  border-left-color: var(--accent);
+  font-weight: 600;
+}
+.map-jump-idx {
+  font-size: 11px;
+  color: var(--ink-4);
+  flex-shrink: 0;
+}
+.map-jump-link.is-active .map-jump-idx {
+  color: var(--accent-text);
+}
+.map-jump-name {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.map-jump-count {
+  font-size: 11px;
+  color: var(--ink-3);
+  background: var(--paper-2);
+  padding: 0 5px;
+  border-radius: 4px;
+  line-height: 16px;
+}
+.map-jump-link.is-active .map-jump-count {
+  background: var(--card);
+  color: var(--accent-text);
+}
+
+.map-jump-foot {
+  padding: 8px;
+  border-top: 1px solid var(--line);
+  background: var(--paper-2);
+}
+.map-jump-dex-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--line-2);
+  border-radius: var(--r-sm);
+  background: var(--card);
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.12s, background 0.12s;
+}
+.map-jump-dex-btn:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+.map-jump-dex-btn strong {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent-text);
+}
+.map-jump-dex-btn small {
+  display: block;
+  font-size: 11px;
+  color: var(--ink-3);
+  margin-top: 1px;
+}
+.map-jump-dex-btn > span {
+  color: var(--accent-text);
+  font-weight: 600;
+}
+
+/* ── 赛道卡片头部增强与折叠控制 ───────────────────────────── */
+.map-track {
+  scroll-margin-top: 64px;
+  transition: box-shadow 0.25s, border-color 0.25s;
+}
+.map-track.is-flash-target {
+  border-color: var(--accent) !important;
+  box-shadow: var(--ring) !important;
+}
+.map-track.is-collapsed .map-chain-grid {
+  display: none;
+}
+.map-track-title-group {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  min-width: 0;
+  flex-wrap: wrap;
+}
+.map-track-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 4px;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  color: var(--ink-3);
+  font-size: 11px;
+  font-weight: 600;
+}
+.map-inline-dex-btn,
+.map-track-focus-btn,
+.map-track-collapse-btn {
+  border: 0;
+  background: transparent;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+.map-inline-dex-btn {
+  color: var(--accent-text);
+  background: var(--accent-soft);
+  font-weight: 550;
+}
+.map-inline-dex-btn:hover {
+  text-decoration: underline;
+}
+.map-track-focus-btn {
+  color: var(--ink-2);
+  border: 1px solid var(--line);
+  background: var(--paper-2);
+}
+.map-track-focus-btn:hover,
+.map-track-focus-btn.is-active {
+  color: var(--accent-text);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+.map-track-collapse-btn {
+  color: var(--ink-3);
+  border: 1px solid var(--line);
+  background: var(--card);
+}
+.map-track-collapse-btn:hover {
+  color: var(--ink);
+  border-color: var(--line-2);
+}
+
+.map-cell-more {
+  display: block;
+  width: 100%;
+  padding: 7px 12px;
+  border: 0;
+  border-top: 1px dashed var(--line);
+  background: var(--paper-2);
+  color: var(--accent-text);
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.12s;
+}
+.map-cell-more:hover {
+  background: var(--accent-soft);
+}
+
+/* ── 赛道内嵌型号参数对比折叠块 ───────────────────────────── */
+.map-track.is-collapsed .map-inline-specs {
+  display: none;
+}
+.map-inline-specs {
+  border-top: 1px solid var(--line);
+  background: var(--paper-2);
+}
+.map-inline-specs-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 16px;
+  cursor: pointer;
+  list-style: none;
+  font-size: 13px;
+  color: var(--ink);
+  transition: background 0.12s;
+}
+.map-inline-specs-summary::-webkit-details-marker {
+  display: none;
+}
+.map-inline-specs-summary:hover {
+  background: var(--accent-soft);
+}
+.map-inline-specs-summary > div {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.map-inline-specs-summary strong {
+  color: var(--accent-text);
+  font-weight: 600;
+}
+.map-inline-specs-cta {
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: 550;
+  color: var(--accent-text);
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--card);
+  border: 1px solid var(--line);
+}
+.map-inline-specs[open] .map-inline-specs-cta {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+}
+.map-inline-specs-body {
+  border-top: 1px solid var(--line);
+  background: var(--card);
+}
+.map-inline-specs-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+
 /* ── 响应式 ───────────────────────────────────────────────── */
+@media (max-width: 1120px) {
+  .map-workbench {
+    grid-template-columns: 1fr;
+  }
+  .map-jump-rail {
+    position: static;
+    max-height: none;
+  }
+  .map-jump-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 8px;
+  }
+  .map-jump-link {
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 4px 10px;
+  }
+}
+
 @media (max-width: 1040px) {
   .map-chain-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));

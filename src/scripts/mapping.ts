@@ -60,6 +60,11 @@ type CompanyRow = {
   founders?: string[];
   intro: string;
   website: string;
+  capital?: {
+    label: string;
+    cardText: string;
+    shortText: string;
+  };
   valuation?: {
     text: string;
     asof: string;
@@ -86,6 +91,11 @@ if (root) {
     document.getElementById("map-data")?.textContent || "[]",
   );
   const byId = new Map(data.map((c) => [c.id, c]));
+  const filterPanel = document.getElementById("map-filter-panel");
+  const workbench = document.getElementById("map-workbench");
+  const tableEl = document.getElementById("map-table");
+  const dexEl = document.getElementById("map-dexterity");
+  const emptyEl = document.getElementById("map-empty");
   const form = document.getElementById("map-filters") as HTMLFormElement;
   const query = document.getElementById("map-query") as HTMLInputElement;
   const region = document.getElementById("map-region") as HTMLSelectElement;
@@ -100,6 +110,9 @@ if (root) {
   const trackLinks = [
     ...document.querySelectorAll<HTMLAnchorElement>("[data-track-link]"),
   ];
+  const jumpLinks = [
+    ...document.querySelectorAll<HTMLElement>("[data-jump-track]"),
+  ];
   const trackNames = new Map(
     trackLinks
       .filter((a) => a.dataset.trackLink)
@@ -111,10 +124,29 @@ if (root) {
   );
 
   let track = "";
-  let view = "chain";
+  let view: "chain" | "table" = "chain";
   let tag = "";
   let crossOnly = false;
   let filtered = data;
+  const expandedCells = new Set<string>();
+  const collapsedTracks = new Set<string>();
+  const handSpecsDetails = document.getElementById(
+    "robot-parts-hand-specs",
+  ) as HTMLDetailsElement | null;
+
+  function openHandSpecs() {
+    view = "chain";
+    if (track && track !== "robot-parts") {
+      track = "";
+      segment.value = "";
+    }
+    collapsedTracks.delete("robot-parts");
+    render();
+    if (handSpecsDetails) {
+      handSpecsDetails.open = true;
+      handSpecsDetails.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }
 
   function saveReturnState() {
     try {
@@ -135,9 +167,16 @@ if (root) {
     region.value = p.get("region") || "";
     segment.value = p.get("seg") || "";
     crossOnly = p.get("cross") === "1";
-    view = p.get("view") === "table" ? "table" : "chain";
+    const v = p.get("view");
+    view = v === "table" ? "table" : "chain";
     if (segment.value && !track) track = segment.value.split("/")[0];
     if (!trackLinks.some((a) => a.dataset.trackLink === track)) track = "";
+    if (
+      v === "dexterity" ||
+      location.hash === "#robot-parts-hand-specs"
+    ) {
+      if (handSpecsDetails) handSpecsDetails.open = true;
+    }
   }
 
   const haystacks = new Map(
@@ -221,8 +260,10 @@ if (root) {
 
   function render(updateUrl = true) {
     const text = query.value.trim().normalize("NFKC").toLowerCase();
+    const isOverview =
+      !track && !segment.value && !text && !region.value && !crossOnly;
 
-    // Calculate base match (without track filter) to update sidebar counts dynamically
+    // Calculate base match (without track filter) to update sidebar & jump-rail counts dynamically
     const baseFiltered = data.filter(
       (c) =>
         (!region.value || c.region === region.value) &&
@@ -234,9 +275,9 @@ if (root) {
     const totalEl = document.querySelector("[data-sidebar-total]");
     if (totalEl) totalEl.textContent = String(baseFiltered.length);
     document
-      .querySelectorAll<HTMLElement>("[data-sidebar-count]")
+      .querySelectorAll<HTMLElement>("[data-sidebar-count], [data-jump-count]")
       .forEach((b) => {
-        const tid = b.dataset.sidebarCount!;
+        const tid = b.dataset.sidebarCount || b.dataset.jumpCount!;
         const n = baseFiltered.filter((c) =>
           c.memberships.some((m) => m.track === tid),
         ).length;
@@ -254,9 +295,6 @@ if (root) {
 
     const ids = new Set(filtered.map((c) => c.id));
     document
-      .querySelectorAll<HTMLElement>("[data-company-id]")
-      .forEach((el) => (el.hidden = !ids.has(el.dataset.companyId!)));
-    document
       .querySelectorAll<HTMLElement>("[data-company-row]")
       .forEach((el) => (el.hidden = !ids.has(el.dataset.companyRow!)));
 
@@ -273,6 +311,23 @@ if (root) {
             count === 0);
         const label = section.querySelector("[data-track-count]");
         if (label) label.textContent = `${count} 家`;
+
+        const isCollapsed = !track && collapsedTracks.has(id);
+        section.classList.toggle("is-collapsed", isCollapsed);
+        const collapseBtn = section.querySelector<HTMLButtonElement>(
+          "[data-collapse-track]",
+        );
+        if (collapseBtn) {
+          collapseBtn.setAttribute("aria-expanded", String(!isCollapsed));
+          collapseBtn.textContent = isCollapsed ? "展开" : "收起";
+        }
+        const focusBtn = section.querySelector<HTMLButtonElement>(
+          "[data-focus-track]",
+        );
+        if (focusBtn) {
+          focusBtn.textContent = track === id ? "查看全部赛道" : "只看本赛道";
+          focusBtn.classList.toggle("is-active", track === id);
+        }
       });
 
     document
@@ -284,9 +339,40 @@ if (root) {
           "is-single-seg",
           !!segment.value && key === segment.value,
         );
-        const count = cell.querySelectorAll(
-          "[data-company-id]:not([hidden])",
-        ).length;
+
+        const nodes = [
+          ...cell.querySelectorAll<HTMLElement>("[data-company-id]"),
+        ];
+        const matchingNodes = nodes.filter((el) =>
+          ids.has(el.dataset.companyId!),
+        );
+        const count = matchingNodes.length;
+        const expanded = !isOverview || expandedCells.has(key);
+
+        nodes.forEach((node) => {
+          if (!ids.has(node.dataset.companyId!)) {
+            node.hidden = true;
+            return;
+          }
+          const isExtra = node.dataset.foldExtra === "true";
+          node.hidden = isExtra && !expanded;
+        });
+
+        const moreBtn = cell.querySelector<HTMLButtonElement>(
+          "[data-expand-cell]",
+        );
+        if (moreBtn) {
+          if (!isOverview || count <= 10) {
+            moreBtn.hidden = true;
+          } else {
+            moreBtn.hidden = false;
+            const extra = count - 10;
+            moreBtn.textContent = expanded
+              ? "收起长列表 ▴"
+              : `展开全部 ${count} 家（+${extra}）▾`;
+          }
+        }
+
         const label = cell.querySelector("[data-cell-count]");
         if (label) label.textContent = String(count);
         cell.classList.toggle(
@@ -309,6 +395,14 @@ if (root) {
       else a.removeAttribute("aria-current");
     });
 
+    if (track) {
+      jumpLinks.forEach((a) => {
+        if (a.tagName === "A") {
+          a.classList.toggle("is-active", a.dataset.jumpTrack === track);
+        }
+      });
+    }
+
     regionBtns.forEach((btn) => {
       const on = (btn.dataset.regionBtn || "") === region.value;
       btn.classList.toggle("is-active", on);
@@ -327,11 +421,14 @@ if (root) {
         b.setAttribute("aria-pressed", String(b.dataset.view === view)),
       );
 
-    document.getElementById("map-chain")!.hidden =
-      view !== "chain" || filtered.length === 0;
-    document.getElementById("map-table")!.hidden =
-      view !== "table" || filtered.length === 0;
-    document.getElementById("map-empty")!.hidden = filtered.length !== 0;
+    if (filterPanel) filterPanel.hidden = false;
+    if (workbench)
+      workbench.hidden = view !== "chain" || filtered.length === 0;
+    if (tableEl) tableEl.hidden = view !== "table" || filtered.length === 0;
+    if (dexEl) dexEl.hidden = true;
+    if (emptyEl)
+      emptyEl.hidden = filtered.length !== 0;
+
     document.getElementById("map-results")!.textContent =
       `${filtered.length} 家公司 / 共 ${data.length} 家`;
 
@@ -344,7 +441,7 @@ if (root) {
       if (region.value) p.set("region", region.value);
       if (segment.value) p.set("seg", segment.value);
       if (crossOnly) p.set("cross", "1");
-      if (view === "table") p.set("view", view);
+      if (view !== "chain") p.set("view", view);
       history.replaceState(
         null,
         "",
@@ -382,6 +479,7 @@ if (root) {
     track = "";
     tag = "";
     crossOnly = false;
+    collapsedTracks.clear();
     render();
   }
 
@@ -403,6 +501,134 @@ if (root) {
     }),
   );
 
+  // Quick-jump directory links: jump smoothly to the target track card
+  jumpLinks.forEach((el) => {
+    el.addEventListener("click", (e) => {
+      if (
+        e instanceof MouseEvent &&
+        (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey)
+      )
+        return;
+      e.preventDefault();
+      const targetTrack = el.dataset.jumpTrack || "";
+      if (!targetTrack) return;
+      view = "chain";
+      if (track && track !== targetTrack) {
+        track = "";
+        segment.value = "";
+      }
+      collapsedTracks.delete(targetTrack);
+      render();
+      const sec = document.getElementById(`track-${targetTrack}`);
+      if (sec) {
+        sec.scrollIntoView({ behavior: "smooth", block: "start" });
+        sec.classList.add("is-flash-target");
+        setTimeout(() => sec.classList.remove("is-flash-target"), 1200);
+      }
+      document
+        .querySelectorAll<HTMLElement>("a[data-jump-track]")
+        .forEach((a) =>
+          a.classList.toggle("is-active", a.dataset.jumpTrack === targetTrack),
+        );
+    });
+  });
+
+  // Scroll-spy for Left Sticky Quick-Jump Directory
+  const trackSections = [
+    ...document.querySelectorAll<HTMLElement>("[data-track-section]"),
+  ];
+  if ("IntersectionObserver" in window && trackSections.length) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (view !== "chain") return;
+        const visible = entries
+          .filter((en) => en.isIntersecting)
+          .sort(
+            (a, b) =>
+              a.boundingClientRect.top - b.boundingClientRect.top,
+          )[0];
+        if (visible) {
+          const tid = (visible.target as HTMLElement).dataset.trackSection;
+          if (tid) {
+            document
+              .querySelectorAll<HTMLElement>("a[data-jump-track]")
+              .forEach((a) =>
+                a.classList.toggle("is-active", a.dataset.jumpTrack === tid),
+              );
+          }
+        }
+      },
+      { rootMargin: "-70px 0px -65% 0px", threshold: 0.05 },
+    );
+    trackSections.forEach((sec) => observer.observe(sec));
+  }
+
+  // Collapse/Expand single track or all tracks
+  document
+    .querySelectorAll<HTMLButtonElement>("[data-collapse-track]")
+    .forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const tid = btn.dataset.collapseTrack!;
+        if (collapsedTracks.has(tid)) collapsedTracks.delete(tid);
+        else collapsedTracks.add(tid);
+        render(false);
+      });
+    });
+
+  const toggleAllBtn = document.getElementById("map-toggle-all-tracks");
+  toggleAllBtn?.addEventListener("click", () => {
+    const allIds = trackSections.map((s) => s.dataset.trackSection!);
+    const allCollapsed = allIds.every((id) => collapsedTracks.has(id));
+    if (allCollapsed) {
+      collapsedTracks.clear();
+      toggleAllBtn.textContent = "折叠全部";
+    } else {
+      allIds.forEach((id) => collapsedTracks.add(id));
+      toggleAllBtn.textContent = "展开全部";
+    }
+    render(false);
+  });
+
+  // Single-track focus button on track headers
+  document
+    .querySelectorAll<HTMLButtonElement>("[data-focus-track]")
+    .forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const tid = btn.dataset.focusTrack!;
+        if (track === tid) {
+          track = "";
+          segment.value = "";
+        } else {
+          track = tid;
+          segment.value = "";
+          collapsedTracks.delete(tid);
+        }
+        render();
+      });
+    });
+
+  // Expand/Collapse extra rows in long segment columns
+  document
+    .querySelectorAll<HTMLButtonElement>("[data-expand-cell]")
+    .forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const key = btn.dataset.expandCell!;
+        if (expandedCells.has(key)) expandedCells.delete(key);
+        else expandedCells.add(key);
+        render(false);
+      });
+    });
+
+  // Open inline hand specs comparison
+  document
+    .querySelectorAll<HTMLElement>("[data-open-dexterity]")
+    .forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        openHandSpecs();
+      });
+    });
+
   document.querySelectorAll<HTMLElement>("[data-filter-seg]").forEach((el) => {
     el.addEventListener("click", (e) => {
       if (
@@ -411,6 +637,7 @@ if (root) {
       )
         return;
       e.preventDefault();
+      view = "chain";
       const segVal = el.dataset.filterSeg || "";
       if (segment.value === segVal) {
         segment.value = "";
@@ -424,10 +651,159 @@ if (root) {
 
   document.querySelectorAll<HTMLElement>("[data-view]").forEach((b) =>
     b.addEventListener("click", () => {
-      view = b.dataset.view!;
+      const next = b.dataset.view;
+      view = next === "table" ? "table" : "chain";
       render();
     }),
   );
+
+  // Embedded Dexterity interactive controls (Model comparison & Role filters)
+  const roleTabs = [
+    ...document.querySelectorAll<HTMLButtonElement>("[data-role-filter]"),
+  ];
+  const roleRegions = [
+    ...document.querySelectorAll<HTMLButtonElement>("[data-role-region]"),
+  ];
+  const roleSections = [
+    ...document.querySelectorAll<HTMLElement>("[data-role-section]"),
+  ];
+  let activeRole = "";
+  let activeRoleRegion = "";
+
+  function applyRoleFilters() {
+    roleTabs.forEach((t) =>
+      t.classList.toggle("is-on", (t.dataset.roleFilter || "") === activeRole),
+    );
+    roleRegions.forEach((b) =>
+      b.classList.toggle(
+        "is-active",
+        (b.dataset.roleRegion || "") === activeRoleRegion,
+      ),
+    );
+    roleSections.forEach((sec) => {
+      const sid = sec.dataset.roleSection || "";
+      const roleMatch = !activeRole || activeRole === sid;
+      if (!roleMatch) {
+        sec.hidden = true;
+        return;
+      }
+      const items = [
+        ...sec.querySelectorAll<HTMLElement>("[data-entry-region]"),
+      ];
+      let visible = 0;
+      items.forEach((li) => {
+        const show =
+          !activeRoleRegion || li.dataset.entryRegion === activeRoleRegion;
+        li.hidden = !show;
+        if (show) visible++;
+      });
+      sec.hidden = visible === 0;
+    });
+  }
+
+  roleTabs.forEach((tab) =>
+    tab.addEventListener("click", () => {
+      activeRole = tab.dataset.roleFilter || "";
+      applyRoleFilters();
+    }),
+  );
+  roleRegions.forEach((btn) =>
+    btn.addEventListener("click", () => {
+      activeRoleRegion = btn.dataset.roleRegion || "";
+      applyRoleFilters();
+    }),
+  );
+
+  const comparePills = [
+    ...document.querySelectorAll<HTMLButtonElement>("[data-compare-pill]"),
+  ];
+  const compareHeaders = [
+    ...document.querySelectorAll<HTMLElement>("th[data-compare-col]"),
+  ];
+  const compareCols = [
+    ...document.querySelectorAll<HTMLElement>("[data-compare-col]"),
+  ];
+  const selectedCountEl = document.getElementById("dex-selected-count");
+  const matrixWrap = document.getElementById("dex-compare-matrix-wrap");
+  const dexEmptyEl = document.getElementById("dex-product-empty");
+  const dexQueryInput = document.getElementById(
+    "dex-product-query",
+  ) as HTMLInputElement | null;
+
+  const allKeys = [
+    ...new Set(comparePills.map((p) => p.dataset.comparePill || "")),
+  ].filter(Boolean);
+  const defaultKeys = allKeys.filter(
+    (_, idx) => idx === 0 || idx === 2 || idx === 4,
+  );
+  const selectedSet = new Set(allKeys);
+  const normalizeDex = (value: string) =>
+    value.normalize("NFKC").toLocaleLowerCase();
+
+  function syncCompareMatrix() {
+    const words = normalizeDex(dexQueryInput?.value.trim() || "")
+      .split(/\s+/)
+      .filter(Boolean);
+    const matchingKeys = new Set<string>();
+    compareHeaders.forEach((th) => {
+      const key = th.dataset.compareCol || "";
+      const hay = normalizeDex(th.dataset.productSearch || "");
+      const matchesSearch =
+        words.length === 0 || words.every((w) => hay.includes(w));
+      if (matchesSearch && selectedSet.has(key)) {
+        matchingKeys.add(key);
+      }
+    });
+    comparePills.forEach((pill) => {
+      const key = pill.dataset.comparePill || "";
+      const on = selectedSet.has(key);
+      pill.classList.toggle("is-on", on);
+      pill.setAttribute("aria-pressed", String(on));
+    });
+    compareCols.forEach((cell) => {
+      const key = cell.dataset.compareCol || "";
+      cell.hidden = !matchingKeys.has(key);
+    });
+    if (selectedCountEl)
+      selectedCountEl.textContent = String(matchingKeys.size);
+    if (matrixWrap) matrixWrap.hidden = matchingKeys.size === 0;
+    if (dexEmptyEl) dexEmptyEl.hidden = matchingKeys.size > 0;
+  }
+
+  comparePills.forEach((pill) => {
+    pill.addEventListener("click", () => {
+      const key = pill.dataset.comparePill || "";
+      if (selectedSet.has(key)) {
+        if (selectedSet.size > 1) selectedSet.delete(key);
+      } else {
+        selectedSet.add(key);
+      }
+      syncCompareMatrix();
+    });
+  });
+
+  document.getElementById("dex-select-all")?.addEventListener("click", () => {
+    allKeys.forEach((k) => selectedSet.add(k));
+    if (dexQueryInput) dexQueryInput.value = "";
+    syncCompareMatrix();
+  });
+
+  document
+    .getElementById("dex-select-default")
+    ?.addEventListener("click", () => {
+      selectedSet.clear();
+      defaultKeys.forEach((k) => selectedSet.add(k));
+      if (dexQueryInput) dexQueryInput.value = "";
+      syncCompareMatrix();
+    });
+
+  dexQueryInput?.addEventListener("input", syncCompareMatrix);
+  document
+    .getElementById("dex-product-filter")
+    ?.addEventListener("submit", (e) => {
+      e.preventDefault();
+      syncCompareMatrix();
+    });
 
   // Save current filter URL when navigating to any company profile
   document
@@ -545,8 +921,8 @@ if (root) {
       c.dexProducts?.length || c.dexRoles?.length
         ? `<section class="drawer-sec">
             <div class="drawer-sec-head">
-              <h3>灵巧操作专题收录</h3>
-              <a class="link" href="/ventures/dexterity/">查看专题对比 →</a>
+              <h3>产品参数与技术栈定位</h3>
+              <button type="button" class="map-inline-dex-btn" data-drawer-open-dex>参数并排对比 →</button>
             </div>
             ${
               c.dexProducts?.length
@@ -620,12 +996,13 @@ if (root) {
         </section>`
       : "";
 
+    const liveQuote = (window as any).__finmapQuotes?.[c.id];
     drawerBody.innerHTML = `
       <section class="drawer-sec">
         <p class="drawer-intro">${escHtml(c.intro)}</p>
         <div class="drawer-kpis">
           <div><small>产业位置</small><b>${c.memberships.length} 个环节</b></div>
-          <div><small>估值记录</small><b>${c.valuation ? escHtml(c.valuation.text) : "未披露"}</b></div>
+          <div><small>${escHtml(c.capital?.label || "公开估值")}</small><b data-live-cap-card="${escHtml(c.id)}">${escHtml(liveQuote?.fullText || c.capital?.cardText || (c.valuation ? c.valuation.text : "非上市"))}</b></div>
           <div><small>资料核验日</small><b>${escHtml(c.verifiedAt || "未记录")}</b></div>
           <div><small>核验来源</small><b>${c.sources.length} 条出处</b></div>
         </div>
@@ -652,10 +1029,20 @@ if (root) {
       .forEach((btn) => {
         btn.addEventListener("click", () => {
           const segVal = btn.dataset.drawerSeg || "";
+          view = "chain";
           segment.value = segVal;
           track = segVal.split("/")[0] || "";
           closeDrawer();
           render();
+        });
+      });
+
+    drawerBody
+      .querySelectorAll<HTMLButtonElement>("[data-drawer-open-dex]")
+      .forEach((btn) => {
+        btn.addEventListener("click", () => {
+          closeDrawer();
+          openHandSpecs();
         });
       });
 

@@ -3,6 +3,7 @@ import Base from "../../layouts/Base.astro";
 import VentureAvatar from "../../components/VentureAvatar.astro";
 import "../../styles/ventures.css";
 import "../../styles/mapping.css";
+import "../../styles/dexterity.css";
 import {
   getTracks,
   getVentures,
@@ -15,6 +16,7 @@ import {
   segmentSlot,
   splitSegmentName,
   formatValuation,
+  getCapitalInfo,
   KIND_LABEL,
   validateVentures,
 } from "../../lib/ventures";
@@ -47,6 +49,19 @@ const populated = tracks.reduce(
 const cnCount = companies.filter((c) => c.region === "cn").length;
 const globalCount = companies.length - cnCount;
 const crossCount = companies.filter((c) => getMemberships(c).length > 1).length;
+
+const dexValue = (text: string) => text?.trim() || "未披露";
+function summarizeMetric(text: string): { head: string; detail: string } {
+  const clean = dexValue(text);
+  const parts = clean.split(/[；。]/).filter(Boolean);
+  if (parts.length <= 1) return { head: clean, detail: "" };
+  return {
+    head: parts[0],
+    detail: clean.slice(parts[0].length + 1).trim(),
+  };
+}
+
+const FOLD_LIMIT = 10;
 
 const relationLabelMap: Record<string, string> = {
   supplier: "供应 →",
@@ -92,6 +107,7 @@ const rows = companies.map((c) => {
     ).values(),
   ];
   const valStr = formatValuation(c.valuation);
+  const cap = getCapitalInfo(c);
   return {
     id: c.id,
     name: c.name,
@@ -102,6 +118,11 @@ const rows = companies.map((c) => {
     founders: c.founders || [],
     intro: c.intro,
     website: c.website || "",
+    capital: {
+      label: cap.label,
+      cardText: cap.cardText,
+      shortText: cap.shortText,
+    },
     valuation: valStr
       ? {
           text: valStr,
@@ -157,7 +178,7 @@ const rows = companies.map((c) => {
 
 <Base
   title="硬科技产业图谱"
-  description="面向一级市场研究的国内与全球硬科技公司图谱：按赛道与产业链环节查公司，核对业务、跨环节定位、公开关系与新闻。"
+  description="面向一级市场研究的国内与全球硬科技公司图谱：按赛道与产业链环节快速跳转查公司、对比代表产品参数与实时市值。"
   current="ventures"
 >
   <div class="wrap page" data-mapping>
@@ -169,8 +190,8 @@ const rows = companies.map((c) => {
         </h1>
         <p>
           沿产业链寻找公司，理解上下游位置与跨环节布局。已收录 {tracks.length}{" "}
-          条赛道、{populated}/{segmentCount} 个环节，国内 {cnCount} 家、海外{" "}
-          {globalCount} 家。
+          条赛道、{populated}/{segmentCount} 个环节（国内 {cnCount} 家、海外{" "}
+          {globalCount} 家，{crossCount} 家跨多环节布局）。
         </p>
       </div>
       <div class="actions">
@@ -188,7 +209,7 @@ const rows = companies.map((c) => {
       </div>
     </div>
 
-    <div class="panel">
+    <div class="panel" id="map-filter-panel">
       <form class="toolbar" role="search" id="map-filters">
         <div class="map-filter-top">
           <label class="filter-input map-search-box">
@@ -271,7 +292,7 @@ const rows = companies.map((c) => {
           </button>
         </div>
 
-        <nav class="chips" aria-label="产业赛道">
+        <nav class="chips" aria-label="单赛道筛选">
           <a
             class="chip"
             href="/ventures/"
@@ -313,7 +334,7 @@ const rows = companies.map((c) => {
           aria-live="polite"
         ></div>
         <span class="right">
-          点击公司查看完整档案，悬停点击「速览」可在当前页预览 · 更新于{" "}
+          左侧目录可快速跳转任意产业链，悬停公司点击「速览」可在当前页预览 · 更新于{" "}
           {getVenturesUpdated()}
         </span>
       </div>
@@ -333,149 +354,460 @@ const rows = companies.map((c) => {
       </div>
     </div>
 
-    <div id="map-chain" class="map-chain-stack">
-      {tracks.map((t) => {
-        const trackMembers = companies.filter((c) =>
-          getMemberships(c).some((m) => m.track === t.id),
-        );
-        const trackCn = trackMembers.filter((c) => c.region === "cn").length;
-        return (
-          <section class="panel map-track" data-track-section={t.id}>
-            <div class="panel-head">
-              <h2>
-                <a href={`/ventures/${t.id}/`}>{t.name}</a>
-              </h2>
-              <span class="hint">{t.desc}</span>
-              <span class="right">
-                <span class="mono" data-track-count={t.id}>
-                  {trackMembers.length} 家
-                </span>
-                <span class="muted">
-                  （国 {trackCn} / 外 {trackMembers.length - trackCn}）
-                </span>
-                {t.id === "robot-parts" && (
-                  <>
-                    {" · "}
-                    <a href="/ventures/dexterity/">灵巧手专题</a>
-                  </>
-                )}
-                {" · "}
-                <a href={`/?track=${t.id}`}>跟进动态 →</a>
-                <a href={`/ventures/${t.id}/`}>赛道详情 →</a>
-              </span>
-            </div>
-
-            <div
-              class="map-chain-grid"
-              style={`--chain-cols:${Math.min(t.segments.length, 4)}`}
+    <!-- 视图一：双栏产业链工作台（左侧常驻快速跳转目录 + 右侧紧凑产业链矩阵） -->
+    <div id="map-workbench" class="map-workbench">
+      <aside class="map-jump-rail" aria-label="产业链快速跳转目录">
+        <div class="map-jump-card">
+          <div class="map-jump-head">
+            <strong>赛道快速跳转</strong>
+            <button
+              type="button"
+              class="map-jump-action"
+              id="map-toggle-all-tracks"
+              title="折叠或展开全部赛道卡片"
             >
-              {t.segments.map((s) => {
-                const members = companies.filter((c) =>
-                  getMemberships(c).some(
-                    (m) => m.track === t.id && m.segment === s.id,
-                  ),
-                );
-                const name = splitSegmentName(s.name);
-                const slot = segmentSlot(t.id, s.id);
-                return (
-                  <section
-                    class="map-cell"
-                    data-segment-cell={`${t.id}/${s.id}`}
-                    data-slot={slot}
+              折叠全部
+            </button>
+          </div>
+          <ol class="map-jump-list">
+            {tracks.map((t, index) => {
+              const trackCompanies = companies.filter((c) =>
+                getMemberships(c).some((m) => m.track === t.id),
+              );
+              return (
+                <li>
+                  <a
+                    href={`#track-${t.id}`}
+                    class:list={["map-jump-link", index === 0 && "is-active"]}
+                    data-jump-track={t.id}
                   >
-                    <div class="map-cell-head">
-                      <button
-                        type="button"
-                        class="map-cell-filter-btn"
-                        data-filter-seg={`${t.id}/${s.id}`}
-                        title={`${s.desc}（点击筛选本环节）`}
-                      >
-                        {name.stage && (
-                          <span class="map-stage-tag">{name.stage}</span>
-                        )}
-                        <h3>{name.name}</h3>
-                        <span class="map-cell-count mono" data-cell-count>
-                          {members.length}
-                        </span>
-                      </button>
-                    </div>
+                    <span class="map-jump-idx mono">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <span class="map-jump-name">{t.name}</span>
+                    <span
+                      class="map-jump-count mono"
+                      data-jump-count={t.id}
+                    >
+                      {trackCompanies.length}
+                    </span>
+                  </a>
+                </li>
+              );
+            })}
+          </ol>
+        </div>
+      </aside>
 
-                    <div class="map-chips">
-                      {members.map((c) => {
-                        const allMemberships = getMemberships(c);
-                        const isCross = allMemberships.length > 1;
-                        const valStr = formatValuation(c.valuation);
-                        const dex = getDexterityForCompany(c.id);
-                        const primaryModel =
-                          dex.products[0]?.product || dex.roles[0]?.product;
-                        const cleanModel = primaryModel
-                          ? primaryModel.replace(/（.*?）|\(.*?\)/g, "").trim()
-                          : "";
-                        const crossTooltip = isCross
-                          ? `跨 ${allMemberships.length} 个产业位置：${allMemberships
-                              .map(
-                                (m) =>
-                                  `${getTrack(m.track)?.name || m.track}/${
-                                    splitSegmentName(
-                                      getSegment(m.track, m.segment)?.name ||
-                                        m.segment,
-                                    ).name
-                                  }`,
-                              )
-                              .join("；")}`
-                          : "";
-                        return (
-                          <div
-                            class:list={["map-node", isCross && "is-cross"]}
-                            data-company-id={c.id}
-                            data-cross={isCross ? "true" : "false"}
-                          >
-                            <a
-                              class="map-node-link"
-                              href={getVentureUrl(c)}
-                              data-company-link={c.id}
-                              title={`${c.name}${c.en ? ` (${c.en})` : ""} — ${c.intro}`}
+      <div id="map-chain" class="map-chain-stack">
+        {tracks.map((t, trackIdx) => {
+          const trackMembers = companies.filter((c) =>
+            getMemberships(c).some((m) => m.track === t.id),
+          );
+          const trackCn = trackMembers.filter((c) => c.region === "cn").length;
+          return (
+            <section
+              class="panel map-track"
+              id={`track-${t.id}`}
+              data-track-section={t.id}
+            >
+              <div class="panel-head">
+                <div class="map-track-title-group">
+                  <span class="map-track-num mono">
+                    {String(trackIdx + 1).padStart(2, "0")}
+                  </span>
+                  <h2>
+                    <a href={`/ventures/${t.id}/`}>{t.name}</a>
+                  </h2>
+                  <span class="hint">{t.desc}</span>
+                </div>
+                <span class="right">
+                  <span class="mono" data-track-count={t.id}>
+                    {trackMembers.length} 家
+                  </span>
+                  <span class="muted">
+                    （国 {trackCn} / 外 {trackMembers.length - trackCn}）
+                  </span>
+                  {" · "}
+                  <button
+                    type="button"
+                    class="map-track-focus-btn"
+                    data-focus-track={t.id}
+                    title="只筛选查看本赛道"
+                  >
+                    只看本赛道
+                  </button>
+                  {" · "}
+                  <a href={`/?track=${t.id}`}>动态 →</a>
+                  <a href={`/ventures/${t.id}/`}>详情 →</a>
+                  <button
+                    type="button"
+                    class="map-track-collapse-btn"
+                    data-collapse-track={t.id}
+                    aria-expanded="true"
+                  >
+                    收起
+                  </button>
+                </span>
+              </div>
+
+              <div
+                class="map-chain-grid"
+                style={`--chain-cols:${Math.min(t.segments.length, 4)}`}
+              >
+                {t.segments.map((s) => {
+                  const members = companies.filter((c) =>
+                    getMemberships(c).some(
+                      (m) => m.track === t.id && m.segment === s.id,
+                    ),
+                  );
+                  const name = splitSegmentName(s.name);
+                  const slot = segmentSlot(t.id, s.id);
+                  const hasFold = members.length > FOLD_LIMIT;
+                  return (
+                    <section
+                      class="map-cell"
+                      data-segment-cell={`${t.id}/${s.id}`}
+                      data-slot={slot}
+                    >
+                      <div class="map-cell-head">
+                        <button
+                          type="button"
+                          class="map-cell-filter-btn"
+                          data-filter-seg={`${t.id}/${s.id}`}
+                          title={`${s.desc}（点击筛选本环节）`}
+                        >
+                          {name.stage && (
+                            <span class="map-stage-tag">{name.stage}</span>
+                          )}
+                          <h3>{name.name}</h3>
+                          <span class="map-cell-count mono" data-cell-count>
+                            {members.length}
+                          </span>
+                        </button>
+                      </div>
+
+                      <div class="map-chips">
+                        {members.map((c, mIdx) => {
+                          const allMemberships = getMemberships(c);
+                          const isCross = allMemberships.length > 1;
+                          const cap = getCapitalInfo(c);
+                          const dex = getDexterityForCompany(c.id);
+                          const primaryModel =
+                            dex.products[0]?.product || dex.roles[0]?.product;
+                          const cleanModel = primaryModel
+                            ? primaryModel
+                                .replace(/（.*?）|\(.*?\)/g, "")
+                                .trim()
+                            : "";
+                          const crossTooltip = isCross
+                            ? `跨 ${allMemberships.length} 个产业位置：${allMemberships
+                                .map(
+                                  (m) =>
+                                    `${getTrack(m.track)?.name || m.track}/${
+                                      splitSegmentName(
+                                        getSegment(m.track, m.segment)?.name ||
+                                          m.segment,
+                                      ).name
+                                    }`,
+                                )
+                                .join("；")}`
+                            : "";
+                          return (
+                            <div
+                              class:list={[
+                                "map-node",
+                                isCross && "is-cross",
+                                mIdx >= FOLD_LIMIT && "is-fold-extra",
+                              ]}
+                              data-company-id={c.id}
+                              data-cross={isCross ? "true" : "false"}
+                              data-fold-extra={
+                                mIdx >= FOLD_LIMIT ? "true" : undefined
+                              }
                             >
-                              <span class="map-node-name">{c.name}</span>
-                              {c.region === "global" && (
-                                <span class="map-node-reg">海外</span>
-                              )}
-                              {isCross && (
+                              <a
+                                class="map-node-link"
+                                href={getVentureUrl(c)}
+                                data-company-link={c.id}
+                                title={`${c.name}${c.en ? ` (${c.en})` : ""} — ${c.intro}`}
+                              >
+                                <span class="map-node-name">{c.name}</span>
+                                {c.region === "global" && (
+                                  <span class="map-node-reg">海外</span>
+                                )}
+                                {isCross && (
+                                  <span
+                                    class="map-cross-pill"
+                                    title={crossTooltip}
+                                  >
+                                    ×{allMemberships.length}
+                                  </span>
+                                )}
                                 <span
-                                  class="map-cross-pill"
-                                  title={crossTooltip}
+                                  class="map-node-sub"
+                                  data-live-cap-short={
+                                    !cleanModel && cap.isListed
+                                      ? c.id
+                                      : undefined
+                                  }
                                 >
-                                  ×{allMemberships.length}
+                                  {cleanModel || cap.shortText || ""}
                                 </span>
-                              )}
-                              <span class="map-node-sub">
-                                {cleanModel || valStr || ""}
-                              </span>
-                            </a>
-                            <button
-                              type="button"
-                              class="map-peek-btn"
-                              data-peek-company={c.id}
-                              aria-label={`快速预览 ${c.name}`}
-                              title={`快速预览 ${c.name}`}
-                            >
-                              速览
-                            </button>
-                          </div>
-                        );
-                      })}
+                              </a>
+                              <button
+                                type="button"
+                                class="map-peek-btn"
+                                data-peek-company={c.id}
+                                aria-label={`快速预览 ${c.name}`}
+                                title={`快速预览 ${c.name}`}
+                              >
+                                速览
+                              </button>
+                            </div>
+                          );
+                        })}
+                      </div>
+
+                      {hasFold && (
+                        <button
+                          type="button"
+                          class="map-cell-more"
+                          data-expand-cell={`${t.id}/${s.id}`}
+                          data-total-count={members.length}
+                          data-extra-count={members.length - FOLD_LIMIT}
+                        >
+                          展开全部 {members.length} 家（+{members.length - FOLD_LIMIT}）▾
+                        </button>
+                      )}
+
+                      {!members.length && <div class="map-gap">样本待补充</div>}
+                    </section>
+                  );
+                })}
+              </div>
+
+              {t.id === "robot-parts" && (
+                <details class="map-inline-specs" id="robot-parts-hand-specs">
+                  <summary class="map-inline-specs-summary">
+                    <div>
+                      <strong>代表型号参数并排对比（末端 · 灵巧手 {dexterityProducts.length} 款官方公开规格核验）</strong>
+                      <span class="hint">点击展开主动自由度、驱动传动、重量范围、触觉感知与软件接口对照表</span>
+                    </div>
+                    <span class="map-inline-specs-cta">展开参数对比表 ▾</span>
+                  </summary>
+                  <div class="map-inline-specs-body">
+                    <div class="toolbar">
+                      <div class="map-filter-top">
+                        <div class="chips" role="group" aria-label="切换对比型号">
+                          {dexterityProducts.map((product) => {
+                            const key = `${product.companyId}::${product.product}`;
+                            const shortModel = product.product
+                              .replace(/（.*?）|\(.*?\)/g, "")
+                              .trim();
+                            return (
+                              <button
+                                type="button"
+                                class="chip is-on"
+                                data-compare-pill={key}
+                                aria-pressed="true"
+                              >
+                                <span>
+                                  {product.companyName} · {shortModel}
+                                </span>
+                              </button>
+                            );
+                          })}
+                        </div>
+                        <div class="map-inline-specs-actions">
+                          <span class="hint">
+                            已选 <span class="mono" id="dex-selected-count">{dexterityProducts.length}</span> 款
+                          </span>
+                          {" · "}
+                          <button type="button" class="map-reset" id="dex-select-all">
+                            全选 ({dexterityProducts.length})
+                          </button>
+                          {" · "}
+                          <button type="button" class="map-reset" id="dex-select-default">
+                            代表路线 (3)
+                          </button>
+                        </div>
+                      </div>
                     </div>
 
-                    {!members.length && <div class="map-gap">样本待补充</div>}
-                  </section>
-                );
-              })}
-            </div>
-          </section>
-        );
-      })}
+                    <div class="dex-compare-scroll" id="dex-compare-matrix-wrap">
+                      <table class="dex-compare-matrix" id="dex-compare-matrix">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="dex-dim-col">参数维度</th>
+                            {dexterityProducts.map((product) => {
+                              const key = `${product.companyId}::${product.product}`;
+                              const company = companyMap.get(product.companyId);
+                              const searchBlob = [
+                                product.companyName,
+                                product.product,
+                                product.form,
+                                product.actuation,
+                                product.dof,
+                                product.weight,
+                                product.sensing,
+                                product.software,
+                              ].join(" ");
+                              return (
+                                <th
+                                  scope="col"
+                                  data-compare-col={key}
+                                  data-product-search={searchBlob}
+                                >
+                                  <div class="dex-col-head">
+                                    <div class="dex-col-top">
+                                      {company ? (
+                                        <a class="link" href={getVentureUrl(company)}>
+                                          {product.companyName}
+                                        </a>
+                                      ) : (
+                                        <span>{product.companyName}</span>
+                                      )}
+                                      <span class="badge badge-plain">
+                                        {company?.region === "cn" ? "国内" : "海外"}
+                                      </span>
+                                    </div>
+                                    <strong>{product.product}</strong>
+                                  </div>
+                                </th>
+                              );
+                            })}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">形态与构型</th>
+                            {dexterityProducts.map((p) => {
+                              const key = `${p.companyId}::${p.product}`;
+                              const m = summarizeMetric(p.form);
+                              return (
+                                <td data-compare-col={key}>
+                                  <strong class="dex-metric-lead">{m.head}</strong>
+                                  {m.detail && <p class="dex-metric-caveat">{m.detail}</p>}
+                                </td>
+                              );
+                            })}
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              主动自由度与关节
+                              <small>区分独立控制与耦合</small>
+                            </th>
+                            {dexterityProducts.map((p) => {
+                              const key = `${p.companyId}::${p.product}`;
+                              const m = summarizeMetric(p.dof);
+                              return (
+                                <td data-compare-col={key}>
+                                  <strong class="dex-metric-lead">{m.head}</strong>
+                                  {m.detail && <p class="dex-metric-caveat">{m.detail}</p>}
+                                </td>
+                              );
+                            })}
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              驱动与传动路线
+                              <small>直驱 / 腱绳 / 电缸连杆</small>
+                            </th>
+                            {dexterityProducts.map((p) => {
+                              const key = `${p.companyId}::${p.product}`;
+                              const m = summarizeMetric(p.actuation);
+                              return (
+                                <td data-compare-col={key}>
+                                  <strong class="dex-metric-lead">{m.head}</strong>
+                                  {m.detail && <p class="dex-metric-caveat">{m.detail}</p>}
+                                </td>
+                              );
+                            })}
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              重量与计入范围
+                              <small>裸手 vs 含腕/线缆</small>
+                            </th>
+                            {dexterityProducts.map((p) => {
+                              const key = `${p.companyId}::${p.product}`;
+                              const m = summarizeMetric(p.weight);
+                              return (
+                                <td data-compare-col={key}>
+                                  <strong class="dex-metric-lead">{m.head}</strong>
+                                  {m.detail && <p class="dex-metric-caveat">{m.detail}</p>}
+                                </td>
+                              );
+                            })}
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              触觉 / 力觉感知
+                              <small>标配、选配或非触觉版</small>
+                            </th>
+                            {dexterityProducts.map((p) => {
+                              const key = `${p.companyId}::${p.product}`;
+                              const m = summarizeMetric(p.sensing);
+                              return (
+                                <td data-compare-col={key}>
+                                  <strong class="dex-metric-lead">{m.head}</strong>
+                                  {m.detail && <p class="dex-metric-caveat">{m.detail}</p>}
+                                </td>
+                              );
+                            })}
+                          </tr>
+                          <tr>
+                            <th scope="row">软件、采集与仿真</th>
+                            {dexterityProducts.map((p) => {
+                              const key = `${p.companyId}::${p.product}`;
+                              const m = summarizeMetric(p.software);
+                              return (
+                                <td data-compare-col={key}>
+                                  <strong class="dex-metric-lead">{m.head}</strong>
+                                  {m.detail && <p class="dex-metric-caveat">{m.detail}</p>}
+                                </td>
+                              );
+                            })}
+                          </tr>
+                          <tr>
+                            <th scope="row">公开依据与核验日</th>
+                            {dexterityProducts.map((p) => {
+                              const key = `${p.companyId}::${p.product}`;
+                              return (
+                                <td data-compare-col={key}>
+                                  <div class="dex-product-sources">
+                                    {p.evidence.map((source) => (
+                                      <a
+                                        href={source.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        {source.title} ↗
+                                      </a>
+                                    ))}
+                                    <small class="mono">核验 {p.verifiedAt}</small>
+                                  </div>
+                                </td>
+                              );
+                            })}
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="panel-foot">
+                      注：各型号参数均取自官方公开技术手册或产品页，不等于独立第三方实测；自由度与重量口径因厂商计入范围不同，不宜直接做简单数值排名。
+                    </div>
+                  </div>
+                </details>
+              )}
+            </section>
+          );
+        })}
+      </div>
     </div>
 
+    <!-- 视图二：公司名录表 -->
     <section
       id="map-table"
       class="panel"
@@ -499,7 +831,7 @@ const rows = companies.map((c) => {
             {companies.map((c) => {
               const allMemberships = getMemberships(c);
               const isCross = allMemberships.length > 1;
-              const valStr = formatValuation(c.valuation);
+              const cap = getCapitalInfo(c);
               const dex = getDexterityForCompany(c.id);
               return (
                 <tr
@@ -550,12 +882,13 @@ const rows = companies.map((c) => {
                   <td data-label="地区">
                     {c.country || (c.region === "cn" ? "中国" : "海外")}
                   </td>
-                  <td data-label="估值">
-                    {valStr ? (
-                      <span class="mono">{valStr}</span>
-                    ) : (
-                      <span class="muted">未披露</span>
-                    )}
+                  <td data-label="估值 / 市值">
+                    <span
+                      class="mono"
+                      data-live-cap-card={cap.isListed ? c.id : undefined}
+                    >
+                      {cap.cardText}
+                    </span>
                   </td>
                   <td data-label="操作">
                     <div class="map-table-actions">
